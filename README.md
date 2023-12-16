@@ -1,4 +1,4 @@
-![image](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/24908727-b55c-4a6e-8047-78270060b5b1)
+
 <img src="https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/71b21aa8-751f-4f4d-87cf-72a7a8c97341" width="300" alt="DALL·E 2023-12-16 21 51 26 - A logo for 'OpenTextShield', symbolizing collaborative AI for enhanced messaging spam security. The logo features a shield shape to represent security">
 
 
@@ -25,10 +25,10 @@ With SMS spam evolving in complexity and varying across languages, traditional f
 
 ### 2. Overview of FastText and BERT
 
-FastText Overview
+#### FastText Overview
+
 
 FastText is a text representation and classification library developed by Facebook AI Research (FAIR) in 2016. It is designed to efficiently learn word representations and sentence classification. FastText extends the Word2Vec model by treating each word as composed of character n-grams, allowing it to capture the meaning of shorter words and to understand suffixes and prefixes.
-
 
 
 Key Features of FastText:
@@ -44,7 +44,7 @@ Applications of FastText:
 - Word Embed
 
 
-BERT Overview
+#### BERT Overview
 
 BERT (Bidirectional Encoder Representations from Transformers) is a transformative approach to pretraining language representations introduced by Google AI in 2018. It represents a significant breakthrough in the field of natural language processing (NLP).
 
