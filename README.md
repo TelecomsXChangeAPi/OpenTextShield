@@ -13,6 +13,8 @@ OpenText Shield: Collaborative AI for Enhanced Messaging Spam Security
 
 Detection: A Comparative Study of FastText and BERT
 
+Author: Ameed Jamous
+
 ## Abstract:
 
 This study delves into the application of artificial intelligence in creating an effective SMS spam firewall, focusing on the utilization of advanced models like FastText and BERT. The paper emphasizes the crucial role of collaborative, open-source initiatives in addressing the challenges posed by the diverse linguistic nature of spam messages. It underscores the pivotal importance of high-quality data for training and refining these models, highlighting the necessity for community-based support in providing both resources and financial backing. This approach not only enhances the efficiency of spam detection but also fosters a more inclusive and adaptive framework for combating spam across various languages.
