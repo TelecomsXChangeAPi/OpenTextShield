@@ -66,7 +66,26 @@ BERT's impact on NLP has been profound, leading to the development of numerous v
 
 
 ###  3. Methodology
-The methodology section explains the data preparation process, stressing the importance of linguistic diversity in the dataset. We detail the training process for both models, highlighting the need for post-training tuning to adapt to specific spam trends, which is best achieved through collaborative efforts.
+
+3. Methodology
+
+This section delves into the methodology utilized in our study, focusing on developing an SMS firewall using AI, with a particular emphasis on data preparation and training processes.
+
+- Data Preparation: Harnessing Linguistic Diversity from TelecomsXChange's Data Warehouse
+Our approach to data preparation is significantly bolstered by TelecomsXChange’s extensive data warehouse, which contains over 3 billion recent, unlabeled SMS text messages. This vast repository of data presents a unique opportunity to create a model that understands and adapts to a wide array of linguistic nuances present in global SMS communication. The inclusion of such a diverse dataset is critical for training our models to effectively identify and filter spam messages across various languages and dialects.
+
+- Hybrid Labeling System: Combining GPT-4 with Human Expertise
+To address the challenge of labeling this substantial dataset, we propose a hybrid labeling system. This system marries the advanced classification and reasoning capabilities of OpenAI's GPT-4-1106-preview model with the discernment and expertise of human reviewers. By leveraging GPT-4's sophisticated AI algorithms, we can efficiently categorize large volumes of data, identifying potential spam messages. The human element in this hybrid approach is crucial for ensuring the high quality and accuracy of the labeling process. Human reviewers will validate and refine the AI-generated labels, ensuring that the nuances and complexities of real-world communication are accurately captured.
+
+- Training the AI Models: FastText and BERT
+The training phase involves two cutting-edge AI models - FastText and BERT. FastText is utilized for its proficiency in processing text data through word embeddings, while BERT is employed for its deep learning capabilities in understanding the context of text. The training involves feeding these models with the hybrid-labeled dataset, thereby enabling them to learn from a rich, varied, and accurately categorized linguistic environment.
+
+Post-Training Tuning: Keeping Pace with Evolving Spam Trends
+Post-training tuning is vital in ensuring the models' effectiveness against evolving spam trends. This stage involves regularly updating the models to adapt to the latest spam tactics and patterns. Collaborative efforts from the community and industry experts play a crucial role in this process, providing insights and feedback that guide the tuning of the models.
+
+In summary, our methodology leverages the vast, linguistically diverse dataset of TelecomsXChange, a novel hybrid labeling system combining AI and human expertise, rigorous training of advanced AI models, and continuous post-training tuning. This comprehensive approach aims to create an SMS spam firewall that is not only effective but also adaptive to the dynamic landscape of spam communication.
+
+
 
 ###  4. Hardware Configurations and Response Times
 
