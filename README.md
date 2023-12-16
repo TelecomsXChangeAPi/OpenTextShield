@@ -1,3 +1,7 @@
+
+![DALL·E 2023-12-16 21 51 26 - A logo for 'OpenTextShield', symbolizing collaborative AI for enhanced messaging spam security. The logo features a shield shape to represent security](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/71b21aa8-751f-4f4d-87cf-72a7a8c97341)
+
+
 # OpenTextShield
 Collaborative AI for Enhanced Messaging Spam Security.
 
