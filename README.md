@@ -4,12 +4,12 @@
 
 
 # OpenTextShield
-Collaborative AI for Enhanced Messaging Spam Security.
+Collaborative AI for Enhanced Telecom Messaging Spam Security.
 
 # Paper (DRAFT)
 
 
-OpenText Shield: Collaborative AI for Enhanced Messaging Spam Security
+OpenText Shield: Collaborative AI for Enhanced Messaging Spam and Phishing Security
 
 Detection: A Comparative Study of FastText and BERT
 
