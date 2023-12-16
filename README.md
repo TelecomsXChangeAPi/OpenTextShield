@@ -1,7 +1,7 @@
 # OpenTextShield
 Collaborative AI for Enhanced Messaging Spam Security.
 
-# Paper
+# Paper (DRAFT)
 
 
 OpenText Shield: Collaborative AI for Enhanced Messaging Spam Security
