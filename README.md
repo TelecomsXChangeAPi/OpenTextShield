@@ -67,8 +67,6 @@ BERT's impact on NLP has been profound, leading to the development of numerous v
 
 ###  3. Methodology
 
-3. Methodology
-
 This section delves into the methodology utilized in our study, focusing on developing an SMS firewall using AI, with a particular emphasis on data preparation and training processes.
 
 - Data Preparation: Harnessing Linguistic Diversity from TelecomsXChange's Data Warehouse
