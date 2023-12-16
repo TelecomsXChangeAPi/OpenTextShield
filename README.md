@@ -4,7 +4,7 @@
 
 
 # OpenTextShield
-Collaborative AI for Enhanced Telecom Messaging Security.
+Open Source Collaborative AI for Enhanced Telecom Messaging Security.
 
 # Paper (DRAFT)
 
