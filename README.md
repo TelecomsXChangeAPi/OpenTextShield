@@ -1,4 +1,4 @@
-
+![image](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/24908727-b55c-4a6e-8047-78270060b5b1)
 <img src="https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/71b21aa8-751f-4f4d-87cf-72a7a8c97341" width="300" alt="DALL·E 2023-12-16 21 51 26 - A logo for 'OpenTextShield', symbolizing collaborative AI for enhanced messaging spam security. The logo features a shield shape to represent security">
 
 
@@ -48,6 +48,9 @@ BERT Overview
 
 BERT (Bidirectional Encoder Representations from Transformers) is a transformative approach to pretraining language representations introduced by Google AI in 2018. It represents a significant breakthrough in the field of natural language processing (NLP).
 
+<img width="1360" alt="Screenshot 2023-12-16 at 10 00 54 PM" src="https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/a699fe05-874f-4bdb-b7d1-ddee62a0ca6f">
+
+
 Key Features of BERT:
 - Bidirectionality: BERT processes words in relation to all the other words in a sentence, rather than one-by-one in order.
 - Deep Contextualized Representation: Each word can have different meanings based on its context, which BERT captures effectively.
@@ -58,6 +61,8 @@ Applications of BERT:
 - BERT has been used to achieve state-of-the-art results in a variety of NLP tasks, including question answering, language inference, and named entity recognition.
 
 BERT's impact on NLP has been profound, leading to the development of numerous variants and models inspired by its architecture and training approach.
+
+
 
 
 ###  3. Methodology
