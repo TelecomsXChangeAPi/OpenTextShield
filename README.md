@@ -15,7 +15,8 @@ Detection: A Comparative Study of FastText and BERT
 
 **Author:** Ameed Jamous
 
-Advisors: Alan Quayle
+**Advisors:** Alan Quayle
+
 ## Abstract:
 
 This research investigates the application of artificial intelligence in developing a highly efficient SMS spam firewall, with a particular emphasis on leveraging advanced models such as FastText and BERT. 
