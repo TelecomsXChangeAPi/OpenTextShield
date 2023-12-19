@@ -14,6 +14,7 @@ OpenText Shield: Collaborative AI for Enhanced Messaging Spam and Phishing Secur
 Detection: A Comparative Study of FastText and BERT
 
 Author: Ameed Jamous
+Advisor: Alan Quayle
 
 ## Abstract:
 
