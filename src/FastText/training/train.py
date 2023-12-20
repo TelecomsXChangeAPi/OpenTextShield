@@ -19,5 +19,5 @@ data['ft_format'].to_csv('ft_data.txt', index=False, header=False)
 model = fasttext.train_supervised(input='ft_data.txt', epoch=25, lr=1.0, wordNgrams=2)
 
 # Save the model
-model.save_model('ots_sms_model_v1.bin')
+model.save_model('ots_sms_model_v1.1.bin')
 
