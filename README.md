@@ -3,13 +3,13 @@
 
 
 
-# OpenTextShield (OTS)
+# Open Text Shield (OTS)
 Open Source Collaborative AI for Enhanced Telecom Messaging Security & Revenue Protection
 
 # Paper (DRAFT)
 
 
-OpenText Shield: Collaborative AI for Enhanced Messaging Spam and Phishing Security & Revenue Protection
+Open Text Shield: Collaborative AI for Enhanced Messaging Spam and Phishing Security & Revenue Protection
 
 Detection: A Comparative Study of FastText and BERT
 
