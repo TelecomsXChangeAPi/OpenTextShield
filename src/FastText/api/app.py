@@ -6,7 +6,7 @@ import time
 app = FastAPI()
 
 # Load the trained model
-model = fasttext.load_model("../training/ots_sms_model_v1.bin")
+model = fasttext.load_model("../training/ots_sms_model_v1.1.bin")
 
 class SMS(BaseModel):
     text: str
