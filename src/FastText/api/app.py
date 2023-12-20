@@ -2,8 +2,19 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import fasttext
 import time
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+# Add CORSMiddleware to allow cross-origin requests
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
+
 
 # Load the trained model
 model = fasttext.load_model("../training/ots_sms_model_v1.1.bin")
