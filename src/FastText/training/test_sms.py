@@ -11,7 +11,7 @@ model = fasttext.load_model('ots_sms_model_v1.1.bin')
 # message = "Federal Credit Union ALERT: Your Credit Card has been temporarily LOCKED. Please call Services line (954) 240-5411" ## spam
 # message = "Apple Notification. Your Apple iCloud ID expires today. Log in to prevent deletion http://notapple.com/user-auth/online" ## spam
 # message = "No i was trying to lock down the deal yesterday :)"
-message = "Hello" ## spam 
+message = "Hi, Your birthday is coming soon. It is time to buy a 1 Cr Term Plan for Rs.5390 rather paying Rs.5603 after birthday. Click rml.lu/Cvs559Y here" ## spam 
 
 
 # Predict the label
