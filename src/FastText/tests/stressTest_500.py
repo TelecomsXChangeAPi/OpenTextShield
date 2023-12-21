@@ -3,7 +3,7 @@ import concurrent.futures
 import time
 
 # API endpoint and headers
-url = 'http://localhost:8000/predict/'
+url = 'https://ots-api.replit.app/predict/'
 headers = {
     'accept': 'application/json',
     'Content-Type': 'application/json',
