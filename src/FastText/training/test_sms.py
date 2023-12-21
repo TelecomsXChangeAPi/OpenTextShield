@@ -4,14 +4,47 @@ import fasttext
 model = fasttext.load_model('ots_sms_model_v1.1.bin')
 
 # Example SMS message
-# message = "Your account has been temporarily locked out now. Please log in to https://tinyurlw22222222.com/bank verify your identity." ## phishing
-# message ="(9bQqme34005Uq)"
-# message = "Your Microsoft verfication code is 667982"
-# message = "PayPal: 441999 is your security code. Don't share your code"
-# message = "Federal Credit Union ALERT: Your Credit Card has been temporarily LOCKED. Please call Services line (954) 240-5411" ## spam
-# message = "Apple Notification. Your Apple iCloud ID expires today. Log in to prevent deletion http://notapple.com/user-auth/online" ## spam
-# message = "No i was trying to lock down the deal yesterday :)"
-message = "Hi, Your birthday is coming soon. It is time to buy a 1 Cr Term Plan for Rs.5390 rather paying Rs.5603 after birthday. Click rml.lu/Cvs559Y here" ## spam 
+
+# Phishing Examples
+# message = "URGENT: Your bank account has been compromised. To secure your funds, click here immediately: http://bit.ly/2FAKEurl"
+# message = "Warning: Your email has been flagged for unusual activity. Confirm your credentials now at http://bit.ly/com32323 to avoid suspension."
+message = "Paket im Terminal 2: http://different.com/7DH5000022" ## phishing
+
+# Verification Code Examples
+# message = "Google Verification Code: 452183. Do not share this code with anyone."
+# message = "Your WhatsApp code: 729-113. Don't share this code with others."
+
+# Spam Examples
+# message = "Congratulations! You've won a $500 Amazon gift card. Claim now at www.win-gifts.com. Hurry, offer ends soon!"
+# message = "Exclusive Offer: Get 90% off on your next purchase at SuperShoes. Visit www.someshoes.com/offer10. Unsubscribe at stopDIA.com"
+
+# Regular Communication (Ham) Examples
+# message = "Hey, are we still on for dinner tonight at 7?"
+# message = "Can you send me the presentation slides? I'd like to review them before the meeting."
+
+# More Phishing Examples
+# message = "Final Notice: Your subscription with NetMedia is about to expire. Renew now to avoid service interruption: www.netmedia-renewal.com"
+# message = "Your package could not be delivered due to unpaid customs fee. Pay now at www.other_domain.com/438484sjdjdjdsjjdsjdsjdjsjdsjdjsdjs"
+
+# More Spam Examples
+# message = "Hot Summers Sale! Buy one get one free on all beachwear at TrendyStyles. Shop now at www.trendystyles.com/sale"
+# message = "Get a free cell data booster with every new phone plan at MobileNet. Call us at 800-555-0199 or visit www.mobilenet.com"
+
+# More Verification Code Examples
+# message = "Your Tinder verification code is 394857. Please enter this code to continue."
+# message = "Dropbox: Your security code is 842159. Enter this code to complete the setup."
+
+# More Regular Communication (Ham) Examples
+# message = "Reminder: Your dentist appointment is scheduled for tomorrow at 10 AM."
+# message = "Great meeting today! Let's catch up next week to discuss further steps."
+
+# Test Data that the model have never seen before with type Phishing
+
+# message = "ALERT: Unusual sign-in detected on your Netflix account. Verify immediately at http://netflix-verify-login.com to prevent suspension."
+# message = "Your PayPal account has been temporarily restricted. Please update your information at http://paypal-secure-update.com to restore access."
+# message = "Your Apple ID is due for verification. Failure to verify may lead to account suspension. Visit http://appleids-verify-n0w.com promptly."
+message = "Security Alert: We've detected unusual activity on your Apple account. Please verify your information immediately at http://apple-resetpassword.com to avoid suspension."
+
 
 
 # Predict the label
