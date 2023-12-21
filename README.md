@@ -48,7 +48,7 @@ Applications of FastText:
 - Language Identification
 - Word Embed
 
-**Try it Now:** [OTS Ai Model V1.1](https://ots.telecomsxchange.com) (Powered by FastText)
+**Try it Now:** [OTS Ai Model Client](https://ots.telecomsxchange.com) (Powered by FastText)
 
 #### BERT Overview
 
