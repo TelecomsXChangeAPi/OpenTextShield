@@ -1,7 +1,7 @@
 import fasttext
 
 # Load the trained model
-model = fasttext.load_model('ots_sms_model_v1.bin')
+model = fasttext.load_model('ots_sms_model_v1.1.bin')
 
 # Example SMS message
 # message = "Your account has been temporarily locked out now. Please log in to https://tinyurlw22222222.com/bank verify your identity." ## phishing
@@ -11,7 +11,7 @@ model = fasttext.load_model('ots_sms_model_v1.bin')
 # message = "Federal Credit Union ALERT: Your Credit Card has been temporarily LOCKED. Please call Services line (954) 240-5411" ## spam
 # message = "Apple Notification. Your Apple iCloud ID expires today. Log in to prevent deletion http://notapple.com/user-auth/online" ## spam
 # message = "No i was trying to lock down the deal yesterday :)"
-message = "Want explicit SEX insecs? Ring 900123888 now! Costs 30p/min Gsex POBOX 2667 WC1N 3XX" ## spam 
+message = "Hello" ## spam 
 
 
 # Predict the label
