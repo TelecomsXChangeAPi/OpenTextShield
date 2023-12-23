@@ -33,7 +33,7 @@ def predict(text, model, tokenizer):
     return prediction, processing_time
 
 def main():
-    model_path = '/Users/ameedjamous/programming/OpenTextShield/src/BERT/training/bert_sms_spam_phishing_model'
+    model_path = '/src/BERT/training/bert_sms_spam_phishing_model'
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
     # Load the trained model
