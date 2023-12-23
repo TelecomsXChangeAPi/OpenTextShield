@@ -22,13 +22,13 @@ app.add_middleware(
 )
 
 # Load BERT model
-bert_model_path = "../BERT/training/ots_bert_sms_spam_phishing_model"
+bert_model_path = "../BERT/training/bert_sms_spam_phishing_model"
 bert_model = BertForSequenceClassification.from_pretrained(bert_model_path)
 bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 bert_model.eval()
 
 # Load FastText model
-fasttext_model_path = "../FastText/training/ots_fasttext_sms_model_v1.1.bin"
+fasttext_model_path = "../FastText/training/ots_sms_model_v1.1.bin"
 fasttext_model = fasttext.load_model(fasttext_model_path)
 
 class SMS(BaseModel):
