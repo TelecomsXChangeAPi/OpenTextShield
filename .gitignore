@@ -3,3 +3,4 @@ src/.DS_Store
 src/FastText/training/sms_spam_phishing_dataset.csv
 src/FastText/training/ft_data.txt
 .DS_Store
+src/BERT/training/sms_spam_phishing_dataset.csv
