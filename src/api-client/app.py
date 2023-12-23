@@ -96,8 +96,7 @@ async def predict_sms(sms: SMS):
         "Last_Training": "2023-12-21"  # Update accordingly
     }
 
-# Feedback loop and download feedback endpoints remain the same
-# ...
+# Feedback loop and download feedback 
 
 @app.post("/feedback-loop/")
 async def feedback_loop(feedback: Feedback):
