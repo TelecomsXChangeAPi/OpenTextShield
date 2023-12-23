@@ -4,3 +4,6 @@ src/FastText/training/sms_spam_phishing_dataset.csv
 src/FastText/training/ft_data.txt
 .DS_Store
 src/BERT/training/sms_spam_phishing_dataset.csv
+src/BERT/training/bert_sms_spam_phishing_model/*
+src/FastText/training/ots_sms_model_v1.1.bin
+
