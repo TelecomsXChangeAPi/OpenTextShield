@@ -1,4 +1,4 @@
-# README.md for OTS Application
+# README.md for OTS Application Programming Interface (API)
 
 ## Open Source Text Shield (OTS)
 
