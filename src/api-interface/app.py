@@ -1,6 +1,6 @@
 import time
 from typing import Optional
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime
@@ -12,6 +12,9 @@ import csv
 
 app = FastAPI()
 
+# Allowed IP addresses
+ALLOWED_IPS = {"127.0.0.1", "localhost", "10.0.0.1"}
+
 # Add CORSMiddleware to allow cross-origin requests
 app.add_middleware(
     CORSMiddleware,
@@ -20,6 +23,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Load BERT model
 bert_model_path = "../BERT/training/bert_sms_spam_phishing_model"
@@ -56,8 +60,15 @@ def write_feedback(feedback_data, model_name):
         if file.tell() == 0:
             writer.writerow(["Timestamp", "UserID", "Content", "Feedback", "Thumbs Up", "Thumbs Down"])
         writer.writerow(feedback_data)
+        
+def verify_ip_address(request: Request):
+    client_host = request.client.host
+    if client_host not in ALLOWED_IPS:
+        raise HTTPException(status_code=403, detail="Access denied")
+    return client_host        
 
-@app.post("/predict/")
+
+@app.post("/predict/", dependencies=[Depends(verify_ip_address)])
 async def predict_sms(sms: SMS):
     start_time = time.time()
 
@@ -98,7 +109,7 @@ async def predict_sms(sms: SMS):
 
 # Feedback loop and download feedback 
 
-@app.post("/feedback-loop/")
+@app.post("/feedback-loop/", dependencies=[Depends(verify_ip_address)])
 async def feedback_loop(feedback: Feedback):
     thumbs_up = 'Yes' if feedback.thumbs_up else 'No'
     thumbs_down = 'Yes' if feedback.thumbs_down else 'No'
@@ -113,7 +124,7 @@ async def feedback_loop(feedback: Feedback):
     return {"message": "Feedback received"}
 
 
-@app.get("/download-feedback/{model_name}")
+@app.get("/download-feedback/{model_name}", dependencies=[Depends(verify_ip_address)])
 async def download_feedback(model_name: str):
     if model_name in ["bert", "fasttext"]:
         file_path = f"feedback_{model_name}.csv"
