@@ -1,6 +1,4 @@
-# README.md for OTS Application Programming Interface (API)
-
-## Open Source Text Shield (OTS)
+## What is Open Source Text Shield (OTS)?
 
 OTS (Open Source Text Shield) is an AI-driven solution designed to enhance the security of telecom networks by detecting and filtering spam and phishing messages in real time. This application leverages both BERT and FastText models for efficient text classification.
 
