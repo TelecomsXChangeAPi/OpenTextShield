@@ -12,7 +12,7 @@ import csv
 
 app = FastAPI()
 
-# Allowed IP addresses
+# Allowed SMPP, SMSC or any External IP addresses
 ALLOWED_IPS = {"127.0.0.1", "localhost", "10.0.0.1"}
 
 # Add CORSMiddleware to allow cross-origin requests
