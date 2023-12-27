@@ -68,6 +68,8 @@ def verify_ip_address(request: Request):
     return client_host        
 
 
+# Route to predict SMS using specified model - supported "bert" , "fasttext"
+
 @app.post("/predict/", dependencies=[Depends(verify_ip_address)])
 async def predict_sms(sms: SMS):
     start_time = time.time()
