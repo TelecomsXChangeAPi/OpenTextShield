@@ -169,7 +169,7 @@ translate==3.6.1
 typeguard==2.13.3
 typing_extensions==4.8.0
 ujson==5.7.0
-urllib3==1.26.14
+urllib3==1.26.18
 uvicorn==0.23.2
 visions==0.7.5
 wcwidth==0.2.6
