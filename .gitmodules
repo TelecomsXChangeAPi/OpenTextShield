@@ -1,3 +1,0 @@
-[submodule "src/BERT/training/mlx-bert"]
-    path = src/BERT/training/mlx-bert
-    url = <https://github.com/TelecomsXChangeAPi/mlx-bert>
