@@ -359,6 +359,10 @@ The insights gained from this real-world application will be invaluable. They wi
 
 In conclusion, the collective efforts of the telecom industry, spearheaded by TCXC's R&D initiatives, are paving the way for a new era of digital communication security. By pooling resources, expertise, and funding, we can develop an effective, open-source AI-powered SMS spam firewall that addresses the nuances of global language variations. This collaborative approach ensures that the firewall remains at the cutting edge of technology, providing a shield against spam that is as dynamic as the threats it seeks to thwart. The journey ahead is one of shared challenges and shared triumphs, and it is through this partnership that we will secure the integrity of our communication networks for years to come.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 Additional Resources
 
