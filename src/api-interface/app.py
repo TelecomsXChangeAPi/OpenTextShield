@@ -6,16 +6,15 @@ from pydantic import BaseModel
 from datetime import datetime
 from fastapi.responses import FileResponse
 import torch
-from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import BertTokenizer, BertForSequenceClassification, BertConfig
 import fasttext
 import csv
 
 app = FastAPI()
 
-# Allowed SMPP, SMSC or any External IP addresses
+# Allowed IPs
 ALLOWED_IPS = {"127.0.0.1", "localhost", "10.0.0.1"}
 
-# Add CORSMiddleware to allow cross-origin requests
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -24,12 +23,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Update the model path to the one you want to use
+bert_model_path = "../BERT/training/mlx-bert/bert_sms_spam_phishing_model_gpu.pth"
 
-# Load BERT model
-bert_model_path = "../BERT/training/bert_sms_spam_phishing_model"
-bert_model = BertForSequenceClassification.from_pretrained(bert_model_path)
-bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+# Load BERT model with updated approach
+config = BertConfig.from_pretrained('bert-base-uncased', num_labels=3)  # Adjust num_labels as per your model
+bert_model = BertForSequenceClassification(config)
+bert_model.load_state_dict(torch.load(bert_model_path, map_location=torch.device('cpu')))
 bert_model.eval()
+
+# Specify the device
+device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+bert_model = bert_model.to(device)
+
+bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # Load FastText model
 fasttext_model_path = "../FastText/training/ots_sms_model_v1.1.bin"
@@ -53,6 +60,7 @@ def preprocess_text(text, tokenizer, max_len=128):
         padding='max_length', return_attention_mask=True,
         return_tensors='pt', truncation=True
     )
+
 def write_feedback(feedback_data, model_name):
     file_name = f"feedback_{model_name}.csv"
     with open(file_name, mode="a", newline="", encoding="utf-8") as file:
@@ -67,9 +75,6 @@ def verify_ip_address(request: Request):
         raise HTTPException(status_code=403, detail="Access denied")
     return client_host        
 
-
-# Route to predict SMS using specified model - supported "bert" , "fasttext"
-
 @app.post("/predict/", dependencies=[Depends(verify_ip_address)])
 async def predict_sms(sms: SMS):
     start_time = time.time()
@@ -79,6 +84,7 @@ async def predict_sms(sms: SMS):
 
     if sms.model == "bert":
         inputs = preprocess_text(sms.text, bert_tokenizer)
+        inputs = {k: v.to(device) for k, v in inputs.items()}  # Ensure inputs are moved to the correct device
         with torch.no_grad():
             outputs = bert_model(**inputs)
             prediction = torch.argmax(outputs.logits, dim=1).item()
@@ -87,9 +93,9 @@ async def predict_sms(sms: SMS):
         probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
         model_info = {"Model_Name": "OTS_bert", "Model_Version": "1.1.4"}
     elif sms.model == "fasttext":
-        label, probability = fasttext_model.predict(sms.text, k=1)  # Ensure k=1 for single label prediction
+        label, probability = fasttext_model.predict(sms.text, k=1)
         label = label[0].replace('__label__', '')
-        probability = probability[0]  # Extract the probability value
+        probability = probability[0]
         model_info = {
             "Model_Name": "OTS_fasttext",
             "Model_Version": "1.1.4",
@@ -109,8 +115,6 @@ async def predict_sms(sms: SMS):
         "Last_Training": "2023-12-21"  # Update accordingly
     }
 
-# Feedback loop and download feedback 
-
 @app.post("/feedback-loop/", dependencies=[Depends(verify_ip_address)])
 async def feedback_loop(feedback: Feedback):
     thumbs_up = 'Yes' if feedback.thumbs_up else 'No'
@@ -124,7 +128,6 @@ async def feedback_loop(feedback: Feedback):
         raise HTTPException(status_code=400, detail="Invalid model type")
 
     return {"message": "Feedback received"}
-
 
 @app.get("/download-feedback/{model_name}", dependencies=[Depends(verify_ip_address)])
 async def download_feedback(model_name: str):
