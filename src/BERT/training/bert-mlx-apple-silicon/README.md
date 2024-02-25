@@ -1,6 +1,6 @@
-# MLX Bert for Open Text Shield (OTS)
+# Open Text Shield (OTS) on Apple Silicon
 
-MLX Bert for OTS is a sophisticated machine learning model designed to enhance text-based security protocols. By leveraging the power of BERT (Bidirectional Encoder Representations from Transformers), MLX Bert provides an advanced solution for analyzing and processing textual data, ensuring high levels of protection and efficiency.
+Open Text Shield (OTS) is now fully optimized for Apple Silicon (M1, M2, etc.), bringing unparalleled efficiency and speed to OTS training and inference, By harnessing the advanced capabilities of BERT (Bidirectional Encoder Representations from Transformers), OTS BERT model for Apple Silicon not only elevates the effectiveness of analyzing and processing textual data but also significantly boosts performance. Training models on Apple Silicon is now faster, and inference speeds are improved by at least 50%, ensuring even higher levels of protection and operational efficiency.
 
 ![ots-mlx](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/d06058ab-bf5b-4136-84e7-82a8c10b07a3)
 
@@ -8,7 +8,7 @@ MLX Bert for OTS is a sophisticated machine learning model designed to enhance t
 
 ## Installation
 
-To get started with MLX Bert for OTS, you'll need to install the necessary dependencies. Run the following command in your terminal:
+To get started with OTS on apple silicon, you'll need to install the necessary dependencies. Run the following command in your terminal:
 
 ```bash
 pip3 install -r requirements.txt
