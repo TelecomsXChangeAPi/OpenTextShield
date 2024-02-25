@@ -30,6 +30,17 @@ To begin training the Open Text Shield model with MLX Bert, use the command belo
 python train_ots.py
 ```
 
+Successful output:
+
+```bash
+$ python3 train_ots.py 
+Detected encoding: UTF-8-SIG
+Epoch 1/3 completed.
+Epoch 2/3 completed.
+Epoch 3/3 completed.
+Test Accuracy: 99.72%
+```
+
 ## Contact and Acknowledgements
 
 We appreciate your interest in MLX Bert for OTS and welcome any questions, feedback, or contributions. Please feel free to reach out to us via the following channels:
