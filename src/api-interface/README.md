@@ -1,6 +1,14 @@
-## What is Open Source Text Shield (OTS)?
+## What is Open Source Text Shield (OTS) API interface?
 
 OTS (Open Source Text Shield) is an AI-driven solution designed to enhance the security of telecom networks by detecting and filtering spam and phishing messages in real time. This application leverages both BERT and FastText models for efficient text classification.
+
+The OTS API serves as an intermediary, facilitating communication between the client and the BERT and FastText models. For a clearer insight into how this process works, refer to the diagram provided below. To begin interacting with the models via HTTP, your initial step should be to initiate the API server.
+
+### Flow
+
+![7aa7Q3P3uds5KEtfTww76j](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/c2fbf6a4-0fff-45b5-b8d3-cbbc4312b7df)
+
+
 
 ## Getting Started
 
