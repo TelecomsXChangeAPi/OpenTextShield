@@ -1,6 +1,7 @@
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 import time
+import os
 
 def load_model(model_path):
     model = BertForSequenceClassification.from_pretrained(model_path, num_labels=3, local_files_only=True)
@@ -33,7 +34,7 @@ def predict(text, model, tokenizer):
     return prediction, processing_time
 
 def main():
-    model_path = '/Users/ameedjamous/programming/OpenTextShield/src/BERT/training/bert_sms_spam_phishing_model'
+    model_path = os.path.expanduser('~/programming/OpenTextShield/src/BERT/training/bert_sms_spam_phishing_model')
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
     # Load the trained model

@@ -4,12 +4,17 @@ import time
 import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
+import os
 
 # Setup logging
 logging.basicConfig(filename='prediction_logs.log', level=logging.INFO,
                     format='%(asctime)s - Request: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
 def load_model(model_path, device):
+    #Verify that the model file exists
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"The specified model file was not found: {model_path}")
+    
     config = BertConfig.from_pretrained('bert-base-uncased', num_labels=3)
     model = BertForSequenceClassification(config)
     model.load_state_dict(torch.load(model_path, map_location=device))
@@ -45,7 +50,7 @@ def generate_random_text(base_text, index):
 
 def main():
     device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
-    model_path = '/Users/ameedjamous/programming/OpenTextShield/src/BERT/training/mlx-bert/bert_sms_spam_phishing_model_gpu.pth'
+    model_path = os.path.expanduser('~/programming/OpenTextShield/src/BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.2.pth')
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     model = load_model(model_path, device)
 
