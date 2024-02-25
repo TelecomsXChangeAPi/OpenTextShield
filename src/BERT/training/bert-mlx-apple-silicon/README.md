@@ -2,6 +2,10 @@
 
 MLX Bert for OTS is a sophisticated machine learning model designed to enhance text-based security protocols. By leveraging the power of BERT (Bidirectional Encoder Representations from Transformers), MLX Bert provides an advanced solution for analyzing and processing textual data, ensuring high levels of protection and efficiency.
 
+![ots-mlx](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/d06058ab-bf5b-4136-84e7-82a8c10b07a3)
+
+
+
 ## Installation
 
 To get started with MLX Bert for OTS, you'll need to install the necessary dependencies. Run the following command in your terminal:
