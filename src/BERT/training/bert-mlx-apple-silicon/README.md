@@ -40,7 +40,7 @@ Epoch 3/3 completed.
 Test Accuracy: 99.72%
 ```
 
-#### Inference Performance Benchmark on Apple Silicon M1 Pro**
+#### Inference Performance Benchmark on Apple Silicon M1 Pro
 
 | Metric                        | Value                   |
 |-------------------------------|-------------------------|
