@@ -24,7 +24,7 @@ app.add_middleware(
 )
 
 # Update the model path to the one you want to use
-bert_model_path = "../BERT/training/mlx-bert/bert_sms_spam_phishing_model_gpu.pth"
+bert_model_path = "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.2.pth"
 
 # Load BERT model with updated approach
 config = BertConfig.from_pretrained('bert-base-uncased', num_labels=3)  # Adjust num_labels as per your model
