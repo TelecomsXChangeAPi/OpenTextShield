@@ -5,7 +5,6 @@ Open Text Shield (OTS) is now fully optimized for Apple Silicon (M1, M2, etc.), 
 ![ots-mlx](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/d06058ab-bf5b-4136-84e7-82a8c10b07a3)
 
 
-
 ## Installation
 
 To get started with OTS on apple silicon, you'll need to install the necessary dependencies. Run the following command in your terminal:
@@ -40,6 +39,17 @@ Epoch 2/3 completed.
 Epoch 3/3 completed.
 Test Accuracy: 99.72%
 ```
+
+#### Inference Performance Benchmark on Apple Silicon M1 Pro**
+
+| Metric                        | Value                   |
+|-------------------------------|-------------------------|
+| **Inference Speed**           | 54 SMS messages/second  |
+| **Tested Platform**           | Apple Silicon M1 Pro    |
+
+
+
+
 
 #### Training Process
 
