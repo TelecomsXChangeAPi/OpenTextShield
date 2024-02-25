@@ -6,7 +6,7 @@
 # Open Text Shield (OTS)
 Open Source Collaborative AI for Enhanced Telecom Messaging Security & Revenue Protection
 
-# Paper 1.0
+# Paper 1.1
 
 
 Open Text Shield: Collaborative AI for Enhanced Messaging Spam and Phishing Security & Revenue Protection
@@ -16,6 +16,15 @@ Detection: A Comparative Study of FastText and BERT
 **Author:** [Ameed Jamous](https://www.linkedin.com/in/ameedjamous) 
 
 **Advisors:** [Alan Quayle](https://www.linkedin.com/in/alanquayle) 
+
+### Flow
+
+![7aa7Q3P3uds5KEtfTww76j](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/c2fbf6a4-0fff-45b5-b8d3-cbbc4312b7df)
+
+### Files Structure
+
+![5TXULnDCrAfSQDEPXwPAKt](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/d4aa27ae-22ae-4219-92c2-76039a4757e9)
+
 
 
 ## Abstract:
