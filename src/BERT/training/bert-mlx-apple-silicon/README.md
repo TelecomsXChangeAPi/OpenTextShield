@@ -27,7 +27,7 @@ python3 load_bert.py
 To begin training the Open Text Shield model with MLX Bert, use the command below:
 
 ```bash
-python train_bert.py
+python train_ots.py
 ```
 
 ## Contact and Acknowledgements
