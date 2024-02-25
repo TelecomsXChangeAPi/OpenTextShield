@@ -41,7 +41,7 @@ Epoch 3/3 completed.
 Test Accuracy: 99.72%
 ```
 
-### Training Flow
+#### Training Process
 
 ![6AZuNzub7YUb3aTsnzpsiK](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/bbce8f96-b3b3-4beb-9e78-417b47a09e15)
 
