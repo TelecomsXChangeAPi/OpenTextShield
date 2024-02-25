@@ -35,7 +35,7 @@ python train_bert.py
 We appreciate your interest in MLX Bert for OTS and welcome any questions, feedback, or contributions. Please feel free to reach out to us via the following channels:
 
 ### For OTS inquiries:
-- **LinkedIn**: [Ameed Jamous](https://www.linkedin.com/in/ajamous/)
+- **LinkedIn**: [Ameed Jamous](https://www.linkedin.com/in/ameedjamous/)
 - **Email**: [a.jamous@telecomsxchange.com](mailto:a.jamous@telecomsxchange.com)
 - **GitHub**: [TelecomsxchangeAPI/Open-Text-Shield](https://github.com/TelecomsxchangeAPI/Open-Text-Shield)
 
