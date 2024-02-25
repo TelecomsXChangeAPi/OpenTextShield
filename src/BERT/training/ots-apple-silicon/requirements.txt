@@ -113,7 +113,7 @@ pycparser==2.21
 pydantic==1.10.4
 pydocstyle==6.2.3
 pyflakes==3.0.1
-Pygments==2.14.0
+Pygments==2.15.0
 pyinstaller==6.4.0
 pyinstaller-hooks-contrib==2024.1
 pylint==2.17.1
