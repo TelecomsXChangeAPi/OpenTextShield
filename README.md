@@ -57,7 +57,46 @@ Applications of FastText:
 - Language Identification
 - Word Embed
 
-**Try it Now:** [OTS Ai Model Client](https://ots.telecomsxchange.com) (Trained using FastText)
+**Try it Now:** [OTS Ai Model Client](https://ots.telecomsxchange.com) ( Originally trained on an English dataset, the system requires contributions from more users for adaptation to other languages)
+
+
+### Contribute to the Open Text Shield Project
+
+We are excited to extend the Open Text Shield Project's capabilities to languages beyond English, and we need your help! If you're proficient in a language other than English and are interested in text classification, this is your opportunity to contribute to an open-source project that's making a difference.
+
+**How to Contribute:**
+
+- **Language Data:** We're looking for datasets in various languages to train our model for spam/ham classification. If you have access to such data or can help in compiling one, please reach out. here is a sample structure of the data set we need:
+
+```csv
+text,label
+Congratulations! You've won a $1000 Walmart gift card. Go to http://bit.ly/12345 to claim now.,spam
+Your account has been temporarily locked. Please log in at http://fake-bank.example.com to unlock.,phishing
+"Hey, are you coming to the party tonight?",ham
+Urgent! Your credit card has been compromised. Call 1800-FAKE-NUM immediately.,phishing
+"Hi, this is your friend. Can you do me a favor and send me the verification code you just received?",phishing
+This is just a normal message checking in on you. How have you been?,ham
+You have one new voicemail. Please call 123456789 to listen.,spam
+Your parcel is awaiting delivery. Please confirm your address at http://fake-parcel.com,phishing
+Your verification code is 56667,ham
+Your Microsoft verification code is 12345,ham
+Reset your bank account password at https://bakofamerica.com/resetpassword,phishing
+Your pin code is 1234,ham
+Your remaining balance is 1000 USD.,ham
+```
+
+- **Translation:** Help us by translating our documentation and interface to make the project accessible to a wider audience.
+- **Model Training:** If you have experience in NLP and model training, your expertise can greatly aid in adapting our system to new languages.
+- **Testing and Feedback:** Test the model in your language, provide feedback on its accuracy, and suggest improvements.
+
+**Getting Started:**
+
+1. Check out our [GitHub repository](https://github.com/TelecomsXChangeAPi/OpenTextShield/).
+2. Read our contribution guidelines for more detailed information on how you can help.
+3. Join our community on [platform, e.g., Slack, Discord] to connect with other contributors and coordinate efforts.
+
+Every contribution, big or small, makes a significant impact. Join us in making text classification accessible and effective for speakers of all languages!
+
 
 #### BERT Overview
 
