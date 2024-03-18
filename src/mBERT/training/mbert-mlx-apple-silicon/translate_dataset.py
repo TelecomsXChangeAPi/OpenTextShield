@@ -1,7 +1,7 @@
 import pandas as pd
 from openai import OpenAI
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='OPENAI_KEY')
 
 def translate_text(text, target_language="ar"):
     """
