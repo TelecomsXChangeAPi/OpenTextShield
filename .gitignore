@@ -6,5 +6,7 @@ src/FastText/training/ft_data.txt
 src/BERT/training/sms_spam_phishing_dataset.csv
 src/BERT/training/bert_sms_spam_phishing_model/*
 src/FastText/training/ots_sms_model_v1.1.bin
+src/mBERT/training/mbert-mlx-apple-silicon/translate_dataset.py
+
 
 src/BERT/training/sms_spam_phishing_dataset_v1.2.csv
