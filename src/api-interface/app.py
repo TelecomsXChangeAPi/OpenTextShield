@@ -24,7 +24,7 @@ app.add_middleware(
 )
 
 # Update the model path to the one you want to use
-bert_model_path = "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.2.pth"
+bert_model_path = "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth"
 
 # Load BERT model with updated approach
 config = BertConfig.from_pretrained('bert-base-uncased', num_labels=3)  # Adjust num_labels as per your model
@@ -91,7 +91,7 @@ async def predict_sms(sms: SMS):
         label_map = {0: 'ham', 1: 'spam', 2: 'phishing'}
         label = label_map[prediction]
         probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
-        model_info = {"Model_Name": "OTS_bert", "Model_Version": "1.1.4"}
+        model_info = {"Model_Name": "OTS_bert", "Model_Version": "1.5"}
     elif sms.model == "fasttext":
         label, probability = fasttext_model.predict(sms.text, k=1)
         label = label[0].replace('__label__', '')
@@ -112,7 +112,7 @@ async def predict_sms(sms: SMS):
         "processing_time": end_time - start_time,
         **model_info,
         "Model_Author": "TelecomsXChange (TCXC)",
-        "Last_Training": "2023-12-21"  # Update accordingly
+        "Last_Training": "2024-03-11"  # Update accordingly
     }
 
 @app.post("/feedback-loop/", dependencies=[Depends(verify_ip_address)])

@@ -47,14 +47,14 @@ def create_data_loader(df, tokenizer, max_len, batch_size, num_workers=0):
 
 def main():
     # Detect encoding
-    with open('sms_spam_phishing_dataset_v1.2.csv', 'rb') as f:
+    with open('sms_spam_phishing_dataset_v1.5.csv', 'rb') as f:
         result = chardet.detect(f.read())
         file_encoding = result['encoding']
 
     print("Detected encoding:", file_encoding)
 
     # Load Dataset
-    df = pd.read_csv('sms_spam_phishing_dataset_v1.2.csv', encoding=file_encoding)
+    df = pd.read_csv('sms_spam_phishing_dataset_v1.5.csv', encoding=file_encoding)
     df['label'] = df['label'].map({'ham': 0, 'spam': 1, 'phishing': 2})  # Convert labels to numerical
 
     # Parameters
@@ -122,7 +122,7 @@ def main():
     print(f"Test Accuracy: {accuracy * 100:.2f}%")
 
     # Save the Model
-    torch.save(model.state_dict(), 'bert_ots_model_1.2.pth')
+    torch.save(model.state_dict(), 'bert_ots_model_1.5.pth')
 
 if __name__ == '__main__':
     main()
