@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from datetime import datetime
 from fastapi.responses import FileResponse
 import torch
-from transformers import BertTokenizer, BertForSequenceClassification, BertConfig
+from transformers import AutoTokenizer, BertForSequenceClassification, BertConfig
 import fasttext
 import csv
 
@@ -23,28 +23,36 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Update the model path to the one you want to use
-bert_model_path = "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth"
+# Path to your models
+bert_model_path = {
+    "bert-base-uncased": "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth",
+    "bert-base-multilingual-cased": "../mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_1.7.pth"
+}
 
-# Load BERT model with updated approach
-config = BertConfig.from_pretrained('bert-base-uncased', num_labels=3)  # Adjust num_labels as per your model
-bert_model = BertForSequenceClassification(config)
-bert_model.load_state_dict(torch.load(bert_model_path, map_location=torch.device('cpu')))
-bert_model.eval()
+# Load models dynamically based on the model type
+models = {}
 
-# Specify the device
-device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
-bert_model = bert_model.to(device)
-
-bert_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+for model_name, model_path in bert_model_path.items():
+    config = BertConfig.from_pretrained(model_name, num_labels=3)  # Adjust num_labels as per your model
+    model = BertForSequenceClassification(config)
+    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+    model.eval()
+    models[model_name] = model.to(torch.device("cpu"))  # Assuming CPU for simplicity
 
 # Load FastText model
 fasttext_model_path = "../FastText/training/ots_sms_model_v1.1.bin"
 fasttext_model = fasttext.load_model(fasttext_model_path)
 
+# Tokenizers for each BERT model
+tokenizers = {
+    model_name: AutoTokenizer.from_pretrained(model_name)
+    for model_name in bert_model_path.keys()
+}
+
 class SMS(BaseModel):
     text: str
     model: str  # "bert" or "fasttext"
+    bert_version: Optional[str] = "bert-base-uncased"  # "bert-base-uncased" or "bert-base-multilingual-cased"
 
 class Feedback(BaseModel):
     content: str
@@ -53,6 +61,7 @@ class Feedback(BaseModel):
     thumbs_down: bool
     user_id: Optional[str] = None
     model: str  # "bert" or "fasttext"
+    bert_version: Optional[str] = "bert-base-uncased"
 
 def preprocess_text(text, tokenizer, max_len=128):
     return tokenizer.encode_plus(
@@ -83,15 +92,19 @@ async def predict_sms(sms: SMS):
         raise HTTPException(status_code=400, detail="Text is empty")
 
     if sms.model == "bert":
-        inputs = preprocess_text(sms.text, bert_tokenizer)
-        inputs = {k: v.to(device) for k, v in inputs.items()}  # Ensure inputs are moved to the correct device
+        bert_version = sms.bert_version if sms.bert_version in models else "bert-base-uncased"
+        tokenizer = tokenizers[bert_version]
+        model = models[bert_version]
+
+        inputs = preprocess_text(sms.text, tokenizer)
+        inputs = {k: v.to(torch.device("cpu")) for k, v in inputs.items()}  # Ensure inputs are on the correct device
         with torch.no_grad():
-            outputs = bert_model(**inputs)
+            outputs = model(**inputs)
             prediction = torch.argmax(outputs.logits, dim=1).item()
         label_map = {0: 'ham', 1: 'spam', 2: 'phishing'}
         label = label_map[prediction]
         probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
-        model_info = {"Model_Name": "OTS_bert", "Model_Version": "1.5"}
+        model_info = {"Model_Name": "OTS_bert", "Model_Version": bert_version}
     elif sms.model == "fasttext":
         label, probability = fasttext_model.predict(sms.text, k=1)
         label = label[0].replace('__label__', '')
@@ -139,4 +152,5 @@ async def download_feedback(model_name: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=8002)
+
