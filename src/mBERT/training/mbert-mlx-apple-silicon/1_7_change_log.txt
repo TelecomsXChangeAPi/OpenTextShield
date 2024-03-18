@@ -1,0 +1,2 @@
+- added full arabic dataset
+- added additional indonesian spam/ham data set - small data (TBC in 1.8)
