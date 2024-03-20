@@ -61,7 +61,7 @@ nvidia-cusparse-cu12==12.1.0.106
 nvidia-nccl-cu12==2.19.3
 nvidia-nvjitlink-cu12==12.4.99
 nvidia-nvtx-cu12==12.1.105
-oauthlib==3.2.0
+oauthlib==3.2.2
 packaging==24.0
 parsedatetime==2.6
 pexpect==4.8.0
