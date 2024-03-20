@@ -34,7 +34,7 @@ def generate_random_text(base_text, index):
     return f"{base_text} - Message {index} - Random {random.randint(1, 10000)}"
 
 def main():
-    model_path = '/Users/ameedjamous/programming/OpenTextShield/src/BERT/training/bert_sms_spam_phishing_model'
+    model_path = '~/programming/OpenTextShield/src/BERT/training/bert_sms_spam_phishing_model'
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     model = load_model(model_path)
 
