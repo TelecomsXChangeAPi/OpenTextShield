@@ -17,7 +17,7 @@ command-not-found==0.3
 ConfigArgParse==1.5.3
 configobj==5.0.6
 constantly==15.1.0
-cryptography==3.4.8
+cryptography==42.0.4
 dbus-python==1.2.18
 distro==1.7.0
 distro-info==1.1+ubuntu0.2
