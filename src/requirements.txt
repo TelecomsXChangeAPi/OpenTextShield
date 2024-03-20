@@ -74,7 +74,7 @@ pydantic_core==2.16.3
 PyGObject==3.42.1
 PyHamcrest==2.0.2
 PyICU==2.8.1
-PyJWT==2.3.0
+PyJWT==2.4.0
 pyOpenSSL==21.0.0
 pyparsing==2.4.7
 pyRFC3339==1.1
