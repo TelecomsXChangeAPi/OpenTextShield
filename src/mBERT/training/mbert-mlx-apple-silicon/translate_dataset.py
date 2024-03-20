@@ -1,3 +1,11 @@
+"""
+This script is designed to leverage OpenAI's GPT models to translate an English dataset into different languages.
+It addresses situations where there is a lack of organic datasets available in the target language. By utilizing
+OpenAI's advanced language models, this script facilitates the creation of translated datasets that can be used
+for various applications such as training machine learning models, data analysis, and more in languages where
+data might be scarce or unavailable.
+"""
+
 import pandas as pd
 from openai import OpenAI
 
