@@ -1,0 +1,2 @@
+- train on more ham examples with shorten urls
+- train on phishing/ham urls examples - just urls
