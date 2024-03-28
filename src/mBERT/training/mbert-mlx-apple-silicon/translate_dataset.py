@@ -7,18 +7,20 @@ data might be scarce or unavailable.
 """
 
 import pandas as pd
+import time
 from openai import OpenAI
+from tqdm import tqdm  # For displaying the progress bar
 
-client = OpenAI(api_key='API_KEY')
+client = OpenAI(api_key='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')
 
-def translate_text(text, target_language="id"):  # Change default target language to Indonesian
+def translate_text(text, target_language="it"):
     """
     Translate text to the target language using OpenAI's Translation API.
     """
     try:
-        response = client.chat.completions.create(model="gpt-3.5-turbo",  # Use the latest suitable model for translation
+        response = client.chat.completions.create(model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "Translate the following English text to Indonesian."},  # Specify Indonesian translation
+            {"role": "system", "content": f"You are a professional multilingual Translator, Translate the following text to Italian language text, if text does not have a meaning in any language then leave it unchanged"},
             {"role": "user", "content": text}
         ])
         return response.choices[0].message.content
@@ -26,22 +28,29 @@ def translate_text(text, target_language="id"):  # Change default target languag
         print(f"An error occurred: {e}")
         return None
 
+
 # Load your dataset
-df = pd.read_csv('sms_spam_phishing_dataset_v1.6.csv')
+df = pd.read_csv('dataset/sms_spam_phishing_dataset_v1.6-XSmall.csv')
 
 # Prepare a list to hold translated rows
 translated_rows = []
 
-for index, row in df.iterrows():
-    translated_text = translate_text(row['text'], "id")  # Ensure the target_language is set correctly
+start_time = time.time()  # Start time measurement
+
+# Iterate through the dataset with a progress bar
+for index, row in tqdm(df.iterrows(), total=df.shape[0], desc="Translating"):
+    translated_text = translate_text(row['text'], "it")
     if translated_text:
         translated_rows.append({'text': translated_text, 'label': row['label']})
+
+end_time = time.time()  # End time measurement
+total_time = end_time - start_time  # Calculate total time taken
 
 # Convert translated rows to a DataFrame
 translated_df = pd.DataFrame(translated_rows)
 
-# Since you now want only the translated data in the output,
-# we skip appending the original DataFrame and directly work with the translated DataFrame.
-
 # Save the translated DataFrame to a new CSV file with UTF-8-BOM encoding
-translated_df.to_csv('translated_dataset1_6_indonesian.csv', index=False, encoding='utf-8-sig')
+translated_df.to_csv('translated_dataset1_6_XSmall_italian.csv', index=False, encoding='utf-8-sig')
+
+# Print the total time taken
+print(f"Completed translation in {total_time:.2f} seconds.")
