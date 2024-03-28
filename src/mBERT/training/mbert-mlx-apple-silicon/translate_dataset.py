@@ -11,7 +11,7 @@ import time
 from openai import OpenAI
 from tqdm import tqdm  # For displaying the progress bar
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='KEY')
 
 def translate_text(text, target_language="it"):
     """
