@@ -13,7 +13,7 @@ import csv
 app = FastAPI()
 
 # Allowed IPs
-ALLOWED_IPS = {"127.0.0.1", "localhost", "10.0.0.1"}
+ALLOWED_IPS = {"ANY","127.0.0.1", "localhost", "10.0.0.1"}
 
 app.add_middleware(
     CORSMiddleware,
@@ -26,7 +26,7 @@ app.add_middleware(
 # Path to your models
 bert_model_path = {
     "bert-base-uncased": "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth",
-    "bert-base-multilingual-cased": "../mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_1.7.pth"
+    "bert-base-multilingual-cased": "../mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_1.9_0.pth"
 }
 
 # Load models dynamically based on the model type
@@ -79,10 +79,13 @@ def write_feedback(feedback_data, model_name):
         writer.writerow(feedback_data)
         
 def verify_ip_address(request: Request):
+    if "ANY" in ALLOWED_IPS:
+        return request.client.host  # Bypass IP check and allow any IP
+    # This line should be outside the if block, as it's part of the general flow
     client_host = request.client.host
     if client_host not in ALLOWED_IPS:
         raise HTTPException(status_code=403, detail="Access denied")
-    return client_host        
+    return client_host
 
 @app.post("/predict/", dependencies=[Depends(verify_ip_address)])
 async def predict_sms(sms: SMS):
