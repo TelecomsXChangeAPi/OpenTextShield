@@ -13,7 +13,7 @@ import csv
 app = FastAPI()
 
 # Allowed IPs
-ALLOWED_IPS = {"127.0.0.1", "localhost", "10.0.0.1"}
+ALLOWED_IPS = {"ANY", "127.0.0.1", "localhost", "10.0.0.1"}
 
 app.add_middleware(
     CORSMiddleware,
@@ -26,7 +26,7 @@ app.add_middleware(
 # Path to your models
 bert_model_path = {
     "bert-base-uncased": "../BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth",
-    "bert-base-multilingual-cased": "../mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_1.7.pth"
+    "bert-base-multilingual-cased": "../mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_1.9_0.pth"
 }
 
 # Load models dynamically based on the model type
@@ -40,7 +40,7 @@ for model_name, model_path in bert_model_path.items():
     models[model_name] = model.to(torch.device("cpu"))  # Assuming CPU for simplicity
 
 # Load FastText model
-fasttext_model_path = "../FastText/training/ots_sms_model_v1.1.bin"
+fasttext_model_path = "../FastText/training/ots_fastext_model_v1.9.0.bin"
 fasttext_model = fasttext.load_model(fasttext_model_path)
 
 # Tokenizers for each BERT model
@@ -78,11 +78,22 @@ def write_feedback(feedback_data, model_name):
             writer.writerow(["Timestamp", "UserID", "Content", "Feedback", "Thumbs Up", "Thumbs Down"])
         writer.writerow(feedback_data)
         
+#def verify_ip_address(request: Request):
+#    client_host = request.client.host
+#    if client_host not in ALLOWED_IPS:
+#        raise HTTPException(status_code=403, detail="Access denied")
+#    return client_host        
+
 def verify_ip_address(request: Request):
+    if "ANY" in ALLOWED_IPS:
+        return request.client.host  # Bypass IP check and allow any IP
+    # This line should be outside the if block, as it's part of the general flow
     client_host = request.client.host
     if client_host not in ALLOWED_IPS:
         raise HTTPException(status_code=403, detail="Access denied")
-    return client_host        
+    return client_host
+
+
 
 @app.post("/predict/", dependencies=[Depends(verify_ip_address)])
 async def predict_sms(sms: SMS):
@@ -104,16 +115,16 @@ async def predict_sms(sms: SMS):
         label_map = {0: 'ham', 1: 'spam', 2: 'phishing'}
         label = label_map[prediction]
         probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
-        model_info = {"Model_Name": "OTS_bert", "Model_Version": bert_version}
+        model_info = {"Model_Name": "OTS_mBERT", "Model_Version": bert_version}
     elif sms.model == "fasttext":
         label, probability = fasttext_model.predict(sms.text, k=1)
         label = label[0].replace('__label__', '')
         probability = probability[0]
         model_info = {
             "Model_Name": "OTS_fasttext",
-            "Model_Version": "1.1.4",
+            "Model_Version": "1.9.0",
             "Model_Author": "TelecomsXChange (TCXC)",
-            "Last_Training": "2023-12-21"
+            "Last_Training": "2024-03-20"
         }
     else:
         raise HTTPException(status_code=400, detail="Invalid model type")
@@ -125,7 +136,7 @@ async def predict_sms(sms: SMS):
         "processing_time": end_time - start_time,
         **model_info,
         "Model_Author": "TelecomsXChange (TCXC)",
-        "Last_Training": "2024-03-11"  # Update accordingly
+        "Last_Training": "2024-03-20"  # Update accordingly
     }
 
 @app.post("/feedback-loop/", dependencies=[Depends(verify_ip_address)])
