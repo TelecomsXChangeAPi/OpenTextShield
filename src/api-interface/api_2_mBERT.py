@@ -13,7 +13,7 @@ import csv
 app = FastAPI()
 
 # Allowed IPs
-ALLOWED_IPS = {"ANY", "127.0.0.1", "localhost", "10.0.0.1"}
+ALLOWED_IPS = {"ANY","127.0.0.1", "localhost", "10.0.0.1"}
 
 app.add_middleware(
     CORSMiddleware,
@@ -92,8 +92,6 @@ def verify_ip_address(request: Request):
     if client_host not in ALLOWED_IPS:
         raise HTTPException(status_code=403, detail="Access denied")
     return client_host
-
-
 
 @app.post("/predict/", dependencies=[Depends(verify_ip_address)])
 async def predict_sms(sms: SMS):
