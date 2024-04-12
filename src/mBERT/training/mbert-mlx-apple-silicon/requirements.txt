@@ -26,7 +26,7 @@ cycler==0.11.0
 decorator==5.1.1
 dill==0.3.2
 dnslib==0.9.23
-dnspython==2.3.0
+dnspython==2.6.1
 docstring-to-markdown==0.12
 ecdsa==0.18.0
 emoji==2.4.0
