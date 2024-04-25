@@ -110,7 +110,7 @@ PyAudio==0.2.14
 pybind11==2.11.1
 pycodestyle==2.10.0
 pycparser==2.21
-pydantic==1.10.4
+pydantic==1.10.13
 pydocstyle==6.2.3
 pyflakes==3.0.1
 Pygments==2.15.0
