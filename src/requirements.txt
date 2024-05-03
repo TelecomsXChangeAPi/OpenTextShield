@@ -100,7 +100,7 @@ sympy==1.12
 systemd-python==234
 tokenizers==0.15.2
 torch==2.2.1
-tqdm==4.66.2
+tqdm==4.66.3
 transformers==4.38.2
 triton==2.2.0
 Twisted==23.10.0
