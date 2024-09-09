@@ -173,7 +173,7 @@ urllib3==1.26.19
 uvicorn==0.23.2
 visions==0.7.5
 wcwidth==0.2.6
-Werkzeug==2.3.8
+Werkzeug==3.0.3
 whatthepatch==1.0.4
 wrapt==1.15.0
 yapf==0.32.0
