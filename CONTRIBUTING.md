@@ -1,4 +1,4 @@
-# Contributing to Open Text Shield
+# Contributing to Open Text Shield (OTS)
 
 First off, thank you for considering contributing to Open Text Shield! Your support and involvement are invaluable to the success of this project.
 
@@ -54,8 +54,9 @@ If you find a bug, please report it by [opening an issue](https://github.com/Ope
 
 We welcome suggestions for new features or improvements:
 
+
 - **Discuss First**: It's often helpful to discuss your ideas with the maintainers before investing time in development.
-- **Open an Issue**: Use the [issue tracker](https://github.com/OpenTextShield/OpenTextShield/issues) to describe your enhancement in detail.
+- **Open an Issue**: Use the [issue tracker](https://github.com/TelecomsXChangeAPi/OpenTextShield/issues) to describe your enhancement in detail.
 - **Be Clear and Concise**: Explain the motivation behind the enhancement and how it benefits users.
 
 ### Submitting Pull Requests
@@ -123,4 +124,4 @@ By contributing, you agree that your contributions will be licensed under the [M
 
 ---
 
-Thank you for your interest in contributing to Open Text Shield! Your involvement helps make this project better for everyone.
+Thank you for your interest in contributing to Open Text Shield (OTS)! Your involvement helps make this project better for everyone.
