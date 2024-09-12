@@ -114,7 +114,7 @@ We appreciate your efforts to improve the codebase:
 
 ## Community and Support
 
-- **Discussions**: Join our [GitHub Discussions]([https://github.com/TelecomsXChangeAPi/OpenTextShield/discussions) to engage with the community.
+- **Discussions**: Join our [GitHub Discussions](https://github.com/TelecomsXChangeAPi/OpenTextShield/discussions) to engage with the community.
 - **Email**: For sensitive matters, contact the maintainers via email at [support@telecomsxchange.com](mailto:support@telecomsxchange.com).
 
 ## License
