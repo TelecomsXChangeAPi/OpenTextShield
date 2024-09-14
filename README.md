@@ -7,9 +7,10 @@
 Open Source Collaborative AI for Enhanced Telecom Messaging Security & Revenue Protection
 
 
+
 ## Quickstart
 
-You can deploy **OTS** in your environment within minutes. For detailed steps, refer to the [Installation Guide](Installation.md).
+You can deploy **OTS** in your environment within minutes. Please note that our Dockerized version currently supports only ARM architecture. We plan to release an image for AMD/Intel architectures soon. For detailed steps, refer to the [Installation Guide](Installation.md).
 
 # Paper 1.2
 
