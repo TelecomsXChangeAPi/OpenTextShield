@@ -13,6 +13,8 @@
 
 Setting up **Open Text Shield** is quick and easy with Docker. Follow these steps to get started:
 
+**Note:** Our Dockerized version currently supports only ARM architecture. We plan to release a version for AMD/Intel architectures soon.
+
 ### 1. Pull the Latest Docker Image
 ```bash
 docker pull telecomsxchange/opentextshield:latest
