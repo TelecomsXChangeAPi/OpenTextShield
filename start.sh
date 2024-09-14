@@ -25,6 +25,10 @@ else
   source $VENV_PATH/bin/activate
 fi
 
+# Check if uvicorn is installed and output its path
+echo "Checking if uvicorn is installed..."
+command -v uvicorn || { echo "uvicorn is not installed. Exiting."; exit 1; }
+
 # Start the API service using Uvicorn (correct module path)
 echo "Starting the OpenTextShield API..."
 uvicorn src.api-interface.api_2_mBERT:app --host 0.0.0.0 --port 8002
