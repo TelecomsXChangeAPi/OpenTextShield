@@ -6,6 +6,11 @@
 # Open Text Shield (OTS)
 Open Source Collaborative AI for Enhanced Telecom Messaging Security & Revenue Protection
 
+
+## Quickstart
+
+You can deploy **OTS** in your environment within minutes. For detailed steps, refer to the [Installation Guide](Installation.md).
+
 # Paper 1.2
 
 
