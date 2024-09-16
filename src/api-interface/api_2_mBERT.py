@@ -4,11 +4,11 @@ from fastapi import FastAPI, HTTPException, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime
-from fastapi.responses import FileResponse
 import torch
 from transformers import AutoTokenizer, BertForSequenceClassification, BertConfig
 import fasttext
 import csv
+import numpy as np  # Import numpy for array handling
 
 app = FastAPI()
 
@@ -25,7 +25,7 @@ app.add_middleware(
 
 # Path to your models
 bert_model_path = {
-    "bert-base-uncased": "/home/ots/OpenTextShield/src/BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth",
+    #"bert-base-uncased": "/home/ots/OpenTextShield/src/BERT/training/bert-mlx-apple-silicon/bert_ots_model_1.5.pth",
     "bert-base-multilingual-cased": "/home/ots/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_2.1.pth"
 }
 
@@ -42,6 +42,17 @@ for model_name, model_path in bert_model_path.items():
 # Load FastText model
 fasttext_model_path = "/home/ots/OpenTextShield/src/FastText/training/ots_fastext_model_v2.1.bin"
 fasttext_model = fasttext.load_model(fasttext_model_path)
+
+# Manually handle the labels and probs output from FastText
+def patched_predict(text, k=1):
+    labels, probs = fasttext_model.original_predict(text, k)
+    return labels, np.asarray(probs)  # Keep np.asarray to ensure compatibility
+
+# Save the original predict method in case it's needed later
+fasttext_model.original_predict = fasttext_model.predict
+
+# Patch the predict method
+fasttext_model.predict = patched_predict
 
 # Tokenizers for each BERT model
 tokenizers = {
@@ -111,7 +122,10 @@ async def predict_sms(sms: SMS):
     elif sms.model == "fasttext":
         label, probability = fasttext_model.predict(sms.text, k=1)
         label = label[0].replace('__label__', '')
-        probability = probability[0]
+
+        # Convert probability to a float to make it JSON serializable
+        probability = float(probability[0])
+
         model_info = {
             "Model_Name": "OTS_fasttext",
             "Model_Version": "1.9.0",
@@ -130,6 +144,3 @@ async def predict_sms(sms: SMS):
         "Model_Author": "TelecomsXChange (TCXC)",
         "Last_Training": "2024-03-20"
     }
-
-# Feedback and download-feedback routes remain unchanged
-
