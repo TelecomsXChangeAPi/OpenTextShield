@@ -5,6 +5,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import pandas as pd
 import chardet
+import time
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger()
 
 class TextDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_len):
@@ -51,11 +57,12 @@ def main():
         result = chardet.detect(f.read())
         file_encoding = result['encoding']
 
-    print("Detected encoding:", file_encoding)
+    logger.info(f"Detected file encoding: {file_encoding}")
 
     # Load Dataset
     df = pd.read_csv('dataset/sms_spam_phishing_dataset_v2.1.csv', encoding=file_encoding)
     df['label'] = df['label'].map({'ham': 0, 'spam': 1, 'phishing': 2})  # Convert labels to numerical
+    logger.info("Dataset loaded and labels converted to numerical values.")
 
     # Parameters
     BATCH_SIZE = 16
@@ -64,16 +71,20 @@ def main():
 
     # Split Data
     train_df, test_df = train_test_split(df, test_size=0.1)
+    logger.info(f"Data split into train and test sets. Train size: {len(train_df)}, Test size: {len(test_df)}")
 
     # Update to use mBERT
     tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
+    logger.info("Tokenizer loaded from bert-base-multilingual-cased.")
 
     # Create Data Loaders
     train_data_loader = create_data_loader(train_df, tokenizer, MAX_LEN, BATCH_SIZE)
     test_data_loader = create_data_loader(test_df, tokenizer, MAX_LEN, BATCH_SIZE)
+    logger.info("Data loaders created for training and testing datasets.")
 
     # Update to use mBERT
     model = BertForSequenceClassification.from_pretrained('bert-base-multilingual-cased', num_labels=3)
+    logger.info("Model loaded from bert-base-multilingual-cased with 3 output labels.")
 
     # Device detection logic updated for better clarity
     if torch.backends.mps.is_available():
@@ -82,16 +93,22 @@ def main():
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
-    print("Device:", device)
+    logger.info(f"Using device: {device}")
     model.to(device)
 
     # Optimizer
     optimizer = AdamW(model.parameters(), lr=2e-5)
+    logger.info("Optimizer initialized with learning rate 2e-5.")
+
+    # Start time tracking
+    start_time = time.time()
+    logger.info("Training started.")
 
     # Training Loop
     for epoch in range(EPOCHS):
         model.train()
-        for batch in train_data_loader:
+        running_loss = 0.0
+        for batch_idx, batch in enumerate(train_data_loader):
             input_ids = batch['input_ids'].to(device)
             attention_mask = batch['attention_mask'].to(device)
             labels = batch['labels'].to(device)
@@ -102,9 +119,19 @@ def main():
             optimizer.step()
             optimizer.zero_grad()
 
-        print(f"Epoch {epoch + 1}/{EPOCHS} completed.")
+            running_loss += loss.item()
+            if batch_idx % 100 == 0:
+                logger.info(f"Epoch {epoch + 1}/{EPOCHS}, Batch {batch_idx}/{len(train_data_loader)}, Loss: {loss.item():.4f}")
+
+        logger.info(f"Epoch {epoch + 1}/{EPOCHS} completed. Average Loss: {running_loss / len(train_data_loader):.4f}")
+
+    # End time tracking
+    end_time = time.time()
+    training_time = end_time - start_time
+    logger.info(f"Training completed in: {training_time // 60:.0f} minutes and {training_time % 60:.0f} seconds.")
 
     # Evaluate
+    logger.info("Evaluation started.")
     model.eval()
     predictions, true_labels = [], []
     for batch in test_data_loader:
@@ -120,10 +147,12 @@ def main():
         true_labels.extend(labels.tolist())
 
     accuracy = accuracy_score(true_labels, predictions)
-    print(f"Test Accuracy: {accuracy * 100:.2f}%")
+    logger.info(f"Test Accuracy: {accuracy * 100:.2f}%")
 
     # Save the Model
-    torch.save(model.state_dict(), 'mbert_ots_model_2.1.pth')
+    model_path = 'mbert_ots_model_2.1.pth'
+    torch.save(model.state_dict(), model_path)
+    logger.info(f"Model saved to {model_path}")
 
 if __name__ == '__main__':
     main()
