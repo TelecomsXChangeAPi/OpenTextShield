@@ -2,7 +2,6 @@
 <img src="https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/71b21aa8-751f-4f4d-87cf-72a7a8c97341" width="300" alt="DALL·E 2023-12-16 21 51 26 - A logo for 'OpenTextShield', symbolizing collaborative AI for enhanced messaging spam security. The logo features a shield shape to represent security">
 
 
-
 # Open Text Shield (OTS)
 Open Source Collaborative AI for Enhanced Telecom Messaging Security & Revenue Protection
 
@@ -25,12 +24,7 @@ Detection: A Comparative Study of FastText and BERT
 
 ### Flow
 
-![7aa7Q3P3uds5KEtfTww76j](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/c2fbf6a4-0fff-45b5-b8d3-cbbc4312b7df)
-
-### Files Structure
-
-![5TXULnDCrAfSQDEPXwPAKt](https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/d4aa27ae-22ae-4219-92c2-76039a4757e9)
-
+[![](https://mermaid.ink/img/pako:eNq9VNFu2jAU_RXLE28pSwgUyEOlAkVCGmtV0KRNlpBJbsBqYmeOs5VF-ffdxECBsr1tfovvOeeeexy7pKGKgAa01SqFFCYgJaNmCykwGhBGI65fGHXIfvML14KvE8jrKiIzLVKud2OVKG0JH1x34k08y4FoA5_4GpIRD182WhUy2qP8Zu2VQRtxoTKYDIf3D4f6qzmtTZtla4mQcFrrTyejulZVVavFZA7fC5AhTATfaJ4ySXBlHPuFIuPSkHEiQJr3-_dPs9VMorOYhzjtu_rjcrFKRw_Py9Uc80uuA6Y8N0s0f8BYlG1Jbu7uLroE5OlxsSQfMw2RCA1jsrTD42yMflWFJov5goQKGSiwBY2H5DCaNuo1Zo1J4uy2z7l40-_CdUDGPElIwycHNomVJnsLQu09XxDJzTX3z2AKLU-4RENeJOa6nVrBRlEz80zhYZGfwmyvCViJz8oAUT9AH4mz-Og-xrBtWETkSMSDzw1E_zzzt75_z_38Z7iI_sT8n-I_5__3E6AOTUGnXET4WJS14Pk7ATGvcZTJCqG8MGqxkyENjC7AoXj1N1saxDzJ8avIIm4Od_K4iy2N0nP7HDWvkkPxKn1T6g2D3zQo6SsNvEGv7Xtu1-8Me51-b3jr0B0N_E6v3fWH3q3XHXQG_b5fOfRXI-C2e65d_duu63bdQfUbjP2kcQ?type=png)](https://mermaid.live/edit#pako:eNq9VNFu2jAU_RXLE28pSwgUyEOlAkVCGmtV0KRNlpBJbsBqYmeOs5VF-ffdxECBsr1tfovvOeeeexy7pKGKgAa01SqFFCYgJaNmCykwGhBGI65fGHXIfvML14KvE8jrKiIzLVKud2OVKG0JH1x34k08y4FoA5_4GpIRD182WhUy2qP8Zu2VQRtxoTKYDIf3D4f6qzmtTZtla4mQcFrrTyejulZVVavFZA7fC5AhTATfaJ4ySXBlHPuFIuPSkHEiQJr3-_dPs9VMorOYhzjtu_rjcrFKRw_Py9Uc80uuA6Y8N0s0f8BYlG1Jbu7uLroE5OlxsSQfMw2RCA1jsrTD42yMflWFJov5goQKGSiwBY2H5DCaNuo1Zo1J4uy2z7l40-_CdUDGPElIwycHNomVJnsLQu09XxDJzTX3z2AKLU-4RENeJOa6nVrBRlEz80zhYZGfwmyvCViJz8oAUT9AH4mz-Og-xrBtWETkSMSDzw1E_zzzt75_z_38Z7iI_sT8n-I_5__3E6AOTUGnXET4WJS14Pk7ATGvcZTJCqG8MGqxkyENjC7AoXj1N1saxDzJ8avIIm4Od_K4iy2N0nP7HDWvkkPxKn1T6g2D3zQo6SsNvEGv7Xtu1-8Me51-b3jr0B0N_E6v3fWH3q3XHXQG_b5fOfRXI-C2e65d_duu63bdQfUbjP2kcQ)
 
 
 ## Abstract:
