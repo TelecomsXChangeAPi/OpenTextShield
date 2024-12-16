@@ -15,7 +15,7 @@ cloud-init==23.4.4
 colorama==0.4.4
 command-not-found==0.3
 ConfigArgParse==1.5.3
-configobj==5.0.6
+configobj==5.0.9
 constantly==15.1.0
 cryptography==43.0.1
 dbus-python==1.2.18
