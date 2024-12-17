@@ -1,0 +1,109 @@
+.
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── Dockerfile
+├── Installation.md
+├── LICENSE
+├── README.md
+├── installed_packages.txt
+├── project-structure.txt
+├── requirements.txt
+├── src
+│   ├── BERT
+│   │   ├── tests
+│   │   │   ├── prediction_logs.log
+│   │   │   ├── stressTest_1000_mlx.py
+│   │   │   ├── stressTest_20k_mlx_api.py
+│   │   │   ├── stressTest_500.py
+│   │   │   └── test_sms.py
+│   │   └── training
+│   │       ├── bert-mlx-apple-silicon
+│   │       │   ├── README.md
+│   │       │   ├── bert_ots_model_1.2.pth
+│   │       │   ├── bert_ots_model_1.5.pth
+│   │       │   ├── load_bert.py
+│   │       │   ├── main.py
+│   │       │   ├── requirements.txt
+│   │       │   ├── sms_spam_phishing_dataset_v1.2.csv
+│   │       │   ├── sms_spam_phishing_dataset_v1.5.csv
+│   │       │   ├── train_ots.py
+│   │       │   └── utils
+│   │       │       ├── __pycache__
+│   │       │       │   └── bert.cpython-311.pyc
+│   │       │       └── bert.py
+│   │       ├── bert_sms_spam_phishing_model
+│   │       │   ├── config.json
+│   │       │   └── model.safetensors
+│   │       └── train_ots.py
+│   ├── FastText
+│   │   ├── tests
+│   │   │   └── stressTest_500.py
+│   │   └── training
+│   │       ├── dataset
+│   │       │   ├── sms_spam_phishing_dataset_v1.7.5.csv
+│   │       │   └── sms_spam_phishing_dataset_v2.1.csv
+│   │       ├── ft_data.txt
+│   │       ├── ots_fastext_model_v1.7.5.bin
+│   │       ├── ots_fastext_model_v1.9.0.bin
+│   │       ├── ots_fastext_model_v2.0.0.bin
+│   │       ├── ots_fastext_model_v2.1.bin
+│   │       ├── ots_sms_model_v1.1.bin
+│   │       ├── test_sms.py
+│   │       └── train_ots.py
+│   ├── README.md
+│   ├── api-interface
+│   │   ├── README.md
+│   │   ├── api_2_mBERT.py
+│   │   ├── app.py
+│   │   └── openapi.yaml
+│   ├── mBERT
+│   │   ├── tests
+│   │   │   ├── prediction_logs.log
+│   │   │   ├── stressTest_1000_mlx.py
+│   │   │   ├── stressTest_20k_mlx_api.py
+│   │   │   ├── stressTest_500.py
+│   │   │   └── test_sms.py
+│   │   └── training
+│   │       └── mbert-mlx-apple-silicon
+│   │           ├── 1_7_5_change_log.txt
+│   │           ├── 1_7_6_change_log.txt
+│   │           ├── 1_7_change_log.txt
+│   │           ├── 1_8_0_change_log
+│   │           ├── 1_9_0_change_log
+│   │           ├── 2.1_change_log
+│   │           ├── README.md
+│   │           ├── clean_dataset.py
+│   │           ├── converted_bert.npz
+│   │           ├── dataset
+│   │           │   ├── phishing_urls_dataset.csv
+│   │           │   ├── sms_spam_indo-xsmall.csv
+│   │           │   ├── sms_spam_phishing_dataset_v1.5.csv
+│   │           │   ├── sms_spam_phishing_dataset_v1.6.csv
+│   │           │   ├── sms_spam_phishing_dataset_v1.7.5.csv
+│   │           │   ├── sms_spam_phishing_dataset_v1.7.6.csv
+│   │           │   ├── sms_spam_phishing_dataset_v1.7.csv
+│   │           │   ├── sms_spam_phishing_dataset_v2.0.csv
+│   │           │   ├── sms_spam_phishing_dataset_v2.1.csv
+│   │           │   └── translated_dataset1_6_SRILANKA.csv
+│   │           ├── load_bert.py
+│   │           ├── main.py
+│   │           ├── mbert_ots_model_1.5.pth
+│   │           ├── mbert_ots_model_1.6.pth
+│   │           ├── mbert_ots_model_1.7.pth
+│   │           ├── mbert_ots_model_1.7_5.pth
+│   │           ├── mbert_ots_model_1.8_0.pth
+│   │           ├── mbert_ots_model_1.9_0.pth
+│   │           ├── mbert_ots_model_2.0.pth
+│   │           ├── mbert_ots_model_2.1.pth
+│   │           ├── requirements.txt
+│   │           ├── train_ots.py
+│   │           ├── translate_dataset.py
+│   │           ├── translated_dataset1_6_SRILANKA.csv
+│   │           └── utils
+│   │               ├── __pycache__
+│   │               │   └── bert.cpython-311.pyc
+│   │               └── bert.py
+│   └── requirements.txt
+└── start.sh
+
+21 directories, 86 files
