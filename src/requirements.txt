@@ -99,7 +99,7 @@ starlette==0.36.3
 sympy==1.12
 systemd-python==234
 tokenizers==0.15.2
-torch==2.2.1
+torch==2.6.0
 tqdm==4.66.3
 transformers==4.38.2
 triton==2.2.0
