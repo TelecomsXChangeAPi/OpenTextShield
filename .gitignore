@@ -52,3 +52,12 @@ Thumbs.db
 # Archive models (older versions)
 src/mBERT/training/model-training/archive/models/*.pth
 src/mBERT/training/model-training/archive/models/*.bin
+
+# Specific older model versions (exclude from git, keep only 2.1 in LFS)
+src/mBERT/training/model-training/mbert_ots_model_1.5.pth
+src/mBERT/training/model-training/mbert_ots_model_1.6.pth
+src/mBERT/training/model-training/mbert_ots_model_1.7.pth
+src/mBERT/training/model-training/mbert_ots_model_1.7_5.pth
+src/mBERT/training/model-training/mbert_ots_model_1.8_0.pth
+src/mBERT/training/model-training/mbert_ots_model_1.9_0.pth
+src/mBERT/training/model-training/mbert_ots_model_2.0.pth
