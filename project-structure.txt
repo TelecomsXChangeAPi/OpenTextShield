@@ -5,6 +5,24 @@
 │   └── feedback_ots-mbert.csv
 ├── frontend
 │   └── index.html
+├── tests
+│   ├── api                      # API endpoint tests
+│   │   ├── test_api_complete.py
+│   │   ├── test_api_full.py
+│   │   ├── test_api_simple.py
+│   │   ├── test_api_structure.py
+│   │   ├── test_feedback_api.py
+│   │   └── test_server.py
+│   ├── integration              # Integration and e2e tests
+│   │   ├── test-docker.sh
+│   │   ├── test-frontend.sh
+│   │   └── test_feedback_curl.sh
+│   ├── data                     # Test data and fixtures
+│   │   ├── test_obvious_phishing.json
+│   │   ├── test_obvious_spam.json
+│   │   ├── test_phishing.json
+│   │   └── test_spam.json
+│   └── README.md               # Test documentation
 ├── src
 │   ├── api_interface
 │   │   ├── config
