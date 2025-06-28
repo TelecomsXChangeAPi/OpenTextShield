@@ -28,7 +28,7 @@ sniffio==1.3.1
 starlette==0.46.2
 sympy==1.13.1
 tokenizers==0.19.1
-torch==2.6.0
+torch==2.7.1
 tqdm==4.66.5
 transformers==4.46.3
 typing_extensions==4.12.2
