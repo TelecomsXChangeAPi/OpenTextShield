@@ -1,3 +1,0 @@
-bert_ots_model_1.2.pth filter=lfs diff=lfs merge=lfs -text
-mbert_ots_model_1.7.pth filter=lfs diff=lfs merge=lfs -text
-mbert_ots_model_1.6.pth filter=lfs diff=lfs merge=lfs -text
