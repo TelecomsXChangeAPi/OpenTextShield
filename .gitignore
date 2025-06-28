@@ -41,3 +41,11 @@ test_runner.log
 # OS
 .DS_Store
 Thumbs.db
+
+# Large model files - not tracked in git
+*.pth
+*.bin
+*.npz
+*.safetensors
+**/models/*.pth
+**/models/*.bin
