@@ -23,6 +23,14 @@ cd OpenTextShield
 ./start.sh
 
 # Or use Docker
+# Build and run (includes 679MB mBERT model)
+docker build -t opentextshield .
+docker run -d -p 8002:8002 -p 8080:8080 opentextshield
+
+# Alternative if port 8080 is busy
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+
+# Or use pre-built image
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 ```
 
@@ -88,12 +96,38 @@ pip install -r requirements.txt
 
 ### Docker Deployment
 ```bash
+# Build container with mBERT model (679MB model included)
+docker build -t opentextshield .
+
+# Build for specific architecture (x86) - Method 1: Direct tag
+docker buildx build --platform linux/amd64 -t telecomsxchange/opentextshield:2.1-x86-v2 .
+
+# Build for specific architecture (x86) - Method 2: Build then tag
+docker buildx build --platform linux/amd64 -t opentextshield:x86 .
+docker tag opentextshield:x86 telecomsxchange/opentextshield:2.1-x86-v2
+
+# Run container - adjust port if 8080 is in use
+docker run -d -p 8002:8002 -p 8080:8080 opentextshield
+
+# Alternative port mapping if needed
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+
 # Using Docker Compose (recommended)
 docker-compose up -d
 
-# Or direct Docker run
+# Pre-built images
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:2.1-x86-v2
 ```
+
+**Container Access:**
+- API: http://localhost:8002
+- Frontend: http://localhost:8080 (or 8081)
+- Health: http://localhost:8002/health
+
+**Architecture Support:**
+- ARM64 (Apple Silicon): `telecomsxchange/opentextshield:latest`
+- x86_64 (Intel/AMD): `telecomsxchange/opentextshield:2.1-x86-v2`
 
 ## 🏗 Architecture
 

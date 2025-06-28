@@ -13,15 +13,35 @@
 
 Setting up **Open Text Shield** is quick and easy with Docker. Follow these steps to get started:
 
-### 1. Pull the Latest Docker Image
+### 1. Build Docker Image (Recommended)
 ```bash
-docker pull telecomsxchange/opentextshield:latest
+# Clone the repository first
+git clone https://github.com/TelecomsXChangeAPi/OpenTextShield.git
+cd OpenTextShield
+
+# Build with mBERT model included (679MB)
+docker build -t opentextshield .
 ```
 
 ### 2. Run the Docker Container
 ```bash
-docker run -d -p 8002:8002 telecomsxchange/opentextshield:latest
+# Run with both API and frontend
+docker run -d -p 8002:8002 -p 8080:8080 opentextshield
+
+# Alternative if port 8080 is busy
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
 ```
+
+**Alternative: Use Pre-built Image**
+```bash
+docker pull telecomsxchange/opentextshield:latest
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
+```
+
+**Access Points:**
+- API: http://localhost:8002
+- Frontend: http://localhost:8080 (or 8081)
+- Health Check: http://localhost:8002/health
 
 ### 3. Send a Message for Prediction
 Once the container is running, you can send HTTP requests to the API to classify messages.

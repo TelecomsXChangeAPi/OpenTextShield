@@ -82,9 +82,14 @@ python train_ots_improved.py
 
 ### Docker Deployment
 ```bash
-# Build and run container with both API and frontend
+# Build container with both API and frontend (includes 679MB mBERT model)
 docker build -t opentextshield .
+
+# Run container - if port 8080 is in use, change to 8081:8080
 docker run -d -p 8002:8002 -p 8080:8080 opentextshield
+
+# Alternative if port 8080 is busy
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
 
 # Use docker-compose (recommended)
 docker-compose up -d
@@ -93,6 +98,11 @@ docker-compose up -d
 docker pull telecomsxchange/opentextshield:latest
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 ```
+
+**Container Services:**
+- **API**: http://localhost:8002 (with Swagger docs at /docs)
+- **Frontend**: http://localhost:8080 (or 8081 if using alternative port)
+- **Health Check**: http://localhost:8002/health
 
 ## Architecture Overview
 
