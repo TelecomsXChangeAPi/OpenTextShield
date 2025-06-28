@@ -38,8 +38,7 @@ class Settings:
             }
         }
         
-        # FastText Model
-        self.fasttext_model_path = "FastText/training/ots_fastext_model_v2.1.bin"
+        # Note: FastText support removed in v2.1 - now using mBERT only
         
         # Processing
         self.max_text_length = int(os.getenv("OTS_MAX_TEXT_LENGTH", "512"))

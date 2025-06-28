@@ -39,15 +39,17 @@ python tests/api/test_api_simple.py
 
 ### Integration Tests
 ```bash
-# Test Docker container
+# Test Docker container (comprehensive multi-scenario testing)
 bash tests/integration/test-docker.sh
 
-# Test frontend interface
+# Test frontend interface (validates complete frontend setup)
 bash tests/integration/test-frontend.sh
 
-# Test feedback API with curl
+# Test feedback API with curl (requires running API server)
 bash tests/integration/test_feedback_curl.sh
 ```
+
+**Note**: All scripts automatically set their working directory to the project root, so they can be run from any location.
 
 ### Model Tests (Located in src/mBERT/tests/)
 ```bash

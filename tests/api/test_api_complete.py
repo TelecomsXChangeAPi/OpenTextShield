@@ -12,7 +12,7 @@ import subprocess
 from pathlib import Path
 
 # Add project root to path
-project_root = Path(__file__).parent
+project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 def test_direct_health_endpoint():
@@ -116,8 +116,7 @@ def test_model_loading_logic():
             exists = model_path.exists()
             print(f"✅ {model_name}: {'Found' if exists else 'Missing'}")
         
-        fasttext_path = settings.models_base_path / settings.fasttext_model_path
-        print(f"✅ FastText model: {'Found' if fasttext_path.exists() else 'Missing'}")
+        print("✅ FastText: Removed in v2.1 - using mBERT only")
         
         return True
         

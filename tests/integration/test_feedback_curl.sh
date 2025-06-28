@@ -1,8 +1,17 @@
 #!/bin/bash
 
 # Test OpenTextShield Feedback API with cURL
+set -e
+
+# Ensure we're running from the project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$PROJECT_ROOT"
+
+echo "📂 Working directory: $PROJECT_ROOT"
 echo "🧪 Testing OpenTextShield Feedback API with cURL"
 echo "=================================================="
+echo ""
 
 API_URL="http://localhost:8002"
 

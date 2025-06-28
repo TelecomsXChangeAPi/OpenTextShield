@@ -4,7 +4,7 @@ certifi==2024.8.30
 charset-normalizer==3.3.2
 click==8.1.7
 fastapi==0.115.14
-fasttext==0.9.3
+# fasttext==0.9.3  # Removed in v2.1 - using mBERT only
 filelock==3.16.0
 fsspec==2024.9.0
 h11==0.16.0

@@ -3,8 +3,16 @@
 # Test script for OpenTextShield frontend setup
 set -e
 
+# Ensure we're running from the project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$PROJECT_ROOT"
+
+echo "📂 Working directory: $PROJECT_ROOT"
+
 echo "🧪 Testing OpenTextShield Frontend Setup"
 echo "========================================"
+echo ""
 
 # Check if frontend directory exists
 if [ -d "frontend" ]; then
@@ -114,11 +122,11 @@ else
     exit 1
 fi
 
-if grep -q "fasttext" requirements.txt requirements-minimal.txt 2>/dev/null; then
-    echo "❌ Requirements files still contain FastText"
+if grep -E "^fasttext" requirements.txt requirements-minimal.txt 2>/dev/null; then
+    echo "❌ Requirements files still contain active FastText"
     exit 1
 else
-    echo "✅ Requirements files cleaned of FastText"
+    echo "✅ Requirements files cleaned of active FastText"
 fi
 
 echo "🎉 All tests passed! OTS-mBERT system ready with OpenTextShield branding!"

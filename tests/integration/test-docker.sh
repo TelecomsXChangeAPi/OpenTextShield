@@ -5,6 +5,13 @@
 
 set -e
 
+# Ensure we're running from the project root
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$PROJECT_ROOT"
+
+echo "📂 Working directory: $PROJECT_ROOT"
+
 echo "🐳 OpenTextShield Docker Test Suite"
 echo "===================================="
 echo ""
