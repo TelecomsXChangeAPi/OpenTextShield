@@ -49,3 +49,6 @@ Thumbs.db
 *.safetensors
 **/models/*.pth
 **/models/*.bin
+# Archive models (older versions)
+src/mBERT/training/model-training/archive/models/*.pth
+src/mBERT/training/model-training/archive/models/*.bin
