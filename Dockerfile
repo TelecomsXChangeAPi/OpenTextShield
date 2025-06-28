@@ -43,8 +43,8 @@ RUN chmod +x /home/ots/OpenTextShield/start-local.sh
 # Expose both API and frontend ports
 EXPOSE 8002 8080
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+# Health check - reduced start period for faster readiness detection
+HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:8002/health || exit 1
 
 # Run the start script
