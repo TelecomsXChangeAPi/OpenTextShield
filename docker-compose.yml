@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  opentextshield:
+    build: .
+    ports:
+      - "8002:8002"  # API port
+      - "8080:8080"  # Frontend port
+    environment:
+      - OTS_LOG_LEVEL=INFO
+      - OTS_ALLOWED_IPS=ANY
+      - DOCKER_CONTAINER=true
+    volumes:
+      # Optional: Mount feedback directory for persistence
+      - ./feedback:/home/ots/OpenTextShield/feedback
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add nginx reverse proxy for production
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - opentextshield
+    restart: unless-stopped
+    profiles:
+      - production

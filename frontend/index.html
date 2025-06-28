@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenTextShield Frontend | Text Security Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1e293b;
+            --secondary-navy: #334155;
+            --accent-blue: #3b82f6;
+            --light-blue: #e0f2fe;
+            --success-green: #10b981;
+            --warning-amber: #f59e0b;
+            --error-red: #ef4444;
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --border-light: #e2e8f0;
+            --border-medium: #cbd5e1;
+            --shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: white;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .lab-title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .lab-info h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.025em;
+        }
+
+        .lab-info p {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 400;
+            color: #cbd5e1;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--success-green);
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.offline {
+            background: var(--error-red);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .analysis-panel {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--border-light);
+        }
+
+        .panel-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .panel-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .panel-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .sample-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .sample-btn {
+            padding: 0.5rem 0.75rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .sample-btn:hover {
+            background: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
+            transform: translateY(-1px);
+        }
+
+        .sample-btn.ham {
+            border-color: var(--success-green);
+            color: var(--success-green);
+        }
+
+        .sample-btn.spam {
+            border-color: var(--warning-amber);
+            color: var(--warning-amber);
+        }
+
+        .sample-btn.phishing {
+            border-color: var(--error-red);
+            color: var(--error-red);
+        }
+
+        .sample-btn.ham:hover {
+            background: var(--success-green);
+            color: white;
+        }
+
+        .sample-btn.spam:hover {
+            background: var(--warning-amber);
+            color: white;
+        }
+
+        .sample-btn.phishing:hover {
+            background: var(--error-red);
+            color: white;
+        }
+
+        .clear-btn {
+            padding: 0.5rem 0.75rem;
+            background: transparent;
+            border: 1px solid var(--border-medium);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .clear-btn:hover {
+            background: var(--text-secondary);
+            color: white;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 0.875rem;
+            border: 2px solid var(--border-light);
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            resize: vertical;
+            transition: all 0.2s ease;
+        }
+
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid var(--border-light);
+            border-radius: 8px;
+            font-size: 0.875rem;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .form-select:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .analyze-btn {
+            width: 100%;
+            padding: 0.875rem 1.5rem;
+            background: var(--primary-navy);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .analyze-btn:hover:not(:disabled) {
+            background: var(--secondary-navy);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .analyze-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .results-panel {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--border-light);
+        }
+
+        .loading-state {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--border-light);
+            border-top: 3px solid var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .analysis-result {
+            display: none;
+        }
+
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .result-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .result-icon.legitimate {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success-green);
+        }
+
+        .result-icon.spam {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--warning-amber);
+        }
+
+        .result-icon.phishing {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--error-red);
+        }
+
+        .result-classification {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .result-confidence {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-card {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-value {
+            font-size: 1.125rem;
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .technical-details {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+        }
+
+        .details-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .details-list {
+            list-style: none;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .details-list li {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .details-list li:last-child {
+            border-bottom: none;
+        }
+
+        .footer-links {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-blue);
+        }
+
+        .error-state {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+            color: var(--error-red);
+        }
+
+        .error-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+            
+            .header-content {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-banner">
+        <div class="header-content">
+            <div class="lab-title">
+                <div class="lab-info">
+                    <h1>OpenTextShield Frontend</h1>
+                    <p>AI-Powered Text Security Analysis Interface</p>
+                </div>
+            </div>
+            <div class="status-indicator" id="systemStatus">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Initializing...</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="analysis-panel">
+            <div class="panel-header">
+                <h2 class="panel-title">Text Analysis Interface</h2>
+                <p class="panel-subtitle">Submit text samples for comprehensive security analysis using our trained neural networks</p>
+            </div>
+
+            <form id="analysisForm">
+                <div class="form-group">
+                    <label for="textInput" class="form-label">Text Sample</label>
+                    <div class="sample-buttons">
+                        <button type="button" class="sample-btn ham" data-sample="0">📱 Normal Message</button>
+                        <button type="button" class="sample-btn spam" data-sample="1">⚠️ Spam Example</button>
+                        <button type="button" class="sample-btn phishing" data-sample="2">🚨 Phishing Example</button>
+                        <button type="button" class="sample-btn ham" data-sample="3">💼 Business Message</button>
+                        <button type="button" class="sample-btn spam" data-sample="4">🎁 Fake Prize</button>
+                        <button type="button" class="sample-btn phishing" data-sample="5">🏦 Fake Bank Alert</button>
+                        <button type="button" class="clear-btn" id="clearBtn">🗑️ Clear</button>
+                    </div>
+                    <textarea 
+                        id="textInput" 
+                        class="form-textarea"
+                        placeholder="Enter text message for analysis or use quick samples above..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="modelSelect" class="form-label">Analysis Model</label>
+                    <select id="modelSelect" class="form-select">
+                        <option value="ots-mbert">OpenTextShield mBERT - 104+ Languages Supported</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="analyze-btn" id="analyzeBtn">
+                    Execute Analysis
+                </button>
+            </form>
+        </section>
+
+        <section class="results-panel">
+            <div class="panel-header">
+                <h2 class="panel-title">Analysis Results</h2>
+                <p class="panel-subtitle">Real-time classification output and model performance metrics</p>
+            </div>
+
+            <div class="loading-state" id="loadingState">
+                <div class="loading-spinner"></div>
+                <p class="loading-text">Processing through neural network...</p>
+            </div>
+
+            <div class="error-state" id="errorState">
+                <div class="error-icon">⚠</div>
+                <p id="errorMessage">Analysis failed</p>
+            </div>
+
+            <div class="analysis-result" id="analysisResult">
+                <div class="result-header">
+                    <div class="result-icon" id="resultIcon">✓</div>
+                    <div>
+                        <div class="result-classification" id="resultClassification">Classification</div>
+                        <div class="result-confidence" id="resultConfidence">Confidence Level</div>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Confidence Score</div>
+                        <div class="metric-value" id="confidenceScore">0.00%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Processing Time</div>
+                        <div class="metric-value" id="processingTime">0.000s</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Model Used</div>
+                        <div class="metric-value" id="modelUsed">-</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Text Length</div>
+                        <div class="metric-value" id="textLength">0 chars</div>
+                    </div>
+                </div>
+
+                <div class="technical-details">
+                    <div class="details-title">Technical Details</div>
+                    <ul class="details-list" id="technicalDetails">
+                        <li>Model Architecture: Transformer-based neural network</li>
+                        <li>Training Dataset: Multi-language spam/phishing corpus</li>
+                        <li>Classification Classes: ham, spam, phishing</li>
+                        <li>Inference Mode: CPU/GPU optimized</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-links">
+        <a href="#" id="docsLink" target="_blank" class="footer-link">API Documentation</a>
+        <a href="#" id="healthLink" target="_blank" class="footer-link">System Health</a>
+        <a href="https://github.com/TelecomsXChangeAPi/OpenTextShield" target="_blank" class="footer-link">Source Code</a>
+    </footer>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8002';
+        
+        // System status monitoring
+        async function checkSystemStatus() {
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/health`);
+                if (response.ok) {
+                    const data = await response.json();
+                    statusDot.classList.remove('offline');
+                    statusText.textContent = 'System Online';
+                } else {
+                    throw new Error('API responded with error');
+                }
+            } catch (error) {
+                statusDot.classList.add('offline');
+                statusText.textContent = 'System Offline';
+            }
+        }
+
+        // Form submission handler
+        document.getElementById('analysisForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const textInput = document.getElementById('textInput');
+            const modelSelect = document.getElementById('modelSelect');
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            
+            // Validate input
+            if (!textInput.value.trim()) {
+                showError('Please enter a text sample for analysis');
+                return;
+            }
+            
+            // Show loading state
+            showLoading();
+            analyzeBtn.disabled = true;
+            
+            try {
+                const startTime = Date.now();
+                const response = await fetch(`${API_BASE_URL}/predict/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        text: textInput.value.trim(),
+                        model: modelSelect.value
+                    })
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.message || `HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                const actualProcessingTime = (Date.now() - startTime) / 1000;
+                showResults(data, textInput.value.trim(), modelSelect.value, actualProcessingTime);
+                
+            } catch (error) {
+                showError(`Analysis failed: ${error.message}`);
+            } finally {
+                analyzeBtn.disabled = false;
+            }
+        });
+        
+        function showLoading() {
+            hideAllStates();
+            document.getElementById('loadingState').style.display = 'block';
+        }
+        
+        function showError(message) {
+            hideAllStates();
+            document.getElementById('errorMessage').textContent = message;
+            document.getElementById('errorState').style.display = 'block';
+        }
+        
+        function showResults(data, originalText, model, actualTime) {
+            hideAllStates();
+            
+            const resultIcon = document.getElementById('resultIcon');
+            const resultClassification = document.getElementById('resultClassification');
+            const resultConfidence = document.getElementById('resultConfidence');
+            const confidenceScore = document.getElementById('confidenceScore');
+            const processingTime = document.getElementById('processingTime');
+            const modelUsed = document.getElementById('modelUsed');
+            const textLength = document.getElementById('textLength');
+            const technicalDetails = document.getElementById('technicalDetails');
+            
+            // Determine classification display
+            const label = data.label.toLowerCase();
+            let classification, icon, iconClass;
+            
+            switch (label) {
+                case 'ham':
+                    classification = 'Legitimate Message';
+                    icon = '✓';
+                    iconClass = 'legitimate';
+                    break;
+                case 'spam':
+                    classification = 'Spam Detected';
+                    icon = '⚠';
+                    iconClass = 'spam';
+                    break;
+                case 'phishing':
+                    classification = 'Phishing Attempt';
+                    icon = '⚠';
+                    iconClass = 'phishing';
+                    break;
+                default:
+                    classification = data.label;
+                    icon = '?';
+                    iconClass = 'legitimate';
+            }
+            
+            // Update result header
+            resultIcon.textContent = icon;
+            resultIcon.className = `result-icon ${iconClass}`;
+            resultClassification.textContent = classification;
+            resultConfidence.textContent = `Classification confidence: ${(data.probability * 100).toFixed(2)}%`;
+            
+            // Update metrics
+            confidenceScore.textContent = `${(data.probability * 100).toFixed(2)}%`;
+            processingTime.textContent = `${(data.processing_time || actualTime).toFixed(3)}s`;
+            modelUsed.textContent = model.toUpperCase();
+            textLength.textContent = `${originalText.length} chars`;
+            
+            // Update technical details
+            technicalDetails.innerHTML = `
+                <li>Model Architecture: OpenTextShield mBERT (Multilingual BERT)</li>
+                <li>Training Dataset: Multi-language spam/phishing corpus</li>
+                <li>Classification Classes: ham, spam, phishing</li>
+                <li>Inference Mode: Transformer attention mechanism</li>
+                <li>Language Support: 104+ languages with cross-lingual transfer</li>
+                <li>Raw Probability: ${data.probability.toFixed(6)} (${(data.probability * 100).toFixed(2)}%)</li>
+                <li>Confidence Level: ${data.probability >= 0.8 ? 'High' : data.probability >= 0.6 ? 'Medium' : 'Low'} (threshold-based assessment)</li>
+            `;
+            
+            document.getElementById('analysisResult').style.display = 'block';
+        }
+        
+        function hideAllStates() {
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('errorState').style.display = 'none';
+            document.getElementById('analysisResult').style.display = 'none';
+        }
+        
+        // Sample messages for testing
+        const sampleMessages = [
+            "Hi mom, I'll be home late tonight. Don't wait up!",
+            "URGENT! You have won $5000! Reply CLAIM to collect your prize money now! Limited time offer!",
+            "ALERT: Your bank account has been compromised. Click this link immediately to verify: http://fake-bank.com/verify-now",
+            "Meeting rescheduled to 3 PM tomorrow. Please confirm receipt and update your calendar accordingly.",
+            "🎉 CONGRATULATIONS! You've been selected for a FREE iPhone 15! Click here to claim: http://fake-apple.com/claim",
+            "Security Alert: Unusual activity detected on your account. Verify identity immediately: http://fake-security.com/verify"
+        ];
+        
+        // Add sample button functionality
+        document.querySelectorAll('.sample-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const sampleIndex = parseInt(this.getAttribute('data-sample'));
+                const textInput = document.getElementById('textInput');
+                textInput.value = sampleMessages[sampleIndex];
+                textInput.focus();
+                
+                // Add visual feedback
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+        
+        // Clear button functionality
+        document.getElementById('clearBtn').addEventListener('click', function() {
+            const textInput = document.getElementById('textInput');
+            textInput.value = '';
+            textInput.focus();
+            
+            // Add visual feedback
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+        
+        // Initialize system
+        checkSystemStatus();
+        setInterval(checkSystemStatus, 30000); // Check every 30 seconds
+        
+        // Update placeholder with instruction
+        document.getElementById('textInput').placeholder = 'Enter text message for analysis or use quick samples above...';
+        
+        // Set up footer links with dynamic URLs
+        document.getElementById('docsLink').href = `${API_BASE_URL}/docs`;
+        document.getElementById('healthLink').href = `${API_BASE_URL}/health`;
+    </script>
+</body>
+</html>

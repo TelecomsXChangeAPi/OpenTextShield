@@ -12,3 +12,32 @@ src/mBERT/training/mbert-mlx-apple-silicon/translate_dataset.py
 src/BERT/training/sms_spam_phishing_dataset_v1.2.csv
 src/mBERT/training/mbert-mlx-apple-silicon/dataset/translated_dataset1_6_SRILANKA.csv
 src/mBERT/training/mbert-mlx-apple-silicon/translated_dataset1_6_SRILANKA.csv
+
+# Virtual environments
+ots/
+ots_test/
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Test results and logs
+*.log
+*_test_results.log
+test_runner.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,104 @@
+# Optimized Docker build - exclude unnecessary files and reduce build context
+
+# === VIRTUAL ENVIRONMENTS ===
+ots/
+ots_test/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# === LARGE MODEL FILES AND DATASETS ===
+# Exclude all model files - only production model will be included specifically
+*.pth
+*.bin
+*.safetensors
+*.npz
+*.h5
+*.pkl
+*.ckpt
+
+# Exclude all datasets - only production dataset will be included specifically  
+*.csv
+!src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.1.csv
+
+# === ARCHIVE AND OLD VERSIONS ===
+# Exclude entire archive directory (4.7GB+ of old models/datasets)
+**/archive/
+**/models/
+!src/mBERT/training/model-training/mbert_ots_model_2.1.pth
+*_v1.*
+*_v2.0.*
+*_1.*
+*_2.0.*
+
+# === LOGS AND TEST RESULTS ===
+*.log
+logs/
+test_results/
+test_*.log
+*_test_*.log
+ots_test_results.log
+prediction_logs.log
+test_runner.log
+training_*.log
+
+# === DEVELOPMENT AND TEST FILES ===
+test_*.py
+test-*.sh
+*_test.py
+*_test_*.py
+pytest_tests.py
+stress*.py
+run_all_tests.py
+
+# === IDE AND SYSTEM FILES ===
+.git/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# === DOCUMENTATION (BUILD SPECIFIC) ===
+*.md
+!README.md
+docs/
+CHANGELOG.md
+*.txt
+!requirements*.txt
+
+# === TEMPORARY AND BUILD FILES ===
+tmp/
+temp/
+.tmp/
+build/
+dist/
+*.egg-info/
+node_modules/
+.cache/
+
+# === CONFIGURATION AND SECRETS ===
+.env
+.env.*
+config/*.local.*
+*.key
+*.pem
+*.crt
+
+# === KEEP ESSENTIAL FILES FOR PRODUCTION ===
+!src/api_interface/
+!src/mBERT/training/model-training/mbert_ots_model_2.1.pth
+!src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.1.csv
+!requirements*.txt
+!start*.sh
+!Dockerfile*
+!docker-compose.yml
+!frontend/
+!nginx.conf

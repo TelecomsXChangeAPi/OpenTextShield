@@ -1,0 +1,44 @@
+# Local Development Dockerfile
+# Builds from your refactored codebase without large model files
+
+FROM python:3.12-slim
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV DOCKER_CONTAINER=true
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create app directory
+WORKDIR /app
+
+# Copy only essential files first (for better Docker layer caching)
+COPY requirements-minimal.txt .
+COPY src/ ./src/
+
+# Install Python dependencies
+RUN pip install --upgrade pip && \
+    pip install -r requirements-minimal.txt
+
+# Copy startup scripts
+COPY start-docker.sh ./
+RUN chmod +x start-docker.sh
+
+# Create directories for models (they'll be downloaded/mounted later)
+RUN mkdir -p /app/src/mBERT/training/model-training/ && \
+    mkdir -p /app/src/FastText/training/
+
+# Expose port
+EXPOSE 8002
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8002/health || exit 1
+
+# Start command - use your refactored API
+CMD ["python", "-m", "uvicorn", "src.api_interface.main:app", "--host", "0.0.0.0", "--port", "8002"]

@@ -1,0 +1,48 @@
+2025-06-28 00:35:36,020 - __main__ - INFO - Testing ModelTrainer initialization...
+2025-06-28 00:35:36,021 - train_ots_improved - INFO - Trainer initialized with device: mps
+2025-06-28 00:35:36,021 - train_ots_improved - INFO - Configuration: {'dataset_path': '/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/dataset/sms_spam_phishing_dataset_v2.1.csv', 'model_name': 'bert-base-multilingual-cased', 'num_labels': 3, 'batch_size': 16, 'learning_rate': 2e-05, 'num_epochs': 3, 'model_save_path': '/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_2.1.pth'}
+2025-06-28 00:35:36,021 - __main__ - INFO - Testing dataset loading...
+2025-06-28 00:35:36,033 - train_ots_improved - INFO - Loading dataset from: /Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/dataset/sms_spam_phishing_dataset_v2.1.csv
+2025-06-28 00:35:36,033 - train_ots_improved - INFO - Detected encoding: UTF-8-SIG
+2025-06-28 00:35:36,359 - train_ots_improved - WARNING - Found 9 missing text and 0 missing labels
+2025-06-28 00:35:36,390 - train_ots_improved - INFO - Original labels: ['phishing' 'spam' 'ham']
+2025-06-28 00:35:36,397 - train_ots_improved - INFO - Dataset loaded: 226260 samples
+2025-06-28 00:35:36,398 - train_ots_improved - INFO - Label distribution: {0: 131613, 1: 63201, 2: 31446}
+2025-06-28 00:35:36,454 - train_ots_improved - INFO - Data split - Train: 158381, Val: 22626, Test: 45253
+2025-06-28 00:35:36,456 - __main__ - INFO - Dataset loaded successfully: Train=158381, Val=22626, Test=45253
+2025-06-28 00:35:36,456 - __main__ - INFO - Testing model initialization...
+2025-06-28 00:35:36,456 - train_ots_improved - INFO - Loading tokenizer: bert-base-multilingual-cased
+2025-06-28 00:35:36,684 - train_ots_improved - INFO - Loading model: bert-base-multilingual-cased
+2025-06-28 00:35:38,373 - train_ots_improved - INFO - Model and optimizer initialized successfully
+2025-06-28 00:35:38,373 - __main__ - INFO - Model initialized successfully
+2025-06-28 00:35:38,374 - __main__ - INFO - Testing data loader creation...
+2025-06-28 00:35:38,376 - train_ots_improved - INFO - Dataset created with 10 samples
+2025-06-28 00:35:38,377 - __main__ - INFO - Data loader created with 1 batches
+2025-06-28 00:35:38,377 - __main__ - INFO - Testing single batch processing...
+2025-06-28 00:35:38,390 - __main__ - INFO - Batch keys: dict_keys(['text', 'input_ids', 'attention_mask', 'labels'])
+2025-06-28 00:35:38,390 - __main__ - INFO - Input shape: torch.Size([10, 128])
+2025-06-28 00:35:38,391 - __main__ - INFO - Labels shape: torch.Size([10])
+2025-06-28 00:35:38,391 - __main__ - INFO - ✅ All training components test successfully!
+2025-06-28 00:43:11,104 - __main__ - INFO - Starting OpenTextShield mBERT training (improved version)
+2025-06-28 00:43:11,141 - __main__ - INFO - Trainer initialized with device: mps
+2025-06-28 00:43:11,141 - __main__ - INFO - Configuration: {'dataset_path': '/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/dataset/sms_spam_phishing_dataset_v2.1.csv', 'model_name': 'bert-base-multilingual-cased', 'num_labels': 3, 'batch_size': 16, 'learning_rate': 2e-05, 'num_epochs': 3, 'model_save_path': '/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/mbert_ots_model_2.1.pth'}
+2025-06-28 00:43:11,154 - __main__ - INFO - Loading dataset from: /Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/mbert-mlx-apple-silicon/dataset/sms_spam_phishing_dataset_v2.1.csv
+2025-06-28 00:43:11,154 - __main__ - INFO - Detected encoding: UTF-8-SIG
+2025-06-28 00:43:11,483 - __main__ - WARNING - Found 9 missing text and 0 missing labels
+2025-06-28 00:43:11,511 - __main__ - INFO - Original labels: ['phishing' 'spam' 'ham']
+2025-06-28 00:43:11,519 - __main__ - INFO - Dataset loaded: 226260 samples
+2025-06-28 00:43:11,521 - __main__ - INFO - Label distribution: {0: 131613, 1: 63201, 2: 31446}
+2025-06-28 00:43:11,591 - __main__ - INFO - Data split - Train: 158381, Val: 22626, Test: 45253
+2025-06-28 00:43:11,593 - __main__ - INFO - Loading tokenizer: bert-base-multilingual-cased
+2025-06-28 00:43:11,913 - __main__ - INFO - Loading model: bert-base-multilingual-cased
+2025-06-28 00:43:13,293 - __main__ - INFO - Model and optimizer initialized successfully
+2025-06-28 00:43:13,294 - __main__ - INFO - Dataset created with 158381 samples
+2025-06-28 00:43:13,294 - __main__ - INFO - Dataset created with 22626 samples
+2025-06-28 00:43:13,294 - __main__ - INFO - Dataset created with 45253 samples
+2025-06-28 00:43:13,294 - __main__ - INFO - Training started
+2025-06-28 00:43:19,701 - __main__ - INFO - Epoch 1/3, Batch 0/9899, Loss: 1.1329
+2025-06-28 00:43:46,254 - __main__ - INFO - Epoch 1/3, Batch 50/9899, Loss: 0.1687
+2025-06-28 00:44:11,900 - __main__ - INFO - Epoch 1/3, Batch 100/9899, Loss: 0.0590
+2025-06-28 00:44:37,379 - __main__ - INFO - Epoch 1/3, Batch 150/9899, Loss: 0.0114
+2025-06-28 00:45:02,669 - __main__ - INFO - Epoch 1/3, Batch 200/9899, Loss: 0.0322
+2025-06-28 00:45:27,610 - __main__ - INFO - Epoch 1/3, Batch 250/9899, Loss: 0.0882

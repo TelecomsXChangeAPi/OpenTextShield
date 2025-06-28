@@ -1,0 +1,4 @@
+FeedbackID,Timestamp,UserID,Content,Feedback,ThumbsUp,ThumbsDown,Model
+1ba7562e-eeaf-448e-9bf4-27db548be598,2025-06-27 22:56:23,test_user_123,URGENT! Your bank account has been compromised. Click here immediately to verify your account.,This was correctly identified as a phishing attempt. Good detection!,Yes,No,ots-mbert
+c741053d-4ef6-48c7-b315-cca8c0a7e8ef,2025-06-27 22:56:45,user123,Free money! Click here!,This was correctly identified as spam,Yes,No,ots-mbert
+1fdd4c61-c197-46e4-bb7a-ae848bd5306c,2025-06-27 22:56:48,user123,Free money! Click here!,This was correctly identified as spam,Yes,No,ots-mbert

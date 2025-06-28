@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source:*)",
+      "Bash(pip show:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(mv:*)",
+      "Bash(ls:*)",
+      "Bash(rg:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}

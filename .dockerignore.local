@@ -1,0 +1,48 @@
+# Local Docker build - ignore large files and development artifacts
+
+# Ignore virtual environments
+ots/
+venv/
+.venv/
+env/
+
+# Ignore large model files (they'll be handled separately)
+*.pth
+*.bin
+*.safetensors
+*.npz
+
+# Ignore development files
+.git/
+*.md
+!README.md
+test_*.py
+test-*.sh
+*_test.py
+
+# Ignore IDE and system files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+__pycache__/
+*.pyc
+
+# Ignore logs and cache
+*.log
+logs/
+.coverage
+.pytest_cache/
+
+# Ignore temporary files
+tmp/
+temp/
+.tmp/
+node_modules/
+
+# Keep essential files
+!src/
+!requirements*.txt
+!start*.sh
+!Dockerfile*
+!docker-compose.yml
