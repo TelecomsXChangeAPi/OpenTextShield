@@ -1,4 +1,4 @@
-# Use Ubuntu 24.04 as the base image
+# Use Ubuntu 24.04 LTS with latest security patches
 FROM ubuntu:24.04
 
 # Set environment variables
@@ -11,8 +11,8 @@ RUN mkdir -p /home/ots/OpenTextShield
 # Set the working directory
 WORKDIR /home/ots/OpenTextShield
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
+# Install system dependencies with security updates
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     python3.12 \
     python3.12-venv \
     python3.12-dev \
@@ -21,7 +21,10 @@ RUN apt-get update && apt-get install -y \
     g++ \
     libomp-dev \
     curl \
-    && rm -rf /var/lib/apt/lists/*
+    ca-certificates \
+    && apt-get autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Copy requirements first for better Docker layer caching
 COPY requirements-minimal.txt /home/ots/OpenTextShield/requirements-minimal.txt

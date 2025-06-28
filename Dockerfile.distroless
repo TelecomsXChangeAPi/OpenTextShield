@@ -1,0 +1,52 @@
+# Ultra-secure distroless build - minimal attack surface
+# Stage 1: Build stage with full Ubuntu
+FROM ubuntu:24.04 AS builder
+
+ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install build dependencies with security updates
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    python3.12 \
+    python3.12-venv \
+    python3.12-dev \
+    python3-pip \
+    build-essential \
+    g++ \
+    libomp-dev \
+    curl \
+    ca-certificates \
+    && apt-get autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Create virtual environment
+RUN python3.12 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Install Python dependencies
+COPY requirements-security.txt /tmp/requirements-security.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r /tmp/requirements-security.txt
+
+# Copy application
+COPY . /app
+WORKDIR /app
+
+# Stage 2: Distroless runtime (Google's distroless images)
+FROM gcr.io/distroless/python3-debian12:latest
+
+# Copy virtual environment and app from builder
+COPY --from=builder /opt/venv /opt/venv
+COPY --from=builder /app /app
+
+# Set environment
+ENV PATH="/opt/venv/bin:$PATH"
+ENV PYTHONUNBUFFERED=1
+WORKDIR /app
+
+# Expose port
+EXPOSE 8002
+
+# Run with Python directly (no shell available in distroless)
+ENTRYPOINT ["/opt/venv/bin/python", "-m", "uvicorn", "src.api_interface.main:app", "--host", "0.0.0.0", "--port", "8002"]
