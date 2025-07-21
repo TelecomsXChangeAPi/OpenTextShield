@@ -1,33 +1,48 @@
-# Simple Local Dockerfile - minimal dependencies
+# Secure-aligned Dockerfile for OpenTextShield (x86 optimized)
 FROM python:3.12-slim
 
 # Set environment variables
-ENV PYTHONUNBUFFERED=1
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV DOCKER_CONTAINER=true
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    DOCKER_CONTAINER=true \
+    PATH="/opt/venv/bin:$PATH" \
+    PYTHONPATH="/home/ots/OpenTextShield/src"
 
-# Create app directory
-WORKDIR /app
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    ca-certificates \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install Python dependencies
+# Create a non-root user
+RUN useradd -m -d /home/ots -s /bin/bash ots
+
+# Set working directory (same as secure image)
+WORKDIR /home/ots/OpenTextShield
+
+# Copy minimal requirements and install in venv
 COPY requirements-minimal.txt .
-RUN pip install --upgrade pip && \
-    pip install -r requirements-minimal.txt
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade pip && \
+    /opt/venv/bin/pip install --no-cache-dir -r requirements-minimal.txt
 
-# Copy source code
-COPY src/ ./src/
+# Copy all project files
+COPY . /home/ots/OpenTextShield
 
-# Create model directories (empty - for API structure)
-RUN mkdir -p /app/src/mBERT/training/model-training/ && \
-    mkdir -p /app/src/FastText/training/ && \
-    mkdir -p /app/feedback
+# Set permissions and make startup script executable
+RUN chown -R ots:ots /home/ots/OpenTextShield && \
+    chmod +x /home/ots/OpenTextShield/start.sh
 
-# Expose port
-EXPOSE 8002
+# Use non-root user
+USER ots
 
-# Simple health check (without curl dependency)
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')" || exit 1
+# Expose API and frontend ports
+EXPOSE 8002 8080
 
-# Start the refactored API
-CMD ["python", "-m", "uvicorn", "src.api_interface.main:app", "--host", "0.0.0.0", "--port", "8002"]
+# Healthcheck (API-level)
+HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
+  CMD curl -f http://localhost:8002/health || exit 1
+
+# Start both API and frontend via unified startup script
+CMD ["bash", "/home/ots/OpenTextShield/start.sh"]
