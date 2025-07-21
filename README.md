@@ -41,7 +41,7 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 ## ✨ Key Features
 
-- 🌍 **Multilingual Support**: 104+ languages with mBERT, Open Text Shield is currently well trained on 10 languages for SMS Classification. 
+- 🌍 **Multilingual Support**: Built on mBERT with coverage for 104+ languages; currently trained on 10 languages for SMS classification.
 - ⚡ **Real-time Classification**: Professional API with <200ms response time> 
 - 🔒 **Advanced Detection**: Spam, phishing, and ham classification
 - 📊 **Professional Interface**: Research-grade web interface with metrics
