@@ -31,7 +31,12 @@ class Settings(BaseSettings):
     
     # Security
     allowed_ips: Set[str] = {"ANY", "127.0.0.1", "localhost"}
-    cors_origins: List[str] = ["*"]
+    cors_origins: List[str] = [
+        "http://localhost:8080",
+        "http://localhost:8081", 
+        "http://127.0.0.1:8080",
+        "http://127.0.0.1:8081"
+    ]
     
     # Model Paths
     project_root: Path = Path(__file__).parent.parent.parent.parent

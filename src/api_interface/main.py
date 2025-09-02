@@ -96,14 +96,13 @@ async def opentextshield_exception_handler(request, exc: OpenTextShieldException
 @app.exception_handler(Exception)
 async def general_exception_handler(request, exc: Exception):
     """Handle general exceptions."""
-    logger.error(f"Unhandled exception: {str(exc)}")
+    logger.error(f"Unhandled exception: {type(exc).__name__}")
     
     return JSONResponse(
         status_code=500,
         content={
             "error": "INTERNAL_SERVER_ERROR",
-            "message": "An unexpected error occurred",
-            "details": {"error": str(exc)},
+            "message": "An unexpected error occurred. Please try again later.",
             "timestamp": datetime.utcnow().isoformat() + "Z"
         }
     )

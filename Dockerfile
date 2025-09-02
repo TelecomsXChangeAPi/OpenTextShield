@@ -1,17 +1,12 @@
-# Use Ubuntu 24.04 LTS with latest security patches
-FROM ubuntu:24.04
+# Multi-stage build for enhanced security
+# Stage 1: Build dependencies
+FROM ubuntu:24.04 AS builder
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Create necessary directories
-RUN mkdir -p /home/ots/OpenTextShield
-
-# Set the working directory
-WORKDIR /home/ots/OpenTextShield
-
-# Install system dependencies with security updates
+# Install build dependencies with security updates
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     python3.12 \
     python3.12-venv \
@@ -26,30 +21,60 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Copy requirements first for better Docker layer caching
-COPY requirements-minimal.txt /home/ots/OpenTextShield/requirements-minimal.txt
+# Create virtual environment
+RUN python3.12 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 
-# Create the Python virtual environment
-RUN python3.12 -m venv /home/ots/OpenTextShield/ots
+# Copy requirements and install Python dependencies
+COPY requirements-security.txt /tmp/requirements-security.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r /tmp/requirements-security.txt
 
-# Install Python dependencies using minimal requirements for faster builds
-RUN /home/ots/OpenTextShield/ots/bin/pip install --no-cache-dir --upgrade pip
-RUN /home/ots/OpenTextShield/ots/bin/pip install --no-cache-dir -r /home/ots/OpenTextShield/requirements-minimal.txt
+# Stage 2: Runtime image
+FROM ubuntu:24.04 AS runtime
 
-# Copy the rest of the app's code into the container
-COPY . /home/ots/OpenTextShield
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Install only runtime dependencies with security updates
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    python3.12 \
+    python3.12-venv \
+    curl \
+    ca-certificates \
+    && apt-get autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Create non-root user for security
+RUN groupadd -r ots && useradd -r -g ots -d /home/ots -s /bin/bash ots && \
+    mkdir -p /home/ots/OpenTextShield && \
+    chown -R ots:ots /home/ots
+
+# Copy virtual environment from builder stage
+COPY --from=builder /opt/venv /opt/venv
+
+# Set working directory
+WORKDIR /home/ots/OpenTextShield
+
+# Copy application code
+COPY --chown=ots:ots . /home/ots/OpenTextShield
 
 # Make start scripts executable
-RUN chmod +x /home/ots/OpenTextShield/start.sh
-RUN chmod +x /home/ots/OpenTextShield/start-local.sh
+RUN chmod +x /home/ots/OpenTextShield/start.sh && \
+    chmod +x /home/ots/OpenTextShield/start-local.sh
 
-# Expose both API and frontend ports
+# Switch to non-root user
+USER ots
+
+# Expose ports
 EXPOSE 8002 8080
 
-# Health check - reduced start period for faster readiness detection
+# Health check with improved security
 HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:8002/health || exit 1
 
-# Run the start script
+# Run the application
 CMD ["bash", "/home/ots/OpenTextShield/start.sh"]
-

@@ -82,25 +82,25 @@ python train_ots_improved.py
 
 ### Docker Deployment
 
-**🛡️ Security-Enhanced Builds (Recommended for Production):**
+**🛡️ Secure Builds (Default):**
 ```bash
-# Enhanced security build with non-root user and multi-stage optimization
-docker build -f Dockerfile.secure -t opentextshield:secure .
-docker run -d -p 8002:8002 -p 8081:8080 opentextshield:secure
+# Default secure build with non-root user and multi-stage optimization
+docker build -t opentextshield .
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+
+# Use docker-compose (recommended)
+docker-compose up -d
 
 # Ultra-secure distroless build (API only, minimal attack surface)
 docker build -f Dockerfile.distroless -t opentextshield:distroless .
 docker run -d -p 8002:8002 opentextshield:distroless
 ```
 
-**Standard Builds:**
+**Alternative Builds:**
 ```bash
-# Standard build with security updates (includes 679MB mBERT model)
-docker build -t opentextshield .
-docker run -d -p 8002:8002 -p 8081:8080 opentextshield
-
-# Use docker-compose (recommended)
-docker-compose up -d
+# Legacy insecure build (NOT recommended for production)
+docker build -f Dockerfile.insecure -t opentextshield:insecure .
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield:insecure
 
 # Use pre-built image
 docker pull telecomsxchange/opentextshield:latest
@@ -113,9 +113,9 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 - **Health Check**: http://localhost:8002/health
 
 **Security Benefits:**
-- **Dockerfile.secure**: 60-80% fewer vulnerabilities, non-root execution, smaller images
-- **Dockerfile.distroless**: Maximum security with minimal attack surface
-- **Multi-stage builds**: Reduced final image size and enhanced security
+- **Default Dockerfile**: 60-80% fewer vulnerabilities, non-root execution, multi-stage builds
+- **Dockerfile.distroless**: Maximum security with minimal attack surface  
+- **All secure builds**: Enhanced security posture suitable for production deployment
 
 ## Architecture Overview
 
