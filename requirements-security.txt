@@ -1,20 +1,20 @@
 # Security-patched requirements for OpenTextShield
 # Only pinning security-critical packages, allowing others to auto-resolve
 
-# Core API framework - latest stable versions
+# Core API framework - latest stable versions  
 fastapi>=0.115.14
 uvicorn>=0.30.6
-starlette>=0.46.2
+starlette>=0.47.2
 
 # Security patches - critical vulnerabilities fixed
 h11>=0.16.0
-transformers>=4.46.3
-requests>=2.32.3
-urllib3>=2.2.3
-setuptools>=75.6.0
+transformers>=4.53.0
+requests>=2.32.4
+urllib3>=2.5.0
+setuptools>=78.1.1
 
 # ML/AI dependencies - allow compatible versions
-torch>=2.6.0
+torch>=2.7.1
 tokenizers>=0.19.1
 huggingface-hub>=0.24.7
 safetensors>=0.4.5

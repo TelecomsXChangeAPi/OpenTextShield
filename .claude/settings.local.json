@@ -14,7 +14,9 @@
       "Bash(find:*)",
       "Bash(grep:*)",
       "Bash(NO_PROXY=localhost,127.0.0.1 python src/mBERT/tests/stressTest_500.py)",
-      "Bash(uvicorn:*)"
+      "Bash(uvicorn:*)",
+      "Bash(gh api:*)",
+      "Bash(pkill:*)"
     ],
     "deny": []
   }
