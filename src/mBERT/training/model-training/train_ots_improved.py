@@ -119,8 +119,12 @@ class ModelTrainer:
             logger.info(f"Loading dataset from: {dataset_path}")
             logger.info(f"Detected encoding: {file_encoding}")
             
-            # Load dataset
-            df = pd.read_csv(dataset_path, encoding=file_encoding)
+            # Load dataset with UTF-8 encoding
+            try:
+                df = pd.read_csv(dataset_path, encoding='utf-8')
+            except UnicodeDecodeError:
+                logger.warning("UTF-8 decoding failed, trying latin1")
+                df = pd.read_csv(dataset_path, encoding='latin1')
             
             # Validate dataset structure
             if 'text' not in df.columns or 'label' not in df.columns:
@@ -189,12 +193,24 @@ class ModelTrainer:
         try:
             logger.info(f"Loading tokenizer: {self.config.model_name}")
             self.tokenizer = BertTokenizer.from_pretrained(self.config.model_name)
-            
+
             logger.info(f"Loading model: {self.config.model_name}")
             self.model = BertForSequenceClassification.from_pretrained(
                 self.config.model_name,
                 num_labels=self.config.num_labels
             )
+
+            # Check if existing trained model exists and load weights for fine-tuning
+            if self.config.model_save_path.exists():
+                logger.info(f"Loading existing model weights from {self.config.model_save_path}")
+                try:
+                    state_dict = torch.load(self.config.model_save_path, map_location=self.device, weights_only=True)
+                    self.model.load_state_dict(state_dict)
+                    logger.info("Successfully loaded existing model weights for fine-tuning")
+                except Exception as e:
+                    logger.warning(f"Could not load existing model weights: {e}. Starting from base model.")
+            else:
+                logger.info("No existing model weights found. Starting training from base BERT model.")
             
             self.model.to(self.device)
             

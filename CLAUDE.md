@@ -144,7 +144,7 @@ OpenTextShield implements a REST API powered by mBERT for global SMS spam/phishi
 - Dataset format: CSV with `text,label` columns where labels are `ham`, `spam`, or `phishing`
 
 **Model Loading Path**
-- mBERT: `/home/ots/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.1.pth`
+- mBERT: `/home/ots/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.5.pth`
 - Model is loaded at application startup and cached in memory
 
 ### Classification Labels

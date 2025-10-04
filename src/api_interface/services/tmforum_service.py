@@ -181,6 +181,14 @@ class TMForumService:
         """
         job_id = str(uuid.uuid4())
 
+        # Get the actual model version from the loaded model
+        from ..services.prediction_service import get_model_version
+        actual_model_version = get_model_version()
+
+        # Update model info with correct version
+        updated_model = request.model.model_copy()
+        updated_model.version = actual_model_version
+
         # Create the job
         job = TMForumInferenceJob(
             id=job_id,
@@ -188,7 +196,7 @@ class TMForumService:
             state=TMForumInferenceJobState.ACKNOWLEDGED,
             priority=request.priority,
             input=request.input,
-            model=request.model,
+            model=updated_model,
             creationDate=datetime.utcnow(),
             name=request.name,
             description=request.description,

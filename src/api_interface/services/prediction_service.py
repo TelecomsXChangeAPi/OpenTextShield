@@ -14,6 +14,22 @@ from ..models.request_models import PredictionRequest, ModelType
 from ..models.response_models import PredictionResponse, ModelInfo, ClassificationLabel
 from .model_loader import model_manager
 
+def get_model_version() -> str:
+    """Extract model version from the configured model path."""
+    import re
+    model_path = settings.mbert_model_configs["multilingual"]["path"]
+    version_match = re.search(r'mbert_ots_model_(\d+\.\d+)\.pth', str(model_path))
+    return version_match.group(1) if version_match else "2.5"
+
+# Import enhanced preprocessor
+try:
+    from .enhanced_preprocessing import EnhancedPreprocessor
+    enhanced_preprocessor = EnhancedPreprocessor()
+    USE_ENHANCED_PREPROCESSING = True
+except ImportError:
+    logger.warning("Enhanced preprocessor not available, using standard preprocessing")
+    USE_ENHANCED_PREPROCESSING = False
+
 
 class PredictionService:
     """Service for handling text classification predictions."""
@@ -65,9 +81,16 @@ class PredictionService:
         try:
             # Get model and tokenizer
             model, tokenizer = model_manager.get_mbert_model(model_name)
-            
+
+            # Enhanced preprocessing if available
+            if USE_ENHANCED_PREPROCESSING:
+                processed_text, features = enhanced_preprocessor.preprocess_text(text)
+                logger.info(f"Enhanced preprocessing features: {features}")
+            else:
+                processed_text = text
+
             # Preprocess text
-            inputs = self.preprocess_text(text, tokenizer)
+            inputs = self.preprocess_text(processed_text, tokenizer)
             inputs = {k: v.to(model_manager.device) for k, v in inputs.items()}
             
             # Make prediction
@@ -83,7 +106,7 @@ class PredictionService:
             
             model_info = ModelInfo(
                 name="OTS_mBERT",
-                version="2.1",
+                version=get_model_version(),
                 author="TelecomsXChange (TCXC)",
                 last_training="2024-03-20"
             )
