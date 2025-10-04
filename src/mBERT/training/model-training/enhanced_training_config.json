@@ -1,0 +1,35 @@
+{
+  "model": {
+    "name": "bert-base-multilingual-cased",
+    "num_labels": 3,
+    "max_length": 128
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 0.1,
+    "validation_split": 0.1
+  },
+  "data": {
+    "datasets": [
+      "dataset/sms_spam_phishing_dataset_v2.1_cleaned.csv",
+      "dataset/sms_spam_indo_expanded.csv"
+    ],
+    "balance_classes": true,
+    "augmentation": true
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "precision",
+      "recall",
+      "f1",
+      "auc"
+    ],
+    "save_best_model": true,
+    "early_stopping": true,
+    "patience": 3
+  }
+}

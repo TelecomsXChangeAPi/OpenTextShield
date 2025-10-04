@@ -14,8 +14,9 @@ from .config.settings import settings
 from .utils.logging import setup_logging, logger
 from .utils.exceptions import OpenTextShieldException
 from .services.model_loader import model_manager
+from .services.tmforum_service import tmforum_service
 from .middleware.security import setup_cors_middleware
-from .routers import health, prediction, feedback
+from .routers import health, prediction, feedback, tmforum
 
 
 @asynccontextmanager
@@ -36,18 +37,30 @@ async def lifespan(app: FastAPI):
             None, model_manager.load_all_models
         )
         logger.info("All models loaded successfully")
-        
+
+        # Initialize TMForum service
+        await tmforum_service.initialize()
+        logger.info("TMForum service initialized successfully")
+
     except Exception as e:
-        logger.error(f"Failed to load models during startup: {str(e)}")
-        # Continue startup even if some models fail to load
-        # Individual endpoints will handle model availability
-    
+        logger.error(f"Failed to initialize services during startup: {str(e)}")
+        # Continue startup even if some services fail to initialize
+        # Individual endpoints will handle service availability
+
     logger.info("OpenTextShield API startup completed")
     
     yield
     
     # Shutdown
     logger.info("Shutting down OpenTextShield API...")
+
+    try:
+        # Shutdown TMForum service
+        await tmforum_service.shutdown()
+        logger.info("TMForum service shutdown completed")
+    except Exception as e:
+        logger.error(f"Error during TMForum service shutdown: {str(e)}")
+
     logger.info("OpenTextShield API shutdown completed")
 
 
@@ -69,6 +82,7 @@ setup_cors_middleware(app)
 app.include_router(health.router)
 app.include_router(prediction.router)
 app.include_router(feedback.router)
+app.include_router(tmforum.router)
 
 
 @app.exception_handler(OpenTextShieldException)

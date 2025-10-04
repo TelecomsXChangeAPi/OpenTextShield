@@ -28,6 +28,7 @@ The OpenTextShield Research Platform provides a professional web-based interface
 - **Frontend URL**: http://localhost:8080
 - **API URL**: http://localhost:8002
 - **API Documentation**: http://localhost:8002/docs
+- **OpenAPI Spec**: http://localhost:8002/openapi.json
 
 Features:
 - Professional AI research lab aesthetic
@@ -171,6 +172,47 @@ OpenTextShield implements a REST API powered by mBERT for global SMS spam/phishi
   }
 }
 ```
+
+### TMForum API (TMF922 - AI Inference Job Management)
+
+OpenTextShield also provides TMForum-compliant API endpoints for enterprise integrations:
+
+#### Create Inference Job
+```bash
+curl -X POST "http://localhost:8002/tmf-api/aiInferenceJob" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "priority": "normal",
+    "input": {
+      "inputType": "text",
+      "inputFormat": "plain",
+      "inputData": {"text": "Message to classify"}
+    },
+    "model": {
+      "id": "ots-mbert",
+      "name": "OpenTextShield mBERT",
+      "version": "2.1",
+      "type": "bert",
+      "capabilities": ["text-classification", "multilingual"]
+    }
+  }'
+```
+
+#### Check Job Status
+```bash
+curl "http://localhost:8002/tmf-api/aiInferenceJob/{job_id}"
+```
+
+#### List Jobs
+```bash
+curl "http://localhost:8002/tmf-api/aiInferenceJob"
+```
+
+**Benefits:**
+- TMForum standard compliance (TMF922)
+- Async job processing with status tracking
+- Enterprise-grade API for telecom operators
+- Full backward compatibility with legacy API
 
 ## Key Technical Details
 

@@ -51,15 +51,19 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 ## 🛠 API Usage
 
-### Quick Test
+OpenTextShield provides both **legacy API** and **TMForum-compliant API** endpoints.
+
+### Legacy API (Direct Classification)
+
+#### Quick Test
 ```bash
-# Test the API endpoint
+# Test the legacy API endpoint
 curl -X POST "http://localhost:8002/predict/" \
   -H "Content-Type: application/json" \
   -d '{"text":"Your SMS content here","model":"ots-mbert"}'
 ```
 
-### Response Format
+#### Response Format
 ```json
 {
   "label": "ham|spam|phishing",
@@ -71,6 +75,82 @@ curl -X POST "http://localhost:8002/predict/" \
     "author": "TelecomsXChange (TCXC)"
   }
 }
+```
+
+### TMForum API (TMF922 - AI Inference Job Management)
+
+#### Create Inference Job
+```bash
+# Create a TMForum-compliant inference job
+curl -X POST "http://localhost:8002/tmf-api/aiInferenceJob" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "priority": "normal",
+    "input": {
+      "inputType": "text",
+      "inputFormat": "plain",
+      "inputData": {"text": "Free money! Click here now!"}
+    },
+    "model": {
+      "id": "ots-mbert",
+      "name": "OpenTextShield mBERT",
+      "version": "2.1",
+      "type": "bert",
+      "capabilities": ["text-classification", "multilingual"]
+    },
+    "name": "SMS Classification Job"
+  }'
+```
+
+#### Check Job Status
+```bash
+# Check inference job status (replace JOB_ID with actual ID)
+curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob/JOB_ID"
+```
+
+#### Response Format (Completed Job)
+```json
+{
+  "id": "inference-job-123",
+  "state": "completed",
+  "priority": "normal",
+  "input": {
+    "inputType": "text",
+    "inputFormat": "plain",
+    "inputData": {"text": "Free money! Click here now!"}
+  },
+  "output": {
+    "outputType": "classification",
+    "outputFormat": "json",
+    "outputData": {
+      "label": "spam",
+      "probability": 0.95
+    },
+    "confidence": 0.95,
+    "outputMetadata": {
+      "model_used": "OTS_mBERT",
+      "model_version": "2.1",
+      "processing_time_seconds": 0.15
+    }
+  },
+  "model": {
+    "id": "ots-mbert",
+    "name": "OpenTextShield mBERT",
+    "version": "2.1",
+    "type": "bert",
+    "capabilities": ["text-classification", "multilingual"]
+  },
+  "creationDate": "2024-01-15T10:30:00Z",
+  "completionDate": "2024-01-15T10:30:15Z",
+  "processingTimeMs": 150,
+  "type": "TextClassificationInferenceJob"
+}
+```
+
+#### List Inference Jobs
+```bash
+# List all inference jobs
+curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob"
 ```
 
 ## 📋 Installation Guide

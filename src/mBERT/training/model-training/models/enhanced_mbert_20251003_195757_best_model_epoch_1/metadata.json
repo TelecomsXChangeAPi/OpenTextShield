@@ -1,0 +1,6 @@
+{
+  "model_name": "bert-base-multilingual-cased",
+  "timestamp": "20251003_195757",
+  "num_labels": 3,
+  "device": "mps"
+}
