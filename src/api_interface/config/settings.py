@@ -47,7 +47,8 @@ class Settings(BaseSettings):
         "multilingual": {
             "path": "mBERT/training/model-training/mbert_ots_model_2.5.pth",
             "tokenizer": "bert-base-multilingual-cased",
-            "num_labels": "3"
+            "num_labels": "3",
+            "version": "2.5"
         }
     }
     
