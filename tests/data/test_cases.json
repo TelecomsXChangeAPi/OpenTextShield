@@ -1,0 +1,10 @@
+[
+  {"text": "URGENT: Your PayPal account needs immediate verification at paypal-secure.com/login", "expected": "phishing", "skill": "URL-based phishing"},
+  {"text": "Congratulations! You won $1000. Click here to claim: bit.ly/free-money", "expected": "phishing", "skill": "Short URL scams"},
+  {"text": "Your bank statement is ready. Download from secure-bank-login.net", "expected": "phishing", "skill": "Bank impersonation"},
+  {"text": "Meeting moved to 3 PM tomorrow in room 204", "expected": "ham", "skill": "Business communication"},
+  {"text": "Package delivery delayed due to weather. Track at fedex-update.com", "expected": "phishing", "skill": "Delivery scams"},
+  {"text": "Team lunch at Italian restaurant Friday noon", "expected": "ham", "skill": "Social planning"},
+  {"text": "Security alert: Unusual login from new device. Verify at amazon-security-alert.com", "expected": "phishing", "skill": "Account security scams"},
+  {"text": "Doctor appointment confirmed for next Tuesday 10 AM", "expected": "ham", "skill": "Personal scheduling"}
+]

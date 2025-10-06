@@ -45,7 +45,9 @@ class IncrementalTrainer:
 
     def __init__(self, config=training_config):
         self.config = config
-        self.device = get_device()
+        # Force CPU for compatibility (MPS has loading bugs)
+        self.device = torch.device("cpu")
+        logger.info(f"Forced CPU training device for compatibility")
         self.tokenizer = None
         self.base_model = None
         self.model = None  # PEFT model

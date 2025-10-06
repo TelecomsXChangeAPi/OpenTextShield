@@ -49,7 +49,22 @@ class ModelManager:
         for model_name, config in settings.mbert_model_configs.items():
             try:
                 model_path = settings.models_base_path / config["path"]
-                adapter_path = settings.models_base_path / f"adapters_{config.get('version', '2.5')}"
+
+                # Extract version from model filename (e.g., mbert_ots_model_2.5.pth -> 2.5)
+                model_filename = model_path.name
+                if "mbert_ots_model_" in model_filename and ".pth" in model_filename:
+                    version_part = model_filename.replace("mbert_ots_model_", "").replace(".pth", "")
+                    if version_part.replace(".", "").isdigit():
+                        detected_version = version_part
+                        # Update global settings dynamically
+                        settings.api_version = f"{detected_version}.0"
+                        logger.info(f"Detected model version {detected_version}, updating API version to {settings.api_version}")
+                    else:
+                        detected_version = config.get('version', '2.5')
+                else:
+                    detected_version = config.get('version', '2.5')
+
+                adapter_path = settings.models_base_path / f"adapters_{detected_version}"
 
                 # Load base model
                 if not model_path.exists():

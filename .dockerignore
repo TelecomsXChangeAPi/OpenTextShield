@@ -24,6 +24,9 @@ __pycache__/
 *.csv
 !src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv
 
+# Exclude training datasets to reduce image size
+src/mBERT/training/model-training/dataset/
+
 # === ARCHIVE AND OLD VERSIONS ===
 # Exclude entire archive directory (4.7GB+ of old models/datasets)
 **/archive/
