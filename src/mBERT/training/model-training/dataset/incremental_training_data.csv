@@ -1,0 +1,23 @@
+text,label
+"Congratulations! You won $1000. Click here to claim: bit.ly/free-money",phishing
+"Your bank statement is ready. Download from secure-bank-login.net",phishing
+"Package delivery delayed due to weather. Track at fedex-update.com",phishing
+"New crypto investment opportunity with 500% returns, guaranteed!",spam
+"Win a free vacation! Enter your email for details",spam
+"Your Netflix subscription has expired. Renew now to continue watching",phishing
+"Bank of America security update required. Login to verify your account",phishing
+"Amazon order confirmation: Your package is out for delivery",ham
+"Meeting reminder: Project review at 2 PM tomorrow",ham
+"Doctor appointment scheduled for Wednesday at 11 AM",ham
+"Team standup moved to 9:30 AM today",ham
+"Invoice #12345 has been paid successfully",ham
+"Get rich quick with this amazing investment scheme!",spam
+"Free lottery ticket! You've won $1 million!",spam
+"Special promotion: Buy one get one free on all products",spam
+"Urgent: Your computer is infected. Download antivirus now",phishing
+"Microsoft security alert: Your Windows license has expired",phishing
+"iCloud storage full. Upgrade now to continue syncing",phishing
+"Weekly team sync at 10 AM in conference room A",ham
+"Project deadline extended to next Friday",ham
+"Customer feedback review meeting scheduled",ham
+"System maintenance completed successfully",ham

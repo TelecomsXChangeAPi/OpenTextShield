@@ -165,6 +165,7 @@ torch==2.7.1
 tqdm==4.66.3
 traitlets==5.9.0
 transformers==4.46.3
+peft==0.7.1
 translate==3.6.1
 typeguard==2.13.3
 typing_extensions==4.8.0

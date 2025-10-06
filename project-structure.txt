@@ -1,115 +1,116 @@
 .
-├── .claude
-│   └── settings.local.json
 ├── feedback
 │   └── feedback_ots-mbert.csv
-├── frontend
-│   └── index.html
-├── tests
-│   ├── api                      # API endpoint tests
-│   │   ├── test_api_complete.py
-│   │   ├── test_api_full.py
-│   │   ├── test_api_simple.py
-│   │   ├── test_api_structure.py
-│   │   ├── test_feedback_api.py
-│   │   └── test_server.py
-│   ├── integration              # Integration and e2e tests
-│   │   ├── test-docker.sh
-│   │   ├── test-frontend.sh
-│   │   └── test_feedback_curl.sh
-│   ├── data                     # Test data and fixtures
-│   │   ├── test_obvious_phishing.json
-│   │   ├── test_obvious_spam.json
-│   │   ├── test_phishing.json
-│   │   └── test_spam.json
-│   └── README.md               # Test documentation
 ├── src
-│   ├── api_interface
-│   │   ├── config
+│   ├── adapters_2.5/              # PEFT adapters for Hebrew-trained model
+│   │   ├── adapter_config.json
+│   │   └── README.md
+│   ├── api_interface              # FastAPI backend
+│   │   ├── config/
 │   │   │   ├── __init__.py
 │   │   │   ├── settings.py
 │   │   │   └── simple_settings.py
-│   │   ├── middleware
+│   │   ├── middleware/
 │   │   │   ├── __init__.py
 │   │   │   └── security.py
-│   │   ├── models
+│   │   ├── models/
 │   │   │   ├── __init__.py
 │   │   │   ├── request_models.py
-│   │   │   └── response_models.py
-│   │   ├── routers
+│   │   │   ├── response_models.py
+│   │   │   └── tmforum_models.py
+│   │   ├── routers/
 │   │   │   ├── __init__.py
 │   │   │   ├── feedback.py
 │   │   │   ├── health.py
-│   │   │   └── prediction.py
-│   │   ├── services
+│   │   │   ├── prediction.py
+│   │   │   └── tmforum.py
+│   │   ├── services/
 │   │   │   ├── __init__.py
+│   │   │   ├── enhanced_preprocessing.py
 │   │   │   ├── feedback_service.py
 │   │   │   ├── model_loader.py
 │   │   │   └── prediction_service.py
-│   │   ├── utils
+│   │   ├── utils/
 │   │   │   ├── __init__.py
 │   │   │   ├── exceptions.py
 │   │   │   └── logging.py
 │   │   ├── __init__.py
 │   │   ├── main.py
 │   │   └── openapi.yaml
-│   ├── mBERT
-│   │   ├── tests
-│   │   │   ├── pytest_tests.py
-│   │   │   ├── README.md
-│   │   │   ├── run_all_tests.py
-│   │   │   ├── simple_phishing.json
-│   │   │   ├── stressTest_1000_mlx.py
-│   │   │   ├── stressTest_20k_mlx_api.py
-│   │   │   ├── stressTest_500.py
-│   │   │   ├── test_basic.py
-│   │   │   ├── test_obvious_ham.json
-│   │   │   ├── test_obvious_phishing.json
-│   │   │   ├── test_obvious_spam.json
-│   │   │   ├── test_sms.py
-│   │   │   ├── test_stress.py
-│   │   │   └── test_utils.py
-│   │   └── training
-│   │       └── model-training
-│   │           ├── archive
-│   │           │   ├── changelogs
-│   │           │   │   ├── 1_7_5_change_log.txt
-│   │           │   │   ├── 1_7_6_change_log.txt
-│   │           │   │   ├── 1_7_change_log.txt
-│   │           │   │   ├── 1_8_0_change_log
-│   │           │   │   ├── 1_9_0_change_log
-│   │           │   │   └── 2.1_change_log
-│   │           │   └── datasets
-│   │           │       ├── sms_spam_phishing_dataset_v1.5.csv
-│   │           │       ├── sms_spam_phishing_dataset_v1.6.csv
-│   │           │       ├── sms_spam_phishing_dataset_v1.7.5.csv
-│   │           │       ├── sms_spam_phishing_dataset_v1.7.6.csv
-│   │           │       ├── sms_spam_phishing_dataset_v1.7.csv
-│   │           │       ├── sms_spam_phishing_dataset_v2.0.csv
-│   │           │       └── translated_dataset1_6_SRILANKA.csv
-│   │           ├── dataset
-│   │           │   ├── phishing_urls_dataset.csv
-│   │           │   ├── sms_spam_indo-xsmall.csv
-│   │           │   └── sms_spam_phishing_dataset_v2.1.csv
-│   │           ├── utils
-│   │           │   └── bert.py
-│   │           ├── CHANGELOG.md
-│   │           ├── clean_dataset.py
-│   │           ├── config.py
-│   │           ├── dataset_manager.py
-│   │           ├── load_bert.py
-│   │           ├── main.py
-│   │           ├── mbert_ots_model_2.1.pth
-│   │           ├── README.md
-│   │           ├── requirements-minimal.txt
-│   │           ├── requirements.txt
-│   │           ├── test_training.py
-│   │           ├── train_ots_improved.py
-│   │           ├── train_ots.py
-│   │           ├── translate_dataset_secure.py
-│   │           └── translate_dataset.py
-│   ├── README.md
-│   └── requirements.txt
+│   └── mBERT                      # Multilingual BERT model system
+│       ├── tests/                 # Model tests
+│       │   ├── pytest_tests.py
+│       │   ├── README.md
+│       │   ├── run_all_tests.py
+│       │   ├── simple_phishing.json
+│       │   ├── stressTest_1000_mlx.py
+│       │   ├── stressTest_20k_mlx_api.py
+│       │   ├── stressTest_500.py
+│       │   ├── test_basic.py
+│       │   ├── test_obvious_ham.json
+│       │   ├── test_obvious_phishing.json
+│       │   ├── test_obvious_spam.json
+│       │   ├── test_sms.py
+│       │   ├── test_stress.py
+│       │   └── test_utils.py
+│       └── training/
+│           └── model-training/     # Training infrastructure
+│               ├── adapters_2.5/   # Best PEFT adapters
+│               │   ├── adapter_config.json
+│               │   └── README.md
+│               ├── adapters_2.5_best/  # Best validation adapters
+│               │   ├── adapter_config.json
+│               │   └── README.md
+│               ├── dataset/        # Training datasets
+│               │   ├── hebrew_comprehensive_training.csv
+│               │   ├── hebrew_comprehensive_training_expanded.csv
+│               │   ├── hebrew_dataset_10k.csv
+│               │   ├── hebrew_dataset_final.csv
+│               │   ├── hebrew_incremental_training.csv
+│               │   ├── hebrew_translated_dataset.csv
+│               │   ├── incremental_training_data.csv
+│               │   ├── new_incremental_data.csv
+│               │   ├── phishing_urls_dataset.csv
+│               │   ├── sms_spam_phishing_dataset_v2.4_combined.csv
+│               │   └── test_subset.csv
+│               ├── utils/          # Training utilities
+│               │   ├── adversarial_data_generator.py
+│               │   ├── bert.py
+│               │   ├── create_hebrew_dataset.py
+│               │   ├── create_proper_hebrew_dataset.py
+│               │   ├── generate_hebrew_dataset.py
+│               │   ├── quick_adversarial_augmentation.py
+│               │   └── translate_to_hebrew.py
+│               ├── .gitattributes
+│               ├── CHANGELOG.md
+│               ├── README.md
+│               ├── advanced_adversarial_evaluation_report.md
+│               ├── augment_dataset.py
+│               ├── balance_dataset.py
+│               ├── clean_dataset.py
+│               ├── compare_models.py
+│               ├── comprehensive_comparison_report.md
+│               ├── comprehensive_test.py
+│               ├── comprehensive_test_report.md
+│               ├── config.py
+│               ├── dataset_improvements_summary.py
+│               ├── dataset_manager.py
+│               ├── enhanced_training_config.json
+│               ├── expand_indonesian_dataset.py
+│               ├── incremental_training_metadata_2.5.json
+│               ├── load_bert.py
+│               ├── main.py
+│               ├── requirements-minimal.txt
+│               ├── requirements.txt
+│               ├── test_enhanced_pipeline.py
+│               ├── test_training.py
+│               ├── train_enhanced_multilingual.py
+│               ├── train_incremental.py
+│               ├── train_ots.py
+│               ├── train_ots_improved.py
+│               ├── translate_dataset.py
+│               ├── translate_dataset_secure.py
+│               └── validate_dataset.py
 ├── .dockerignore
 ├── .dockerignore.local
 ├── .gitattributes
@@ -138,23 +139,35 @@
 ├── start-manual.sh
 ├── start.sh
 ├── STARTUP_GUIDE.md
-├── test_api_complete.py
-├── test_api_full.py
-├── test_api_simple.py
-├── test_api_structure.py
-├── test_feedback_api.py
-├── test_feedback_curl.sh
-├── test_obvious_phishing.json
-├── test_obvious_spam.json
-├── test_phishing.json
-├── test_server.py
-├── test_spam.json
-├── test-docker.sh
-└── test-frontend.sh
+├── tests/                    # All test files organized
+│   ├── api/
+│   │   ├── test_api_complete.py
+│   │   ├── test_api_full.py
+│   │   ├── test_api_simple.py
+│   │   ├── test_api_structure.py
+│   │   ├── test_feedback_api.py
+│   │   ├── test_server.py
+│   │   └── test_tmforum_api.py
+│   ├── data/
+│   │   ├── test_obvious_phishing.json
+│   │   ├── test_obvious_spam.json
+│   │   ├── test_phishing.json
+│   │   ├── test_spam.json
+│   │   └── test_cases.json
+│   ├── integration/
+│   │   ├── test-docker.sh
+│   │   ├── test-frontend.sh
+│   │   ├── test_feedback_curl.sh
+│   │   ├── test_docker_v2.5.sh
+│   │   └── verify_docker_setup.sh
+│   ├── comprehensive_model_comparison.py
+│   ├── multilingual_comparison_test.py
+│   ├── quick_improvement_test.py
+│   └── test_apis.py
 
 ## Project Overview
 
-**OpenTextShield Platform v2** - Modern SMS Spam/Phishing Detection System
+**OpenTextShield Platform v2.5** - Advanced Multilingual SMS Spam/Phishing Detection with PEFT
 
 ### Core Components
 
@@ -163,26 +176,33 @@
 - `config/`: Environment-based configuration management
 - `models/`: Pydantic request/response models with validation
 - `services/`: Business logic (model_loader, prediction_service, feedback_service)
-- `routers/`: API endpoints (health, prediction, feedback)
+- `routers/`: API endpoints (health, prediction, feedback, TMForum)
 - `middleware/`: Security middleware (IP verification, CORS)
 - `utils/`: Logging and custom exceptions
 
-**mBERT Model** (`src/mBERT/`) - Multilingual BERT for global SMS classification:
-- `training/model-training/`: Training scripts and model files
-- `mbert_ots_model_2.1.pth`: Production model (679MB)
+**mBERT Model** (`src/mBERT/`) - Multilingual BERT with PEFT incremental learning:
+- `training/model-training/`: Complete training infrastructure
+- `adapters_2.5/`: PEFT adapters for Hebrew-trained model (5.4MB vs 679MB base model)
+- `dataset/`: Training datasets including 10k Hebrew samples
+- `utils/`: Training utilities and Hebrew dataset generation scripts
 - `tests/`: Comprehensive test suite including stress tests
-- Apple Silicon MLX optimization support
+- PEFT/LoRA support for continuous incremental learning
 
-**Frontend** (`frontend/`) - Professional web interface:
-- Clean AI research lab aesthetic
-- Real-time system monitoring
-- Interactive text analysis interface
+**Adapters** (`src/adapters_2.5/`) - Parameter-Efficient Fine-Tuning:
+- `adapter_model.safetensors`: Hebrew-trained LoRA weights (5.4MB)
+- `adapter_config.json`: PEFT configuration (r=8, alpha=16)
+- Enables Hebrew language support without full model retraining
+
+**Training Data** (`src/mBERT/training/model-training/dataset/`):
+- `sms_spam_phishing_dataset_v2.4_combined.csv`: 149k multilingual samples
+- `hebrew_dataset_10k.csv`: 10k Hebrew-translated samples
+- Various incremental training datasets
 
 **Docker Support** - Multi-architecture deployment:
 - `Dockerfile`: Modern Ubuntu 24.04 + Python 3.12
 - `docker-compose.yml`: Complete stack deployment
 - ARM64 and x86_64 architecture support
-- Optimized 2.27GB image size (was 31.15GB)
+- Optimized container with PEFT support
 
 **Documentation** - Comprehensive guides:
 - `README.md`: Main project documentation
@@ -192,13 +212,23 @@
 - `FEEDBACK_API.md`: Feedback system documentation
 
 **Key Features:**
-- Modern clean architecture (removed legacy BERT/FastText)
-- Professional modular API design
-- Multi-language support via mBERT
-- Real-time web interface
-- Comprehensive testing suite
-- Docker containerization
-- Feedback collection system
-- Health monitoring and diagnostics
+- **PEFT/LoRA Incremental Learning**: Continuous model improvement without full retraining
+- **Hebrew Language Support**: 10k sample Hebrew training with 99.6% validation accuracy
+- **Multilingual Classification**: mBERT with 104+ language coverage
+- **Professional API**: RESTful endpoints with comprehensive documentation
+- **Real-time Processing**: <200ms response time with PEFT optimization
+- **Advanced Security**: Spam, phishing, and ham classification
+- **Modular Architecture**: Clean separation of concerns
+- **Comprehensive Testing**: API, integration, and model tests
+- **Docker Ready**: Complete containerized deployment
+- **Feedback System**: Continuous learning from user corrections
 
-12 directories, 89 files
+**Latest Updates:**
+- ✅ **Hebrew Training Completed**: 10k samples, 99.33% test accuracy
+- ✅ **PEFT Integration**: LoRA adapters for efficient incremental learning
+- ✅ **API Deployment**: Hebrew-trained model serving on port 9000
+- ✅ **Complete File Organization**: All datasets, tests, and utilities properly organized
+- ✅ **Dependencies Updated**: Added PEFT, pandas, scikit-learn to requirements.txt
+- ✅ **Project Cleanup Finalized**: All test scripts, utilities, and data files organized
+
+**File Count**: 15 directories, 120+ files

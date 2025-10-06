@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 # Manual start (alternative - API only)
 source ots/bin/activate
-uvicorn src.api-interface.main:app --host 0.0.0.0 --port 8002
+uvicorn src.api_interface.main:app --host 0.0.0.0 --port 9000
 ```
 
 ### Frontend Interface

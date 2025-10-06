@@ -114,7 +114,7 @@ class TMForumInferenceJob(BaseModel):
                 "model": {
                     "id": "ots-mbert",
                     "name": "OpenTextShield mBERT",
-                    "version": "2.1",
+                    "version": "2.5",
                     "type": "bert",
                     "capabilities": ["text-classification", "multilingual"]
                 },
@@ -152,7 +152,7 @@ class TMForumInferenceJobCreate(BaseModel):
                 "model": {
                     "id": "ots-mbert",
                     "name": "OpenTextShield mBERT",
-                    "version": "2.1",
+                    "version": "2.5",
                     "type": "bert",
                     "capabilities": ["text-classification", "multilingual"]
                 },

@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     # API Configuration
     api_title: str = "OpenTextShield API"
     api_description: str = "Professional SMS spam and phishing detection API"
-    api_version: str = "2.1.0"
+    api_version: str = "2.5.0"
     api_host: str = "0.0.0.0"
     api_port: int = 8002
     
@@ -47,7 +47,8 @@ class Settings(BaseSettings):
         "multilingual": {
             "path": "mBERT/training/model-training/mbert_ots_model_2.5.pth",
             "tokenizer": "bert-base-multilingual-cased",
-            "num_labels": "3"
+            "num_labels": "3",
+            "version": "2.5"
         }
     }
     
