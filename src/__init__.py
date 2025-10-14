@@ -1,0 +1,1 @@
+"""OpenTextShield source package."""

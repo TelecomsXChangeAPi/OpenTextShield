@@ -14,9 +14,19 @@ from .config.settings import settings
 from .utils.logging import setup_logging, logger
 from .utils.exceptions import OpenTextShieldException
 from .services.model_loader import model_manager
-from .services.tmforum_service import tmforum_service
 from .middleware.security import setup_cors_middleware
-from .routers import health, prediction, feedback, tmforum
+from .routers import health, prediction, feedback
+
+# Import TMForum components (optional - may not be available in all deployments)
+try:
+    from .services.tmforum_service import tmforum_service
+    from .routers import tmforum
+    TMFORUM_AVAILABLE = True
+except ImportError as e:
+    logger.warning(f"TMForum service not available: {e}")
+    tmforum_service = None
+    tmforum = None
+    TMFORUM_AVAILABLE = False
 
 
 @asynccontextmanager
@@ -38,9 +48,10 @@ async def lifespan(app: FastAPI):
         )
         logger.info("All models loaded successfully")
 
-        # Initialize TMForum service
-        await tmforum_service.initialize()
-        logger.info("TMForum service initialized successfully")
+        # Initialize TMForum service (if available)
+        if TMFORUM_AVAILABLE and tmforum_service:
+            await tmforum_service.initialize()
+            logger.info("TMForum service initialized successfully")
 
     except Exception as e:
         logger.error(f"Failed to initialize services during startup: {str(e)}")
@@ -54,12 +65,13 @@ async def lifespan(app: FastAPI):
     # Shutdown
     logger.info("Shutting down OpenTextShield API...")
 
-    try:
-        # Shutdown TMForum service
-        await tmforum_service.shutdown()
-        logger.info("TMForum service shutdown completed")
-    except Exception as e:
-        logger.error(f"Error during TMForum service shutdown: {str(e)}")
+    # Shutdown TMForum service (if available)
+    if TMFORUM_AVAILABLE and tmforum_service:
+        try:
+            await tmforum_service.shutdown()
+            logger.info("TMForum service shutdown completed")
+        except Exception as e:
+            logger.error(f"Error during TMForum service shutdown: {str(e)}")
 
     logger.info("OpenTextShield API shutdown completed")
 
@@ -82,7 +94,8 @@ setup_cors_middleware(app)
 app.include_router(health.router)
 app.include_router(prediction.router)
 app.include_router(feedback.router)
-app.include_router(tmforum.router)
+if TMFORUM_AVAILABLE and tmforum:
+    app.include_router(tmforum.router)
 
 
 @app.exception_handler(OpenTextShieldException)

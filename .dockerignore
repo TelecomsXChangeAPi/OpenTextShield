@@ -31,6 +31,7 @@ src/mBERT/training/model-training/dataset/
 # Exclude entire archive directory (4.7GB+ of old models/datasets)
 **/archive/
 **/models/
+!src/api_interface/models/
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
 *_v1.*
 *_v2.0.*
