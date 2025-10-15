@@ -25,13 +25,18 @@ class Settings(BaseSettings):
     # API Configuration
     api_title: str = "OpenTextShield API"
     api_description: str = "Professional SMS spam and phishing detection API"
-    api_version: str = "2.1.0"
+    api_version: str = "2.5.0"
     api_host: str = "0.0.0.0"
     api_port: int = 8002
     
     # Security
     allowed_ips: Set[str] = {"ANY", "127.0.0.1", "localhost"}
-    cors_origins: List[str] = ["*"]
+    cors_origins: List[str] = [
+        "http://localhost:8080",
+        "http://localhost:8081", 
+        "http://127.0.0.1:8080",
+        "http://127.0.0.1:8081"
+    ]
     
     # Model Paths
     project_root: Path = Path(__file__).parent.parent.parent.parent
@@ -40,9 +45,10 @@ class Settings(BaseSettings):
     # mBERT Models
     mbert_model_configs: Dict[str, Dict[str, str]] = {
         "multilingual": {
-            "path": "mBERT/training/model-training/mbert_ots_model_2.1.pth",
+            "path": "mBERT/training/model-training/mbert_ots_model_2.5.pth",
             "tokenizer": "bert-base-multilingual-cased",
-            "num_labels": "3"
+            "num_labels": "3",
+            "version": "2.5"
         }
     }
     

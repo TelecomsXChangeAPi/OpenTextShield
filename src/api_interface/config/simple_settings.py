@@ -14,7 +14,7 @@ class Settings:
         # API Configuration
         self.api_title = "OpenTextShield API"
         self.api_description = "Professional SMS spam and phishing detection API"
-        self.api_version = "2.1.0"
+        self.api_version = "2.5.0"
         self.api_host = os.getenv("OTS_API_HOST", "0.0.0.0")
         self.api_port = int(os.getenv("OTS_API_PORT", "8002"))
         
@@ -32,14 +32,13 @@ class Settings:
         # BERT Models
         self.bert_model_configs: Dict[str, Dict[str, str]] = {
             "bert-base-multilingual-cased": {
-                "path": "mBERT/training/model-training/mbert_ots_model_2.1.pth",
+                "path": "mBERT/training/model-training/mbert_ots_model_2.5.pth",
                 "tokenizer": "bert-base-multilingual-cased",
                 "num_labels": "3"
             }
         }
         
-        # FastText Model
-        self.fasttext_model_path = "FastText/training/ots_fastext_model_v2.1.bin"
+        # Note: FastText support removed in v2.1 - now using mBERT only
         
         # Processing
         self.max_text_length = int(os.getenv("OTS_MAX_TEXT_LENGTH", "512"))

@@ -53,7 +53,7 @@ Thumbs.db
 src/mBERT/training/model-training/archive/models/*.pth
 src/mBERT/training/model-training/archive/models/*.bin
 
-# Specific older model versions (exclude from git, keep only 2.1 in LFS)
+# Specific older model versions (exclude from git, keep only 2.5 in LFS)
 src/mBERT/training/model-training/mbert_ots_model_1.5.pth
 src/mBERT/training/model-training/mbert_ots_model_1.6.pth
 src/mBERT/training/model-training/mbert_ots_model_1.7.pth
@@ -61,3 +61,13 @@ src/mBERT/training/model-training/mbert_ots_model_1.7_5.pth
 src/mBERT/training/model-training/mbert_ots_model_1.8_0.pth
 src/mBERT/training/model-training/mbert_ots_model_1.9_0.pth
 src/mBERT/training/model-training/mbert_ots_model_2.0.pth
+src/mBERT/training/model-training/mbert_ots_model_2.1.pth
+
+# Temporary files
+installed_packages.txt
+test_results.json
+test_samples.json
+training_*.log
+training_metadata_*.json
+**/enhanced_mbert_*_best_model_epoch_*/
+**/models/enhanced_mbert_*_best_model_epoch_*/

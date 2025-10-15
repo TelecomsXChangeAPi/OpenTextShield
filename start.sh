@@ -123,5 +123,8 @@ echo "🛑 Press Ctrl+C to stop both servers"
 echo ""
 
 # Start the API service using Uvicorn
-uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002
+# Set PYTHONPATH to ensure src package is found
+export PYTHONPATH="$SCRIPT_DIR:$PYTHONPATH"
+cd "$SCRIPT_DIR"
+python -m uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002
 

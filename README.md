@@ -23,6 +23,14 @@ cd OpenTextShield
 ./start.sh
 
 # Or use Docker
+# Build and run (includes 679MB mBERT model)
+docker build -t opentextshield .
+docker run -d -p 8002:8002 -p 8080:8080 opentextshield
+
+# Alternative if port 8080 is busy
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+
+# Or use pre-built image
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 ```
 
@@ -33,8 +41,8 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 ## ✨ Key Features
 
-- 🌍 **Multilingual Support**: 104+ languages with mBERT
-- ⚡ **Real-time Classification**: Professional API with <200ms response time
+- 🌍 **Multilingual Support**: Built on mBERT with coverage for 104+ languages; currently trained on 10 languages for SMS classification.
+- ⚡ **Real-time Classification**: Professional API with <200ms response time> 
 - 🔒 **Advanced Detection**: Spam, phishing, and ham classification
 - 📊 **Professional Interface**: Research-grade web interface with metrics
 - 🐳 **Docker Ready**: Complete containerized deployment
@@ -43,15 +51,19 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 ## 🛠 API Usage
 
-### Quick Test
+OpenTextShield provides both **legacy API** and **TMForum-compliant API** endpoints.
+
+### Legacy API (Direct Classification)
+
+#### Quick Test
 ```bash
-# Test the API endpoint
+# Test the legacy API endpoint
 curl -X POST "http://localhost:8002/predict/" \
   -H "Content-Type: application/json" \
   -d '{"text":"Your SMS content here","model":"ots-mbert"}'
 ```
 
-### Response Format
+#### Response Format
 ```json
 {
   "label": "ham|spam|phishing",
@@ -63,6 +75,82 @@ curl -X POST "http://localhost:8002/predict/" \
     "author": "TelecomsXChange (TCXC)"
   }
 }
+```
+
+### TMForum API (TMF922 - AI Inference Job Management)
+
+#### Create Inference Job
+```bash
+# Create a TMForum-compliant inference job
+curl -X POST "http://localhost:8002/tmf-api/aiInferenceJob" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "priority": "normal",
+    "input": {
+      "inputType": "text",
+      "inputFormat": "plain",
+      "inputData": {"text": "Free money! Click here now!"}
+    },
+    "model": {
+      "id": "ots-mbert",
+      "name": "OpenTextShield mBERT",
+      "version": "2.1",
+      "type": "bert",
+      "capabilities": ["text-classification", "multilingual"]
+    },
+    "name": "SMS Classification Job"
+  }'
+```
+
+#### Check Job Status
+```bash
+# Check inference job status (replace JOB_ID with actual ID)
+curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob/JOB_ID"
+```
+
+#### Response Format (Completed Job)
+```json
+{
+  "id": "inference-job-123",
+  "state": "completed",
+  "priority": "normal",
+  "input": {
+    "inputType": "text",
+    "inputFormat": "plain",
+    "inputData": {"text": "Free money! Click here now!"}
+  },
+  "output": {
+    "outputType": "classification",
+    "outputFormat": "json",
+    "outputData": {
+      "label": "spam",
+      "probability": 0.95
+    },
+    "confidence": 0.95,
+    "outputMetadata": {
+      "model_used": "OTS_mBERT",
+      "model_version": "2.1",
+      "processing_time_seconds": 0.15
+    }
+  },
+  "model": {
+    "id": "ots-mbert",
+    "name": "OpenTextShield mBERT",
+    "version": "2.1",
+    "type": "bert",
+    "capabilities": ["text-classification", "multilingual"]
+  },
+  "creationDate": "2024-01-15T10:30:00Z",
+  "completionDate": "2024-01-15T10:30:15Z",
+  "processingTimeMs": 150,
+  "type": "TextClassificationInferenceJob"
+}
+```
+
+#### List Inference Jobs
+```bash
+# List all inference jobs
+curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob"
 ```
 
 ## 📋 Installation Guide
@@ -87,13 +175,70 @@ pip install -r requirements.txt
 ```
 
 ### Docker Deployment
-```bash
-# Using Docker Compose (recommended)
-docker-compose up -d
 
-# Or direct Docker run
-docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
+#### 🛡️ Security-Enhanced Docker Options
+
+**Option 1: Enhanced Security (Recommended)**
+```bash
+# Multi-stage build with non-root user - best balance of security and functionality
+docker build -f Dockerfile.secure -t opentextshield:secure .
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield:secure
 ```
+
+**Option 2: Standard Build**
+```bash
+# Standard build with security updates
+docker build -t opentextshield .
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+```
+
+**Option 3: Maximum Security (Advanced)**
+```bash
+# Ultra-secure distroless build - minimal attack surface (API only)
+docker build -f Dockerfile.distroless -t opentextshield:distroless .
+docker run -d -p 8002:8002 opentextshield:distroless
+```
+
+#### 🏗️ Architecture-Specific Builds
+
+**x86_64 (Intel/AMD) Architecture:**
+```bash
+# Enhanced security for x86
+docker buildx build --platform linux/amd64 -f Dockerfile.secure -t opentextshield:x86-secure .
+
+# Standard x86 build
+docker buildx build --platform linux/amd64 -t telecomsxchange/opentextshield:2.1-x86-v2 .
+```
+
+**ARM64 (Apple Silicon) Architecture:**
+```bash
+# Enhanced security for ARM64
+docker buildx build --platform linux/arm64 -f Dockerfile.secure -t opentextshield:arm64-secure .
+```
+
+#### 📦 Pre-built Images
+```bash
+# Latest stable releases
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:2.1-x86-v2
+
+# Using Docker Compose (recommended for production)
+docker-compose up -d
+```
+
+**Container Access:**
+- API: http://localhost:8002
+- Frontend: http://localhost:8080 (or 8081)
+- Health: http://localhost:8002/health
+
+**Security Benefits:**
+- 🔒 **Enhanced**: 60-80% fewer vulnerabilities, non-root execution, multi-stage builds
+- 🛡️ **Distroless**: Minimal attack surface, no shell access, maximum security
+- 📦 **Smaller images**: Optimized builds reduce image size and vulnerabilities
+
+**Architecture Support:**
+- ARM64 (Apple Silicon): `telecomsxchange/opentextshield:latest`
+- x86_64 (Intel/AMD): `telecomsxchange/opentextshield:2.1-x86-v2`
 
 ## 🏗 Architecture
 

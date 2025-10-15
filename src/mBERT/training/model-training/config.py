@@ -16,7 +16,7 @@ class TrainingConfig:
         
         # Dataset Configuration
         self.dataset_dir = self.base_dir / "dataset"
-        self.current_dataset = "sms_spam_phishing_dataset_v2.1.csv"
+        self.current_dataset = "sms_spam_phishing_dataset_v2.4_combined.csv"
         self.dataset_path = self.dataset_dir / self.current_dataset
         
         # Model Configuration
@@ -32,7 +32,7 @@ class TrainingConfig:
         self.random_state = 42
         
         # Model Save Configuration
-        self.model_version = "2.1"
+        self.model_version = "2.5"
         self.model_filename = f"mbert_ots_model_{self.model_version}.pth"
         self.model_save_path = self.base_dir / self.model_filename
         

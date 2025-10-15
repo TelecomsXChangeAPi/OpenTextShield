@@ -535,7 +535,7 @@
                 <div class="form-group">
                     <label for="modelSelect" class="form-label">Analysis Model</label>
                     <select id="modelSelect" class="form-select">
-                        <option value="ots-mbert">OpenTextShield v.2.1 (mbert)</option>
+                        <option value="ots-mbert">OpenTextShield Latest</option>
                     </select>
                 </div>
 
@@ -799,9 +799,19 @@
             }, 150);
         });
         
-        // Initialize system
+        // Initialize system with more frequent checks initially
         checkSystemStatus();
-        setInterval(checkSystemStatus, 30000); // Check every 30 seconds
+        
+        // Check more frequently for first 2 minutes, then every 30 seconds
+        let checkCount = 0;
+        const quickInterval = setInterval(() => {
+            checkSystemStatus();
+            checkCount++;
+            if (checkCount >= 24) { // 24 * 5s = 2 minutes
+                clearInterval(quickInterval);
+                setInterval(checkSystemStatus, 30000); // Then check every 30 seconds
+            }
+        }, 5000); // Check every 5 seconds initially
         
         // Update placeholder with instruction
         document.getElementById('textInput').placeholder = 'Enter text message for analysis or use quick samples above...';

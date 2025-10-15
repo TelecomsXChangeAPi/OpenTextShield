@@ -1,0 +1,77 @@
+{
+  "model_version": "2.5",
+  "training_type": "incremental_peft",
+  "lora_config": {
+    "r": 8,
+    "lora_alpha": 16,
+    "target_modules": "{'value', 'key', 'dense', 'query'}",
+    "lora_dropout": 0.1
+  },
+  "config": {
+    "dataset_path": "/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv",
+    "model_name": "bert-base-multilingual-cased",
+    "num_labels": 3,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "num_epochs": 3,
+    "model_save_path": "/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.5.pth"
+  },
+  "device": "cpu",
+  "training_metrics": {
+    "train_losses": [
+      0.07748647987019679,
+      0.07388291222997649,
+      0.07056838070693879
+    ],
+    "val_losses": [
+      0.023562747283536505,
+      0.023424916189508215,
+      0.02309518946214589
+    ],
+    "val_accuracies": [
+      0.9953333333333333,
+      0.9953333333333333,
+      0.996
+    ],
+    "training_time": 1053.1546239852905,
+    "best_val_accuracy": 0.996,
+    "best_epoch": 2
+  },
+  "test_results": {
+    "accuracy": 0.9933333333333333,
+    "classification_report": {
+      "ham": {
+        "precision": 0.9976958525345622,
+        "recall": 0.9840909090909091,
+        "f1-score": 0.9908466819221968,
+        "support": 440.0
+      },
+      "spam": {
+        "precision": 0.9935233160621761,
+        "recall": 0.9961038961038962,
+        "f1-score": 0.9948119325551232,
+        "support": 770.0
+      },
+      "phishing": {
+        "precision": 0.9863945578231292,
+        "recall": 1.0,
+        "f1-score": 0.9931506849315068,
+        "support": 290.0
+      },
+      "accuracy": 0.9933333333333333,
+      "macro avg": {
+        "precision": 0.9925379088066225,
+        "recall": 0.9933982683982684,
+        "f1-score": 0.9929364331362756,
+        "support": 1500.0
+      },
+      "weighted avg": {
+        "precision": 0.9933690335011937,
+        "recall": 0.9933333333333333,
+        "f1-score": 0.993327617828899,
+        "support": 1500.0
+      }
+    }
+  },
+  "timestamp": "2025-10-05 02:16:35"
+}

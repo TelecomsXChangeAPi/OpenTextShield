@@ -17,6 +17,17 @@ from .services.model_loader import model_manager
 from .middleware.security import setup_cors_middleware
 from .routers import health, prediction, feedback
 
+# Import TMForum components (optional - may not be available in all deployments)
+try:
+    from .services.tmforum_service import tmforum_service
+    from .routers import tmforum
+    TMFORUM_AVAILABLE = True
+except ImportError as e:
+    logger.warning(f"TMForum service not available: {e}")
+    tmforum_service = None
+    tmforum = None
+    TMFORUM_AVAILABLE = False
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -36,18 +47,32 @@ async def lifespan(app: FastAPI):
             None, model_manager.load_all_models
         )
         logger.info("All models loaded successfully")
-        
+
+        # Initialize TMForum service (if available)
+        if TMFORUM_AVAILABLE and tmforum_service:
+            await tmforum_service.initialize()
+            logger.info("TMForum service initialized successfully")
+
     except Exception as e:
-        logger.error(f"Failed to load models during startup: {str(e)}")
-        # Continue startup even if some models fail to load
-        # Individual endpoints will handle model availability
-    
+        logger.error(f"Failed to initialize services during startup: {str(e)}")
+        # Continue startup even if some services fail to initialize
+        # Individual endpoints will handle service availability
+
     logger.info("OpenTextShield API startup completed")
     
     yield
     
     # Shutdown
     logger.info("Shutting down OpenTextShield API...")
+
+    # Shutdown TMForum service (if available)
+    if TMFORUM_AVAILABLE and tmforum_service:
+        try:
+            await tmforum_service.shutdown()
+            logger.info("TMForum service shutdown completed")
+        except Exception as e:
+            logger.error(f"Error during TMForum service shutdown: {str(e)}")
+
     logger.info("OpenTextShield API shutdown completed")
 
 
@@ -69,6 +94,8 @@ setup_cors_middleware(app)
 app.include_router(health.router)
 app.include_router(prediction.router)
 app.include_router(feedback.router)
+if TMFORUM_AVAILABLE and tmforum:
+    app.include_router(tmforum.router)
 
 
 @app.exception_handler(OpenTextShieldException)
@@ -96,14 +123,13 @@ async def opentextshield_exception_handler(request, exc: OpenTextShieldException
 @app.exception_handler(Exception)
 async def general_exception_handler(request, exc: Exception):
     """Handle general exceptions."""
-    logger.error(f"Unhandled exception: {str(exc)}")
+    logger.error(f"Unhandled exception: {type(exc).__name__}")
     
     return JSONResponse(
         status_code=500,
         content={
             "error": "INTERNAL_SERVER_ERROR",
-            "message": "An unexpected error occurred",
-            "details": {"error": str(exc)},
+            "message": "An unexpected error occurred. Please try again later.",
             "timestamp": datetime.utcnow().isoformat() + "Z"
         }
     )

@@ -8,10 +8,16 @@ data might be scarce or unavailable.
 
 import pandas as pd
 import time
+import os
 from openai import OpenAI
 from tqdm import tqdm  # For displaying the progress bar
 
-client = OpenAI(api_key='API-KEY-HERE')
+# Get API key from environment variable
+api_key = os.getenv('OPENAI_API_KEY')
+if not api_key:
+    raise ValueError("OPENAI_API_KEY environment variable is required")
+
+client = OpenAI(api_key=api_key)
 
 def translate_text(text, target_language="es"):
     """

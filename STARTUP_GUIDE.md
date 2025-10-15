@@ -24,14 +24,18 @@ This guide provides multiple ways to start the OpenTextShield API, supporting bo
 
 ### Option 4: Docker
 ```bash
+# Build locally (includes 679MB mBERT model)
+docker build -t opentextshield .
+docker run -d -p 8002:8002 -p 8080:8080 opentextshield
+
+# Alternative if port 8080 is in use
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+
 # Using pre-built image
 docker pull telecomsxchange/opentextshield:latest
-docker run -d -p 8002:8002 telecomsxchange/opentextshield:latest
-
-# Or build locally
-docker build -t opentextshield .
-docker run -d -p 8002:8002 opentextshield
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 ```
+**Access:** API at http://localhost:8002, Frontend at http://localhost:8080 (or 8081)
 
 ## 🔧 Prerequisites
 
