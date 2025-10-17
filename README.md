@@ -12,7 +12,29 @@ Open source collaborative AI platform for enhanced telecom messaging security an
 
 ## 🚀 Quick Start
 
-Deploy OpenTextShield in your environment within minutes:
+[![Open Text Shield L - Docker Deployment](https://img.youtube.com/vi/HCaTE63lVws/0.jpg)](https://youtu.be/HCaTE63lVws?si=4D4BYAdtUxkX7wcF)
+
+```bash
+# Prerequisites
+# Docker installation is required. Visit https://docs.docker.com/get-docker/ to install Docker.
+
+# Run the following commands.
+
+docker pull telecomsxchange/opentextshield:latest
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
+
+# Access Open Test Shield
+
+- Frontend Interface: http://localhost:8080
+- API Documentation: http://localhost:8002/docs
+- API Endpoint: http://localhost:8002/predict/
+
+```
+
+
+
+
+Build from source and deploy OpenTextShield in your environment within minutes:
 
 ```bash
 # Clone the repository
@@ -22,16 +44,13 @@ cd OpenTextShield
 # Start both API and frontend (recommended)
 ./start.sh
 
-# Or use Docker
+# Or build using Docker
 # Build and run (includes 679MB mBERT model)
 docker build -t opentextshield .
 docker run -d -p 8002:8002 -p 8080:8080 opentextshield
 
 # Alternative if port 8080 is busy
 docker run -d -p 8002:8002 -p 8081:8080 opentextshield
-
-# Or use pre-built image
-docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 ```
 
 **Access Points:**
