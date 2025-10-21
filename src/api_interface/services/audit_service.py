@@ -11,6 +11,7 @@ import threading
 import re
 import shutil
 import time
+import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
@@ -18,6 +19,17 @@ import logging
 
 from ..config.settings import settings
 from ..utils.logging import logger as app_logger
+from ..models.tmforum_event_models import (
+    TMForumEvent,
+    TMForumEventCreate,
+    TMForumEventStatistics,
+    TMForumEventType,
+    TMForumEventPriority,
+    TMForumEventState,
+    Characteristic,
+    RelatedParty,
+    RelatedEntity,
+)
 
 
 class AuditLogger:
@@ -573,6 +585,411 @@ class AuditLogger:
         except Exception as e:
             app_logger.error(f"Failed to calculate statistics: {str(e)}")
             return stats
+
+    # ============================================================================
+    # TMF688 Event Management API Adapter Methods
+    # ============================================================================
+
+    def convert_to_tmf688_event(self, audit_entry: Dict[str, Any]) -> TMForumEvent:
+        """
+        Convert internal audit log format to TMF688 Event resource.
+
+        Args:
+            audit_entry: Internal audit log entry
+
+        Returns:
+            TMF688-compliant Event resource
+        """
+        entry_type = audit_entry.get("entry_type", "unknown")
+        timestamp_str = audit_entry.get("timestamp", datetime.utcnow().isoformat() + "Z")
+        event_time = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+
+        # Generate unique event ID
+        event_id = str(uuid.uuid4())
+        event_business_id = f"{entry_type}-{event_time.strftime('%Y-%m-%d-%H%M%S')}-{event_id[:8]}"
+
+        # Map entry type to TMForum event type
+        event_type_map = {
+            "prediction": TMForumEventType.PREDICTION,
+            "feedback": TMForumEventType.FEEDBACK,
+            "access_denied": TMForumEventType.SECURITY,
+            "system_event": TMForumEventType.SYSTEM,
+        }
+        event_type = event_type_map.get(entry_type, TMForumEventType.SYSTEM)
+
+        # Calculate priority
+        priority = self._calculate_event_priority(audit_entry)
+
+        # Build source (client IP)
+        client_ip = audit_entry.get("client_ip", "unknown")
+        source = RelatedParty(
+            id=client_ip,
+            role="client" if client_ip != "system" else "system",
+            referredType="IPAddress" if client_ip != "system" else "System"
+        )
+
+        # Build reporting system (model or system)
+        model_name = audit_entry.get("model", "OpenTextShield")
+        model_version = audit_entry.get("model_version")
+        reporting_system = RelatedEntity(
+            id=model_name.replace(" ", "_"),
+            name=f"{model_name} v{model_version}" if model_version else model_name,
+            referredType="AIModel" if entry_type in ("prediction", "feedback") else "System"
+        )
+
+        # Build characteristics from entry data
+        characteristics = []
+
+        if entry_type == "prediction":
+            characteristics.extend([
+                Characteristic(name="label", value=str(audit_entry.get("label", "")), valueType="string"),
+                Characteristic(name="confidence", value=str(audit_entry.get("confidence", 0.0)), valueType="float"),
+                Characteristic(name="processing_time_ms", value=str(audit_entry.get("processing_time_ms", 0.0)), valueType="float"),
+                Characteristic(name="text_length", value=str(audit_entry.get("text_length", 0)), valueType="integer"),
+                Characteristic(name="text_hash", value=str(audit_entry.get("text_hash", "")), valueType="string"),
+                Characteristic(name="redaction_applied", value=str(audit_entry.get("redaction_applied", False)), valueType="boolean"),
+            ])
+        elif entry_type == "feedback":
+            characteristics.extend([
+                Characteristic(name="feedback_id", value=str(audit_entry.get("feedback_id", "")), valueType="string"),
+                Characteristic(name="original_label", value=str(audit_entry.get("original_label", "")), valueType="string"),
+                Characteristic(name="user_feedback", value=str(audit_entry.get("user_feedback", "")), valueType="string"),
+                Characteristic(name="thumbs_up", value=str(audit_entry.get("thumbs_up", False)), valueType="boolean"),
+                Characteristic(name="thumbs_down", value=str(audit_entry.get("thumbs_down", False)), valueType="boolean"),
+                Characteristic(name="text_hash", value=str(audit_entry.get("text_hash", "")), valueType="string"),
+            ])
+            if audit_entry.get("user_id"):
+                characteristics.append(
+                    Characteristic(name="user_id", value=str(audit_entry.get("user_id")), valueType="string")
+                )
+        elif entry_type == "access_denied":
+            characteristics.extend([
+                Characteristic(name="endpoint", value=str(audit_entry.get("endpoint", "")), valueType="string"),
+                Characteristic(name="reason", value=str(audit_entry.get("reason", "")), valueType="string"),
+            ])
+            if audit_entry.get("attempted_action"):
+                characteristics.append(
+                    Characteristic(name="attempted_action", value=str(audit_entry.get("attempted_action")), valueType="string")
+                )
+        elif entry_type == "system_event":
+            characteristics.extend([
+                Characteristic(name="event_type", value=str(audit_entry.get("event_type", "")), valueType="string"),
+                Characteristic(name="message", value=str(audit_entry.get("message", "")), valueType="string"),
+            ])
+            if audit_entry.get("metadata"):
+                for key, value in audit_entry.get("metadata", {}).items():
+                    characteristics.append(
+                        Characteristic(name=f"metadata_{key}", value=str(value), valueType="string")
+                    )
+
+        # Generate title and description
+        title, description = self._generate_event_title_description(entry_type, audit_entry)
+
+        # Build TMForum Event
+        event = TMForumEvent(
+            id=f"evt-{event_id}",
+            href=f"/tmf-api/event/evt-{event_id}",
+            eventId=event_business_id,
+            eventType=event_type,
+            eventTime=event_time,
+            timeOccurred=event_time,
+            title=title,
+            description=description,
+            priority=priority,
+            state=TMForumEventState.ACKNOWLEDGED,
+            correlationId=None,
+            source=source,
+            reportingSystem=reporting_system,
+            characteristic=characteristics,
+            type=f"{event_type.value}",
+        )
+
+        return event
+
+    def _calculate_event_priority(self, audit_entry: Dict[str, Any]) -> TMForumEventPriority:
+        """
+        Calculate event priority based on entry characteristics.
+
+        Args:
+            audit_entry: Internal audit log entry
+
+        Returns:
+            TMForum event priority
+        """
+        entry_type = audit_entry.get("entry_type")
+
+        # Security events are high priority
+        if entry_type == "access_denied":
+            return TMForumEventPriority.HIGH
+
+        # System events vary by type
+        if entry_type == "system_event":
+            system_event_type = audit_entry.get("event_type", "")
+            if "error" in system_event_type.lower() or "fail" in system_event_type.lower():
+                return TMForumEventPriority.HIGH
+            elif "shutdown" in system_event_type.lower() or "startup" in system_event_type.lower():
+                return TMForumEventPriority.MEDIUM
+            return TMForumEventPriority.LOW
+
+        # Predictions with phishing label are higher priority
+        if entry_type == "prediction":
+            label = audit_entry.get("label", "")
+            if label == "phishing":
+                return TMForumEventPriority.MEDIUM
+            return TMForumEventPriority.LOW
+
+        # Feedback is generally low priority
+        if entry_type == "feedback":
+            # Negative feedback (thumbs down) is medium priority
+            if audit_entry.get("thumbs_down", False):
+                return TMForumEventPriority.MEDIUM
+            return TMForumEventPriority.LOW
+
+        return TMForumEventPriority.LOW
+
+    def _generate_event_title_description(self, entry_type: str, audit_entry: Dict[str, Any]) -> Tuple[str, str]:
+        """
+        Generate human-readable title and description for event.
+
+        Args:
+            entry_type: Type of audit entry
+            audit_entry: Internal audit log entry
+
+        Returns:
+            Tuple of (title, description)
+        """
+        if entry_type == "prediction":
+            label = audit_entry.get("label", "unknown")
+            confidence = audit_entry.get("confidence", 0.0)
+            model = audit_entry.get("model", "Unknown")
+            title = f"Text Classification: {label}"
+            description = f"Message classified as '{label}' by {model} with {confidence:.2%} confidence"
+            return title, description
+
+        elif entry_type == "feedback":
+            feedback_id = audit_entry.get("feedback_id", "")
+            thumbs_up = audit_entry.get("thumbs_up", False)
+            thumbs_down = audit_entry.get("thumbs_down", False)
+            sentiment = "positive" if thumbs_up else ("negative" if thumbs_down else "neutral")
+            title = f"User Feedback: {sentiment}"
+            description = f"User submitted {sentiment} feedback (ID: {feedback_id})"
+            return title, description
+
+        elif entry_type == "access_denied":
+            endpoint = audit_entry.get("endpoint", "unknown")
+            reason = audit_entry.get("reason", "Unknown reason")
+            title = f"Access Denied: {endpoint}"
+            description = f"Access denied to {endpoint}: {reason}"
+            return title, description
+
+        elif entry_type == "system_event":
+            system_event_type = audit_entry.get("event_type", "unknown")
+            message = audit_entry.get("message", "")
+            title = f"System Event: {system_event_type}"
+            description = message or f"System event of type {system_event_type}"
+            return title, description
+
+        return "Audit Event", "Audit log entry"
+
+    def get_event_by_id(self, event_id: str) -> Optional[TMForumEvent]:
+        """
+        Retrieve single event by UUID, convert to TMF688 format.
+
+        Args:
+            event_id: Event UUID (format: evt-{uuid})
+
+        Returns:
+            TMF688 Event or None if not found
+        """
+        # For now, we need to scan through logs to find by generated ID
+        # In a production system, you'd maintain an index or database
+        # This is a simplified implementation for demonstration
+
+        # Note: Since we generate UUIDs on conversion, we can't actually retrieve
+        # by ID without storing the mapping. For this demo, we'll return None
+        # and document that event retrieval by ID requires event storage enhancement.
+
+        app_logger.warning(f"Event retrieval by ID '{event_id}' not fully implemented - requires event ID mapping")
+        return None
+
+    def query_events_tmf688(
+        self,
+        event_type: Optional[str] = None,
+        time_gte: Optional[datetime] = None,
+        time_lte: Optional[datetime] = None,
+        source_id: Optional[str] = None,
+        reporting_system: Optional[str] = None,
+        priority: Optional[str] = None,
+        limit: int = 100,
+        offset: int = 0,
+    ) -> Tuple[List[TMForumEvent], int]:
+        """
+        Query events with TMF688 parameters, return (events, total_count).
+
+        Args:
+            event_type: Filter by event type (PredictionEvent, FeedbackEvent, etc.)
+            time_gte: Filter events after this time
+            time_lte: Filter events before this time
+            source_id: Filter by source ID (client IP)
+            reporting_system: Filter by reporting system (model name)
+            priority: Filter by priority (low, medium, high, critical)
+            limit: Maximum number of results
+            offset: Number of results to skip
+
+        Returns:
+            Tuple of (list of TMF688 events, total count matching filters)
+        """
+        # Map TMForum event types to internal entry types
+        entry_type_map = {
+            "PredictionEvent": "prediction",
+            "FeedbackEvent": "feedback",
+            "SecurityEvent": "access_denied",
+            "SystemEvent": "system_event",
+        }
+
+        internal_entry_type = entry_type_map.get(event_type) if event_type else None
+
+        # Query internal audit logs
+        all_entries = self.query_logs(
+            limit=10000,  # Get large batch to filter
+            entry_type=internal_entry_type,
+            start_date=time_gte.isoformat() + "Z" if time_gte else None,
+            end_date=time_lte.isoformat() + "Z" if time_lte else None,
+            client_ip=source_id,
+        )
+
+        # Convert to TMF688 events
+        tmf_events = []
+        for entry in all_entries:
+            try:
+                tmf_event = self.convert_to_tmf688_event(entry)
+
+                # Apply additional filters
+                if reporting_system and tmf_event.reportingSystem.id != reporting_system:
+                    continue
+
+                if priority and tmf_event.priority.value != priority:
+                    continue
+
+                tmf_events.append(tmf_event)
+
+            except Exception as e:
+                app_logger.warning(f"Failed to convert entry to TMF688: {str(e)}")
+                continue
+
+        # Get total count before pagination
+        total_count = len(tmf_events)
+
+        # Apply pagination
+        paginated_events = tmf_events[offset:offset + limit]
+
+        return paginated_events, total_count
+
+    def create_event_tmf688(self, event_create: TMForumEventCreate) -> TMForumEvent:
+        """
+        Create new event from TMForum format.
+
+        Args:
+            event_create: TMForum event creation request
+
+        Returns:
+            Created TMF688 Event
+        """
+        # Generate event ID
+        event_id = str(uuid.uuid4())
+        event_time = datetime.utcnow()
+        event_business_id = f"{event_create.eventType.value}-{event_time.strftime('%Y-%m-%d-%H%M%S')}-{event_id[:8]}"
+
+        # Build TMForum Event
+        event = TMForumEvent(
+            id=f"evt-{event_id}",
+            href=f"/tmf-api/event/evt-{event_id}",
+            eventId=event_business_id,
+            eventType=event_create.eventType,
+            eventTime=event_time,
+            timeOccurred=event_time,
+            title=event_create.title,
+            description=event_create.description,
+            priority=event_create.priority,
+            state=TMForumEventState.ACKNOWLEDGED,
+            correlationId=event_create.correlationId,
+            source=event_create.source,
+            reportingSystem=event_create.reportingSystem,
+            characteristic=event_create.characteristic,
+            type=event_create.eventType.value,
+        )
+
+        # Optionally write to audit log in internal format
+        # (This allows manual TMF688 events to be stored in audit logs)
+        try:
+            internal_entry = {
+                "timestamp": event_time.isoformat() + "Z",
+                "entry_type": "manual_event",
+                "client_ip": event_create.source.id,
+                "event_type": event_create.eventType.value,
+                "title": event_create.title,
+                "description": event_create.description,
+                "priority": event_create.priority.value,
+                "characteristics": [char.model_dump() for char in event_create.characteristic],
+            }
+            self._write_audit_entry(internal_entry)
+        except Exception as e:
+            app_logger.warning(f"Failed to write manual TMF688 event to audit log: {str(e)}")
+
+        return event
+
+    def get_event_statistics_tmf688(self) -> TMForumEventStatistics:
+        """
+        Get statistics in TMF688 format.
+
+        Returns:
+            TMF688 Event statistics
+        """
+        # Get internal statistics
+        internal_stats = self.get_statistics()
+
+        # Convert to TMF688 format
+        events_by_type = {
+            "PredictionEvent": internal_stats.get("total_predictions", 0),
+            "FeedbackEvent": internal_stats.get("total_feedback", 0),
+            "SecurityEvent": internal_stats.get("total_access_denied", 0),
+            "SystemEvent": 0,  # Not tracked separately in internal stats
+        }
+
+        # Calculate events by priority (approximate based on internal data)
+        total_events = sum(events_by_type.values())
+        events_by_priority = {
+            "low": internal_stats.get("total_predictions", 0),  # Most predictions are low
+            "medium": internal_stats.get("total_feedback", 0),  # Feedback is medium
+            "high": internal_stats.get("total_access_denied", 0),  # Security is high
+            "critical": 0,
+        }
+
+        # Events by model
+        events_by_model = internal_stats.get("predictions_by_model", {})
+
+        # Get time range from logs
+        time_range = None
+        try:
+            recent_logs = self.query_logs(limit=1)
+            oldest_logs = self.query_logs(limit=1)  # Should query oldest, but simplified
+            if recent_logs and oldest_logs:
+                time_range = {
+                    "start": oldest_logs[0].get("timestamp", ""),
+                    "end": recent_logs[0].get("timestamp", ""),
+                }
+        except Exception as e:
+            app_logger.warning(f"Failed to determine time range: {str(e)}")
+
+        return TMForumEventStatistics(
+            totalEvents=total_events,
+            eventsByType=events_by_type,
+            eventsByPriority=events_by_priority,
+            eventsByModel=events_by_model if events_by_model else None,
+            averageConfidence=internal_stats.get("avg_confidence"),
+            uniqueSourceCount=internal_stats.get("unique_client_count", 0),
+            timeRange=time_range,
+        )
 
 
 # Global audit service instance

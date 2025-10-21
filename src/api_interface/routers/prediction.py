@@ -8,6 +8,7 @@ from datetime import datetime
 from ..models.request_models import PredictionRequest
 from ..models.response_models import PredictionResponse, ErrorResponse
 from ..services.prediction_service import prediction_service
+from ..services.audit_service import audit_service
 from ..middleware.security import verify_ip_address
 from ..utils.exceptions import OpenTextShieldException
 from ..utils.logging import logger
@@ -28,7 +29,7 @@ router = APIRouter(tags=["Prediction"])
     description="Classify text as ham, spam, or phishing using AI models",
     dependencies=[Depends(verify_ip_address)]
 )
-async def predict_text(request: PredictionRequest) -> PredictionResponse:
+async def predict_text(request: PredictionRequest, client_ip: str = Depends(verify_ip_address)) -> PredictionResponse:
     """
     Classify text for spam/phishing detection.
     
@@ -44,6 +45,23 @@ async def predict_text(request: PredictionRequest) -> PredictionResponse:
     try:
         logger.info(f"Received prediction request: model={request.model}")
         result = await prediction_service.predict(request)
+
+        # Log prediction to audit system
+        try:
+            audit_service.log_prediction(
+                text=request.text,
+                label=result.label,
+                confidence=result.probability,
+                model=result.model_info.name,
+                model_version=result.model_info.version,
+                processing_time=result.processing_time,
+                client_ip=client_ip,
+                text_length=len(request.text)
+            )
+        except Exception as audit_error:
+            # Don't fail the request if audit logging fails
+            logger.warning(f"Failed to log prediction to audit: {audit_error}")
+
         return result
         
     except OpenTextShieldException as e:

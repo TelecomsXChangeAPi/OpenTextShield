@@ -1,0 +1,1165 @@
+{
+  "metadata": {
+    "model": "OpenTextShield mBERT v2.5",
+    "test_date": "2025-10-21T05:01:29.257597Z",
+    "dataset": {
+      "dataset_name": "OpenTextShield Benchmark Dataset v1.0",
+      "creation_date": "2025-10-21",
+      "total_samples": 60,
+      "distribution": {
+        "ham": 20,
+        "spam": 20,
+        "phishing": 20
+      },
+      "languages": [
+        "English",
+        "Spanish",
+        "French",
+        "Arabic",
+        "Chinese"
+      ],
+      "purpose": "Comparative evaluation of SMS classification systems"
+    },
+    "system_info": {
+      "platform": "M4 Mac Mini",
+      "api_endpoint": "http://localhost:8002/predict/"
+    }
+  },
+  "predictions": [
+    {
+      "sample_id": "ham_001",
+      "text": "Hey, are we still meeting for coffee at 3pm tomorrow?",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998217225074768,
+      "response_time": 0.33145809173583984,
+      "model_processing_time": 0.3225841522216797,
+      "correct": true,
+      "language": "English",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_002",
+      "text": "Mom, I'll be home around 6pm tonight. Need anything from the store?",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9997252821922302,
+      "response_time": 0.033757925033569336,
+      "model_processing_time": 0.031466007232666016,
+      "correct": true,
+      "language": "English",
+      "category": "family_communication",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_003",
+      "text": "Your Amazon package has been delivered to your front door",
+      "ground_truth": "ham",
+      "prediction": "spam",
+      "probability": 0.9996567964553833,
+      "response_time": 0.030646085739135742,
+      "model_processing_time": 0.029018163681030273,
+      "correct": false,
+      "language": "English",
+      "category": "legitimate_notification",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_004",
+      "text": "Reminder: Doctor appointment tomorrow at 10am. Reply YES to confirm",
+      "ground_truth": "ham",
+      "prediction": "spam",
+      "probability": 0.7373992800712585,
+      "response_time": 0.030546188354492188,
+      "model_processing_time": 0.028914928436279297,
+      "correct": false,
+      "language": "English",
+      "category": "appointment_reminder",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_005",
+      "text": "Happy birthday! Hope you have an amazing day!",
+      "ground_truth": "ham",
+      "prediction": "spam",
+      "probability": 0.9996800422668457,
+      "response_time": 0.032784223556518555,
+      "model_processing_time": 0.029067039489746094,
+      "correct": false,
+      "language": "English",
+      "category": "greeting",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_006",
+      "text": "Hola, ¿nos vemos mañana en el parque?",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998414516448975,
+      "response_time": 0.0312807559967041,
+      "model_processing_time": 0.029676198959350586,
+      "correct": true,
+      "language": "Spanish",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_007",
+      "text": "Bonjour, merci pour votre message. Je vous répondrai demain.",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.999823272228241,
+      "response_time": 0.034993886947631836,
+      "model_processing_time": 0.033091068267822266,
+      "correct": true,
+      "language": "French",
+      "category": "business_communication",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_008",
+      "text": "مرحباً، سأصل في الساعة الخامسة",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998418092727661,
+      "response_time": 0.032826900482177734,
+      "model_processing_time": 0.030547142028808594,
+      "correct": true,
+      "language": "Arabic",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_009",
+      "text": "你好，明天见面吗？",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998025298118591,
+      "response_time": 0.030522823333740234,
+      "model_processing_time": 0.028970956802368164,
+      "correct": true,
+      "language": "Chinese",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_010",
+      "text": "The meeting has been rescheduled to Friday at 2pm in Conference Room B",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9995841383934021,
+      "response_time": 0.03088212013244629,
+      "model_processing_time": 0.02849411964416504,
+      "correct": true,
+      "language": "English",
+      "category": "work_communication",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_011",
+      "text": "Thanks for helping me move last weekend, really appreciate it!",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9997716546058655,
+      "response_time": 0.030786991119384766,
+      "model_processing_time": 0.02917194366455078,
+      "correct": true,
+      "language": "English",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_012",
+      "text": "Your prescription is ready for pickup at CVS Pharmacy",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9913922548294067,
+      "response_time": 0.0301821231842041,
+      "model_processing_time": 0.02852177619934082,
+      "correct": true,
+      "language": "English",
+      "category": "legitimate_notification",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_013",
+      "text": "Can you send me the report by end of day? Thanks!",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9993607401847839,
+      "response_time": 0.029959917068481445,
+      "model_processing_time": 0.028387069702148438,
+      "correct": true,
+      "language": "English",
+      "category": "work_communication",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_014",
+      "text": "I'm running 10 minutes late, be there soon",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998393058776855,
+      "response_time": 0.03081798553466797,
+      "model_processing_time": 0.029042959213256836,
+      "correct": true,
+      "language": "English",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_015",
+      "text": "Your flight UA123 is on time, boarding at gate 42",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998453855514526,
+      "response_time": 0.030025959014892578,
+      "model_processing_time": 0.028522014617919922,
+      "correct": true,
+      "language": "English",
+      "category": "legitimate_notification",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_016",
+      "text": "Dinner was great! Let's do it again soon",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998412132263184,
+      "response_time": 0.03032207489013672,
+      "model_processing_time": 0.028643131256103516,
+      "correct": true,
+      "language": "English",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_017",
+      "text": "Your Uber driver Ahmed will arrive in 3 minutes, Silver Toyota Camry",
+      "ground_truth": "ham",
+      "prediction": "spam",
+      "probability": 0.6705012917518616,
+      "response_time": 0.0310671329498291,
+      "model_processing_time": 0.029194116592407227,
+      "correct": false,
+      "language": "English",
+      "category": "legitimate_notification",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_018",
+      "text": "Got the tickets! See you at the concert on Saturday",
+      "ground_truth": "ham",
+      "prediction": "spam",
+      "probability": 0.9996055960655212,
+      "response_time": 0.030045032501220703,
+      "model_processing_time": 0.028510093688964844,
+      "correct": false,
+      "language": "English",
+      "category": "personal_conversation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_019",
+      "text": "Your electricity bill of $89.50 is due on the 25th",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.999327540397644,
+      "response_time": 0.030234098434448242,
+      "model_processing_time": 0.02855086326599121,
+      "correct": true,
+      "language": "English",
+      "category": "legitimate_notification",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "ham_020",
+      "text": "Code 847392 is your verification code for login",
+      "ground_truth": "ham",
+      "prediction": "ham",
+      "probability": 0.9998481273651123,
+      "response_time": 0.030458927154541016,
+      "model_processing_time": 0.028725862503051758,
+      "correct": true,
+      "language": "English",
+      "category": "legitimate_notification",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_001",
+      "text": "FLASH SALE! 70% OFF EVERYTHING! Shop now at MegaMart! Text STOP to unsubscribe",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996918439865112,
+      "response_time": 0.030075788497924805,
+      "model_processing_time": 0.0285036563873291,
+      "correct": true,
+      "language": "English",
+      "category": "promotional",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_002",
+      "text": "Get your FREE iPhone 15 now! Limited time offer! Click here: bit.ly/freephone",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996892213821411,
+      "response_time": 0.030430078506469727,
+      "model_processing_time": 0.0289919376373291,
+      "correct": true,
+      "language": "English",
+      "category": "promotional",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_003",
+      "text": "CONGRATULATIONS! You've been selected for a $500 Walmart gift card!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996886253356934,
+      "response_time": 0.030177831649780273,
+      "model_processing_time": 0.0286252498626709,
+      "correct": true,
+      "language": "English",
+      "category": "promotional",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_004",
+      "text": "Lose 20 pounds in 2 weeks with this ONE WEIRD TRICK! Order now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996888637542725,
+      "response_time": 0.03052806854248047,
+      "model_processing_time": 0.028916120529174805,
+      "correct": true,
+      "language": "English",
+      "category": "health_scam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_005",
+      "text": "Make $5000/week working from home! No experience needed! Text YES for details",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996894598007202,
+      "response_time": 0.030884981155395508,
+      "model_processing_time": 0.02923107147216797,
+      "correct": true,
+      "language": "English",
+      "category": "work_from_home_scam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_006",
+      "text": "LAST CHANCE! Black Friday deals end tonight! 80% off designer brands!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996906518936157,
+      "response_time": 0.030065059661865234,
+      "model_processing_time": 0.028599977493286133,
+      "correct": true,
+      "language": "English",
+      "category": "promotional",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_007",
+      "text": "You have 3 new matches on DateMeet! Click to view profiles now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996851682662964,
+      "response_time": 0.03014087677001953,
+      "model_processing_time": 0.02866506576538086,
+      "correct": true,
+      "language": "English",
+      "category": "dating_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_008",
+      "text": "URGENT: Renew your car warranty today! Special discount for you!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996470212936401,
+      "response_time": 0.029948949813842773,
+      "model_processing_time": 0.028484106063842773,
+      "correct": true,
+      "language": "English",
+      "category": "warranty_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_009",
+      "text": "FREE CRUISE to the Bahamas! You've been randomly selected! Claim now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996840953826904,
+      "response_time": 0.029986143112182617,
+      "model_processing_time": 0.0285491943359375,
+      "correct": true,
+      "language": "English",
+      "category": "travel_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_010",
+      "text": "Hot singles in your area want to meet you! Register free!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.999687910079956,
+      "response_time": 0.03012704849243164,
+      "model_processing_time": 0.028447866439819336,
+      "correct": true,
+      "language": "English",
+      "category": "dating_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_011",
+      "text": "SALE SALE SALE! Furniture clearance! Everything must go! 90% off!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996833801269531,
+      "response_time": 0.02994704246520996,
+      "model_processing_time": 0.028451204299926758,
+      "correct": true,
+      "language": "English",
+      "category": "promotional",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_012",
+      "text": "Claim your FREE $1000 casino bonus! New players only! Play now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.999681830406189,
+      "response_time": 0.030220985412597656,
+      "model_processing_time": 0.028731107711791992,
+      "correct": true,
+      "language": "English",
+      "category": "gambling_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_013",
+      "text": "Get approved for a loan up to $50,000! Bad credit OK! Apply now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996887445449829,
+      "response_time": 0.030492067337036133,
+      "model_processing_time": 0.028970003128051758,
+      "correct": true,
+      "language": "English",
+      "category": "loan_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_014",
+      "text": "Buy 2 get 3 FREE! Miracle anti-aging cream! Order within 24 hours!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996901750564575,
+      "response_time": 0.030057907104492188,
+      "model_processing_time": 0.02852177619934082,
+      "correct": true,
+      "language": "English",
+      "category": "beauty_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_015",
+      "text": "EXCLUSIVE OFFER! Premium membership for only $9.99! Limited slots!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996870756149292,
+      "response_time": 0.030093908309936523,
+      "model_processing_time": 0.0285489559173584,
+      "correct": true,
+      "language": "English",
+      "category": "subscription_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_016",
+      "text": "¡OFERTA ESPECIAL! ¡50% de descuento en todo! ¡Compra ahora!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996862411499023,
+      "response_time": 0.03057694435119629,
+      "model_processing_time": 0.029024839401245117,
+      "correct": true,
+      "language": "Spanish",
+      "category": "promotional",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_017",
+      "text": "Win a brand new Tesla Model 3! Enter now for FREE! Limited entries!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996873140335083,
+      "response_time": 0.030438899993896484,
+      "model_processing_time": 0.028882265090942383,
+      "correct": true,
+      "language": "English",
+      "category": "sweepstakes_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_018",
+      "text": "ATTENTION! Your student loan can be forgiven! Check eligibility now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9995822310447693,
+      "response_time": 0.03020191192626953,
+      "model_processing_time": 0.02845621109008789,
+      "correct": true,
+      "language": "English",
+      "category": "loan_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_019",
+      "text": "Boost your credit score by 200 points GUARANTEED! Call now!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.9996883869171143,
+      "response_time": 0.030110836029052734,
+      "model_processing_time": 0.028542041778564453,
+      "correct": true,
+      "language": "English",
+      "category": "credit_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "spam_020",
+      "text": "FINAL NOTICE! Extend your vehicle service plan before it expires!",
+      "ground_truth": "spam",
+      "prediction": "spam",
+      "probability": 0.998746395111084,
+      "response_time": 0.0303647518157959,
+      "model_processing_time": 0.028443098068237305,
+      "correct": true,
+      "language": "English",
+      "category": "warranty_spam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_001",
+      "text": "URGENT: Your bank account has been suspended. Click here to verify: http://secure-bank-verify.com",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.999962329864502,
+      "response_time": 0.030495166778564453,
+      "model_processing_time": 0.02894878387451172,
+      "correct": true,
+      "language": "English",
+      "category": "bank_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_002",
+      "text": "Congratulations! You won $1,000,000! Click here NOW to claim before it expires!",
+      "ground_truth": "phishing",
+      "prediction": "spam",
+      "probability": 0.9996932744979858,
+      "response_time": 0.030431032180786133,
+      "model_processing_time": 0.028895139694213867,
+      "correct": false,
+      "language": "English",
+      "category": "lottery_scam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_003",
+      "text": "Your Apple ID has been locked due to suspicious activity. Verify immediately: apple-secure.com",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.7662751078605652,
+      "response_time": 0.030100107192993164,
+      "model_processing_time": 0.028506755828857422,
+      "correct": false,
+      "language": "English",
+      "category": "tech_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_004",
+      "text": "IRS ALERT: You owe $2,847 in back taxes. Pay now to avoid arrest warrant.",
+      "ground_truth": "phishing",
+      "prediction": "spam",
+      "probability": 0.9996695518493652,
+      "response_time": 0.030086040496826172,
+      "model_processing_time": 0.028369903564453125,
+      "correct": false,
+      "language": "English",
+      "category": "government_impersonation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_005",
+      "text": "Your package is held at customs. Pay $50 fee immediately or it will be destroyed.",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.8559750914573669,
+      "response_time": 0.030343294143676758,
+      "model_processing_time": 0.028762102127075195,
+      "correct": false,
+      "language": "English",
+      "category": "delivery_scam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_006",
+      "text": "SECURITY ALERT: Unusual login detected. Confirm your identity: http://paypal-secure-login.net",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.9999626874923706,
+      "response_time": 0.03080272674560547,
+      "model_processing_time": 0.02898883819580078,
+      "correct": true,
+      "language": "English",
+      "category": "payment_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_007",
+      "text": "Your Netflix subscription failed. Update payment info now or lose access: netflix-billing.com",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.9994446635246277,
+      "response_time": 0.030105113983154297,
+      "model_processing_time": 0.028512001037597656,
+      "correct": false,
+      "language": "English",
+      "category": "subscription_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_008",
+      "text": "Social Security Administration: Your SSN has been suspended due to fraudulent activity. Call 888-555-0123",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.7822673320770264,
+      "response_time": 0.030827045440673828,
+      "model_processing_time": 0.029267072677612305,
+      "correct": false,
+      "language": "English",
+      "category": "government_impersonation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_009",
+      "text": "Wells Fargo: Verify your account to prevent closure. Username and password required: wellsfargo-verify.net",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.8257139325141907,
+      "response_time": 0.030107975006103516,
+      "model_processing_time": 0.028616905212402344,
+      "correct": false,
+      "language": "English",
+      "category": "bank_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_010",
+      "text": "Amazon: Unauthorized purchase of $899.99 detected. Cancel order here: amazon-security-center.com",
+      "ground_truth": "phishing",
+      "prediction": "spam",
+      "probability": 0.9996629953384399,
+      "response_time": 0.030487775802612305,
+      "model_processing_time": 0.028901100158691406,
+      "correct": false,
+      "language": "English",
+      "category": "ecommerce_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_011",
+      "text": "Microsoft Security: Your computer has been infected with a virus. Call support: 1-888-555-9876",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.944983184337616,
+      "response_time": 0.029891014099121094,
+      "model_processing_time": 0.0283050537109375,
+      "correct": false,
+      "language": "English",
+      "category": "tech_support_scam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_012",
+      "text": "Chase Bank: Confirm your identity to restore access. Enter PIN and SSN: chase-verify-id.com",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.5540244579315186,
+      "response_time": 0.029613018035888672,
+      "model_processing_time": 0.028116941452026367,
+      "correct": true,
+      "language": "English",
+      "category": "bank_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_013",
+      "text": "FINAL WARNING: Your email will be deleted in 24 hours. Verify account now: email-verification-center.net",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.9359240531921387,
+      "response_time": 0.029954195022583008,
+      "model_processing_time": 0.028486013412475586,
+      "correct": true,
+      "language": "English",
+      "category": "email_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_014",
+      "text": "Zelle payment failed. Re-enter your bank credentials immediately: zelle-payment-fix.com",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.6931113004684448,
+      "response_time": 0.030301809310913086,
+      "model_processing_time": 0.028627872467041016,
+      "correct": false,
+      "language": "English",
+      "category": "payment_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_015",
+      "text": "URGENT: Your unemployment benefits are suspended. Verify SSN and DOB: unemployment-verify.gov",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.9702634811401367,
+      "response_time": 0.03067922592163086,
+      "model_processing_time": 0.028943777084350586,
+      "correct": true,
+      "language": "English",
+      "category": "government_impersonation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_016",
+      "text": "Google Security: Someone tried to access your account. Reset password now: google-security-alert.com",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.6786152720451355,
+      "response_time": 0.030869007110595703,
+      "model_processing_time": 0.029148101806640625,
+      "correct": false,
+      "language": "English",
+      "category": "tech_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_017",
+      "text": "Venmo: Suspicious transaction detected. Confirm your account details: venmo-secure.net",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.9853045344352722,
+      "response_time": 0.030948877334594727,
+      "model_processing_time": 0.029231786727905273,
+      "correct": true,
+      "language": "English",
+      "category": "payment_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_018",
+      "text": "FedEx: Delivery failed due to wrong address. Update info and pay $3.99: fedex-redelivery.com",
+      "ground_truth": "phishing",
+      "prediction": "spam",
+      "probability": 0.9924938678741455,
+      "response_time": 0.03022480010986328,
+      "model_processing_time": 0.02863907814025879,
+      "correct": false,
+      "language": "English",
+      "category": "delivery_scam",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_019",
+      "text": "Bank of America ALERT: Account compromised. Verify card details immediately: boa-security-check.com",
+      "ground_truth": "phishing",
+      "prediction": "ham",
+      "probability": 0.6320069432258606,
+      "response_time": 0.030061721801757812,
+      "model_processing_time": 0.028496742248535156,
+      "correct": false,
+      "language": "English",
+      "category": "bank_phishing",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    },
+    {
+      "sample_id": "phishing_020",
+      "text": "COVID-19 Relief: You qualify for $1200 stimulus. Enter SSN and bank info: stimulus-payment-gov.com",
+      "ground_truth": "phishing",
+      "prediction": "phishing",
+      "probability": 0.6471145153045654,
+      "response_time": 0.030263900756835938,
+      "model_processing_time": 0.028439044952392578,
+      "correct": true,
+      "language": "English",
+      "category": "government_impersonation",
+      "model_info": {
+        "name": "OTS_mBERT",
+        "version": "2.5",
+        "author": "TelecomsXChange (TCXC)",
+        "last_training": "2024-03-20"
+      }
+    }
+  ],
+  "statistics": {
+    "total_samples": 60,
+    "correct_predictions": 42,
+    "incorrect_predictions": 18,
+    "errors": 0,
+    "accuracy": 70.0,
+    "avg_response_time": 0.03558438618977865,
+    "avg_processing_time": 0.0337814728418986,
+    "min_response_time": 0.029613018035888672,
+    "max_response_time": 0.33145809173583984,
+    "by_class": {
+      "ham": {
+        "total_samples": 20,
+        "correct": 15,
+        "accuracy": 75.0,
+        "precision": 0.625,
+        "recall": 0.75,
+        "f1_score": 0.6818181818181818,
+        "confusion_matrix": {
+          "true_positives": 15,
+          "false_positives": 9,
+          "false_negatives": 5,
+          "true_negatives": 31
+        }
+      },
+      "spam": {
+        "total_samples": 20,
+        "correct": 20,
+        "accuracy": 100.0,
+        "precision": 0.6896551724137931,
+        "recall": 1.0,
+        "f1_score": 0.8163265306122449,
+        "confusion_matrix": {
+          "true_positives": 20,
+          "false_positives": 9,
+          "false_negatives": 0,
+          "true_negatives": 31
+        }
+      },
+      "phishing": {
+        "total_samples": 20,
+        "correct": 7,
+        "accuracy": 35.0,
+        "precision": 1.0,
+        "recall": 0.35,
+        "f1_score": 0.5185185185185185,
+        "confusion_matrix": {
+          "true_positives": 7,
+          "false_positives": 0,
+          "false_negatives": 13,
+          "true_negatives": 40
+        }
+      }
+    }
+  }
+}

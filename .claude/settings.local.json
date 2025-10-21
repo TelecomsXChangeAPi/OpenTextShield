@@ -16,7 +16,26 @@
       "Bash(NO_PROXY=localhost,127.0.0.1 python src/mBERT/tests/stressTest_500.py)",
       "Bash(uvicorn:*)",
       "Bash(gh api:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(git lfs:*)",
+      "Bash(docker build:*)",
+      "Bash(docker exec:*)",
+      "Bash(docker stop:*)",
+      "Bash(docker rm:*)",
+      "Bash(docker run:*)",
+      "Bash(docker logs:*)",
+      "Bash(export:*)",
+      "Bash(python3:*)",
+      "Bash(cat:*)",
+      "Bash(docker push:*)",
+      "Bash(git push:*)",
+      "Bash(while read line)",
+      "Bash(do echo \"$line\")",
+      "Bash(done)",
+      "WebSearch",
+      "Bash(./start.sh:*)",
+      "Bash(time curl:*)",
+      "Read(//dev/**)"
     ],
     "deny": []
   }

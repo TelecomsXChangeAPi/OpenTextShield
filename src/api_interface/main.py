@@ -15,15 +15,15 @@ from .utils.logging import setup_logging, logger
 from .utils.exceptions import OpenTextShieldException
 from .services.model_loader import model_manager
 from .middleware.security import setup_cors_middleware
-from .routers import health, prediction, feedback
+from .routers import health, prediction, feedback, audit, tmforum_event
 
-# Import TMForum components (optional - may not be available in all deployments)
+# Import TMForum AI Inference Job components (optional - may not be available in all deployments)
 try:
     from .services.tmforum_service import tmforum_service
     from .routers import tmforum
     TMFORUM_AVAILABLE = True
 except ImportError as e:
-    logger.warning(f"TMForum service not available: {e}")
+    logger.warning(f"TMForum AI Inference Job service not available: {e}")
     tmforum_service = None
     tmforum = None
     TMFORUM_AVAILABLE = False
@@ -94,8 +94,12 @@ setup_cors_middleware(app)
 app.include_router(health.router)
 app.include_router(prediction.router)
 app.include_router(feedback.router)
+app.include_router(audit.router)
+
+# TMForum routers
+app.include_router(tmforum_event.router)  # TMF688 Event Management API (always available)
 if TMFORUM_AVAILABLE and tmforum:
-    app.include_router(tmforum.router)
+    app.include_router(tmforum.router)  # TMF922 AI Inference Job API (optional)
 
 
 @app.exception_handler(OpenTextShieldException)

@@ -9,6 +9,7 @@ from datetime import datetime
 from ..models.request_models import FeedbackRequest
 from ..models.response_models import FeedbackResponse, ErrorResponse
 from ..services.feedback_service import feedback_service
+from ..services.audit_service import audit_service
 from ..middleware.security import verify_ip_address
 from ..utils.logging import logger
 
@@ -27,7 +28,7 @@ router = APIRouter(tags=["Feedback"])
     description="Submit feedback about classification results",
     dependencies=[Depends(verify_ip_address)]
 )
-async def submit_feedback(request: FeedbackRequest) -> FeedbackResponse:
+async def submit_feedback(request: FeedbackRequest, client_ip: str = Depends(verify_ip_address)) -> FeedbackResponse:
     """
     Submit user feedback about classification results.
     
@@ -43,6 +44,24 @@ async def submit_feedback(request: FeedbackRequest) -> FeedbackResponse:
     try:
         logger.info(f"Received feedback request for model: {request.model}")
         result = await feedback_service.submit_feedback(request)
+
+        # Log feedback to audit system
+        try:
+            audit_service.log_feedback(
+                feedback_id=result.feedback_id,
+                text=request.content,
+                original_label="unknown",  # Not provided in feedback request
+                user_feedback=request.feedback,
+                thumbs_up=request.thumbs_up,
+                thumbs_down=request.thumbs_down,
+                model=request.model.value,
+                client_ip=client_ip,
+                user_id=request.user_id
+            )
+        except Exception as audit_error:
+            # Don't fail the request if audit logging fails
+            logger.warning(f"Failed to log feedback to audit: {audit_error}")
+
         return result
         
     except Exception as e:
