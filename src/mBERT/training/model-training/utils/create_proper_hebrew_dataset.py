@@ -200,8 +200,7 @@ def main():
     logger.info(f"Hebrew dataset saved to {output_csv}")
 
     # Statistics
-    logger.info("
-=== Dataset Statistics ===")
+    logger.info("=== Dataset Statistics ===")
     logger.info(f"Total Hebrew samples: {len(hebrew_df)}")
 
     label_counts = hebrew_df['label'].value_counts()
