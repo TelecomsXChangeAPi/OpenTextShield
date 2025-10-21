@@ -32,7 +32,7 @@ COPY . /home/ots/OpenTextShield
 
 # Set permissions and make startup script executable
 RUN chown -R ots:ots /home/ots/OpenTextShield && \
-    chmod +x /home/ots/OpenTextShield/start.sh
+    chmod +x /home/ots/OpenTextShield/scripts/start.sh
 
 # Use non-root user
 USER ots
@@ -45,4 +45,4 @@ HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
   CMD curl -f http://localhost:8002/health || exit 1
 
 # Start both API and frontend via unified startup script
-CMD ["bash", "/home/ots/OpenTextShield/start.sh"]
+CMD ["bash", "/home/user/OpenTextShield/scripts/start.sh"]

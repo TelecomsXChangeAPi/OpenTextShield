@@ -42,7 +42,7 @@ git clone https://github.com/TelecomsXChangeAPi/OpenTextShield.git
 cd OpenTextShield
 
 # Start both API and frontend (recommended)
-./start.sh
+./scripts/start.sh
 
 # Or build using Docker
 # Build and run (includes 679MB mBERT model)
@@ -190,7 +190,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # Start the platform
-./start.sh
+./scripts/start.sh
 ```
 
 ### Docker Deployment
@@ -360,7 +360,7 @@ python test_training.py
 ```bash
 # Frontend is a single HTML file with embedded CSS/JS
 # Edit frontend/index.html for customizations
-# Restart ./start.sh to see changes
+# Restart ./scripts/start.sh to see changes
 ```
 
 ## 🚀 Production Deployment

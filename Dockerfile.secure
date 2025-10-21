@@ -63,8 +63,8 @@ WORKDIR /home/ots/OpenTextShield
 COPY --chown=ots:ots . /home/ots/OpenTextShield
 
 # Make start scripts executable
-RUN chmod +x /home/ots/OpenTextShield/start.sh && \
-    chmod +x /home/ots/OpenTextShield/start-local.sh
+RUN chmod +x /home/ots/OpenTextShield/scripts/start.sh && \
+    chmod +x /home/ots/OpenTextShield/scripts/start-local.sh
 
 # Switch to non-root user
 USER ots
@@ -77,4 +77,4 @@ HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:8002/health || exit 1
 
 # Run the application
-CMD ["bash", "/home/ots/OpenTextShield/start.sh"]
+CMD ["bash", "/home/ots/OpenTextShield/scripts/start.sh"]
