@@ -40,8 +40,8 @@ RUN /home/ots/OpenTextShield/ots/bin/pip install --no-cache-dir -r /home/ots/Ope
 COPY . /home/ots/OpenTextShield
 
 # Make start scripts executable
-RUN chmod +x /home/ots/OpenTextShield/start.sh
-RUN chmod +x /home/ots/OpenTextShield/start-local.sh
+RUN chmod +x /home/ots/OpenTextShield/scripts/start.sh
+RUN chmod +x /home/ots/OpenTextShield/scripts/start-local.sh
 
 # Expose both API and frontend ports
 EXPOSE 8002 8080
@@ -51,5 +51,5 @@ HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
     CMD curl -f http://localhost:8002/health || exit 1
 
 # Run the start script
-CMD ["bash", "/home/ots/OpenTextShield/start.sh"]
+CMD ["bash", "/home/ots/OpenTextShield/scripts/start.sh"]
 

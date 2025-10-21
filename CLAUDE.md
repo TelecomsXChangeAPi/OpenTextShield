@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ### Running the API Server
 ```bash
 # Start both API and frontend servers (recommended)
-./start.sh
+./scripts/start.sh
 
 # Manual start (alternative - API only)
 source ots/bin/activate

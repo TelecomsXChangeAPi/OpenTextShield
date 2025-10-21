@@ -1,20 +1,20 @@
 #!/bin/bash
 
-# OpenTextShield API - Local Development Startup Script
-# This script is specifically for local development (non-Docker)
-
+# OpenTextShield API - Main Startup Script
+# Exit the script if any command fails
 set -e
 
-echo "💻 OpenTextShield API - Local Development Mode"
-echo "=============================================="
+echo "🚀 OpenTextShield API - Starting..."
+echo "=================================="
 echo ""
 
-# Get script directory
+# Get script directory and project root
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+PROJECT_ROOT="$( cd "$SCRIPT_DIR/.." &> /dev/null && pwd )"
 
 # Local environment paths
-VENV_PATH="$SCRIPT_DIR/ots"
-REQUIREMENTS_PATH="$SCRIPT_DIR/requirements.txt"
+VENV_PATH="$PROJECT_ROOT/ots"
+REQUIREMENTS_PATH="$PROJECT_ROOT/requirements.txt"
 
 # Detect Python version
 if command -v python3.12 &> /dev/null; then
@@ -49,9 +49,9 @@ echo "📥 Installing dependencies..."
 pip install --upgrade pip
 
 # Try minimal requirements first if available
-if [ -f "$SCRIPT_DIR/requirements-minimal.txt" ]; then
+if [ -f "$PROJECT_ROOT/requirements-minimal.txt" ]; then
     echo "📦 Using minimal requirements (avoids conflicts)..."
-    pip install -r "$SCRIPT_DIR/requirements-minimal.txt"
+    pip install -r "$PROJECT_ROOT/requirements-minimal.txt"
 elif [ -f "$REQUIREMENTS_PATH" ]; then
     echo "📦 Using full requirements.txt..."
     pip install -r "$REQUIREMENTS_PATH" || {
@@ -72,18 +72,18 @@ fi
 echo "✅ Dependencies ready"
 echo ""
 
-# Set working directory
-cd "$SCRIPT_DIR"
+# Set working directory to project root
+cd "$PROJECT_ROOT"
 
 # Function to start frontend server
 start_frontend() {
-    if [ -d "$SCRIPT_DIR/frontend" ]; then
+    if [ -d "$PROJECT_ROOT/frontend" ]; then
         echo "🌐 Starting frontend server..."
         echo "📱 Frontend will be available at: http://localhost:8080"
-        cd "$SCRIPT_DIR/frontend"
+        cd "$PROJECT_ROOT/frontend"
         $PYTHON_CMD -m http.server 8080 > /dev/null 2>&1 &
         FRONTEND_PID=$!
-        cd "$SCRIPT_DIR"
+        cd "$PROJECT_ROOT"
         echo "✅ Frontend server started (PID: $FRONTEND_PID)"
     else
         echo "⚠️  Frontend directory not found, skipping frontend server"
@@ -109,7 +109,11 @@ trap cleanup SIGINT SIGTERM
 start_frontend
 
 echo ""
-echo "🚀 Starting OpenTextShield API (Local Development)..."
+echo "💡 To test the API, use this curl command:"
+echo 'curl -X POST "http://localhost:8002/predict/" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"text\":\"Your SMS content here\",\"model\":\"ots-mbert\"}"'
+echo ""
+
+echo "🚀 Starting OpenTextShield API..."
 echo "🌟 Both servers will be running:"
 echo "📡 API Server: http://localhost:8002"
 echo "📚 API Docs: http://localhost:8002/docs"
@@ -119,5 +123,9 @@ echo ""
 echo "🛑 Press Ctrl+C to stop both servers"
 echo ""
 
-# Start server with reload for development
-uvicorn src.api_interface.main:app --host 127.0.0.1 --port 8002 --reload --log-level info
+# Start the API service using Uvicorn
+# Set PYTHONPATH to ensure src package is found
+export PYTHONPATH="$PROJECT_ROOT:$PYTHONPATH"
+cd "$PROJECT_ROOT"
+python -m uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002
+
