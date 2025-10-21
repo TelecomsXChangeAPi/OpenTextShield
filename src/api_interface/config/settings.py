@@ -5,6 +5,7 @@ Configuration management for OpenTextShield API.
 import os
 from pathlib import Path
 from typing import Dict, List, Optional, Set
+from datetime import datetime
 try:
     from pydantic_settings import BaseSettings
     from pydantic import Field
@@ -25,7 +26,7 @@ class Settings(BaseSettings):
     # API Configuration
     api_title: str = "OpenTextShield API"
     api_description: str = "Professional SMS spam and phishing detection API"
-    api_version: str = "2.5.0"
+    api_version: str = "2.6.0"
     api_host: str = "0.0.0.0"
     api_port: int = 8002
     
@@ -64,9 +65,29 @@ class Settings(BaseSettings):
     # Logging
     log_level: str = "INFO"
     log_format: str = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    
+
     # Feedback
     feedback_dir: Path = Path("feedback")
+
+    # Audit Logging Configuration
+    audit_enabled: bool = True
+    audit_dir: Path = Path("audit_logs")
+    audit_text_storage: str = "full"  # Options: full, truncated, hash_only, redacted
+    audit_truncate_length: int = 100
+    audit_redact_patterns: List[str] = []  # PII redaction patterns
+
+    # Log Rotation Configuration
+    audit_rotation_enabled: bool = True  # Enable log rotation
+    audit_rotation_strategy: str = "size_or_date"  # Options: size_only, date_only, size_or_date
+    audit_max_file_size_mb: int = 100  # Max file size before rotation (size_only or size_or_date)
+    audit_rotation_on_date_change: bool = True  # Rotate at midnight (date_only or size_or_date)
+
+    # Retention Configuration
+    audit_retention_enabled: bool = True  # Enable retention policy
+    audit_retention_days: int = 90  # Delete logs older than this many days
+    audit_retention_check_interval_hours: int = 24  # Check retention policy every N hours
+    audit_archive_enabled: bool = False  # Archive instead of delete old logs
+    audit_archive_dir: Optional[Path] = None  # Directory for archived logs
     
     class Config:
         env_prefix = "OTS_"
@@ -79,3 +100,6 @@ settings = Settings()
 
 # Ensure feedback directory exists
 settings.feedback_dir.mkdir(exist_ok=True)
+
+# Ensure audit directory exists
+settings.audit_dir.mkdir(exist_ok=True, parents=True)
