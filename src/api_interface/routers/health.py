@@ -2,7 +2,7 @@
 Health check router for OpenTextShield API.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from fastapi import APIRouter
 
 from ..models.response_models import HealthResponse
@@ -29,7 +29,7 @@ async def health_check() -> HealthResponse:
         status="healthy",
         version=settings.api_version,
         models_loaded=model_manager.get_model_status(),
-        timestamp=datetime.utcnow().isoformat() + "Z"
+        timestamp=datetime.now(timezone.utc).isoformat()
     )
 
 

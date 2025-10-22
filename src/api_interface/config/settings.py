@@ -67,11 +67,11 @@ class Settings(BaseSettings):
     log_format: str = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 
     # Feedback
-    feedback_dir: Path = Path("feedback")
+    feedback_dir: Path = project_root / "feedback"
 
     # Audit Logging Configuration
     audit_enabled: bool = True
-    audit_dir: Path = Path("audit_logs")
+    audit_dir: Path = project_root / "audit_logs"
     audit_text_storage: str = "full"  # Options: full, truncated, hash_only, redacted
     audit_truncate_length: int = 100
     audit_redact_patterns: List[str] = []  # PII redaction patterns
@@ -98,8 +98,5 @@ class Settings(BaseSettings):
 # Global settings instance
 settings = Settings()
 
-# Ensure feedback directory exists
-settings.feedback_dir.mkdir(exist_ok=True)
-
-# Ensure audit directory exists
-settings.audit_dir.mkdir(exist_ok=True, parents=True)
+# Note: Directory creation moved to main.py lifespan handler
+# to avoid crashes on import if filesystem permissions are insufficient
