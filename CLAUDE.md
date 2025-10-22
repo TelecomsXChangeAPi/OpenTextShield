@@ -16,11 +16,11 @@ pip install -r requirements.txt
 ### Running the API Server
 ```bash
 # Start both API and frontend servers (recommended)
-./start.sh
+./scripts/start.sh
 
 # Manual start (alternative - API only)
 source ots/bin/activate
-uvicorn src.api-interface.main:app --host 0.0.0.0 --port 8002
+uvicorn src.api_interface.main:app --host 0.0.0.0 --port 9000
 ```
 
 ### Frontend Interface
@@ -28,6 +28,7 @@ The OpenTextShield Research Platform provides a professional web-based interface
 - **Frontend URL**: http://localhost:8080
 - **API URL**: http://localhost:8002
 - **API Documentation**: http://localhost:8002/docs
+- **OpenAPI Spec**: http://localhost:8002/openapi.json
 
 Features:
 - Professional AI research lab aesthetic
@@ -81,18 +82,26 @@ python train_ots_improved.py
 **Note**: The `requirements-minimal.txt` file contains only the essential dependencies needed for training, while `requirements.txt` contains the full development environment. Use minimal for faster setup.
 
 ### Docker Deployment
+
+**🛡️ Secure Builds (Default):**
 ```bash
-# Build container with both API and frontend (includes 679MB mBERT model)
+# Default secure build with non-root user and multi-stage optimization
 docker build -t opentextshield .
-
-# Run container - if port 8080 is in use, change to 8081:8080
-docker run -d -p 8002:8002 -p 8080:8080 opentextshield
-
-# Alternative if port 8080 is busy
 docker run -d -p 8002:8002 -p 8081:8080 opentextshield
 
 # Use docker-compose (recommended)
 docker-compose up -d
+
+# Ultra-secure distroless build (API only, minimal attack surface)
+docker build -f Dockerfile.distroless -t opentextshield:distroless .
+docker run -d -p 8002:8002 opentextshield:distroless
+```
+
+**Alternative Builds:**
+```bash
+# Legacy insecure build (NOT recommended for production)
+docker build -f Dockerfile.insecure -t opentextshield:insecure .
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield:insecure
 
 # Use pre-built image
 docker pull telecomsxchange/opentextshield:latest
@@ -103,6 +112,11 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 - **API**: http://localhost:8002 (with Swagger docs at /docs)
 - **Frontend**: http://localhost:8080 (or 8081 if using alternative port)
 - **Health Check**: http://localhost:8002/health
+
+**Security Benefits:**
+- **Default Dockerfile**: 60-80% fewer vulnerabilities, non-root execution, multi-stage builds
+- **Dockerfile.distroless**: Maximum security with minimal attack surface  
+- **All secure builds**: Enhanced security posture suitable for production deployment
 
 ## Architecture Overview
 
@@ -130,7 +144,7 @@ OpenTextShield implements a REST API powered by mBERT for global SMS spam/phishi
 - Dataset format: CSV with `text,label` columns where labels are `ham`, `spam`, or `phishing`
 
 **Model Loading Path**
-- mBERT: `/home/ots/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.1.pth`
+- mBERT: `/home/ots/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.5.pth`
 - Model is loaded at application startup and cached in memory
 
 ### Classification Labels
@@ -158,6 +172,47 @@ OpenTextShield implements a REST API powered by mBERT for global SMS spam/phishi
   }
 }
 ```
+
+### TMForum API (TMF922 - AI Inference Job Management)
+
+OpenTextShield also provides TMForum-compliant API endpoints for enterprise integrations:
+
+#### Create Inference Job
+```bash
+curl -X POST "http://localhost:8002/tmf-api/aiInferenceJob" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "priority": "normal",
+    "input": {
+      "inputType": "text",
+      "inputFormat": "plain",
+      "inputData": {"text": "Message to classify"}
+    },
+    "model": {
+      "id": "ots-mbert",
+      "name": "OpenTextShield mBERT",
+      "version": "2.1",
+      "type": "bert",
+      "capabilities": ["text-classification", "multilingual"]
+    }
+  }'
+```
+
+#### Check Job Status
+```bash
+curl "http://localhost:8002/tmf-api/aiInferenceJob/{job_id}"
+```
+
+#### List Jobs
+```bash
+curl "http://localhost:8002/tmf-api/aiInferenceJob"
+```
+
+**Benefits:**
+- TMForum standard compliance (TMF922)
+- Async job processing with status tracking
+- Enterprise-grade API for telecom operators
+- Full backward compatibility with legacy API
 
 ## Key Technical Details
 

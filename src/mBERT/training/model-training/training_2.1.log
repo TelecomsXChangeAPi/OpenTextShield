@@ -46,3 +46,239 @@
 2025-06-28 00:44:37,379 - __main__ - INFO - Epoch 1/3, Batch 150/9899, Loss: 0.0114
 2025-06-28 00:45:02,669 - __main__ - INFO - Epoch 1/3, Batch 200/9899, Loss: 0.0322
 2025-06-28 00:45:27,610 - __main__ - INFO - Epoch 1/3, Batch 250/9899, Loss: 0.0882
+2025-10-03 20:54:09,125 - __main__ - INFO - Starting OpenTextShield mBERT training (improved version)
+2025-10-03 20:54:09,152 - __main__ - INFO - Trainer initialized with device: mps
+2025-10-03 20:54:09,152 - __main__ - INFO - Configuration: {'dataset_path': '/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.1.csv', 'model_name': 'bert-base-multilingual-cased', 'num_labels': 3, 'batch_size': 16, 'learning_rate': 2e-05, 'num_epochs': 1, 'model_save_path': '/Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.1.pth'}
+2025-10-03 20:54:09,157 - __main__ - INFO - Loading dataset from: /Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.1.csv
+2025-10-03 20:54:09,157 - __main__ - INFO - Detected encoding: UTF-8-SIG
+2025-10-03 20:54:09,355 - __main__ - WARNING - Found 9 missing text and 0 missing labels
+2025-10-03 20:54:09,371 - __main__ - INFO - Original labels: ['phishing' 'spam' 'ham']
+2025-10-03 20:54:09,376 - __main__ - INFO - Dataset loaded: 226260 samples
+2025-10-03 20:54:09,376 - __main__ - INFO - Label distribution: {0: 131613, 1: 63201, 2: 31446}
+2025-10-03 20:54:09,417 - __main__ - INFO - Data split - Train: 158381, Val: 22626, Test: 45253
+2025-10-03 20:54:09,419 - __main__ - INFO - Loading tokenizer: bert-base-multilingual-cased
+2025-10-03 20:54:09,689 - __main__ - INFO - Loading model: bert-base-multilingual-cased
+2025-10-03 20:54:10,442 - __main__ - INFO - Model and optimizer initialized successfully
+2025-10-03 20:54:10,447 - __main__ - INFO - Dataset created with 158381 samples
+2025-10-03 20:54:10,449 - __main__ - INFO - Dataset created with 22626 samples
+2025-10-03 20:54:10,449 - __main__ - INFO - Dataset created with 45253 samples
+2025-10-03 20:54:10,450 - __main__ - INFO - Training started
+2025-10-03 20:54:14,682 - __main__ - INFO - Epoch 1/1, Batch 0/9899, Loss: 1.0370
+2025-10-03 20:54:32,207 - __main__ - INFO - Epoch 1/1, Batch 50/9899, Loss: 0.1716
+2025-10-03 20:54:50,747 - __main__ - INFO - Epoch 1/1, Batch 100/9899, Loss: 0.1049
+2025-10-03 20:55:09,443 - __main__ - INFO - Epoch 1/1, Batch 150/9899, Loss: 0.0171
+2025-10-03 20:55:27,833 - __main__ - INFO - Epoch 1/1, Batch 200/9899, Loss: 0.2600
+2025-10-03 20:55:46,342 - __main__ - INFO - Epoch 1/1, Batch 250/9899, Loss: 0.0205
+2025-10-03 20:56:05,123 - __main__ - INFO - Epoch 1/1, Batch 300/9899, Loss: 0.0156
+2025-10-03 20:56:23,394 - __main__ - INFO - Epoch 1/1, Batch 350/9899, Loss: 0.0768
+2025-10-03 20:56:41,455 - __main__ - INFO - Epoch 1/1, Batch 400/9899, Loss: 0.3441
+2025-10-03 20:56:59,403 - __main__ - INFO - Epoch 1/1, Batch 450/9899, Loss: 0.0214
+2025-10-03 20:57:17,275 - __main__ - INFO - Epoch 1/1, Batch 500/9899, Loss: 0.0094
+2025-10-03 20:57:35,095 - __main__ - INFO - Epoch 1/1, Batch 550/9899, Loss: 0.2500
+2025-10-03 20:57:52,851 - __main__ - INFO - Epoch 1/1, Batch 600/9899, Loss: 0.5279
+2025-10-03 20:58:10,575 - __main__ - INFO - Epoch 1/1, Batch 650/9899, Loss: 0.3667
+2025-10-03 20:58:28,277 - __main__ - INFO - Epoch 1/1, Batch 700/9899, Loss: 0.0416
+2025-10-03 20:58:45,980 - __main__ - INFO - Epoch 1/1, Batch 750/9899, Loss: 0.0038
+2025-10-03 20:59:03,677 - __main__ - INFO - Epoch 1/1, Batch 800/9899, Loss: 0.0254
+2025-10-03 20:59:21,392 - __main__ - INFO - Epoch 1/1, Batch 850/9899, Loss: 0.0140
+2025-10-03 20:59:39,075 - __main__ - INFO - Epoch 1/1, Batch 900/9899, Loss: 0.0454
+2025-10-03 20:59:56,759 - __main__ - INFO - Epoch 1/1, Batch 950/9899, Loss: 0.0293
+2025-10-03 21:00:14,467 - __main__ - INFO - Epoch 1/1, Batch 1000/9899, Loss: 0.0031
+2025-10-03 21:00:32,150 - __main__ - INFO - Epoch 1/1, Batch 1050/9899, Loss: 0.0337
+2025-10-03 21:00:49,852 - __main__ - INFO - Epoch 1/1, Batch 1100/9899, Loss: 0.0249
+2025-10-03 21:01:07,526 - __main__ - INFO - Epoch 1/1, Batch 1150/9899, Loss: 0.0021
+2025-10-03 21:01:25,311 - __main__ - INFO - Epoch 1/1, Batch 1200/9899, Loss: 0.0025
+2025-10-03 21:01:42,975 - __main__ - INFO - Epoch 1/1, Batch 1250/9899, Loss: 0.0157
+2025-10-03 21:02:00,691 - __main__ - INFO - Epoch 1/1, Batch 1300/9899, Loss: 0.0156
+2025-10-03 21:02:18,383 - __main__ - INFO - Epoch 1/1, Batch 1350/9899, Loss: 0.0574
+2025-10-03 21:02:36,128 - __main__ - INFO - Epoch 1/1, Batch 1400/9899, Loss: 0.0190
+2025-10-03 21:02:53,835 - __main__ - INFO - Epoch 1/1, Batch 1450/9899, Loss: 0.0087
+2025-10-03 21:03:11,549 - __main__ - INFO - Epoch 1/1, Batch 1500/9899, Loss: 0.0021
+2025-10-03 21:03:29,235 - __main__ - INFO - Epoch 1/1, Batch 1550/9899, Loss: 0.0584
+2025-10-03 21:03:46,896 - __main__ - INFO - Epoch 1/1, Batch 1600/9899, Loss: 0.0261
+2025-10-03 21:04:04,565 - __main__ - INFO - Epoch 1/1, Batch 1650/9899, Loss: 0.0091
+2025-10-03 21:04:22,227 - __main__ - INFO - Epoch 1/1, Batch 1700/9899, Loss: 0.1265
+2025-10-03 21:04:39,869 - __main__ - INFO - Epoch 1/1, Batch 1750/9899, Loss: 0.3586
+2025-10-03 21:04:57,541 - __main__ - INFO - Epoch 1/1, Batch 1800/9899, Loss: 0.0055
+2025-10-03 21:05:15,167 - __main__ - INFO - Epoch 1/1, Batch 1850/9899, Loss: 0.0055
+2025-10-03 21:05:32,931 - __main__ - INFO - Epoch 1/1, Batch 1900/9899, Loss: 0.0072
+2025-10-03 21:05:50,920 - __main__ - INFO - Epoch 1/1, Batch 1950/9899, Loss: 0.4137
+2025-10-03 21:06:08,869 - __main__ - INFO - Epoch 1/1, Batch 2000/9899, Loss: 0.0270
+2025-10-03 21:06:26,856 - __main__ - INFO - Epoch 1/1, Batch 2050/9899, Loss: 0.0020
+2025-10-03 21:06:44,906 - __main__ - INFO - Epoch 1/1, Batch 2100/9899, Loss: 0.0249
+2025-10-03 21:07:02,938 - __main__ - INFO - Epoch 1/1, Batch 2150/9899, Loss: 0.0229
+2025-10-03 21:07:20,960 - __main__ - INFO - Epoch 1/1, Batch 2200/9899, Loss: 0.0100
+2025-10-03 21:07:38,991 - __main__ - INFO - Epoch 1/1, Batch 2250/9899, Loss: 0.0030
+2025-10-03 21:07:57,027 - __main__ - INFO - Epoch 1/1, Batch 2300/9899, Loss: 0.0014
+2025-10-03 21:08:15,035 - __main__ - INFO - Epoch 1/1, Batch 2350/9899, Loss: 0.0011
+2025-10-03 21:08:33,058 - __main__ - INFO - Epoch 1/1, Batch 2400/9899, Loss: 0.0093
+2025-10-03 21:08:51,085 - __main__ - INFO - Epoch 1/1, Batch 2450/9899, Loss: 0.0017
+2025-10-03 21:09:09,106 - __main__ - INFO - Epoch 1/1, Batch 2500/9899, Loss: 0.1120
+2025-10-03 21:09:27,119 - __main__ - INFO - Epoch 1/1, Batch 2550/9899, Loss: 0.0118
+2025-10-03 21:09:45,151 - __main__ - INFO - Epoch 1/1, Batch 2600/9899, Loss: 0.0069
+2025-10-03 21:10:03,174 - __main__ - INFO - Epoch 1/1, Batch 2650/9899, Loss: 0.0010
+2025-10-03 21:10:21,175 - __main__ - INFO - Epoch 1/1, Batch 2700/9899, Loss: 0.0074
+2025-10-03 21:10:39,192 - __main__ - INFO - Epoch 1/1, Batch 2750/9899, Loss: 0.0138
+2025-10-03 21:10:57,205 - __main__ - INFO - Epoch 1/1, Batch 2800/9899, Loss: 0.0019
+2025-10-03 21:11:15,229 - __main__ - INFO - Epoch 1/1, Batch 2850/9899, Loss: 0.0022
+2025-10-03 21:11:33,055 - __main__ - INFO - Epoch 1/1, Batch 2900/9899, Loss: 0.0038
+2025-10-03 21:11:50,691 - __main__ - INFO - Epoch 1/1, Batch 2950/9899, Loss: 0.0078
+2025-10-03 21:12:08,339 - __main__ - INFO - Epoch 1/1, Batch 3000/9899, Loss: 0.0011
+2025-10-03 21:12:25,982 - __main__ - INFO - Epoch 1/1, Batch 3050/9899, Loss: 0.0027
+2025-10-03 21:12:43,636 - __main__ - INFO - Epoch 1/1, Batch 3100/9899, Loss: 0.0010
+2025-10-03 21:13:01,284 - __main__ - INFO - Epoch 1/1, Batch 3150/9899, Loss: 0.0142
+2025-10-03 21:13:18,923 - __main__ - INFO - Epoch 1/1, Batch 3200/9899, Loss: 0.0032
+2025-10-03 21:13:36,582 - __main__ - INFO - Epoch 1/1, Batch 3250/9899, Loss: 0.0057
+2025-10-03 21:13:54,215 - __main__ - INFO - Epoch 1/1, Batch 3300/9899, Loss: 0.0010
+2025-10-03 21:14:11,851 - __main__ - INFO - Epoch 1/1, Batch 3350/9899, Loss: 0.0486
+2025-10-03 21:14:29,477 - __main__ - INFO - Epoch 1/1, Batch 3400/9899, Loss: 0.0044
+2025-10-03 21:14:47,112 - __main__ - INFO - Epoch 1/1, Batch 3450/9899, Loss: 0.0047
+2025-10-03 21:15:04,752 - __main__ - INFO - Epoch 1/1, Batch 3500/9899, Loss: 0.0577
+2025-10-03 21:15:22,374 - __main__ - INFO - Epoch 1/1, Batch 3550/9899, Loss: 0.0069
+2025-10-03 21:15:40,012 - __main__ - INFO - Epoch 1/1, Batch 3600/9899, Loss: 0.0025
+2025-10-03 21:15:57,638 - __main__ - INFO - Epoch 1/1, Batch 3650/9899, Loss: 0.0033
+2025-10-03 21:16:15,277 - __main__ - INFO - Epoch 1/1, Batch 3700/9899, Loss: 0.0958
+2025-10-03 21:16:32,912 - __main__ - INFO - Epoch 1/1, Batch 3750/9899, Loss: 0.0006
+2025-10-03 21:16:50,546 - __main__ - INFO - Epoch 1/1, Batch 3800/9899, Loss: 0.0192
+2025-10-03 21:17:08,175 - __main__ - INFO - Epoch 1/1, Batch 3850/9899, Loss: 0.0032
+2025-10-03 21:17:25,803 - __main__ - INFO - Epoch 1/1, Batch 3900/9899, Loss: 0.0046
+2025-10-03 21:17:43,446 - __main__ - INFO - Epoch 1/1, Batch 3950/9899, Loss: 0.0028
+2025-10-03 21:18:01,109 - __main__ - INFO - Epoch 1/1, Batch 4000/9899, Loss: 0.0006
+2025-10-03 21:18:18,752 - __main__ - INFO - Epoch 1/1, Batch 4050/9899, Loss: 0.0058
+2025-10-03 21:18:36,393 - __main__ - INFO - Epoch 1/1, Batch 4100/9899, Loss: 0.0012
+2025-10-03 21:18:54,022 - __main__ - INFO - Epoch 1/1, Batch 4150/9899, Loss: 0.0021
+2025-10-03 21:19:11,681 - __main__ - INFO - Epoch 1/1, Batch 4200/9899, Loss: 0.0241
+2025-10-03 21:19:29,332 - __main__ - INFO - Epoch 1/1, Batch 4250/9899, Loss: 0.0028
+2025-10-03 21:19:46,991 - __main__ - INFO - Epoch 1/1, Batch 4300/9899, Loss: 0.0082
+2025-10-03 21:20:04,646 - __main__ - INFO - Epoch 1/1, Batch 4350/9899, Loss: 0.0185
+2025-10-03 21:20:22,311 - __main__ - INFO - Epoch 1/1, Batch 4400/9899, Loss: 0.0012
+2025-10-03 21:20:39,972 - __main__ - INFO - Epoch 1/1, Batch 4450/9899, Loss: 0.0053
+2025-10-03 21:20:57,628 - __main__ - INFO - Epoch 1/1, Batch 4500/9899, Loss: 0.0046
+2025-10-03 21:21:15,307 - __main__ - INFO - Epoch 1/1, Batch 4550/9899, Loss: 0.4586
+2025-10-03 21:21:32,974 - __main__ - INFO - Epoch 1/1, Batch 4600/9899, Loss: 0.0051
+2025-10-03 21:21:50,649 - __main__ - INFO - Epoch 1/1, Batch 4650/9899, Loss: 0.0779
+2025-10-03 21:22:08,332 - __main__ - INFO - Epoch 1/1, Batch 4700/9899, Loss: 0.0080
+2025-10-03 21:22:25,996 - __main__ - INFO - Epoch 1/1, Batch 4750/9899, Loss: 0.0030
+2025-10-03 21:22:43,660 - __main__ - INFO - Epoch 1/1, Batch 4800/9899, Loss: 0.0010
+2025-10-03 21:23:01,325 - __main__ - INFO - Epoch 1/1, Batch 4850/9899, Loss: 0.1970
+2025-10-03 21:23:18,993 - __main__ - INFO - Epoch 1/1, Batch 4900/9899, Loss: 0.0063
+2025-10-03 21:23:36,654 - __main__ - INFO - Epoch 1/1, Batch 4950/9899, Loss: 0.0012
+2025-10-03 21:23:54,335 - __main__ - INFO - Epoch 1/1, Batch 5000/9899, Loss: 0.0715
+2025-10-03 21:24:12,022 - __main__ - INFO - Epoch 1/1, Batch 5050/9899, Loss: 0.0183
+2025-10-03 21:24:29,701 - __main__ - INFO - Epoch 1/1, Batch 5100/9899, Loss: 0.0494
+2025-10-03 21:24:47,396 - __main__ - INFO - Epoch 1/1, Batch 5150/9899, Loss: 0.0029
+2025-10-03 21:25:05,089 - __main__ - INFO - Epoch 1/1, Batch 5200/9899, Loss: 0.0121
+2025-10-03 21:25:22,765 - __main__ - INFO - Epoch 1/1, Batch 5250/9899, Loss: 0.0278
+2025-10-03 21:25:40,464 - __main__ - INFO - Epoch 1/1, Batch 5300/9899, Loss: 0.0166
+2025-10-03 21:25:58,149 - __main__ - INFO - Epoch 1/1, Batch 5350/9899, Loss: 0.0148
+2025-10-03 21:26:15,879 - __main__ - INFO - Epoch 1/1, Batch 5400/9899, Loss: 0.0013
+2025-10-03 21:26:34,218 - __main__ - INFO - Epoch 1/1, Batch 5450/9899, Loss: 0.0044
+2025-10-03 21:26:52,520 - __main__ - INFO - Epoch 1/1, Batch 5500/9899, Loss: 0.0006
+2025-10-03 21:27:10,826 - __main__ - INFO - Epoch 1/1, Batch 5550/9899, Loss: 0.0008
+2025-10-03 21:27:29,116 - __main__ - INFO - Epoch 1/1, Batch 5600/9899, Loss: 0.0021
+2025-10-03 21:27:47,425 - __main__ - INFO - Epoch 1/1, Batch 5650/9899, Loss: 0.0170
+2025-10-03 21:28:05,726 - __main__ - INFO - Epoch 1/1, Batch 5700/9899, Loss: 0.2110
+2025-10-03 21:28:24,028 - __main__ - INFO - Epoch 1/1, Batch 5750/9899, Loss: 0.0017
+2025-10-03 21:28:42,314 - __main__ - INFO - Epoch 1/1, Batch 5800/9899, Loss: 0.0327
+2025-10-03 21:29:00,611 - __main__ - INFO - Epoch 1/1, Batch 5850/9899, Loss: 0.0043
+2025-10-03 21:29:18,895 - __main__ - INFO - Epoch 1/1, Batch 5900/9899, Loss: 0.0041
+2025-10-03 21:29:37,180 - __main__ - INFO - Epoch 1/1, Batch 5950/9899, Loss: 0.0113
+2025-10-03 21:29:55,451 - __main__ - INFO - Epoch 1/1, Batch 6000/9899, Loss: 0.0265
+2025-10-03 21:30:13,733 - __main__ - INFO - Epoch 1/1, Batch 6050/9899, Loss: 0.0058
+2025-10-03 21:30:32,011 - __main__ - INFO - Epoch 1/1, Batch 6100/9899, Loss: 0.1466
+2025-10-03 21:30:50,292 - __main__ - INFO - Epoch 1/1, Batch 6150/9899, Loss: 0.0127
+2025-10-03 21:31:08,569 - __main__ - INFO - Epoch 1/1, Batch 6200/9899, Loss: 0.0018
+2025-10-03 21:31:26,850 - __main__ - INFO - Epoch 1/1, Batch 6250/9899, Loss: 0.0054
+2025-10-03 21:31:45,115 - __main__ - INFO - Epoch 1/1, Batch 6300/9899, Loss: 0.0020
+2025-10-03 21:32:03,382 - __main__ - INFO - Epoch 1/1, Batch 6350/9899, Loss: 0.0034
+2025-10-03 21:32:21,646 - __main__ - INFO - Epoch 1/1, Batch 6400/9899, Loss: 0.0283
+2025-10-03 21:32:39,912 - __main__ - INFO - Epoch 1/1, Batch 6450/9899, Loss: 0.0049
+2025-10-03 21:32:58,201 - __main__ - INFO - Epoch 1/1, Batch 6500/9899, Loss: 0.0040
+2025-10-03 21:33:16,473 - __main__ - INFO - Epoch 1/1, Batch 6550/9899, Loss: 0.0951
+2025-10-03 21:33:34,752 - __main__ - INFO - Epoch 1/1, Batch 6600/9899, Loss: 0.0074
+2025-10-03 21:33:53,056 - __main__ - INFO - Epoch 1/1, Batch 6650/9899, Loss: 0.0010
+2025-10-03 21:34:11,359 - __main__ - INFO - Epoch 1/1, Batch 6700/9899, Loss: 0.0016
+2025-10-03 21:34:29,668 - __main__ - INFO - Epoch 1/1, Batch 6750/9899, Loss: 0.0179
+2025-10-03 21:34:48,081 - __main__ - INFO - Epoch 1/1, Batch 6800/9899, Loss: 0.0006
+2025-10-03 21:35:06,133 - __main__ - INFO - Epoch 1/1, Batch 6850/9899, Loss: 0.0019
+2025-10-03 21:35:24,161 - __main__ - INFO - Epoch 1/1, Batch 6900/9899, Loss: 0.0356
+2025-10-03 21:35:41,919 - __main__ - INFO - Epoch 1/1, Batch 6950/9899, Loss: 0.0027
+2025-10-03 21:35:59,567 - __main__ - INFO - Epoch 1/1, Batch 7000/9899, Loss: 0.0012
+2025-10-03 21:36:17,197 - __main__ - INFO - Epoch 1/1, Batch 7050/9899, Loss: 0.0058
+2025-10-03 21:36:34,832 - __main__ - INFO - Epoch 1/1, Batch 7100/9899, Loss: 0.0014
+2025-10-03 21:36:52,461 - __main__ - INFO - Epoch 1/1, Batch 7150/9899, Loss: 0.0101
+2025-10-03 21:37:10,097 - __main__ - INFO - Epoch 1/1, Batch 7200/9899, Loss: 0.0079
+2025-10-03 21:37:27,735 - __main__ - INFO - Epoch 1/1, Batch 7250/9899, Loss: 0.0120
+2025-10-03 21:37:45,368 - __main__ - INFO - Epoch 1/1, Batch 7300/9899, Loss: 0.0320
+2025-10-03 21:38:03,003 - __main__ - INFO - Epoch 1/1, Batch 7350/9899, Loss: 0.0283
+2025-10-03 21:38:20,637 - __main__ - INFO - Epoch 1/1, Batch 7400/9899, Loss: 0.0016
+2025-10-03 21:38:38,255 - __main__ - INFO - Epoch 1/1, Batch 7450/9899, Loss: 0.0210
+2025-10-03 21:38:55,881 - __main__ - INFO - Epoch 1/1, Batch 7500/9899, Loss: 0.0031
+2025-10-03 21:39:13,510 - __main__ - INFO - Epoch 1/1, Batch 7550/9899, Loss: 0.0110
+2025-10-03 21:39:31,141 - __main__ - INFO - Epoch 1/1, Batch 7600/9899, Loss: 0.0016
+2025-10-03 21:39:48,785 - __main__ - INFO - Epoch 1/1, Batch 7650/9899, Loss: 0.0020
+2025-10-03 21:40:06,456 - __main__ - INFO - Epoch 1/1, Batch 7700/9899, Loss: 0.0014
+2025-10-03 21:40:24,091 - __main__ - INFO - Epoch 1/1, Batch 7750/9899, Loss: 0.0036
+2025-10-03 21:40:41,766 - __main__ - INFO - Epoch 1/1, Batch 7800/9899, Loss: 0.0039
+2025-10-03 21:40:59,479 - __main__ - INFO - Epoch 1/1, Batch 7850/9899, Loss: 0.0022
+2025-10-03 21:41:17,187 - __main__ - INFO - Epoch 1/1, Batch 7900/9899, Loss: 0.0006
+2025-10-03 21:41:34,859 - __main__ - INFO - Epoch 1/1, Batch 7950/9899, Loss: 0.0602
+2025-10-03 21:41:52,551 - __main__ - INFO - Epoch 1/1, Batch 8000/9899, Loss: 0.0029
+2025-10-03 21:42:10,243 - __main__ - INFO - Epoch 1/1, Batch 8050/9899, Loss: 0.0090
+2025-10-03 21:42:27,935 - __main__ - INFO - Epoch 1/1, Batch 8100/9899, Loss: 0.1345
+2025-10-03 21:42:45,617 - __main__ - INFO - Epoch 1/1, Batch 8150/9899, Loss: 0.0009
+2025-10-03 21:43:03,310 - __main__ - INFO - Epoch 1/1, Batch 8200/9899, Loss: 0.0045
+2025-10-03 21:43:21,007 - __main__ - INFO - Epoch 1/1, Batch 8250/9899, Loss: 0.0056
+2025-10-03 21:43:38,776 - __main__ - INFO - Epoch 1/1, Batch 8300/9899, Loss: 0.0133
+2025-10-03 21:43:56,775 - __main__ - INFO - Epoch 1/1, Batch 8350/9899, Loss: 0.0003
+2025-10-03 21:44:14,804 - __main__ - INFO - Epoch 1/1, Batch 8400/9899, Loss: 0.0006
+2025-10-03 21:44:33,226 - __main__ - INFO - Epoch 1/1, Batch 8450/9899, Loss: 0.0472
+2025-10-03 21:44:51,277 - __main__ - INFO - Epoch 1/1, Batch 8500/9899, Loss: 0.0011
+2025-10-03 21:45:09,816 - __main__ - INFO - Epoch 1/1, Batch 8550/9899, Loss: 0.0019
+2025-10-03 21:45:28,099 - __main__ - INFO - Epoch 1/1, Batch 8600/9899, Loss: 0.0014
+2025-10-03 21:45:46,173 - __main__ - INFO - Epoch 1/1, Batch 8650/9899, Loss: 0.0039
+2025-10-03 21:46:04,135 - __main__ - INFO - Epoch 1/1, Batch 8700/9899, Loss: 0.0042
+2025-10-03 21:46:22,026 - __main__ - INFO - Epoch 1/1, Batch 8750/9899, Loss: 0.0006
+2025-10-03 21:46:39,794 - __main__ - INFO - Epoch 1/1, Batch 8800/9899, Loss: 0.3002
+2025-10-03 21:46:57,561 - __main__ - INFO - Epoch 1/1, Batch 8850/9899, Loss: 0.0018
+2025-10-03 21:47:15,298 - __main__ - INFO - Epoch 1/1, Batch 8900/9899, Loss: 0.0009
+2025-10-03 21:47:34,082 - __main__ - INFO - Epoch 1/1, Batch 8950/9899, Loss: 0.0057
+2025-10-03 21:47:52,763 - __main__ - INFO - Epoch 1/1, Batch 9000/9899, Loss: 0.2851
+2025-10-03 21:48:11,464 - __main__ - INFO - Epoch 1/1, Batch 9050/9899, Loss: 0.0008
+2025-10-03 21:48:30,117 - __main__ - INFO - Epoch 1/1, Batch 9100/9899, Loss: 0.0024
+2025-10-03 21:48:48,839 - __main__ - INFO - Epoch 1/1, Batch 9150/9899, Loss: 0.0043
+2025-10-03 21:49:07,545 - __main__ - INFO - Epoch 1/1, Batch 9200/9899, Loss: 0.2313
+2025-10-03 21:49:26,192 - __main__ - INFO - Epoch 1/1, Batch 9250/9899, Loss: 0.0004
+2025-10-03 21:49:44,513 - __main__ - INFO - Epoch 1/1, Batch 9300/9899, Loss: 0.0009
+2025-10-03 21:50:03,249 - __main__ - INFO - Epoch 1/1, Batch 9350/9899, Loss: 0.0036
+2025-10-03 21:50:21,874 - __main__ - INFO - Epoch 1/1, Batch 9400/9899, Loss: 0.0190
+2025-10-03 21:50:40,492 - __main__ - INFO - Epoch 1/1, Batch 9450/9899, Loss: 0.0039
+2025-10-03 21:50:59,162 - __main__ - INFO - Epoch 1/1, Batch 9500/9899, Loss: 0.0039
+2025-10-03 21:51:17,316 - __main__ - INFO - Epoch 1/1, Batch 9550/9899, Loss: 0.0014
+2025-10-03 21:51:35,555 - __main__ - INFO - Epoch 1/1, Batch 9600/9899, Loss: 0.0015
+2025-10-03 21:51:53,834 - __main__ - INFO - Epoch 1/1, Batch 9650/9899, Loss: 0.0006
+2025-10-03 21:52:12,097 - __main__ - INFO - Epoch 1/1, Batch 9700/9899, Loss: 0.0024
+2025-10-03 21:52:30,402 - __main__ - INFO - Epoch 1/1, Batch 9750/9899, Loss: 0.0278
+2025-10-03 21:52:48,706 - __main__ - INFO - Epoch 1/1, Batch 9800/9899, Loss: 0.0014
+2025-10-03 21:53:07,365 - __main__ - INFO - Epoch 1/1, Batch 9850/9899, Loss: 0.0030
+2025-10-03 21:55:44,093 - __main__ - INFO - New best model saved: 0.9928 accuracy
+2025-10-03 21:55:44,094 - __main__ - INFO - Epoch 1/1 - Train Loss: 0.0407, Val Loss: 0.0290, Val Accuracy: 0.9928
+2025-10-03 21:55:44,094 - __main__ - INFO - Training completed in 3693.64 seconds
+2025-10-03 21:55:44,094 - __main__ - INFO - Best validation accuracy: 0.9928 at epoch 1
+2025-10-03 21:55:44,094 - __main__ - INFO - Starting final evaluation on test set
+2025-10-03 22:00:18,983 - __main__ - INFO - Test Accuracy: 0.9933
+2025-10-03 22:00:18,983 - __main__ - INFO - Classification Report:
+2025-10-03 22:00:18,997 - __main__ - INFO -               precision    recall  f1-score   support
+
+         ham       0.99      1.00      0.99     26323
+        spam       1.00      0.98      0.99     12641
+    phishing       1.00      1.00      1.00      6289
+
+    accuracy                           0.99     45253
+   macro avg       1.00      0.99      0.99     45253
+weighted avg       0.99      0.99      0.99     45253
+
+2025-10-03 22:00:19,548 - __main__ - INFO - Final model saved to: /Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/mbert_ots_model_2.1.pth
+2025-10-03 22:00:19,549 - __main__ - INFO - Training metadata saved to: /Users/ameedjamous/programming/OpenTextShield/src/mBERT/training/model-training/training_metadata_2.1.json
+2025-10-03 22:00:19,558 - __main__ - INFO - Training completed successfully!
+2025-10-03 22:00:19,558 - __main__ - INFO - Final test accuracy: 0.9933

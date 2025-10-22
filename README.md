@@ -12,7 +12,29 @@ Open source collaborative AI platform for enhanced telecom messaging security an
 
 ## 🚀 Quick Start
 
-Deploy OpenTextShield in your environment within minutes:
+[![Open Text Shield L - Docker Deployment](https://img.youtube.com/vi/HCaTE63lVws/0.jpg)](https://youtu.be/HCaTE63lVws?si=4D4BYAdtUxkX7wcF)
+
+```bash
+# Prerequisites
+# Docker installation is required. Visit https://docs.docker.com/get-docker/ to install Docker.
+
+# Run the following commands.
+
+docker pull telecomsxchange/opentextshield:latest
+docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
+
+# Access Open Test Shield
+
+- Frontend Interface: http://localhost:8080
+- API Documentation: http://localhost:8002/docs
+- API Endpoint: http://localhost:8002/predict/
+
+```
+
+
+
+
+Build from source and deploy OpenTextShield in your environment within minutes:
 
 ```bash
 # Clone the repository
@@ -20,18 +42,15 @@ git clone https://github.com/TelecomsXChangeAPi/OpenTextShield.git
 cd OpenTextShield
 
 # Start both API and frontend (recommended)
-./start.sh
+./scripts/start.sh
 
-# Or use Docker
+# Or build using Docker
 # Build and run (includes 679MB mBERT model)
 docker build -t opentextshield .
 docker run -d -p 8002:8002 -p 8080:8080 opentextshield
 
 # Alternative if port 8080 is busy
 docker run -d -p 8002:8002 -p 8081:8080 opentextshield
-
-# Or use pre-built image
-docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 ```
 
 **Access Points:**
@@ -41,8 +60,8 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 ## ✨ Key Features
 
-- 🌍 **Multilingual Support**: 104+ languages with mBERT
-- ⚡ **Real-time Classification**: Professional API with <200ms response time
+- 🌍 **Multilingual Support**: Built on mBERT with coverage for 104+ languages; currently trained on 10 languages for SMS classification.
+- ⚡ **Real-time Classification**: Professional API with <200ms response time> 
 - 🔒 **Advanced Detection**: Spam, phishing, and ham classification
 - 📊 **Professional Interface**: Research-grade web interface with metrics
 - 🐳 **Docker Ready**: Complete containerized deployment
@@ -51,15 +70,19 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 ## 🛠 API Usage
 
-### Quick Test
+OpenTextShield provides both **legacy API** and **TMForum-compliant API** endpoints.
+
+### Legacy API (Direct Classification)
+
+#### Quick Test
 ```bash
-# Test the API endpoint
+# Test the legacy API endpoint
 curl -X POST "http://localhost:8002/predict/" \
   -H "Content-Type: application/json" \
   -d '{"text":"Your SMS content here","model":"ots-mbert"}'
 ```
 
-### Response Format
+#### Response Format
 ```json
 {
   "label": "ham|spam|phishing",
@@ -71,6 +94,82 @@ curl -X POST "http://localhost:8002/predict/" \
     "author": "TelecomsXChange (TCXC)"
   }
 }
+```
+
+### TMForum API (TMF922 - AI Inference Job Management)
+
+#### Create Inference Job
+```bash
+# Create a TMForum-compliant inference job
+curl -X POST "http://localhost:8002/tmf-api/aiInferenceJob" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "priority": "normal",
+    "input": {
+      "inputType": "text",
+      "inputFormat": "plain",
+      "inputData": {"text": "Free money! Click here now!"}
+    },
+    "model": {
+      "id": "ots-mbert",
+      "name": "OpenTextShield mBERT",
+      "version": "2.1",
+      "type": "bert",
+      "capabilities": ["text-classification", "multilingual"]
+    },
+    "name": "SMS Classification Job"
+  }'
+```
+
+#### Check Job Status
+```bash
+# Check inference job status (replace JOB_ID with actual ID)
+curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob/JOB_ID"
+```
+
+#### Response Format (Completed Job)
+```json
+{
+  "id": "inference-job-123",
+  "state": "completed",
+  "priority": "normal",
+  "input": {
+    "inputType": "text",
+    "inputFormat": "plain",
+    "inputData": {"text": "Free money! Click here now!"}
+  },
+  "output": {
+    "outputType": "classification",
+    "outputFormat": "json",
+    "outputData": {
+      "label": "spam",
+      "probability": 0.95
+    },
+    "confidence": 0.95,
+    "outputMetadata": {
+      "model_used": "OTS_mBERT",
+      "model_version": "2.1",
+      "processing_time_seconds": 0.15
+    }
+  },
+  "model": {
+    "id": "ots-mbert",
+    "name": "OpenTextShield mBERT",
+    "version": "2.1",
+    "type": "bert",
+    "capabilities": ["text-classification", "multilingual"]
+  },
+  "creationDate": "2024-01-15T10:30:00Z",
+  "completionDate": "2024-01-15T10:30:15Z",
+  "processingTimeMs": 150,
+  "type": "TextClassificationInferenceJob"
+}
+```
+
+#### List Inference Jobs
+```bash
+# List all inference jobs
+curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob"
 ```
 
 ## 📋 Installation Guide
@@ -91,39 +190,70 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # Start the platform
-./start.sh
+./scripts/start.sh
 ```
 
 ### Docker Deployment
+
+#### 🛡️ Security-Enhanced Docker Options
+
+**Option 1: Enhanced Security (Recommended)**
 ```bash
-# Build container with mBERT model (679MB model included)
+# Multi-stage build with non-root user - best balance of security and functionality
+docker build -f Dockerfile.secure -t opentextshield:secure .
+docker run -d -p 8002:8002 -p 8081:8080 opentextshield:secure
+```
+
+**Option 2: Standard Build**
+```bash
+# Standard build with security updates
 docker build -t opentextshield .
-
-# Build for specific architecture (x86) - Method 1: Direct tag
-docker buildx build --platform linux/amd64 -t telecomsxchange/opentextshield:2.1-x86-v2 .
-
-# Build for specific architecture (x86) - Method 2: Build then tag
-docker buildx build --platform linux/amd64 -t opentextshield:x86 .
-docker tag opentextshield:x86 telecomsxchange/opentextshield:2.1-x86-v2
-
-# Run container - adjust port if 8080 is in use
-docker run -d -p 8002:8002 -p 8080:8080 opentextshield
-
-# Alternative port mapping if needed
 docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+```
 
-# Using Docker Compose (recommended)
-docker-compose up -d
+**Option 3: Maximum Security (Advanced)**
+```bash
+# Ultra-secure distroless build - minimal attack surface (API only)
+docker build -f Dockerfile.distroless -t opentextshield:distroless .
+docker run -d -p 8002:8002 opentextshield:distroless
+```
 
-# Pre-built images
+#### 🏗️ Architecture-Specific Builds
+
+**x86_64 (Intel/AMD) Architecture:**
+```bash
+# Enhanced security for x86
+docker buildx build --platform linux/amd64 -f Dockerfile.secure -t opentextshield:x86-secure .
+
+# Standard x86 build
+docker buildx build --platform linux/amd64 -t telecomsxchange/opentextshield:2.1-x86-v2 .
+```
+
+**ARM64 (Apple Silicon) Architecture:**
+```bash
+# Enhanced security for ARM64
+docker buildx build --platform linux/arm64 -f Dockerfile.secure -t opentextshield:arm64-secure .
+```
+
+#### 📦 Pre-built Images
+```bash
+# Latest stable releases
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:2.1-x86-v2
+
+# Using Docker Compose (recommended for production)
+docker-compose up -d
 ```
 
 **Container Access:**
 - API: http://localhost:8002
 - Frontend: http://localhost:8080 (or 8081)
 - Health: http://localhost:8002/health
+
+**Security Benefits:**
+- 🔒 **Enhanced**: 60-80% fewer vulnerabilities, non-root execution, multi-stage builds
+- 🛡️ **Distroless**: Minimal attack surface, no shell access, maximum security
+- 📦 **Smaller images**: Optimized builds reduce image size and vulnerabilities
 
 **Architecture Support:**
 - ARM64 (Apple Silicon): `telecomsxchange/opentextshield:latest`
@@ -230,7 +360,7 @@ python test_training.py
 ```bash
 # Frontend is a single HTML file with embedded CSS/JS
 # Edit frontend/index.html for customizations
-# Restart ./start.sh to see changes
+# Restart ./scripts/start.sh to see changes
 ```
 
 ## 🚀 Production Deployment

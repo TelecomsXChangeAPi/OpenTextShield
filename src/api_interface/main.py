@@ -8,14 +8,25 @@ import asyncio
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from datetime import datetime
+from datetime import datetime, timezone
 
 from .config.settings import settings
 from .utils.logging import setup_logging, logger
 from .utils.exceptions import OpenTextShieldException
 from .services.model_loader import model_manager
 from .middleware.security import setup_cors_middleware
-from .routers import health, prediction, feedback
+from .routers import health, prediction, feedback, audit, tmforum_event
+
+# Import TMForum AI Inference Job components (optional - may not be available in all deployments)
+try:
+    from .services.tmforum_service import tmforum_service
+    from .routers import tmforum
+    TMFORUM_AVAILABLE = True
+except ImportError as e:
+    logger.warning(f"TMForum AI Inference Job service not available: {e}")
+    tmforum_service = None
+    tmforum = None
+    TMFORUM_AVAILABLE = False
 
 
 @asynccontextmanager
@@ -29,25 +40,45 @@ async def lifespan(app: FastAPI):
     logger.info("Starting OpenTextShield API...")
     logger.info(f"Version: {settings.api_version}")
     logger.info(f"Environment: {settings.api_host}:{settings.api_port}")
-    
+
     try:
+        # Create necessary directories
+        logger.info("Creating application directories...")
+        settings.feedback_dir.mkdir(parents=True, exist_ok=True)
+        settings.audit_dir.mkdir(parents=True, exist_ok=True)
+        logger.info("Directories created successfully")
+
         # Load all models
         await asyncio.get_event_loop().run_in_executor(
             None, model_manager.load_all_models
         )
         logger.info("All models loaded successfully")
-        
+
+        # Initialize TMForum service (if available)
+        if TMFORUM_AVAILABLE and tmforum_service:
+            await tmforum_service.initialize()
+            logger.info("TMForum service initialized successfully")
+
     except Exception as e:
-        logger.error(f"Failed to load models during startup: {str(e)}")
-        # Continue startup even if some models fail to load
-        # Individual endpoints will handle model availability
-    
+        logger.error(f"Failed to initialize services during startup: {str(e)}")
+        # Continue startup even if some services fail to initialize
+        # Individual endpoints will handle service availability
+
     logger.info("OpenTextShield API startup completed")
     
     yield
     
     # Shutdown
     logger.info("Shutting down OpenTextShield API...")
+
+    # Shutdown TMForum service (if available)
+    if TMFORUM_AVAILABLE and tmforum_service:
+        try:
+            await tmforum_service.shutdown()
+            logger.info("TMForum service shutdown completed")
+        except Exception as e:
+            logger.error(f"Error during TMForum service shutdown: {str(e)}")
+
     logger.info("OpenTextShield API shutdown completed")
 
 
@@ -69,6 +100,12 @@ setup_cors_middleware(app)
 app.include_router(health.router)
 app.include_router(prediction.router)
 app.include_router(feedback.router)
+app.include_router(audit.router)
+
+# TMForum routers
+app.include_router(tmforum_event.router)  # TMF688 Event Management API (always available)
+if TMFORUM_AVAILABLE and tmforum:
+    app.include_router(tmforum.router)  # TMF922 AI Inference Job API (optional)
 
 
 @app.exception_handler(OpenTextShieldException)
@@ -88,7 +125,7 @@ async def opentextshield_exception_handler(request, exc: OpenTextShieldException
             "error": exc.error_code,
             "message": exc.message,
             "details": exc.details,
-            "timestamp": datetime.utcnow().isoformat() + "Z"
+            "timestamp": datetime.now(timezone.utc).isoformat()
         }
     )
 
@@ -96,15 +133,14 @@ async def opentextshield_exception_handler(request, exc: OpenTextShieldException
 @app.exception_handler(Exception)
 async def general_exception_handler(request, exc: Exception):
     """Handle general exceptions."""
-    logger.error(f"Unhandled exception: {str(exc)}")
+    logger.error(f"Unhandled exception: {type(exc).__name__}: {str(exc)}", exc_info=True)
     
     return JSONResponse(
         status_code=500,
         content={
             "error": "INTERNAL_SERVER_ERROR",
-            "message": "An unexpected error occurred",
-            "details": {"error": str(exc)},
-            "timestamp": datetime.utcnow().isoformat() + "Z"
+            "message": "An unexpected error occurred. Please try again later.",
+            "timestamp": datetime.now(timezone.utc).isoformat()
         }
     )
 

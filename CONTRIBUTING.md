@@ -35,7 +35,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 - **Set Upstream Remote**: Add the original repository as a remote to keep your fork up-to-date.
 
   ```bash
-  git remote add upstream https://github.com/OpenTextShield/OpenTextShield.git
+  git remote add upstream https://github.com/TelecomsXChangeAPi/OpenTextShield.git
   ```
 
 - **Install Dependencies**: Follow the instructions in the `README.md` to install any necessary dependencies.
@@ -44,7 +44,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ### Reporting Bugs
 
-If you find a bug, please report it by [opening an issue](https://github.com/OpenTextShield/OpenTextShield/issues):
+If you find a bug, please report it by [opening an issue](https://github.com/TelecomsXChangeAPi/OpenTextShield/issues):
 
 - **Search Existing Issues**: Before creating a new issue, please check if it has already been reported.
 - **Provide Detailed Information**: Include steps to reproduce, expected behavior, actual behavior, and any relevant screenshots or logs.

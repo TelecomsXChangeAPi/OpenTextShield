@@ -4,7 +4,6 @@ Prediction service for OpenTextShield API.
 
 import time
 import torch
-import numpy as np
 from typing import Tuple, Dict, Any
 
 from ..config.settings import settings
@@ -13,6 +12,15 @@ from ..utils.exceptions import PredictionError, ModelNotFoundError
 from ..models.request_models import PredictionRequest, ModelType
 from ..models.response_models import PredictionResponse, ModelInfo, ClassificationLabel
 from .model_loader import model_manager
+
+# Import enhanced preprocessor
+try:
+    from .enhanced_preprocessing import EnhancedPreprocessor
+    enhanced_preprocessor = EnhancedPreprocessor()
+    USE_ENHANCED_PREPROCESSING = True
+except ImportError:
+    logger.warning("Enhanced preprocessor not available, using standard preprocessing")
+    USE_ENHANCED_PREPROCESSING = False
 
 
 class PredictionService:
@@ -63,18 +71,28 @@ class PredictionService:
         start_time = time.time()
         
         try:
-            # Get model and tokenizer
-            model, tokenizer = model_manager.get_mbert_model(model_name)
-            
+            # Get model, tokenizer, and version
+            model, tokenizer, model_version = model_manager.get_mbert_model(model_name)
+
+            # Enhanced preprocessing if available
+            if USE_ENHANCED_PREPROCESSING:
+                processed_text, features = enhanced_preprocessor.preprocess_text(text)
+                logger.info(f"Enhanced preprocessing features: {features}")
+            else:
+                processed_text = text
+
             # Preprocess text
-            inputs = self.preprocess_text(text, tokenizer)
+            inputs = self.preprocess_text(processed_text, tokenizer)
             inputs = {k: v.to(model_manager.device) for k, v in inputs.items()}
             
             # Make prediction
             with torch.no_grad():
                 outputs = model(**inputs)
-                prediction = torch.argmax(outputs.logits, dim=1).item()
-                probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
+                logits = outputs.logits
+                probabilities = torch.nn.functional.softmax(logits, dim=1)
+                prediction = torch.argmax(logits, dim=1).item()
+                # Get the probability of the predicted class
+                probability = probabilities[0][prediction].item()
             
             # Map prediction to label
             label = self.label_map[prediction]
@@ -83,7 +101,7 @@ class PredictionService:
             
             model_info = ModelInfo(
                 name="OTS_mBERT",
-                version="2.1",
+                version=model_version,  # Use version from model manager
                 author="TelecomsXChange (TCXC)",
                 last_training="2024-03-20"
             )

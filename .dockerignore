@@ -20,15 +20,19 @@ __pycache__/
 *.pkl
 *.ckpt
 
-# Exclude all datasets - only production dataset will be included specifically  
+# Exclude all datasets - only production dataset will be included specifically
 *.csv
-!src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.1.csv
+!src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv
+
+# Exclude training datasets to reduce image size
+src/mBERT/training/model-training/dataset/
 
 # === ARCHIVE AND OLD VERSIONS ===
 # Exclude entire archive directory (4.7GB+ of old models/datasets)
 **/archive/
 **/models/
-!src/mBERT/training/model-training/mbert_ots_model_2.1.pth
+!src/api_interface/models/
+!src/mBERT/training/model-training/mbert_ots_model_2.5.pth
 *_v1.*
 *_v2.0.*
 *_1.*
@@ -94,8 +98,8 @@ config/*.local.*
 
 # === KEEP ESSENTIAL FILES FOR PRODUCTION ===
 !src/api_interface/
-!src/mBERT/training/model-training/mbert_ots_model_2.1.pth
-!src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.1.csv
+!src/mBERT/training/model-training/mbert_ots_model_2.5.pth
+!src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv
 !requirements*.txt
 !start*.sh
 !Dockerfile*

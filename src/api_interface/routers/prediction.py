@@ -3,11 +3,12 @@ Prediction router for OpenTextShield API.
 """
 
 from fastapi import APIRouter, Depends, HTTPException
-from datetime import datetime
+from datetime import datetime, timezone
 
 from ..models.request_models import PredictionRequest
 from ..models.response_models import PredictionResponse, ErrorResponse
 from ..services.prediction_service import prediction_service
+from ..services.audit_service import audit_service
 from ..middleware.security import verify_ip_address
 from ..utils.exceptions import OpenTextShieldException
 from ..utils.logging import logger
@@ -44,6 +45,24 @@ async def predict_text(request: PredictionRequest) -> PredictionResponse:
     try:
         logger.info(f"Received prediction request: model={request.model}")
         result = await prediction_service.predict(request)
+
+        # Log prediction to audit system
+        try:
+            # Note: Client IP already verified by dependencies decorator
+            audit_service.log_prediction(
+                text=request.text,
+                label=result.label,
+                confidence=result.probability,
+                model=result.model_info.name,
+                model_version=result.model_info.version,
+                processing_time=result.processing_time,
+                client_ip="unknown",  # Could be retrieved from Request object if needed
+                text_length=len(request.text)
+            )
+        except Exception as audit_error:
+            # Don't fail the request if audit logging fails
+            logger.warning(f"Failed to log prediction to audit: {audit_error}")
+
         return result
         
     except OpenTextShieldException as e:
@@ -64,7 +83,7 @@ async def predict_text(request: PredictionRequest) -> PredictionResponse:
                 "error": e.error_code,
                 "message": e.message,
                 "details": e.details,
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(timezone.utc).isoformat()
             }
         )
         
@@ -76,6 +95,6 @@ async def predict_text(request: PredictionRequest) -> PredictionResponse:
                 "error": "INTERNAL_SERVER_ERROR",
                 "message": "An unexpected error occurred",
                 "details": {"error": str(e)},
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(timezone.utc).isoformat()
             }
         )

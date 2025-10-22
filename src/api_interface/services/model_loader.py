@@ -8,6 +8,13 @@ from pathlib import Path
 from typing import Dict, Optional, Tuple, Any
 from transformers import AutoTokenizer, BertForSequenceClassification, BertConfig
 
+try:
+    from peft import PeftModel
+    PEFT_AVAILABLE = True
+except ImportError:
+    PEFT_AVAILABLE = False
+    PeftModel = None
+
 from ..config.settings import settings
 from ..utils.logging import logger
 from ..utils.exceptions import ModelLoadError, ModelNotFoundError
@@ -19,6 +26,7 @@ class ModelManager:
     def __init__(self):
         self.mbert_models: Dict[str, torch.nn.Module] = {}
         self.mbert_tokenizers: Dict[str, Any] = {}
+        self.mbert_versions: Dict[str, str] = {}  # Store model versions
         self.device = self._detect_device()
         
     def _detect_device(self) -> torch.device:
@@ -36,39 +44,66 @@ class ModelManager:
         return device
     
     def load_mbert_models(self) -> None:
-        """Load all configured mBERT models."""
+        """Load all configured mBERT models, with PEFT support if available."""
         logger.info("Loading mBERT models...")
-        
+
         for model_name, config in settings.mbert_model_configs.items():
             try:
                 model_path = settings.models_base_path / config["path"]
-                
+
+                # Extract version from model filename (e.g., mbert_ots_model_2.5.pth -> 2.5)
+                model_filename = model_path.name
+                if "mbert_ots_model_" in model_filename and ".pth" in model_filename:
+                    version_part = model_filename.replace("mbert_ots_model_", "").replace(".pth", "")
+                    if version_part.replace(".", "").isdigit():
+                        detected_version = version_part
+                        logger.info(f"Detected model version {detected_version} for {model_name}")
+                    else:
+                        detected_version = config.get('version', '2.5')
+                        logger.warning(f"Could not parse version from filename, using configured version: {detected_version}")
+                else:
+                    detected_version = config.get('version', '2.5')
+                    logger.info(f"Using configured version {detected_version} for {model_name}")
+
+                adapter_path = settings.models_base_path / f"adapters_{detected_version}"
+
+                # Load base model
                 if not model_path.exists():
                     logger.warning(f"Model file not found: {model_path}")
                     continue
-                
+
                 # Load configuration
                 bert_config = BertConfig.from_pretrained(
                     config["tokenizer"],
                     num_labels=int(config["num_labels"])
                 )
-                
-                # Create and load model
+
+                # Create base model
                 model = BertForSequenceClassification(bert_config)
                 model.load_state_dict(
                     torch.load(model_path, map_location=self.device, weights_only=True)
                 )
+
+                # Check for PEFT adapters
+                if PEFT_AVAILABLE and adapter_path.exists():
+                    logger.info(f"Loading PEFT adapters from {adapter_path}")
+                    model = PeftModel.from_pretrained(model, adapter_path)
+                    logger.info(f"PEFT model loaded for {model_name}")
+                else:
+                    logger.info(f"Loading standard model for {model_name} (no adapters found)")
+
                 model.eval()
                 model = model.to(self.device)
-                
+
                 # Load tokenizer
                 tokenizer = AutoTokenizer.from_pretrained(config["tokenizer"])
-                
+
                 self.mbert_models[model_name] = model
                 self.mbert_tokenizers[model_name] = tokenizer
-                
-                logger.info(f"Successfully loaded mBERT model: {model_name}")
-                
+                self.mbert_versions[model_name] = detected_version
+
+                logger.info(f"Successfully loaded mBERT model: {model_name} (version {detected_version})")
+
             except Exception as e:
                 logger.error(f"Failed to load mBERT model {model_name}: {str(e)}")
                 raise ModelLoadError(model_name, {"error": str(e)})
@@ -79,16 +114,16 @@ class ModelManager:
         
         logger.info("Model loading completed")
     
-    def get_mbert_model(self, model_name: str) -> Tuple[torch.nn.Module, Any]:
+    def get_mbert_model(self, model_name: str) -> Tuple[torch.nn.Module, Any, str]:
         """
-        Get mBERT model and tokenizer.
-        
+        Get mBERT model, tokenizer, and version.
+
         Args:
             model_name: Name of the mBERT model
-            
+
         Returns:
-            Tuple of (model, tokenizer)
-            
+            Tuple of (model, tokenizer, version)
+
         Raises:
             ModelNotFoundError: If model is not loaded
         """
@@ -98,8 +133,9 @@ class ModelManager:
                 f"mBERT model '{model_name}' not available. "
                 f"Available models: {available_models}"
             )
-        
-        return self.mbert_models[model_name], self.mbert_tokenizers[model_name]
+
+        version = self.mbert_versions.get(model_name, "2.5")
+        return self.mbert_models[model_name], self.mbert_tokenizers[model_name], version
     
     def is_model_available(self, model_type: str, model_name: Optional[str] = None) -> bool:
         """

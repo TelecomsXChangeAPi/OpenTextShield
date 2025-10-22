@@ -6,19 +6,19 @@ This guide provides multiple ways to start the OpenTextShield API, supporting bo
 
 ### Option 1: Auto-Detection (Recommended)
 ```bash
-./start.sh
+./scripts/start.sh
 ```
 **Best for:** Most users - automatically detects your environment and configures accordingly.
 
 ### Option 2: Local Development
 ```bash
-./start-local.sh
+./scripts/start-local.sh
 ```
 **Best for:** Local development with hot reload and development features.
 
 ### Option 3: Manual Start
 ```bash
-./start-manual.sh
+./scripts/start-manual.sh
 ```
 **Best for:** Users who already have dependencies installed and want direct control.
 
@@ -54,9 +54,9 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 
 | Script | Environment | Virtual Env | Dependencies | Hot Reload | Best For |
 |--------|-------------|-------------|--------------|------------|----------|
-| `start.sh` | Auto-detect | ✅ Creates | ✅ Installs | ✅ Yes | General use |
-| `start-local.sh` | Local only | ✅ Creates | ✅ Installs | ✅ Yes | Development |
-| `start-manual.sh` | Any | ❌ Uses current | ❌ Must exist | ✅ Yes | Advanced users |
+| `scripts/start.sh` | Auto-detect | ✅ Creates | ✅ Installs | ✅ Yes | General use |
+| `scripts/start-local.sh` | Local only | ✅ Creates | ✅ Installs | ✅ Yes | Development |
+| `scripts/start-manual.sh` | Any | ❌ Uses current | ❌ Must exist | ✅ Yes | Advanced users |
 | Docker | Container | ✅ Built-in | ✅ Pre-installed | ❌ No | Production |
 
 ## 🖥️ Platform-Specific Instructions
@@ -67,7 +67,7 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 brew install python3
 
 # Start the API
-./start.sh
+./scripts/start.sh
 ```
 
 ### Ubuntu/Debian
@@ -77,7 +77,7 @@ sudo apt-get update
 sudo apt-get install python3 python3-venv python3-pip
 
 # Start the API
-./start.sh
+./scripts/start.sh
 ```
 
 ### Windows (WSL)
@@ -87,7 +87,7 @@ sudo apt-get update
 sudo apt-get install python3 python3-venv python3-pip
 
 # Start the API
-./start.sh
+./scripts/start.sh
 ```
 
 ## 🔍 Verification
@@ -127,7 +127,7 @@ export OTS_DEFAULT_MODEL=bert
 export OTS_MAX_TEXT_LENGTH=512
 
 # Then start
-./start.sh
+./scripts/start.sh
 ```
 
 ### Configuration File (.env)
@@ -172,7 +172,7 @@ kill <PID>
 
 # Or use different port
 export OTS_API_PORT=8003
-./start.sh
+./scripts/start.sh
 ```
 
 **❌ "uvicorn not found"**
@@ -182,21 +182,21 @@ pip install uvicorn
 
 # Or reinstall dependencies
 rm -rf ots/  # Remove virtual env
-./start.sh   # Recreate and install
+./scripts/start.sh   # Recreate and install
 ```
 
 ### Debug Mode
 ```bash
 # Enable debug logging
 export OTS_LOG_LEVEL=DEBUG
-./start.sh
+./scripts/start.sh
 ```
 
 ### Reset Environment
 ```bash
 # Remove virtual environment and start fresh
 rm -rf ots/
-./start.sh
+./scripts/start.sh
 ```
 
 ## 🐳 Docker-Specific
@@ -243,7 +243,7 @@ export OTS_ALLOWED_IPS="10.0.0.0/8,172.16.0.0/12,192.168.0.0/16"
 export OTS_CORS_ORIGINS="https://yourdomain.com"
 
 # Start with production script
-./start.sh
+./scripts/start.sh
 ```
 
 ### Behind Reverse Proxy (nginx)

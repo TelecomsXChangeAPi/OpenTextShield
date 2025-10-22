@@ -12,7 +12,7 @@ from typing import Dict, Any, Optional
 class OTSAPIClient:
     """OpenTextShield API client for testing."""
     
-    def __init__(self, base_url: str = "http://localhost:8002"):
+    def __init__(self, base_url: str = "http://localhost:9000"):
         self.base_url = base_url
         self.predict_url = f"{base_url}/predict/"
         self.health_url = f"{base_url}/health"
@@ -22,7 +22,7 @@ class OTSAPIClient:
         try:
             response = requests.get(self.health_url, timeout=5)
             return response.status_code == 200
-        except:
+        except Exception:
             return False
     
     def predict(self, text: str, model: str = "ots-mbert") -> Dict[str, Any]:
