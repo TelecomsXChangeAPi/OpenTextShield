@@ -22,7 +22,7 @@ class OTSAPIClient:
         try:
             response = requests.get(self.health_url, timeout=5)
             return response.status_code == 200
-        except:
+        except Exception:
             return False
     
     def predict(self, text: str, model: str = "ots-mbert") -> Dict[str, Any]:

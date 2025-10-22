@@ -4,7 +4,6 @@ Prediction service for OpenTextShield API.
 
 import time
 import torch
-import numpy as np
 from typing import Tuple, Dict, Any
 
 from ..config.settings import settings
@@ -13,13 +12,6 @@ from ..utils.exceptions import PredictionError, ModelNotFoundError
 from ..models.request_models import PredictionRequest, ModelType
 from ..models.response_models import PredictionResponse, ModelInfo, ClassificationLabel
 from .model_loader import model_manager
-
-def get_model_version() -> str:
-    """Extract model version from the configured model path."""
-    import re
-    model_path = settings.mbert_model_configs["multilingual"]["path"]
-    version_match = re.search(r'mbert_ots_model_(\d+\.\d+)\.pth', str(model_path))
-    return version_match.group(1) if version_match else "2.5"
 
 # Import enhanced preprocessor
 try:

@@ -310,8 +310,8 @@ class EnhancedTrainer:
         if self.num_labels == 2:
             try:
                 auc = roc_auc_score(all_labels, [p[1] for p in all_probs])
-            except:
-                pass
+            except (ValueError, IndexError):
+                pass  # AUC calculation may fail with certain label distributions
 
         metrics = {
             'accuracy': accuracy,

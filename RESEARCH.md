@@ -21,7 +21,7 @@ git clone https://github.com/TelecomsXChangeAPi/OpenTextShield.git
 cd OpenTextShield
 
 # Start both API and frontend (recommended)
-./start.sh
+./scripts/start.sh
 
 # Or use Docker
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
