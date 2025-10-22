@@ -1,24 +1,31 @@
-# Security-patched requirements for OpenTextShield
+# Security-patched requirements for OpenTextShield v2.6
+# Updated with critical security fixes and dependency compatibility
 # Only pinning security-critical packages, allowing others to auto-resolve
 
-# Core API framework - latest stable versions  
+# Core API framework - latest stable versions
 fastapi>=0.115.14
 uvicorn>=0.30.6
-starlette>=0.47.2
+starlette>=0.46.2
 
 # Security patches - critical vulnerabilities fixed
+# CVE-2025-32434: torch RCE via torch.load()
+# CVE-2025-53643: aiohttp HTTP Request/Response Smuggling
+# CVE-2025-50181/50182: urllib3 redirect control
+# CVE-2024-11392/93/94: transformers security issues
 h11>=0.16.0
 transformers>=4.53.0
 requests>=2.32.4
 urllib3>=2.5.0
 setuptools>=78.1.1
+aiohttp>=3.12.14
 
 # ML/AI dependencies - allow compatible versions
 torch>=2.7.1
-tokenizers>=0.19.1
-huggingface-hub>=0.24.7
+tokenizers>=0.21,<0.22
+huggingface-hub>=0.35.3
 safetensors>=0.4.5
 numpy>=2.1.1
+peft>=0.17.1
 
 # Other dependencies - allow latest compatible
 pydantic>=2.9.1

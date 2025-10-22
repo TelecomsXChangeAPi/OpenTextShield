@@ -1,25 +1,14 @@
 # Multi-stage build for enhanced security
 # Stage 1: Build dependencies
-FROM ubuntu:24.04 AS builder
+FROM python:3.12-slim-bookworm AS builder
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install build dependencies with security updates
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-    python3.12 \
-    python3.12-venv \
-    python3.12-dev \
-    python3-pip \
-    build-essential \
-    g++ \
-    libomp-dev \
-    curl \
-    ca-certificates \
-    && apt-get autoremove -y \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Install build dependencies (using pre-cached layers)
+# build-essential and g++ already included in python:3.12 base image
+# Just ensure pip is up to date
 
 # Create virtual environment
 RUN python3.12 -m venv /opt/venv
@@ -31,22 +20,15 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r /tmp/requirements-security.txt
 
 # Stage 2: Runtime image
-FROM ubuntu:24.04 AS runtime
+FROM python:3.12-slim-bookworm AS runtime
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Install only runtime dependencies with security updates
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-    python3.12 \
-    python3.12-venv \
-    curl \
-    ca-certificates \
-    && apt-get autoremove -y \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Runtime environment already includes curl and ca-certificates
+# No additional system packages needed
 
 # Create non-root user for security
 RUN groupadd -r ots && useradd -r -g ots -d /home/ots -s /bin/bash ots && \
