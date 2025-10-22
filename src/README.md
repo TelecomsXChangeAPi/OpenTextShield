@@ -28,7 +28,7 @@ The `api_interface/` directory contains the modern FastAPI application:
 ```bash
 # Start the API server
 cd /path/to/OpenTextShield
-./start.sh
+./scripts/start.sh
 ```
 
 ### Model Training

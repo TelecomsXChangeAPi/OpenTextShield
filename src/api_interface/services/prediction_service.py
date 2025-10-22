@@ -4,7 +4,6 @@ Prediction service for OpenTextShield API.
 
 import time
 import torch
-import numpy as np
 from typing import Tuple, Dict, Any
 
 from ..config.settings import settings
@@ -13,13 +12,6 @@ from ..utils.exceptions import PredictionError, ModelNotFoundError
 from ..models.request_models import PredictionRequest, ModelType
 from ..models.response_models import PredictionResponse, ModelInfo, ClassificationLabel
 from .model_loader import model_manager
-
-def get_model_version() -> str:
-    """Extract model version from the configured model path."""
-    import re
-    model_path = settings.mbert_model_configs["multilingual"]["path"]
-    version_match = re.search(r'mbert_ots_model_(\d+\.\d+)\.pth', str(model_path))
-    return version_match.group(1) if version_match else "2.5"
 
 # Import enhanced preprocessor
 try:
@@ -79,8 +71,8 @@ class PredictionService:
         start_time = time.time()
         
         try:
-            # Get model and tokenizer
-            model, tokenizer = model_manager.get_mbert_model(model_name)
+            # Get model, tokenizer, and version
+            model, tokenizer, model_version = model_manager.get_mbert_model(model_name)
 
             # Enhanced preprocessing if available
             if USE_ENHANCED_PREPROCESSING:
@@ -96,8 +88,11 @@ class PredictionService:
             # Make prediction
             with torch.no_grad():
                 outputs = model(**inputs)
-                prediction = torch.argmax(outputs.logits, dim=1).item()
-                probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
+                logits = outputs.logits
+                probabilities = torch.nn.functional.softmax(logits, dim=1)
+                prediction = torch.argmax(logits, dim=1).item()
+                # Get the probability of the predicted class
+                probability = probabilities[0][prediction].item()
             
             # Map prediction to label
             label = self.label_map[prediction]
@@ -106,7 +101,7 @@ class PredictionService:
             
             model_info = ModelInfo(
                 name="OTS_mBERT",
-                version=get_model_version(),
+                version=model_version,  # Use version from model manager
                 author="TelecomsXChange (TCXC)",
                 last_training="2024-03-20"
             )

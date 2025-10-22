@@ -12,7 +12,7 @@ import re
 import shutil
 import time
 import uuid
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
 import logging
@@ -102,7 +102,7 @@ class AuditLogger:
             text_hash = self._compute_text_hash(text)
 
             entry = {
-                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
                 "entry_type": "prediction",
                 "client_ip": client_ip,
                 "text": text_preview,
@@ -158,7 +158,7 @@ class AuditLogger:
             text_hash = self._compute_text_hash(text)
 
             entry = {
-                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
                 "entry_type": "feedback",
                 "client_ip": client_ip,
                 "feedback_id": feedback_id,
@@ -200,7 +200,7 @@ class AuditLogger:
 
         try:
             entry = {
-                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
                 "entry_type": "access_denied",
                 "client_ip": client_ip,
                 "endpoint": endpoint,
@@ -234,7 +234,7 @@ class AuditLogger:
 
         try:
             entry = {
-                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
                 "entry_type": "system_event",
                 "client_ip": "system",
                 "event_type": event_type,
@@ -601,7 +601,7 @@ class AuditLogger:
             TMF688-compliant Event resource
         """
         entry_type = audit_entry.get("entry_type", "unknown")
-        timestamp_str = audit_entry.get("timestamp", datetime.utcnow().isoformat() + "Z")
+        timestamp_str = audit_entry.get("timestamp", datetime.now(timezone.utc).isoformat() + "Z")
         event_time = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
 
         # Generate unique event ID
@@ -897,7 +897,7 @@ class AuditLogger:
         """
         # Generate event ID
         event_id = str(uuid.uuid4())
-        event_time = datetime.utcnow()
+        event_time = datetime.now(timezone.utc)
         event_business_id = f"{event_create.eventType.value}-{event_time.strftime('%Y-%m-%d-%H%M%S')}-{event_id[:8]}"
 
         # Build TMForum Event

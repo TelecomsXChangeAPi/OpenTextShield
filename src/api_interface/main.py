@@ -8,7 +8,7 @@ import asyncio
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from datetime import datetime
+from datetime import datetime, timezone
 
 from .config.settings import settings
 from .utils.logging import setup_logging, logger
@@ -40,8 +40,14 @@ async def lifespan(app: FastAPI):
     logger.info("Starting OpenTextShield API...")
     logger.info(f"Version: {settings.api_version}")
     logger.info(f"Environment: {settings.api_host}:{settings.api_port}")
-    
+
     try:
+        # Create necessary directories
+        logger.info("Creating application directories...")
+        settings.feedback_dir.mkdir(parents=True, exist_ok=True)
+        settings.audit_dir.mkdir(parents=True, exist_ok=True)
+        logger.info("Directories created successfully")
+
         # Load all models
         await asyncio.get_event_loop().run_in_executor(
             None, model_manager.load_all_models
@@ -119,7 +125,7 @@ async def opentextshield_exception_handler(request, exc: OpenTextShieldException
             "error": exc.error_code,
             "message": exc.message,
             "details": exc.details,
-            "timestamp": datetime.utcnow().isoformat() + "Z"
+            "timestamp": datetime.now(timezone.utc).isoformat()
         }
     )
 
@@ -127,14 +133,14 @@ async def opentextshield_exception_handler(request, exc: OpenTextShieldException
 @app.exception_handler(Exception)
 async def general_exception_handler(request, exc: Exception):
     """Handle general exceptions."""
-    logger.error(f"Unhandled exception: {type(exc).__name__}")
+    logger.error(f"Unhandled exception: {type(exc).__name__}: {str(exc)}", exc_info=True)
     
     return JSONResponse(
         status_code=500,
         content={
             "error": "INTERNAL_SERVER_ERROR",
             "message": "An unexpected error occurred. Please try again later.",
-            "timestamp": datetime.utcnow().isoformat() + "Z"
+            "timestamp": datetime.now(timezone.utc).isoformat()
         }
     )
 
