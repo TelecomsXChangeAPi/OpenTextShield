@@ -86,9 +86,12 @@ class ModelManager:
 
                 # Check for PEFT adapters
                 if PEFT_AVAILABLE and adapter_path.exists():
-                    logger.info(f"Loading PEFT adapters from {adapter_path}")
-                    model = PeftModel.from_pretrained(model, adapter_path)
-                    logger.info(f"PEFT model loaded for {model_name}")
+                    try:
+                        logger.info(f"Loading PEFT adapters from {adapter_path}")
+                        model = PeftModel.from_pretrained(model, str(adapter_path))
+                        logger.info(f"PEFT model loaded for {model_name}")
+                    except Exception as peft_error:
+                        logger.warning(f"Failed to load PEFT adapters for {model_name}: {str(peft_error)}. Using base model only.")
                 else:
                     logger.info(f"Loading standard model for {model_name} (no adapters found)")
 
