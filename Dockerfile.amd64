@@ -1,0 +1,44 @@
+# Workaround Dockerfile for amd64 builds with proxy issues
+# Uses python:3.12 which already has most dependencies
+FROM python:3.12
+
+# Set environment variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PATH="/opt/venv/bin:$PATH" \
+    PYTHONPATH="/home/ots/OpenTextShield/src"
+
+# Create non-root user
+RUN useradd -m -d /home/ots -s /bin/bash ots
+
+# Set working directory
+WORKDIR /home/ots/OpenTextShield
+
+# Copy requirements
+COPY requirements-security.txt .
+
+# Create virtual environment and install dependencies
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade pip && \
+    /opt/venv/bin/pip install --no-cache-dir -r requirements-security.txt
+
+# Copy application code
+COPY . /home/ots/OpenTextShield
+
+# Set ownership and make scripts executable
+RUN chown -R ots:ots /home/ots/OpenTextShield && \
+    chmod +x /home/ots/OpenTextShield/scripts/start.sh && \
+    chmod +x /home/ots/OpenTextShield/scripts/start-local.sh
+
+# Switch to non-root user
+USER ots
+
+# Expose ports
+EXPOSE 8002 8080
+
+# Health check
+HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')" || exit 1
+
+# Run the application
+CMD ["bash", "/home/ots/OpenTextShield/start.sh"]
