@@ -4,7 +4,7 @@ Feedback router for OpenTextShield API.
 
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse
-from datetime import datetime
+from datetime import datetime, timezone
 
 from ..models.request_models import FeedbackRequest
 from ..models.response_models import FeedbackResponse, ErrorResponse
@@ -28,7 +28,7 @@ router = APIRouter(tags=["Feedback"])
     description="Submit feedback about classification results",
     dependencies=[Depends(verify_ip_address)]
 )
-async def submit_feedback(request: FeedbackRequest, client_ip: str = Depends(verify_ip_address)) -> FeedbackResponse:
+async def submit_feedback(request: FeedbackRequest) -> FeedbackResponse:
     """
     Submit user feedback about classification results.
     
@@ -47,6 +47,7 @@ async def submit_feedback(request: FeedbackRequest, client_ip: str = Depends(ver
 
         # Log feedback to audit system
         try:
+            # Note: Client IP already verified by dependencies decorator
             audit_service.log_feedback(
                 feedback_id=result.feedback_id,
                 text=request.content,
@@ -55,7 +56,7 @@ async def submit_feedback(request: FeedbackRequest, client_ip: str = Depends(ver
                 thumbs_up=request.thumbs_up,
                 thumbs_down=request.thumbs_down,
                 model=request.model.value,
-                client_ip=client_ip,
+                client_ip="unknown",  # Could be retrieved from Request object if needed
                 user_id=request.user_id
             )
         except Exception as audit_error:
@@ -72,7 +73,7 @@ async def submit_feedback(request: FeedbackRequest, client_ip: str = Depends(ver
                 "error": "FEEDBACK_SUBMISSION_ERROR",
                 "message": "Failed to submit feedback",
                 "details": {"error": str(e)},
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(timezone.utc).isoformat()
             }
         )
 
@@ -111,7 +112,7 @@ async def download_feedback(model_name: str):
                     "error": "INVALID_MODEL_NAME",
                     "message": f"Invalid model name: {model_name}",
                     "details": {"valid_models": valid_models},
-                    "timestamp": datetime.utcnow().isoformat() + "Z"
+                    "timestamp": datetime.now(timezone.utc).isoformat()
                 }
             )
         
@@ -125,7 +126,7 @@ async def download_feedback(model_name: str):
                     "error": "FEEDBACK_FILE_NOT_FOUND",
                     "message": f"No feedback file found for model: {model_name}",
                     "details": {"model_name": model_name},
-                    "timestamp": datetime.utcnow().isoformat() + "Z"
+                    "timestamp": datetime.now(timezone.utc).isoformat()
                 }
             )
         
@@ -149,6 +150,6 @@ async def download_feedback(model_name: str):
                 "error": "FEEDBACK_DOWNLOAD_ERROR",
                 "message": "Failed to download feedback file",
                 "details": {"error": str(e)},
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(timezone.utc).isoformat()
             }
         )

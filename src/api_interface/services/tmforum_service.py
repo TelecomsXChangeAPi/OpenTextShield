@@ -7,7 +7,7 @@ providing a standardized interface for AI model inference jobs.
 
 import asyncio
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Optional, Any
 from collections import defaultdict
 
@@ -95,7 +95,7 @@ class TMForumInferenceJobManager:
 
             # Update job state to in progress
             job.state = TMForumInferenceJobState.IN_PROGRESS
-            job.startDate = datetime.utcnow()
+            job.startDate = datetime.now(timezone.utc)
             logger.info(f"Started processing TMForum job: {job_id}")
 
             # Extract text from input
@@ -135,7 +135,7 @@ class TMForumInferenceJobManager:
             # Update job with results
             job.state = TMForumInferenceJobState.COMPLETED
             job.output = output
-            job.completionDate = datetime.utcnow()
+            job.completionDate = datetime.now(timezone.utc)
             job.processingTimeMs = int(response.processing_time * 1000)
 
             logger.info(f"Completed TMForum job: {job_id}, result: {output_data['label']}")
@@ -146,7 +146,7 @@ class TMForumInferenceJobManager:
             if job:
                 job.state = TMForumInferenceJobState.FAILED
                 job.errorMessage = str(e)
-                job.completionDate = datetime.utcnow()
+                job.completionDate = datetime.now(timezone.utc)
                 logger.error(f"Failed TMForum job: {job_id}, error: {str(e)}")
 
         finally:
@@ -197,7 +197,7 @@ class TMForumService:
             priority=request.priority,
             input=request.input,
             model=updated_model,
-            creationDate=datetime.utcnow(),
+            creationDate=datetime.now(timezone.utc),
             name=request.name,
             description=request.description,
             category=request.category,

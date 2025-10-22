@@ -26,6 +26,7 @@ class ModelManager:
     def __init__(self):
         self.mbert_models: Dict[str, torch.nn.Module] = {}
         self.mbert_tokenizers: Dict[str, Any] = {}
+        self.mbert_versions: Dict[str, str] = {}  # Store model versions
         self.device = self._detect_device()
         
     def _detect_device(self) -> torch.device:
@@ -56,13 +57,13 @@ class ModelManager:
                     version_part = model_filename.replace("mbert_ots_model_", "").replace(".pth", "")
                     if version_part.replace(".", "").isdigit():
                         detected_version = version_part
-                        # Update global settings dynamically
-                        settings.api_version = f"{detected_version}.0"
-                        logger.info(f"Detected model version {detected_version}, updating API version to {settings.api_version}")
+                        logger.info(f"Detected model version {detected_version} for {model_name}")
                     else:
                         detected_version = config.get('version', '2.5')
+                        logger.warning(f"Could not parse version from filename, using configured version: {detected_version}")
                 else:
                     detected_version = config.get('version', '2.5')
+                    logger.info(f"Using configured version {detected_version} for {model_name}")
 
                 adapter_path = settings.models_base_path / f"adapters_{detected_version}"
 
@@ -99,8 +100,9 @@ class ModelManager:
 
                 self.mbert_models[model_name] = model
                 self.mbert_tokenizers[model_name] = tokenizer
+                self.mbert_versions[model_name] = detected_version
 
-                logger.info(f"Successfully loaded mBERT model: {model_name}")
+                logger.info(f"Successfully loaded mBERT model: {model_name} (version {detected_version})")
 
             except Exception as e:
                 logger.error(f"Failed to load mBERT model {model_name}: {str(e)}")
@@ -112,16 +114,16 @@ class ModelManager:
         
         logger.info("Model loading completed")
     
-    def get_mbert_model(self, model_name: str) -> Tuple[torch.nn.Module, Any]:
+    def get_mbert_model(self, model_name: str) -> Tuple[torch.nn.Module, Any, str]:
         """
-        Get mBERT model and tokenizer.
-        
+        Get mBERT model, tokenizer, and version.
+
         Args:
             model_name: Name of the mBERT model
-            
+
         Returns:
-            Tuple of (model, tokenizer)
-            
+            Tuple of (model, tokenizer, version)
+
         Raises:
             ModelNotFoundError: If model is not loaded
         """
@@ -131,8 +133,9 @@ class ModelManager:
                 f"mBERT model '{model_name}' not available. "
                 f"Available models: {available_models}"
             )
-        
-        return self.mbert_models[model_name], self.mbert_tokenizers[model_name]
+
+        version = self.mbert_versions.get(model_name, "2.5")
+        return self.mbert_models[model_name], self.mbert_tokenizers[model_name], version
     
     def is_model_available(self, model_type: str, model_name: Optional[str] = None) -> bool:
         """

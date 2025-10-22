@@ -79,8 +79,8 @@ class PredictionService:
         start_time = time.time()
         
         try:
-            # Get model and tokenizer
-            model, tokenizer = model_manager.get_mbert_model(model_name)
+            # Get model, tokenizer, and version
+            model, tokenizer, model_version = model_manager.get_mbert_model(model_name)
 
             # Enhanced preprocessing if available
             if USE_ENHANCED_PREPROCESSING:
@@ -96,8 +96,11 @@ class PredictionService:
             # Make prediction
             with torch.no_grad():
                 outputs = model(**inputs)
-                prediction = torch.argmax(outputs.logits, dim=1).item()
-                probability = torch.nn.functional.softmax(outputs.logits, dim=1).max().item()
+                logits = outputs.logits
+                probabilities = torch.nn.functional.softmax(logits, dim=1)
+                prediction = torch.argmax(logits, dim=1).item()
+                # Get the probability of the predicted class
+                probability = probabilities[0][prediction].item()
             
             # Map prediction to label
             label = self.label_map[prediction]
@@ -106,7 +109,7 @@ class PredictionService:
             
             model_info = ModelInfo(
                 name="OTS_mBERT",
-                version=get_model_version(),
+                version=model_version,  # Use version from model manager
                 author="TelecomsXChange (TCXC)",
                 last_training="2024-03-20"
             )

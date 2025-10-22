@@ -4,7 +4,7 @@ Feedback service for OpenTextShield API.
 
 import csv
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -16,10 +16,10 @@ from ..models.response_models import FeedbackResponse
 
 class FeedbackService:
     """Service for handling user feedback."""
-    
+
     def __init__(self):
-        # Ensure feedback directory exists
-        settings.feedback_dir.mkdir(exist_ok=True)
+        # Directory creation now handled in main.py lifespan handler
+        pass
     
     def _get_feedback_file(self, model_name: str) -> Path:
         """Get feedback file path for a specific model."""
@@ -64,7 +64,7 @@ class FeedbackService:
             Feedback response
         """
         feedback_id = str(uuid.uuid4())
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
         
         # Prepare feedback data
         feedback_data = [

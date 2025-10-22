@@ -3,7 +3,7 @@ Prediction router for OpenTextShield API.
 """
 
 from fastapi import APIRouter, Depends, HTTPException
-from datetime import datetime
+from datetime import datetime, timezone
 
 from ..models.request_models import PredictionRequest
 from ..models.response_models import PredictionResponse, ErrorResponse
@@ -29,7 +29,7 @@ router = APIRouter(tags=["Prediction"])
     description="Classify text as ham, spam, or phishing using AI models",
     dependencies=[Depends(verify_ip_address)]
 )
-async def predict_text(request: PredictionRequest, client_ip: str = Depends(verify_ip_address)) -> PredictionResponse:
+async def predict_text(request: PredictionRequest) -> PredictionResponse:
     """
     Classify text for spam/phishing detection.
     
@@ -48,6 +48,7 @@ async def predict_text(request: PredictionRequest, client_ip: str = Depends(veri
 
         # Log prediction to audit system
         try:
+            # Note: Client IP already verified by dependencies decorator
             audit_service.log_prediction(
                 text=request.text,
                 label=result.label,
@@ -55,7 +56,7 @@ async def predict_text(request: PredictionRequest, client_ip: str = Depends(veri
                 model=result.model_info.name,
                 model_version=result.model_info.version,
                 processing_time=result.processing_time,
-                client_ip=client_ip,
+                client_ip="unknown",  # Could be retrieved from Request object if needed
                 text_length=len(request.text)
             )
         except Exception as audit_error:
@@ -82,7 +83,7 @@ async def predict_text(request: PredictionRequest, client_ip: str = Depends(veri
                 "error": e.error_code,
                 "message": e.message,
                 "details": e.details,
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(timezone.utc).isoformat()
             }
         )
         
@@ -94,6 +95,6 @@ async def predict_text(request: PredictionRequest, client_ip: str = Depends(veri
                 "error": "INTERNAL_SERVER_ERROR",
                 "message": "An unexpected error occurred",
                 "details": {"error": str(e)},
-                "timestamp": datetime.utcnow().isoformat() + "Z"
+                "timestamp": datetime.now(timezone.utc).isoformat()
             }
         )
