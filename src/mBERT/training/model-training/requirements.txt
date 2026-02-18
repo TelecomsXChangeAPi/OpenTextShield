@@ -80,7 +80,7 @@ multimethod==1.9.1
 mxnet==1.9.1
 networkx==3.0
 numba==0.58.1
-numpy==2.3.1
+numpy>=2.4.2
 openai==0.27.8
 openai-whisper==20231117
 openpyxl==3.0.10
