@@ -2,6 +2,7 @@
 Prediction router for OpenTextShield API.
 """
 
+import asyncio
 from fastapi import APIRouter, Depends, HTTPException
 from datetime import datetime, timezone
 
@@ -32,13 +33,13 @@ router = APIRouter(tags=["Prediction"])
 async def predict_text(request: PredictionRequest) -> PredictionResponse:
     """
     Classify text for spam/phishing detection.
-    
+
     Args:
         request: Prediction request containing text and model preferences
-        
+
     Returns:
         Classification result with confidence score and processing time
-        
+
     Raises:
         HTTPException: For various error conditions
     """
@@ -46,18 +47,21 @@ async def predict_text(request: PredictionRequest) -> PredictionResponse:
         logger.info(f"Received prediction request: model={request.model}")
         result = await prediction_service.predict(request)
 
-        # Log prediction to audit system
+        # Log prediction to audit system (fire-and-forget, don't block response)
         try:
-            # Note: Client IP already verified by dependencies decorator
-            audit_service.log_prediction(
-                text=request.text,
-                label=result.label,
-                confidence=result.probability,
-                model=result.model_info.name,
-                model_version=result.model_info.version,
-                processing_time=result.processing_time,
-                client_ip="unknown",  # Could be retrieved from Request object if needed
-                text_length=len(request.text)
+            loop = asyncio.get_running_loop()
+            loop.run_in_executor(
+                None,
+                lambda: audit_service.log_prediction(
+                    text=request.text,
+                    label=result.label,
+                    confidence=result.probability,
+                    model=result.model_info.name,
+                    model_version=result.model_info.version,
+                    processing_time=result.processing_time,
+                    client_ip="unknown",
+                    text_length=len(request.text),
+                ),
             )
         except Exception as audit_error:
             # Don't fail the request if audit logging fails
