@@ -1,0 +1,44 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 2775,
+    "system_id": "OTS_SMSC",
+    "clients": {
+      "client1": { "password": "secret123" },
+      "client2": { "password": "secret456" }
+    },
+    "session_timeout": 120,
+    "enquire_link_interval": 30
+  },
+
+  "upstream": {
+    "host": "127.0.0.1",
+    "port": 2776,
+    "system_id": "ots_esme",
+    "password": "upstream_pass",
+    "connections": 2,
+    "interface_version": "5.0",
+    "connect_timeout": 5,
+    "submit_sm_timeout": 30,
+    "enquire_link_interval": 30,
+    "session_timeout": 120,
+    "reconnect_delay": 5
+  },
+
+  "classification": {
+    "api_url": "http://localhost:8002/predict/",
+    "model": "ots-mbert",
+    "confidence_threshold": 0.7,
+    "timeout": 5000,
+    "rules": {
+      "ham":      { "action": "forward" },
+      "spam":     { "action": "reject", "error_status": 69 },
+      "phishing": { "action": "reject", "error_status": 69 }
+    }
+  },
+
+  "logging": {
+    "file": "./logs/ots_smpp.log",
+    "level": "info"
+  }
+}

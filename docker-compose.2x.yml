@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # 2 API Server instances
+  api-1:
+    build: .
+    ports:
+      - "9001:8002"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src:/app/src
+
+  api-2:
+    build: .
+    ports:
+      - "9002:8002"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src:/app/src
+
+  # Nginx Load Balancer
+  load-balancer:
+    image: nginx:latest
+    ports:
+      - "8002:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - api-1
+      - api-2

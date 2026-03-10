@@ -49,6 +49,29 @@ curl -X POST "http://localhost:8002/predict/" \
   -d '{"text":"Your SMS content here","model":"ots-mbert"}'
 ```
 
+### Running the SMPP Interface
+```bash
+# Requires OTS API running on port 8002 first
+cd src/smpp_interface
+npm install
+node ots_smpp_proxy.js config.json
+
+# Or use the start script
+./start.sh
+```
+
+**SMPP Interface Services:**
+- **SMPP Server**: port 2775 (accepts client binds)
+- **Upstream**: connects to configured upstream SMSC (connection pool)
+- **Classification**: calls OTS API at http://localhost:8002/predict/
+
+**Testing the SMPP Interface:**
+```bash
+cd src/smpp_interface
+node test_smpp.js       # Basic tests (47 tests)
+node test_advanced.js   # Advanced tests: UDH, emoji, async, DLR, benchmarks (32 tests)
+```
+
 ### Running Model Tests
 ```bash
 # Test mBERT model
@@ -137,6 +160,14 @@ OpenTextShield implements a REST API powered by mBERT for global SMS spam/phishi
 - `utils/`: Logging and custom exceptions
 - Comprehensive error handling with proper HTTP status codes
 - Structured logging for monitoring and debugging
+
+**SMPP Interface** (`src/smpp_interface/`) - SMPP-to-SMPP classification proxy:
+- `ots_smpp_proxy.js`: Main proxy — accepts client SMPP binds, classifies via OTS API, forwards to upstream SMSC
+- `config.json`: All SMPP settings, upstream connection pool, classification rules
+- `node-smpp/`: Forked SMPP protocol library (PDU encoding/decoding, session management)
+- Supports configurable upstream connection pooling, UDH/multipart SMS, DLR relay, auto-reconnect
+- Classification via HTTP to OTS API with round-robin load balancing across multiple API instances (`api_urls[]`)
+- See `src/smpp_interface/README.md` for full documentation
 
 **Model Training** (`src/mBERT/training/`)
 - Dedicated mBERT training scripts and datasets

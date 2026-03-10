@@ -1,0 +1,16 @@
+{
+  "name": "ots-smpp-interface",
+  "version": "1.0.0",
+  "description": "OpenTextShield SMPP Interface - SMS classification proxy",
+  "main": "ots_smpp_proxy.js",
+  "dependencies": {
+    "smpp": "file:./node-smpp",
+    "nanoid": "^3.1.31",
+    "await-sleep": "0.0.1"
+  },
+  "scripts": {
+    "start": "node ots_smpp_proxy.js"
+  },
+  "author": "TelecomsXChange (TCXC)",
+  "license": "ISC"
+}
