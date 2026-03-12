@@ -1,62 +1,1560 @@
-openapi: 3.0.0
+openapi: 3.0.3
 info:
-  title: OTS API
-  description: API for text-classification prediction.
-  version: 2
+  title: OpenTextShield API
+  description: |
+    Professional SMS spam and phishing detection API powered by mBERT (Multilingual BERT).
+
+    OpenTextShield provides AI-powered text classification for detecting spam and phishing
+    messages across 104+ languages. The API includes:
+
+    - **Core Prediction API** — Classify text as ham, spam, or phishing
+    - **Feedback API** — Submit and retrieve user feedback on classifications
+    - **Audit API** — Query audit logs and system statistics
+    - **TMForum TMF922** — AI Inference Job Management (enterprise)
+    - **TMForum TMF688** — Event Management for audit trails (enterprise)
+
+    **Author:** TelecomsXChange (TCXC)
+  version: "2.6.0"
+  contact:
+    name: TelecomsXChange (TCXC)
+  license:
+    name: MIT
+
 servers:
+  - url: http://localhost:8002
+    description: Local development server
   - url: https://europe.ots-api.telecomsxchange.com
-    description: Open Text Shield Amsterdam Inference Server
+    description: OpenTextShield Amsterdam Inference Server
+
+tags:
+  - name: Health
+    description: Health check and status endpoints
+  - name: Prediction
+    description: Text classification for spam/phishing detection
+  - name: Feedback
+    description: User feedback on classification results
+  - name: Audit
+    description: Audit log querying and statistics
+  - name: "TMForum AI Inference Job Management (TMF922)"
+    description: TMForum-compliant AI inference job management
+  - name: "TMForum Event Management (TMF688)"
+    description: TMForum-compliant event/audit trail management
+
 paths:
+  # ─── Health ────────────────────────────────────────────────────────────────────
+  /health:
+    get:
+      operationId: healthCheck
+      tags: [Health]
+      summary: Health Check
+      description: Check the health status of the API and loaded models
+      responses:
+        "200":
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+
+  # ─── Prediction ────────────────────────────────────────────────────────────────
   /predict/:
     post:
       operationId: predictText
-      summary: Predict text using a specified model.
+      tags: [Prediction]
+      summary: Predict Text Classification
+      description: Classify text as ham, spam, or phishing using the mBERT AI model
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              type: object
-              required:
-                - text
-                - model
-                - bert_version
-              properties:
-                text:
-                  type: string
-                  example: Hello World
-                model:
-                  type: string
-                  example: bert
-                  enum:
-                    - bert
-                bert_version:
-                  type: string
-                  example: bert-base-multilingual-cased
+              $ref: "#/components/schemas/PredictionRequest"
       responses:
         "200":
-          description: Prediction result
+          description: Classification result
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  label:
-                    type: string
-                  probability:
-                    type: number
-                    format: float
-                  processing_time:
-                    type: number
-                    format: float
-                  Model_Name:
-                    type: string
-                  Model_Version:
-                    type: string
-                  Model_Author:
-                    type: string
-                  Last_Training:
-                    type: string
-                    format: date
+                $ref: "#/components/schemas/PredictionResponse"
         "400":
-          description: Bad request
+          description: Bad Request (validation error)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          description: Forbidden (IP not in allowlist)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          description: Model Not Found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # ─── Feedback ──────────────────────────────────────────────────────────────────
+  /feedback/:
+    post:
+      operationId: submitFeedback
+      tags: [Feedback]
+      summary: Submit Feedback
+      description: Submit feedback about classification results
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FeedbackRequest"
+      responses:
+        "200":
+          description: Feedback submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FeedbackResponse"
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /feedback/download/{model_name}:
+    get:
+      operationId: downloadFeedback
+      tags: [Feedback]
+      summary: Download Feedback File
+      description: Download feedback CSV file for a specific model
+      parameters:
+        - name: model_name
+          in: path
+          required: true
+          description: "Name of the model (valid values: ots-mbert, mbert_multilingual)"
+          schema:
+            type: string
+            enum: [ots-mbert, mbert_multilingual]
+      responses:
+        "200":
+          description: Feedback CSV file
+          content:
+            text/csv:
+              schema:
+                type: string
+                format: binary
+        "400":
+          description: Invalid model name
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "404":
+          description: Feedback file not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  # ─── Audit ─────────────────────────────────────────────────────────────────────
+  /audit/logs:
+    get:
+      operationId: getAuditLogs
+      tags: [Audit]
+      summary: Query Audit Logs
+      description: Retrieve audit log entries with optional filtering. Returns entries in reverse chronological order.
+      parameters:
+        - name: limit
+          in: query
+          description: Maximum number of entries to return
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 10000
+            default: 100
+        - name: entry_type
+          in: query
+          description: Filter by entry type
+          schema:
+            type: string
+            enum: [prediction, feedback, access_denied, system_event]
+        - name: start_date
+          in: query
+          description: Start date filter (ISO 8601 format)
+          schema:
+            type: string
+            format: date-time
+        - name: end_date
+          in: query
+          description: End date filter (ISO 8601 format)
+          schema:
+            type: string
+            format: date-time
+        - name: client_ip
+          in: query
+          description: Filter by client IP address
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of audit log entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        "403":
+          description: Forbidden
+        "500":
+          description: Internal Server Error
+        "503":
+          description: Audit logging not enabled
+
+  /audit/stats:
+    get:
+      operationId: getAuditStats
+      tags: [Audit]
+      summary: Audit Statistics
+      description: Get summary statistics from audit logs
+      responses:
+        "200":
+          description: Audit statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuditStatistics"
+        "403":
+          description: Forbidden
+        "500":
+          description: Internal Server Error
+        "503":
+          description: Audit logging not enabled
+
+  /audit/info:
+    get:
+      operationId: getAuditInfo
+      tags: [Audit]
+      summary: Audit System Info
+      description: Get information about the audit logging system configuration
+      responses:
+        "200":
+          description: Audit system configuration
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuditInfo"
+        "403":
+          description: Forbidden
+        "503":
+          description: Audit logging not enabled
+
+  # ─── TMForum TMF922 — AI Inference Job Management ─────────────────────────────
+  /tmf-api/aiInferenceJob:
+    post:
+      operationId: createInferenceJob
+      tags: ["TMForum AI Inference Job Management (TMF922)"]
+      summary: Create AI Inference Job
+      description: |
+        Create a new AI inference job for text classification.
+        Follows TMForum TMF922 standard for AI Inference Job Management.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TMForumInferenceJobCreate"
+      responses:
+        "201":
+          description: Inference job created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumInferenceJob"
+        "400":
+          description: Bad Request (invalid input type or missing text data)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "422":
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+
+    get:
+      operationId: listInferenceJobs
+      tags: ["TMForum AI Inference Job Management (TMF922)"]
+      summary: List AI Inference Jobs
+      description: List AI inference jobs with optional filtering by state and priority.
+      parameters:
+        - name: state
+          in: query
+          description: Filter by job state
+          schema:
+            type: string
+            enum: [acknowledged, inProgress, completed, failed, cancelled]
+        - name: priority
+          in: query
+          description: Filter by job priority
+          schema:
+            type: string
+            enum: [low, normal, high, urgent]
+        - name: limit
+          in: query
+          description: Maximum number of jobs to return
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1000
+            default: 50
+        - name: offset
+          in: query
+          description: Number of jobs to skip
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+      responses:
+        "200":
+          description: List of inference jobs
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumInferenceJobList"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+
+  /tmf-api/aiInferenceJob/{job_id}:
+    get:
+      operationId: getInferenceJob
+      tags: ["TMForum AI Inference Job Management (TMF922)"]
+      summary: Retrieve AI Inference Job
+      description: Retrieve an AI inference job by ID. If completed, the output field contains classification results.
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          description: Unique identifier of the inference job
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Inference job details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumInferenceJob"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "404":
+          description: Job not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+
+    patch:
+      operationId: updateInferenceJob
+      tags: ["TMForum AI Inference Job Management (TMF922)"]
+      summary: Update AI Inference Job
+      description: Update an AI inference job (priority, state, name, description).
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          description: Unique identifier of the inference job
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TMForumInferenceJobUpdate"
+      responses:
+        "200":
+          description: Inference job updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumInferenceJob"
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "404":
+          description: Job not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "422":
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+
+    delete:
+      operationId: deleteInferenceJob
+      tags: ["TMForum AI Inference Job Management (TMF922)"]
+      summary: Delete AI Inference Job
+      description: Delete an AI inference job. Only completed, failed, or cancelled jobs can be deleted.
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          description: Unique identifier of the inference job
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Inference job deleted successfully
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "404":
+          description: Job not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "409":
+          description: Conflict — job is still in progress
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumError"
+
+  # ─── TMForum TMF688 — Event Management ────────────────────────────────────────
+  /tmf-api/event:
+    post:
+      operationId: createEvent
+      tags: ["TMForum Event Management (TMF688)"]
+      summary: Create Event
+      description: |
+        Create a new audit event manually. Follows TMForum TMF688 Event Management standard.
+        Events are normally created automatically by the system, but this endpoint allows manual creation.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TMForumEventCreate"
+      responses:
+        "201":
+          description: Event created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEvent"
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "422":
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "503":
+          description: Audit system not available
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+
+    get:
+      operationId: listEvents
+      tags: ["TMForum Event Management (TMF688)"]
+      summary: List Events
+      description: |
+        Query and retrieve audit events with optional filtering.
+        Follows TMForum TMF688 standard. Returns events in reverse chronological order.
+      parameters:
+        - name: eventType
+          in: query
+          description: Filter by event type
+          schema:
+            type: string
+            enum: [PredictionEvent, FeedbackEvent, SecurityEvent, SystemEvent]
+        - name: eventTime.gte
+          in: query
+          description: Events after this time (ISO 8601)
+          schema:
+            type: string
+            format: date-time
+        - name: eventTime.lte
+          in: query
+          description: Events before this time (ISO 8601)
+          schema:
+            type: string
+            format: date-time
+        - name: source.id
+          in: query
+          description: Filter by source (client IP)
+          schema:
+            type: string
+        - name: reportingSystem.id
+          in: query
+          description: Filter by reporting system (model name)
+          schema:
+            type: string
+        - name: priority
+          in: query
+          description: Filter by priority
+          schema:
+            type: string
+            enum: [low, medium, high, critical]
+        - name: limit
+          in: query
+          description: Maximum number of results
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 1000
+            default: 100
+        - name: offset
+          in: query
+          description: Number of results to skip
+          schema:
+            type: integer
+            minimum: 0
+            default: 0
+        - name: fields
+          in: query
+          description: Comma-separated list of fields to include (sparse fieldsets)
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Paginated list of events
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventList"
+        "400":
+          description: Bad Request (invalid time format or event type)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "503":
+          description: Audit system not available
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+
+  /tmf-api/event/statistics:
+    get:
+      operationId: getEventStatistics
+      tags: ["TMForum Event Management (TMF688)"]
+      summary: Get Event Statistics
+      description: Retrieve statistics and analytics from audit events.
+      responses:
+        "200":
+          description: Event statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventStatistics"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "503":
+          description: Audit system not available
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+
+  /tmf-api/event/{event_id}:
+    get:
+      operationId: getEvent
+      tags: ["TMForum Event Management (TMF688)"]
+      summary: Get Event
+      description: Retrieve a specific audit event by ID. Follows TMForum TMF688 standard.
+      parameters:
+        - name: event_id
+          in: path
+          required: true
+          description: Event UUID
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: Event details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEvent"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "404":
+          description: Event not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+        "503":
+          description: Audit system not available
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TMForumEventError"
+
+# ═════════════════════════════════════════════════════════════════════════════════
+# Components
+# ═════════════════════════════════════════════════════════════════════════════════
+components:
+  schemas:
+    # ─── Enums ─────────────────────────────────────────────────────────────────
+    ModelType:
+      type: string
+      enum: [ots-mbert]
+      description: Supported model types
+      example: ots-mbert
+
+    ClassificationLabel:
+      type: string
+      enum: [ham, spam, phishing]
+      description: |
+        Classification labels:
+        - `ham` — Legitimate message
+        - `spam` — Spam message
+        - `phishing` — Phishing attempt
+
+    # ─── Core Request/Response Models ──────────────────────────────────────────
+    PredictionRequest:
+      type: object
+      required: [text]
+      properties:
+        text:
+          type: string
+          minLength: 1
+          maxLength: 512
+          description: Text to classify for spam/phishing detection
+          example: "Congratulations! You've won $1000. Click here to claim your prize!"
+        model:
+          $ref: "#/components/schemas/ModelType"
+          default: ots-mbert
+
+    PredictionResponse:
+      type: object
+      required: [label, probability, processing_time, model_info]
+      properties:
+        label:
+          $ref: "#/components/schemas/ClassificationLabel"
+        probability:
+          type: number
+          format: float
+          minimum: 0.0
+          maximum: 1.0
+          description: Confidence score for the prediction
+          example: 0.95
+        processing_time:
+          type: number
+          format: float
+          minimum: 0.0
+          description: Processing time in seconds
+          example: 0.15
+        model_info:
+          $ref: "#/components/schemas/ModelInfo"
+      example:
+        label: spam
+        probability: 0.95
+        processing_time: 0.15
+        model_info:
+          name: OTS_mBERT
+          version: bert-base-multilingual-cased
+          author: TelecomsXChange (TCXC)
+          last_training: "2024-03-20"
+
+    ModelInfo:
+      type: object
+      required: [name, version, last_training]
+      properties:
+        name:
+          type: string
+          description: Model name
+          example: OTS_mBERT
+        version:
+          type: string
+          description: Model version
+          example: bert-base-multilingual-cased
+        author:
+          type: string
+          description: Model author
+          default: TelecomsXChange (TCXC)
+          example: TelecomsXChange (TCXC)
+        last_training:
+          type: string
+          description: Last training date
+          example: "2024-03-20"
+
+    FeedbackRequest:
+      type: object
+      required: [content, feedback, model]
+      properties:
+        content:
+          type: string
+          minLength: 1
+          maxLength: 512
+          description: Original text that was classified
+          example: "Free money! Click here!"
+        feedback:
+          type: string
+          minLength: 1
+          maxLength: 1000
+          description: User feedback about the classification
+          example: "This was correctly identified as spam"
+        thumbs_up:
+          type: boolean
+          default: false
+          description: Whether user agrees with the classification
+        thumbs_down:
+          type: boolean
+          default: false
+          description: Whether user disagrees with the classification
+        user_id:
+          type: string
+          maxLength: 100
+          nullable: true
+          description: Optional user identifier
+          example: user123
+        model:
+          $ref: "#/components/schemas/ModelType"
+
+    FeedbackResponse:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+          description: Confirmation message
+          example: Feedback received successfully
+        feedback_id:
+          type: string
+          nullable: true
+          description: Feedback identifier
+          example: feedback_123
+
+    HealthResponse:
+      type: object
+      required: [status, version, models_loaded, timestamp]
+      properties:
+        status:
+          type: string
+          description: Service status
+          example: healthy
+        version:
+          type: string
+          description: API version
+          example: "2.6.0"
+        models_loaded:
+          type: object
+          additionalProperties:
+            type: boolean
+          description: Model loading status
+          example:
+            mbert_multilingual: true
+        timestamp:
+          type: string
+          format: date-time
+          description: Response timestamp
+          example: "2024-01-15T10:30:00Z"
+
+    ErrorResponse:
+      type: object
+      required: [error, message, timestamp]
+      properties:
+        error:
+          type: string
+          description: Error type code
+          example: VALIDATION_ERROR
+        message:
+          type: string
+          description: Human-readable error message
+          example: Invalid input provided
+        details:
+          type: object
+          nullable: true
+          description: Additional error details
+        timestamp:
+          type: string
+          format: date-time
+          description: Error timestamp
+
+    # ─── Audit Models ──────────────────────────────────────────────────────────
+    AuditStatistics:
+      type: object
+      properties:
+        total_predictions:
+          type: integer
+          description: Total number of classification predictions
+        total_feedback:
+          type: integer
+          description: Total number of feedback submissions
+        total_access_denied:
+          type: integer
+          description: Total number of access denied events
+        predictions_by_label:
+          type: object
+          additionalProperties:
+            type: integer
+          description: Count of predictions per classification label
+        predictions_by_model:
+          type: object
+          additionalProperties:
+            type: integer
+          description: Count of predictions per model
+        avg_confidence:
+          type: number
+          format: float
+          description: Average confidence score across all predictions
+        unique_client_count:
+          type: integer
+          description: Number of unique client IPs
+
+    AuditInfo:
+      type: object
+      properties:
+        audit_enabled:
+          type: boolean
+        audit_directory:
+          type: string
+        text_storage_mode:
+          type: string
+          enum: [full, truncated, hash_only, redacted]
+        truncate_length:
+          type: integer
+        redact_patterns:
+          type: array
+          items:
+            type: string
+        rotation:
+          type: object
+          properties:
+            enabled:
+              type: boolean
+            strategy:
+              type: string
+              enum: [size_only, date_only, size_or_date]
+            rotate_on_date_change:
+              type: boolean
+            max_file_size_mb:
+              type: integer
+        retention:
+          type: object
+          properties:
+            enabled:
+              type: boolean
+            retention_days:
+              type: integer
+            check_interval_hours:
+              type: integer
+            archive_enabled:
+              type: boolean
+            archive_directory:
+              type: string
+              nullable: true
+
+    # ─── TMForum TMF922 Models ─────────────────────────────────────────────────
+    TMForumInferenceJobState:
+      type: string
+      enum: [acknowledged, inProgress, completed, failed, cancelled]
+      description: AI Inference Job states
+
+    TMForumInferenceJobPriority:
+      type: string
+      enum: [low, normal, high, urgent]
+      description: AI Inference Job priorities
+
+    TMForumInferenceInput:
+      type: object
+      required: [inputType, inputFormat, inputData]
+      properties:
+        inputType:
+          type: string
+          description: "Type of input data (e.g., 'text')"
+          example: text
+        inputFormat:
+          type: string
+          description: "Format of input data (e.g., 'plain')"
+          example: plain
+        inputData:
+          type: object
+          additionalProperties: true
+          description: Input data payload (must contain 'text' field for text classification)
+          example:
+            text: "Free money! Click here now!"
+        inputMetadata:
+          type: object
+          additionalProperties: true
+          nullable: true
+          description: Additional input metadata
+
+    TMForumInferenceOutput:
+      type: object
+      required: [outputType, outputFormat, outputData]
+      properties:
+        outputType:
+          type: string
+          description: Type of output data
+          example: classification
+        outputFormat:
+          type: string
+          description: Format of output data
+          example: json
+        outputData:
+          type: object
+          additionalProperties: true
+          description: Output data payload
+          example:
+            label: spam
+            probability: 0.95
+        outputMetadata:
+          type: object
+          additionalProperties: true
+          nullable: true
+          description: Additional output metadata
+        confidence:
+          type: number
+          format: float
+          minimum: 0.0
+          maximum: 1.0
+          nullable: true
+          description: Confidence score
+          example: 0.95
+
+    TMForumInferenceModel:
+      type: object
+      required: [id, name, version, type]
+      properties:
+        id:
+          type: string
+          description: Model identifier
+          example: ots-mbert
+        name:
+          type: string
+          description: Model name
+          example: OpenTextShield mBERT
+        version:
+          type: string
+          description: Model version
+          example: "2.5"
+        type:
+          type: string
+          description: "Model type (e.g., 'bert', 'transformer')"
+          example: bert
+        description:
+          type: string
+          nullable: true
+          description: Model description
+        capabilities:
+          type: array
+          items:
+            type: string
+          description: Model capabilities
+          example: [text-classification, multilingual]
+
+    TMForumInferenceJob:
+      type: object
+      required: [state, input, model]
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the job
+          example: inference-job-123
+        href:
+          type: string
+          description: Hyperlink reference
+        state:
+          $ref: "#/components/schemas/TMForumInferenceJobState"
+        priority:
+          $ref: "#/components/schemas/TMForumInferenceJobPriority"
+          default: normal
+        input:
+          $ref: "#/components/schemas/TMForumInferenceInput"
+        output:
+          $ref: "#/components/schemas/TMForumInferenceOutput"
+          nullable: true
+        model:
+          $ref: "#/components/schemas/TMForumInferenceModel"
+        creationDate:
+          type: string
+          format: date-time
+          nullable: true
+          description: Job creation timestamp
+        startDate:
+          type: string
+          format: date-time
+          nullable: true
+          description: Job start timestamp
+        completionDate:
+          type: string
+          format: date-time
+          nullable: true
+          description: Job completion timestamp
+        name:
+          type: string
+          nullable: true
+          description: Human-readable job name
+        description:
+          type: string
+          nullable: true
+          description: Job description
+        category:
+          type: string
+          nullable: true
+          description: Job category
+        externalId:
+          type: string
+          nullable: true
+          description: External system identifier
+        processingTimeMs:
+          type: integer
+          nullable: true
+          description: Processing time in milliseconds
+        errorMessage:
+          type: string
+          nullable: true
+          description: Error message if job failed
+        baseType:
+          type: string
+          default: AIInferenceJob
+        type:
+          type: string
+          default: TextClassificationInferenceJob
+        schemaLocation:
+          type: string
+          nullable: true
+
+    TMForumInferenceJobCreate:
+      type: object
+      required: [input, model]
+      properties:
+        priority:
+          $ref: "#/components/schemas/TMForumInferenceJobPriority"
+          default: normal
+        input:
+          $ref: "#/components/schemas/TMForumInferenceInput"
+        model:
+          $ref: "#/components/schemas/TMForumInferenceModel"
+        name:
+          type: string
+          nullable: true
+          description: Human-readable job name
+          example: SMS Classification Request
+        description:
+          type: string
+          nullable: true
+          description: Job description
+          example: Classify SMS message for spam/phishing detection
+        category:
+          type: string
+          nullable: true
+          description: Job category
+        externalId:
+          type: string
+          nullable: true
+          description: External system identifier
+      example:
+        priority: normal
+        input:
+          inputType: text
+          inputFormat: plain
+          inputData:
+            text: "Free money! Click here now!"
+        model:
+          id: ots-mbert
+          name: OpenTextShield mBERT
+          version: "2.5"
+          type: bert
+          capabilities: [text-classification, multilingual]
+        name: SMS Classification Request
+
+    TMForumInferenceJobUpdate:
+      type: object
+      properties:
+        state:
+          $ref: "#/components/schemas/TMForumInferenceJobState"
+          nullable: true
+        priority:
+          $ref: "#/components/schemas/TMForumInferenceJobPriority"
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        description:
+          type: string
+          nullable: true
+
+    TMForumInferenceJobList:
+      type: object
+      required: [jobs]
+      properties:
+        jobs:
+          type: array
+          items:
+            $ref: "#/components/schemas/TMForumInferenceJob"
+          description: List of inference jobs
+
+    TMForumError:
+      type: object
+      required: [code, reason, message, status]
+      properties:
+        code:
+          type: string
+          description: Error code
+          example: JOB_NOT_FOUND
+        reason:
+          type: string
+          description: Error reason
+          example: Job not found
+        message:
+          type: string
+          description: Error message
+          example: "Inference job xyz not found"
+        status:
+          type: string
+          description: HTTP status code
+          example: "404"
+        referenceError:
+          type: string
+          nullable: true
+          description: Reference to error details
+        baseType:
+          type: string
+          default: Error
+        type:
+          type: string
+          default: TMForumError
+
+    # ─── TMForum TMF688 Models ─────────────────────────────────────────────────
+    TMForumEventType:
+      type: string
+      enum: [PredictionEvent, FeedbackEvent, SecurityEvent, SystemEvent]
+      description: TMF688 Event types
+
+    TMForumEventPriority:
+      type: string
+      enum: [low, medium, high, critical]
+      description: TMF688 Event priorities
+
+    TMForumEventState:
+      type: string
+      enum: [pending, acknowledged, processed]
+      description: TMF688 Event states
+
+    Characteristic:
+      type: object
+      required: [name, value]
+      properties:
+        name:
+          type: string
+          description: Name of the characteristic
+          example: confidence
+        value:
+          type: string
+          description: Value of the characteristic
+          example: "0.9997"
+        valueType:
+          type: string
+          nullable: true
+          description: Data type of the value
+          example: float
+
+    RelatedParty:
+      type: object
+      required: [id, "@referredType"]
+      properties:
+        id:
+          type: string
+          description: Unique identifier (e.g., IP address)
+          example: "127.0.0.1"
+        role:
+          type: string
+          nullable: true
+          description: Role of the related party
+          example: client
+        name:
+          type: string
+          nullable: true
+          description: Name of the related party
+        "@referredType":
+          type: string
+          description: Type of the related party
+          example: IPAddress
+
+    RelatedEntity:
+      type: object
+      required: [id, "@referredType"]
+      properties:
+        id:
+          type: string
+          description: System identifier
+          example: OTS_mBERT
+        href:
+          type: string
+          nullable: true
+        name:
+          type: string
+          nullable: true
+          description: Name of the entity
+          example: OpenTextShield mBERT v2.5
+        "@referredType":
+          type: string
+          description: Type of the entity
+          example: AIModel
+
+    RelatedObject:
+      type: object
+      required: [id, "@referredType"]
+      properties:
+        id:
+          type: string
+        involvement:
+          type: string
+          nullable: true
+        "@referredType":
+          type: string
+
+    TMForumEvent:
+      type: object
+      required: [id, href, eventId, eventType, eventTime, timeOccurred, title, source, reportingSystem, "@type"]
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Unique event identifier
+          example: evt-550e8400-e29b-41d4-a716-446655440000
+        href:
+          type: string
+          description: Hyperlink reference
+          example: /tmf-api/event/evt-550e8400-e29b-41d4-a716-446655440000
+        eventId:
+          type: string
+          description: Business event identifier
+          example: pred-2025-10-21-001
+        eventType:
+          $ref: "#/components/schemas/TMForumEventType"
+        eventTime:
+          type: string
+          format: date-time
+          description: When event occurred
+        timeOccurred:
+          type: string
+          format: date-time
+          description: Actual occurrence time
+        title:
+          type: string
+          description: Human-readable event title
+          example: Text Classification Prediction
+        description:
+          type: string
+          nullable: true
+          description: Event description
+          example: SMS message classified as spam
+        priority:
+          $ref: "#/components/schemas/TMForumEventPriority"
+          default: medium
+        state:
+          $ref: "#/components/schemas/TMForumEventState"
+          default: acknowledged
+        correlationId:
+          type: string
+          nullable: true
+          description: Correlation identifier for related events
+        source:
+          $ref: "#/components/schemas/RelatedParty"
+        reportingSystem:
+          $ref: "#/components/schemas/RelatedEntity"
+        characteristic:
+          type: array
+          items:
+            $ref: "#/components/schemas/Characteristic"
+          description: Event characteristics
+        relatedParty:
+          type: array
+          items:
+            $ref: "#/components/schemas/RelatedParty"
+          nullable: true
+        relatedObject:
+          type: array
+          items:
+            $ref: "#/components/schemas/RelatedObject"
+          nullable: true
+        "@baseType":
+          type: string
+          default: Event
+        "@type":
+          type: string
+          description: Specific type of the event
+          example: TextClassificationPredictionEvent
+        "@schemaLocation":
+          type: string
+          nullable: true
+
+    TMForumEventCreate:
+      type: object
+      required: [eventType, title, source, reportingSystem]
+      properties:
+        eventType:
+          $ref: "#/components/schemas/TMForumEventType"
+        title:
+          type: string
+          description: Human-readable event title
+          example: Manual Audit Entry
+        description:
+          type: string
+          nullable: true
+          description: Event description
+        priority:
+          $ref: "#/components/schemas/TMForumEventPriority"
+          default: medium
+        source:
+          $ref: "#/components/schemas/RelatedParty"
+        reportingSystem:
+          $ref: "#/components/schemas/RelatedEntity"
+        characteristic:
+          type: array
+          items:
+            $ref: "#/components/schemas/Characteristic"
+        correlationId:
+          type: string
+          nullable: true
+      example:
+        eventType: PredictionEvent
+        title: Manual Audit Entry
+        description: Manually created audit event
+        priority: low
+        source:
+          id: "192.168.1.100"
+          role: client
+          "@referredType": IPAddress
+        reportingSystem:
+          id: ManualEntry
+          "@referredType": System
+        characteristic:
+          - name: reason
+            value: Manual correction
+            valueType: string
+
+    TMForumEventList:
+      type: object
+      required: [events, totalCount, hasMore]
+      properties:
+        events:
+          type: array
+          items:
+            $ref: "#/components/schemas/TMForumEvent"
+        totalCount:
+          type: integer
+          description: Total number of events matching the query
+          example: 150
+        hasMore:
+          type: boolean
+          description: Whether there are more results available
+          example: true
+        next:
+          type: string
+          nullable: true
+          description: Link to next page of results
+          example: /tmf-api/event?offset=100&limit=100
+
+    TMForumEventStatistics:
+      type: object
+      required: [totalEvents, uniqueSourceCount]
+      properties:
+        totalEvents:
+          type: integer
+          description: Total number of events
+          example: 1523
+        eventsByType:
+          type: object
+          additionalProperties:
+            type: integer
+          description: Events grouped by type
+          example:
+            PredictionEvent: 1450
+            FeedbackEvent: 52
+            SecurityEvent: 15
+            SystemEvent: 6
+        eventsByPriority:
+          type: object
+          additionalProperties:
+            type: integer
+          description: Events grouped by priority
+          example:
+            low: 1458
+            medium: 50
+            high: 15
+            critical: 0
+        eventsByModel:
+          type: object
+          additionalProperties:
+            type: integer
+          nullable: true
+          description: Events grouped by model
+          example:
+            OTS_mBERT: 1450
+        averageConfidence:
+          type: number
+          format: float
+          nullable: true
+          description: Average confidence for predictions
+          example: 0.9856
+        uniqueSourceCount:
+          type: integer
+          description: Number of unique event sources
+          example: 42
+        timeRange:
+          type: object
+          nullable: true
+          properties:
+            start:
+              type: string
+              format: date-time
+            end:
+              type: string
+              format: date-time
+          description: Time range of events
+
+    TMForumEventError:
+      type: object
+      required: [code, reason, message, status]
+      properties:
+        code:
+          type: string
+          description: Error code
+          example: EVENT_NOT_FOUND
+        reason:
+          type: string
+          description: Error reason
+          example: Event not found
+        message:
+          type: string
+          description: Error message
+          example: No event exists with the specified ID
+        status:
+          type: string
+          description: HTTP status code
+          example: "404"
+        referenceError:
+          type: string
+          nullable: true
+          description: Reference to error documentation
