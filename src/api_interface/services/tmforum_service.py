@@ -182,8 +182,11 @@ class TMForumService:
         job_id = str(uuid.uuid4())
 
         # Get the actual model version from the loaded model
-        from ..services.prediction_service import get_model_version
-        actual_model_version = get_model_version()
+        from ..services.model_loader import model_manager
+        from ..config.settings import settings
+        actual_model_version = model_manager.mbert_versions.get(
+            settings.default_mbert_version, request.model.version
+        )
 
         # Update model info with correct version
         updated_model = request.model.model_copy()

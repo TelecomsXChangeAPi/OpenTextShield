@@ -602,7 +602,11 @@ class AuditLogger:
         """
         entry_type = audit_entry.get("entry_type", "unknown")
         timestamp_str = audit_entry.get("timestamp", datetime.now(timezone.utc).isoformat() + "Z")
-        event_time = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+        # Handle double-timezone strings like "2026-03-03T23:54:04+00:00Z"
+        ts_clean = timestamp_str.rstrip('Z')
+        if not ('+' in ts_clean[10:] or ts_clean.endswith('-00:00')):
+            ts_clean += '+00:00'
+        event_time = datetime.fromisoformat(ts_clean)
 
         # Generate unique event ID
         event_id = str(uuid.uuid4())
