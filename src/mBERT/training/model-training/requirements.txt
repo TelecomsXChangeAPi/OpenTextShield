@@ -105,7 +105,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.2
 py-stringmatching==0.4.2
 pyaes==1.6.1
-pyasn1==0.4.8
+pyasn1==0.6.3
 PyAudio==0.2.14
 pybind11==2.11.1
 pycodestyle==2.10.0
