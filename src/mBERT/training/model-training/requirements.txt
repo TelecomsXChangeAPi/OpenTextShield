@@ -28,7 +28,7 @@ dill==0.3.2
 dnslib==0.9.23
 dnspython==2.6.1
 docstring-to-markdown==0.12
-ecdsa==0.19.0
+ecdsa==0.19.2
 emoji==2.4.0
 et-xmlfile==1.1.0
 exceptiongroup==1.1.3
