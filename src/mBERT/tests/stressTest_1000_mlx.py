@@ -23,7 +23,7 @@ def load_model(model_path, device):
     return model
 
 def preprocess_text(text, tokenizer, max_len=128):
-    encoding = tokenizer.encode_plus(
+    encoding = tokenizer(
         text,
         add_special_tokens=True,
         max_length=max_len,

@@ -75,7 +75,7 @@ class MultilingualSMSDataset(Dataset):
         text = self._preprocess_text(text)
 
         # Tokenize
-        encoding = self.tokenizer.encode_plus(
+        encoding = self.tokenizer(
             text,
             add_special_tokens=True,
             max_length=self.max_len,
