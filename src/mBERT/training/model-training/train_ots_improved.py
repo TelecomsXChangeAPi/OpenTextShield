@@ -62,7 +62,7 @@ class EnhancedTextDataset(Dataset):
             text = str(self.texts[item])
             label = self.labels[item]
             
-            encoding = self.tokenizer.encode_plus(
+            encoding = self.tokenizer(
                 text,
                 add_special_tokens=True,
                 max_length=self.max_len,

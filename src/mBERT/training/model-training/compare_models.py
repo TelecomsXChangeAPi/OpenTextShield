@@ -53,7 +53,7 @@ class ModelComparator:
         predictions = []
         with torch.no_grad():
             for text in texts:
-                inputs = tokenizer.encode_plus(
+                inputs = tokenizer(
                     text,
                     add_special_tokens=True,
                     max_length=self.max_len,

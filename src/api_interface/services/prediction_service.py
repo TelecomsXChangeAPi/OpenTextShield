@@ -53,7 +53,7 @@ class PredictionService:
         """
         max_length = max_len or settings.max_text_length
 
-        return tokenizer.encode_plus(
+        return tokenizer(
             text,
             add_special_tokens=True,
             max_length=max_length,

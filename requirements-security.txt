@@ -13,19 +13,20 @@ starlette>=0.46.2
 # CVE-2025-50181/50182: urllib3 redirect control
 # CVE-2024-11392/93/94: transformers security issues
 h11>=0.16.0
-transformers>=4.53.0
+transformers==4.53.0
 requests>=2.32.4
 urllib3>=2.5.0
 setuptools>=78.1.1
 aiohttp>=3.12.14
 
-# ML/AI dependencies - allow compatible versions
-torch>=2.7.1
+# ML/AI dependencies - pinned to tested compatible versions
+# Upper bounds prevent untested major upgrades from breaking the container
+torch>=2.7.1,<2.8
 tokenizers>=0.21,<0.22
-huggingface-hub>=0.35.3
-safetensors>=0.4.5
-numpy>=2.4.2
-peft>=0.17.1
+huggingface-hub>=0.35.3,<0.36
+safetensors>=0.4.5,<0.5
+numpy>=2.4.2,<3.0
+peft>=0.17.1,<0.18
 
 # Other dependencies - allow latest compatible
 pydantic>=2.9.1
