@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # OpenTextShield API - Docker Environment Startup Script
-# This script is specifically for Docker containers
+# This script uses the pre-installed /opt/venv from the Docker build stage.
+# It does NOT install dependencies at runtime — they are baked into the image.
 
 set -e
 
@@ -9,50 +10,60 @@ echo "🐳 OpenTextShield API - Docker Mode"
 echo "==================================="
 echo ""
 
-# Docker environment paths
-VENV_PATH="/home/ots/OpenTextShield/ots"
-REQUIREMENTS_PATH="/home/ots/OpenTextShield/requirements.txt"
+# Use the pre-built virtual environment from the Docker image
+VENV_PATH="/opt/venv"
+PROJECT_ROOT="/home/ots/OpenTextShield"
 
-# Detect Python version
-if command -v python3.12 &> /dev/null; then
-    PYTHON_CMD="python3.12"
-elif command -v python3 &> /dev/null; then
-    PYTHON_CMD="python3"
-else
-    echo "❌ Python 3 not found in Docker container"
+if [ ! -d "$VENV_PATH" ]; then
+    echo "❌ Virtual environment not found at $VENV_PATH"
+    echo "   This script is for Docker containers with pre-built dependencies."
+    echo "   For local development, use: ./scripts/start.sh"
     exit 1
 fi
 
-echo "🐍 Using Python: $PYTHON_CMD ($($PYTHON_CMD --version))"
-
-# Setup virtual environment
-if [ ! -d "$VENV_PATH" ]; then
-    echo "📦 Creating virtual environment..."
-    $PYTHON_CMD -m venv "$VENV_PATH"
-    echo "✅ Virtual environment created"
-fi
-
-echo "🔄 Activating virtual environment..."
+echo "🔄 Activating pre-built virtual environment..."
 source "$VENV_PATH/bin/activate"
 
-# Install dependencies
-if [ -f "$REQUIREMENTS_PATH" ]; then
-    echo "📥 Installing dependencies..."
-    pip install --upgrade pip
-    pip install -r "$REQUIREMENTS_PATH"
-    echo "✅ Dependencies installed"
-else
-    echo "❌ requirements.txt not found at: $REQUIREMENTS_PATH"
+# Verify critical packages are available
+python -c "import fastapi; import torch; import transformers; print('✅ Core packages verified')" || {
+    echo "❌ Required packages missing from virtual environment"
     exit 1
-fi
+}
 
 # Set working directory
-cd "/home/ots/OpenTextShield"
+cd "$PROJECT_ROOT"
+export PYTHONPATH="$PROJECT_ROOT:$PYTHONPATH"
+
+# Start frontend server if available
+if [ -d "$PROJECT_ROOT/frontend" ]; then
+    echo "🌐 Starting frontend server..."
+    cd "$PROJECT_ROOT/frontend"
+    python -m http.server 8080 > /dev/null 2>&1 &
+    FRONTEND_PID=$!
+    cd "$PROJECT_ROOT"
+    echo "✅ Frontend server started (PID: $FRONTEND_PID)"
+    echo "📱 Frontend: http://localhost:8080"
+fi
+
+# Cleanup on exit
+cleanup() {
+    echo ""
+    echo "🛑 Shutting down servers..."
+    if [ ! -z "$FRONTEND_PID" ]; then
+        kill $FRONTEND_PID 2>/dev/null
+        echo "🌐 Frontend server stopped"
+    fi
+    echo "✅ Cleanup completed"
+    exit 0
+}
+trap cleanup SIGINT SIGTERM
 
 echo ""
-echo "🚀 Starting OpenTextShield API (Docker)..."
-echo "📡 Server: http://0.0.0.0:8002"
+echo "🚀 Starting OpenTextShield API..."
+echo "📡 API Server: http://0.0.0.0:8002"
+echo "📚 API Docs: http://0.0.0.0:8002/docs"
+echo "❤️  Health: http://0.0.0.0:8002/health"
 echo ""
 
-# Start server for production (no reload in Docker)
-uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002 --log-level info
+# Start the API service
+exec python -m uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002 --log-level info

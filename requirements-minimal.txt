@@ -9,7 +9,7 @@ pydantic-settings>=2.0.0
 
 # ML dependencies  
 torch>=2.7.1
-transformers>=4.53.0
+transformers==4.53.0
 numpy>=2.4.2
 
 # Additional dependencies

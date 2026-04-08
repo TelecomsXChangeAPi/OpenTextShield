@@ -28,7 +28,8 @@ COPY . /home/ots/OpenTextShield
 # Set ownership and make scripts executable
 RUN chown -R ots:ots /home/ots/OpenTextShield && \
     chmod +x /home/ots/OpenTextShield/scripts/start.sh && \
-    chmod +x /home/ots/OpenTextShield/scripts/start-local.sh
+    chmod +x /home/ots/OpenTextShield/scripts/start-local.sh && \
+    chmod +x /home/ots/OpenTextShield/scripts/start-docker.sh
 
 # Switch to non-root user
 USER ots
@@ -41,4 +42,4 @@ HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')" || exit 1
 
 # Run the application
-CMD ["bash", "/home/ots/OpenTextShield/scripts/start.sh"]
+CMD ["bash", "/home/ots/OpenTextShield/scripts/start-docker.sh"]
