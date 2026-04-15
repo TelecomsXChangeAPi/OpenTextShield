@@ -98,6 +98,18 @@ class ModelManager:
                 model.eval()
                 model = model.to(self.device)
 
+                # Cast to FP16 on CUDA when enabled. Tensor-core GPUs deliver
+                # roughly 2x throughput at no practical accuracy cost for
+                # classification heads. CPU/MPS keep FP32 for stability.
+                if settings.use_fp16 and self.device.type == "cuda":
+                    try:
+                        model = model.half()
+                        logger.info(f"Model {model_name} cast to FP16 for CUDA inference")
+                    except Exception as fp16_error:
+                        logger.warning(
+                            f"FP16 cast failed for {model_name}, falling back to FP32: {fp16_error}"
+                        )
+
                 # Load tokenizer
                 tokenizer = AutoTokenizer.from_pretrained(config["tokenizer"])
 
