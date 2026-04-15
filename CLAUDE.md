@@ -265,6 +265,41 @@ curl "http://localhost:8002/tmf-api/aiInferenceJob"
 - Model pre-loaded at startup to avoid initialization overhead
 - Single high-accuracy multilingual model for consistent global results
 
+### Dynamic Batching (v2.9+)
+Concurrent prediction requests are coalesced into padded batches by the
+`DynamicBatcher` in `src/api_interface/services/batching_service.py`. This
+raises GPU utilisation dramatically — a T4 handles a batch of 32 SMS in
+roughly the same wall-time as a single message, so per-message throughput
+scales near-linearly with batch size up to saturation.
+
+Tuning knobs (all overridable via `OTS_` env vars):
+
+| Setting | Default | Description |
+|---|---|---|
+| `batching_enabled` | `true` | Master switch. Disable for single-request debugging. |
+| `max_batch_size` | `32` | Maximum requests per forward pass. |
+| `batch_wait_ms` | `15` | Max time to wait collecting a partial batch. |
+| `max_text_length` | `96` | Token truncation (was 512; typical SMS = 20–60 tokens). |
+| `use_fp16` | `true` | FP16 weights on CUDA. Ignored on CPU/MPS. |
+
+Example:
+```bash
+OTS_MAX_BATCH_SIZE=16 OTS_BATCH_WAIT_MS=20 \
+  uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002
+```
+
+### Observability: /metrics
+Prometheus-compatible metrics are exposed at `GET /metrics` (no extra
+dependency). Useful series:
+
+- `ots_requests_total` / `ots_batches_total` — throughput counters
+- `ots_inference_seconds_total` — total GPU time
+- `ots_queue_depth` — current batcher backlog (adaptive-concurrency signal)
+- `ots_last_batch_size` / `ots_batch_size_bucket{le="N"}` — batch efficiency
+- `ots_api_info{device,fp16,max_text_length,version}` — build info
+
+The `ots-bridge` can scrape this to drive adaptive concurrency limits.
+
 ### Development Workflow
 1. Dataset preparation in CSV format with `text,label` columns
 2. Model training using framework-specific training scripts

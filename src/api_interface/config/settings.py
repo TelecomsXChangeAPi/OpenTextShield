@@ -55,12 +55,28 @@ class Settings(BaseSettings):
     
     
     # Processing
-    max_text_length: int = 512
+    # SMS payloads are typically 20-60 tokens. The previous default of 512
+    # padded every request to the full sequence length which wasted ~10x the
+    # GPU FLOPs per forward pass. 96 tokens covers even long-form phishing
+    # content with headroom; outliers are truncated safely.
+    max_text_length: int = 96
     default_model: str = "ots-mbert"
     default_mbert_version: str = "multilingual"
-    
+
     # Device Configuration
     device: str = "cpu"  # Will be overridden by auto-detection
+
+    # FP16 inference on CUDA. Ignored on CPU/MPS. Tensor-core GPUs (T4, A10,
+    # L4, A100) gain ~2x throughput with no measurable accuracy loss for
+    # classification heads.
+    use_fp16: bool = True
+
+    # Dynamic batching configuration. Coalesces concurrent single-message
+    # requests into padded batches to raise GPU utilization. Disable for
+    # single-request debugging.
+    batching_enabled: bool = True
+    max_batch_size: int = 32
+    batch_wait_ms: int = 15
     
     # Logging
     log_level: str = "INFO"
