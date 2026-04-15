@@ -16,6 +16,7 @@ from types import SimpleNamespace
 from typing import List
 
 import pytest
+import pytest_asyncio
 import torch
 
 # Make ``src`` importable when the tests are run from the repo root.
@@ -122,7 +123,7 @@ def stub_stack(monkeypatch):
     return SimpleNamespace(model=model, tokenizer=tokenizer, manager=manager)
 
 
-@pytest.fixture()
+@pytest_asyncio.fixture()
 async def batcher(stub_stack):
     b = DynamicBatcher(max_batch_size=8, batch_wait_ms=30, max_text_length=32)
     await b.start()
