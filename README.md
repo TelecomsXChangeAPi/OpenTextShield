@@ -280,10 +280,12 @@ docker-compose up -d
 - Technical details and performance indicators
 
 ### Performance
-- **Inference Speed**: 54 messages/second (Apple Silicon M1 Pro)
-- **Response Time**: <200ms typical
+- **Inference Speed**: 54 messages/second (Apple Silicon M1 Pro, single-request)
+- **Dynamic Batching**: Coalesces concurrent requests into padded GPU batches — on NVIDIA T4 (FP16, batch=32) this unlocks hundreds of MPS per instance
+- **Response Time**: <200ms typical (single-request); per-message cost drops sharply under load thanks to batching
 - **Languages**: 104+ supported via mBERT
 - **Accuracy**: Production-ready classification
+- **Tuning**: `OTS_MAX_BATCH_SIZE`, `OTS_BATCH_WAIT_MS`, `OTS_MAX_TEXT_LENGTH`, `OTS_USE_FP16` env vars
 
 ## 🧪 Testing
 
@@ -400,7 +402,8 @@ spec:
 
 ### Health Checks
 - **API Health**: `GET /health`
-- **Model Status**: `GET /model/status` 
+- **Model Status**: `GET /model/status`
+- **Prometheus Metrics**: `GET /metrics` — batcher throughput, queue depth, batch-size histogram, inference time
 - **System Metrics**: Built-in performance monitoring
 
 ### Logs

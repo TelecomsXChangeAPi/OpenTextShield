@@ -13,9 +13,10 @@ from datetime import datetime, timezone
 from .config.settings import settings
 from .utils.logging import setup_logging, logger
 from .utils.exceptions import OpenTextShieldException
+from .services.batching_service import get_batcher, init_batcher
 from .services.model_loader import model_manager
 from .middleware.security import setup_cors_middleware
-from .routers import health, prediction, feedback, audit, tmforum_event
+from .routers import health, metrics, prediction, feedback, audit, tmforum_event
 
 # Import TMForum AI Inference Job components (optional - may not be available in all deployments)
 try:
@@ -54,6 +55,12 @@ async def lifespan(app: FastAPI):
         )
         logger.info("All models loaded successfully")
 
+        # Start dynamic batcher after models are loaded so the worker has a
+        # model to call. Safe no-op when batching is disabled in settings.
+        batcher = init_batcher()
+        if batcher is not None:
+            await batcher.start()
+
         # Initialize TMForum service (if available)
         if TMFORUM_AVAILABLE and tmforum_service:
             await tmforum_service.initialize()
@@ -70,6 +77,15 @@ async def lifespan(app: FastAPI):
     
     # Shutdown
     logger.info("Shutting down OpenTextShield API...")
+
+    # Stop the dynamic batcher first so queued requests are failed cleanly
+    # before we tear down the rest of the service.
+    batcher = get_batcher()
+    if batcher is not None:
+        try:
+            await batcher.stop()
+        except Exception as e:
+            logger.error(f"Error stopping batcher: {str(e)}")
 
     # Shutdown TMForum service (if available)
     if TMFORUM_AVAILABLE and tmforum_service:
@@ -98,6 +114,7 @@ setup_cors_middleware(app)
 
 # Include routers
 app.include_router(health.router)
+app.include_router(metrics.router)
 app.include_router(prediction.router)
 app.include_router(feedback.router)
 app.include_router(audit.router)

@@ -17,6 +17,7 @@ from ..utils.logging import logger
 from ..utils.exceptions import PredictionError, ModelNotFoundError
 from ..models.request_models import PredictionRequest, ModelType
 from ..models.response_models import PredictionResponse, ModelInfo, ClassificationLabel
+from .batching_service import get_batcher
 from .model_loader import model_manager
 
 # Import enhanced preprocessor
@@ -57,7 +58,7 @@ class PredictionService:
             text,
             add_special_tokens=True,
             max_length=max_length,
-            padding='max_length',
+            padding='longest',  # dynamic padding; avoids wasting FLOPs on short SMS
             return_attention_mask=True,
             return_tensors='pt',
             truncation=True
@@ -95,10 +96,12 @@ class PredictionService:
             inputs = self.preprocess_text(processed_text, tokenizer)
             inputs = {k: v.to(model_manager.device) for k, v in inputs.items()}
 
-            # Make prediction
-            with torch.no_grad():
+            # Make prediction. inference_mode disables autograd tracking
+            # entirely (cheaper than no_grad) and logits are cast to float32
+            # for numerically stable softmax when the model runs in FP16.
+            with torch.inference_mode():
                 outputs = model(**inputs)
-                logits = outputs.logits
+                logits = outputs.logits.float()
                 probabilities = torch.nn.functional.softmax(logits, dim=1)
                 prediction = torch.argmax(logits, dim=1).item()
                 # Get the probability of the predicted class
@@ -160,14 +163,28 @@ class PredictionService:
                         f"Available models: {available_models}"
                     )
 
-                # Run synchronous inference in thread pool to avoid blocking event loop
-                loop = asyncio.get_running_loop()
-                label, probability, processing_time, model_info = await loop.run_in_executor(
-                    _inference_executor,
-                    self._predict_with_mbert_sync,
-                    request.text,
-                    mbert_version,
-                )
+                # Route through the dynamic batcher when it is enabled so that
+                # concurrent requests share GPU forward passes. When batching
+                # is disabled (e.g. debugging, CPU-only single-request mode)
+                # fall back to the per-request thread-pool path.
+                batcher = get_batcher()
+                if batcher is not None:
+                    label, probability, processing_time = await batcher.submit(request.text)
+                    _, _, model_version = model_manager.get_mbert_model(mbert_version)
+                    model_info = ModelInfo(
+                        name="OTS_mBERT",
+                        version=model_version,
+                        author="TelecomsXChange (TCXC)",
+                        last_training="2024-03-20",
+                    )
+                else:
+                    loop = asyncio.get_running_loop()
+                    label, probability, processing_time, model_info = await loop.run_in_executor(
+                        _inference_executor,
+                        self._predict_with_mbert_sync,
+                        request.text,
+                        mbert_version,
+                    )
 
             else:
                 raise PredictionError({"error": f"Unsupported model type: {request.model}"})
