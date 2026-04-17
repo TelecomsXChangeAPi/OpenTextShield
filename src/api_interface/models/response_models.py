@@ -86,7 +86,7 @@ class HealthResponse(BaseModel):
         "json_schema_extra": {
             "example": {
                 "status": "healthy",
-                "version": "2.5.0",
+                "version": "2.9.0",
                 "models_loaded": {
                     "mbert_multilingual": True
                 },

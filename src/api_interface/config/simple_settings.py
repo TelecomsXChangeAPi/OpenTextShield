@@ -14,7 +14,7 @@ class Settings:
         # API Configuration
         self.api_title = "OpenTextShield API"
         self.api_description = "Professional SMS spam and phishing detection API"
-        self.api_version = "2.5.0"
+        self.api_version = "2.9.0"
         self.api_host = os.getenv("OTS_API_HOST", "0.0.0.0")
         self.api_port = int(os.getenv("OTS_API_PORT", "8002"))
         

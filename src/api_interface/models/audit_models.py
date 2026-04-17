@@ -137,7 +137,7 @@ class SystemEventAuditEntry(BaseAuditEntry):
                 "entry_type": "system_event",
                 "client_ip": "system",
                 "event_type": "startup",
-                "message": "OpenTextShield API started (v2.5.0)",
+                "message": "OpenTextShield API started (v2.9.0)",
                 "metadata": {
                     "host": "0.0.0.0",
                     "port": 8002,

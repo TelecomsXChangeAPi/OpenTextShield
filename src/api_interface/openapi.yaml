@@ -2,7 +2,7 @@ openapi: "3.1.0"
 info:
   title: OpenTextShield API
   description: Professional SMS spam and phishing detection API powered by mBERT multilingual transformer models. Supports 104+ languages with cross-lingual transfer learning.
-  version: "2.6.0"
+  version: "2.9.0"
   contact:
     name: TelecomsXChange (TCXC)
   license:
@@ -942,7 +942,7 @@ components:
         version:
           type: string
           description: API version
-          example: "2.6.0"
+          example: "2.9.0"
         models_loaded:
           type: object
           additionalProperties:
