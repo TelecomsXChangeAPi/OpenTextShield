@@ -277,8 +277,8 @@ Tuning knobs (all overridable via `OTS_` env vars):
 | Setting | Default | Description |
 |---|---|---|
 | `batching_enabled` | `true` | Master switch. Disable for single-request debugging. |
-| `max_batch_size` | `32` | Maximum requests per forward pass. |
-| `batch_wait_ms` | `15` | Max time to wait collecting a partial batch. |
+| `max_batch_size` | `64` | Maximum requests per forward pass. |
+| `batch_wait_ms` | `50` | Max time to wait collecting a partial batch. |
 | `max_text_length` | `96` | Token truncation (was 512; typical SMS = 20–60 tokens). |
 | `use_fp16` | `true` | FP16 weights on CUDA. Ignored on CPU/MPS. |
 
@@ -296,6 +296,9 @@ dependency). Useful series:
 - `ots_inference_seconds_total` — total GPU time
 - `ots_queue_depth` — current batcher backlog (adaptive-concurrency signal)
 - `ots_last_batch_size` / `ots_batch_size_bucket{le="N"}` — batch efficiency
+- `ots_effective_arrival_rate_msgs_per_second` — rolling 60s arrival rate
+  (distinguishes bridge-limited from GPU-limited scenarios at a glance)
+- `ots_arrival_rate_lifetime_msgs_per_second` — lifetime average arrival rate
 - `ots_api_info{device,fp16,max_text_length,version}` — build info
 
 The `ots-bridge` can scrape this to drive adaptive concurrency limits.

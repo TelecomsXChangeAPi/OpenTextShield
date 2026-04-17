@@ -63,8 +63,22 @@ def test_metrics_endpoint_active_batcher():
         "ots_queue_depth 2",
         "ots_last_batch_size 8",
         "ots_batch_size_bucket",
+        "ots_effective_arrival_rate_msgs_per_second",
+        "ots_arrival_rate_lifetime_msgs_per_second",
     ]:
         assert name in body, f"expected '{name}' in metrics output:\n{body}"
+
+    # Both arrival-rate gauges must parse as non-negative floats.
+    for series in (
+        "ots_effective_arrival_rate_msgs_per_second",
+        "ots_arrival_rate_lifetime_msgs_per_second",
+    ):
+        line = next(
+            ln for ln in body.splitlines()
+            if ln.startswith(series + " ")
+        )
+        value = float(line.split()[-1])
+        assert value >= 0, f"{series} should be >=0, got {value}"
 
     # Histogram lines must be well-formed Prometheus counters.
     hist_lines = [ln for ln in body.splitlines() if ln.startswith("ots_batch_size_bucket{")]

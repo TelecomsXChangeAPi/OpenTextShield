@@ -242,6 +242,45 @@ async def test_shutdown_fails_pending_requests(stub_stack):
 
 
 @pytest.mark.asyncio
+async def test_arrival_rate_tracks_recent_traffic(batcher):
+    """Rolling arrival rate should reflect messages processed in the window."""
+    b, _ = batcher
+    # Baseline: no traffic yet.
+    assert b.metrics.rolling_arrival_rate() == 0.0
+    assert b.metrics.lifetime_arrival_rate() == 0.0
+
+    # Submit 10 messages. After they complete, the rolling rate must be > 0.
+    texts = [f"hello {i}" for i in range(10)]
+    await asyncio.gather(*(b.submit(t) for t in texts))
+
+    assert b.metrics.total_requests == 10
+    assert b.metrics.rolling_arrival_rate() > 0.0
+    assert b.metrics.lifetime_arrival_rate() > 0.0
+
+
+def test_arrival_rate_prunes_old_samples():
+    """Samples older than the window must be dropped from the rolling rate."""
+    from src.api_interface.services.batching_service import (
+        BatchingMetrics,
+        _ARRIVAL_WINDOW_SECONDS,
+    )
+    import time as _time
+
+    m = BatchingMetrics()
+    # Backdate started_at so the divisor is the full window (not tiny uptime).
+    m.started_at = _time.monotonic() - (_ARRIVAL_WINDOW_SECONDS * 2)
+    # Inject a stale sample just past the cutoff; record_batch should prune it.
+    m._recent_arrivals.append((_time.monotonic() - (_ARRIVAL_WINDOW_SECONDS + 5), 100))
+    m.record_batch(size=5, wait_seconds_sum=0.01, inference_seconds=0.01)
+
+    # Only the fresh size-5 sample should contribute.
+    assert len(m._recent_arrivals) == 1
+    rate = m.rolling_arrival_rate()
+    # 5 msgs over the 60s window ≈ 0.083 msgs/sec.
+    assert 0 < rate < 1.0, f"unexpected rate {rate}"
+
+
+@pytest.mark.asyncio
 async def test_init_batcher_respects_disabled_flag(monkeypatch):
     from src.api_interface.config import settings as settings_mod
     monkeypatch.setattr(settings_mod.settings, "batching_enabled", False)

@@ -75,8 +75,15 @@ class Settings(BaseSettings):
     # requests into padded batches to raise GPU utilization. Disable for
     # single-request debugging.
     batching_enabled: bool = True
-    max_batch_size: int = 32
-    batch_wait_ms: int = 15
+    # Raised from 32 after GPU load testing on T4 (g4dn.4xlarge) showed batches
+    # were filling to the cap under burst. 64 batch at 96 tokens fp16 stays
+    # well under 500MB of activations — comfortable on a 16GB T4.
+    max_batch_size: int = 64
+    # Raised from 15ms after load-test observation that the 15ms window was
+    # flushing mostly 5–8 sized micro-batches. 50ms lets the batcher pack
+    # closer to max_batch_size under sustained load; adds a <=50ms latency
+    # floor under low traffic.
+    batch_wait_ms: int = 50
     
     # Logging
     log_level: str = "INFO"
