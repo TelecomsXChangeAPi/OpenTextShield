@@ -97,6 +97,19 @@ def _render() -> str:
         m.current_queue_depth,
     )
     emit(
+        "ots_effective_arrival_rate_msgs_per_second",
+        "Observed arrival rate (msgs/sec) averaged over the last 60s. "
+        "Separates bridge-limited from GPU-limited scenarios.",
+        "gauge",
+        round(m.rolling_arrival_rate(), 3),
+    )
+    emit(
+        "ots_arrival_rate_lifetime_msgs_per_second",
+        "Observed arrival rate (msgs/sec) averaged since process start.",
+        "gauge",
+        round(m.lifetime_arrival_rate(), 3),
+    )
+    emit(
         "ots_last_batch_size",
         "Size of the most recently executed batch.",
         "gauge",

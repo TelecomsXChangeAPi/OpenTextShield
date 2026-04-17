@@ -22,8 +22,9 @@ no-op until ``start()`` is called from the FastAPI lifespan handler.
 
 import asyncio
 import time
+from collections import deque
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Deque, Dict, List, Optional, Tuple
 
 import torch
 
@@ -40,6 +41,11 @@ class _PendingRequest:
     enqueued_at: float
 
 
+# Window (seconds) used to compute the rolling effective arrival rate gauge.
+# Matches common Prometheus scrape intervals so the gauge stays smooth.
+_ARRIVAL_WINDOW_SECONDS = 60.0
+
+
 @dataclass
 class BatchingMetrics:
     """Runtime metrics exposed via /metrics."""
@@ -51,6 +57,12 @@ class BatchingMetrics:
     last_batch_size: int = 0
     current_queue_depth: int = 0
     errors: int = 0
+    started_at: float = field(default_factory=time.monotonic)
+    # (monotonic_timestamp, batch_size) for the last _ARRIVAL_WINDOW_SECONDS.
+    # Used to compute the effective arrival rate gauge — this distinguishes
+    # bridge-limited scenarios (low rate despite high claimed ingress) from
+    # GPU-limited ones (rate at the API ceiling).
+    _recent_arrivals: Deque[Tuple[float, int]] = field(default_factory=deque)
 
     def record_batch(self, size: int, wait_seconds_sum: float, inference_seconds: float) -> None:
         self.total_requests += size
@@ -60,6 +72,37 @@ class BatchingMetrics:
         self.last_batch_size = size
         bucket = self._bucket_for(size)
         self.batch_size_histogram[bucket] = self.batch_size_histogram.get(bucket, 0) + 1
+
+        now = time.monotonic()
+        self._recent_arrivals.append((now, size))
+        self._prune_arrivals(now)
+
+    def _prune_arrivals(self, now: float) -> None:
+        cutoff = now - _ARRIVAL_WINDOW_SECONDS
+        while self._recent_arrivals and self._recent_arrivals[0][0] < cutoff:
+            self._recent_arrivals.popleft()
+
+    def rolling_arrival_rate(self) -> float:
+        """Observed msgs/sec averaged over the last _ARRIVAL_WINDOW_SECONDS."""
+        now = time.monotonic()
+        self._prune_arrivals(now)
+        # Snapshot to a tuple to keep iteration atomic w.r.t. concurrent appends.
+        snapshot = tuple(self._recent_arrivals)
+        if not snapshot:
+            return 0.0
+        total = sum(size for _, size in snapshot)
+        # Cap divisor by actual uptime so the gauge is meaningful early on.
+        elapsed = min(_ARRIVAL_WINDOW_SECONDS, max(0.0, now - self.started_at))
+        if elapsed <= 0:
+            return 0.0
+        return total / elapsed
+
+    def lifetime_arrival_rate(self) -> float:
+        """Observed msgs/sec averaged since process start."""
+        elapsed = time.monotonic() - self.started_at
+        if elapsed <= 0:
+            return 0.0
+        return self.total_requests / elapsed
 
     @staticmethod
     def _bucket_for(size: int) -> int:
