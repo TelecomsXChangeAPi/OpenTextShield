@@ -1,0 +1,19 @@
+# Terraform state — contains resource IDs, IPs, and sometimes secrets
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Local variable overrides
+terraform.tfvars
+*.auto.tfvars
+
+# Provider binaries + plugin cache
+.terraform/
+.terraform.lock.hcl
+
+# Plan artifacts
+*.tfplan
+
+# Auto-generated SSH private key — NEVER commit
+deploy-key.pem
+*.pem

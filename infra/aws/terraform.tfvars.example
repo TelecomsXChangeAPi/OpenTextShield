@@ -1,0 +1,15 @@
+# Copy to terraform.tfvars and adjust as needed.
+# cp terraform.tfvars.example terraform.tfvars
+
+aws_region    = "ca-central-1"
+instance_type = "t3.medium"
+docker_image  = "telecomsxchange/opentextshield:latest"
+
+# Restrict SSH to your IP in production: curl ifconfig.me
+ssh_allowed_cidrs = ["0.0.0.0/0"]
+
+# API + frontend open to the world by default
+api_allowed_cidrs = ["0.0.0.0/0"]
+
+# 30 GB leaves headroom for Docker image (~4 GB) + model + logs
+root_volume_gb = 30
