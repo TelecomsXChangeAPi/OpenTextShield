@@ -41,7 +41,7 @@ data "aws_vpc" "default" {
 
 resource "aws_security_group" "ots" {
   name        = "${var.project_name}-sg"
-  description = "Allow SSH, OTS API (8002), OTS Frontend (8080)"
+  description = "Allow SSH + HTTP/HTTPS (Caddy fronts OTS on 80/443)"
   vpc_id      = data.aws_vpc.default.id
 
   ingress {
@@ -53,19 +53,19 @@ resource "aws_security_group" "ots" {
   }
 
   ingress {
-    description = "OTS API"
-    from_port   = 8002
-    to_port     = 8002
+    description = "HTTP (ACME HTTP-01 challenge + redirect to HTTPS)"
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = var.api_allowed_cidrs
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
-    description = "OTS Frontend"
-    from_port   = 8080
-    to_port     = 8080
+    description = "HTTPS"
+    from_port   = 443
+    to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = var.api_allowed_cidrs
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
@@ -112,6 +112,8 @@ resource "aws_instance" "ots" {
 
   user_data = templatefile("${path.module}/user-data.sh", {
     docker_image = var.docker_image
+    domain       = var.domain
+    tls_email    = var.tls_email
   })
 
   tags = {

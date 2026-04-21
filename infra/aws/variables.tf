@@ -28,10 +28,16 @@ variable "ssh_allowed_cidrs" {
   default     = ["0.0.0.0/0"]
 }
 
-variable "api_allowed_cidrs" {
-  description = "CIDRs allowed to hit the OTS API (8002) and frontend (8080)."
-  type        = list(string)
-  default     = ["0.0.0.0/0"]
+variable "domain" {
+  description = "FQDN the deployment will serve from. DNS A record for this must point to the EIP before first HTTPS request so Caddy can get a Let's Encrypt cert."
+  type        = string
+  default     = "ots.telecomsxchange.com"
+}
+
+variable "tls_email" {
+  description = "Email Let's Encrypt uses for expiry notifications + ToS agreement."
+  type        = string
+  default     = "admin@telecomsxchange.com"
 }
 
 variable "root_volume_gb" {

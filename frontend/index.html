@@ -3201,7 +3201,19 @@
     </div>
 
     <script>
-        const API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:8002`;
+        const API_BASE_URL = (!window.location.port || ['80','443'].includes(window.location.port))
+            ? window.location.origin
+            : `${window.location.protocol}//${window.location.hostname}:8002`;
+
+        // Rewrite the static curl example so it always shows the real API URL
+        (function initCurlSample() {
+            const el = document.getElementById('curlRequest');
+            if (!el) return;
+            el.textContent = `curl -X POST "${API_BASE_URL}/predict/" \\
+  -H "accept: application/json" \\
+  -H "Content-Type: application/json" \\
+  -d '{"text":"Your message here","model":"ots-mbert"}'`;
+        })();
 
         // Dark mode / Theme management
         function initializeTheme() {
@@ -3397,10 +3409,12 @@
             // Update curl request with the actual text and model
             const curlRequest = document.getElementById('curlRequest');
             if (curlRequest) {
-                const curlText = `curl -X POST "http://localhost:8002/predict/" \\
+                const payload = JSON.stringify({text: originalText, model: model})
+                    .replace(/'/g, "'\\''");
+                const curlText = `curl -X POST "${API_BASE_URL}/predict/" \\
   -H "accept: application/json" \\
   -H "Content-Type: application/json" \\
-  -d '{"text":"${originalText.replace(/"/g, '\\"')}","model":"${model}"}'`;
+  -d '${payload}'`;
                 curlRequest.textContent = curlText;
             }
 

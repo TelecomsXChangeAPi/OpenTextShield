@@ -14,12 +14,13 @@ if [ ! -f /swapfile ]; then
   echo '/swapfile none swap sw 0 0' >> /etc/fstab
 fi
 
-# --- System updates + docker ---
+# --- System packages + Docker + Caddy ---
 export DEBIAN_FRONTEND=noninteractive
 apt-get update -y
 apt-get upgrade -y
-apt-get install -y curl ca-certificates python3
+apt-get install -y curl ca-certificates python3 debian-keyring debian-archive-keyring apt-transport-https gnupg
 
+# Docker
 if ! command -v docker > /dev/null; then
   curl -fsSL https://get.docker.com | sh
   systemctl enable docker
@@ -27,15 +28,16 @@ if ! command -v docker > /dev/null; then
   usermod -aG docker ubuntu
 fi
 
-# --- Pre-pull OTS image ---
-docker pull ${docker_image}
+# Caddy (official repo — gives us a systemd unit + automatic LE)
+if ! command -v caddy > /dev/null; then
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | tee /etc/apt/sources.list.d/caddy-stable.list
+  apt-get update -y
+  apt-get install -y caddy
+fi
 
-# --- Extract & patch files the published image currently ships broken ---
-# Frontend has a hardcoded localhost:8002 API URL.
-# settings.py silently falls back to a no-op BaseSettings when
-# pydantic-settings isn't installed, so env-var overrides are ignored.
-# We bind-mount fixed copies into the container so the image can be
-# upgraded without losing these patches.
+# --- Pull OTS image + extract files for the two in-image bug workarounds ---
+docker pull ${docker_image}
 
 mkdir -p /opt/ots
 TMPC=$(docker create ${docker_image})
@@ -47,22 +49,68 @@ python3 <<'PYEOF'
 import re
 from pathlib import Path
 
-# 1) Frontend: derive API URL from the browser's location
+# 1) Frontend: smart URL + rewrite the example curl block on page load so the
+#    example reflects the real API URL rather than "http://localhost:8002".
+#    Idempotent; skips if image is already fixed.
 fp = Path('/opt/ots/index.html')
-h = fp.read_text()
-old = "const API_BASE_URL = 'http://localhost:8002';"
-new = "const API_BASE_URL = `$${window.location.protocol}//$${window.location.hostname}:8002`;"
-if old in h:
-    fp.write_text(h.replace(old, new))
-    print("index.html: patched API_BASE_URL")
-elif "window.location.hostname" in h:
-    print("index.html: already fixed upstream, nothing to do")
-else:
-    print("index.html: WARNING unknown state, leaving as-is")
+h_original = fp.read_text()
+h = h_original
 
-# 2) Settings: force CORS to wildcard. Regex is whitespace-tolerant so the
-#    patch survives minor formatting changes in the image's settings.py.
-#    Becomes a no-op once the image ships with pydantic-settings + wildcard.
+old_const = "const API_BASE_URL = 'http://localhost:8002';"
+new_block = (
+    "const API_BASE_URL = (!window.location.port || "
+    "['80','443'].includes(window.location.port)) "
+    "? window.location.origin "
+    ": `$${window.location.protocol}//$${window.location.hostname}:8002`;\n"
+    "\n"
+    "        (function initCurlSample() {\n"
+    "            const el = document.getElementById('curlRequest');\n"
+    "            if (!el) return;\n"
+    "            el.textContent = `curl -X POST \"$${API_BASE_URL}/predict/\" \\\\\n"
+    "  -H \"accept: application/json\" \\\\\n"
+    "  -H \"Content-Type: application/json\" \\\\\n"
+    "  -d '{\"text\":\"Your message here\",\"model\":\"ots-mbert\"}'`;\n"
+    "        })();"
+)
+h = h.replace(old_const, new_block)
+# Replace every hardcoded curl URL (static <pre> + post-classification JS template)
+h = h.replace('"http://localhost:8002/predict/"', '"$${API_BASE_URL}/predict/"')
+
+# Fix the post-classification curl payload so apostrophes in user input don't
+# break the bash single-quoted JSON. Uses JSON.stringify + '\''-style bash escape.
+old_payload_block = (
+    "            const curlRequest = document.getElementById('curlRequest');\n"
+    "            if (curlRequest) {\n"
+    "                const curlText = `curl -X POST \"$${API_BASE_URL}/predict/\" \\\\\n"
+    "  -H \"accept: application/json\" \\\\\n"
+    "  -H \"Content-Type: application/json\" \\\\\n"
+    "  -d '{\"text\":\"$${originalText.replace(/\"/g, '\\\\\"')}\",\"model\":\"$${model}\"}'`;\n"
+    "                curlRequest.textContent = curlText;\n"
+    "            }"
+)
+new_payload_block = (
+    "            const curlRequest = document.getElementById('curlRequest');\n"
+    "            if (curlRequest) {\n"
+    "                const payload = JSON.stringify({text: originalText, model: model})\n"
+    "                    .replace(/'/g, \"'\\\\''\");\n"
+    "                const curlText = `curl -X POST \"$${API_BASE_URL}/predict/\" \\\\\n"
+    "  -H \"accept: application/json\" \\\\\n"
+    "  -H \"Content-Type: application/json\" \\\\\n"
+    "  -d '$${payload}'`;\n"
+    "                curlRequest.textContent = curlText;\n"
+    "            }"
+)
+if old_payload_block in h:
+    h = h.replace(old_payload_block, new_payload_block)
+
+if h != h_original:
+    fp.write_text(h)
+    print("index.html: patched (smart URL + initCurlSample + curl template + payload escape)")
+else:
+    print("index.html: unchanged (likely already fixed upstream)")
+
+# 2) Settings: force CORS to wildcard (regex — tolerates whitespace drift).
+#    No-op once the image ships with pydantic-settings + wildcard.
 sp = Path('/opt/ots/settings.py')
 s = sp.read_text()
 pattern = re.compile(r'cors_origins\s*:\s*List\[str\]\s*=\s*\[[^\]]*\]')
@@ -77,7 +125,7 @@ PYEOF
 
 chmod 644 /opt/ots/index.html /opt/ots/settings.py
 
-# --- systemd unit with bind-mounts ---
+# --- systemd unit: OTS listens only on loopback; Caddy fronts it ---
 cat > /etc/systemd/system/ots.service <<'UNIT'
 [Unit]
 Description=OpenTextShield API
@@ -91,7 +139,7 @@ RestartSec=10
 TimeoutStartSec=0
 ExecStartPre=-/usr/bin/docker rm -f ots
 ExecStart=/usr/bin/docker run --rm --name ots \
-  -p 8002:8002 -p 8080:8080 \
+  -p 127.0.0.1:8002:8002 -p 127.0.0.1:8080:8080 \
   -e OTS_MAX_BATCH_SIZE=16 \
   -e OTS_BATCH_WAIT_MS=30 \
   -v /opt/ots/settings.py:/home/ots/OpenTextShield/src/api_interface/config/settings.py:ro \
@@ -107,16 +155,36 @@ systemctl daemon-reload
 systemctl enable ots.service
 systemctl restart ots.service
 
-echo "=== Waiting for API to become healthy ==="
+# --- Caddy: API routes go to uvicorn, everything else to the frontend ---
+cat > /etc/caddy/Caddyfile <<'CADDY'
+{
+    email ${tls_email}
+}
+
+${domain} {
+    encode gzip zstd
+
+    # API paths -> uvicorn on 127.0.0.1:8002
+    @api path /predict* /health /docs /openapi.json /metrics /tmf-api/*
+    reverse_proxy @api 127.0.0.1:8002
+
+    # Everything else -> static frontend on 127.0.0.1:8080
+    reverse_proxy 127.0.0.1:8080
+}
+CADDY
+
+systemctl enable caddy
+systemctl restart caddy
+
+echo "=== Waiting for OTS API to become healthy (via loopback) ==="
 for i in $(seq 1 60); do
   if curl -fs http://127.0.0.1:8002/health > /dev/null; then
-    echo "API healthy after $i checks ($(date))"
-    curl -fs http://127.0.0.1:8002/health
-    echo
-    exit 0
+    echo "OTS healthy after $i checks ($(date))"
+    break
   fi
   sleep 5
 done
 
-echo "API not healthy after 5 minutes — debug: journalctl -u ots -n 200"
-exit 0
+echo "=== Bootstrap complete ==="
+echo "DNS must point ${domain} -> this EIP before first HTTPS request."
+echo "Caddy will auto-issue a Let's Encrypt cert on the first HTTPS hit."

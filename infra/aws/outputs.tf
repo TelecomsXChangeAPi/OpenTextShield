@@ -8,34 +8,39 @@ output "ssh_command" {
   value       = "ssh -i infra/aws/deploy-key.pem ubuntu@${aws_eip.ots.public_ip}"
 }
 
+output "dns_record_instructions" {
+  description = "Create this DNS A record to activate TLS"
+  value       = "A  ${var.domain}.  ${aws_eip.ots.public_ip}  TTL 300"
+}
+
 output "api_predict_endpoint" {
   description = "Programmable inference endpoint (POST JSON here)"
-  value       = "http://${aws_eip.ots.public_ip}:8002/predict/"
+  value       = "https://${var.domain}/predict/"
 }
 
 output "api_docs" {
   description = "Swagger UI"
-  value       = "http://${aws_eip.ots.public_ip}:8002/docs"
+  value       = "https://${var.domain}/docs"
 }
 
 output "tmf_endpoint" {
   description = "TMForum TMF922 async inference endpoint"
-  value       = "http://${aws_eip.ots.public_ip}:8002/tmf-api/aiInferenceJob"
+  value       = "https://${var.domain}/tmf-api/aiInferenceJob"
 }
 
 output "frontend_url" {
   description = "OTS research frontend"
-  value       = "http://${aws_eip.ots.public_ip}:8080"
+  value       = "https://${var.domain}"
 }
 
 output "health_url" {
   description = "Health check"
-  value       = "http://${aws_eip.ots.public_ip}:8002/health"
+  value       = "https://${var.domain}/health"
 }
 
 output "metrics_url" {
   description = "Prometheus metrics"
-  value       = "http://${aws_eip.ots.public_ip}:8002/metrics"
+  value       = "https://${var.domain}/metrics"
 }
 
 output "private_key_path" {
