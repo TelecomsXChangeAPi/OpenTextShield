@@ -6,18 +6,9 @@ import os
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 from datetime import datetime
-try:
-    from pydantic_settings import BaseSettings
-    from pydantic import Field
-except ImportError:
-    try:
-        from pydantic import BaseSettings, Field
-    except ImportError:
-        # Fallback for very old versions
-        class BaseSettings:
-            pass
-        def Field(*args, **kwargs):
-            return None
+
+from pydantic import Field
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -112,10 +103,12 @@ class Settings(BaseSettings):
     audit_archive_enabled: bool = False  # Archive instead of delete old logs
     audit_archive_dir: Optional[Path] = None  # Directory for archived logs
     
-    class Config:
-        env_prefix = "OTS_"
-        case_sensitive = False
-        env_file = ".env"
+    model_config = SettingsConfigDict(
+        env_prefix="OTS_",
+        case_sensitive=False,
+        env_file=".env",
+        extra="ignore",
+    )
 
 
 # Global settings instance

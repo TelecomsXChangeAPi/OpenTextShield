@@ -19,6 +19,7 @@ numpy>=2.4.2
 packaging==24.1
 pybind11==2.13.6
 pydantic==2.9.1
+pydantic-settings>=2.5.0
 pydantic_core==2.23.3
 PyYAML==6.0.2
 regex==2024.9.11

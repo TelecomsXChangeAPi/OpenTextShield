@@ -30,6 +30,7 @@ peft>=0.17.1,<0.18
 
 # Other dependencies - allow latest compatible
 pydantic>=2.9.1
+pydantic-settings>=2.5.0
 click>=8.1.7
 anyio>=4.4.0
 certifi>=2024.8.30
