@@ -7,12 +7,13 @@ uvicorn[standard]>=0.20.0
 pydantic>=2.0.0
 pydantic-settings>=2.0.0
 
-# ML dependencies  
-torch>=2.7.1
-transformers==4.53.0
+# ML dependencies
+# torch 2.8+ for CVE-2025-3730; transformers stays on 4.53.x until 5.x stable
+torch>=2.8.0,<2.9
+transformers>=4.53.0,<5.0
 numpy>=2.4.2
 
 # Additional dependencies
-requests>=2.32.4
+requests>=2.33.0
 urllib3>=2.5.0
 Jinja2>=3.0.0
