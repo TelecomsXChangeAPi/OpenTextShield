@@ -22,13 +22,7 @@
     "index.js"
   ],
   "scripts": {
-    "cover": "istanbul cover _mocha",
-    "test": "mocha"
-  },
-  "devDependencies": {
-    "coveralls": "^2.11.9",
-    "istanbul": "^0.4.3",
-    "mocha": "2.x"
+    "test": "echo 'upstream mocha tests not wired up in vendored fork'"
   },
   "dependencies": {
     "iconv-lite": "0.x",
