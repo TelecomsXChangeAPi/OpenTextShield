@@ -2969,6 +2969,19 @@
             .sample-btn {
                 box-shadow: none;
             }
+            /* Kill decorative background animations.
+             * ~90 elements with infinite keyframes (particle-1..60,
+             * star-1..30, twinkle, neural-lines) keep the compositor
+             * pinned at 60fps forever. Older mobile GPUs (A17 Pro and
+             * before) can't keep up and the whole UI feels sluggish;
+             * newer (A18 Pro+) happens to have enough headroom to hide
+             * the cost. Simpler to just remove them on all phones. */
+            .particle,
+            .star,
+            svg.neural-lines {
+                display: none !important;
+                animation: none !important;
+            }
         }
     </style>
 </head>

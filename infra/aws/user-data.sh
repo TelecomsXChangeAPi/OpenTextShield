@@ -144,6 +144,10 @@ if 'prefers-reduced-motion' not in h:
         "            .results-panel { min-height: auto; }\n"
         "            .metric-card,\n"
         "            .sample-btn { box-shadow: none; }\n"
+        "            .particle, .star, svg.neural-lines {\n"
+        "                display: none !important;\n"
+        "                animation: none !important;\n"
+        "            }\n"
         "        }\n"
         "    "
     )
