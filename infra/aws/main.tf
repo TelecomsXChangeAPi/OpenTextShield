@@ -108,6 +108,12 @@ resource "aws_instance" "ots" {
     volume_size = var.root_volume_gb
     volume_type = "gp3"
     encrypted   = true
+
+    # DLM policy targets volumes by this tag for daily snapshots.
+    tags = {
+      Name    = "${var.project_name}-root"
+      Project = var.project_name
+    }
   }
 
   user_data = templatefile("${path.module}/user-data.sh", {
@@ -123,6 +129,9 @@ resource "aws_instance" "ots" {
 }
 
 # --- Elastic IP ---
+# prevent_destroy guards against an accidental `terraform destroy` burning the
+# public IP and breaking DNS for ots.telecomsxchange.com. To deliberately
+# release this EIP, remove the lifecycle block first, apply, then destroy.
 resource "aws_eip" "ots" {
   instance = aws_instance.ots.id
   domain   = "vpc"
@@ -131,4 +140,30 @@ resource "aws_eip" "ots" {
     Name    = "${var.project_name}-eip"
     Project = var.project_name
   }
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
+
+# --- Daily EBS snapshot policy via AWS Data Lifecycle Manager ---
+#
+# Disabled by default because creating the DLM service role requires the
+# IAM identity running `terraform apply` to have iam:CreateRole +
+# iam:AttachRolePolicy. The terraform-deploy user deliberately doesn't
+# have those (least-privilege for infra deploys).
+#
+# To enable:
+#   1. Grant the IAM user iam:CreateRole, iam:AttachRolePolicy,
+#      iam:PassRole (on the dlm role only), iam:DeleteRole,
+#      iam:DetachRolePolicy. Or create the role manually in the
+#      AWS console (see AWSDataLifecycleManagerDefaultRole).
+#   2. Uncomment the resources below.
+#   3. `terraform apply`.
+#
+# In the meantime the root EBS volume is tagged Project=ots, so either
+# DLM or AWS Backup can target it later without re-apply.
+#
+# resource "aws_iam_role" "dlm" { ... }
+# resource "aws_iam_role_policy_attachment" "dlm" { ... }
+# resource "aws_dlm_lifecycle_policy" "ots_daily_snapshots" { ... }
