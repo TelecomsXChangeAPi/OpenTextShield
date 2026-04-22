@@ -14,7 +14,7 @@ starlette>=0.46.2
 # CVE-2024-11392/93/94: transformers security issues
 h11>=0.16.0
 # transformers 5.x is still an RC with API breaks — stay on 4.53.x until stable release.
-transformers>=4.53.0,<5.0
+transformers>=5.0.0rc3,<5.0
 requests>=2.33.0
 urllib3>=2.5.0
 setuptools>=78.1.1
