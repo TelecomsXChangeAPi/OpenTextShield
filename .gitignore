@@ -17,8 +17,28 @@ src/mBERT/training/mbert-mlx-apple-silicon/translated_dataset1_6_SRILANKA.csv
 ots/
 ots_test/
 venv/
+.venv/
 env/
 .env
+
+# Claude Code session-local settings (per-machine, should not follow branches)
+.claude/settings.local.json
+
+# Audit logs (runtime output, not source)
+audit_logs/
+audit_logs/*.jsonl
+
+# Microsoft Office lock/temp files (~$foo.docx appears while the file is open)
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.xls
+
+# Terraform local state and secrets — also enforced by infra/aws/.gitignore
+infra/aws/terraform.tfstate
+infra/aws/terraform.tfstate.backup
+infra/aws/.terraform/
+infra/aws/deploy-key.pem
 
 # Python cache
 __pycache__/
