@@ -23,9 +23,61 @@ class ModelInfo(BaseModel):
     last_training: str = Field(..., description="Last training date")
 
 
+class BatchPredictionItem(BaseModel):
+    """Single classification result inside a batch response."""
+
+    label: ClassificationLabel = Field(..., description="Predicted classification")
+    probability: float = Field(
+        ...,
+        ge=0.0,
+        le=1.0,
+        description="Confidence score for the prediction",
+    )
+
+
+class BatchPredictionResponse(BaseModel):
+    """
+    Response model for batched text prediction.
+
+    `items` is index-aligned with the `texts` array from the request — the
+    i-th result corresponds to the i-th text. `processing_time` is wall-clock
+    for the whole batch (not per-item); divide by `batch_size` for amortized.
+    """
+
+    items: list[BatchPredictionItem] = Field(
+        ..., description="Classification results, index-aligned with request.texts"
+    )
+    batch_size: int = Field(..., ge=1, description="Number of items in this batch")
+    processing_time: float = Field(
+        ..., ge=0.0, description="Total wall-clock time for the whole batch, in seconds"
+    )
+    model_info: ModelInfo = Field(..., description="Information about the model used")
+
+    model_config = {
+        "protected_namespaces": (),
+        "json_schema_extra": {
+            "example": {
+                "items": [
+                    {"label": "ham", "probability": 0.99},
+                    {"label": "spam", "probability": 0.97},
+                    {"label": "phishing", "probability": 0.94},
+                ],
+                "batch_size": 3,
+                "processing_time": 0.032,
+                "model_info": {
+                    "name": "OTS_mBERT",
+                    "version": "bert-base-multilingual-cased",
+                    "author": "TelecomsXChange (TCXC)",
+                    "last_training": "2024-03-20",
+                },
+            }
+        },
+    }
+
+
 class PredictionResponse(BaseModel):
     """Response model for text prediction."""
-    
+
     label: ClassificationLabel = Field(..., description="Predicted classification")
     probability: float = Field(
         ...,

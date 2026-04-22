@@ -12,6 +12,59 @@ class ModelType(str, Enum):
     OTS_MBERT = "ots-mbert"
 
 
+class BatchPredictionRequest(BaseModel):
+    """
+    Request model for batched text prediction.
+
+    Use this endpoint when you can batch messages client-side (e.g. from an
+    SMPP proxy collecting messages over a short window). A single HTTP request
+    classifies all provided texts in one GPU forward pass, eliminating the
+    server-side batch-wait penalty and the client-side connection pool
+    pressure that comes with one HTTP request per message.
+    """
+
+    texts: list[str] = Field(
+        ...,
+        min_length=1,
+        max_length=256,
+        description=(
+            "Batch of texts to classify. Hard cap of 256 to keep a single "
+            "GPU pass bounded; tune max_batch_size upstream if you want to "
+            "raise this."
+        ),
+    )
+    model: ModelType = Field(
+        default=ModelType.OTS_MBERT,
+        description="Model to use. Applied to every text in the batch.",
+    )
+
+    @field_validator("texts")
+    @classmethod
+    def validate_texts(cls, v):
+        """Reject empty strings and trim whitespace."""
+        cleaned = []
+        for i, text in enumerate(v):
+            if not text or not text.strip():
+                raise ValueError(f"texts[{i}] cannot be empty or whitespace-only")
+            if len(text) > 512:
+                raise ValueError(f"texts[{i}] exceeds 512 character limit")
+            cleaned.append(text.strip())
+        return cleaned
+
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "texts": [
+                    "Hey, want to grab lunch tomorrow?",
+                    "FREE iPhone! Click http://scam.ly/win",
+                    "URGENT verify your account http://fake-bank.com",
+                ],
+                "model": "ots-mbert",
+            }
+        }
+    }
+
+
 class PredictionRequest(BaseModel):
     """Request model for text prediction."""
     
