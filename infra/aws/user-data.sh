@@ -103,9 +103,72 @@ new_payload_block = (
 if old_payload_block in h:
     h = h.replace(old_payload_block, new_payload_block)
 
+# Inject mobile + a11y performance CSS right before </style>.
+# Addresses: iOS Safari scroll jank from background-attachment:fixed,
+# backdrop-filter GPU cost on phones, stuck-hover on touch, and
+# prefers-reduced-motion accessibility. No-op if already present
+# (so a rebuilt image with these baked in won't be double-injected).
+if 'prefers-reduced-motion' not in h:
+    mobile_perf_css = (
+        "\n"
+        "        /* Mobile + a11y perf overrides (injected at bootstrap) */\n"
+        "        @media (prefers-reduced-motion: reduce) {\n"
+        "            *, *::before, *::after {\n"
+        "                animation-duration: 0.01ms !important;\n"
+        "                animation-iteration-count: 1 !important;\n"
+        "                transition-duration: 0.01ms !important;\n"
+        "                scroll-behavior: auto !important;\n"
+        "            }\n"
+        "        }\n"
+        "        @media (hover: none) {\n"
+        "            .form-textarea:hover,\n"
+        "            .analysis-panel:hover,\n"
+        "            .results-panel:hover,\n"
+        "            .sample-btn:hover,\n"
+        "            .metric-card:hover,\n"
+        "            .curl-code:hover {\n"
+        "                box-shadow: inherit;\n"
+        "                background: inherit;\n"
+        "                border-color: inherit;\n"
+        "                transform: none;\n"
+        "            }\n"
+        "        }\n"
+        "        @media (max-width: 768px) {\n"
+        "            body { background-attachment: scroll; }\n"
+        "            .analysis-panel,\n"
+        "            .results-panel {\n"
+        "                backdrop-filter: none;\n"
+        "                -webkit-backdrop-filter: none;\n"
+        "                box-shadow: var(--shadow-sm);\n"
+        "            }\n"
+        "            .results-panel { min-height: auto; }\n"
+        "            .metric-card,\n"
+        "            .sample-btn { box-shadow: none; }\n"
+        "        }\n"
+        "    "
+    )
+    h = h.replace('    </style>\n</head>', mobile_perf_css + '</style>\n</head>', 1)
+
+# Also bump the textarea font-size to 16px to stop iOS zoom-on-focus.
+h = h.replace(
+    '.form-textarea {\n            width: 100%;\n            min-height: 140px;\n            padding: 1rem;\n            border: 1px solid var(--rh-border);\n            border-radius: 10px;\n            font-size: 0.875rem;',
+    '.form-textarea {\n            width: 100%;\n            min-height: 140px;\n            padding: 1rem;\n            border: 1px solid var(--rh-border);\n            border-radius: 10px;\n            font-size: 16px;',
+    1,
+)
+
+# Preconnect to font CDNs for faster first paint on mobile networks.
+if 'rel="preconnect" href="https://fonts.gstatic.com"' not in h:
+    h = h.replace(
+        '<link href="https://fonts.googleapis.com/css2',
+        '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+        '    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+        '    <link href="https://fonts.googleapis.com/css2',
+        1,
+    )
+
 if h != h_original:
     fp.write_text(h)
-    print("index.html: patched (smart URL + initCurlSample + curl template + payload escape)")
+    print("index.html: patched (URL + IIFE + curl + payload + mobile perf)")
 else:
     print("index.html: unchanged (likely already fixed upstream)")
 

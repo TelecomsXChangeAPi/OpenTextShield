@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenTextShield Frontend | Text Security Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Inter:wght@500;600;700;800&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -1870,7 +1872,8 @@
             padding: 1rem;
             border: 1px solid var(--rh-border);
             border-radius: 10px;
-            font-size: 0.875rem;
+            /* 16px min prevents iOS Safari from auto-zooming on focus */
+            font-size: 16px;
             font-family: 'Roboto Mono', monospace;
             background: var(--rh-bg);
             color: var(--rh-text-primary);
@@ -2905,6 +2908,66 @@
             to {
                 transform: translateY(0);
                 opacity: 1;
+            }
+        }
+
+        /* =========================================================
+         * Mobile + accessibility performance overrides.
+         * Kept at the bottom so they win the cascade without
+         * touching the original desktop styling above.
+         * ========================================================= */
+
+        /* Respect OS-level reduced-motion preference: kill every
+         * animation + transition. Essential for accessibility AND
+         * gives low-end devices an instant perf win when the user
+         * has the setting enabled. */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Touch devices: hover state sticks until next tap, which
+         * causes "stuck animation" on mobile. Strip hover-only
+         * repaints on any device without a true hover pointer. */
+        @media (hover: none) {
+            .form-textarea:hover,
+            .analysis-panel:hover,
+            .results-panel:hover,
+            .sample-btn:hover,
+            .metric-card:hover,
+            .curl-code:hover {
+                box-shadow: inherit;
+                background: inherit;
+                border-color: inherit;
+                transform: none;
+            }
+        }
+
+        /* Mobile GPU offload: strip the expensive compositing work
+         * that pins the framerate on phones. Desktop keeps the
+         * frosted-glass look; phones get a solid background and
+         * fixed-position-scroll that Safari can actually hit 60fps. */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+            }
+            .analysis-panel,
+            .results-panel {
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                box-shadow: var(--shadow-sm);
+            }
+            .results-panel {
+                min-height: auto;
+            }
+            /* Reduce paint cost of big shadows during scroll */
+            .metric-card,
+            .sample-btn {
+                box-shadow: none;
             }
         }
     </style>
