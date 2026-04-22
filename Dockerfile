@@ -27,8 +27,9 @@ ENV PYTHONUNBUFFERED=1
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Runtime environment already includes curl and ca-certificates
-# No additional system packages needed
+# Runtime: python:3.12-slim-bookworm ships python + ca-certificates but
+# NOT curl. The HEALTHCHECK below uses python urllib to avoid needing a
+# separate apt install (saves ~10 MB + one layer).
 
 # Create non-root user for security
 RUN groupadd -r ots && useradd -r -g ots -d /home/ots -s /bin/bash ots && \
@@ -57,7 +58,7 @@ EXPOSE 8002 8080
 
 # Health check with improved security
 HEALTHCHECK --interval=15s --timeout=10s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost:8002/health || exit 1
+    CMD python3 -c "import urllib.request; urllib.request.urlopen('http://localhost:8002/health', timeout=5)" || exit 1
 
 # Run the application
 CMD ["bash", "/home/ots/OpenTextShield/scripts/start-docker.sh"]
