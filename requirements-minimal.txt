@@ -10,7 +10,7 @@ pydantic-settings>=2.0.0
 # ML dependencies
 # torch 2.8+ for CVE-2025-3730; transformers stays on 4.53.x until 5.x stable
 torch>=2.8.0,<2.9
-transformers>=4.53.0,<5.0
+transformers>=5.0.0rc3,<5.0
 numpy>=2.4.2
 
 # Additional dependencies
