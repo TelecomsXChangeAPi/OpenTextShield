@@ -152,6 +152,7 @@ var stats = {
 	messages_forwarded: 0,
 	messages_rejected: 0,
 	messages_dropped: 0,
+	messages_skipped_unsupported_encoding: 0,
 	dlrs_forwarded: 0,
 	classification_errors: 0,
 	active_sessions: 0,
@@ -342,6 +343,38 @@ async function classifyMessage(text) {
 // Message text extraction + UDH handling
 // (ref: proxy_async.js:759-796 get_log_text + 1599-1618 UDH)
 // ─────────────────────────────────────────────
+
+// Detect inbound PDUs whose payload the classifier cannot read with high
+// confidence. Returns null when the message is classifiable, or a short
+// reason string when it should be skipped and forwarded fail-open.
+//
+// Why skip-and-forward instead of trying harder:
+//   - GSM 7-bit national language shift tables (UDH IEI 0x24/0x25) for
+//     language codes >= 0x04 (Bengali, Gujarati, Hindi, Kannada, Malayalam,
+//     Oriya, Punjabi, Tamil, Telugu, Urdu) require per-language 128-char
+//     translation tables that the vendored node-smpp does not ship. The
+//     forward path round-trips byte-equivalent through the default GSM
+//     coder (verified empirically), so the proxy CAN forward these
+//     correctly — it just can't decode the text for ML inference.
+//   - data_coding 0x04 (binary) and 0x09 (pictogram) carry non-textual
+//     payloads. Running spam classification on those is meaningless.
+//
+// Operators get a counter (messages_skipped_unsupported_encoding) and a
+// structured log entry for each skipped message so volume is observable.
+function unclassifiableReason(pdu) {
+	if (pdu.short_message && Array.isArray(pdu.short_message.udh)) {
+		for (const ie of pdu.short_message.udh) {
+			if ((ie[0] === 0x24 || ie[0] === 0x25) && ie.length >= 3 && ie[2] >= 0x04) {
+				const kind = ie[0] === 0x24 ? 'single' : 'locking'
+				return `national-shift-${kind}-lang-0x${ie[2].toString(16).padStart(2,'0')}`
+			}
+		}
+	}
+	const dc = (pdu.data_coding || 0) & 0x0F
+	if (dc === 0x04) return 'data-coding-binary'
+	if (dc === 0x09) return 'data-coding-pictogram'
+	return null
+}
 
 // Extract the human-readable message text for classification.
 //
@@ -887,6 +920,22 @@ let server = smpp.createServer(function(isession) {
 		let text = getMessageText(pdu)
 		if (text == '') {
 			llog('submit_sm', {dst: pdu.destination_addr}, 'Empty message, forwarding as ham')
+			await forwardToUpstream(isession, pdu)
+			stats.messages_forwarded++
+			return
+		}
+
+		// 1a. If the encoding isn't reliably readable by the classifier,
+		// fail open — forward the original PDU verbatim and log it so
+		// operators can see how much traffic falls into this bucket.
+		const skipReason = unclassifiableReason(pdu)
+		if (skipReason) {
+			llog('submit_sm', {
+				reason: skipReason,
+				data_coding: pdu.data_coding,
+				dst: pdu.destination_addr
+			}, 'Classification skipped (unsupported encoding) - forwarding fail-open')
+			stats.messages_skipped_unsupported_encoding++
 			await forwardToUpstream(isession, pdu)
 			stats.messages_forwarded++
 			return

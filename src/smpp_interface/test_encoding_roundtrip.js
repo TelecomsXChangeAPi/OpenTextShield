@@ -44,6 +44,21 @@ function dataCodingToCharset(dc) {
 	}
 }
 
+function unclassifiableReason(pdu) {
+	if (pdu.short_message && Array.isArray(pdu.short_message.udh)) {
+		for (const ie of pdu.short_message.udh) {
+			if ((ie[0] === 0x24 || ie[0] === 0x25) && ie.length >= 3 && ie[2] >= 0x04) {
+				const kind = ie[0] === 0x24 ? 'single' : 'locking'
+				return `national-shift-${kind}-lang-0x${ie[2].toString(16).padStart(2,'0')}`
+			}
+		}
+	}
+	const dc = (pdu.data_coding || 0) & 0x0F
+	if (dc === 0x04) return 'data-coding-binary'
+	if (dc === 0x09) return 'data-coding-pictogram'
+	return null
+}
+
 function getMessageText(pdu) {
 	let raw = null
 	if (pdu.short_message != undefined && pdu.short_message.message != undefined) {
@@ -327,6 +342,87 @@ console.log('\n=== Long message via message_payload TLV ===')
 	const upstreamBuf = serializeUpstream(buildUpstreamPdu(inbound))
 	const upstream = decodeAtUpstream(upstreamBuf)
 	eq(upstream.message_payload.message, longText, 'upstream receives full message_payload')
+}
+
+console.log('\n=== Skip-classify: GSM national language shift (Hindi, lang 0x06) ===')
+{
+	// Inbound: IEI 0x25 (locking shift), IEDL 0x01, lang 0x06 (Hindi)
+	const udh = Buffer.from([0x03, 0x25, 0x01, 0x06])
+	const body = Buffer.from([0x68, 0x65, 0x6C, 0x6C, 0x6F, 0x1B, 0x65])
+	const fullSm = Buffer.concat([udh, body])
+	const inbound = makeInboundPdu({
+		source_addr: '12345', destination_addr: '67890',
+		data_coding: 0,
+		esm_class: 0x40,
+		short_message: fullSm
+	})
+	const reason = unclassifiableReason(inbound)
+	eq(reason, 'national-shift-locking-lang-0x06', 'Hindi locking shift triggers skip-classify')
+
+	// Forward path must remain byte-equivalent
+	const upstreamBuf = serializeUpstream(buildUpstreamPdu(inbound))
+	const upstream = decodeAtUpstream(upstreamBuf)
+	eq(Array.isArray(upstream.short_message.udh), true, 'UDH still present at upstream')
+	eq(upstream.short_message.udh[0][0], 0x25, 'IEI 0x25 preserved')
+	eq(upstream.short_message.udh[0][2], 0x06, 'language code 0x06 preserved')
+}
+
+console.log('\n=== Skip-classify: GSM national language shift (Tamil, lang 0x0B) ===')
+{
+	const udh = Buffer.from([0x03, 0x24, 0x01, 0x0B]) // single shift, Tamil
+	const body = Buffer.from('hello')
+	const fullSm = Buffer.concat([udh, body])
+	const inbound = makeInboundPdu({
+		source_addr: '12345', destination_addr: '67890',
+		data_coding: 0, esm_class: 0x40,
+		short_message: fullSm
+	})
+	eq(unclassifiableReason(inbound), 'national-shift-single-lang-0x0b', 'Tamil single shift triggers skip-classify')
+}
+
+console.log('\n=== Classify (NOT skipped): Turkish locking shift (lang 0x01) ===')
+{
+	const udh = Buffer.from([0x03, 0x25, 0x01, 0x01]) // locking shift, Turkish
+	const body = Buffer.from('Merhaba')
+	const fullSm = Buffer.concat([udh, body])
+	const inbound = makeInboundPdu({
+		source_addr: '12345', destination_addr: '67890',
+		data_coding: 0, esm_class: 0x40,
+		short_message: fullSm
+	})
+	eq(unclassifiableReason(inbound), null, 'Turkish (lang 0x01) is supported and NOT skipped')
+}
+
+console.log('\n=== Skip-classify: data_coding binary (0x04) ===')
+{
+	const inbound = makeInboundPdu({
+		source_addr: '12345', destination_addr: '67890',
+		data_coding: 0x04,
+		short_message: Buffer.from([0xDE, 0xAD, 0xBE, 0xEF])
+	})
+	eq(unclassifiableReason(inbound), 'data-coding-binary', 'Binary data_coding triggers skip-classify')
+}
+
+console.log('\n=== Skip-classify: data_coding pictogram (0x09) ===')
+{
+	const inbound = makeInboundPdu({
+		source_addr: '12345', destination_addr: '67890',
+		data_coding: 0x09,
+		short_message: Buffer.from([0x00, 0x01, 0x02, 0x03])
+	})
+	eq(unclassifiableReason(inbound), 'data-coding-pictogram', 'Pictogram data_coding triggers skip-classify')
+}
+
+console.log('\n=== Classify (NOT skipped): plain ASCII / Latin-1 / UCS-2 ===')
+{
+	const ascii = makeInboundPdu({source_addr: '1', destination_addr: '2', data_coding: 0, short_message: 'hi'})
+	eq(unclassifiableReason(ascii), null, 'Plain ASCII not skipped')
+
+	const latin1 = makeInboundPdu({source_addr: '1', destination_addr: '2', data_coding: 3, short_message: 'café'})
+	eq(unclassifiableReason(latin1), null, 'Latin-1 not skipped')
+
+	const ucs2 = makeInboundPdu({source_addr: '1', destination_addr: '2', data_coding: 8, short_message: 'مرحبا'})
+	eq(unclassifiableReason(ucs2), null, 'UCS-2 (Arabic) not skipped')
 }
 
 // ─────────────────────────────────────────────
