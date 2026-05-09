@@ -344,6 +344,149 @@ console.log('\n=== Long message via message_payload TLV ===')
 	eq(upstream.message_payload.message, longText, 'upstream receives full message_payload')
 }
 
+console.log('\n=== Belgian market: French (UCS-2) ===')
+{
+	// Real-world Belgian-French SMS: full set of accented chars including
+	// circumflex (ê, î, ô, û) and ligatures (œ) that are NOT in GSM 7-bit.
+	const frenchText = 'Cher client, votre rendez-vous chez le médecin est à 14h. À bientôt — l\'équipe de l\'hôpital. Cœur sain, vœux sincères.'
+	const inbound = makeInboundPdu({
+		source_addr: 'PROXIMUS', destination_addr: '32475123456',
+		data_coding: 8,
+		short_message: frenchText
+	})
+	eq(getMessageText(inbound), frenchText, 'classifier sees French text with circumflex+ligatures intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, frenchText, 'upstream receives French text byte-equivalent (UCS-2)')
+}
+
+console.log('\n=== Belgian market: French (Latin-1 / data_coding 3) ===')
+{
+	// Many Belgian operators send French via Latin-1 instead of UCS-2 to halve
+	// the byte cost when the message has accented chars but no €. Latin-1
+	// covers the full circumflex set (â ê î ô û) plus ç and the standard
+	// Belgian-French diacritics. Note: em-dashes / smart-quotes are NOT in
+	// Latin-1 (those need UCS-2) — operator-side sanitization replaces them
+	// with hyphens / straight-quotes before encoding.
+	const frenchText = 'Reservation confirmee a 19h00. Hotel Cote Belge - bienvenue. Cher client, votre cafe est pret.'
+	// (Plain ASCII subset — proves Latin-1 path doesn't introduce drift)
+	const inbound = makeInboundPdu({
+		source_addr: 'BASE', destination_addr: '32498765432',
+		data_coding: 3,
+		short_message: frenchText
+	})
+	eq(getMessageText(inbound), frenchText, 'classifier sees French Latin-1 text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, frenchText, 'upstream receives French Latin-1 byte-equivalent')
+	eq(upstream.data_coding, 3, 'data_coding 3 (Latin-1) preserved')
+
+	// Now verify the full Latin-1 char set actually survives — same path,
+	// realistic content with ç / ê / ô / û / é / è / à
+	const frenchAccented = 'Réservation confirmée à 19h00. Hôtel Côte Belge: bienvenue. Forêt près du château.'
+	const inbound2 = makeInboundPdu({
+		source_addr: 'BASE', destination_addr: '32498765432',
+		data_coding: 3,
+		short_message: frenchAccented
+	})
+	eq(getMessageText(inbound2), frenchAccented, 'classifier sees Latin-1 accented French intact (â ê î ô û ç é è à)')
+	const upstream2 = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound2)))
+	eq(upstream2.short_message.message, frenchAccented, 'upstream receives Latin-1 accented French byte-equivalent')
+}
+
+console.log('\n=== Belgian market: Dutch / Flemish (default GSM 7-bit, ASCII-safe) ===')
+{
+	// Belgian operators send most Dutch SMS as plain ASCII — diacritics are
+	// rare in transactional SMS and em-dashes/smart-quotes get sanitized to
+	// hyphens/straight-quotes upstream of the encoder. Verify the proxy
+	// preserves the standard case end-to-end.
+	const dutchText = 'Beste klant, uw afspraak bij de tandarts is morgen om 10u30. Tot ziens - Telenet.'
+	const inbound = makeInboundPdu({
+		source_addr: 'TELENET', destination_addr: '32487654321',
+		data_coding: 0,
+		short_message: dutchText
+	})
+	eq(getMessageText(inbound), dutchText, 'classifier sees Dutch text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, dutchText, 'upstream receives Dutch byte-equivalent (GSM 7-bit)')
+}
+
+console.log('\n=== Belgian market: Dutch with diacritics (UCS-2) ===')
+{
+	// Loanwords and proper nouns: hôtel, café, Pokémon, etc.
+	const dutchText = 'Mijn favoriete café in Brugge serveert een geweldige crème brûlée.'
+	const inbound = makeInboundPdu({
+		source_addr: 'PROXIMUS', destination_addr: '32475999111',
+		data_coding: 8,
+		short_message: dutchText
+	})
+	eq(getMessageText(inbound), dutchText, 'classifier sees Dutch with diacritics intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, dutchText, 'upstream receives Dutch+diacritics byte-equivalent')
+}
+
+console.log('\n=== Belgian market: German (default GSM 7-bit, Eastern Cantons) ===')
+{
+	// German speakers in eastern Belgium (Eupen, Sankt Vith). All German
+	// special chars (ä ö ü ß and capitals) ARE in GSM default — verify.
+	const germanText = 'Sehr geehrte Frau Müller, Ihre Bestellung über 49,90 EUR ist eingegangen. Größe: groß. Schöne Grüße.'
+	const inbound = makeInboundPdu({
+		source_addr: 'ORANGE', destination_addr: '32499888777',
+		data_coding: 0,
+		short_message: germanText
+	})
+	eq(getMessageText(inbound), germanText, 'classifier sees German text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, germanText, 'upstream receives German GSM 7-bit byte-equivalent')
+}
+
+console.log('\n=== Belgian market: French phishing example (real-world spam shape) ===')
+{
+	// Classifier-quality canary: a typical FR phishing SMS must reach the
+	// classifier with all chars intact so mBERT can score it.
+	const phishText = 'URGENT: Votre colis bpost est bloqué à la douane. Réglez 1,99€ avant minuit: https://bpost-suivi.example/x?id=8472'
+	const inbound = makeInboundPdu({
+		source_addr: 'bpost', destination_addr: '32472112233',
+		data_coding: 8,
+		short_message: phishText
+	})
+	eq(getMessageText(inbound), phishText, 'classifier sees French phishing text byte-equivalent')
+	eq(unclassifiableReason(inbound), null, 'French phishing is classifiable (NOT skipped)')
+}
+
+console.log('\n=== Belgian market: euro symbol via GSM ext table (no ç) ===')
+{
+	// € is in the GSM extension table (ESC + 'e' → 0x1B 0x65). The default
+	// GSM alphabet only has uppercase Ç — lowercase ç is not present, so
+	// transactional SMS that needs both ç and € forces UCS-2 (next test).
+	// This case covers banking SMS in English/Dutch where only € appears.
+	const text = 'Belfius: payment of 250€ received. Balance: 1347.82€. Code [4521] valid 5 min.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Belfius', destination_addr: '32488123456',
+		data_coding: 0,
+		short_message: text
+	})
+	eq(getMessageText(inbound), text, 'classifier sees euro-bearing text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, text, 'upstream receives GSM ext table euro+brackets byte-equivalent')
+}
+
+console.log('\n=== Belgian market: French banking SMS (€ + ç → must be UCS-2) ===')
+{
+	// € + ç together cannot be expressed in default GSM 7-bit (lowercase ç
+	// is not in the alphabet) NOR Latin-1 (no € — that requires Latin-9).
+	// UCS-2 is the only encoding that carries both losslessly, which is
+	// what Belgian banks use for French-language transactional SMS.
+	const text = 'Belfius: virement de 250€ reçu. Solde: 1.347,82€. Code [4521] valable 5 min.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Belfius', destination_addr: '32488123456',
+		data_coding: 8,
+		short_message: text
+	})
+	eq(getMessageText(inbound), text, 'classifier sees French banking text intact (UCS-2)')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, text, 'upstream receives French banking byte-equivalent')
+	eq(upstream.data_coding, 8, 'data_coding 8 (UCS-2) preserved')
+}
+
 console.log('\n=== Skip-classify: GSM national language shift (Hindi, lang 0x06) ===')
 {
 	// Inbound: IEI 0x25 (locking shift), IEDL 0x01, lang 0x06 (Hindi)
