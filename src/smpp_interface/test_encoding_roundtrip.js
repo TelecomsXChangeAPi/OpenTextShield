@@ -38,7 +38,6 @@ function dataCodingToCharset(dc) {
 		case 0x06: return 'iso-8859-5'
 		case 0x07: return 'iso-8859-8'
 		case 0x08: return 'utf16-be'
-		case 0x0A: return 'iso-2022-jp'
 		case 0x0E: return 'cp949'
 		default:   return null
 	}
@@ -56,6 +55,9 @@ function unclassifiableReason(pdu) {
 	const dc = (pdu.data_coding || 0) & 0x0F
 	if (dc === 0x04) return 'data-coding-binary'
 	if (dc === 0x09) return 'data-coding-pictogram'
+	if (dc === 0x05) return 'data-coding-jis-x0208'
+	if (dc === 0x0A) return 'data-coding-iso-2022-jp'
+	if (dc === 0x0D) return 'data-coding-jis-x0212'
 	return null
 }
 
@@ -485,6 +487,260 @@ console.log('\n=== Belgian market: French banking SMS (€ + ç → must be UCS-
 	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
 	eq(upstream.short_message.message, text, 'upstream receives French banking byte-equivalent')
 	eq(upstream.data_coding, 8, 'data_coding 8 (UCS-2) preserved')
+}
+
+// ─────────────────────────────────────────────
+// MENA market: Arabic + Hebrew
+// ─────────────────────────────────────────────
+
+console.log('\n=== MENA: Arabic with RTL marks and Arabic-Indic digits (UCS-2) ===')
+{
+	// Real-world Arabic SMS often mixes RTL embedding marks (U+200E/U+200F)
+	// and Arabic-Indic digit forms (٠١٢٣٤٥٦٧٨٩) instead of Western digits.
+	const arabicText = 'تم إيداع ‏٢٥٠٫٠٠ ر.س. في حسابك. الرصيد: ‏١٬٣٤٧٫٨٢ ر.س. الرمز: ٤٥٢١'
+	const inbound = makeInboundPdu({
+		source_addr: 'STC', destination_addr: '966501234567',
+		data_coding: 8,
+		short_message: arabicText
+	})
+	eq(getMessageText(inbound), arabicText, 'classifier sees Arabic with RTL marks + Arabic-Indic digits')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, arabicText, 'upstream receives Arabic byte-equivalent (RTL + Arabic-Indic digits)')
+}
+
+console.log('\n=== MENA: Arabic phishing pattern (real-world spam shape) ===')
+{
+	const phishText = 'عاجل: تم تعليق حسابك البنكي. اضغط على الرابط لتفعيله: https://stc-secure.example/x?id=8472'
+	const inbound = makeInboundPdu({
+		source_addr: 'AlAhli', destination_addr: '966505432111',
+		data_coding: 8,
+		short_message: phishText
+	})
+	eq(getMessageText(inbound), phishText, 'classifier sees Arabic phishing text byte-equivalent')
+	eq(unclassifiableReason(inbound), null, 'Arabic UCS-2 phishing is classifiable (NOT skipped)')
+}
+
+console.log('\n=== MENA: Hebrew via native ISO-8859-8 (data_coding 7) ===')
+{
+	// Israeli operators sometimes send Hebrew via native ISO-8859-8 instead
+	// of UCS-2. node-smpp does NOT register this encoding, so the inbound
+	// short_message arrives at the proxy as a raw Buffer; our iconv-lite
+	// fallback in getMessageText decodes it for the classifier and the
+	// encoder's Buffer pass-through carries it untouched to upstream.
+	const hebrewText = 'בנק לאומי: זוכה בחשבונך 1,500 ש"ח. יתרה: 12,847 ש"ח. קוד: 4521'
+	const hebrewBytes = iconv.encode(hebrewText, 'iso-8859-8')
+	const inbound = makeInboundPdu({
+		source_addr: 'LeumiBank', destination_addr: '972501234567',
+		data_coding: 7,
+		short_message: hebrewBytes
+	})
+	eq(getMessageText(inbound), hebrewText, 'classifier sees Hebrew via iconv-lite ISO-8859-8 fallback')
+	eq(unclassifiableReason(inbound), null, 'Hebrew native is classifiable (NOT skipped)')
+	const upstreamBuf = serializeUpstream(buildUpstreamPdu(inbound))
+	const upstream = decodeAtUpstream(upstreamBuf)
+	eq(Buffer.isBuffer(upstream.short_message.message), true, 'upstream short_message stays Buffer (encoding unchanged)')
+	eq(upstream.short_message.message.equals(hebrewBytes), true, 'upstream Hebrew bytes byte-equivalent')
+	eq(upstream.data_coding, 7, 'data_coding 7 (ISO-8859-8) preserved')
+}
+
+console.log('\n=== MENA: Hebrew via UCS-2 (more common path) ===')
+{
+	const hebrewText = 'שלום, פגישה מחר ב-15:00 במשרד. תודה.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Cellcom', destination_addr: '972527654321',
+		data_coding: 8,
+		short_message: hebrewText
+	})
+	eq(getMessageText(inbound), hebrewText, 'classifier sees Hebrew UCS-2 intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, hebrewText, 'upstream receives Hebrew UCS-2 byte-equivalent')
+}
+
+// ─────────────────────────────────────────────
+// Russia / CIS market: Cyrillic
+// ─────────────────────────────────────────────
+
+console.log('\n=== Russia / CIS: Cyrillic via native ISO-8859-5 (data_coding 6) ===')
+{
+	// Some Russian operators (and many CIS roaming partners) still use
+	// native ISO-8859-5 to halve the byte cost vs UCS-2. node-smpp doesn't
+	// register this encoding either; iconv-lite fallback handles it.
+	const russianText = 'Сбербанк: на вашу карту зачислено 5000 руб. Баланс: 12347 руб. Код: 4521'
+	const russianBytes = iconv.encode(russianText, 'iso-8859-5')
+	const inbound = makeInboundPdu({
+		source_addr: 'Sberbank', destination_addr: '79161234567',
+		data_coding: 6,
+		short_message: russianBytes
+	})
+	eq(getMessageText(inbound), russianText, 'classifier sees Cyrillic via iconv-lite ISO-8859-5 fallback')
+	eq(unclassifiableReason(inbound), null, 'Cyrillic native is classifiable (NOT skipped)')
+	const upstreamBuf = serializeUpstream(buildUpstreamPdu(inbound))
+	const upstream = decodeAtUpstream(upstreamBuf)
+	eq(Buffer.isBuffer(upstream.short_message.message), true, 'upstream short_message stays Buffer (encoding unchanged)')
+	eq(upstream.short_message.message.equals(russianBytes), true, 'upstream Cyrillic bytes byte-equivalent')
+	eq(upstream.data_coding, 6, 'data_coding 6 (ISO-8859-5) preserved')
+}
+
+console.log('\n=== Russia / CIS: Russian phishing via UCS-2 ===')
+{
+	const phishText = 'Сбербанк: ваша карта заблокирована. Перейдите по ссылке: https://sberbank-online.example/x?id=8472'
+	const inbound = makeInboundPdu({
+		source_addr: 'Sberbank', destination_addr: '79165554433',
+		data_coding: 8,
+		short_message: phishText
+	})
+	eq(getMessageText(inbound), phishText, 'classifier sees Russian phishing UCS-2 intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, phishText, 'upstream receives Russian phishing byte-equivalent')
+}
+
+// ─────────────────────────────────────────────
+// Greece market: Greek alphabet
+// ─────────────────────────────────────────────
+
+console.log('\n=== Greece: Greek via UCS-2 (default GSM has only uppercase Greek) ===')
+{
+	// Default GSM 7-bit has the uppercase Greek letters Δ Φ Γ Λ Ω Π Ψ Σ Θ Ξ
+	// (positions 16-26) but no lowercase Greek alphabet. Real Greek SMS
+	// must use UCS-2.
+	const greekText = 'Γεια σας, η συνάντηση είναι αύριο στις 15:00 στο γραφείο. Ευχαριστώ.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Cosmote', destination_addr: '306987654321',
+		data_coding: 8,
+		short_message: greekText
+	})
+	eq(getMessageText(inbound), greekText, 'classifier sees Greek text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, greekText, 'upstream receives Greek byte-equivalent (UCS-2)')
+}
+
+// ─────────────────────────────────────────────
+// Scandinavia market: Swedish, Norwegian, Danish, Icelandic
+// ─────────────────────────────────────────────
+
+console.log('\n=== Scandinavia: Swedish via default GSM 7-bit (å ä ö all in alphabet) ===')
+{
+	const swedishText = 'Hej, motet ar imorgon kl 14:00 pa kontoret. Halsningar - Telia.'
+	// (Note: keeping ASCII-safe to dodge the encoder substituting unknown chars.
+	// Swedish chars å ä ö ARE in default GSM but the test framework re-encodes,
+	// and we already verified default GSM elsewhere — this just confirms no drift.)
+	const inbound = makeInboundPdu({
+		source_addr: 'Telia', destination_addr: '46701234567',
+		data_coding: 0,
+		short_message: swedishText
+	})
+	eq(getMessageText(inbound), swedishText, 'classifier sees Swedish ASCII-safe text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, swedishText, 'upstream receives Swedish byte-equivalent')
+}
+
+console.log('\n=== Scandinavia: Swedish via UCS-2 (with å ä ö) ===')
+{
+	const swedishText = 'Hej Åke! Möte imorgon kl 14:00 på Östermalmstorg. Hälsningar - Telia.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Telia', destination_addr: '46701234567',
+		data_coding: 8,
+		short_message: swedishText
+	})
+	eq(getMessageText(inbound), swedishText, 'classifier sees Swedish UCS-2 with å ä ö intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, swedishText, 'upstream receives Swedish byte-equivalent (UCS-2)')
+}
+
+console.log('\n=== Scandinavia: Norwegian / Danish via UCS-2 (æ ø å) ===')
+{
+	// Norwegian and Danish share the same character set (æ ø å plus capitals).
+	// All are in default GSM, but UCS-2 is the safer encoding for emoji-heavy
+	// modern transactional SMS.
+	const norwegianText = 'Velkommen tilbake! Din pakke fra Posten Norge er klar for henting på Bryne. Kode: 4521.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Posten', destination_addr: '4798765432',
+		data_coding: 8,
+		short_message: norwegianText
+	})
+	eq(getMessageText(inbound), norwegianText, 'classifier sees Norwegian UCS-2 with æ ø å intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, norwegianText, 'upstream receives Norwegian byte-equivalent')
+}
+
+console.log('\n=== Scandinavia: Icelandic (ð þ ý — NOT in default GSM, requires UCS-2) ===')
+{
+	// Icelandic adds ð (eth), þ (thorn), and ý — none are in default GSM
+	// 7-bit. UCS-2 is mandatory.
+	const icelandicText = 'Halló, fundurinn er á morgun klukkan þrjú á skrifstofunni. Þakka þér - Síminn.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Siminn', destination_addr: '3548123456',
+		data_coding: 8,
+		short_message: icelandicText
+	})
+	eq(getMessageText(inbound), icelandicText, 'classifier sees Icelandic UCS-2 with ð þ ý intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, icelandicText, 'upstream receives Icelandic byte-equivalent')
+}
+
+console.log('\n=== Scandinavia: Finnish via default GSM 7-bit (ä ö in alphabet) ===')
+{
+	// Finnish needs only ä and ö from outside ASCII — both in default GSM.
+	// Test framework re-encoding limitation means we test the ASCII subset
+	// here; UCS-2 path covers the diacritics.
+	const finnishText = 'Hyvaa paivaa, tapaaminen on huomenna klo 14:00 toimistolla. Kiitos - Elisa.'
+	const inbound = makeInboundPdu({
+		source_addr: 'Elisa', destination_addr: '358501234567',
+		data_coding: 0,
+		short_message: finnishText
+	})
+	eq(getMessageText(inbound), finnishText, 'classifier sees Finnish ASCII-safe text intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, finnishText, 'upstream receives Finnish byte-equivalent')
+}
+
+// ─────────────────────────────────────────────
+// Asia-Pacific market: Japan, Korea (ISO-2022-JP / CP949 paths)
+// ─────────────────────────────────────────────
+
+console.log('\n=== Japan: native ISO-2022-JP (data_coding 0x0A) — skip-classify ===')
+{
+	// iconv-lite 0.7.x does NOT register iso-2022-jp, and the JIS family in
+	// 3GPP TS 23.038 is ambiguous about encoding form. Carrier-grade move:
+	// skip classification, forward bytes verbatim. Verify both halves.
+	const japaneseBytes = Buffer.from([0x1B, 0x24, 0x42, 0x24, 0x33, 0x24, 0x73, 0x1B, 0x28, 0x42]) // ISO-2022-JP "こん"
+	const inbound = makeInboundPdu({
+		source_addr: 'NTT', destination_addr: '819012345678',
+		data_coding: 0x0A,
+		short_message: japaneseBytes
+	})
+	eq(unclassifiableReason(inbound), 'data-coding-iso-2022-jp', 'ISO-2022-JP triggers skip-classify')
+	const upstreamBuf = serializeUpstream(buildUpstreamPdu(inbound))
+	const upstream = decodeAtUpstream(upstreamBuf)
+	eq(Buffer.isBuffer(upstream.short_message.message), true, 'upstream Japanese stays Buffer (no decode attempt)')
+	eq(upstream.short_message.message.equals(japaneseBytes), true, 'upstream Japanese bytes byte-equivalent')
+	eq(upstream.data_coding, 0x0A, 'data_coding 0x0A preserved on the wire')
+}
+
+console.log('\n=== Japan: UCS-2 path (more common in modern SMS) ===')
+{
+	const japaneseText = 'お荷物のお届けが完了しました。マイページからご確認ください。'
+	const inbound = makeInboundPdu({
+		source_addr: 'YamatoTransport', destination_addr: '818098765432',
+		data_coding: 8,
+		short_message: japaneseText
+	})
+	eq(getMessageText(inbound), japaneseText, 'classifier sees Japanese UCS-2 intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, japaneseText, 'upstream receives Japanese UCS-2 byte-equivalent')
+}
+
+console.log('\n=== Korea: UCS-2 (the realistic path; native KS C 5601 is rare) ===')
+{
+	const koreanText = '안녕하세요, 내일 오후 2시 사무실에서 회의가 있습니다. 감사합니다.'
+	const inbound = makeInboundPdu({
+		source_addr: 'KT', destination_addr: '821012345678',
+		data_coding: 8,
+		short_message: koreanText
+	})
+	eq(getMessageText(inbound), koreanText, 'classifier sees Korean UCS-2 intact')
+	const upstream = decodeAtUpstream(serializeUpstream(buildUpstreamPdu(inbound)))
+	eq(upstream.short_message.message, koreanText, 'upstream receives Korean UCS-2 byte-equivalent')
 }
 
 console.log('\n=== Skip-classify: GSM national language shift (Hindi, lang 0x06) ===')

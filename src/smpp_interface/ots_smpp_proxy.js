@@ -33,13 +33,18 @@ const FORWARDED_SUBMIT_SM_PARAMS = [
 // data_coding (low 4 bits of DCS, per 3GPP 23.038) → iconv-lite charset name.
 // Only the encodings that node-smpp's filters.message.decode does NOT already handle
 // need a fallback here — it covers ASCII (0x01), LATIN1 (0x03), UCS-2 (0x08) natively.
+//
+// We deliberately leave Japanese (0x05 JIS, 0x0A ISO-2022-JP, 0x0D X_0212_1990)
+// out: iconv-lite 0.7.x does not register iso-2022-jp, and the spec is ambiguous
+// about which JIS encoding form 0x05/0x0D actually map to in practice (some
+// operators use Shift_JIS, others EUC-JP). unclassifiableReason() routes those
+// to skip-classify instead of producing mojibake for the classifier.
 function dataCodingToCharset(dc) {
 	if (dc === undefined || dc === null) return null
 	switch (dc & 0x0F) {
 		case 0x06: return 'iso-8859-5'   // Cyrillic
 		case 0x07: return 'iso-8859-8'   // Hebrew
 		case 0x08: return 'utf16-be'     // UCS-2 (defensive — should never be hit; node-smpp decodes it)
-		case 0x0A: return 'iso-2022-jp'  // Japanese
 		case 0x0E: return 'cp949'        // KS C 5601 (Korean) — best-effort
 		default:   return null
 	}
@@ -373,6 +378,12 @@ function unclassifiableReason(pdu) {
 	const dc = (pdu.data_coding || 0) & 0x0F
 	if (dc === 0x04) return 'data-coding-binary'
 	if (dc === 0x09) return 'data-coding-pictogram'
+	// JIS variants — iconv-lite 0.7.x does not register iso-2022-jp, and the
+	// spec is ambiguous about which encoding form 0x05/0x0D map to in
+	// practice. Skip-classify rather than risk mojibake into the model.
+	if (dc === 0x05) return 'data-coding-jis-x0208'
+	if (dc === 0x0A) return 'data-coding-iso-2022-jp'
+	if (dc === 0x0D) return 'data-coding-jis-x0212'
 	return null
 }
 
