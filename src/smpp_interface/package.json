@@ -6,7 +6,8 @@
   "dependencies": {
     "smpp": "file:./node-smpp",
     "nanoid": "^3.1.31",
-    "await-sleep": "0.0.1"
+    "await-sleep": "0.0.1",
+    "iconv-lite": "0.x"
   },
   "scripts": {
     "start": "node ots_smpp_proxy.js"

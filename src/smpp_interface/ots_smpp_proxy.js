@@ -16,6 +16,34 @@ const {customAlphabet} = require('nanoid')
 const http = require('http')
 const fs = require('fs')
 const path = require('path')
+const iconv = require('iconv-lite')
+
+// Submit_sm parameters that must round-trip from client to upstream untouched.
+// (short_message and message_payload are handled separately because they carry UDH/encoding state.)
+const FORWARDED_SUBMIT_SM_PARAMS = [
+	'service_type',
+	'source_addr_ton', 'source_addr_npi', 'source_addr',
+	'dest_addr_ton', 'dest_addr_npi', 'destination_addr',
+	'esm_class', 'protocol_id', 'priority_flag',
+	'schedule_delivery_time', 'validity_period',
+	'registered_delivery', 'replace_if_present_flag',
+	'data_coding', 'sm_default_msg_id'
+]
+
+// data_coding (low 4 bits of DCS, per 3GPP 23.038) → iconv-lite charset name.
+// Only the encodings that node-smpp's filters.message.decode does NOT already handle
+// need a fallback here — it covers ASCII (0x01), LATIN1 (0x03), UCS-2 (0x08) natively.
+function dataCodingToCharset(dc) {
+	if (dc === undefined || dc === null) return null
+	switch (dc & 0x0F) {
+		case 0x06: return 'iso-8859-5'   // Cyrillic
+		case 0x07: return 'iso-8859-8'   // Hebrew
+		case 0x08: return 'utf16-be'     // UCS-2 (defensive — should never be hit; node-smpp decodes it)
+		case 0x0A: return 'iso-2022-jp'  // Japanese
+		case 0x0E: return 'cp949'        // KS C 5601 (Korean) — best-effort
+		default:   return null
+	}
+}
 
 // Load config
 const configPath = process.argv[2] || path.join(__dirname, 'config.json')
@@ -315,81 +343,116 @@ async function classifyMessage(text) {
 // (ref: proxy_async.js:759-796 get_log_text + 1599-1618 UDH)
 // ─────────────────────────────────────────────
 
+// Extract the human-readable message text for classification.
+//
+// node-smpp's filters.message.decode already returns a String for ASCII (0x01),
+// LATIN1 (0x03), and UCS-2 (0x08) — including UDH-bearing PDUs (UDH is split
+// into pdu.short_message.udh and the post-UDH bytes are decoded into .message).
+//
+// For data_coding values node-smpp does not register (Cyrillic 0x06, Hebrew 0x07,
+// JIS variants 0x05/0x0A/0x0D, KS C 5601 0x0E, BINARY 0x04, PICTOGRAM 0x09),
+// the decoder leaves .message as a raw Buffer of post-UDH bytes. Naively calling
+// Buffer.toString() on those bytes uses UTF-8 and produces mojibake — so we
+// route through iconv-lite when we can map the data_coding to a known charset.
+//
+// This function only affects what goes to the classifier; the original
+// pdu.short_message.message is untouched and is forwarded verbatim downstream.
 function getMessageText(pdu) {
-	let text = ''
+	let raw = null
 
-	// Try short_message first (ref: proxy_async.js:769-773)
-	if (pdu.short_message != undefined) {
-		if (pdu.short_message.message != undefined && pdu.short_message.message != '') {
-			text = pdu.short_message.message
+	// Prefer short_message if it carries content
+	if (pdu.short_message != undefined && pdu.short_message.message != undefined) {
+		const m = pdu.short_message.message
+		if (m !== '' && !(Buffer.isBuffer(m) && m.length === 0)) {
+			raw = m
 		}
 	}
 
-	// Fallback to message_payload TLV (ref: proxy_async.js:764-768)
-	if (text == '' && ('message_payload' in pdu)) {
-		if (pdu.message_payload != undefined) {
-			if (pdu.message_payload.message != undefined && pdu.message_payload.message != '') {
-				text = pdu.message_payload.message
-			} else if (typeof pdu.message_payload === 'string' || Buffer.isBuffer(pdu.message_payload)) {
-				text = pdu.message_payload
+	// Long messages travel in message_payload TLV instead of short_message
+	if (raw == null && ('message_payload' in pdu) && pdu.message_payload != undefined) {
+		if (typeof pdu.message_payload === 'object' && pdu.message_payload.message != undefined) {
+			const m = pdu.message_payload.message
+			if (m !== '' && !(Buffer.isBuffer(m) && m.length === 0)) {
+				raw = m
+			}
+		} else if (typeof pdu.message_payload === 'string' || Buffer.isBuffer(pdu.message_payload)) {
+			raw = pdu.message_payload
+		}
+	}
+
+	if (raw == null) return ''
+	if (typeof raw === 'string') return raw
+
+	if (Buffer.isBuffer(raw)) {
+		const charset = dataCodingToCharset(pdu.data_coding)
+		if (charset && iconv.encodingExists(charset)) {
+			try {
+				return iconv.decode(raw, charset)
+			} catch(e) {
+				llog('getMessageText', {error: e.message, charset: charset, dc: pdu.data_coding},
+					'iconv decode failed; falling back to utf-8')
 			}
 		}
+		// Last resort — better than dropping the message; classifier may still
+		// pick up enough signal from ASCII fragments inside the buffer.
+		return raw.toString('utf8')
 	}
 
-	// UDH scenario — text is in .message part, UDH is separate
-	// (ref: proxy_async.js:775-782)
-	if (pdu.short_message && pdu.short_message.udh != undefined) {
-		if (Buffer.isBuffer(pdu.short_message.message)) {
-			text = pdu.short_message.message.toString()
-		} else {
-			text = pdu.short_message.message
-		}
-	}
-
-	// Handle Buffer (UCS-2 / binary data)
-	if (Buffer.isBuffer(text)) {
-		if (pdu.data_coding == 8) {
-			text = text.toString('ucs2')
-		} else {
-			text = text.toString()
-		}
-	}
-
-	return text || ''
+	return ''
 }
 
-// Build upstream PDU preserving UDH (ref: proxy_async.js:1599-1618)
+// Build the upstream submit_sm by copying every param and TLV the client sent.
+//
+// Anything we leave out gets silently dropped — and SMPP traffic is full of
+// fields that matter even when they look optional: TLV-based concatenation
+// (sar_msg_ref_num/sar_total_segments/sar_segment_seqnum), application port
+// addressing (source_port/dest_port for WAP push, vCards, MMS notifications),
+// validity_period, schedule_delivery_time, payload_type, language_indicator,
+// callback_num, etc. The proxy's job is classification, not field surgery, so
+// we forward every known param and every registered TLV unchanged.
 function buildUpstreamPdu(pdu) {
-	let upstream_pdu = {
-		source_addr: pdu.source_addr,
-		destination_addr: pdu.destination_addr,
-		data_coding: pdu.data_coding,
-		esm_class: pdu.esm_class,
-		registered_delivery: pdu.registered_delivery
+	let upstream_pdu = {}
+
+	// 1. Standard submit_sm parameters (excluding the message payload itself)
+	for (const key of FORWARDED_SUBMIT_SM_PARAMS) {
+		if (pdu[key] !== undefined) {
+			upstream_pdu[key] = pdu[key]
+		}
 	}
 
-	// Preserve TON/NPI if set
-	if ('source_addr_ton' in pdu) upstream_pdu.source_addr_ton = pdu.source_addr_ton
-	if ('source_addr_npi' in pdu) upstream_pdu.source_addr_npi = pdu.source_addr_npi
-	if ('dest_addr_ton' in pdu) upstream_pdu.dest_addr_ton = pdu.dest_addr_ton
-	if ('dest_addr_npi' in pdu) upstream_pdu.dest_addr_npi = pdu.dest_addr_npi
-
-	// UDH handling (ref: proxy_async.js:1599-1618)
-	if (pdu.short_message && pdu.short_message.udh != undefined) {
-		let temp_udh = pdu.short_message.udh
-		if (Array.isArray(temp_udh)) {
-			temp_udh = Buffer.concat(temp_udh)
-			let len_buf = Buffer.alloc(1)
-			len_buf.writeUInt8(temp_udh.length, 0)
-			temp_udh = Buffer.concat([len_buf, temp_udh])
+	// 2. Every TLV the client included. node-smpp tags decoded TLVs by their
+	// human name on the pdu object, so iterating its registry is exhaustive.
+	// message_payload is handled separately below to keep UDH/encoding logic
+	// in one place.
+	for (const tag in smpp.tlvs) {
+		if (tag === 'message_payload') continue
+		if (pdu[tag] !== undefined) {
+			upstream_pdu[tag] = pdu[tag]
 		}
-		upstream_pdu.short_message = {udh: temp_udh, message: pdu.short_message.message}
-	} else if (pdu.short_message) {
+	}
+
+	// 3. UDH handling. node-smpp's decoder splits UDH into an Array of
+	// per-IE Buffers. Its encoder, however, only correctly serializes the
+	// FIRST IE when given the array form — multi-IE UDH (e.g. concat header
+	// + port addressing, or concat + national language shift) loses everything
+	// past udh[0]. Collapse to a single length-prefixed Buffer so the
+	// encoder's `else` branch (Buffer.concat) preserves all IEs verbatim.
+	if (pdu.short_message && pdu.short_message.udh !== undefined) {
+		let udh = pdu.short_message.udh
+		if (Array.isArray(udh)) {
+			const concatenated = Buffer.concat(udh)
+			const len_buf = Buffer.alloc(1)
+			len_buf.writeUInt8(concatenated.length, 0)
+			udh = Buffer.concat([len_buf, concatenated])
+		}
+		upstream_pdu.short_message = {udh: udh, message: pdu.short_message.message}
+	} else if (pdu.short_message !== undefined) {
 		upstream_pdu.short_message = pdu.short_message
 	}
 
-	// message_payload passthrough
-	if (pdu.message_payload) {
+	// 4. message_payload — pass through whatever shape the decoder produced.
+	// String / {message,udh} / Buffer are all handled by filters.message.encode.
+	if (pdu.message_payload !== undefined) {
 		upstream_pdu.message_payload = pdu.message_payload
 	}
 
@@ -661,15 +724,17 @@ async function forwardToUpstream(isession, pdu) {
 
 		if (resp.command_status == 0) {
 			let message_id = resp.message_id
-			// Store for DLR correlation
-			message_store[message_id] = {
-				session_id: isession.nickname,
-				source_addr: pdu.source_addr,
-				destination_addr: pdu.destination_addr,
-				timestamp: Date.now()
+			// Only correlate DLRs if the upstream actually returned an id.
+			// Some upstreams return ESME_ROK with empty message_id for accepted-but-not-stored cases.
+			if (message_id) {
+				message_store[message_id] = {
+					session_id: isession.nickname,
+					source_addr: pdu.source_addr,
+					destination_addr: pdu.destination_addr,
+					timestamp: Date.now()
+				}
 			}
-			// Return upstream's message_id to client
-			isession.send(pdu.response({message_id: message_id}))
+			isession.send(pdu.response({message_id: message_id || ''}))
 			llog('forward', {message_id: message_id, dst: pdu.destination_addr, via: session.nickname}, 'Forwarded OK')
 		} else {
 			// Forward the error status
