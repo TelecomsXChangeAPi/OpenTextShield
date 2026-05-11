@@ -15,5 +15,5 @@ numpy>=2.4.2
 
 # Additional dependencies
 requests>=2.33.0
-urllib3>=2.5.0
+urllib3>=2.7.0
 Jinja2>=3.0.0
