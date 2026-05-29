@@ -120,6 +120,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SMS text classification (ham/spam/phishing)
 - Apple Silicon MLX optimization support
 
+## v2.4.1 — Dataset cleaning & leakage fix
+
+### Fixed
+- Removed 7,718 duplicate rows causing train/test leakage
+  (7.4% → 0% under config.py split, seed=42).
+- Removed 80 machine-translation artifacts and 10 junk-text rows.
+
+### Added
+- `clean_ots_dataset.py` — reproducible dataset cleaning utility.
+- `test_clean_dataset.py` — tests for duplicates, labels, empty text.
+- `dataset/sms_spam_phishing_dataset_v2.4.1_dedup.csv` — cleaned dataset.
+
 ---
 
 ## Release Notes
