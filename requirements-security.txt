@@ -5,7 +5,7 @@
 # Core API framework - latest stable versions
 fastapi>=0.115.14
 uvicorn>=0.30.6
-starlette>=0.46.2
+starlette>=1.0.1
 
 # Security patches - critical vulnerabilities fixed
 # CVE-2025-32434: torch RCE via torch.load()
