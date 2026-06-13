@@ -18,8 +18,14 @@ of phishing is labelled `ham` and would pass through a filter silently.**
 | Benchmark | Samples | 3-class accuracy | Block accuracy* | Phishing recall |
 |---|---|---|---|---|
 | UCI SMS Spam (public, classic) | 5,574 | **99.3%** | 99.3% | n/a (no phishing class) |
+| Mishra & Soni SMS Phishing (public) | 5,971 | **88.8%** | 99.2% | **2.7%** |
 | IMC25 smishing (public, modern) | 8,007 | **20.4%** | 69.9% | 17.1% |
 | Fable 5 adversarial suite (new) | 150 | **48.7%** | 73.3% | 11.5% |
+
+The Mishra & Soni row is the clearest single diagnosis: the model *blocks* 99% of
+malicious SMS but assigns the correct `phishing` label to only **2.7%** of
+smishing — it routes 617 of 638 smishing messages into `spam`. The phishing class
+is effectively collapsed into spam.
 
 \* *Block accuracy* = treats `spam` and `phishing` as a single "block" decision vs
 `ham` "allow". This is the operational metric for an SMS firewall.
@@ -47,7 +53,12 @@ network access required (the mBERT vocab is vendored in `evals/assets/`).
   confusion matrix, and per-language / per-category breakdowns.
 - **Datasets:**
   - **UCI SMS Spam Collection** — the canonical public SMS spam benchmark
-    (5,574 msgs, ham/spam only). Establishes that classic performance is intact.
+    (5,574 msgs, ham/spam only), the dataset behind the Papers With Code "SMS
+    Spam Detection" leaderboard. Establishes that classic performance is intact.
+  - **Mishra & Soni SMS Phishing Dataset** (`Dataset_5971.csv`, Mendeley
+    f45bkkt8pr; Mishra & Soni, 2023) — 5,971 msgs labelled ham / spam /
+    **smishing**. A recognized, peer-reviewed benchmark that, unlike UCI, has an
+    explicit phishing class — so it directly measures phishing-vs-spam skill.
   - **IMC 2025 Smishing Dataset** (`reportsmishing/Smishing-Dataset-IMC25`,
     CC-BY-4.0) — ~34k real user-reported smishing messages across 40+ languages,
     labelled by scam type. We map `scam_type=spam`→spam, everything else→phishing,
@@ -65,7 +76,16 @@ On UCI the model scores 99.3% with ham precision 0.9998 / recall 0.992 and spam
 precision 0.953 / recall 0.999. There is nothing to fix here; the risk is
 *regressing* it during improvement (addressed by rehearsal data in §5).
 
-### 3.2 Modern phishing collapses
+### 3.2 The phishing class is collapsed into spam (Mishra & Soni)
+On the recognized Mishra & Soni benchmark the model blocks 99.2% of malicious
+SMS but reaches only **2.7% phishing recall**: of 638 smishing messages it labels
+617 as `spam`, 17 as `phishing`, and 4 as `ham`. For an SMS firewall the *block*
+decision is fine here, but the model has essentially no ability to distinguish
+phishing from spam — which matters for any phishing-specific routing, reporting,
+or response. Note the block rate (99%) is much higher than on IMC25 (70%) because
+Mishra & Soni is older, English, keyword-heavy smishing close to the training era.
+
+### 3.3 Modern phishing collapses (IMC25)
 On the IMC25 real-world corpus the model gets only **20.4%** 3-class accuracy.
 The binary block rate is 69.9%, meaning **~30% of real smishing would be
 delivered to the user.** Phishing recall is 17% — most phishing it *does* catch,
@@ -93,7 +113,7 @@ Block rate by scam type reveals the conversational blind spots:
 | **wrong number** | **9.3%** | conversational opener, looks like ham |
 | **hey mum/dad** | **34.4%** | family impersonation, looks like ham |
 
-### 3.3 Adversarial suite: where exactly it breaks
+### 3.5 Adversarial suite: where exactly it breaks
 On the 150-message suite, 3-class accuracy is 48.7% and phishing recall 11.5%.
 The confusion matrix shows two distinct failure modes:
 

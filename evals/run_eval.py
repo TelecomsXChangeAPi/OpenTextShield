@@ -137,6 +137,22 @@ def load_imc25(path, sample_n=None):
     return rows
 
 
+def load_mishra(path):
+    """Mishra & Soni SMS Phishing Dataset (Dataset_5971.csv): LABEL,TEXT,URL,EMAIL,PHONE.
+    Labels: ham / spam|Spam / Smishing|smishing -> ham / spam / phishing."""
+    label_map = {"ham": "ham", "spam": "spam", "Spam": "spam",
+                 "Smishing": "phishing", "smishing": "phishing"}
+    samples = []
+    with open(path, newline="", encoding="utf-8", errors="replace") as f:
+        for row in csv.DictReader(f):
+            gold = label_map.get((row.get("LABEL") or "").strip())
+            text = (row.get("TEXT") or "").strip()
+            if gold and text:
+                samples.append({"text": text, "gold": gold,
+                                "category": "mishra", "language": "en"})
+    return samples
+
+
 def load_ots60(path):
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
@@ -157,7 +173,7 @@ def load_generic_csv(path):
 
 
 LOADERS = {"fable5": load_fable5, "uci": load_uci, "imc25": load_imc25,
-           "ots60": load_ots60, "csv": load_generic_csv}
+           "mishra": load_mishra, "ots60": load_ots60, "csv": load_generic_csv}
 
 
 # ---------------------------------------------------------------- inference
