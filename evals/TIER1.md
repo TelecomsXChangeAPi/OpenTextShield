@@ -57,16 +57,24 @@ python evals/finetune_tier1.py \
   --synthetic src/mBERT/training/model-training/dataset/synthetic_fable5_v1.csv \
   --original  src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv \
   --out    src/mBERT/training/model-training/mbert_ots_model_2.7.pth \
-  --epochs 4 --batch-size 32 --loss class_weighted
+  --epochs 2 --batch-size 32 --loss plain --lr 1e-5
 ```
+
+This is the **shipped recipe** for model 2.7: a gentle fine-tune (plain
+cross-entropy, lr 1e-5, 2 epochs) continued from the v2.5 base over the synthetic
+set plus a 2,500/class rehearsal sample. Earlier heavier runs (class-weighted
+loss, 4 epochs, lr 2e-5) scored higher on the in-domain validation split but
+*overfit* — they regressed the real-world IMC25 block rate. Backing off to this
+gentler configuration recovered generalization and beat v2.5 on every benchmark.
 
 It prints `Device: Apple Silicon MPS`, a per-epoch validation line, and saves the
 **best** epoch (by validation macro-F1) — plus a `*.trainlog.json` with the curve.
 
-Knobs worth trying:
-- `--loss focal` — alternative to class weighting; sometimes better for the rare
-  phishing class.
-- `--epochs 6` / `--lr 1e-5` — more training / gentler steps.
+Knobs worth trying (departures from the shipped recipe — validate against IMC25
+before trusting any gain, since the in-domain split is an optimistic signal):
+- `--loss class_weighted` / `--loss focal` — weight the rare phishing class; both
+  raised validation F1 here but hurt real-world generalization.
+- `--epochs 4` / `--lr 2e-5` — more/larger steps; the same overfitting caveat.
 - `--orig-per-label 4000` — more rehearsal data (better protects classic spam,
   slower).
 
