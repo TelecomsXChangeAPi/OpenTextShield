@@ -171,7 +171,36 @@ forgetting. Output: `mbert_ots_model_2.6.pth`.
 
 ### Before / after
 
-<!-- RESULTS_TABLE -->
+| Benchmark | n | 3-class acc (v2.5 → v2.6) | Block acc (v2.5 → v2.6) | Phishing recall (v2.5 → v2.6) |
+|---|---|---|---|---|
+| UCI SMS Spam (classic) | 5,574 | 99.3% → **99.2%** | 99.3% → **99.2%** | n/a (no phishing class) |
+| Mishra & Soni Phishing | 5,971 | 88.8% → **89.0%** | 99.2% → **99.1%** | 2.7% → **6.0%** |
+| IMC25 smishing (modern) | 8,007 | 20.4% → **41.9%** | 69.9% → **78.2%** | 17.1% → **40.0%** |
+| Fable 5 adversarial | 150 | 48.7% → **87.3%** | 73.3% → **98.0%** | 11.5% → **82.0%** |
+
+**Read of the results:**
+
+- **No regression on classic spam.** UCI holds at 99.2% (−0.1pt, noise) — the
+  rehearsal mix did its job; the strong base behaviour is intact.
+- **Large gain on modern real-world smishing (IMC25):** block rate +8.3pts to
+  78.2%, phishing recall more than doubled (17%→40%), 3-class accuracy doubled.
+  This is the security-relevant number — fewer attacks reach the user.
+- **Adversarial suite transformed:** block rate 73%→**98%**, phishing recall
+  11.5%→**82%**. The previously silent `phishing→ham` leaks (family
+  impersonation, vishing, toll, obfuscation) are now caught.
+- **Multilingual parity improved** on IMC25 block rate, concentrated exactly
+  where v2.5 was weak: Italian +19.6pts, Japanese +19.7pts, Spanish +13.8pts,
+  Dutch +10.9pts, Portuguese +10.6pts, English +7.5pts. (Indonesian −6pts on a
+  small n=82 is the only regression.)
+- **Mishra & Soni:** block rate unchanged at 99% (already saturated); the phishing
+  *label* recall ticks up (2.7%→6%) but remains low — its older keyword-style
+  smishing is a different distribution from the modern synthetic data. Since the
+  block decision is already correct here, this is cosmetic, not a security gap.
+
+**Bottom line:** the targeted synthetic data closed the modern-smishing gap
+(the part where real attacks were reaching users) without sacrificing the classic
+performance — exactly the intended outcome. Further gains are available with more
+epochs, a larger synthetic set, and real labelled smishing feeds (§7).
 
 ---
 
@@ -181,13 +210,14 @@ forgetting. Output: `mbert_ots_model_2.6.pth`.
 # 1. Fetch the v2.5 weights (Git LFS) and place at
 #    src/mBERT/training/model-training/mbert_ots_model_2.5.pth
 
-# 2. Public benchmarks
+# 2. Public benchmarks (Mishra & Soni ships in evals/datasets/)
 curl -sL -o /tmp/uci.tsv https://raw.githubusercontent.com/justmarkham/DAT8/master/data/sms.tsv
 curl -sL -o /tmp/imc25.csv https://raw.githubusercontent.com/reportsmishing/Smishing-Dataset-IMC25/main/dataset/final_dataset_output.csv
 
 # 3. Evaluate v2.5
 python evals/run_eval.py --model .../mbert_ots_model_2.5.pth \
     --dataset fable5 --dataset uci:/tmp/uci.tsv \
+    --dataset mishra:evals/datasets/mishra_soni_5971.csv \
     --dataset imc25:/tmp/imc25.csv:8000 --tag v2.5
 
 # 4. Generate synthetic data + fine-tune
