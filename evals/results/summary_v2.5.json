@@ -1,0 +1,896 @@
+{
+  "uci": {
+    "n": 5574,
+    "accuracy_3class": 0.9932,
+    "accuracy_binary_block": 0.9932,
+    "per_class": {
+      "ham": {
+        "precision": 0.9998,
+        "recall": 0.9923,
+        "f1": 0.996,
+        "support": 4827
+      },
+      "spam": {
+        "precision": 0.9527,
+        "recall": 0.9987,
+        "f1": 0.9752,
+        "support": 747
+      },
+      "phishing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion": {
+      "ham->ham": 4790,
+      "ham->spam": 37,
+      "spam->ham": 1,
+      "spam->spam": 746
+    },
+    "by_category": {
+      "uci": {
+        "acc": 0.9932,
+        "n": 5574
+      }
+    },
+    "by_language": {
+      "en": {
+        "acc": 0.9932,
+        "n": 5574
+      }
+    }
+  },
+  "imc25": {
+    "n": 8007,
+    "accuracy_3class": 0.2043,
+    "accuracy_binary_block": 0.6988,
+    "per_class": {
+      "ham": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "spam": {
+        "precision": 0.0782,
+        "recall": 0.8747,
+        "f1": 0.1435,
+        "support": 383
+      },
+      "phishing": {
+        "precision": 0.9931,
+        "recall": 0.1706,
+        "f1": 0.2912,
+        "support": 7624
+      }
+    },
+    "confusion": {
+      "phishing->ham": 2373,
+      "phishing->phishing": 1301,
+      "phishing->spam": 3950,
+      "spam->ham": 39,
+      "spam->phishing": 9,
+      "spam->spam": 335
+    },
+    "by_category": {
+      "banking": {
+        "acc": 0.209,
+        "n": 3607
+      },
+      "delivery": {
+        "acc": 0.214,
+        "n": 930
+      },
+      "government": {
+        "acc": 0.185,
+        "n": 762
+      },
+      "hey mum/dad": {
+        "acc": 0.0,
+        "n": 61
+      },
+      "others": {
+        "acc": 0.0971,
+        "n": 1606
+      },
+      "spam": {
+        "acc": 0.8747,
+        "n": 383
+      },
+      "telecom": {
+        "acc": 0.0871,
+        "n": 551
+      },
+      "unknown": {
+        "acc": 0.1429,
+        "n": 21
+      },
+      "wrong number": {
+        "acc": 0.0,
+        "n": 86
+      }
+    },
+    "by_language": {
+      "Afrikaans": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Albanian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Arabic": {
+        "acc": 0.0714,
+        "n": 14
+      },
+      "Bengali": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Bulgarian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Catalan": {
+        "acc": 0.0,
+        "n": 7
+      },
+      "Chinese": {
+        "acc": 0.3636,
+        "n": 11
+      },
+      "Croatian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Czech": {
+        "acc": 0.1765,
+        "n": 17
+      },
+      "Danish": {
+        "acc": 0.3846,
+        "n": 26
+      },
+      "Divehi": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Dutch": {
+        "acc": 0.2854,
+        "n": 459
+      },
+      "English": {
+        "acc": 0.196,
+        "n": 5215
+      },
+      "Estonian": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "Filipino": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Finnish": {
+        "acc": 0.0,
+        "n": 3
+      },
+      "French": {
+        "acc": 0.1927,
+        "n": 275
+      },
+      "Ganda": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "German": {
+        "acc": 0.1675,
+        "n": 191
+      },
+      "Greek": {
+        "acc": 0.1,
+        "n": 20
+      },
+      "Gujarati": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Hebrew": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Hindi": {
+        "acc": 0.0,
+        "n": 41
+      },
+      "Hungarian": {
+        "acc": 0.3333,
+        "n": 6
+      },
+      "Icelandic": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Igbo": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Indonesian": {
+        "acc": 0.1585,
+        "n": 82
+      },
+      "Italian": {
+        "acc": 0.2785,
+        "n": 158
+      },
+      "Japanese": {
+        "acc": 0.1311,
+        "n": 61
+      },
+      "Javanese": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Kannada": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Kinyarwanda": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Korean": {
+        "acc": 0.0,
+        "n": 7
+      },
+      "Latvian": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Lithuanian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Malay": {
+        "acc": 0.0556,
+        "n": 36
+      },
+      "Maltese": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Marathi": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Mixed (Dutch/French)": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Mongolian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Norwegian": {
+        "acc": 0.5,
+        "n": 8
+      },
+      "Persian": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Polish": {
+        "acc": 0.2258,
+        "n": 31
+      },
+      "Portuguese": {
+        "acc": 0.1667,
+        "n": 66
+      },
+      "Punjabi": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Romanian": {
+        "acc": 0.125,
+        "n": 8
+      },
+      "Russian": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Serbian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Sinhala": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Slovak": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Slovenian": {
+        "acc": 0.0,
+        "n": 3
+      },
+      "Spanish": {
+        "acc": 0.24,
+        "n": 1096
+      },
+      "Swahili": {
+        "acc": 0.0,
+        "n": 7
+      },
+      "Swedish": {
+        "acc": 0.0769,
+        "n": 13
+      },
+      "Tagalog": {
+        "acc": 0.3158,
+        "n": 19
+      },
+      "Tamil": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Telugu": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Thai": {
+        "acc": 0.2,
+        "n": 15
+      },
+      "Turkish": {
+        "acc": 0.1818,
+        "n": 22
+      },
+      "Ukrainian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Unknown": {
+        "acc": 0.25,
+        "n": 4
+      },
+      "Urdu": {
+        "acc": 0.0556,
+        "n": 18
+      },
+      "Uzbek": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Vietnamese": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Welsh": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Yoruba": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Zulu": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "nl_fr": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "unknown": {
+        "acc": 0.125,
+        "n": 24
+      }
+    }
+  },
+  "fable5": {
+    "n": 150,
+    "accuracy_3class": 0.4867,
+    "accuracy_binary_block": 0.7333,
+    "per_class": {
+      "ham": {
+        "precision": 0.5479,
+        "recall": 0.8511,
+        "f1": 0.6667,
+        "support": 47
+      },
+      "spam": {
+        "precision": 0.3529,
+        "recall": 0.96,
+        "f1": 0.5161,
+        "support": 25
+      },
+      "phishing": {
+        "precision": 1.0,
+        "recall": 0.1154,
+        "f1": 0.2069,
+        "support": 78
+      }
+    },
+    "confusion": {
+      "ham->ham": 40,
+      "ham->spam": 7,
+      "phishing->ham": 32,
+      "phishing->phishing": 9,
+      "phishing->spam": 37,
+      "spam->ham": 1,
+      "spam->spam": 24
+    },
+    "by_category": {
+      "account_scam": {
+        "acc": 0.0,
+        "n": 3
+      },
+      "adult": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "advance_fee": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "bank_scam": {
+        "acc": 0.3125,
+        "n": 16
+      },
+      "bec_style": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "crypto_promo": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "crypto_scam": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "delivery_scam": {
+        "acc": 0.2,
+        "n": 10
+      },
+      "extortion": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "family_emergency": {
+        "acc": 0.0,
+        "n": 7
+      },
+      "gambling": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "gov_scam": {
+        "acc": 0.1111,
+        "n": 9
+      },
+      "health": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "home_services": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "insurance_promo": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "job_scam": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "legit_alert": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "legit_billing": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legit_business": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legit_delivery": {
+        "acc": 0.4,
+        "n": 5
+      },
+      "legit_fraud_alert": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "legit_otp": {
+        "acc": 1.0,
+        "n": 12
+      },
+      "legit_payment": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legit_reminder": {
+        "acc": 0.75,
+        "n": 4
+      },
+      "legit_travel": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "loan": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "low_quality_scam": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "mlm": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "obfuscation_homoglyph": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "obfuscation_leet": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "obfuscation_spacing": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "obfuscation_url": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "obfuscation_zerowidth": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "otp_theft": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "personal": {
+        "acc": 1.0,
+        "n": 15
+      },
+      "personal_money": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "personal_password": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "personal_urgent": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "political": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "retail_promo": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "reward_scam": {
+        "acc": 0.0,
+        "n": 5
+      },
+      "scammy_product": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "subscription_scam": {
+        "acc": 0.0,
+        "n": 3
+      },
+      "toll_scam": {
+        "acc": 0.0,
+        "n": 3
+      },
+      "utility_scam": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "vishing_callback": {
+        "acc": 0.0,
+        "n": 4
+      },
+      "warranty": {
+        "acc": 0.0,
+        "n": 1
+      }
+    },
+    "by_language": {
+      "ar": {
+        "acc": 0.6667,
+        "n": 6
+      },
+      "de": {
+        "acc": 0.6,
+        "n": 5
+      },
+      "en": {
+        "acc": 0.3908,
+        "n": 87
+      },
+      "en-in": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "es": {
+        "acc": 0.625,
+        "n": 8
+      },
+      "fr": {
+        "acc": 0.5,
+        "n": 6
+      },
+      "he": {
+        "acc": 0.8,
+        "n": 5
+      },
+      "hi-latn": {
+        "acc": 0.6,
+        "n": 5
+      },
+      "id": {
+        "acc": 0.5,
+        "n": 4
+      },
+      "ja": {
+        "acc": 0.5,
+        "n": 4
+      },
+      "pt": {
+        "acc": 0.6,
+        "n": 5
+      },
+      "ru": {
+        "acc": 0.6,
+        "n": 5
+      },
+      "tr": {
+        "acc": 0.75,
+        "n": 4
+      },
+      "zh": {
+        "acc": 0.6,
+        "n": 5
+      }
+    }
+  },
+  "ots60": {
+    "n": 60,
+    "accuracy_3class": 0.7,
+    "accuracy_binary_block": 0.7667,
+    "per_class": {
+      "ham": {
+        "precision": 0.625,
+        "recall": 0.75,
+        "f1": 0.6818,
+        "support": 20
+      },
+      "spam": {
+        "precision": 0.6897,
+        "recall": 1.0,
+        "f1": 0.8163,
+        "support": 20
+      },
+      "phishing": {
+        "precision": 1.0,
+        "recall": 0.35,
+        "f1": 0.5185,
+        "support": 20
+      }
+    },
+    "confusion": {
+      "ham->ham": 15,
+      "ham->spam": 5,
+      "phishing->ham": 9,
+      "phishing->phishing": 7,
+      "phishing->spam": 4,
+      "spam->spam": 20
+    },
+    "by_category": {
+      "appointment_reminder": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "bank_phishing": {
+        "acc": 0.5,
+        "n": 4
+      },
+      "beauty_spam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "business_communication": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "credit_spam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "dating_spam": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "delivery_scam": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "ecommerce_phishing": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "email_phishing": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "family_communication": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "gambling_spam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "government_impersonation": {
+        "acc": 0.5,
+        "n": 4
+      },
+      "greeting": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "health_scam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legitimate_notification": {
+        "acc": 0.6667,
+        "n": 6
+      },
+      "loan_spam": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "lottery_scam": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "payment_phishing": {
+        "acc": 0.6667,
+        "n": 3
+      },
+      "personal_conversation": {
+        "acc": 0.875,
+        "n": 8
+      },
+      "promotional": {
+        "acc": 1.0,
+        "n": 6
+      },
+      "subscription_phishing": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "subscription_spam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "sweepstakes_spam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "tech_phishing": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "tech_support_scam": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "travel_spam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "warranty_spam": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "work_communication": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "work_from_home_scam": {
+        "acc": 1.0,
+        "n": 1
+      }
+    },
+    "by_language": {
+      "Arabic": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Chinese": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "English": {
+        "acc": 0.6727,
+        "n": 55
+      },
+      "French": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Spanish": {
+        "acc": 1.0,
+        "n": 2
+      }
+    }
+  },
+  "mishra": {
+    "n": 5971,
+    "accuracy_3class": 0.8881,
+    "accuracy_binary_block": 0.9915,
+    "per_class": {
+      "ham": {
+        "precision": 0.9983,
+        "recall": 0.9911,
+        "f1": 0.9947,
+        "support": 4844
+      },
+      "spam": {
+        "precision": 0.4236,
+        "recall": 0.9918,
+        "f1": 0.5936,
+        "support": 489
+      },
+      "phishing": {
+        "precision": 1.0,
+        "recall": 0.0266,
+        "f1": 0.0519,
+        "support": 638
+      }
+    },
+    "confusion": {
+      "ham->ham": 4801,
+      "ham->spam": 43,
+      "phishing->ham": 4,
+      "phishing->phishing": 17,
+      "phishing->spam": 617,
+      "spam->ham": 4,
+      "spam->spam": 485
+    },
+    "by_category": {
+      "mishra": {
+        "acc": 0.8881,
+        "n": 5971
+      }
+    },
+    "by_language": {
+      "en": {
+        "acc": 0.8881,
+        "n": 5971
+      }
+    },
+    "inference_seconds": 212.5
+  }
+}
