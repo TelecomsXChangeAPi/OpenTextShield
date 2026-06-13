@@ -41,6 +41,26 @@ class _PendingRequest:
     enqueued_at: float
 
 
+# Adversarial-input normaliser, shared across all batches. Constructed lazily so
+# the module stays import-safe if the preprocessor is unavailable; on failure the
+# normaliser degrades to a no-op rather than breaking inference.
+try:
+    from .enhanced_preprocessing import EnhancedPreprocessor
+    _preprocessor = EnhancedPreprocessor()
+except Exception:  # pragma: no cover - defensive
+    _preprocessor = None
+
+
+def _normalize_text(text: str) -> str:
+    """NFC + homoglyph + zero-width normalisation; no-op if unavailable."""
+    if _preprocessor is None:
+        return text
+    try:
+        return _preprocessor.normalize_unicode(text)
+    except Exception:  # pragma: no cover - never let normalisation break a batch
+        return text
+
+
 # Window (seconds) used to compute the rolling effective arrival rate gauge.
 # Matches common Prometheus scrape intervals so the gauge stays smooth.
 _ARRIVAL_WINDOW_SECONDS = 60.0
@@ -238,7 +258,11 @@ class DynamicBatcher:
             self._fail_all(batch, exc)
             return
 
-        texts = [item.text for item in batch]
+        # Apply the same adversarial normalisation as the per-request path
+        # (Unicode NFC, homoglyph folding, zero-width stripping) so obfuscated
+        # smishing is de-obfuscated before tokenisation. The batched path is the
+        # production default, so without this the normaliser would never run.
+        texts = [_normalize_text(item.text) for item in batch]
 
         try:
             inputs = tokenizer(

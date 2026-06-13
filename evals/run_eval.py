@@ -178,8 +178,14 @@ LOADERS = {"fable5": load_fable5, "uci": load_uci, "imc25": load_imc25,
 
 # ---------------------------------------------------------------- inference
 
-def predict(model, tokenizer, texts, batch_size=BATCH_SIZE):
-    """Return (labels, confidences). Sorts by length internally for speed."""
+def predict(model, tokenizer, texts, batch_size=BATCH_SIZE, logit_bias=None):
+    """Return (labels, confidences). Sorts by length internally for speed.
+
+    ``logit_bias`` (a 3-vector for ham/spam/phishing) is added to the logits
+    before argmax — used to apply a calibrated decision bias from
+    calibrate_thresholds.py. Confidence is still the softmax of the biased logits.
+    """
+    bias = torch.tensor(logit_bias, dtype=torch.float) if logit_bias else None
     order = sorted(range(len(texts)), key=lambda i: len(texts[i]))
     preds = [None] * len(texts)
     confs = [0.0] * len(texts)
@@ -188,7 +194,10 @@ def predict(model, tokenizer, texts, batch_size=BATCH_SIZE):
             idx = order[start:start + batch_size]
             enc = tokenizer([texts[i] for i in idx], padding=True, truncation=True,
                             max_length=MAX_LEN, return_tensors="pt")
-            probs = torch.softmax(model(**enc).logits.float(), dim=1)
+            logits = model(**enc).logits.float()
+            if bias is not None:
+                logits = logits + bias
+            probs = torch.softmax(logits, dim=1)
             top = probs.argmax(dim=1)
             for j, i in enumerate(idx):
                 preds[i] = LABELS[top[j].item()]
@@ -245,7 +254,15 @@ def main():
                     help="name | name:path | name:path:sample_n")
     ap.add_argument("--out", default=str(REPO_ROOT / "evals/results"))
     ap.add_argument("--tag", default="")
+    ap.add_argument("--logit-bias", default="",
+                    help="comma-separated ham,spam,phishing logit bias from calibrate_thresholds.py")
     args = ap.parse_args()
+
+    logit_bias = None
+    if args.logit_bias:
+        logit_bias = [float(x) for x in args.logit_bias.split(",")]
+        assert len(logit_bias) == 3, "--logit-bias must be 3 comma-separated values"
+        print(f"Applying logit bias (ham,spam,phishing): {logit_bias}", file=sys.stderr)
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -270,7 +287,8 @@ def main():
         samples = LOADERS[name](path, **kwargs)
         print(f"[{name}] {len(samples)} samples — running inference...", file=sys.stderr)
         t0 = time.time()
-        preds, confs = predict(model, tokenizer, [s["text"] for s in samples])
+        preds, confs = predict(model, tokenizer, [s["text"] for s in samples],
+                               logit_bias=logit_bias)
         dt = time.time() - t0
         print(f"[{name}] done in {dt:.1f}s ({len(samples)/dt:.1f} msg/s)", file=sys.stderr)
 

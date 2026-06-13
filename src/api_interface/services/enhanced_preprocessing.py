@@ -19,6 +19,24 @@ logger = logging.getLogger(__name__)
 class EnhancedPreprocessor:
     """Enhanced text preprocessing for adversarial robustness."""
 
+    # Zero-width / invisible formatting characters used in obfuscation attacks.
+    # Inserting these between letters ("V​e​r​i​f​y")
+    # breaks keywords without changing how the text looks to a human.
+    INVISIBLE_CHARS = frozenset({
+        "​",  # zero-width space
+        "‌",  # zero-width non-joiner
+        "‍",  # zero-width joiner
+        "‎",  # left-to-right mark
+        "‏",  # right-to-left mark
+        "⁠",  # word joiner
+        "⁡", "⁢", "⁣", "⁤",  # invisible math operators
+        "﻿",  # zero-width no-break space / BOM
+        "­",  # soft hyphen
+        "᠎",  # Mongolian vowel separator
+        "͏",  # combining grapheme joiner
+        "؜",  # Arabic letter mark
+    })
+
     def __init__(self):
         # Homoglyph normalization mappings
         self.homoglyph_map = {
@@ -63,9 +81,20 @@ class EnhancedPreprocessor:
         )
 
     def normalize_unicode(self, text: str) -> str:
-        """Normalize Unicode characters and handle homoglyphs."""
+        """Normalize Unicode characters and handle homoglyphs.
+
+        Also strips zero-width / invisible formatting characters that attackers
+        insert between letters to break up keywords (e.g. "V​e​r​i​f​y" with
+        U+200B). These are removed before homoglyph mapping so an obfuscated
+        word collapses back to its real tokens for the model.
+        """
         # NFC normalization
         text = unicodedata.normalize('NFC', text)
+
+        # Strip zero-width and invisible formatting characters. NFC does not
+        # remove these, so a zero-width-joined string survives tokenisation as
+        # a wall of [UNK]s otherwise.
+        text = ''.join(ch for ch in text if ch not in self.INVISIBLE_CHARS)
 
         # Replace homoglyphs
         normalized = []
