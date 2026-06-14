@@ -116,6 +116,7 @@ class HealthResponse(BaseModel):
     # migrate to `api_version`.
     version: str = Field(
         ...,
+        deprecated=True,
         description="DEPRECATED alias of api_version (kept for backward compatibility; removal targeted for v3.0.0)"
     )
     model: Optional[ModelVersion] = Field(

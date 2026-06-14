@@ -23,18 +23,21 @@ class EnhancedPreprocessor:
     # Inserting these between letters ("V​e​r​i​f​y")
     # breaks keywords without changing how the text looks to a human.
     INVISIBLE_CHARS = frozenset({
-        "​",  # zero-width space
-        "‌",  # zero-width non-joiner
-        "‍",  # zero-width joiner
-        "‎",  # left-to-right mark
-        "‏",  # right-to-left mark
-        "⁠",  # word joiner
-        "⁡", "⁢", "⁣", "⁤",  # invisible math operators
-        "﻿",  # zero-width no-break space / BOM
-        "­",  # soft hyphen
-        "᠎",  # Mongolian vowel separator
-        "͏",  # combining grapheme joiner
-        "؜",  # Arabic letter mark
+        "\u200B",  # U+200B zero-width space
+        "\u200C",  # U+200C zero-width non-joiner
+        "\u200D",  # U+200D zero-width joiner
+        "\u200E",  # U+200E left-to-right mark
+        "\u200F",  # U+200F right-to-left mark
+        "\u2060",  # U+2060 word joiner
+        "\u2061",  # U+2061 function application (invisible math)
+        "\u2062",  # U+2062 invisible times
+        "\u2063",  # U+2063 invisible separator
+        "\u2064",  # U+2064 invisible plus
+        "\uFEFF",  # U+FEFF zero-width no-break space / BOM
+        "\u00AD",  # U+00AD soft hyphen
+        "\u180E",  # U+180E Mongolian vowel separator
+        "\u034F",  # U+034F combining grapheme joiner
+        "\u061C",  # U+061C Arabic letter mark
     })
 
     def __init__(self):

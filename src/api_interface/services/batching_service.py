@@ -47,13 +47,23 @@ class _PendingRequest:
 try:
     from .enhanced_preprocessing import EnhancedPreprocessor
     _preprocessor = EnhancedPreprocessor()
-except Exception:  # pragma: no cover - defensive
+except Exception as _exc:  # pragma: no cover - defensive
+    # Log loudly: a silent failure here disables obfuscation protection on the
+    # production path with no indication. Availability is preserved (no-op), but
+    # the degradation must be visible in logs.
+    logger.warning(
+        "EnhancedPreprocessor unavailable, adversarial normalization disabled: %s", _exc
+    )
     _preprocessor = None
 
 
 def _normalize_text(text: str) -> str:
     """NFC + homoglyph + zero-width normalisation; no-op if unavailable."""
     if _preprocessor is None:
+        return text
+    # Fast path: invisible chars and homoglyphs are all non-ASCII, and NFC is a
+    # no-op on ASCII — so pure-ASCII SMS (the common case) needs no work.
+    if text.isascii():
         return text
     try:
         return _preprocessor.normalize_unicode(text)

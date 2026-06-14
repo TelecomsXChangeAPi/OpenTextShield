@@ -125,7 +125,9 @@ class Settings(BaseSettings):
         Lets ops point the deployed model at a different checkpoint (e.g. roll
         back to v2.5) purely via environment, without editing mbert_model_configs.
         """
-        if self.mbert_model_path:
+        # Guard on the key existing: OTS_DEFAULT_MBERT_VERSION could be set to a
+        # value not present in mbert_model_configs, which would otherwise KeyError.
+        if self.mbert_model_path and self.default_mbert_version in self.mbert_model_configs:
             self.mbert_model_configs[self.default_mbert_version]["path"] = self.mbert_model_path
         return self
 

@@ -40,17 +40,12 @@ MAX_LEN = 96
 csv.field_size_limit(10 * 1024 * 1024)
 
 # Reuse the dataset loaders from the eval harness so calibration and evaluation
-# read data identically. Load run_eval by file path via importlib rather than
-# mutating sys.path — the latter is import-order-dependent and breaks when this
-# module is imported from another working directory.
-import importlib.util
-
-_run_eval_spec = importlib.util.spec_from_file_location(
-    "ots_run_eval", str(REPO_ROOT / "evals" / "run_eval.py")
-)
-_run_eval = importlib.util.module_from_spec(_run_eval_spec)
-_run_eval_spec.loader.exec_module(_run_eval)
-LOADERS = _run_eval.LOADERS
+# read data identically. They live in loaders.py (no argparse / no side effects),
+# so a normal import is safe. Insert this file's own directory (from __file__,
+# not cwd) so the import resolves whether run as a script or imported elsewhere.
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from loaders import LOADERS  # noqa: E402
 
 
 def load_logits(model_path, samples, device="cpu", batch_size=32):

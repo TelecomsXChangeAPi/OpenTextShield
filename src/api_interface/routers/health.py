@@ -24,8 +24,9 @@ def _deployed_model() -> ModelVersion | None:
         return None
     # The "tokenizer" config key holds the Hugging Face model id
     # (e.g. "bert-base-multilingual-cased"), which doubles as the architecture
-    # name — that's why it's used here. TODO: rename the key to "architecture"
-    # in a follow-up so the intent is self-documenting (see review #10).
+    # name — that's why it's used here. The key name is a known wart; it stays
+    # "tokenizer" because model_loader.py reads it for both the tokenizer and the
+    # BertConfig. Renaming to "architecture" would touch both call sites.
     return ModelVersion(
         name="OTS_mBERT",
         version=version,

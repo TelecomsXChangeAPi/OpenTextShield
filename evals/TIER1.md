@@ -17,7 +17,9 @@ git pull origin sms-classification-intelligence-eval     # get the Tier-1 script
 
 python3.12 -m venv ots && source ots/bin/activate
 pip install --upgrade pip
-pip install "torch>=2.8,<2.9" "transformers>=4.53,<5.0" "tokenizers>=0.21,<0.22" scikit-learn
+# Broad pins so this installs against current stable wheels (don't pin to an
+# unreleased torch). Newer minors are fine.
+pip install "torch>=2.3,<3.0" "transformers>=4.40,<5.0" "tokenizers>=0.19,<1.0" scikit-learn
 
 # confirm Apple Silicon GPU is visible
 python -c "import torch; print('MPS available:', torch.backends.mps.is_available())"
@@ -69,6 +71,11 @@ gentler configuration recovered generalization and beat v2.5 on every benchmark.
 
 It prints `Device: Apple Silicon MPS`, a per-epoch validation line, and saves the
 **best** epoch (by validation macro-F1) — plus a `*.trainlog.json` with the curve.
+
+> ⚠️ The ~99% macro-F1 in the trainlog is on the **in-domain validation split**,
+> not the public benchmarks. It is an optimistic signal — do not interpret it as
+> real-world accuracy. The numbers that matter are the public-benchmark scores
+> from step 4 (and the IMC25 block rate in particular). See `evals/REPORT.md`.
 
 Knobs worth trying (departures from the shipped recipe — validate against IMC25
 before trusting any gain, since the in-domain split is an optimistic signal):

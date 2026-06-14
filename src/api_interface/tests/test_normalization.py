@@ -95,6 +95,20 @@ def test_batching_path_normalises_zero_width():
     assert _normalize_text(obfuscated) == "click here"
 
 
+def test_ascii_fast_path_skips_preprocessor(monkeypatch):
+    """Pure-ASCII text returns unchanged without invoking the preprocessor.
+
+    Locks in the perf fast-path: a preprocessor that raises on call proves the
+    ASCII branch never reaches it.
+    """
+    class _Boom:
+        def normalize_unicode(self, text):
+            raise AssertionError("preprocessor must not be called for ASCII input")
+
+    monkeypatch.setattr(batching_service, "_preprocessor", _Boom())
+    assert _normalize_text("Your OTP is 449128") == "Your OTP is 449128"
+
+
 def test_fallback_is_noop_when_preprocessor_unavailable(monkeypatch):
     """If the preprocessor failed to construct, _normalize_text passes text through.
 
@@ -113,4 +127,7 @@ def test_normalize_never_raises_on_bad_input(monkeypatch):
             raise RuntimeError("boom")
 
     monkeypatch.setattr(batching_service, "_preprocessor", _Boom())
-    assert _normalize_text("anything") == "anything"  # swallowed -> original text
+    # Non-ASCII so it gets past the ASCII fast-path and actually hits the
+    # preprocessor (which raises) — exercising the swallow.
+    raising_input = f"caf{ZWSP}é"
+    assert _normalize_text(raising_input) == raising_input  # swallowed -> original text
