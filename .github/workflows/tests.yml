@@ -3,6 +3,11 @@ name: Unit Tests
 # Runs the fast, offline unit tests (no model weights / LFS needed). The
 # batching + normalisation tests use stubs and stdlib; settings tests construct
 # the config object directly.
+
+# Least-privilege GITHUB_TOKEN: this workflow only reads the repo to run tests.
+permissions:
+  contents: read
+
 on:
   push:
     branches: ["**"]
