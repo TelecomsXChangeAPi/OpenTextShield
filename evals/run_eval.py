@@ -37,6 +37,10 @@ import torch
 from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+# Baseline reference, intentionally pinned to v2.5 (the last released production
+# model) so a bare `run_eval.py` always scores the known baseline. The shipped
+# default in settings.py is a separate concern — pass --model explicitly to
+# evaluate the current production weights (e.g. mbert_ots_model_2.7.pth).
 DEFAULT_MODEL = REPO_ROOT / "src/mBERT/training/model-training/mbert_ots_model_2.5.pth"
 VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
 
@@ -261,7 +265,9 @@ def main():
     logit_bias = None
     if args.logit_bias:
         logit_bias = [float(x) for x in args.logit_bias.split(",")]
-        assert len(logit_bias) == 3, "--logit-bias must be 3 comma-separated values"
+        # ap.error (not assert) so validation survives `python -O`, which strips asserts.
+        if len(logit_bias) != 3:
+            ap.error("--logit-bias must be 3 comma-separated values (ham,spam,phishing)")
         print(f"Applying logit bias (ham,spam,phishing): {logit_bias}", file=sys.stderr)
 
     out_dir = Path(args.out)

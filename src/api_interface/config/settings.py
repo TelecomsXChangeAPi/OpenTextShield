@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Set
 from datetime import datetime
 
-from pydantic import Field
+from pydantic import Field, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -43,7 +43,15 @@ class Settings(BaseSettings):
             "version": "2.7"
         }
     }
-    
+
+    # Operational override for the deployed mBERT weights, relative to
+    # models_base_path (or absolute). Set OTS_MBERT_MODEL_PATH to swap the model
+    # without a code change — e.g. an instant rollback to the previous production
+    # checkpoint: OTS_MBERT_MODEL_PATH=mBERT/training/model-training/mbert_ots_model_2.5.pth
+    # The version is auto-detected from the filename, so /predict and /health
+    # report the rolled-back version correctly.
+    mbert_model_path: Optional[str] = None
+
     
     # Processing
     # SMS payloads are typically 20-60 tokens. The previous default of 512
@@ -109,6 +117,17 @@ class Settings(BaseSettings):
         env_file=".env",
         extra="ignore",
     )
+
+    @model_validator(mode="after")
+    def _apply_model_path_override(self):
+        """Apply OTS_MBERT_MODEL_PATH to the default model config, if set.
+
+        Lets ops point the deployed model at a different checkpoint (e.g. roll
+        back to v2.5) purely via environment, without editing mbert_model_configs.
+        """
+        if self.mbert_model_path:
+            self.mbert_model_configs[self.default_mbert_version]["path"] = self.mbert_model_path
+        return self
 
 
 # Global settings instance

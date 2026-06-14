@@ -111,7 +111,13 @@ class HealthResponse(BaseModel):
 
     status: str = Field(..., description="Service status")
     api_version: str = Field(..., description="API / platform version (e.g. '2.10.0')")
-    version: str = Field(..., description="Deprecated alias of api_version (backward compatibility)")
+    # DEPRECATED: alias of api_version, retained for backward compatibility.
+    # Planned for removal in the next major release (v3.0.0); consumers should
+    # migrate to `api_version`.
+    version: str = Field(
+        ...,
+        description="DEPRECATED alias of api_version (kept for backward compatibility; removal targeted for v3.0.0)"
+    )
     model: Optional[ModelVersion] = Field(
         None, description="Deployed model identity (separate version axis)"
     )

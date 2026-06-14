@@ -22,6 +22,10 @@ def _deployed_model() -> ModelVersion | None:
     version = model_manager.get_model_version(name) or config.get("version")
     if not version:
         return None
+    # The "tokenizer" config key holds the Hugging Face model id
+    # (e.g. "bert-base-multilingual-cased"), which doubles as the architecture
+    # name — that's why it's used here. TODO: rename the key to "architecture"
+    # in a follow-up so the intent is self-documenting (see review #10).
     return ModelVersion(
         name="OTS_mBERT",
         version=version,

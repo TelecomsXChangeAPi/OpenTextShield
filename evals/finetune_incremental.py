@@ -80,6 +80,9 @@ def main():
     ap.add_argument("--lr", type=float, default=1e-5)
     ap.add_argument("--batch-size", type=int, default=16)
     ap.add_argument("--threads", type=int, default=4)
+    ap.add_argument("--num-workers", type=int, default=0,
+                    help="DataLoader workers; keep 0 on macOS to avoid tokenizer "
+                         "multiprocessing deadlocks (see comment at the loader)")
     args = ap.parse_args()
 
     torch.set_num_threads(args.threads)
@@ -98,8 +101,11 @@ def main():
     model.load_state_dict(torch.load(args.base, map_location="cpu", weights_only=True))
     model.train()
 
+    # num_workers defaults to 0: >0 spawns multiprocessing workers that, on
+    # macOS with some PyTorch versions, deadlock when __getitem__ calls the
+    # tokenizer. Opt into parallel loading explicitly via --num-workers.
     loader = DataLoader(SmsDataset(rows, tokenizer), batch_size=args.batch_size,
-                        shuffle=True, num_workers=2)
+                        shuffle=True, num_workers=args.num_workers)
     optim = torch.optim.AdamW(model.parameters(), lr=args.lr)
     total_steps = len(loader) * args.epochs
     sched = torch.optim.lr_scheduler.LinearLR(optim, start_factor=1.0, end_factor=0.1,
