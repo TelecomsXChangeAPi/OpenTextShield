@@ -61,8 +61,13 @@ network access required (the mBERT vocab is vendored in `evals/assets/`).
     explicit phishing class — so it directly measures phishing-vs-spam skill.
   - **IMC 2025 Smishing Dataset** (`reportsmishing/Smishing-Dataset-IMC25`,
     CC-BY-4.0) — ~34k real user-reported smishing messages across 40+ languages,
-    labelled by scam type. We map `scam_type=spam`→spam, everything else→phishing,
-    and evaluate a stratified 8k sample. This is the modern real-world benchmark.
+    labelled by scam type. This is an **all-attack corpus** — it has no ham/legit
+    class — so we map `scam_type=spam`→spam and every other known scam type
+    →phishing; the few rows with no scam_type are skipped (and counted), not
+    silently labelled. We evaluate a stratified 8k sample. This is the modern
+    real-world benchmark. **Caveat:** because there are no legitimate messages,
+    IMC25 measures attack recall (block rate) only — it gives no signal on
+    false positives, e.g. whether the model over-blocks legitimate non-English SMS.
   - **Fable 5 adversarial suite** (`evals/datasets/fable5_adversarial_v1.csv`,
     150 msgs) — hand-authored by Fable 5 to probe specific 2024–2025 attack
     archetypes and hard-negative ham, in 15 languages.
@@ -264,9 +269,15 @@ python evals/compare_runs.py \
 - IMC25 labels collapse many scam types into our single `phishing` class; the
   spam-vs-phishing boundary there is approximate, so treat IMC25 3-class accuracy
   as indicative and the **block rate** as the trustworthy metric.
-- Obfuscation handling is partly addressed in the existing
-  `enhanced_preprocessing.py` (homoglyph/zero-width normalization), but that path
-  is applied per-request and **not** in the dynamic-batching code path. Wiring
-  normalization into the batcher would harden the obfuscation cases further,
-  independent of the model.
+- **No multilingual false-positive control.** IMC25 is all-attack, so every
+  benchmark we have measures attack recall — none measures whether v2.7
+  over-blocks *legitimate* non-English SMS. The per-language block-rate gains
+  therefore say nothing about non-English false-positive rate, which is the
+  weakest-covered risk. A small multilingual legitimate-message control set,
+  scored alongside IMC25, is the most important next addition to the harness.
+- Obfuscation handling (homoglyph + zero-width normalization in
+  `enhanced_preprocessing.py`) is now wired into the dynamic-batching code path —
+  the production default — so obfuscated smishing is de-obfuscated before
+  tokenization. The ASCII fast-path means leetspeak-only obfuscation (`V3r1fy`)
+  is still not normalized; that remains model-side.
 - Consider periodic re-evaluation against IMC25 as a regression gate in CI.

@@ -14,6 +14,7 @@ import csv
 import hashlib
 import json
 import random
+import sys
 from collections import defaultdict
 
 LABELS = ["ham", "spam", "phishing"]
@@ -71,18 +72,32 @@ def _fill_placeholders(text, seed):
 
 
 def load_imc25(path, sample_n=None):
+    # IMC25 is an all-attack corpus: it has no ham/legit class (scam types are
+    # banking / delivery / government / telecom / others / spam / wrong number /
+    # hey mum-dad). So `spam` maps to spam and every other *known* scam type maps
+    # to phishing. A small number of rows carry no scam_type at all — those have
+    # no label, so skip and count them rather than silently scoring them as
+    # phishing (which would distort the headline phishing metric).
     rows = []
+    skipped_unlabeled = 0
     with open(path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             text = (row.get("text") or "").strip()
             if not text:
                 continue
-            gold = "spam" if row.get("scam_type") == "spam" else "phishing"
+            scam_type = (row.get("scam_type") or "").strip().lower()
+            if not scam_type:
+                skipped_unlabeled += 1
+                continue
+            gold = "spam" if scam_type == "spam" else "phishing"
             rows.append({
                 "text": text, "gold": gold,
-                "category": row.get("scam_type") or "unknown",
+                "category": scam_type,
                 "language": row.get("language") or "unknown",
             })
+    if skipped_unlabeled:
+        print(f"[imc25] skipped {skipped_unlabeled} rows with no scam_type label",
+              file=sys.stderr)
     if sample_n and sample_n < len(rows):
         # Stratify by language so small languages survive sampling.
         by_lang = defaultdict(list)
@@ -96,7 +111,9 @@ def load_imc25(path, sample_n=None):
             sampled.extend(rng.sample(group, min(k, len(group))))
         rows = sampled
     for r in rows:
-        seed = int(hashlib.md5(r["text"].encode()).hexdigest()[:8], 16)
+        # Non-cryptographic use (deterministic placeholder seed). usedforsecurity
+        # keeps this working under FIPS-enforced telecom environments.
+        seed = int(hashlib.md5(r["text"].encode(), usedforsecurity=False).hexdigest()[:8], 16)
         r["text"] = _fill_placeholders(r["text"], seed)
     return rows
 
