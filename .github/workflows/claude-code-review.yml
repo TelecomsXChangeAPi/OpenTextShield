@@ -1,14 +1,12 @@
 name: Claude Code Review
 
 on:
-  pull_request:
-    types: [opened, synchronize]
-    # Optional: Only run on specific file changes
-    # paths:
-    #   - "src/**/*.ts"
-    #   - "src/**/*.tsx"
-    #   - "src/**/*.js"
-    #   - "src/**/*.jsx"
+  # Manual-only trigger. The automated review previously ran on every PR push
+  # (pull_request: opened, synchronize), which flooded PR threads with repeated
+  # bot review comments and drowned out human conversation. Run it on demand
+  # instead — from the Actions tab ("Run workflow") or the gh CLI:
+  #   gh workflow run "Claude Code Review" --ref <branch>
+  workflow_dispatch:
 
 jobs:
   claude-review:
