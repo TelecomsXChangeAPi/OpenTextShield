@@ -1,0 +1,84 @@
+{
+  "csv": {
+    "n": 88,
+    "accuracy_3class": 0.3295,
+    "accuracy_binary_block": 0.3295,
+    "per_class": {
+      "ham": {
+        "precision": 1.0,
+        "recall": 0.3295,
+        "f1": 0.4957,
+        "support": 88
+      },
+      "spam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "phishing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion": {
+      "ham->ham": 29,
+      "ham->spam": 59
+    },
+    "by_category": {
+      "appointment": {
+        "acc": 0.25,
+        "n": 16
+      },
+      "bank_alert": {
+        "acc": 0.3333,
+        "n": 12
+      },
+      "delivery": {
+        "acc": 0.0833,
+        "n": 12
+      },
+      "government": {
+        "acc": 0.0625,
+        "n": 16
+      },
+      "otp": {
+        "acc": 0.5,
+        "n": 8
+      },
+      "personal": {
+        "acc": 1.0,
+        "n": 8
+      },
+      "personal_money": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "telecom": {
+        "acc": 0.25,
+        "n": 12
+      }
+    },
+    "by_language": {
+      "en": {
+        "acc": 0.3182,
+        "n": 22
+      },
+      "es": {
+        "acc": 0.3636,
+        "n": 22
+      },
+      "it": {
+        "acc": 0.3636,
+        "n": 22
+      },
+      "pt": {
+        "acc": 0.2727,
+        "n": 22
+      }
+    },
+    "inference_seconds": 2.3
+  }
+}
