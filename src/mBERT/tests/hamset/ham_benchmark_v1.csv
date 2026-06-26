@@ -1,0 +1,89 @@
+text,label,category,language
+HMRC: Your Self Assessment deadline is 31 Jan. File online at gov.uk. We never ask for payment details by text.,ham,government,en
+DVLA: Vehicle tax for AB12 CDE is due to renew on 1 March. Renew at gov.uk/vehicle-tax.,ham,government,en
+NHS: Your COVID booster is now available. Book at nhs.uk or call your GP. No payment needed.,ham,government,en
+HM Passport Office: Your application has been received and is being processed. Track it at gov.uk.,ham,government,en
+Agencia Tributaria: El plazo de la declaración de la renta finaliza el 30 de junio. Info en sede.agenciatributaria.gob.es. Nunca pedimos datos bancarios por SMS.,ham,government,es
+DGT: El permiso de tu vehículo 1234ABC vence el 1 de marzo. Renueva tu documentación en sede.dgt.gob.es.,ham,government,es
+Seguridad Social: Tu cita para la renovación del DNI está confirmada. Consulta los detalles en tu área personal.,ham,government,es
+SEPE: Tu solicitud de prestación ha sido registrada. Consulta el estado en sede.sepe.gob.es con tu certificado.,ham,government,es
+Agenzia delle Entrate: La scadenza per la dichiarazione dei redditi è il 30 giugno. Info su agenziaentrate.gov.it. Non chiediamo mai dati bancari via SMS.,ham,government,it
+Motorizzazione: Il bollo auto per la targa AB123CD scade il 1 marzo. Rinnova presso un'agenzia autorizzata.,ham,government,it
+INPS: La tua domanda di prestazione è stata registrata. Consulta lo stato su inps.it con SPID o CIE.,ham,government,it
+Comune: Il tuo certificato di residenza è disponibile. Ritiralo allo sportello o scaricalo dal portale.,ham,government,it
+Autoridade Tributária: O prazo para a entrega do IRS termina a 30 de junho. Mais em portaldasfinancas.gov.pt. Nunca pedimos dados bancários por SMS.,ham,government,pt
+IMT: O selo do teu veículo 12-AB-34 expira a 1 de março. Renova a tua documentação no portal do IMT.,ham,government,pt
+Segurança Social: O teu pedido de prestação foi registado. Consulta o estado em seg-social.pt com a Chave Móvel Digital.,ham,government,pt
+SNS: A tua consulta de rotina está disponível para marcação. Acede ao portal do SNS24 ou liga 808 24 24 24.,ham,government,pt
+Reminder: dental appointment with Dr. Shah tomorrow at 09:30. Reply C to confirm or call to reschedule.,ham,appointment,en
+"Your GP appointment is booked for Thu 14 at 11:15 at Greenway Surgery. Reply 1 to confirm, 2 to cancel.",ham,appointment,en
+Specsavers: your eye test is on Sat at 14:00. Please arrive 5 minutes early. Reply R to rebook.,ham,appointment,en
+Your MOT is due this month. Book a slot at Halfords Autocentre Wandsworth. Reply BOOK to arrange.,ham,appointment,en
+Recordatorio: tienes cita con el Dr. García mañana a las 09:30 en tu centro de salud. Responde C para confirmar.,ham,appointment,es
+"Tu cita de revisión está fijada para el jueves 14 a las 11:15. Responde 1 para confirmar, 2 para cancelar.",ham,appointment,es
+Clínica Dental Sonrisa: tu cita es el sábado a las 14:00. Llega 5 minutos antes. Responde R para cambiarla.,ham,appointment,es
+ITV: tu vehículo debe pasar la inspección este mes. Pide cita en tu estación ITV más cercana.,ham,appointment,es
+Promemoria: hai un appuntamento con il Dott. Rossi domani alle 09:30 presso il poliambulatorio. Rispondi C per confermare.,ham,appointment,it
+"La tua visita di controllo è fissata per giovedì 14 alle 11:15. Rispondi 1 per confermare, 2 per annullare.",ham,appointment,it
+Studio Dentistico Sorriso: il tuo appuntamento è sabato alle 14:00. Arriva 5 minuti prima. Rispondi R per spostarlo.,ham,appointment,it
+Revisione auto: il tuo veicolo deve fare la revisione questo mese. Prenota presso un centro autorizzato.,ham,appointment,it
+Lembrete: tens uma consulta com o Dr. Silva amanhã às 09:30 no centro de saúde. Responde C para confirmar.,ham,appointment,pt
+"A tua consulta de rotina está marcada para quinta-feira 14 às 11:15. Responde 1 para confirmar, 2 para cancelar.",ham,appointment,pt
+Clínica Dentária Sorriso: a tua consulta é no sábado às 14:00. Chega 5 minutos antes. Responde R para remarcar.,ham,appointment,pt
+Inspeção automóvel: o teu veículo deve fazer a inspeção este mês. Marca no centro mais próximo.,ham,appointment,pt
+Barclays: £85.00 was withdrawn from your account ending 2231 at an ATM today. Not you? Call the number on your card.,ham,bank_alert,en
+"Monzo: You've received a payment of £250.00 from J SMITH. Your new balance is £1,310.55.",ham,bank_alert,en
+Lloyds: Your monthly statement for account ending 6650 is ready to view in the app.,ham,bank_alert,en
+"Santander: Se han retirado 85,00€ de tu cuenta terminada en 2231 en un cajero hoy. Si no fuiste tú, llama al teléfono de tu tarjeta.",ham,bank_alert,es
+"BBVA: Has recibido una transferencia de 250,00€ de J SMITH. Tu nuevo saldo es 1.310,55€.",ham,bank_alert,es
+CaixaBank: Tu extracto mensual de la cuenta terminada en 6650 ya está disponible en la app.,ham,bank_alert,es
+"Intesa Sanpaolo: Sono stati prelevati 85,00€ dal conto che termina con 2231 a uno sportello oggi. Se non sei stato tu, chiama il numero della carta.",ham,bank_alert,it
+"UniCredit: Hai ricevuto un bonifico di 250,00€ da J SMITH. Il tuo nuovo saldo è 1.310,55€.",ham,bank_alert,it
+BPER: Il tuo estratto conto mensile del conto che termina con 6650 è disponibile nell'app.,ham,bank_alert,it
+"Caixa Geral de Depósitos: Foram levantados 85,00€ da tua conta terminada em 2231 num multibanco hoje. Se não foste tu, liga para o número do cartão.",ham,bank_alert,pt
+"Millennium BCP: Recebeste uma transferência de 250,00€ de J SMITH. O teu novo saldo é 1.310,55€.",ham,bank_alert,pt
+Novo Banco: O teu extrato mensal da conta terminada em 6650 já está disponível na app.,ham,bank_alert,pt
+DPD: Your parcel will be delivered today between 13:00 and 14:00. Track it live in the DPD app.,ham,delivery,en
+Amazon: Your order of 'USB-C cable' has been dispatched and arrives tomorrow. No action needed.,ham,delivery,en
+Royal Mail: We tried to deliver but no one was home. Collect from your local office or rebook online.,ham,delivery,en
+SEUR: Tu paquete se entregará hoy entre las 13:00 y las 14:00. Sigue el envío en la app de SEUR.,ham,delivery,es
+Amazon: Tu pedido de 'cable USB-C' ha sido enviado y llega mañana. No es necesario hacer nada.,ham,delivery,es
+Correos: Intentamos entregar tu paquete pero no había nadie. Recógelo en tu oficina o concierta otra entrega.,ham,delivery,es
+BRT: Il tuo pacco sarà consegnato oggi tra le 13:00 e le 14:00. Segui la spedizione nell'app BRT.,ham,delivery,it
+Amazon: Il tuo ordine di 'cavo USB-C' è stato spedito e arriva domani. Nessuna azione necessaria.,ham,delivery,it
+Poste Italiane: Abbiamo tentato la consegna ma non c'era nessuno. Ritira all'ufficio o riprenota online.,ham,delivery,it
+CTT: A tua encomenda será entregue hoje entre as 13:00 e as 14:00. Segue o envio na app dos CTT.,ham,delivery,pt
+Amazon: O teu pedido de 'cabo USB-C' foi enviado e chega amanhã. Não é necessária qualquer ação.,ham,delivery,pt
+DPD: Tentámos entregar a tua encomenda mas não estava ninguém. Levanta-a no ponto ou remarca online.,ham,delivery,pt
+Vodafone: You've used 80% of your monthly data. Top up or manage your plan in the My Vodafone app.,ham,telecom,en
+EE: Your bill of £28.50 is ready and will be taken on the 3rd. View it in the EE app.,ham,telecom,en
+O2: Welcome to O2! Your SIM is now active. Save this number as your account contact.,ham,telecom,en
+Movistar: Has consumido el 80% de tus datos del mes. Recarga o gestiona tu tarifa en la app Mi Movistar.,ham,telecom,es
+"Orange: Tu factura de 28,50€ ya está disponible y se cobrará el día 3. Consúltala en la app.",ham,telecom,es
+Vodafone: ¡Bienvenido! Tu SIM ya está activa. Guarda este número como contacto de tu cuenta.,ham,telecom,es
+TIM: Hai usato l'80% dei tuoi giga del mese. Ricarica o gestisci l'offerta nell'app MyTIM.,ham,telecom,it
+"WindTre: La tua fattura di 28,50€ è disponibile e sarà addebitata il giorno 3. Consultala nell'app.",ham,telecom,it
+Vodafone: Benvenuto! La tua SIM è ora attiva. Salva questo numero come contatto del tuo account.,ham,telecom,it
+MEO: Já usaste 80% dos teus dados do mês. Carrega ou gere o teu tarifário na app MEO.,ham,telecom,pt
+"NOS: A tua fatura de 28,50€ está disponível e será debitada no dia 3. Consulta na app.",ham,telecom,pt
+Vodafone: Bem-vindo! O teu cartão já está ativo. Guarda este número como contacto da tua conta.,ham,telecom,pt
+Your verification code is 481902. It expires in 10 minutes. Do not share it with anyone.,ham,otp,en
+PayPal: 738201 is your security code. Don't share it. We'll never ask for it by phone or email.,ham,otp,en
+Tu código de verificación es 481902. Caduca en 10 minutos. No lo compartas con nadie.,ham,otp,es
+PayPal: 738201 es tu código de seguridad. No lo compartas. Nunca te lo pediremos por teléfono ni email.,ham,otp,es
+Il tuo codice di verifica è 481902. Scade tra 10 minuti. Non condividerlo con nessuno.,ham,otp,it
+PayPal: 738201 è il tuo codice di sicurezza. Non condividerlo. Non te lo chiederemo mai per telefono o email.,ham,otp,it
+O teu código de verificação é 481902. Expira em 10 minutos. Não o partilhes com ninguém.,ham,otp,pt
+PayPal: 738201 é o teu código de segurança. Não o partilhes. Nunca o pediremos por telefone ou email.,ham,otp,pt
+hey are we still on for sat? lmk if you want me to bring anything,ham,personal,en
+"running like 10 mins late, order me a coffee if you get there first",ham,personal,en
+oye seguimos para el sábado? dime si quieres que lleve algo,ham,personal,es
+"llego como 10 min tarde, pídeme un café si llegas antes",ham,personal,es
+ehi confermiamo per sabato? dimmi se vuoi che porti qualcosa,ham,personal,it
+"arrivo tipo 10 min in ritardo, ordinami un caffè se arrivi prima",ham,personal,it
+ei continuamos para sábado? diz-me se queres que leve alguma coisa,ham,personal,pt
+"chego uns 10 min atrasado, pede-me um café se chegares primeiro",ham,personal,pt
+can you send me the 30 for the tickets when you get a sec? no rush,ham,personal_money,en
+me puedes enviar los 30 de las entradas cuando puedas? sin prisa,ham,personal_money,es
+mi mandi i 30 dei biglietti quando puoi? senza fretta,ham,personal_money,it
+podes enviar-me os 30 dos bilhetes quando puderes? sem pressa,ham,personal_money,pt
