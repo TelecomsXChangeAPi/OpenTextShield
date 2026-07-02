@@ -441,37 +441,37 @@
     "inference_seconds": 81.2
   },
   "fable5": {
-    "n": 150,
-    "accuracy_3class": 0.4867,
-    "accuracy_binary_block": 0.7333,
+    "n": 127,
+    "accuracy_3class": 0.4803,
+    "accuracy_binary_block": 0.7559,
     "per_class": {
       "ham": {
-        "precision": 0.5479,
-        "recall": 0.8511,
+        "precision": 0.5536,
+        "recall": 0.8378,
         "f1": 0.6667,
-        "support": 47
+        "support": 37
       },
       "spam": {
-        "precision": 0.3529,
-        "recall": 0.96,
-        "f1": 0.5161,
-        "support": 25
+        "precision": 0.3492,
+        "recall": 0.9565,
+        "f1": 0.5116,
+        "support": 23
       },
       "phishing": {
         "precision": 1.0,
-        "recall": 0.1154,
-        "f1": 0.2069,
-        "support": 78
+        "recall": 0.1194,
+        "f1": 0.2133,
+        "support": 67
       }
     },
     "confusion": {
-      "ham->ham": 40,
-      "ham->spam": 7,
-      "phishing->ham": 32,
-      "phishing->phishing": 9,
-      "phishing->spam": 37,
+      "ham->ham": 31,
+      "ham->spam": 6,
+      "phishing->ham": 24,
+      "phishing->phishing": 8,
+      "phishing->spam": 35,
       "spam->ham": 1,
-      "spam->spam": 24
+      "spam->spam": 22
     },
     "by_category": {
       "account_scam": {
@@ -492,27 +492,23 @@
       },
       "bec_style": {
         "acc": 0.0,
-        "n": 2
+        "n": 1
       },
       "crypto_promo": {
         "acc": 1.0,
         "n": 1
       },
-      "crypto_scam": {
-        "acc": 0.0,
-        "n": 2
-      },
       "delivery_scam": {
-        "acc": 0.2,
-        "n": 10
+        "acc": 0.125,
+        "n": 8
       },
       "extortion": {
         "acc": 0.0,
-        "n": 2
+        "n": 1
       },
       "family_emergency": {
         "acc": 0.0,
-        "n": 7
+        "n": 2
       },
       "gambling": {
         "acc": 1.0,
@@ -560,15 +556,15 @@
       },
       "legit_otp": {
         "acc": 1.0,
-        "n": 12
+        "n": 10
       },
       "legit_payment": {
         "acc": 1.0,
         "n": 1
       },
       "legit_reminder": {
-        "acc": 0.75,
-        "n": 4
+        "acc": 0.5,
+        "n": 2
       },
       "legit_travel": {
         "acc": 1.0,
@@ -576,7 +572,7 @@
       },
       "loan": {
         "acc": 1.0,
-        "n": 2
+        "n": 1
       },
       "low_quality_scam": {
         "acc": 0.0,
@@ -584,7 +580,7 @@
       },
       "mlm": {
         "acc": 1.0,
-        "n": 4
+        "n": 3
       },
       "obfuscation_homoglyph": {
         "acc": 0.0,
@@ -612,11 +608,7 @@
       },
       "personal": {
         "acc": 1.0,
-        "n": 15
-      },
-      "personal_money": {
-        "acc": 0.0,
-        "n": 1
+        "n": 10
       },
       "personal_password": {
         "acc": 1.0,
@@ -669,28 +661,28 @@
         "n": 6
       },
       "de": {
-        "acc": 0.6,
-        "n": 5
+        "acc": 0.75,
+        "n": 4
       },
       "en": {
-        "acc": 0.3908,
-        "n": 87
+        "acc": 0.3784,
+        "n": 74
       },
       "en-in": {
         "acc": 1.0,
         "n": 1
       },
       "es": {
-        "acc": 0.625,
-        "n": 8
+        "acc": 0.5,
+        "n": 4
       },
       "fr": {
         "acc": 0.5,
         "n": 6
       },
       "he": {
-        "acc": 0.8,
-        "n": 5
+        "acc": 1.0,
+        "n": 3
       },
       "hi-latn": {
         "acc": 0.6,
@@ -701,16 +693,16 @@
         "n": 4
       },
       "ja": {
-        "acc": 0.5,
-        "n": 4
+        "acc": 0.3333,
+        "n": 3
       },
       "pt": {
-        "acc": 0.6,
-        "n": 5
+        "acc": 0.75,
+        "n": 4
       },
       "ru": {
-        "acc": 0.6,
-        "n": 5
+        "acc": 0.5,
+        "n": 4
       },
       "tr": {
         "acc": 0.75,

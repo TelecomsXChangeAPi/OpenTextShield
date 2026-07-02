@@ -1,151 +1,128 @@
 text,label,category,language
 "Hey, did you catch the game last night? That last-minute goal was insane",ham,personal,en
-"Running 10 mins late, order me a flat white if you get there first",ham,personal,en
-"Can you send me the $40 for the concert tickets on Venmo when you get a chance?",ham,personal_money,en
 "URGENT - call me as soon as you see this, mom fell and we're at the ER",ham,personal_urgent,en
 "I forgot my password again lol, can you text me the wifi one?",ham,personal_password,en
 "Dinner at ours Saturday? Bring that wine you mentioned, the cheap one was actually great",ham,personal,en
-"Your verification code is 482913. Never share this code. We will never call you to ask for it.",ham,legit_otp,en
 "Your Chase Sapphire card was used for $403.22 at WALMART #2891. Reply YES if this was you, NO if not.",ham,legit_fraud_alert,en
-"Your Uber code is 7782. Never share this code.",ham,legit_otp,en
-"G-728401 is your Google verification code.",ham,legit_otp,en
-"Microsoft access code: 4417. Don't share it with anyone else.",ham,legit_otp,en
-"Your USPS package 9405511899561234567890 was delivered to your mailbox at 2:14 PM.",ham,legit_delivery,en
-"UPS: Your package is out for delivery today. Track at ups.com using number 1Z999AA10123456784.",ham,legit_delivery,en
-"Your Amazon order #112-7366915 has shipped. Arriving Thursday by 8 PM.",ham,legit_delivery,en
-"Reminder: Your dental appointment with Dr. Patel is tomorrow at 9:30 AM. Reply C to confirm or R to reschedule.",ham,legit_reminder,en
-"Your electricity bill of $86.40 is due Jun 21. Pay in the app or at pge.com to avoid late fees.",ham,legit_billing,en
-"Lincoln Elementary: School closed tomorrow due to snow. All after-school activities cancelled.",ham,legit_alert,en
-"NWS ALERT: Flash flood warning for your area until 9 PM. Avoid low-lying roads. Visit weather.gov for updates.",ham,legit_alert,en
+Your Uber code is 7782. Never share this code.,ham,legit_otp,en
+G-728401 is your Google verification code.,ham,legit_otp,en
+Microsoft access code: 4417. Don't share it with anyone else.,ham,legit_otp,en
+Your USPS package 9405511899561234567890 was delivered to your mailbox at 2:14 PM.,ham,legit_delivery,en
+UPS: Your package is out for delivery today. Track at ups.com using number 1Z999AA10123456784.,ham,legit_delivery,en
+Your Amazon order #112-7366915 has shipped. Arriving Thursday by 8 PM.,ham,legit_delivery,en
+Your electricity bill of $86.40 is due Jun 21. Pay in the app or at pge.com to avoid late fees.,ham,legit_billing,en
+Lincoln Elementary: School closed tomorrow due to snow. All after-school activities cancelled.,ham,legit_alert,en
+NWS ALERT: Flash flood warning for your area until 9 PM. Avoid low-lying roads. Visit weather.gov for updates.,ham,legit_alert,en
 "Your prescription is ready for pickup at CVS Pharmacy, 1420 Oak St. Questions? Call 555-301-2200.",ham,legit_reminder,en
-"Your table for 4 at Nobu is confirmed for 7:30 PM tonight. Reply CANCEL to release the reservation.",ham,legit_reminder,en
 "Hi it's Megan from Dr. Lee's office - your lab results are in, nothing urgent, call us when convenient.",ham,legit_business,en
-"Your DoorDash order is arriving. Marcus is outside in a grey Honda Civic.",ham,legit_delivery,en
+Your DoorDash order is arriving. Marcus is outside in a grey Honda Civic.,ham,legit_delivery,en
 "Bank of America: A new device signed in to your account on Jun 12. If this was you, no action needed. Otherwise call the number on your card.",ham,legit_fraud_alert,en
-"Your flight UA1182 is delayed to 4:55 PM. New gate: C22. We apologize for the inconvenience.",ham,legit_travel,en
-"Venmo: You paid Jake Miller $25.00 for 'pizza'",ham,legit_payment,en
+Your flight UA1182 is delayed to 4:55 PM. New gate: C22. We apologize for the inconvenience.,ham,legit_travel,en
+Venmo: You paid Jake Miller $25.00 for 'pizza',ham,legit_payment,en
 "Hey it's Sam from the climbing gym, you left your chalk bag here, we'll hold it at the front desk",ham,personal,en
-"Tu código de verificación de WhatsApp es 718-294. No lo compartas con nadie.",ham,legit_otp,es
-"Mamá ya llegué a casa, te llamo después de cenar, besos",ham,personal,es
-"Ton colis Chronopost arrivera demain entre 9h et 12h. Suivi sur chronopost.fr",ham,legit_delivery,fr
+Ton colis Chronopost arrivera demain entre 9h et 12h. Suivi sur chronopost.fr,ham,legit_delivery,fr
 "Papa, n'oublie pas le rendez-vous chez le médecin demain à 15h. Je passe te chercher à 14h30",ham,personal,fr
-"Ihr Termin beim Bürgeramt am 18.06. um 10:15 Uhr ist bestätigt. Bitte bringen Sie Ihren Ausweis mit.",ham,legit_reminder,de
+Ihr Termin beim Bürgeramt am 18.06. um 10:15 Uhr ist bestätigt. Bitte bringen Sie Ihren Ausweis mit.,ham,legit_reminder,de
 "Schatz, ich bin noch im Büro, fang schon mal ohne mich an zu essen",ham,personal,de
-"رمز التحقق الخاص بك هو 392841. لا تشاركه مع أي شخص.",ham,legit_otp,ar
-"أمي وصلت بالسلامة، سأتصل بك مساءً إن شاء الله",ham,personal,ar
-"הקוד שלך לאימות הוא 558212. אל תשתף אותו עם אף אחד.",ham,legit_otp,he
-"אמא, אני מאחר בעשר דקות, תתחילו לאכול בלעדיי",ham,personal,he
-"Ваш код подтверждения: 904712. Никому не сообщайте его.",ham,legit_otp,ru
-"Привет! Встретимся завтра в 18:00 у метро, как договаривались?",ham,personal,ru
-"Seu código de verificação Nubank: 331928. Não compartilhe com ninguém.",ham,legit_otp,pt
+رمز التحقق الخاص بك هو 392841. لا تشاركه مع أي شخص.,ham,legit_otp,ar
+أمي وصلت بالسلامة، سأتصل بك مساءً إن شاء الله,ham,personal,ar
+הקוד שלך לאימות הוא 558212. אל תשתף אותו עם אף אחד.,ham,legit_otp,he
+Ваш код подтверждения: 904712. Никому не сообщайте его.,ham,legit_otp,ru
+Seu código de verificação Nubank: 331928. Não compartilhe com ninguém.,ham,legit_otp,pt
 "Oi amor, cheguei bem, te ligo mais tarde",ham,personal,pt
-"Kode OTP Anda adalah 718293. Jangan berikan kode ini kepada siapa pun.",ham,legit_otp,id
+Kode OTP Anda adalah 718293. Jangan berikan kode ini kepada siapa pun.,ham,legit_otp,id
 "Bu akşam yemeğe geç kalacağım, beni beklemeyin",ham,personal,tr
-"您的验证码是 847291，请勿告诉他人。",ham,legit_otp,zh
-"妈，我到学校了，晚上视频聊",ham,personal,zh
-"お母さん、今駅に着いたよ。夕飯までには帰る。",ham,personal,ja
-"Apka OTP hai 552941. Kisi ke saath share na karein.",ham,legit_otp,hi-latn
+您的验证码是 847291，请勿告诉他人。,ham,legit_otp,zh
+妈，我到学校了，晚上视频聊,ham,personal,zh
+Apka OTP hai 552941. Kisi ke saath share na karein.,ham,legit_otp,hi-latn
 "Beta khana kha lena, main der se aaungi aaj office se",ham,personal,hi-latn
-"FINAL NOTICE: Your vehicle has an unpaid toll of $6.99. Pay now to avoid a $50 late fee and license suspension: ezpass-tollservices.com",phishing,toll_scam,en
-"E-ZPass: Outstanding toll balance $4.15. Settle immediately at https://ezdrivema.com-pay.vip or face DMV penalties.",phishing,toll_scam,en
-"SunPass Alert: Your account will be suspended. Unpaid toll: $3.87. Pay here: sunpass.com-billing.net",phishing,toll_scam,en
-"USPS: Your package is held at our facility due to an incomplete address. Confirm details within 24h: usps-redelivery.info",phishing,delivery_scam,en
-"FedEx: Customs fee of $1.99 required to release your parcel. Pay at fedex-clearance.com or package returns to sender.",phishing,delivery_scam,en
-"Royal Mail: We attempted delivery today. Reschedule and pay the £1.10 handling fee: royalmail-redelivery.co",phishing,delivery_scam,en
-"Chase Alert: Your account has been LOCKED due to suspicious activity. Verify your identity now: chase-secure-login.com",phishing,bank_scam,en
+FINAL NOTICE: Your vehicle has an unpaid toll of $6.99. Pay now to avoid a $50 late fee and license suspension: ezpass-tollservices.com,phishing,toll_scam,en
+E-ZPass: Outstanding toll balance $4.15. Settle immediately at https://ezdrivema.com-pay.vip or face DMV penalties.,phishing,toll_scam,en
+SunPass Alert: Your account will be suspended. Unpaid toll: $3.87. Pay here: sunpass.com-billing.net,phishing,toll_scam,en
+USPS: Your package is held at our facility due to an incomplete address. Confirm details within 24h: usps-redelivery.info,phishing,delivery_scam,en
+FedEx: Customs fee of $1.99 required to release your parcel. Pay at fedex-clearance.com or package returns to sender.,phishing,delivery_scam,en
+Royal Mail: We attempted delivery today. Reschedule and pay the £1.10 handling fee: royalmail-redelivery.co,phishing,delivery_scam,en
+Chase Alert: Your account has been LOCKED due to suspicious activity. Verify your identity now: chase-secure-login.com,phishing,bank_scam,en
 "Wells Fargo: Unusual sign-in detected from Russia. If this wasn't you, secure your account immediately: wf-fraud-center.net",phishing,bank_scam,en
-"Your Zelle transfer of $950 to MARK T. is processing. Not you? Cancel here: zelle-dispute.center",phishing,bank_scam,en
-"NETFLIX: Your payment failed. Update your billing info within 48h to keep watching: netflix-billing-update.com",phishing,subscription_scam,en
-"Apple ID: Your account has been disabled for security reasons. Restore access: appleid.apple.com.verify-session.info",phishing,account_scam,en
-"Your iCloud storage is full. Photos will be deleted in 48h. Get 50GB free: icloud-storage-renewal.com",phishing,account_scam,en
-"AMAZON: We could not authorize your recent payment. Your Prime benefits are paused. Re-verify: amzn-account-services.net",phishing,subscription_scam,en
+Your Zelle transfer of $950 to MARK T. is processing. Not you? Cancel here: zelle-dispute.center,phishing,bank_scam,en
+NETFLIX: Your payment failed. Update your billing info within 48h to keep watching: netflix-billing-update.com,phishing,subscription_scam,en
+Apple ID: Your account has been disabled for security reasons. Restore access: appleid.apple.com.verify-session.info,phishing,account_scam,en
+Your iCloud storage is full. Photos will be deleted in 48h. Get 50GB free: icloud-storage-renewal.com,phishing,account_scam,en
+AMAZON: We could not authorize your recent payment. Your Prime benefits are paused. Re-verify: amzn-account-services.net,phishing,subscription_scam,en
 "IRS: You have a pending tax refund of $1,482.00. Claim before Jun 30: irs-refund-portal.com",phishing,gov_scam,en
-"HMRC: You are owed a tax rebate of £278.44. Submit your claim: hmrc-rebate-gateway.uk",phishing,gov_scam,en
-"DMV FINAL WARNING: Your driver's license will be suspended due to an unpaid violation. Resolve now: dmv-citations-pay.com",phishing,gov_scam,en
-"Hi mum, my phone broke so this is my new number. Can you message me on WhatsApp? Something urgent happened x",phishing,family_emergency,en
-"Dad it's me, I dropped my phone in the toilet, this is my temp number. I need to pay a bill today, can you help? Will explain later",phishing,family_emergency,en
+HMRC: You are owed a tax rebate of £278.44. Submit your claim: hmrc-rebate-gateway.uk,phishing,gov_scam,en
+DMV FINAL WARNING: Your driver's license will be suspended due to an unpaid violation. Resolve now: dmv-citations-pay.com,phishing,gov_scam,en
 "Grandma, I'm in trouble and need bail money. Please don't tell mom and dad. Send $800 via Zelle to this number ASAP.",phishing,family_emergency,en
-"Your WhatsApp account will be deactivated. Verify your number by forwarding the 6-digit code we just sent you.",phishing,otp_theft,en
-"Coinbase: Withdrawal of 0.45 BTC initiated. If this wasn't you, cancel immediately: coinbase-securityhold.com",phishing,crypto_scam,en
-"Your MetaMask wallet will be suspended. Validate your seed phrase to keep access: metamask-restore.app",phishing,crypto_scam,en
+Your WhatsApp account will be deactivated. Verify your number by forwarding the 6-digit code we just sent you.,phishing,otp_theft,en
 "Congratulations! You've been selected for a remote position at Amazon. $450/day, no experience. Reply YES or join: t.me/amazonhiring882",phishing,job_scam,en
 "Hello, I'm Linda from Indeed HR. We reviewed your resume and would like to offer flexible online work, 30 min/day, $200-500. Interested?",phishing,job_scam,en
-"Your Netflix subscription expired! Renew now for free 90 days promo (today only): netfIix-promo.com",phishing,subscription_scam,en
-"Account alert: unusual login attempt. Call our security desk immediately at +1 (888) 402-9917 to avoid permanent closure.",phishing,vishing_callback,en
+Your Netflix subscription expired! Renew now for free 90 days promo (today only): netfIix-promo.com,phishing,subscription_scam,en
+Account alert: unusual login attempt. Call our security desk immediately at +1 (888) 402-9917 to avoid permanent closure.,phishing,vishing_callback,en
 "Your bank card has been deactivated. Call 1-833-228-4471 now to reactivate. Do NOT visit a branch, lines are long.",phishing,vishing_callback,en
 "PayPal: You sent $499.99 to GeekTech Store. If you did not authorize this, call +1-805-410-2291 within 24 hrs.",phishing,vishing_callback,en
 "Geek Squad: Your $389.99 annual plan auto-renews today. To cancel, call +1 (818) 290-7714 immediately.",phishing,vishing_callback,en
-"Verify your Microsoft 365 work account to avoid mailbox suspension: microsoft365-auth.login-portal.live",phishing,account_scam,en
-"Your student loan forgiveness application is PRE-APPROVED. Complete enrollment before funds run out: studentaid-relief.org-apply.com",phishing,gov_scam,en
+Verify your Microsoft 365 work account to avoid mailbox suspension: microsoft365-auth.login-portal.live,phishing,account_scam,en
+Your student loan forgiveness application is PRE-APPROVED. Complete enrollment before funds run out: studentaid-relief.org-apply.com,phishing,gov_scam,en
 "FREE MONEY: Government stimulus of $1,400 available for you. Check eligibility: federal-benefits-check.com",phishing,gov_scam,en
 "Your electricity will be disconnected TODAY at 1 PM due to non-payment. Avoid disconnection, pay now: poweraccount-billing.com or call 877-330-1196",phishing,utility_scam,en
 "Hi, I'm selling my late husband's Rolex collection cheap, saw your number in a collectors group. Interested? WhatsApp me: +44 7911 028841",phishing,advance_fee,en
-"You have (1) unclaimed reward worth $500 from your mobile carrier. Expires tonight: verizon-loyalty-rewards.net",phishing,reward_scam,en
+You have (1) unclaimed reward worth $500 from your mobile carrier. Expires tonight: verizon-loyalty-rewards.net,phishing,reward_scam,en
 "С вашей карты Сбербанка списано 14 500 ₽. Если это не вы, срочно перейдите: sberbank-otmena.ru",phishing,bank_scam,ru
-"Ваш аккаунт Госуслуги заблокирован. Подтвердите личность: gosuslugi-id-verify.ru",phishing,gov_scam,ru
-"BBVA: Su cuenta ha sido bloqueada temporalmente. Verifique su identidad aquí: bbva-clientes-seguridad.com",phishing,bank_scam,es
-"Correos: Su paquete está retenido en aduana. Pague 1,99 € para liberarlo: correos-aduanas.info",phishing,delivery_scam,es
-"Hola mamá, se me rompió el celular, este es mi número nuevo. ¿Me puedes hacer una transferencia urgente? Luego te explico",phishing,family_emergency,es
+Ваш аккаунт Госуслуги заблокирован. Подтвердите личность: gosuslugi-id-verify.ru,phishing,gov_scam,ru
+BBVA: Su cuenta ha sido bloqueada temporalmente. Verifique su identidad aquí: bbva-clientes-seguridad.com,phishing,bank_scam,es
 "BANORTE: Detectamos un cargo de $8,450 MXN. Si no lo reconoce, cancele aquí: banorte-aclaraciones.mx-portal.com",phishing,bank_scam,es
 "Impots.gouv: Vous avez droit à un remboursement de 184,50 €. Confirmez vos coordonnées bancaires: impots-remboursement.fr-gouv.info",phishing,gov_scam,fr
-"Crit'Air: Votre vignette n'est plus valide. Commandez la nouvelle sous 48h pour éviter une amende de 135 €: vignette-critair.info",phishing,gov_scam,fr
+Crit'Air: Votre vignette n'est plus valide. Commandez la nouvelle sous 48h pour éviter une amende de 135 €: vignette-critair.info,phishing,gov_scam,fr
 "Maman c'est moi, j'ai cassé mon téléphone. Envoie-moi un message sur WhatsApp au 07 56 89 21 03, c'est urgent",phishing,family_emergency,fr
 "Ihr Paket konnte nicht zugestellt werden. Zollgebühr von 1,99 € erforderlich: dhl-zollservice.de-paket.info",phishing,delivery_scam,de
 "Sparkasse: Ihr pushTAN-Verfahren läuft ab. Registrieren Sie sich neu, um Sperrung zu vermeiden: sparkasse-pushtan-aktivierung.de",phishing,bank_scam,de
-"Hallo Mama, mein Handy ist kaputt. Das ist meine neue Nummer. Kannst du mir schnell bei einer Überweisung helfen?",phishing,family_emergency,de
-"تنبيه من البنك الأهلي: تم إيقاف بطاقتك مؤقتاً. للتفعيل اضغط الرابط: alahli-verify.com",phishing,bank_scam,ar
-"عزيزي العميل، لديك شحنة معلقة في الجمارك. ادفع رسوم 10 ريال للإفراج عنها: aramex-sa.delivery-fee.com",phishing,delivery_scam,ar
-"مبروك! ربحت 5000 ريال من مسابقة STC. اضغط هنا لاستلام الجائزة: stc-prizes.win",phishing,reward_scam,ar
-"בנק הפועלים: חשבונך הוגבל עקב פעילות חריגה. אמת את פרטיך כאן: bankhapoalim-verify.co",phishing,bank_scam,he
-"דואר ישראל: החבילה שלך מעוכבת במכס. שלם 9.90 ₪ לשחרור: israelpost-fee.info",phishing,delivery_scam,he
-"Seu CPF foi negativado no Serasa. Regularize com 90% de desconto hoje: serasa-limpanome.net",phishing,gov_scam,pt
-"Banco do Brasil: sua conta será bloqueada. Atualize seus dados: bb-atualizacao.com-cliente.net",phishing,bank_scam,pt
-"Mãe, quebrei meu celular, esse é meu número novo. Preciso pagar uma conta hoje, me ajuda? Te explico depois",phishing,family_emergency,pt
-"BRI Info: Rekening Anda akan diblokir. Segera verifikasi data Anda di: bri-verifikasi.id-online.com",phishing,bank_scam,id
-"Selamat! Anda memenangkan hadiah 50 juta dari Shopee. Klaim sekarang: shopee-pemenang.info",phishing,reward_scam,id
-"Ziraat Bankası: Hesabınız askıya alındı. Kimliğinizi doğrulayın: ziraat-musteri-dogrulama.com",phishing,bank_scam,tr
+تنبيه من البنك الأهلي: تم إيقاف بطاقتك مؤقتاً. للتفعيل اضغط الرابط: alahli-verify.com,phishing,bank_scam,ar
+عزيزي العميل، لديك شحنة معلقة في الجمارك. ادفع رسوم 10 ريال للإفراج عنها: aramex-sa.delivery-fee.com,phishing,delivery_scam,ar
+مبروك! ربحت 5000 ريال من مسابقة STC. اضغط هنا لاستلام الجائزة: stc-prizes.win,phishing,reward_scam,ar
+בנק הפועלים: חשבונך הוגבל עקב פעילות חריגה. אמת את פרטיך כאן: bankhapoalim-verify.co,phishing,bank_scam,he
+Seu CPF foi negativado no Serasa. Regularize com 90% de desconto hoje: serasa-limpanome.net,phishing,gov_scam,pt
+Banco do Brasil: sua conta será bloqueada. Atualize seus dados: bb-atualizacao.com-cliente.net,phishing,bank_scam,pt
+BRI Info: Rekening Anda akan diblokir. Segera verifikasi data Anda di: bri-verifikasi.id-online.com,phishing,bank_scam,id
+Selamat! Anda memenangkan hadiah 50 juta dari Shopee. Klaim sekarang: shopee-pemenang.info,phishing,reward_scam,id
+Ziraat Bankası: Hesabınız askıya alındı. Kimliğinizi doğrulayın: ziraat-musteri-dogrulama.com,phishing,bank_scam,tr
 "PTT Kargo: Paketiniz gümrükte bekliyor. 19,90 TL ödeme yapın: ptt-kargo-odeme.net",phishing,delivery_scam,tr
-"【日本郵便】お客様の荷物を保管中です。住所を確認してください: jppost-saihaitatsu.com",phishing,delivery_scam,ja
-"【三井住友銀行】お取引を一時制限しました。本人確認はこちら: smbc-honnin-kakunin.com",phishing,bank_scam,ja
-"您的银行卡已被冻结，请立即验证身份：icbc-verify.cn-bank.com",phishing,bank_scam,zh
-"【顺丰速运】您的包裹因地址不详被扣留，请24小时内确认：sf-express-check.com",phishing,delivery_scam,zh
-"SBI Alert: Your YONO account will be suspended today. Update PAN card immediately: sbi-yono-kyc.in-update.com",phishing,bank_scam,en-in
-"Aapka Paytm KYC expire ho gaya hai. Turant update karein warna account band ho jayega: paytm-kyc-update.in",phishing,bank_scam,hi-latn
-"Congratulations! Aapne KBC lottery mein 25 lakh jeeta hai. WhatsApp karein: +92 300 1234567",phishing,reward_scam,hi-latn
-"Ch@se Bank: Y0ur acc0unt has been l0cked. Verify n0w at chase-secure.c0m-login.net",phishing,obfuscation_leet,en
-"URGENT: Your РayРal account is limited. Restore access: paypal.com.restore-limited.app",phishing,obfuscation_homoglyph,en
+【日本郵便】お客様の荷物を保管中です。住所を確認してください: jppost-saihaitatsu.com,phishing,delivery_scam,ja
+【三井住友銀行】お取引を一時制限しました。本人確認はこちら: smbc-honnin-kakunin.com,phishing,bank_scam,ja
+您的银行卡已被冻结，请立即验证身份：icbc-verify.cn-bank.com,phishing,bank_scam,zh
+【顺丰速运】您的包裹因地址不详被扣留，请24小时内确认：sf-express-check.com,phishing,delivery_scam,zh
+SBI Alert: Your YONO account will be suspended today. Update PAN card immediately: sbi-yono-kyc.in-update.com,phishing,bank_scam,en-in
+Aapka Paytm KYC expire ho gaya hai. Turant update karein warna account band ho jayega: paytm-kyc-update.in,phishing,bank_scam,hi-latn
+Congratulations! Aapne KBC lottery mein 25 lakh jeeta hai. WhatsApp karein: +92 300 1234567,phishing,reward_scam,hi-latn
+Ch@se Bank: Y0ur acc0unt has been l0cked. Verify n0w at chase-secure.c0m-login.net,phishing,obfuscation_leet,en
+URGENT: Your РayРal account is limited. Restore access: paypal.com.restore-limited.app,phishing,obfuscation_homoglyph,en
 "Yоur Аpple ID was used tо sign in оn a new device. If this wasn't yоu, verify here: apple-id-check.com",phishing,obfuscation_homoglyph,en
-"B A N K  A L E R T : your card is suspended. call 8 8 8 4 0 2 1 1 7 6 to re-activate",phishing,obfuscation_spacing,en
-"Your package needs a fee. visit: bit{dot}ly{slash}pkg-fee-2291",phishing,obfuscation_url,en
-"​Your​ ​account​ ​is​ ​suspended.​ ​Verify:​ ​secure-bankportal.com​",phishing,obfuscation_zerowidth,en
-"Dear customer your ATM card is block today plz call customer care 06203491172 and re-activate your card thank you",phishing,low_quality_scam,en
-"your video is upload on porn site. i have all your contacts. pay 500$ btc to this wallet or i send to all: bc1q3x8...",phishing,extortion,en
-"I know you visited adult sites. I recorded you through your camera. Pay $950 in Bitcoin within 48 hours or everyone sees the video.",phishing,extortion,en
+B A N K  A L E R T : your card is suspended. call 8 8 8 4 0 2 1 1 7 6 to re-activate,phishing,obfuscation_spacing,en
+Your package needs a fee. visit: bit{dot}ly{slash}pkg-fee-2291,phishing,obfuscation_url,en
+​Your​ ​account​ ​is​ ​suspended.​ ​Verify:​ ​secure-bankportal.com​,phishing,obfuscation_zerowidth,en
+Dear customer your ATM card is block today plz call customer care 06203491172 and re-activate your card thank you,phishing,low_quality_scam,en
+your video is upload on porn site. i have all your contacts. pay 500$ btc to this wallet or i send to all: bc1q3x8...,phishing,extortion,en
 "Final reminder: your Wells Fargo rewards points (48,210 pts = $482) expire tonight. Redeem: wellsfargo-rewards.us",phishing,reward_scam,en
-"Hi this is Sarah from HR. We're updating payroll systems. Please confirm your bank details before Friday's run: payroll-update-portal.com",phishing,bec_style,en
-"Boss here. I'm in a meeting, can't talk. Buy 5 Apple gift cards $100 each for client gifts. Send me the codes. Will reimburse today.",phishing,bec_style,en
+Hi this is Sarah from HR. We're updating payroll systems. Please confirm your bank details before Friday's run: payroll-update-portal.com,phishing,bec_style,en
 "WIN BIG! 🎰 Mega Jackpot Casino - 200 FREE spins, no deposit! Play now: luckyspin-casino.bet 18+",spam,gambling,en
-"HOT SINGLES in your area want to meet YOU! 😘 Click here: meetlocals-tonight.com Reply STOP to end",spam,adult,en
-"Lose 15 lbs in 2 weeks with this 1 weird trick doctors HATE! Order your free trial: slimfast-miracle.shop",spam,health,en
+HOT SINGLES in your area want to meet YOU! 😘 Click here: meetlocals-tonight.com Reply STOP to end,spam,adult,en
+Lose 15 lbs in 2 weeks with this 1 weird trick doctors HATE! Order your free trial: slimfast-miracle.shop,spam,health,en
 "FLASH SALE 🔥 80% OFF designer sunglasses! Ray-Ban, Oakley & more. Today only: shades-outlet.deals",spam,retail_promo,en
-"Need cash fast? Get up to $5,000 deposited TODAY. Bad credit OK! Apply: quickcash-now.loans",spam,loan,en
-"Your car warranty is about to EXPIRE. Act now to extend coverage before it's too late. Call 800-555-0148",spam,warranty,en
-"🚀 $PEPE2 is about to 100x! Join our VIP signals group before launch: t.me/cryptomoonshots99",spam,crypto_promo,en
-"Earn $3000/week working from home! No experience needed. Limited spots: workfromhome-riches.biz",spam,mlm,en
-"Vote for Johnson on June 14! He'll cut your taxes and fix our roads. Paid for by Johnson4Senate. Reply STOP to opt out",spam,political,en
-"Last chance! Your exclusive 50% discount on SuperVPN expires at midnight. Upgrade now: supervpn-deal.com",spam,retail_promo,en
-"Congratulations you qualify for solar panels at NO COST to you! Your zip code was selected. Claim: gosolar-freequote.net",spam,home_services,en
-"Sexy new photos posted 🔞 check my profile b4 they're deleted! onlyfanss-girl.fun",spam,adult,en
-"Buy 1 get 2 FREE on all CBD gummies! Pain relief guaranteed or money back: cbd-wellness.shop",spam,health,en
-"⚡ELECTRICITY TOO HIGH? Cut your bill by 40% with this device the power companies don't want you to know about: voltsaver.pro",spam,scammy_product,en
-"GANA DINERO desde casa! Hasta 800€/semana sin experiencia. Únete ya: trabajodesdecasa-ya.com",spam,mlm,es
+Your car warranty is about to EXPIRE. Act now to extend coverage before it's too late. Call 800-555-0148,spam,warranty,en
+🚀 $PEPE2 is about to 100x! Join our VIP signals group before launch: t.me/cryptomoonshots99,spam,crypto_promo,en
+Vote for Johnson on June 14! He'll cut your taxes and fix our roads. Paid for by Johnson4Senate. Reply STOP to opt out,spam,political,en
+Last chance! Your exclusive 50% discount on SuperVPN expires at midnight. Upgrade now: supervpn-deal.com,spam,retail_promo,en
+Congratulations you qualify for solar panels at NO COST to you! Your zip code was selected. Claim: gosolar-freequote.net,spam,home_services,en
+Sexy new photos posted 🔞 check my profile b4 they're deleted! onlyfanss-girl.fun,spam,adult,en
+Buy 1 get 2 FREE on all CBD gummies! Pain relief guaranteed or money back: cbd-wellness.shop,spam,health,en
+⚡ELECTRICITY TOO HIGH? Cut your bill by 40% with this device the power companies don't want you to know about: voltsaver.pro,spam,scammy_product,en
+GANA DINERO desde casa! Hasta 800€/semana sin experiencia. Únete ya: trabajodesdecasa-ya.com,spam,mlm,es
 "¡OFERTA! Viagra genérico 80% descuento, envío discreto 24h: farmacia-online24.shop",spam,health,es
-"PROMO! Pulsa 100GB hanya 25rb! Beli sekarang di: promo-kuota-murah.net",spam,retail_promo,id
+PROMO! Pulsa 100GB hanya 25rb! Beli sekarang di: promo-kuota-murah.net,spam,retail_promo,id
 "Crédit rapide sans justificatif, jusqu'à 10 000 € en 24h. Demandez ici: credit-express.fr-demande.net",spam,loan,fr
-"Раздача! 1000 рублей каждому новому игроку казино VULKAN: vulkan-bonus.bet",spam,gambling,ru
-"خصم 70% على جميع العطور الفاخرة! تسوق الآن: perfumes-sale.shop",spam,retail_promo,ar
+Раздача! 1000 рублей каждому новому игроку казино VULKAN: vulkan-bonus.bet,spam,gambling,ru
+خصم 70% على جميع العطور الفاخرة! تسوق الآن: perfumes-sale.shop,spam,retail_promo,ar
 "מבצע! ביטוח רכב ב-50% הנחה, הצעת מחיר תוך דקה: bituach-zol.co.il",spam,insurance_promo,he
-"网赚兼职日入500元，无需经验，加微信：zq88932",spam,mlm,zh
-"在宅ワークで月50万円！スマホだけでOK。今すぐ登録: easy-money-jp.net",spam,mlm,ja
+网赚兼职日入500元，无需经验，加微信：zq88932,spam,mlm,zh
+在宅ワークで月50万円！スマホだけでOK。今すぐ登録: easy-money-jp.net,spam,mlm,ja
 "Künye! Bahis sitemize üye ol, 500 TL deneme bonusu kap: superbahis-bonus.bet",spam,gambling,tr
-"Apna weight ghatao bina diet ke! Ayurvedic capsule sirf 999 mein. Order karo: slimherbal.shop",spam,health,hi-latn
+Apna weight ghatao bina diet ke! Ayurvedic capsule sirf 999 mein. Order karo: slimherbal.shop,spam,health,hi-latn

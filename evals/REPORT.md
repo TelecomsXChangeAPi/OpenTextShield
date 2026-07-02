@@ -9,8 +9,9 @@
 
 ## 1. TL;DR
 
-The v2.5 model is **excellent at classic 2010-era SMS spam** (99.3% on the public
-UCI SMS Spam Collection) but **fails badly on modern smishing**. On a real-world
+The v2.5 model is **excellent at classic 2010-era SMS spam** (99.3% on the UCI
+SMS Spam Collection — which substantially overlaps its training corpus; see the
+contamination notes in §2) but **fails badly on modern smishing**. On a real-world
 2023–2025 smishing corpus (IMC 2025) and on a purpose-built adversarial suite, a
 large fraction of genuine phishing is mislabelled — and most dangerously, **~25%
 of phishing is labelled `ham` and would pass through a filter silently.**
@@ -20,7 +21,7 @@ of phishing is labelled `ham` and would pass through a filter silently.**
 | UCI SMS Spam (public, classic) | 5,574 | **99.3%** | 99.3% | n/a (no phishing class) |
 | Mishra & Soni SMS Phishing (public) | 5,971 | **88.8%** | 99.2% | **2.7%** |
 | IMC25 smishing (public, modern) | 8,007 | **20.4%** | 69.9% | 17.1% |
-| Fable 5 adversarial suite (new) | 150 | **48.7%** | 73.3% | 11.5% |
+| Fable 5 adversarial suite (new) | 127 | **48.0%** | 75.6% | 11.9% |
 
 The Mishra & Soni row is the clearest single diagnosis: the model *blocks* 99% of
 malicious SMS but assigns the correct `phishing` label to only **2.7%** of
@@ -53,12 +54,18 @@ network access required (the mBERT vocab is vendored in `evals/assets/`).
   confusion matrix, and per-language / per-category breakdowns.
 - **Datasets:**
   - **UCI SMS Spam Collection** — the canonical public SMS spam benchmark
-    (5,574 msgs, ham/spam only), the dataset behind the Papers With Code "SMS
-    Spam Detection" leaderboard. Establishes that classic performance is intact.
+    (5,574 msgs, ham/spam only). **Contamination note:** ~42% of its unique
+    texts appear verbatim in the v2.4 training corpus, so absolute scores here
+    are *not* leaderboard-comparable. We use UCI strictly as an internal
+    regression gate — the informative number is the v2.5 → v2.7 delta on
+    identical data, which shows classic performance is intact.
   - **Mishra & Soni SMS Phishing Dataset** (`Dataset_5971.csv`, Mendeley
-    f45bkkt8pr; Mishra & Soni, 2023) — 5,971 msgs labelled ham / spam /
-    **smishing**. A recognized, peer-reviewed benchmark that, unlike UCI, has an
-    explicit phishing class — so it directly measures phishing-vs-spam skill.
+    f45bkkt8pr; Mishra & Soni, 2023; CC BY 4.0) — 5,971 msgs labelled ham /
+    spam / **smishing**. Unlike UCI it has an explicit phishing class, so it
+    directly measures phishing-vs-spam skill. **Contamination note:** ~36% of
+    its unique texts appear verbatim in the v2.4 training corpus, so like UCI
+    it serves as a regression gate; the phishing-vs-spam *label* split (which
+    the training corpus does not teach) remains the informative signal.
   - **IMC 2025 Smishing Dataset** (`reportsmishing/Smishing-Dataset-IMC25`,
     CC-BY-4.0) — ~34k real user-reported smishing messages across 40+ languages,
     labelled by scam type. This is an **all-attack corpus** — it has no ham/legit
@@ -69,8 +76,11 @@ network access required (the mBERT vocab is vendored in `evals/assets/`).
     IMC25 measures attack recall (block rate) only — it gives no signal on
     false positives, e.g. whether the model over-blocks legitimate non-English SMS.
   - **Fable 5 adversarial suite** (`evals/datasets/fable5_adversarial_v1.csv`,
-    150 msgs) — hand-authored by Fable 5 to probe specific 2024–2025 attack
-    archetypes and hard-negative ham, in 15 languages.
+    127 msgs) — hand-authored by Fable 5 to probe specific 2024–2025 attack
+    archetypes and hard-negative ham, in 15 languages. **Decontaminated:** 23
+    rows that matched the synthetic fine-tune set verbatim or at ≥0.8 token
+    overlap were removed (150 → 127), so no eval row appears in model 2.7's
+    training data.
 
 ---
 
@@ -119,18 +129,19 @@ Block rate by scam type reveals the conversational blind spots:
 | **hey mum/dad** | **34.4%** | family impersonation, looks like ham |
 
 ### 3.5 Adversarial suite: where exactly it breaks
-On the 150-message suite, 3-class accuracy is 48.7% and phishing recall 11.5%.
+On the 127-message suite, 3-class accuracy is 48.0% and phishing recall 11.9%.
 The confusion matrix shows two distinct failure modes:
 
-- **`phishing → ham` (38 cases, the dangerous one):** family impersonation (6),
-  bank-lock (6), vishing callback (2), toll (2), BEC gift-card (2), crypto (2),
-  and **all four text-obfuscation styles** (homoglyph, zero-width, leet, spaced).
+- **`phishing → ham` (24 cases, the dangerous one):** bank-lock (6),
+  account/subscription scares (3), vishing callback (2), toll (2),
+  government (2), family impersonation, OTP-theft, BEC gift-card — and **all
+  four text-obfuscation styles** (homoglyph, zero-width, leet, spaced).
   These reach the user untouched.
-- **`phishing → spam` (many):** delivery-fee (7), government refund (6),
+- **`phishing → spam` (35 cases):** delivery-fee (6), government refund (6),
   reward (5), bank (5). Operationally blocked, but mislabelled — which matters
   for routing, analytics, and any "phishing"-specific action.
 
-Hard-negative ham held up reasonably (40/47 correct); 7 legit messages
+Hard-negative ham held up reasonably (31/37 correct); 6 legit messages
 (delivery notices, fraud alerts, a reminder) tipped to `spam`, which is a
 tolerable error direction (no silent pass-through of an attack).
 
@@ -182,8 +193,15 @@ and beat v2.5 on every benchmark. Output: `mbert_ots_model_2.7.pth`.
 
 > **Validation caveat (honest framing):** because IMC25 was used to *select* the
 > hyperparameters above, treat its v2.7 block rate (72.4%) as a validation result,
-> not a held-out one. UCI, Mishra & Soni, and the Fable 5 adversarial suite are
-> independent confirmations — and all three improved as well.
+> not a held-out one. Benchmark independence is graded, not binary: UCI and
+> Mishra & Soni overlap the v2.4 training corpus heavily (~42% / ~36% of their
+> unique texts appear verbatim in it — §2), so they are **internal regression
+> gates**, not independent confirmations; their value is the v2.5 → v2.7 delta
+> on identical data. The Fable 5 suite is decontaminated against the fine-tune
+> set (§2) but shares authorship and target categories with it, so treat it as
+> a hard-mode in-house test rather than an external benchmark. The cleanest
+> external signal is IMC25's block-rate gain; a multilingual false-positive
+> control benchmark is being added in a follow-up (§7).
 
 ### Before / after — v2.5 → model 2.7
 
@@ -195,7 +213,7 @@ and beat v2.5 on every benchmark. Output: `mbert_ots_model_2.7.pth`.
 | UCI SMS Spam (classic) | 5,574 | 99.3% → **99.5%** | 99.3% → **99.5%** | n/a (no phishing class) |
 | Mishra & Soni Phishing | 5,971 | 88.8% → **89.4%** | 99.2% → **99.3%** | 2.7% → **6.1%** |
 | IMC25 smishing (modern) | 8,007 | 20.4% → **47.0%** | 69.9% → **72.4%** | 17.1% → **45.7%** |
-| Fable 5 adversarial | 150 | 48.7% → **86.7%** | 73.3% → **96.7%** | 11.5% → **80.8%** |
+| Fable 5 adversarial | 127 | 48.0% → **85.8%** | 75.6% → **96.9%** | 11.9% → **80.6%** |
 
 **Read of the results:**
 
@@ -208,9 +226,11 @@ and beat v2.5 on every benchmark. Output: `mbert_ots_model_2.7.pth`.
   (20.4%→47.0%). This is the security-relevant axis — fewer real attacks reach the
   user, and far more of those caught are correctly labelled phishing rather than
   dumped into spam.
-- **Adversarial suite transformed:** block rate 73.3%→**96.7%**, phishing recall
-  11.5%→**80.8%**. The previously silent `phishing→ham` leaks (family
-  impersonation, vishing, toll, and all four obfuscation styles) are now caught.
+- **Adversarial suite transformed:** block rate 75.6%→**96.9%**, phishing recall
+  11.9%→**80.6%** — measured on the decontaminated 127-row suite, and virtually
+  identical to the pre-decontamination figures, confirming the gains are not
+  memorization of shared rows. The previously silent `phishing→ham` leaks
+  (bank-lock, vishing, toll, and all four obfuscation styles) are now caught.
 - **Mishra & Soni:** already block-saturated (99%), nudged to 99.3%; the phishing
   *label* recall rises (2.7%→6.1%) but stays low — its older keyword-style smishing
   is a different distribution from the modern synthetic data. Since the block
