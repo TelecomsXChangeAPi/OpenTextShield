@@ -1,6 +1,6 @@
 # Essential dependencies for mBERT training
 torch>=2.0.0
-transformers>=4.50.0
+transformers>=5.3.0
 scikit-learn>=1.5.0
 pandas>=2.0.0
 chardet>=5.0.0
