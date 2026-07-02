@@ -103,7 +103,7 @@ torch==2.7.1
 tqdm==4.66.3
 transformers==4.53.0
 triton==2.2.0
-Twisted==24.7.0
+Twisted==26.4.0rc2
 typing_extensions==4.10.0
 ubuntu-drivers-common==0.0.0
 ubuntu-pro-client==8001
