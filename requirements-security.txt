@@ -16,7 +16,7 @@ h11>=0.16.0
 # transformers 5.x is still an RC with API breaks — stay on 4.53.x until stable release.
 transformers>=4.53.0,<5.0
 requests>=2.33.0
-urllib3>=2.5.0
+urllib3>=2.7.0
 setuptools>=78.1.1
 aiohttp>=3.13.4
 cryptography>=46.0.7
@@ -24,7 +24,7 @@ cryptography>=46.0.7
 # ML/AI dependencies - pinned to tested compatible versions
 # Upper bounds prevent untested major upgrades from breaking the container
 # torch bumped to 2.8+ for CVE-2025-3730 (DoS in torch.mkldnn_max_pool2d)
-torch>=2.8.0,<2.9
+torch>=2.9.1,<2.10
 tokenizers>=0.21,<0.22
 huggingface-hub>=0.35.3,<0.36
 safetensors>=0.4.5,<0.5
@@ -40,7 +40,7 @@ certifi>=2024.8.30
 charset-normalizer>=3.3.2
 filelock>=3.16.0
 fsspec>=2024.9.0
-idna>=3.8
+idna>=3.15
 Jinja2>=3.1.6
 MarkupSafe>=2.1.5
 packaging>=24.1
