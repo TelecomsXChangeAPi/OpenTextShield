@@ -1,0 +1,46 @@
+name: Unit Tests
+
+# Runs the fast, offline unit tests (no model weights / LFS needed). The
+# batching + normalisation tests use stubs and stdlib; settings tests construct
+# the config object directly.
+
+# Least-privilege GITHUB_TOKEN: this workflow only reads the repo to run tests.
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "src/api_interface/**"
+      - ".github/workflows/tests.yml"
+  pull_request:
+    paths:
+      - "src/api_interface/**"
+      - ".github/workflows/tests.yml"
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false  # tests stub the model; weights not required
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Targeted deps for the unit suite (CPU torch wheel on Linux).
+          # fastapi + httpx are required by test_metrics_endpoint's TestClient.
+          pip install "torch>=2.3" "transformers>=4.40" \
+                      "pydantic>=2.7" pydantic-settings \
+                      fastapi "httpx>=0.27" \
+                      pytest pytest-asyncio
+
+      - name: Run unit tests
+        run: pytest src/api_interface/tests/ -v

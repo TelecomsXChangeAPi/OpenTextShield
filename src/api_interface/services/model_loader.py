@@ -152,6 +152,15 @@ class ModelManager:
         version = self.mbert_versions.get(model_name, "2.5")
         return self.mbert_models[model_name], self.mbert_tokenizers[model_name], version
     
+    def get_model_version(self, model_name: str) -> Optional[str]:
+        """Return the resolved version of a loaded mBERT model, or None.
+
+        Cheap lookup against the version map populated at load time (the version
+        detected from the ``.pth`` filename). Does not touch the model itself,
+        so it is safe to call from lightweight endpoints like /health.
+        """
+        return self.mbert_versions.get(model_name)
+
     def is_model_available(self, model_type: str, model_name: Optional[str] = None) -> bool:
         """
         Check if a model is available.

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# Large per-sample prediction dumps are reproducible via run_eval.py.
+# Keep the compact summary_*.json (the evidence) under version control.
+# Catch-all (covers uci/imc25/mishra/fable5/ots60 and any future dataset).
+results/predictions_*.json
+results/summary.json

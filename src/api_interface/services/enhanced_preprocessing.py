@@ -19,6 +19,27 @@ logger = logging.getLogger(__name__)
 class EnhancedPreprocessor:
     """Enhanced text preprocessing for adversarial robustness."""
 
+    # Zero-width / invisible formatting characters used in obfuscation attacks.
+    # Inserting these between letters ("V​e​r​i​f​y")
+    # breaks keywords without changing how the text looks to a human.
+    INVISIBLE_CHARS = frozenset({
+        "\u200B",  # U+200B zero-width space
+        "\u200C",  # U+200C zero-width non-joiner
+        "\u200D",  # U+200D zero-width joiner
+        "\u200E",  # U+200E left-to-right mark
+        "\u200F",  # U+200F right-to-left mark
+        "\u2060",  # U+2060 word joiner
+        "\u2061",  # U+2061 function application (invisible math)
+        "\u2062",  # U+2062 invisible times
+        "\u2063",  # U+2063 invisible separator
+        "\u2064",  # U+2064 invisible plus
+        "\uFEFF",  # U+FEFF zero-width no-break space / BOM
+        "\u00AD",  # U+00AD soft hyphen
+        "\u180E",  # U+180E Mongolian vowel separator
+        "\u034F",  # U+034F combining grapheme joiner
+        "\u061C",  # U+061C Arabic letter mark
+    })
+
     def __init__(self):
         # Homoglyph normalization mappings
         self.homoglyph_map = {
@@ -63,9 +84,20 @@ class EnhancedPreprocessor:
         )
 
     def normalize_unicode(self, text: str) -> str:
-        """Normalize Unicode characters and handle homoglyphs."""
+        """Normalize Unicode characters and handle homoglyphs.
+
+        Also strips zero-width / invisible formatting characters that attackers
+        insert between letters to break up keywords (e.g. "V​e​r​i​f​y" with
+        U+200B). These are removed before homoglyph mapping so an obfuscated
+        word collapses back to its real tokens for the model.
+        """
         # NFC normalization
         text = unicodedata.normalize('NFC', text)
+
+        # Strip zero-width and invisible formatting characters. NFC does not
+        # remove these, so a zero-width-joined string survives tokenisation as
+        # a wall of [UNK]s otherwise.
+        text = ''.join(ch for ch in text if ch not in self.INVISIBLE_CHARS)
 
         # Replace homoglyphs
         normalized = []

@@ -1,0 +1,23 @@
+{
+  "device": "Apple Silicon MPS",
+  "loss": "plain",
+  "epochs": 2,
+  "best_epoch": 2,
+  "best_macro_f1": 0.9903294631521637,
+  "history": [
+    {
+      "accuracy": 0.9882854100106496,
+      "block_accuracy": 0.9882854100106496,
+      "macro_f1": 0.988199272611869,
+      "phishing_recall": 0.9822485207100592,
+      "epoch": 1
+    },
+    {
+      "accuracy": 0.9904153354632588,
+      "block_accuracy": 0.9904153354632588,
+      "macro_f1": 0.9903294631521637,
+      "phishing_recall": 0.985207100591716,
+      "epoch": 2
+    }
+  ]
+}

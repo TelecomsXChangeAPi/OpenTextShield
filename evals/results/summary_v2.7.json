@@ -1,0 +1,722 @@
+{
+  "uci": {
+    "n": 5574,
+    "accuracy_3class": 0.9952,
+    "accuracy_binary_block": 0.9953,
+    "per_class": {
+      "ham": {
+        "precision": 0.9998,
+        "recall": 0.9948,
+        "f1": 0.9973,
+        "support": 4827
+      },
+      "spam": {
+        "precision": 0.9751,
+        "recall": 0.9973,
+        "f1": 0.9861,
+        "support": 747
+      },
+      "phishing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion": {
+      "ham->ham": 4802,
+      "ham->phishing": 6,
+      "ham->spam": 19,
+      "spam->ham": 1,
+      "spam->phishing": 1,
+      "spam->spam": 745
+    },
+    "by_category": {
+      "uci": {
+        "acc": 0.9952,
+        "n": 5574
+      }
+    },
+    "by_language": {
+      "en": {
+        "acc": 0.9952,
+        "n": 5574
+      }
+    },
+    "inference_seconds": 42.7
+  },
+  "mishra": {
+    "n": 5971,
+    "accuracy_3class": 0.8937,
+    "accuracy_binary_block": 0.9933,
+    "per_class": {
+      "ham": {
+        "precision": 0.9971,
+        "recall": 0.9946,
+        "f1": 0.9959,
+        "support": 4844
+      },
+      "spam": {
+        "precision": 0.4415,
+        "recall": 0.9796,
+        "f1": 0.6086,
+        "support": 489
+      },
+      "phishing": {
+        "precision": 0.7222,
+        "recall": 0.0611,
+        "f1": 0.1127,
+        "support": 638
+      }
+    },
+    "confusion": {
+      "ham->ham": 4818,
+      "ham->phishing": 8,
+      "ham->spam": 18,
+      "phishing->ham": 11,
+      "phishing->phishing": 39,
+      "phishing->spam": 588,
+      "spam->ham": 3,
+      "spam->phishing": 7,
+      "spam->spam": 479
+    },
+    "by_category": {
+      "mishra": {
+        "acc": 0.8937,
+        "n": 5971
+      }
+    },
+    "by_language": {
+      "en": {
+        "acc": 0.8937,
+        "n": 5971
+      }
+    },
+    "inference_seconds": 46.8
+  },
+  "imc25": {
+    "n": 8007,
+    "accuracy_3class": 0.4702,
+    "accuracy_binary_block": 0.724,
+    "per_class": {
+      "ham": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "spam": {
+        "precision": 0.1253,
+        "recall": 0.7389,
+        "f1": 0.2142,
+        "support": 383
+      },
+      "phishing": {
+        "precision": 0.9842,
+        "recall": 0.4567,
+        "f1": 0.6239,
+        "support": 7624
+      }
+    },
+    "confusion": {
+      "phishing->ham": 2166,
+      "phishing->phishing": 3482,
+      "phishing->spam": 1976,
+      "spam->ham": 44,
+      "spam->phishing": 56,
+      "spam->spam": 283
+    },
+    "by_category": {
+      "banking": {
+        "acc": 0.5162,
+        "n": 3607
+      },
+      "delivery": {
+        "acc": 0.5237,
+        "n": 930
+      },
+      "government": {
+        "acc": 0.5538,
+        "n": 762
+      },
+      "hey mum/dad": {
+        "acc": 0.377,
+        "n": 61
+      },
+      "others": {
+        "acc": 0.3182,
+        "n": 1606
+      },
+      "spam": {
+        "acc": 0.7389,
+        "n": 383
+      },
+      "telecom": {
+        "acc": 0.3031,
+        "n": 551
+      },
+      "unknown": {
+        "acc": 0.4286,
+        "n": 21
+      },
+      "wrong number": {
+        "acc": 0.0116,
+        "n": 86
+      }
+    },
+    "by_language": {
+      "Afrikaans": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Albanian": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Arabic": {
+        "acc": 0.2857,
+        "n": 14
+      },
+      "Bengali": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Bulgarian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Catalan": {
+        "acc": 0.1429,
+        "n": 7
+      },
+      "Chinese": {
+        "acc": 0.3636,
+        "n": 11
+      },
+      "Croatian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Czech": {
+        "acc": 0.5882,
+        "n": 17
+      },
+      "Danish": {
+        "acc": 0.5,
+        "n": 26
+      },
+      "Divehi": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Dutch": {
+        "acc": 0.5556,
+        "n": 459
+      },
+      "English": {
+        "acc": 0.4627,
+        "n": 5215
+      },
+      "Estonian": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "Filipino": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Finnish": {
+        "acc": 0.0,
+        "n": 3
+      },
+      "French": {
+        "acc": 0.4364,
+        "n": 275
+      },
+      "Ganda": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "German": {
+        "acc": 0.3927,
+        "n": 191
+      },
+      "Greek": {
+        "acc": 0.15,
+        "n": 20
+      },
+      "Gujarati": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Hebrew": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Hindi": {
+        "acc": 0.3415,
+        "n": 41
+      },
+      "Hungarian": {
+        "acc": 0.5,
+        "n": 6
+      },
+      "Icelandic": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Igbo": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Indonesian": {
+        "acc": 0.2561,
+        "n": 82
+      },
+      "Italian": {
+        "acc": 0.5506,
+        "n": 158
+      },
+      "Japanese": {
+        "acc": 0.4098,
+        "n": 61
+      },
+      "Javanese": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Kannada": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Kinyarwanda": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Korean": {
+        "acc": 0.0,
+        "n": 7
+      },
+      "Latvian": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Lithuanian": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Malay": {
+        "acc": 0.2222,
+        "n": 36
+      },
+      "Maltese": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Marathi": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Mixed (Dutch/French)": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Mongolian": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Norwegian": {
+        "acc": 0.5,
+        "n": 8
+      },
+      "Persian": {
+        "acc": 0.0,
+        "n": 2
+      },
+      "Polish": {
+        "acc": 0.3871,
+        "n": 31
+      },
+      "Portuguese": {
+        "acc": 0.5455,
+        "n": 66
+      },
+      "Punjabi": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Romanian": {
+        "acc": 0.375,
+        "n": 8
+      },
+      "Russian": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "Serbian": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Sinhala": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Slovak": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "Slovenian": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "Spanish": {
+        "acc": 0.5465,
+        "n": 1096
+      },
+      "Swahili": {
+        "acc": 0.2857,
+        "n": 7
+      },
+      "Swedish": {
+        "acc": 0.3077,
+        "n": 13
+      },
+      "Tagalog": {
+        "acc": 0.4211,
+        "n": 19
+      },
+      "Tamil": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Telugu": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Thai": {
+        "acc": 0.2,
+        "n": 15
+      },
+      "Turkish": {
+        "acc": 0.3636,
+        "n": 22
+      },
+      "Ukrainian": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Unknown": {
+        "acc": 0.75,
+        "n": 4
+      },
+      "Urdu": {
+        "acc": 0.1111,
+        "n": 18
+      },
+      "Uzbek": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Vietnamese": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Welsh": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Yoruba": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "Zulu": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "nl_fr": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "unknown": {
+        "acc": 0.375,
+        "n": 24
+      }
+    },
+    "inference_seconds": 99.4
+  },
+  "fable5": {
+    "n": 127,
+    "accuracy_3class": 0.8583,
+    "accuracy_binary_block": 0.9685,
+    "per_class": {
+      "ham": {
+        "precision": 0.9714,
+        "recall": 0.9189,
+        "f1": 0.9444,
+        "support": 37
+      },
+      "spam": {
+        "precision": 0.6364,
+        "recall": 0.913,
+        "f1": 0.75,
+        "support": 23
+      },
+      "phishing": {
+        "precision": 0.9153,
+        "recall": 0.806,
+        "f1": 0.8571,
+        "support": 67
+      }
+    },
+    "confusion": {
+      "ham->ham": 34,
+      "ham->phishing": 3,
+      "phishing->ham": 1,
+      "phishing->phishing": 54,
+      "phishing->spam": 12,
+      "spam->phishing": 2,
+      "spam->spam": 21
+    },
+    "by_category": {
+      "account_scam": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "adult": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "advance_fee": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "bank_scam": {
+        "acc": 0.9375,
+        "n": 16
+      },
+      "bec_style": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "crypto_promo": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "delivery_scam": {
+        "acc": 1.0,
+        "n": 8
+      },
+      "extortion": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "family_emergency": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "gambling": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "gov_scam": {
+        "acc": 0.8889,
+        "n": 9
+      },
+      "health": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "home_services": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "insurance_promo": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "job_scam": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "legit_alert": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "legit_billing": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legit_business": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legit_delivery": {
+        "acc": 0.8,
+        "n": 5
+      },
+      "legit_fraud_alert": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "legit_otp": {
+        "acc": 1.0,
+        "n": 10
+      },
+      "legit_payment": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "legit_reminder": {
+        "acc": 0.5,
+        "n": 2
+      },
+      "legit_travel": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "loan": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "low_quality_scam": {
+        "acc": 0.0,
+        "n": 1
+      },
+      "mlm": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "obfuscation_homoglyph": {
+        "acc": 1.0,
+        "n": 2
+      },
+      "obfuscation_leet": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "obfuscation_spacing": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "obfuscation_url": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "obfuscation_zerowidth": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "otp_theft": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "personal": {
+        "acc": 1.0,
+        "n": 10
+      },
+      "personal_password": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "personal_urgent": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "political": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "retail_promo": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "reward_scam": {
+        "acc": 0.2,
+        "n": 5
+      },
+      "scammy_product": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "subscription_scam": {
+        "acc": 0.6667,
+        "n": 3
+      },
+      "toll_scam": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "utility_scam": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "vishing_callback": {
+        "acc": 0.75,
+        "n": 4
+      },
+      "warranty": {
+        "acc": 0.0,
+        "n": 1
+      }
+    },
+    "by_language": {
+      "ar": {
+        "acc": 0.8333,
+        "n": 6
+      },
+      "de": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "en": {
+        "acc": 0.8514,
+        "n": 74
+      },
+      "en-in": {
+        "acc": 1.0,
+        "n": 1
+      },
+      "es": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "fr": {
+        "acc": 0.5,
+        "n": 6
+      },
+      "he": {
+        "acc": 1.0,
+        "n": 3
+      },
+      "hi-latn": {
+        "acc": 0.8,
+        "n": 5
+      },
+      "id": {
+        "acc": 0.75,
+        "n": 4
+      },
+      "ja": {
+        "acc": 0.6667,
+        "n": 3
+      },
+      "pt": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "ru": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "tr": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "zh": {
+        "acc": 1.0,
+        "n": 5
+      }
+    },
+    "inference_seconds": 1.3
+  }
+}
