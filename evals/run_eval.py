@@ -46,7 +46,7 @@ VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
 # defensively (from __file__, not cwd) so the import also works when this module
 # is imported from another working directory.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from loaders import LABELS, LOADERS  # noqa: E402
+from loaders import LABELS, LOADERS, production_normalize  # noqa: E402
 
 MAX_LEN = 96  # matches production settings.max_text_length
 BATCH_SIZE = 32
@@ -68,13 +68,18 @@ def load_model(model_path: Path):
 
 # ---------------------------------------------------------------- inference
 
-def predict(model, tokenizer, texts, batch_size=BATCH_SIZE, logit_bias=None):
+def predict(model, tokenizer, texts, batch_size=BATCH_SIZE, logit_bias=None, normalize=True):
     """Return (labels, confidences). Sorts by length internally for speed.
 
     ``logit_bias`` (a 3-vector for ham/spam/phishing) is added to the logits
     before argmax — used to apply a calibrated decision bias from
     calibrate_thresholds.py. Confidence is still the softmax of the biased logits.
+
+    ``normalize`` applies the production text cleanup first, so scores match
+    the deployed pipeline. Pass False only to reproduce pre-v2.10 numbers.
     """
+    if normalize:
+        texts = production_normalize(texts)
     bias = torch.tensor(logit_bias, dtype=torch.float) if logit_bias else None
     order = sorted(range(len(texts)), key=lambda i: len(texts[i]))
     preds = [None] * len(texts)
@@ -146,6 +151,8 @@ def main():
     ap.add_argument("--tag", default="")
     ap.add_argument("--logit-bias", default="",
                     help="comma-separated ham,spam,phishing logit bias from calibrate_thresholds.py")
+    ap.add_argument("--raw-text", action="store_true",
+                    help="skip the production text cleanup (reproduces older results)")
     args = ap.parse_args()
 
     logit_bias = None
@@ -184,7 +191,7 @@ def main():
         print(f"[{name}] {len(samples)} samples — running inference...", file=sys.stderr)
         t0 = time.time()
         preds, confs = predict(model, tokenizer, [s["text"] for s in samples],
-                               logit_bias=logit_bias)
+                               logit_bias=logit_bias, normalize=not args.raw_text)
         dt = time.time() - t0
         print(f"[{name}] done in {dt:.1f}s ({len(samples)/dt:.1f} msg/s)", file=sys.stderr)
 
