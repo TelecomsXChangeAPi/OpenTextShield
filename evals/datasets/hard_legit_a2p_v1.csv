@@ -1,0 +1,41 @@
+text,label,category,language
+Chase: Did you attempt a $612.40 purchase at BEST BUY #1123 on 09/14? Reply YES or NO. Msg&data rates may apply. Reply STOP to end texts.,ham,legit_fraud_alert,en
+Your Amazon package with 3 items was delivered to your front door. Track at amazon.com/orders,ham,legit_delivery,en
+"USPS: Your item was delivered in or at the mailbox at 2:14 pm on September 12 in AUSTIN, TX 78701.",ham,legit_delivery,en
+"Bank of America: Your debit card ending in 4410 was declined for $89.99 at SHELL OIL. If you don't recognize this, call the number on the back of your card.",ham,legit_fraud_alert,en
+Your Google verification code is 482913,ham,legit_otp,en
+Reminder: Dr. Patel appointment tomorrow 9:30 AM at Riverside Clinic. Reply C to confirm or R to reschedule.,ham,legit_reminder,en
+Wells Fargo: Your statement for account ending 2207 is ready. Sign on at wellsfargo.com to view.,ham,legit_billing,en
+Verizon: Your bill of $85.12 is due on Sep 25. Pay at vzw.com/pay or dial #PMT from your phone.,ham,legit_billing,en
+"HMRC will never text you asking for bank details. If you get a message like this, forward it to 60599.",ham,legit_security_notice,en
+DHL: Your shipment 4839201847 is scheduled for delivery today between 13:00-17:00. Manage delivery: dhl.com/track,ham,legit_delivery,en
+Tu código de verificación de WhatsApp es 318-442. No compartas este código con nadie.,ham,legit_otp,es
+Sparkasse: Ihre neue Karte wurde versandt und kommt in 3-5 Werktagen an. Die PIN erhalten Sie separat per Post.,ham,legit_delivery,de
+"Your Uber is arriving in 2 minutes. Look for a white Toyota Camry, plate 8XKL203.",ham,legit_travel,en
+PayPal: You sent $45.00 USD to Maria Lopez. View details in the PayPal app.,ham,legit_payment,en
+"Netflix: Your password was changed. If you didn't do this, go to netflix.com/security right away.",ham,legit_security_notice,en
+"SBI: Rs.2,500.00 debited from A/c XX4471 on 14-09-26 to VPA grocery@okaxis. Not you? Call 1800 1234.",ham,legit_fraud_alert,en
+"HDFC Bank: OTP for txn of INR 1,299.00 at AMAZON is 638201. Valid 5 mins. Do not share OTP with anyone.",ham,legit_otp,en
+Airtel: Your recharge of Rs 299 is successful. Validity till 13-10-2026. Enjoy unlimited calls.,ham,legit_billing,en
+CVS Pharmacy: Your prescription is ready for pickup at 1200 Main St. Reply STOP to opt out.,ham,legit_reminder,en
+Delta: Flight DL1482 ATL-LAX on Sep 18 is delayed. New departure 7:45 PM. Check delta.com for updates.,ham,legit_travel,en
+"Your Microsoft account security code is 771204. If you didn't request it, you can ignore this message.",ham,legit_otp,en
+"Coinbase: A new device signed in to your account from Chrome on Mac in Denver, CO. If this wasn't you, lock your account in the app.",ham,legit_security_notice,en
+Monzo: You've received £120.00 from Sam Carter. Tap to view.,ham,legit_payment,en
+"Tesco Bank: We've blocked a suspicious transaction on your card ending 9921. Reply Y if it was you, N if not. We will never ask for your PIN.",ham,legit_fraud_alert,en
+"Mom: landed safely, grabbing a taxi now. Call you when I'm at the hotel.",ham,personal,en
+"Hi, this is Jake from Green Lawn Care confirming your mowing appointment Thursday at 10am. Reply to reschedule.",ham,legit_reminder,en
+"ANZ: Your one-time passcode is 552190. Never share this code, even with ANZ staff.",ham,legit_otp,en
+FedEx: Package 7749 3021 8841 will be delivered Tue by end of day. Reply HELP for help.,ham,legit_delivery,en
+Your Lyft driver has cancelled. We're finding you a new ride.,ham,legit_travel,en
+"Santander: Hemos detectado un cargo de 230,00€ en su tarjeta. Si no lo reconoce, llame al número que figura en el reverso de su tarjeta.",ham,legit_fraud_alert,es
+Госуслуги: ваше заявление №48213 принято. Статус можно посмотреть в личном кабинете на gosuslugi.ru.,ham,legit_government,ru
+"ΔΕΗ: Ο λογαριασμός σας ύψους 64,20€ εκδόθηκε. Λήξη πληρωμής 30/09. Πληρώστε στο dei.gr",ham,legit_billing,el
+"Apple: Your Apple ID was used to sign in to iCloud on an iPhone 15. If you didn't sign in, change your password at appleid.apple.com.",ham,legit_security_notice,en
+Kaiser Permanente: You have a new test result. Sign in to kp.org to view it.,ham,legit_alert,en
+Lincoln Unified: Early dismissal today at 1:00 PM due to weather. Buses will run 2 hours early.,ham,legit_alert,en
+"Citi Alert: A $1,050.00 payment was made to your card ending 3321. Available credit is $4,210.00.",ham,legit_payment,en
+EE: You've used 80% of your 20GB data allowance. Add more in the My EE app.,ham,legit_billing,en
+Hi! Your table for 4 at Olive & Thyme is confirmed for Sat 7:30pm. Reply CANCEL to cancel.,ham,legit_reminder,en
+Venmo: Alex Kim paid you $18.50 for 🍕. Transfer to your bank anytime in the app.,ham,legit_payment,en
+Sberbank: Перевод 1 200 ₽ от Ивана К. зачислен на карту *4821. Баланс: 15 340 ₽.,ham,legit_payment,ru

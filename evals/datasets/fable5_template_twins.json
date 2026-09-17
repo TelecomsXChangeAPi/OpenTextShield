@@ -1,0 +1,401 @@
+{
+ "source": "evals/datasets/fable5_adversarial_v1.csv",
+ "compared_against": "src/mBERT/training/model-training/dataset/synthetic_fable5_v1.csv",
+ "method": "For each eval row, the 6 closest synthetic rows by character 3-gram and word Jaccard were scored by TypeSafe (jev-1.13.0) on three levels: unrelated, same kind of message, same template with names/amounts/codes/links changed. Rows whose best P(same template) >= 0.9 are removed from the clean split.",
+ "removed": 56,
+ "kept": 71,
+ "twins": [
+  {
+   "text": "Dinner at ours Saturday? Bring that wine you mentioned, the cheap one was actually great",
+   "label": "ham",
+   "category": "personal",
+   "closest_training_row": "Dinner at ours Saturday? Bring that wine you mentioned",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Your Chase Sapphire card was used for $403.22 at WALMART #2891. Reply YES if this was you, NO if not.",
+   "label": "ham",
+   "category": "legit_fraud_alert",
+   "closest_training_row": "Citibank: Your card was used for $499.99 at WALMART #2891. Reply YES if this was you, NO if not.",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Your USPS package 9405511899561234567890 was delivered to your mailbox at 2:14 PM.",
+   "label": "ham",
+   "category": "legit_delivery",
+   "closest_training_row": "DHL: Your package 0158157040 was delivered to your mailbox at 2:14 PM.",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Ваш код подтверждения: 904712. Никому не сообщайте его.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "Ваш код подтверждения Uber: 405542. Никому не сообщайте его.",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Seu código de verificação Nubank: 331928. Não compartilhe com ninguém.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "Seu código de verificação Uber: 192873. Não compartilhe com ninguém.",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "您的验证码是 847291，请勿告诉他人。",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "您的Uber验证码是910269，请勿告诉他人。",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "FINAL NOTICE: Your vehicle has an unpaid toll of $6.99. Pay now to avoid a $50 late fee and license suspension: ezpass-tollservices.com",
+   "label": "phishing",
+   "category": "toll_scam",
+   "closest_training_row": "FINAL NOTICE: Unpaid toll of £1.10. Pay now to avoid a late fee and license suspension: toll.service.info",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Chase Alert: Your account has been LOCKED due to suspicious activity. Verify your identity now: chase-secure-login.com",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "HSBC Alert: Your account has been LOCKED due to suspicious activity. Verify your identity now: account.client.info",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "PayPal: You sent $499.99 to GeekTech Store. If you did not authorize this, call +1-805-410-2291 within 24 hrs.",
+   "label": "phishing",
+   "category": "vishing_callback",
+   "closest_training_row": "PayPal: You sent 1,490 ₪ to GeekTech Store. If you did not authorize this, call +44 7605 858730 within 24 hrs.",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Geek Squad: Your $389.99 annual plan auto-renews today. To cancel, call +1 (818) 290-7714 immediately.",
+   "label": "phishing",
+   "category": "vishing_callback",
+   "closest_training_row": "Geek Squad: Your $1,482.00 annual plan auto-renews today. To cancel, call +1 (809) 961-5554 immediately.",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Ihr Paket konnte nicht zugestellt werden. Zollgebühr von 1,99 € erforderlich: dhl-zollservice.de-paket.info",
+   "label": "phishing",
+   "category": "delivery_scam",
+   "closest_training_row": "DHL: Ihr Paket konnte nicht zugestellt werden. Zollgebühr 184,50 €: billing-service.cn-bank.com",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Ziraat Bankası: Hesabınız askıya alındı. Kimliğinizi doğrulayın: ziraat-musteri-dogrulama.com",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "Ziraat Bankası: Hesabınız askıya alındı. Kimliğinizi doğrulayın: portal-pay-verify.net",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "PTT Kargo: Paketiniz gümrükte bekliyor. 19,90 TL ödeme yapın: ptt-kargo-odeme.net",
+   "label": "phishing",
+   "category": "delivery_scam",
+   "closest_training_row": "Aras Kargo: Paketiniz gümrükte bekliyor. 499 TL ödeyin: id-check.service-billing.net",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "【三井住友銀行】お取引を一時制限しました。本人確認はこちら: smbc-honnin-kakunin.com",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "【みずほ銀行】お取引を一時制限しました。本人確認はこちら: billing-pay-verify.net",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "您的银行卡已被冻结，请立即验证身份：icbc-verify.cn-bank.com",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "【工商银行】您的银行卡已被冻结，请立即验证身份：update.pay.cn-bank.com",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "WIN BIG! 🎰 Mega Jackpot Casino - 200 FREE spins, no deposit! Play now: luckyspin-casino.bet 18+",
+   "label": "spam",
+   "category": "gambling",
+   "closest_training_row": "WIN BIG! Mega Jackpot Casino - 200 FREE spins, no deposit! Play: https://tinyurl.com/f2070 18+",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "Lose 15 lbs in 2 weeks with this 1 weird trick doctors HATE! Order your free trial: slimfast-miracle.shop",
+   "label": "spam",
+   "category": "health",
+   "closest_training_row": "Lose 15 lbs in 2 weeks with this 1 weird trick doctors HATE! Free trial: https://shorturl.at/p97178",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "网赚兼职日入500元，无需经验，加微信：zq88932",
+   "label": "spam",
+   "category": "mlm",
+   "closest_training_row": "网赚兼职日入500元，无需经验，加微信：zq37423",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "在宅ワークで月50万円！スマホだけでOK。今すぐ登録: easy-money-jp.net",
+   "label": "spam",
+   "category": "mlm",
+   "closest_training_row": "在宅ワークで月50万円！スマホだけでOK。登録: https://tinyurl.com/x635304",
+   "p_same_template": 1.0
+  },
+  {
+   "text": "G-728401 is your Google verification code.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "G-4335 is your Google verification code.",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Your electricity bill of $86.40 is due Jun 21. Pay in the app or at pge.com to avoid late fees.",
+   "label": "ham",
+   "category": "legit_billing",
+   "closest_training_row": "Your electricity bill of £278.44 is due Jun 21. Pay in the app or at your provider's website to avoid late fees.",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "رمز التحقق الخاص بك هو 392841. لا تشاركه مع أي شخص.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "رمز التحقق الخاص بـ Uber هو 8133. لا تشاركه مع أي شخص.",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "הקוד שלך לאימות הוא 558212. אל תשתף אותו עם אף אחד.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "קוד האימות שלך ל-Google הוא 552652. אל תשתף אותו עם אף אחד.",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Apka OTP hai 552941. Kisi ke saath share na karein.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "Aapka Amazon verification code hai 215418. Kisi ke saath share na karein.",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "IRS: You have a pending tax refund of $1,482.00. Claim before Jun 30: irs-refund-portal.com",
+   "label": "phishing",
+   "category": "gov_scam",
+   "closest_training_row": "IRS: You have a pending tax refund of ₹99. Claim before the deadline: account-service-billing.net",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Impots.gouv: Vous avez droit à un remboursement de 184,50 €. Confirmez vos coordonnées bancaires: impots-remboursement.fr-gouv.info",
+   "label": "phishing",
+   "category": "gov_scam",
+   "closest_training_row": "Impots.gouv: Vous avez droit à un remboursement de 499,99 €. Confirmez vos coordonnées: remboursement-client.cn-bank.com",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "عزيزي العميل، لديك شحنة معلقة في الجمارك. ادفع رسوم 10 ريال للإفراج عنها: aramex-sa.delivery-fee.com",
+   "label": "phishing",
+   "category": "delivery_scam",
+   "closest_training_row": "أرامكس: شحنتك معلقة في الجمارك. ادفع 10 ريال للإفراج: verify.pay.info",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "בנק הפועלים: חשבונך הוגבל עקב פעילות חריגה. אמת את פרטיך כאן: bankhapoalim-verify.co",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "בנק הפועלים: חשבונך הוגבל עקב פעילות חריגה. אמת את פרטיך: account-client-verify.net",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Hi this is Sarah from HR. We're updating payroll systems. Please confirm your bank details before Friday's run: payroll-update-portal.com",
+   "label": "phishing",
+   "category": "bec_style",
+   "closest_training_row": "Hi, this is HR. We're updating payroll. Please confirm your bank account details before Friday's run: payroll-service-billing.net",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Crédit rapide sans justificatif, jusqu'à 10 000 € en 24h. Demandez ici: credit-express.fr-demande.net",
+   "label": "spam",
+   "category": "loan",
+   "closest_training_row": "Crédit rapide jusqu'à 10 000€ en 24h sans justificatif. Demandez: https://rb.gy/v97561",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Künye! Bahis sitemize üye ol, 500 TL deneme bonusu kap: superbahis-bonus.bet",
+   "label": "spam",
+   "category": "gambling",
+   "closest_training_row": "Bahis sitemize üye ol, 1.482 TL deneme bonusu kap: https://cutt.ly/e6516",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Apna weight ghatao bina diet ke! Ayurvedic capsule sirf 999 mein. Order karo: slimherbal.shop",
+   "label": "spam",
+   "category": "health",
+   "closest_training_row": "Bina diet weight ghatao! Ayurvedic capsule sirf 999. Order: https://bit.ly/z2021",
+   "p_same_template": 0.99
+  },
+  {
+   "text": "Your Amazon order #112-7366915 has shipped. Arriving Thursday by 8 PM.",
+   "label": "ham",
+   "category": "legit_delivery",
+   "closest_training_row": "Amazon Logistics: Your order has shipped and arrives Thursday by 8 PM. Track at amazonlogistics.com",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "Bank of America: A new device signed in to your account on Jun 12. If this was you, no action needed. Otherwise call the number on your card.",
+   "label": "ham",
+   "category": "legit_fraud_alert",
+   "closest_training_row": "Bank of America: A new device signed in to your account. If this was you, no action needed.",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "妈，我到学校了，晚上视频聊",
+   "label": "ham",
+   "category": "personal",
+   "closest_training_row": "妈，我到学校了，晚上视频聊。记得帮我带下书",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "Beta khana kha lena, main der se aaungi aaj office se",
+   "label": "ham",
+   "category": "personal",
+   "closest_training_row": "Beta khana kha lena, main der se aaungi aaj office se. Doodh laana yaad rakhna",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "Your bank card has been deactivated. Call 1-833-228-4471 now to reactivate. Do NOT visit a branch, lines are long.",
+   "label": "phishing",
+   "category": "vishing_callback",
+   "closest_training_row": "Your bank card has been deactivated. Call 1-842-447-3119 now to reactivate. Do NOT visit a branch.",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "BBVA: Su cuenta ha sido bloqueada temporalmente. Verifique su identidad aquí: bbva-clientes-seguridad.com",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "BBVA: Su cuenta ha sido bloqueada por seguridad. Verifique su identidad: update-client.xyz",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "BRI Info: Rekening Anda akan diblokir. Segera verifikasi data Anda di: bri-verifikasi.id-online.com",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "BCA: Rekening Anda akan diblokir. Verifikasi data Anda: verifikasi-login.cn-bank.com",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "Your package needs a fee. visit: bit{dot}ly{slash}pkg-fee-2291",
+   "label": "phishing",
+   "category": "obfuscation_url",
+   "closest_training_row": "Your pасkage needs a fee. Рау at httрs://сutt.lу/m5692",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "GANA DINERO desde casa! Hasta 800€/semana sin experiencia. Únete ya: trabajodesdecasa-ya.com",
+   "label": "spam",
+   "category": "mlm",
+   "closest_training_row": "¡Gana 800€/semana desde casa! Sin experiencia. Únete: https://shorturl.at/n888585",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "Раздача! 1000 рублей каждому новому игроку казино VULKAN: vulkan-bonus.bet",
+   "label": "spam",
+   "category": "gambling",
+   "closest_training_row": "Раздача! 499 ₽ каждому новому игроку казино: https://t.ly/e009128 18+",
+   "p_same_template": 0.98
+  },
+  {
+   "text": "С вашей карты Сбербанка списано 14 500 ₽. Если это не вы, срочно перейдите: sberbank-otmena.ru",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "С вашей карты списано 14 500 ₽. Если это не вы, срочно позвоните 1-874-538-9676.",
+   "p_same_template": 0.97
+  },
+  {
+   "text": "B A N K  A L E R T : your card is suspended. call 8 8 8 4 0 2 1 1 7 6 to re-activate",
+   "label": "phishing",
+   "category": "obfuscation_spacing",
+   "closest_training_row": "Уоur card іs suspendеd. Саll 888-402-1176 to re-activаte.",
+   "p_same_template": 0.96
+  },
+  {
+   "text": "Ton colis Chronopost arrivera demain entre 9h et 12h. Suivi sur chronopost.fr",
+   "label": "ham",
+   "category": "legit_delivery",
+   "closest_training_row": "Chronopost: Votre colis 1939048410 sera livré demain entre 9h et 12h.",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "أمي وصلت بالسلامة، سأتصل بك مساءً إن شاء الله",
+   "label": "ham",
+   "category": "personal",
+   "closest_training_row": "أمي وصلت بالسلامة، سأتصل بك مساءً. لا تنسي تجيبي الكتاب",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "Oi amor, cheguei bem, te ligo mais tarde",
+   "label": "ham",
+   "category": "personal",
+   "closest_training_row": "Oi amor, cheguei bem, te ligo mais tarde. Não esquece de me mandar os 40 do show",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "FedEx: Customs fee of $1.99 required to release your parcel. Pay at fedex-clearance.com or package returns to sender.",
+   "label": "phishing",
+   "category": "delivery_scam",
+   "closest_training_row": "DHL: Your parcel is held pending a $3.95 customs fee. Pay within 24h or it returns to sender: redelivery-pay-billing.net",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "Your WhatsApp account will be deactivated. Verify your number by forwarding the 6-digit code we just sent you.",
+   "label": "phishing",
+   "category": "otp_theft",
+   "closest_training_row": "Your WhatsApp account will be deactivated. To keep it active, forward the 6-digit code we just sent to your number.",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "Ch@se Bank: Y0ur acc0unt has been l0cked. Verify n0w at chase-secure.c0m-login.net",
+   "label": "phishing",
+   "category": "obfuscation_leet",
+   "closest_training_row": "HSBС Alеrt: Yоur aсcоunt has bеen locked. Verify nоw at bіlling-lоgіn.top",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "URGENT: Your РayРal account is limited. Restore access: paypal.com.restore-limited.app",
+   "label": "phishing",
+   "category": "obfuscation_homoglyph",
+   "closest_training_row": "PауPаl: your ассоunt is limited. Restorе аccess: aссount.client-securе.cоm",
+   "p_same_template": 0.95
+  },
+  {
+   "text": "Ihr Termin beim Bürgeramt am 18.06. um 10:15 Uhr ist bestätigt. Bitte bringen Sie Ihren Ausweis mit.",
+   "label": "ham",
+   "category": "legit_reminder",
+   "closest_training_row": "Erinnerung: Ihr Termin beim Bürgeramt ist morgen um 10:15 Uhr. Bitte Ausweis mitbringen.",
+   "p_same_template": 0.94
+  },
+  {
+   "text": "Kode OTP Anda adalah 718293. Jangan berikan kode ini kepada siapa pun.",
+   "label": "ham",
+   "category": "legit_otp",
+   "closest_training_row": "Kode verifikasi Amazon Anda adalah 4027. Jangan berikan kepada siapa pun.",
+   "p_same_template": 0.94
+  },
+  {
+   "text": "Banco do Brasil: sua conta será bloqueada. Atualize seus dados: bb-atualizacao.com-cliente.net",
+   "label": "phishing",
+   "category": "bank_scam",
+   "closest_training_row": "Itaú: Sua conta foi bloqueada. Atualize seus dados agora: portal-pay-billing.net",
+   "p_same_template": 0.94
+  },
+  {
+   "text": "Your prescription is ready for pickup at CVS Pharmacy, 1420 Oak St. Questions? Call 555-301-2200.",
+   "label": "ham",
+   "category": "legit_reminder",
+   "closest_training_row": "Your prescription is ready for pickup at the pharmacy on Oak St. Questions? Call the number on your bottle.",
+   "p_same_template": 0.93
+  },
+  {
+   "text": "Maman c'est moi, j'ai cassé mon téléphone. Envoie-moi un message sur WhatsApp au 07 56 89 21 03, c'est urgent",
+   "label": "phishing",
+   "category": "family_emergency",
+   "closest_training_row": "Maman c'est moi, j'ai cassé mon téléphone. Écris-moi sur WhatsApp à ce nouveau numéro, c'est urgent. J'ai besoin d'aide pour un paiement",
+   "p_same_template": 0.93
+  }
+ ]
+}
