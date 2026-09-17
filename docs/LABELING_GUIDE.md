@@ -48,6 +48,7 @@ Ask these questions in order and stop at the first "yes".
 | "HMRC will never text you asking for bank details." | ham | A scam warning, not a scam. |
 | "URGENT: Your prize is waiting! Call 0906 123 4567" | phishing | Says the reader already won. |
 | "WIN BIG! 200 FREE spins, no deposit! Play now: luckyspin.bet" | spam | A casino ad. It doesn't say the reader already won. |
+| "WIN 3783 NOW! Click goo.gl/xyz to claim!" | phishing | "Click to claim" says a prize is already waiting for the reader. |
 | "FREE iPhone 15! Enter code 1007 at bit.ly/123" | spam | A giveaway ad. |
 | "You need to send money to the IRS NOW at tinyurl.com/9065" | phishing | Pretends to be the IRS and asks for money. |
 | "Earn $2,464 per week working from home!" | spam | A money-making ad. |
