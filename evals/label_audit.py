@@ -129,14 +129,15 @@ def candidates(args):
 
     exclude = {_template_key(r["text"]) for r in load_subset()}
     exclude |= {_template_key(t) for t in _eval_texts() if t}
-    pools, seen, families = {"ads_spam": [], "legit_notice": []}, set(), Counter()
+    pools = {"ads_spam": [], "legit_notice": [], "notice_phish": []}
+    seen, families = set(), Counter()
     with open(ORIGINAL_CSV, newline="", encoding="utf-8", errors="replace") as f:
         rows = list(csv.DictReader(f))
     rng = random.Random(args.seed)
     rng.shuffle(rows)
     for row in rows:
         text, label = (row.get("text") or "").strip(), row.get("label")
-        if label not in ("spam", "ham") or row.get("augmentation_type") not in ("", "original"):
+        if label not in ("spam", "ham", "phishing") or row.get("augmentation_type") not in ("", "original"):
             continue
         key = _template_key(text)
         if not text or key in exclude or key in seen or apply_rules(text, label)[1]:
@@ -145,21 +146,25 @@ def candidates(args):
         if label == "spam":
             pools["ads_spam"].append(text)
         elif _NOTICE.search(text):
+            # Legitimate notices and notice-shaped lures are added in pairs: on
+            # their own, the benign ones teach the model to pass anything shaped
+            # like a bank or parcel message.
             family = _FAMILY.search(text)
             if family:
-                name = family.group(1).lower()
+                name = f"{label}:{family.group(1).lower()}"
                 if families[name] >= FAMILY_CAP:
                     continue
                 families[name] += 1
-            pools["legit_notice"].append(text)
-    sizes = {"ads_spam": args.spam, "legit_notice": args.notices}
+            pools["legit_notice" if label == "ham" else "notice_phish"].append(text)
+    sizes = {"ads_spam": args.spam, "legit_notice": args.notices, "notice_phish": args.notice_phish}
     with open(CANDIDATES_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["id", "pool", "text", "label"])
         i = 0
         for pool, texts in pools.items():
             for text in texts[:sizes[pool]]:
-                w.writerow([f"a{i:05d}", pool, text, "spam" if pool == "ads_spam" else "ham"])
+                label = {"ads_spam": "spam", "legit_notice": "ham", "notice_phish": "phishing"}[pool]
+                w.writerow([f"a{i:05d}", pool, text, label])
                 i += 1
     print(f"wrote {CANDIDATES_CSV.relative_to(REPO_ROOT)}: "
           f"{ {p: min(len(t), sizes[p]) for p, t in pools.items()} } from pools of "
@@ -472,6 +477,7 @@ def main():
     p.add_argument("--seed", type=int, default=7)
     p.add_argument("--spam", type=int, default=1600)
     p.add_argument("--notices", type=int, default=900)
+    p.add_argument("--notice-phish", type=int, default=900)
     p = sub.add_parser("ask")
     p.add_argument("--file", choices=["subset", "candidates"], default="subset")
     p.add_argument("--limit", type=int, default=0)

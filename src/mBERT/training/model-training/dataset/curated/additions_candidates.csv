@@ -2687,3 +2687,752 @@ a02498,legit_notice,"468424 es tu código de configuración de autenticación de
 \
 @github.com #468424",ham
 a02499,legit_notice,"Apri rebtel con Firefox. Quando si carica, basta mettere il segno più nel posto del nome utente, e ti mostrerà due numeri. Il numero più basso è il mio numero. Una volta che scegli quel numero, il pin verrà visualizzato correttamente!",ham
+a02500,notice_phish,Su paquete no ha podido ser entregado debido a la tarifa de aduanas impaga. Pague ahora en www.postal-service.com/fees/1,phishing
+a02501,notice_phish,Pacco bloccato nel terminale: http://ffnst.com/7DH235,phishing
+a02502,notice_phish,Package retained at the terminal: http://ffnst.com/7DH1002,phishing
+a02503,notice_phish,"Hi Anna, your Amazon order is delayed. Confirm shipping at bit.ly/123",phishing
+a02504,notice_phish,Parcel dicatat di terminal: http://ffnst.com/7DH105,phishing
+a02505,notice_phish,Critical Alert: Your Apple ID has been compromised. Secure your account at http://secureapple-id.com.,phishing
+a02506,notice_phish,Paket wird im Terminal festgehalten: http://ffnst.com/7DH965,phishing
+a02507,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH723
+
+Packet im Terminal festgehalten: http://ffnst.com/7DH723",phishing
+a02508,notice_phish,Akun Anda telah dikunci sementara. Silakan masuk ke https://tinyurl.com/bank untuk memverifikasi identitas Anda,phishing
+a02509,notice_phish,"Package held at the terminal: http://ffnst.com/7DH1086
+
+Package im Terminal festgehalten: http://ffnst.com/7DH1086",phishing
+a02510,notice_phish,Verifica Apple necessaria: Il tuo account è in sospeso. Conferma i tuoi dettagli su http://verify-appleid.com per continuare a utilizzare i servizi.,phishing
+a02511,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH203
+
+Sendung im Terminal festgehalten: http://ffnst.com/7DH203",phishing
+a02512,notice_phish,"Salut, c'est ton ami. Peux-tu me rendre un service et m'envoyer le code de vérification que tu viens de recevoir ?",phishing
+a02513,notice_phish,Package being held at terminal: http://ffnst.com/7DH1017,phishing
+a02514,notice_phish,Reimposta la password del tuo account bancario su https://bakofamerica.com/resetpassword,phishing
+a02515,notice_phish,Ihr Paket konnte wegen unbezahlter Zollgebühren nicht zugestellt werden. Zahlen Sie jetzt unter www.postal-service.com/fees/4.,phishing
+a02516,notice_phish,"Google Verification code is 122334
+
+(Russian Translation: Google код верификации 122334)",phishing
+a02517,notice_phish,Paket dipertahankan di Terminal: http://ffnst.com/7DH671,phishing
+a02518,notice_phish,Microsoft: Your account needs verification. Visit bit.ly/123,phishing
+a02519,notice_phish,Paquete en espera en la terminal: http://ffnst.com/7DH1069,phishing
+a02520,notice_phish,Paket sedang ditahan di terminal: http://ffnst.com/7DH656,phishing
+a02521,notice_phish,"Package held at the terminal: http://ffnst.com/7DH62
+
+Packet am Terminal festgehalten: http://ffnst.com/7DH62",phishing
+a02522,notice_phish,"Package held at the terminal: http://ffnst.com/7DH539
+
+This sentence is a fragment and does not make complete sense in either English or German; perhaps you could provide additional context or information for further assistance.",phishing
+a02523,notice_phish,Paket Anda tidak dapat dikirim karena biaya bea cukai belum terbayar. Bayar sekarang di www.postal-service.com/fees/25,phishing
+a02524,notice_phish,Tu cuenta está suspendida. Verifica aquí: http://banco-falso.es,phishing
+a02525,notice_phish,ملاحظة: حساب iCloud الخاص بك يتطلب التحقق الفوري. قم بزيارة http://icloud-verifyaccount.com لتجنب انقطاع الخدمة.,phishing
+a02526,notice_phish,Paket Anda tidak dapat disampaikan karena biaya bea cukai belum dibayar. Bayar sekarang di www.postal-service.com/fees/17,phishing
+a02527,notice_phish,Paket im Terminal eingefangen: http://ffnst.com/7DH446,phishing
+a02528,notice_phish,Pacco trattenuto in stazione: http://ffnst.com/7DH332,phishing
+a02529,notice_phish,Paket di Terminal dipegang: http://ffnst.com/7DH78,phishing
+a02530,notice_phish,Avis de sécurité : Confirmez vos informations de compte Apple pour continuer à utiliser tous les services. Visitez http://appleid-confirmnow.com.,phishing
+a02531,notice_phish,Paquete retenido en el terminal: http://ffnst.com/7DH32,phishing
+a02532,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Zahlen Sie jetzt unter www.postal-service.com/fees/8.,phishing
+a02533,notice_phish,"Serbian Post: A causa dell'indirizzo mancante e del codice postale impreciso, il tuo pacco non può essere consegnato e sarai responsabile dei costi di un'altra consegna. Fare clic sul link sottostante per modificare l'indirizzo e richiedere una nuova spedizione: https://tinyurl.com/223883333332?fwf=LL2WOgiZM1 Si prega di farlo entro 12 ore per evitare perdite inutili. Buona giornata, Poste Serbe! phishing",phishing
+a02534,notice_phish,"Hi, this is john from bank. Your account need verification. Call 123-456-7890",phishing
+a02535,notice_phish,Paket im Abfertigungsterminal festgehalten: http://ffnst.com/7DH933,phishing
+a02536,notice_phish,Das Paket wurde im Terminal festgehalten: http://ffnst.com/7DH1060,phishing
+a02537,notice_phish,Package berhasil ditahan di terminal: http://ffnst.com/7DH730,phishing
+a02538,notice_phish,"Pos Indonesia: Karena kekurangan alamat dan kode pos yang tidak tepat, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang ditanggung oleh Anda. Klik tautan di bawah ini untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/223883333332?fwf=LL2WOgiZM1 Gantilah dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga harimu menyenangkan, Pos Indonesia! phishing",phishing
+a02539,notice_phish,Paket im Zoll festgehalten: http://ffnst.com/7DH746,phishing
+a02540,notice_phish,Paket telah dipegang di terminal: http://ffnst.com/7DH341,phishing
+a02541,notice_phish,Paket gehalten im Terminal: http://ffnst.com/7DH43,phishing
+a02542,notice_phish,Paket di Terminal dipertahankan: http://ffnst.com/7DH716,phishing
+a02543,notice_phish,Paket disimpan di Terminal: http://ffnst.com/7DH1090,phishing
+a02544,notice_phish,Paket im Terminal wurde festgehalten: http://ffnst.com/7DH514,phishing
+a02545,notice_phish,"Hi Sarah, your Amazon order is delayed. Confirm shipping at tinyurl.com/abc",phishing
+a02546,notice_phish,"Packet held at terminal: http://ffnst.com/7DH417
+
+Das Paket wird am Terminal festgehalten: http://ffnst.com/7DH417",phishing
+a02547,notice_phish,"Ihr Apple ID muss überprüft werden. Wenn Sie dies nicht tun, kann dies zu einer Kontosuspendierung führen. Besuchen Sie bitte umgehend http://appleid-verify-now.com.",phishing
+a02548,notice_phish,Pacco trattenuto in terminal: http://ffnst.com/7DH1068,phishing
+a02549,notice_phish,Paket im Terminal eingetroffen: http://ffnst.com/7DH604,phishing
+a02550,notice_phish,Paket berada di Terminal: http://ffnst.com/7DH1036,phishing
+a02551,notice_phish,"Hi Anna, your Amazon order is delayed. Confirm shipping at goo.gl/xyz",phishing
+a02552,notice_phish,Paket auf Terminal festgehalten: http://ffnst.com/7DH140,phishing
+a02553,notice_phish,Il tuo pacco non è stato consegnato a causa di una tassa doganale non pagata. Paga adesso su www.postal-service.com/fees/22,phishing
+a02554,notice_phish,Paket im Terminal helding: http://ffnst.com/7DH541,phishing
+a02555,notice_phish,Dapatkan peningkat data seluler gratis setiap kali Anda berlangganan paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/48,phishing
+a02556,notice_phish,Avis : Votre compte iCloud nécessite une vérification immédiate. Visitez http://icloud-verifyaccount.com pour éviter toute interruption de service.,phishing
+a02557,notice_phish,Aviso de Apple: Su cuenta ha sido suspendida temporalmente. Verifique en http://appleid-accountsuspension.com.,phishing
+a02558,notice_phish,"Serbische Post: Aufgrund fehlender Adresse und ungenauer Postleitzahl kann Ihr Paket nicht zugestellt werden und die Kosten für erneute Lieferung tragen Sie selbst. Klicken Sie auf den untenstehenden Link, um die Adresse zu ändern und eine neue Lieferung anzufordern: https://tinyurl.com/0892898922?fwf=LL2WOgiZM1 Bitte ändern Sie dies innerhalb von 12 Stunden, um unnötige Verluste zu vermeiden. Einen schönen Tag, Serbische Post! phishing",phishing
+a02559,notice_phish,Das Paket wird im Terminal festgehalten: http://ffnst.com/7DH56,phishing
+a02560,notice_phish,"Ihr Konto wurde vorübergehend gesperrt. Bitte melden Sie sich unter https://tinyurl.com/bank an, um Ihre Identität zu bestätigen.",phishing
+a02561,notice_phish,El paquete ha sido retenido en la terminal: http://ffnst.com/7DH778,phishing
+a02562,notice_phish,Paket Anda tidak dapat disampaikan karena biaya bea cukai belum dibayar. Segera bayar di www.postal-service.com/fees/4,phishing
+a02563,notice_phish,Paket hat sich im Terminal festgehalten: http://ffnst.com/7DH796,phishing
+a02564,notice_phish,"Package held at the terminal: http://ffnst.com/7DH183
+
+I see you were referring to a possible parcel delay. Is there anything else you would like to know or need assistance with?",phishing
+a02565,notice_phish,Dapatkan peningkat data seluler gratis setiap kali membeli paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/19,phishing
+a02566,notice_phish,Il tuo pacco non ha potuto essere consegnato a causa di una tassa doganale non pagata. Paga ora su www.postal-service.com/fees/6,phishing
+a02567,notice_phish,Wells Fargo Bank: Il tuo account è temporaneamente bloccato. Accedi su http://goo.gl/2a234 per proteggere il tuo account.,phishing
+a02568,notice_phish,Paket terdapat di Terminal: http://ffnst.com/7DH575,phishing
+a02569,notice_phish,Il tuo pacco è in attesa di essere consegnato. Ti preghiamo di confermare il tuo indirizzo su http://fake-parcel.com,phishing
+a02570,notice_phish,Colis détenu au terminal : http://ffnst.com/7DH39,phishing
+a02571,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH940
+
+Paket im Terminal festgehalten: http://ffnst.com/7DH940",phishing
+a02572,notice_phish,Package di Terminal ditahan: http://ffnst.com/7DH815,phishing
+a02573,notice_phish,"Paket di terminal ditahan: http://ffnst.com/7DH67""",phishing
+a02574,notice_phish,"Paket detained at the terminal: http://ffnst.com/7DH977
+
+(I am aware that you have already provided the translation to German, but it seems there was a mistake with the translation. I am providing you with the correct translation.)",phishing
+a02575,notice_phish,Wells Fargo Bank: Akun Anda saat ini terkunci sementara. Silakan masuk ke http://goo.gl/2a234 untuk mengamankan akun Anda.,phishing
+a02576,notice_phish,Su paquete no pudo ser entregado debido a una tarifa de aduanas impaga. Pague ahora en www.postal-service.com/fees/13,phishing
+a02577,notice_phish,Paquete capturado en la terminal: http://ffnst.com/7DH655,phishing
+a02578,notice_phish,Paket Anda menunggu pengiriman. Harap konfirmasi alamat Anda di http://fake-parcel.com,phishing
+a02579,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Bezahlen Sie jetzt auf www.postal-service.com/fees/24.,phishing
+a02580,notice_phish,Your package is stuck in customs. Pay $50 to release: http://customs-fee.com,phishing
+a02581,notice_phish,Dapatkan penguat data seluler gratis setiap kali membeli paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/58,phishing
+a02582,notice_phish,The package is being held at the terminal: http://ffnst.com/7DH632,phishing
+a02583,notice_phish,Il pacco è stato trattenuto in deposito: http://ffnst.com/7DH1005,phishing
+a02584,notice_phish,Package has been held at the terminal: http://ffnst.com/7DH896,phishing
+a02585,notice_phish,Paket im Transit festgehalten: http://ffnst.com/7DH691,phishing
+a02586,notice_phish,Apple ID: Your account was accessed from unknown device. Secure it now: bit.ly/123,phishing
+a02587,notice_phish,Account recovery: https://microsoft-recovery.com,phishing
+a02588,notice_phish,Package held in terminal: http://ffnst.com/7DH316,phishing
+a02589,notice_phish,Paket Anda tidak dapat dikirim karena biaya bea cukai belum dibayar. Bayar sekarang di www.postal-service.com/fees/3,phishing
+a02590,notice_phish,"Su paquete está esperando entrega. Por favor, confirme su dirección en http://fake-parcel.com",phishing
+a02591,notice_phish,"Ihr Konto wurde vorübergehend gesperrt. Bitte melden Sie sich unter http://fake-bank.example.com an, um es zu entsperren.",phishing
+a02592,notice_phish,Paket an Terminal festgehalten: http://ffnst.com/7DH588,phishing
+a02593,notice_phish,Paket wurde im Terminal gehalten: http://ffnst.com/7DH653,phishing
+a02594,notice_phish,Paket bei der Post festgehalten: http://ffnst.com/7DH538,phishing
+a02595,notice_phish,Your package is on hold. Pay delivery fee at goo.gl/xyz,phishing
+a02596,notice_phish,Paket has been held at the terminal: http://ffnst.com/7DH182,phishing
+a02597,notice_phish,Paket verzögert im Verteilerzentrum: http://ffnst.com/7DH224,phishing
+a02598,notice_phish,உங்கள் பார்சல் விநியோகத்திற்கு காத்திருக்கின்றது. தயவுசெய்து உங்கள் முகவரியை http://fake-parcel.com இல் உறுதிப்படுத்தவும்.,phishing
+a02599,notice_phish,Dapatkan peningkatan data seluler gratis dengan setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/10,phishing
+a02600,notice_phish,"Пошта Србие: A causa dell'indirizzo incompleto e del codice postale impreciso, il vostro pacchetto non può essere consegnato e dovrete sostenere i costi di una nuova consegna. Cliccate sul link qui sotto per modificare l'indirizzo e richiedere una nuova consegna: https://tinyurl.com/532232?fwf=LL2WOgiZM1 Siete pregati di farlo entro 12 ore per evitare perdite inutili. Buona giornata, Posta di Serbia! phishing",phishing
+a02601,notice_phish,Paket im Zulieferterminal festgehalten: http://ffnst.com/7DH883,phishing
+a02602,notice_phish,Dapatkan booster data seluler gratis dengan setiap paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/0,phishing
+a02603,notice_phish,Dapatkan penguat data seluler gratis dengan setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/16,phishing
+a02604,notice_phish,"Advertencia: Su cuenta de Apple está a punto de ser suspendida. Por favor, verifique su identidad en http://apple-accountverification.com.",phishing
+a02605,notice_phish,Netflix: Payment method expired. Update at bit.ly/123,phishing
+a02606,notice_phish,"Package held at the terminal: http://ffnst.com/7DH663
+
+Translates to:
+
+Paket im Terminal festgehalten: http://ffnst.com/7DH663",phishing
+a02607,notice_phish,Paket im Terminal hält fest: http://ffnst.com/7DH606,phishing
+a02608,notice_phish,Package retained in terminal: http://ffnst.com/7DH508,phishing
+a02609,notice_phish,Package captured at the terminal: http://ffnst.com/7DH511,phishing
+a02610,notice_phish,El paquete se ha retenido en la terminal: http://ffnst.com/7DH895,phishing
+a02611,notice_phish,Paket im Terminal angehalten: http://ffnst.com/7DH365,phishing
+a02612,notice_phish,Paket dijadwalkan di Terminal: http://ffnst.com/7DH878,phishing
+a02613,notice_phish,"This text seems to be a URL link to a package held in the terminal: http://ffnst.com/7DH431
+
+Translated to French: ""Colis retenu dans le terminal : http://ffnst.com/7DH431""",phishing
+a02614,notice_phish,Ihr Paket konnte aufgrund nicht bezahlter Zollgebühren nicht zugestellt werden. Bezahlen Sie jetzt unter www.postal-service.com/fees/15.,phishing
+a02615,notice_phish,Paket gehalten im Terminal fest: http://ffnst.com/7DH26,phishing
+a02616,notice_phish,Paket terikat di Terminal: http://ffnst.com/7DH472,phishing
+a02617,notice_phish,Package terjepit di Terminal: http://ffnst.com/7DH928,phishing
+a02618,notice_phish,"Package held at terminal: http://ffnst.com/7DH675
+
+Paket im Terminal festgehalten: http://ffnst.com/7DH675",phishing
+a02619,notice_phish,Dapatkan penguat data seluler gratis setiap kali Anda membeli paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/47,phishing
+a02620,notice_phish,Su paquete no se pudo entregar debido a la tarifa de aduana no pagada. Pague ahora en www.postal-service.com/fees/14,phishing
+a02621,notice_phish,Urgente: Tu Apple ID será desactivado. Reactiva tu cuenta en http://reactivate-appleid.com inmediatamente.,phishing
+a02622,notice_phish,Apple ID Recovery: Ваша учетная запись была заблокирована по соображениям безопасности. Разблокировать на http://recover-appleidaccount.com.,phishing
+a02623,notice_phish,Paket Anda tidak dapat dikirim karena biaya bea cukai belum dibayarkan. Bayar sekarang di www.postal-service.com/fees/11,phishing
+a02624,notice_phish,Ihr Apple ID wurde von einem unbekannten Gerät aus zugegriffen. Sichern Sie Ihr Konto unter http://appleid-securitynotice.com.,phishing
+a02625,notice_phish,Verifikasi Diperlukan: Akun Apple ID Anda telah dikunci sementara. Verifikasi di http://appleid-templock.com untuk membuka kunci.,phishing
+a02626,notice_phish,Paket dibawah pengawasan di Terminal: http://ffnst.com/7DH948,phishing
+a02627,notice_phish,"Serbische Post: Aufgrund fehlender Adresse und falscher Postleitzahl kann Ihr Paket nicht zugestellt werden und die Kosten für die erneute Lieferung tragen Sie selbst. Klicken Sie auf den untenstehenden Link, um die Adresse zu ändern und eine neue Lieferung anzufordern: https://tinyurl.com/532232?fwf=LL2WOgiZM1 Bitte tun Sie dies innerhalb von 12 Stunden, um unnötigen Verlust zu vermeiden. Einen schönen Tag noch, Serbische Post! phishing",phishing
+a02628,notice_phish,Amazon: Suspicious login. Secure account at goo.gl/xyz,phishing
+a02629,notice_phish,Votre compte a été temporairement verrouillé. Veuillez vous connecter à https://tinyurl.com/bank pour vérifier votre identité,phishing
+a02630,notice_phish,Dapatkan penguat data seluler gratis setiap kali Anda membeli paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/29,phishing
+a02631,notice_phish,Paket ist angekommen: http://ffnst.com/7DH693,phishing
+a02632,notice_phish,"Package detained at terminal: http://ffnst.com/7DH549
+
+""Paket im Terminal festgehalten: http://ffnst.com/7DH549""",phishing
+a02633,notice_phish,Package terikat di terminal: http://ffnst.com/7DH776,phishing
+a02634,notice_phish,Paket yang direkam di Terminal: http://ffnst.com/7DH801,phishing
+a02635,notice_phish,Paket di Tangahan Terminal: http://ffnst.com/7DH860,phishing
+a02636,notice_phish,Package terperangkap di Terminal: http://ffnst.com/7DH108,phishing
+a02637,notice_phish,Paket detained at terminal: http://ffnst.com/7DH221,phishing
+a02638,notice_phish,Package has been held at terminal: http://ffnst.com/7DH759,phishing
+a02639,notice_phish,"La Poste de Serbie: En raison d'une adresse manquante et d'un code postal inexact, votre colis ne peut pas être livré et les frais de réexpédition sont à votre charge. Cliquez sur le lien ci-dessous pour changer l'adresse et demander une nouvelle livraison: https://tinyurl.com/57d2j68b?fwf=m5CWOgiZM4. Veuillez le faire dans les 12 heures pour éviter des pertes inutiles. Bonne journée, La Poste de Serbie!",phishing
+a02640,notice_phish,Ihr Paket konnte aufgrund einer nicht bezahlten Zollgebühr nicht zugestellt werden. Zahlen Sie jetzt auf www.postal-service.com/fees/18,phishing
+a02641,notice_phish,"Correos de Serbia: Debido a la falta de dirección y al número de código postal incorrecto, su paquete no puede ser entregado y deberá asumir los costos de reenvío. Haga clic en el enlace de abajo para cambiar la dirección y solicitar un nuevo envío: https://tinyurl.com/ndhjdh7232822?fwf=LL2WOgiZM1. Hágalo dentro de las próximas 12 horas para evitar pérdidas innecesarias. ¡Que tenga un buen día, Correos de Serbia! phishing",phishing
+a02642,notice_phish,Paket zur Abholung im Bahnhof festgehalten: http://ffnst.com/7DH755,phishing
+a02643,notice_phish,Your payment failed. Update card details at bit.ly/123,phishing
+a02644,notice_phish,"Ihr Paket konnte nicht zugestellt werden, da die Zollgebühr nicht bezahlt wurde. Bezahlen Sie jetzt unter www.postal-service.com/fees/11",phishing
+a02645,notice_phish,Paketzustellung im Terminal verzögert: http://ffnst.com/7DH144,phishing
+a02646,notice_phish,Pacco trattenuto al terminal: http://ffnst.com/7DH548,phishing
+a02647,notice_phish,"Hi David, your Amazon order is delayed. Confirm shipping at bit.ly/123",phishing
+a02648,notice_phish,Recupero ID Apple: Il tuo account è stato bloccato per motivi di sicurezza. Sblocca su http://recover-appleidaccount.com.,phishing
+a02649,notice_phish,Dapatkan penguat data seluler gratis setiap kali memesan paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/62,phishing
+a02650,notice_phish,"Serbische Post: Aufgrund fehlender Adresse und falscher Postleitzahl kann Ihr Paket nicht zugestellt werden, und die Kosten für die erneute Lieferung müssen Sie selbst tragen. Klicken Sie auf den Link unten, um die Adresse zu ändern und eine neue Lieferung anzufordern: https://tinyurl.com/ndhjdh7232822?fwf=LL2WOgiZM1 Bitte tun Sie dies innerhalb von 12 Stunden, um unnötige Verluste zu vermeiden. Einen schönen Tag noch, Serbische Post! phishing",phishing
+a02651,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH749
+
+Eine Übersetzung ist nicht erforderlich, da der Satz bereits auf Deutsch ist.",phishing
+a02652,notice_phish,🚨 ALERT: Your PayPal account is limited! 🚨,phishing
+a02653,notice_phish,Su paquete no pudo ser entregado debido a la tarifa de aduanas impaga. Pague ahora en www.postal-service.com/fees/7,phishing
+a02654,notice_phish,The package was held in the terminal: http://ffnst.com/7DH548,phishing
+a02655,notice_phish,Paket telah diproses di terminal: http://ffnst.com/7DH95,phishing
+a02656,notice_phish,FedEx: Package delivery failed. Reschedule pickup at bit.ly/123,phishing
+a02657,notice_phish,Paket am Terminal festgehalten: http://ffnst.com/7DH1098,phishing
+a02658,notice_phish,Paket telah terjebak di Terminal: http://ffnst.com/7DH779,phishing
+a02659,notice_phish,Paket wurde im Zoll festgehalten: http://ffnst.com/7DH402,phishing
+a02660,notice_phish,Paket hat sich beim Zoll festgehalten: http://ffnst.com/7DH817,phishing
+a02661,notice_phish,"Hi John, your Amazon order is delayed. Confirm shipping at goo.gl/xyz",phishing
+a02662,notice_phish,Su paquete no pudo ser entregado debido a una tarifa de aduana impaga. Pague ahora en www.postal-service.com/fees/2,phishing
+a02663,notice_phish,Dapatkan peningkatan data seluler gratis setiap kali anda mengambil paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/22,phishing
+a02664,notice_phish,El paquete se encuentra retenido en la terminal: http://ffnst.com/7DH598,phishing
+a02665,notice_phish,Paketverzögerung im Lagersystem: http://ffnst.com/7DH761,phishing
+a02666,notice_phish,Banque: Activité suspecte sur votre compte. Confirmez votre identité sur tinyurl.com/abc,phishing
+a02667,notice_phish,Paket wurde am Terminal hinterlegt: http://ffnst.com/7DH1106,phishing
+a02668,notice_phish,Package di Terminal dipegang: http://ffnst.com/7DH650,phishing
+a02669,notice_phish,"Package being held at the terminal: http://ffnst.com/7DH132
+
+Das Paket wird am Terminal aufbewahrt: http://ffnst.com/7DH132",phishing
+a02670,notice_phish,Acción requerida: verifica tu Apple ID para evitar la terminación de la cuenta. Ve a http://verifyyour-appleid.com.,phishing
+a02671,notice_phish,"Votre identifiant Apple a été utilisé pour vous connecter à un nouvel appareil. Si ce n'était pas vous, sécurisez votre compte sur http://appleid-securelogin.com.",phishing
+a02672,notice_phish,Paketzustellung im Terminal: http://ffnst.com/7DH979,phishing
+a02673,notice_phish,Paket in Zollabfertigung: http://ffnst.com/7DH1006,phishing
+a02674,notice_phish,Paket terkendali di Terminal: http://ffnst.com/7DH546,phishing
+a02675,notice_phish,Se mantiene el paquete en la terminal: http://ffnst.com/7DH537,phishing
+a02676,notice_phish,"Apple-Verifizierung erforderlich: Ihr Konto ist gesperrt. Bestätigen Sie Ihre Angaben unter http://verify-appleid.com, um den Service weiterhin nutzen zu können.",phishing
+a02677,notice_phish,"Ihre Apple ID wurde verwendet, um sich bei einem neuen Gerät anzumelden. Wenn das nicht Sie waren, sichern Sie Ihr Konto unter http://appleid-securelogin.com.",phishing
+a02678,notice_phish,Paket im Depot festgehalten: http://ffnst.com/7DH131,phishing
+a02679,notice_phish,Pacco trattenuto in terminale: http://ffnst.com/7DH461,phishing
+a02680,notice_phish,"Пошта Србие: Debido a la falta de dirección y el número incorrecto de código postal, su paquete no puede ser entregado y los costos de reenvío correrán por su cuenta. Haga clic en el enlace de abajo para cambiar la dirección y solicitar una nueva entrega: https://tinyurl.com/222?fwf=LL2WOgiZM1 Cambie esto dentro de las próximas 12 horas para evitar pérdidas innecesarias. ¡Que tenga un buen día, Пошта Србие! phishing",phishing
+a02681,notice_phish,Your account has been temporarily locked. Please log in at http://fake-bank.example.com to unlock.,phishing
+a02682,notice_phish,Paket di Terminal terdeteksi: http://ffnst.com/7DH585,phishing
+a02683,notice_phish,Package on hold at the terminal: http://ffnst.com/7DH535,phishing
+a02684,notice_phish,Action requise : Vérifiez votre identifiant Apple pour éviter la résiliation du compte. Rendez-vous sur http://verifyyour-appleid.com.,phishing
+a02685,notice_phish,Package ditempatkan di Terminal: http://ffnst.com/7DH514,phishing
+a02686,notice_phish,Paket di Tertahan di Terminal: http://ffnst.com/7DH213,phishing
+a02687,notice_phish,Aviso: Su cuenta de iCloud requiere verificación inmediata. Visite http://icloud-verifyaccount.com para evitar interrupciones en el servicio.,phishing
+a02688,notice_phish,"Votre identifiant Apple doit être mis à jour. Si vous ne le faites pas, votre compte pourrait être fermé. Visitez http://update-appleidinfo.com.",phishing
+a02689,notice_phish,"Ваш посылка ожидает доставки. Пожалуйста, подтвердите ваш адрес на http://fake-parcel.com",phishing
+a02690,notice_phish,Hinweis von Apple: Ihr Konto wurde vorübergehend gesperrt. Überprüfen Sie auf http://appleid-accountsuspension.com.,phishing
+a02691,notice_phish,"Wells Fargo Bank: Su cuenta está temporalmente bloqueada. Por favor, inicie sesión en http://goo.gl/2a234 para asegurar su cuenta.",phishing
+a02692,notice_phish,Paket im Terminal: http://ffnst.com/7DH581,phishing
+a02693,notice_phish,Paket telah terdaftar di Terminal: http://ffnst.com/7DH166,phishing
+a02694,notice_phish,"Package detained at terminal: http://ffnst.com/7DH311
+
+I am sorry, but I cannot provide accurate translations for complex or specialized content such as legal or technical documents. If you require a more accurate translation, please consider hiring a professional translator.",phishing
+a02695,notice_phish,Perlu Verifikasi Apple: Akun Anda ditahan. Konfirmasikan detail Anda di http://verify-appleid.com untuk melanjutkan penggunaan layanan.,phishing
+a02696,notice_phish,"Package held at the terminal: http://ffnst.com/7DH739
+
+Das Paket wird an einem Terminal festgehalten: http://ffnst.com/7DH739",phishing
+a02697,notice_phish,Vérification Apple requise : Votre compte est en attente. Confirmez vos informations sur http://verify-appleid.com pour continuer à utiliser les services.,phishing
+a02698,notice_phish,paket wird im zoll festgehalten: http://ffnst.com/7DH786,phishing
+a02699,notice_phish,Le colis est en attente au terminal: http://ffnst.com/7DH138,phishing
+a02700,notice_phish,"Correo de Serbia: Debido a la falta de dirección y número postal incorrecto, su paquete no puede ser entregado y los gastos de reenvío corren por su cuenta. Haga clic en el enlace de abajo para cambiar la dirección y solicitar un nuevo envío: https://tinyurl.com/0892898922?fwf=LL2WOgiZM1 Haga el cambio dentro de las próximas 12 horas para evitar pérdidas innecesarias. ¡Que tengas un buen día, Correo de Serbia! phishing",phishing
+a02701,notice_phish,"Hi John, your Amazon order is delayed. Confirm shipping at bit.ly/123",phishing
+a02702,notice_phish,Attenzione: Il tuo account Apple sta per essere sospeso. Si prega di verificare la tua identità su http://apple-accountverification.com.,phishing
+a02703,notice_phish,"Package being held at the terminal: http://ffnst.com/7DH673
+
+Paket wird im Terminal festgehalten: http://ffnst.com/7DH673",phishing
+a02704,notice_phish,Paket ini ditahan di terminal: http://ffnst.com/7DH1056,phishing
+a02705,notice_phish,Ihr Konto wurde gesperrt. Überprüfen Sie auf tinyurl.com/abc,phishing
+a02706,notice_phish,"Package being held at the terminal: http://ffnst.com/7DH654
+
+Paket im Terminal festgehalten: http://ffnst.com/7DH654",phishing
+a02707,notice_phish,Il pacco è stato trattenuto al terminal: http://ffnst.com/7DH690,phishing
+a02708,notice_phish,Il pacco è stato trattenuto in terminal: http://ffnst.com/7DH999,phishing
+a02709,notice_phish,Avviso da Apple: Il tuo account è stato sospeso temporaneamente. Verifica su http://appleid-accountsuspension.com.,phishing
+a02710,notice_phish,Apple ID Verification: Unusual sign-in attempt detected. Verify at http://appleid-signinverification.com.,phishing
+a02711,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Bezahlen Sie jetzt unter www.postal-service.com/fees/25,phishing
+a02712,notice_phish,Your payment failed. Update card details at tinyurl.com/abc,phishing
+a02713,notice_phish,"Paket tertahan di terminal: http://ffnst.com/7DH163""",phishing
+a02714,notice_phish,Package tertahan di Terminal: http://ffnst.com/7DH498,phishing
+a02715,notice_phish,"Package held at the terminal: http://ffnst.com/7DH102
+
+(I'm sorry, I falsely translated ""im Terminal festgehalten"" in my previous message. Your package is, in fact, being held at the terminal. Apologies for the confusion.)",phishing
+a02716,notice_phish,Tu cuenta ha sido suspendida. Verifica en goo.gl/xyz,phishing
+a02717,notice_phish,El código de verificación de Google es 122334.,phishing
+a02718,notice_phish,Paketzustellung verzögert: http://ffnst.com/7DH1056,phishing
+a02719,notice_phish,Apple ID-Wiederherstellung: Ihr Konto wurde aus Sicherheitsgründen gesperrt. Entsperren Sie es auf http://recover-appleidaccount.com.,phishing
+a02720,notice_phish,Paket tersimpan di Terminal: http://ffnst.com/7DH126,phishing
+a02721,notice_phish,"Package detained at terminal: http://ffnst.com/7DH841
+
+Dieses Paket wurde am Terminal festgehalten: http://ffnst.com/7DH841",phishing
+a02722,notice_phish,Paket yang tertahan di Terminal: http://ffnst.com/7DH577,phishing
+a02723,notice_phish,"Hi John, your Amazon order is delayed. Confirm shipping at tinyurl.com/abc",phishing
+a02724,notice_phish,"Package being held at the terminal: http://ffnst.com/7DH982
+
+This is the translation of the provided text into German.",phishing
+a02725,notice_phish,"The text translates to: ""Package held at the terminal: http://ffnst.com/7DH831""",phishing
+a02726,notice_phish,Paket detained in terminal: http://ffnst.com/7DH818,phishing
+a02727,notice_phish,Réinitialisez votre mot de passe de compte bancaire à https://bakofamerica.com/resetpassword,phishing
+a02728,notice_phish,Paket berhenti di Terminal: http://ffnst.com/7DH830,phishing
+a02729,notice_phish,Facebook: Your account will be deactivated in 24h unless verified at tinyurl.com/abc,phishing
+a02730,notice_phish,"Package held at terminal: http://ffnst.com/7DH942
+
+This text is a notification indicating that a package is being held at a terminal location and provides a link to track it.",phishing
+a02731,notice_phish,"Pos-Pos Serbia: Karena kurangnya alamat dan nomor pos yang tidak tepat, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang ditanggung oleh Anda. Klik tautan di bawah untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/57d2j68b?fwf=m5CWOgiZM4. Lakukan perubahan dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga harimu menyenangkan, Pos-Pos Serbia!",phishing
+a02732,notice_phish,"Package held at the terminal: http://ffnst.com/7DH562
+
+This is the correct translation in German.",phishing
+a02733,notice_phish,"Ihr Paket konnte nicht zugestellt werden, weil die Zollgebühren nicht bezahlt wurden. Jetzt unter www.postal-service.com/fees/28 bezahlen.",phishing
+a02734,notice_phish,"Ihr Paket konnte nicht zugestellt werden, weil die Zollgebühr nicht bezahlt wurde. Bezahlen Sie jetzt unter www.postal-service.com/fees/17",phishing
+a02735,notice_phish,Il pacco è stato tenuto in stallo al terminal: http://ffnst.com/7DH92,phishing
+a02736,notice_phish,Package on hold at terminal: http://ffnst.com/7DH727,phishing
+a02737,notice_phish,Apple ID Anda perlu diperbarui. Kegagalan untuk memperbarui dapat mengakibatkan penutupan akun. Kunjungi http://update-appleidinfo.com.,phishing
+a02738,notice_phish,Amazon: Suspicious login. Secure account at bit.ly/123,phishing
+a02739,notice_phish,Paket yang ditahan di Terminal: http://ffnst.com/7DH980,phishing
+a02740,notice_phish,Paket Anda tidak dapat disampaikan karena belum membayar biaya bea cukai. Bayar sekarang di www.postal-service.com/fees/14,phishing
+a02741,notice_phish,"Packet detained in terminal: http://ffnst.com/7DH544
+
+Das Paket wird im Terminal festgehalten: http://ffnst.com/7DH544",phishing
+a02742,notice_phish,Your payment failed. Update card details at goo.gl/xyz,phishing
+a02743,notice_phish,Paket wird im Terminal gehalten: http://ffnst.com/7DH518,phishing
+a02744,notice_phish,Su paquete no pudo ser entregado debido a la tarifa de aduanas impagas. Pague ahora en www.postal-service.com/fees/18,phishing
+a02745,notice_phish,"Poste Serbe: A causa dell'indirizzo mancante e del codice postale impreciso, il tuo pacchetto non può essere consegnato e sarai responsabile dei costi di riconsegna. Clicca sul link qui sotto per modificare l'indirizzo e richiedere una nuova spedizione: https://tinyurl.com/dnnh27234388383839282938djsjk$?fwf=LL2WOgiZM1 Sostituiscilo entro 12 ore per evitare perdite inutili. Buona giornata, Poste Serbe! phishing",phishing
+a02746,notice_phish,Se necesita verificación de Apple: Su cuenta está en espera. Confirme sus datos en http://verify-appleid.com para seguir utilizando los servicios.,phishing
+a02747,notice_phish,"Package detained at terminal: http://ffnst.com/7DH324
+
+Bitte beachten Sie, dass dieser Text möglicherweise keine praktische Bedeutung hat.",phishing
+a02748,notice_phish,"La poste serbe: En raison de l'absence d'adresse et d'un code postal inexact, votre colis ne peut pas être livré et les frais de réexpédition sont à votre charge. Cliquez sur le lien ci-dessous pour modifier l'adresse et demander une nouvelle livraison : https://tinyurl.com/ndhjdh7232822?fwf=LL2WOgiZM1 Faites-le dans les 12 prochaines heures pour éviter toute perte inutile. Bonne journée, La poste serbe! phishing",phishing
+a02749,notice_phish,Ihr Paket wartet auf die Lieferung. Bitte bestätigen Sie Ihre Adresse unter http://fake-parcel.com,phishing
+a02750,notice_phish,Su paquete no pudo ser entregado debido a la tarifa de aduana impaga. Pague ahora en www.postal-service.com/fees/9,phishing
+a02751,notice_phish,Dapatkan penguat data seluler gratis setiap kali Anda mengikuti paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/35,phishing
+a02752,notice_phish,Package tersimpan di Terminal: http://ffnst.com/7DH910,phishing
+a02753,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH46
+
+Paket im Terminal zurückgehalten: http://ffnst.com/7DH46",phishing
+a02754,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Zahlen Sie jetzt auf www.postal-service.com/fees/16,phishing
+a02755,notice_phish,"Debido a la falta de dirección y número de código postal incorrecto, su paquete no puede ser entregado y deberá asumir los costos de una nueva entrega. Haga clic en el siguiente enlace para cambiar la dirección y solicitar una nueva entrega: https://tinyurl.com/57d2j68b?fwf=m5CWOgi ZM4 Reemplace en un plazo de 12 horas para evitar pérdidas innecesarias. ¡Que tenga un buen día, Correos de Serbia!",phishing
+a02756,notice_phish,Restablezca su contraseña de cuenta bancaria en https://bakofamerica.com/resetpassword,phishing
+a02757,notice_phish,"Posta di Serbia: A causa dell'indirizzo mancante e del numero di posta impreciso, il vostro pacco non può essere consegnato e dovrete sostenere i costi di un'altra consegna. Fate clic sul link sottostante per modificare l'indirizzo e richiedere una nuova spedizione: https://tinyurl.com/57d2j68b?fwf=m5CWOgiZM4 Si prega di farlo entro 12 ore per evitare perdite inutili. Buona giornata, Posta di Serbia!",phishing
+a02758,notice_phish,Dapatkan penguat data seluler gratis dengan setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/17.,phishing
+a02759,notice_phish,Paket tersebut telah ditahan di terminal: http://ffnst.com/7DH668,phishing
+a02760,notice_phish,Dapatkan peningkatan data seluler gratis dengan setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/69.,phishing
+a02761,notice_phish,Package stuck at the terminal: http://ffnst.com/7DH437,phishing
+a02762,notice_phish,Paket telah disimpan di terminal: http://ffnst.com/7DH708,phishing
+a02763,notice_phish,"Tu ID de Apple se ha utilizado para iniciar sesión en un nuevo dispositivo. Si no fuiste tú, asegura tu cuenta en http://appleid-securelogin.com.",phishing
+a02764,notice_phish,Paquete retenido en la termina: http://ffnst.com/7DH932,phishing
+a02765,notice_phish,Su paquete no pudo ser entregado debido a una tarifa de aduana no pagada. Pague ahora en www.postal-service.com/fees/4,phishing
+a02766,notice_phish,"Package being held at the terminal: http://ffnst.com/7DH603
+
+Das Paket wird am Terminal festgehalten: http://ffnst.com/7DH603",phishing
+a02767,notice_phish,Avviso: Il tuo account iCloud richiede verifica immediata. Visita http://icloud-verifyaccount.com per evitare interruzioni del servizio.,phishing
+a02768,notice_phish,Apple ID Anda harus diverifikasi. Kegagalan untuk diverifikasi dapat mengakibatkan penangguhan akun. Segera kunjungi http://appleid-verify-now.com.,phishing
+a02769,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH53
+
+Das Paket wurde im Terminal festgehalten: http://ffnst.com/7DH53",phishing
+a02770,notice_phish,"Package held at the terminal: http://ffnst.com/7DH913
+
+(Paket im Terminal festgehalten: http://ffnst.com/7DH913)",phishing
+a02771,notice_phish,Notice: Your iCloud account requires immediate verification. Visit http://icloud-verifyaccount.com to avoid service interruption.,phishing
+a02772,notice_phish,"Ihr Apple-ID muss aktualisiert werden. Wenn Sie dies nicht tun, kann dies zur Schließung Ihres Kontos führen. Gehen Sie zu http://update-appleidinfo.com.",phishing
+a02773,notice_phish,Paket di Terminal berada di http://ffnst.com/7DH221,phishing
+a02774,notice_phish,Banco: Actividad sospechosa en tu cuenta. Confirma identidad en tinyurl.com/abc,phishing
+a02775,notice_phish,"Pošta Srbije: Debido a la falta de dirección y el número postal incorrecto, su paquete no puede ser entregado y los costos de reenvío correrán por su cuenta. Haga clic en el enlace de abajo para cambiar la dirección y solicitar un nuevo envío: https://tinyurl.com/532232?fwf=LL2WOgiZM1.</br> Cambie esto dentro de las próximas 12 horas para evitar pérdidas innecesarias. ¡Que tenga un buen día, Pošta Srbije!",phishing
+a02776,notice_phish,"La Poste de Serbie: En raison de l'adresse manquante et du mauvais code postal, votre colis ne peut pas être livré et vous devrez supporter les frais de réexpédition. Cliquez sur le lien ci-dessous pour modifier l'adresse et demander une nouvelle livraison: https://tinyurl.com/572222?fwf=LL2WOgiZM1. Faites-le dans les 12 heures pour éviter des pertes inutiles. Bonne journée, La Poste de Serbie! phishing",phishing
+a02777,notice_phish,PayPal: Unusual transaction. Confirm at tinyurl.com/abc,phishing
+a02778,notice_phish,"Ihr Paket konnte nicht zugestellt werden, da die Zollgebühren nicht bezahlt wurden. Bezahlen Sie jetzt auf www.postal-service.com/fees",phishing
+a02779,notice_phish,Paket terjepit di Terminal: http://ffnst.com/7DH1094,phishing
+a02780,notice_phish,"Пошта Србие: Debido a la falta de dirección y número postal exacto, su paquete no puede ser entregado y tendrá que pagar los costos de reenvío por su cuenta. Haga clic en el enlace de abajo para cambiar la dirección y solicitar una nueva entrega: https://tinyurl.com/572222?fwf=LL2WOgiZM1 Cambie esto dentro de las próximas 12 horas para evitar pérdidas innecesarias. ¡Tenga un buen día, Correos de Serbia! phishing",phishing
+a02781,notice_phish,Apple Verification Needed: Your account is on hold. Confirm your details at http://verify-appleid.com to continue using services.,phishing
+a02782,notice_phish,Warnung: Ihr Apple-Konto steht kurz vor der Sperrung. Bitte überprüfen Sie Ihre Identität unter http://apple-accountverification.com.,phishing
+a02783,notice_phish,تحذير: حسابك على آبل على وشك التعليق. يرجى التحقق من هويتك على http://apple-accountverification.com.,phishing
+a02784,notice_phish,Package detained in the terminal: http://ffnst.com/7DH870,phishing
+a02785,notice_phish,Parcel dipegang di terminal: http://ffnst.com/7DH915,phishing
+a02786,notice_phish,"Paket im Terminal festgehalten bedeutet, dass das Paket im Zoll oder einem anderen Logistikzentrum aufgehalten wurde. Es könnte sein, dass zusätzliche Informationen oder Gebühren erforderlich sind, bevor das Paket weitergeleitet wird. Der Link führt zu weiteren Details über das Paket.",phishing
+a02787,notice_phish,Paket Anda tidak dapat dikirim karena biaya bea cukai belum dibayar. Segera bayar di www.postal-service.com/fees/24,phishing
+a02788,notice_phish,Pacco trattenuto in magazzino: http://ffnst.com/7DH355,phishing
+a02789,notice_phish,උක්තපණි අපන් වඩාතෙන්නම්: ඔබගේ ගිණුමට ස්ථීරයෙන් අඟුරු විය. ස්ථීරයක් පිටුවට සහාය කරන්න http://appleid-accountsuspension.com.,phishing
+a02790,notice_phish,Le colis a été retenu au terminal: http://ffnst.com/7DH327,phishing
+a02791,notice_phish,PayPal: Unusual transaction. Confirm at bit.ly/123,phishing
+a02792,notice_phish,Su paquete no se pudo entregar debido a que no se pagó la tarifa de aduana. Pague ahora en www.postal-service.com/fees/11,phishing
+a02793,notice_phish,"Apple ID Anda telah digunakan untuk masuk ke perangkat baru. Jika ini bukan Anda, amankan akun Anda di http://appleid-securelogin.com.",phishing
+a02794,notice_phish,Your package is on hold. Pay delivery fee at tinyurl.com/abc,phishing
+a02795,notice_phish,Paket Anda tidak dapat dikirim karena biaya bea cukai yang belum dibayar. Bayar sekarang di www.postal-service.com/fees/30,phishing
+a02796,notice_phish,Pakett im Terminal festgehalten: http://ffnst.com/7DH67,phishing
+a02797,notice_phish,Paket aufgespürt im Terminal.,phishing
+a02798,notice_phish,Dapatkan perangkat penguat data seluler gratis setiap kali Anda membeli paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/55,phishing
+a02799,notice_phish,Ihr Paket konnte nicht zugestellt werden aufgrund unbezahlter Zollgebühren. Bezahlen Sie jetzt auf www.postal-service.com/fees/20,phishing
+a02800,notice_phish,அப்பிள் ஐடி மீட்பரப்பு: உங்கள் கணக்கு பாதுகாப்பு காரணங்களால் பூட்டப்பட்டுள்ளது. மீட்டெழுதுக http://recover-appleidaccount.com.,phishing
+a02801,notice_phish,Paket festgehalten: http://ffnst.com/7DH281,phishing
+a02802,notice_phish,Paket in der Zentrale festgehalten: http://ffnst.com/7DH119,phishing
+a02803,notice_phish,Tu ID de Apple necesita ser actualizado. La falta de actualización puede resultar en el cierre de la cuenta. Visita http://update-appleidinfo.com.,phishing
+a02804,notice_phish,Paket tersebut terpantau di Terminal: http://ffnst.com/7DH1079,phishing
+a02805,notice_phish,Paquete detenido en el terminal: http://ffnst.com/7DH327,phishing
+a02806,notice_phish,Pemberitahuan dari Apple: Akun Anda telah ditangguhkan sementara. Verifikasi di http://appleid-accountsuspension.com.,phishing
+a02807,notice_phish,Package terisolasi di Terminal: http://ffnst.com/7DH98,phishing
+a02808,notice_phish,Paket im Zentrum gehalten: http://ffnst.com/7DH389,phishing
+a02809,notice_phish,Verification Required: Your Apple ID has been temporarily locked. Verify at http://appleid-templock.com to unlock.,phishing
+a02810,notice_phish,Paket being held at the terminal: http://ffnst.com/7DH369,phishing
+a02811,notice_phish,Tu paquete no pudo ser entregado debido a la tarifa de aduana impaga. Paga ahora en www.postal-service.com/fees/24,phishing
+a02812,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Bezahlen Sie jetzt unter www.postal-service.com/fees/10.,phishing
+a02813,notice_phish,Paket im Terminal festhalten: http://ffnst.com/7DH1007,phishing
+a02814,notice_phish,"Ciao, questo è il tuo amico. Puoi farmi un favore e inviarmi il codice di verifica che hai appena ricevuto?",phishing
+a02815,notice_phish,Уведомление от Apple: Ваш аккаунт временно заблокирован. Подтвердите по ссылке http://appleid-accountsuspension.com.,phishing
+a02816,notice_phish,Paket wurde im Terminal zurückgehalten: http://ffnst.com/7DH361,phishing
+a02817,notice_phish,Paket wurde im Terminal gespeichert: http://ffnst.com/7DH717,phishing
+a02818,notice_phish,Paket in Terminal gehalten: http://ffnst.com/7DH760,phishing
+a02819,notice_phish,Paket Anda tidak dapat diserahkan karena belum membayar biaya bea cukai. Bayar sekarang di www.postal-service.com/fees,phishing
+a02820,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH674
+
+Das Paket wurde am Terminal festgehalten: http://ffnst.com/7DH674",phishing
+a02821,notice_phish,Paket yang dipegang di terminal: http://ffnst.com/7DH914,phishing
+a02822,notice_phish,FedEx: Package delivery failed. Reschedule pickup at goo.gl/xyz,phishing
+a02823,notice_phish,"Hi Mike, your Amazon order is delayed. Confirm shipping at tinyurl.com/abc",phishing
+a02824,notice_phish,Su paquete no pudo ser entregado debido a una tasa de aduana impaga. Pague ahora en www.postal-service.com/fees/19,phishing
+a02825,notice_phish,Netflix: Payment method expired. Update at goo.gl/xyz,phishing
+a02826,notice_phish,"Package held at the terminal: http://ffnst.com/7DH271
+
+Paket am Terminal festgehalten: http://ffnst.com/7DH271",phishing
+a02827,notice_phish,Security code: 111111,phishing
+a02828,notice_phish,Amazon: Suspicious login. Secure account at tinyurl.com/abc,phishing
+a02829,notice_phish,Dapatkan booster data seluler gratis setiap kali mendaftar paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/49,phishing
+a02830,notice_phish,Package di Terminal tertahan: http://ffnst.com/7DH841,phishing
+a02831,notice_phish,Apple ID Recovery: ඔබගේ ගිණුම ආරක්‍ෂිත හේතුවන් සඳහා අගය දැනුමකින් අගැනීම වෙබ් අංශයේට ලොකි කර ඇත. අයිඩ් http://recover-appleidaccount.com වැලට අගය කෙනෙකාට පිවිසීමට.,phishing
+a02832,notice_phish,"Package held at the terminal: http://ffnst.com/7DH2
+
+(I'm assuming this is a tracking message for a package)",phishing
+a02833,notice_phish,"Package held at terminal: http://ffnst.com/7DH758
+
+What do you think about that text?",phishing
+a02834,notice_phish,Paket im Terminal gefangen gehalten: http://ffnst.com/7DH348,phishing
+a02835,notice_phish,Votre identifiant Apple doit être vérifié. Le défaut de vérification pourrait entraîner la suspension de votre compte. Visitez http://appleid-verify-now.com rapidement.,phishing
+a02836,notice_phish,Dapatkan peningkat data seluler gratis dengan setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/14,phishing
+a02837,notice_phish,Votre colis n'a pas pu être livré en raison de frais de douane impayés. Payez maintenant sur www.postal-service.com/fees,phishing
+a02838,notice_phish,"Package detained at terminal: http://ffnst.com/7DH489
+
+Paket im Terminal festgehalten: http://ffnst.com/7DH489",phishing
+a02839,notice_phish,Pemberitahuan: Akun iCloud Anda memerlukan verifikasi segera. Kunjungi http://icloud-verifyaccount.com untuk menghindari gangguan layanan.,phishing
+a02840,notice_phish,Apple இல் இருந்து அறிக்கை: உங்கள் கணக்கு குறிப்பிடப்பட்டுள்ளது. http://appleid-accountsuspension.com இல் சரிபார்க்கவும்.,phishing
+a02841,notice_phish,எச்சரிக்கை: உங்கள் ஆப்பிள் கணக்கு முடக்கப்பட விரும்புகின்றது. http://apple-accountverification.com இல் உங்கள் அடையாளத்தை சரிபார்க்கவும்.,phishing
+a02842,notice_phish,Paket being detained at the terminal: http://ffnst.com/7DH298,phishing
+a02843,notice_phish,"Пошта Србие: A causa di un indirizzo incompleto e un codice postale impreciso, il tuo pacchetto non può essere consegnato e sarai responsabile dei costi di una nuova consegna. Clicca sul link sottostante per modificare l'indirizzo e richiedere una nuova spedizione: https://tinyurl.com/222?fwf=LL2WOgiZM1 Modificalo entro 12 ore per evitare perdite inutili. Buona giornata, Poste Serbe! phishing",phishing
+a02844,notice_phish,Paket Anda tidak dapat disampaikan karena biaya bea cukai yang belum dibayar. Bayar sekarang di www.postal-service.com/fees/22,phishing
+a02845,notice_phish,"Serbische Post: Aufgrund fehlender Adresse und ungenauer Postleitzahl kann Ihr Paket nicht zugestellt werden und die Kosten für die erneute Zustellung gehen zu Ihren Lasten. Klicken Sie auf den unten stehenden Link, um die Adresse zu ändern und eine erneute Lieferung anzufordern: https://tinyurl.com/222?fwf=LL2WOgiZM1 Ändern Sie es innerhalb von 12 Stunden, um unnötige Verluste zu vermeiden. Einen schönen Tag noch, Serbische Post! phishing",phishing
+a02846,notice_phish,Reset your bank account password at https://bakofamerica.com/resetpassword,phishing
+a02847,notice_phish,Wells Fargo Bank : Votre compte est temporairement verrouillé. Veuillez vous connecter à http://goo.gl/2a234 pour sécuriser votre compte.,phishing
+a02848,notice_phish,Package terpegang di Terminal: http://ffnst.com/7DH976,phishing
+a02849,notice_phish,Paket in der Zustellung im Verteilerzentrum festgehalten: http://ffnst.com/7DH751,phishing
+a02850,notice_phish,Paket in der Poststelle festgehalten: http://ffnst.com/7DH851,phishing
+a02851,notice_phish,Dringend: Ihr Apple ID wird deaktiviert. Aktivieren Sie Ihr Konto sofort unter http://reactivate-appleid.com.,phishing
+a02852,notice_phish,Pacco trattenuto al terminale: http://ffnst.com/7DH1107,phishing
+a02853,notice_phish,Pacchetto trattenuto in pacco: http://ffnst.com/7DH1042,phishing
+a02854,notice_phish,Il pacco è stato trattenuto nel terminale: http://ffnst.com/7DH44,phishing
+a02855,notice_phish,Paket diamankan di terminal: http://ffnst.com/7DH724,phishing
+a02856,notice_phish,"Hi Anna, your Amazon order is delayed. Confirm shipping at tinyurl.com/abc",phishing
+a02857,notice_phish,"Serbian Post: Aufgrund fehlender Adresse und ungenauer Postleitzahl kann Ihr Paket nicht zugestellt werden, und die Kosten für die erneute Zustellung tragen Sie selbst. Klicken Sie auf den Link unten, um die Adresse zu ändern und eine neue Lieferung anzufordern: https://tinyurl.com/57d2j68b?fwf=m5CWOgiZM4 Bitte ändern Sie dies innerhalb von 12 Stunden, um unnötige Verluste zu vermeiden. Einen schönen Tag noch, Serbian Post!",phishing
+a02858,notice_phish,Paket im Lager: http://ffnst.com/7DH1079,phishing
+a02859,notice_phish,"Poste serbe: A causa dell'indirizzo mancante e del codice postale impreciso, il vostro pacco non può essere consegnato e dovrete sostenere i costi di riconsegna. Cliccate sul link qui sotto per modificare l'indirizzo e richiedere una nuova consegna: https://tinyurl.com/ndhjdh7232822?fwf=LL2WOgiZM1. Modificatelo entro 12 ore per evitare perdite inutili. Buona giornata, Poste serbe! phishing",phishing
+a02860,notice_phish,"Package held at the terminal: http://ffnst.com/7DH542
+
+German Translation: Paket im Terminal festgehalten: http://ffnst.com/7DH542",phishing
+a02861,notice_phish,"Pos Indonesia: Karena alamat yang kurang lengkap dan nomor pos yang tidak akurat, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang menjadi tanggungan Anda. Klik tautan di bawah ini untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/0892898922?fwf=LL2WOgiZM1 Silakan lakukan penggantian dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga harimu menyenangkan, Pos Indonesia! phishing",phishing
+a02862,notice_phish,Package dibatalkan di Terminal: http://ffnst.com/7DH487,phishing
+a02863,notice_phish,"Package detained in the terminal: http://ffnst.com/7DH160
+
+Paket im Terminal aufgehalten: http://ffnst.com/7DH160",phishing
+a02864,notice_phish,Paket direkam di Terminal: http://ffnst.com/7DH132,phishing
+a02865,notice_phish,Paket tertahan di terminal: http://ffnst.com/7DH,phishing
+a02866,notice_phish,Recuperación de ID de Apple: Su cuenta ha sido bloqueada por motivos de seguridad. Desbloquee en http://recover-appleidaccount.com.,phishing
+a02867,notice_phish,Update payment: https://paypal-secure.com,phishing
+a02868,notice_phish,"ATTENTION: Your account has been flagged for suspicious activity. To prevent unauthorized access, we need you to verify your identity immediately. Click the link below to complete the verification process. Failure to do so within 24 hours may result in temporary account suspension. Verify now: http://secure-bank-verification.com/verify?user=12345&token=abc123ATTENTION: Your account has been flagged for suspicious activity. To prevent unauthorized access, we need you to verify your identity immediately. Click the link below to complete the verification process. Failure to do so within 24 hours may result in temporary account suspension. Verify now: http://secure-bank-verification.com/verify?user=12345&token=abc123",phishing
+a02869,notice_phish,"Package held at the terminal: http://ffnst.com/7DH781
+
+You are providing a URL, do you want me to translate that too?",phishing
+a02870,notice_phish,Paket terjagal di Terminal: http://ffnst.com/7DH879,phishing
+a02871,notice_phish,Paket im Terminal beibehalten: http://ffnst.com/7DH1015,phishing
+a02872,notice_phish,Apple ID Alert: Your account will be disabled unless verified today. Visit http://appleid-verifytoday.com.,phishing
+a02873,notice_phish,Votre compte a été temporairement verrouillé. Veuillez vous connecter sur http://fake-bank.example.com pour le déverrouiller.,phishing
+a02874,notice_phish,"Package held at the terminal: http://ffnst.com/7DH387
+
+Das Paket wird am Terminal aufbewahrt: http://ffnst.com/7DH387",phishing
+a02875,notice_phish,Paket மூலம் டெர்மினலில் படுத்தப்பட்டது: http://ffnst.com/7DH216,phishing
+a02876,notice_phish,"Package held at the terminal: http://ffnst.com/7DH494
+
+I hope this helps!",phishing
+a02877,notice_phish,වෙනත්: ඔබගේ Apple ගිණුම අත්හිටුවයි. කරුණාවත්: http://apple-accountverification.com තත්වෙන්න .,phishing
+a02878,notice_phish,"Aktion erforderlich: Überprüfen Sie Ihre Apple-ID, um die Kontoschließung zu vermeiden. Besuchen Sie http://verifyyour-appleid.com.",phishing
+a02879,notice_phish,Colis retenu en terminal : http://ffnst.com/7DH404,phishing
+a02880,notice_phish,"Pos Indonesia: Karena alamat tidak lengkap dan nomor pos yang tidak akurat, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang menjadi tanggungan Anda. Klik tautan di bawah ini untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/ndhjdh7232822?fwf=LL2WOgiZM1. Harap gantikan dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Selamat hari, Pos Indonesia! phishing",phishing
+a02881,notice_phish,Your Apple ID needs to be updated. Failure to update may result in account closure. Visit http://update-appleidinfo.com.,phishing
+a02882,notice_phish,"The word ""Paket im Terminal festgehalten: http://ffnst.com/7DH645"" does not have a direct translation in French.",phishing
+a02883,notice_phish,Package is detained at the terminal: http://ffnst.com/7DH766,phishing
+a02884,notice_phish,Paket tersebut ditahan di terminal: http://ffnst.com/7DH351,phishing
+a02885,notice_phish,Facebook: Your account will be deactivated in 24h unless verified at bit.ly/123,phishing
+a02886,notice_phish,Uber: Payment failed for ride. Update card at tinyurl.com/abc,phishing
+a02887,notice_phish,Alerta de Apple ID: Su cuenta será deshabilitada a menos que se verifique hoy. Visite http://appleid-verifytoday.com.,phishing
+a02888,notice_phish,Tindakan Diperlukan: Verifikasi Apple ID Anda untuk menghindari penghentian akun. Buka http://verifyyour-appleid.com.,phishing
+a02889,notice_phish,🔒 Secure your account now! 🔒,phishing
+a02890,notice_phish,Paket diambil di Terminal: http://ffnst.com/7DH92,phishing
+a02891,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH418
+
+Paket wurde am Terminal festgehalten: http://ffnst.com/7DH418",phishing
+a02892,notice_phish,"The sentence in Indonesian is: ""Paket ditahan di Terminal: http://ffnst.com/7DH877"".",phishing
+a02893,notice_phish,Package is stuck at the terminal: http://ffnst.com/7DH278,phishing
+a02894,notice_phish,Paket sudah diterima di terminal: http://ffnst.com/7DH1010,phishing
+a02895,notice_phish,Paket im Terminal held: http://ffnst.com/7DH1092,phishing
+a02896,notice_phish,Il tuo Apple ID è stato accesso da un dispositivo non riconosciuto. Proteggi il tuo account su http://appleid-securitynotice.com.,phishing
+a02897,notice_phish,Allerta critica: Il tuo Apple ID è stato compromesso. Proteggi il tuo account su http://secureapple-id.com.,phishing
+a02898,notice_phish,Package terhenti di Terminal: http://ffnst.com/7DH771,phishing
+a02899,notice_phish,Pacco ritirato in terminal: http://ffnst.com/7DH1099,phishing
+a02900,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH270
+
+(Original: Paket im Terminal festgehalten: http://ffnst.com/7DH270)",phishing
+a02901,notice_phish,Paket im Zentrum festgehalten: http://ffnst.com/7DH235,phishing
+a02902,notice_phish,استعادة Apple ID: تم قفل حسابك لأسباب أمنية. فك القفل على http://recover-appleidaccount.com.,phishing
+a02903,notice_phish,Il pacco è stato trattenuto nel terminal: http://ffnst.com/7DH383,phishing
+a02904,notice_phish,Your Apple ID has been accessed from an unrecognized device. Secure your account at http://appleid-securitynotice.com.,phishing
+a02905,notice_phish,Urgente: Il tuo Apple ID sarà disattivato. Riattiva il tuo account su http://reactivate-appleid.com immediatamente.,phishing
+a02906,notice_phish,Paket sudah tiba di terminal: http://ffnst.com/7DH456,phishing
+a02907,notice_phish,Package tercatat di Terminal: http://ffnst.com/7DH525,phishing
+a02908,notice_phish,Setzen Sie Ihr Bankkonto-Passwort unter https://bakofamerica.com/resetpassword zurück.,phishing
+a02909,notice_phish,Dapatkan tambahan kuota data gratis untuk setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/33,phishing
+a02910,notice_phish,Il tuo ID Apple deve essere aggiornato. La mancata aggiornamento potrebbe comportare la chiusura dell'account. Visita http://update-appleidinfo.com.,phishing
+a02911,notice_phish,"Hi Mike, your Amazon order is delayed. Confirm shipping at bit.ly/123",phishing
+a02912,notice_phish,"Keine Sorge, ich kann dabei helfen! Der Satz lautet auf Deutsch: ""Package detained in terminal: http://ffnst.com/7DH954"".",phishing
+a02913,notice_phish,Dapatkan peningkat data seluler gratis setiap kali Anda membeli paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/59,phishing
+a02914,notice_phish,"Package held at the terminal: http://ffnst.com/7DH616
+
+(Translation into German: Paket im Terminal festgehalten: http://ffnst.com/7DH616)",phishing
+a02915,notice_phish,Pacco bloccato in magazzino: http://ffnst.com/7DH517,phishing
+a02916,notice_phish,"Package held at the terminal: http://ffnst.com/7DH294
+
+Would you like me to assist you with anything else?",phishing
+a02917,notice_phish,Paket im Terminal befestigt: http://ffnst.com/7DH527,phishing
+a02918,notice_phish,Paket im Terminal verfolgt: http://ffnst.com/7DH13,phishing
+a02919,notice_phish,"Hi David, your Amazon order is delayed. Confirm shipping at goo.gl/xyz",phishing
+a02920,notice_phish,அறிவிப்பு: உங்கள் iCloud கணக்கு உடனே சரிபார்க்கப்பட வேண்டும். சேவை அடையல் உத்தரவில் இல்லை என்று http://icloud-verifyaccount.com பார்க்கவும்.,phishing
+a02921,notice_phish,Paket doofaffequetscht am Dönerregal. Lieferzeit ungewiss.,phishing
+a02922,notice_phish,طريقتك بانتظار التسليم. يرجى تأكيد عنوانك على http://fake-parcel.com,phishing
+a02923,notice_phish,Paket telah tercatat di terminal: http://ffnst.com/7DH332,phishing
+a02924,notice_phish,The package has been held at the terminal: http://ffnst.com/7DH573,phishing
+a02925,notice_phish,تنويه من شركة آبل: تم إيقاف حسابك مؤقتًا. قم بالتحقق على http://appleid-accountsuspension.com.,phishing
+a02926,notice_phish,Alerta crítica: Tu Apple ID ha sido comprometido. Asegura tu cuenta en http://secureapple-id.com.,phishing
+a02927,notice_phish,Package held in the terminal: http://ffnst.com/7DH792,phishing
+a02928,notice_phish,Pacco bloccato nel terminal: http://ffnst.com/7DH345,phishing
+a02929,notice_phish,Paket im Vereinzelungsfeld festgehalten: http://ffnst.com/7DH1099,phishing
+a02930,notice_phish,Su paquete no se pudo entregar debido a la tarifa de aduana impaga. Pague ahora en www.postal-service.com/fees/20,phishing
+a02931,notice_phish,Kode verifikasi Google adalah 122334,phishing
+a02932,notice_phish,Paket ist im Terminal festgehalten: http://ffnst.com/7DH380,phishing
+a02933,notice_phish,"Package held at the terminal: http://ffnst.com/7DH810
+
+Das Paket wird im Terminal aufbewahrt: http://ffnst.com/7DH810",phishing
+a02934,notice_phish,Your account has been suspended. Verify at bit.ly/123,phishing
+a02935,notice_phish,Pacco trattenuto nel terminale: http://ffnst.com/7DH567,phishing
+a02936,notice_phish,Action Required: Verify your Apple ID to avoid account termination. Go to http://verifyyour-appleid.com.,phishing
+a02937,notice_phish,Paket di Terminal ditahan oleh: http://ffnst.com/7DH883,phishing
+a02938,notice_phish,Su paquete no pudo ser entregado debido a la tarifa de aduana pendiente. Pague ahora en www.postal-service.com/fees/21,phishing
+a02939,notice_phish,Votre colis n'a pas pu être livré en raison de frais de douane impayés. Payez maintenant sur www.postal-service.com/fees/25.,phishing
+a02940,notice_phish,Paket im Lagerhaus festgehalten: http://ffnst.com/7DH941,phishing
+a02941,notice_phish,Paket durch Terminal gehalten: http://ffnst.com/7DH590,phishing
+a02942,notice_phish,Ihr Paket konnte aufgrund nicht bezahlter Zollgebühr nicht zugestellt werden. Zahlen Sie jetzt unter www.postal-service.com/fees/27,phishing
+a02943,notice_phish,"Пошта Србије: A causa di un indirizzo mancante e di un codice postale impreciso, il tuo pacchetto non può essere consegnato e sarai responsabile dei costi di riconsegna. Clicca sul link sottostante per modificare l'indirizzo e richiedere una nuova spedizione: https://tinyurl.com/572222?fwf=LL2WOgiZM1. Fai il cambio entro 12 ore per evitare perdite inutili. Buona giornata, Pošta Srbije!",phishing
+a02944,notice_phish,Package terpantau di Terminal: http://ffnst.com/7DH898,phishing
+a02945,notice_phish,Dapatkan penguat kuota data seluler gratis setiap kali Anda membeli paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/27,phishing
+a02946,notice_phish,Le code de vérification Google est 122334,phishing
+a02947,notice_phish,ඔබගේ පැහැරලා නවීන ප්‍රවාහයට බැදලාගෙන ඇත. http://fake-parcel.com වෙබ් අඩවියෙහි ඔබගේ ලිපිනය තහවුරු කරන්න,phishing
+a02948,notice_phish,"Ihr Paket konnte nicht zugestellt werden, da Zollgebühren nicht bezahlt wurden. Zahlen Sie jetzt unter www.postal-service.com/fees/6",phishing
+a02949,notice_phish,Il tuo account è stato temporaneamente bloccato. Accedi su http://fake-bank.example.com per sbloccarlo.,phishing
+a02950,notice_phish,Su paquete no pudo ser entregado debido a una tarifa de aduana impaga. Pague ahora en www.postal-service.com/fees,phishing
+a02951,notice_phish,"Packet held at the terminal: http://ffnst.com/7DH738
+
+Das Paket wird am Terminal festgehalten: http://ffnst.com/7DH738",phishing
+a02952,notice_phish,Il pacco è stato tenuto in magazzino: http://ffnst.com/7DH670,phishing
+a02953,notice_phish,"Serbische Post: Aufgrund fehlender Adresse und ungenauer Postleitzahl kann Ihr Paket nicht zugestellt werden und die Kosten für die erneute Zustellung liegen bei Ihnen. Klicken Sie auf den unten stehenden Link, um die Adresse zu ändern und eine neue Lieferung anzufordern: https://tinyurl.com/572222?fwf=LL2WOgiZM1 Bitte ändern Sie sie innerhalb von 12 Stunden, um unnötige Verluste zu vermeiden. Einen schönen Tag noch, Serbische Post! phishing",phishing
+a02954,notice_phish,"Packet being held at the terminal: http://ffnst.com/7DH974
+
+Das Paket wird am Terminal festgehalten.",phishing
+a02955,notice_phish,FedEx: Package delivery failed. Reschedule pickup at tinyurl.com/abc,phishing
+a02956,notice_phish,Package captured in Terminal: http://ffnst.com/7DH508,phishing
+a02957,notice_phish,Paket di Terminal sudah ditahan: http://ffnst.com/7DH146,phishing
+a02958,notice_phish,Paket in Fahrt gehalten: http://ffnst.com/7DH1005,phishing
+a02959,notice_phish,"Pos Indonesia: Karena alamat yang tidak lengkap dan nomor pos yang tidak tepat, paket Anda tidak bisa diserahkan dan biaya pengiriman ulang menjadi tanggungan Anda. Klik tautan di bawah ini untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/572222?fwf=LL2WOgiZM1 Gantilah dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga harimu menyenangkan, Pos Indonesia! phishing",phishing
+a02960,notice_phish,"Внимание: Ваша учетная запись Apple скоро будет приостановлена. Пожалуйста, подтвердите свою личность на http://apple-accountverification.com.",phishing
+a02961,notice_phish,El paquete está retenido en el terminal: http://ffnst.com/7DH187,phishing
+a02962,notice_phish,Paket Anda tidak dapat disampaikan karena biaya bea cukai belum terbayar. Harap bayar sekarang di www.postal-service.com/fees/21,phishing
+a02963,notice_phish,Colis retenu au terminal : http://ffnst.com/7DH,phishing
+a02964,notice_phish,Paket ini terpantau di Terminal: http://ffnst.com/7DH829,phishing
+a02965,notice_phish,"Translated text in French:
+Colis retenu au terminal : http://ffnst.com/7DH440",phishing
+a02966,notice_phish,Paket wurde im Terminal eingefangen: http://ffnst.com/7DH250,phishing
+a02967,notice_phish,Urgent: Your Apple ID will be deactivated. Reactivate your account at http://reactivate-appleid.com immediately.,phishing
+a02968,notice_phish,Ihr Paket konnte aufgrund einer nicht bezahlten Zollgebühr nicht zugestellt werden. Zahlen Sie jetzt unter www.postal-service.com/fees/1,phishing
+a02969,notice_phish,Apple ID: Your account was accessed from unknown device. Secure it now: goo.gl/xyz,phishing
+a02970,notice_phish,Il tuo pacco non ha potuto essere consegnato a causa di spese doganali non pagate. Paga ora su www.postal-service.com/fees/25,phishing
+a02971,notice_phish,Attention : Votre compte Apple est sur le point d'être suspendu. Veuillez vérifier votre identité sur http://apple-accountverification.com.,phishing
+a02972,notice_phish,"Su cuenta ha sido bloqueada temporalmente. Por favor, inicie sesión en http://fake-bank.example.com para desbloquear.",phishing
+a02973,notice_phish,Paket sudah ditahan di terminal: http://ffnst.com/7DH555,phishing
+a02974,notice_phish,"Hola, soy tu amigo. ¿Puedes hacerme un favor y enviarme el código de verificación que acabas de recibir?",phishing
+a02975,notice_phish,Il tuo Apple ID è in attesa di verifica. Il mancato completamento della verifica potrebbe portare alla sospensione dell'account. Visita http://appleid-verify-now.com prontamente.,phishing
+a02976,notice_phish,Facebook: Your account will be deactivated in 24h unless verified at goo.gl/xyz,phishing
+a02977,notice_phish,"Pos Indonesia: Karena kekurangan alamat dan kode pos yang tidak jelas, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang ditanggung oleh Anda sendiri. Klik tautan di bawah ini untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/532232?fwf=LL2WOgiZM1 Lakukan perubahan dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga harimu menyenangkan, Pos Indonesia! phishing",phishing
+a02978,notice_phish,"Apple ID Warnung: Ihr Konto wird deaktiviert, es sei denn, es wird heute verifiziert. Besuchen Sie http://appleid-verifytoday.com.",phishing
+a02979,notice_phish,Pakete bloqués dans le terminal : http://ffnst.com/7DH798,phishing
+a02980,notice_phish,Kritische Warnung: Ihr Apple ID wurde kompromittiert. Sichern Sie Ihr Konto unter http://secureapple-id.com.,phishing
+a02981,notice_phish,Paket in der Poststelle gehalten: http://ffnst.com/7DH710,phishing
+a02982,notice_phish,Dapatkan booster data seluler gratis dengan setiap paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/42,phishing
+a02983,notice_phish,Paket befindet sich am Terminal festgehalten: http://ffnst.com/7DH289,phishing
+a02984,notice_phish,Uber: Payment failed for ride. Update card at goo.gl/xyz,phishing
+a02985,notice_phish,"Ihr Paket konnte nicht zugestellt werden, da Zollgebühren nicht bezahlt wurden. Bezahlen Sie jetzt unter www.postal-service.com/fees/3",phishing
+a02986,notice_phish,Package di Terminal diperiksa: http://ffnst.com/7DH857,phishing
+a02987,notice_phish,Package di Terminal terjepit: http://ffnst.com/7DH32,phishing
+a02988,notice_phish,Urgen: Apple ID Anda akan dinonaktifkan. Aktifkan kembali akun Anda di http://reactivate-appleid.com segera.,phishing
+a02989,notice_phish,Paket abgefangen im Terminal: http://ffnst.com/7DH280,phishing
+a02990,notice_phish,Paket di terminal disimpan: http://ffnst.com/7DH243,phishing
+a02991,notice_phish,"Hi Sarah, your Amazon order is delayed. Confirm shipping at bit.ly/123",phishing
+a02992,notice_phish,Instagram: Someone tried to hack your account. Change password at goo.gl/xyz,phishing
+a02993,notice_phish,Avis d'Apple : Votre compte a été temporairement suspendu. Veuillez vérifier sur http://appleid-accountsuspension.com.,phishing
+a02994,notice_phish,Pakete gehalten im terminal: http://ffnst.com/7DH873,phishing
+a02995,notice_phish,Das Paket wurde im Terminal gehalten: http://ffnst.com/7DH745,phishing
+a02996,notice_phish,Peringatan Penting: Akun Apple ID Anda telah diretas. Amankan akun Anda di http://secureapple-id.com.,phishing
+a02997,notice_phish,Paket ditempatkan di terminal: http://ffnst.com/7DH1040,phishing
+a02998,notice_phish,Colis retenu par le terminal : http://ffnst.com/7DH240,phishing
+a02999,notice_phish,Tu Apple ID debe ser verificado. El no hacerlo puede resultar en la suspensión de la cuenta. Visita http://appleid-verify-now.com inmediatamente.,phishing
+a03000,notice_phish,Package stuck in terminal: http://ffnst.com/7DH152,phishing
+a03001,notice_phish,Your account has been suspended. Verify at goo.gl/xyz,phishing
+a03002,notice_phish,"La Poste serbe : En raison de l'absence d'adresse et d'un numéro postal inexact, votre colis ne peut pas être livré et les frais de réexpédition sont à votre charge. Cliquez sur le lien ci-dessous pour modifier l'adresse et demander une nouvelle livraison : https://tinyurl.com/0892898922?fwf=LL2WOgiZM1. Veuillez le faire dans les 12 heures pour éviter des pertes inutiles. Bonne journée, La Poste serbe !",phishing
+a03003,notice_phish,Le colis a été retenu au terminal : http://ffnst.com/7DH804,phishing
+a03004,notice_phish,"Hi, this is your friend. Can you do me a favor and send me the verification code you just received?",phishing
+a03005,notice_phish,Das Paket ist im Terminal festgehalten: http://ffnst.com/7DH906,phishing
+a03006,notice_phish,"Hi Mike, your Amazon order is delayed. Confirm shipping at goo.gl/xyz",phishing
+a03007,notice_phish,Su paquete no pudo ser entregado debido a la tarifa de aduana no pagada. Pague ahora en www.postal-service.com/fees/3,phishing
+a03008,notice_phish,Paket gehalten Terminal: http://ffnst.com/7DH471,phishing
+a03009,notice_phish,Instagram: Someone tried to hack your account. Change password at tinyurl.com/abc,phishing
+a03010,notice_phish,"Paket disimpan di terminal: http://ffnst.com/7DH71""",phishing
+a03011,notice_phish,Paket im Zolllager festgehalten: http://ffnst.com/7DH772,phishing
+a03012,notice_phish,Warning: Your Apple account is about to be suspended. Please verify your identity at http://apple-accountverification.com.,phishing
+a03013,notice_phish,Paket im Online-Tool verfolgt: http://ffnst.com/7DH145,phishing
+a03014,notice_phish,"සින්හලේ ප්‍රතිශත්වයට පරිවර්තකරන ලද ""Paket im Terminal festgehalten: http://ffnst.com/7DH346""",phishing
+a03015,notice_phish,Paket telah ditahan di terminal: http://ffnst.com/7DH33.,phishing
+a03016,notice_phish,Paket verspätet im Terminal: http://ffnst.com/7DH307,phishing
+a03017,notice_phish,"Paket tersebut bertahan di terminal: http://ffnst.com/7DH471""",phishing
+a03018,notice_phish,Paket im Terminal festgenommen: http://ffnst.com/7DH71,phishing
+a03019,notice_phish,Your package is on hold. Pay delivery fee at bit.ly/123,phishing
+a03020,notice_phish,"La Poste Serbe: En raison de l'absence d'adresse précise et du numéro postal inexact, votre colis ne peut pas être livré et les frais de réexpédition seront à votre charge. Cliquez sur le lien ci-dessous pour modifier l'adresse et demander une nouvelle livraison: https://tinyurl.com/532232?fwf=LL2WOgiZM1 Veuillez le faire dans les 12 heures pour éviter toute perte inutile. Bonne journée, La Poste Serbe! phishing",phishing
+a03021,notice_phish,"Package held at the terminal: http://ffnst.com/7DH55
+
+This translation appears to be a link or reference. The rest of the text is straightforward and remains the same in German.",phishing
+a03022,notice_phish,Paket டெர்மினலில் கையளவு செய்யப்பட்டது: http://ffnst.com/7DH106,phishing
+a03023,notice_phish,Urgent : Votre identifiant Apple sera désactivé. Réactivez votre compte sur http://reactivate-appleid.com immédiatement.,phishing
+a03024,notice_phish,Package bei der Zwischenstation gehalten: http://ffnst.com/7DH45,phishing
+a03025,notice_phish,Package withheld at terminal: http://ffnst.com/7DH52,phishing
+a03026,notice_phish,Paket von Package Hold im Terminal: http://ffnst.com/7DH731,phishing
+a03027,notice_phish,Paket ist im Zoll festgehalten: http://ffnst.com/7DH633,phishing
+a03028,notice_phish,Paket ini tertahan di Terminal: http://ffnst.com/7DH478,phishing
+a03029,notice_phish,"Paket dipegang di terminal: http://ffnst.com/7DH781""",phishing
+a03030,notice_phish,Il pacco è stato trattenuto presso il terminal: http://ffnst.com/7DH98,phishing
+a03031,notice_phish,Paket zurückgehalten im Terminal: http://ffnst.com/7DH68,phishing
+a03032,notice_phish,Microsoft: Your account needs verification. Visit tinyurl.com/abc,phishing
+a03033,notice_phish,Il pacco è bloccato nel terminal: http://ffnst.com/7DH348,phishing
+a03034,notice_phish,Pacco bloccato in terminal: http://ffnst.com/7DH578,phishing
+a03035,notice_phish,"Tu cuenta ha sido temporalmente bloqueada. Por favor, inicia sesión en https://tinyurl.com/bank para verificar tu identidad.",phishing
+a03036,notice_phish,Paket im Terminal befindet: http://ffnst.com/7DH1039,phishing
+a03037,notice_phish,Your package could not be delivered due to unpaid customs fee. Pay now at www.postal-service.com/fees,phishing
+a03038,notice_phish,"Correo de Serbia: Debido a la falta de dirección y número de código postal incorrecto, su paquete no puede ser entregado y deberá asumir los costos de un reenvío. Haga clic en el enlace abajo para cambiar la dirección y solicitar una nueva entrega: https://tinyurl.com/dnnh27234388383839282938djsjk$?fwf=LL2WOgiZM1 Reemplácelo dentro de un plazo de 12 horas para evitar pérdidas innecesarias. ¡Que tenga un buen día, Correo de Serbia! phishing",phishing
+a03039,notice_phish,"Package detained at the terminal: http://ffnst.com/7DH642
+
+Paket wird am Terminal festgehalten: http://ffnst.com/7DH642",phishing
+a03040,notice_phish,Dapatkan peningkatan data seluler gratis setiap kali Anda membeli paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/26,phishing
+a03041,notice_phish,Paket tersebut tertahan di Terminal: http://ffnst.com/7DH813,phishing
+a03042,notice_phish,Paket im Transit: http://ffnst.com/7DH741,phishing
+a03043,notice_phish,Bank: Verdächtige Aktivität auf Ihrem Konto. Bestätigen Sie Ihre Identität auf bit.ly/123,phishing
+a03044,notice_phish,Il tuo account è stato temporaneamente bloccato. Accedi a https://tinyurl.com/bank per verificare la tua identità.,phishing
+a03045,notice_phish,Votre identifiant Apple a été consulté à partir d'un appareil non reconnu. Sécurisez votre compte sur http://appleid-securitynotice.com.,phishing
+a03046,notice_phish,Paket wurde im Lager festgehalten: http://ffnst.com/7DH664,phishing
+a03047,notice_phish,Il pacco è stato ritirato in terminale: http://ffnst.com/7DH89,phishing
+a03048,notice_phish,"Hai, ini adalah temanmu. Bisakah kamu membantu aku dengan mengirimkan kode verifikasi yang baru saja kamu terima?",phishing
+a03049,notice_phish,Ihr Paket konnte aufgrund nicht bezahlter Zollgebühren nicht zugestellt werden. Zahlen Sie jetzt auf www.postal-service.com/fees/12,phishing
+a03050,notice_phish,Paket dalam terminal ditahan: http://ffnst.com/7DH746,phishing
+a03051,notice_phish,"Package being held at the terminal: http://ffnst.com/7DH25
+
+Das Paket wird im Terminal aufbewahrt: http://ffnst.com/7DH25",phishing
+a03052,notice_phish,Paket wurde am Terminal festgehalten: http://ffnst.com/7DH262,phishing
+a03053,notice_phish,Paket Anda tidak dapat dikirim karena biaya bea cukai yang belum dibayarkan. Segera bayar di www.postal-service.com/fees/2,phishing
+a03054,notice_phish,Dapatkan booster data seluler gratis setiap kali Anda mengambil paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/9,phishing
+a03055,notice_phish,Il tuo pacco non è potuto essere consegnato a causa di spese doganali non pagate. Paga ora su www.postal-service.com/fees/9,phishing
+a03056,notice_phish,"Your Apple ID has been used to sign in to a new device. If this wasn't you, secure your account at http://appleid-securelogin.com.",phishing
+a03057,notice_phish,Su paquete no pudo ser entregado debido a la tasa de aduana impaga. Pague ahora en www.postal-service.com/fees/6,phishing
+a03058,notice_phish,Paket im Depot gehalten: http://ffnst.com/7DH350,phishing
+a03059,notice_phish,Tu ID de Apple ha sido accedido desde un dispositivo no reconocido. Asegura tu cuenta en http://appleid-securitynotice.com.,phishing
+a03060,notice_phish,Dapatkan peningkat data seluler gratis dengan setiap paket telepon seluler baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/20,phishing
+a03061,notice_phish,"Package held at terminal: http://ffnst.com/7DH75
+
+Das Paket wird im Terminal aufbewahrt: http://ffnst.com/7DH75",phishing
+a03062,notice_phish,Package capturé dans le terminal: http://ffnst.com/7DH1100,phishing
+a03063,notice_phish,Dapatkan perangkat peningkat data seluler gratis setiap kali Anda mendaftar paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/44,phishing
+a03064,notice_phish,Paketansturm im Terminal: http://ffnst.com/7DH65,phishing
+a03065,notice_phish,"Serbische Post: Aufgrund fehlender Adresse und ungenauer Postleitzahl kann Ihr Paket nicht zugestellt werden und die Kosten für eine erneute Lieferung gehen zu Ihren Lasten. Klicken Sie auf den Link unten, um die Adresse zu ändern und eine neue Lieferung anzufordern: https://tinyurl.com/223883333332?fwf=LL2WOgiZM1 Bitte tun Sie dies innerhalb von 12 Stunden, um unnötigen Verlust zu vermeiden. Einen angenehmen Tag noch, Serbische Post! phishing",phishing
+a03066,notice_phish,"Ihr Paket konnte nicht zugestellt werden, da die Zollgebühren nicht bezahlt wurden. Jetzt unter www.postal-service.com/fees/9 bezahlen.",phishing
+a03067,notice_phish,"Package held at the terminal: http://ffnst.com/7DH947
+
+(This text requests to visit a link for more information about a package in a terminal.)",phishing
+a03068,notice_phish,Peringatan Apple ID: Akun Anda akan dinonaktifkan kecuali diverifikasi hari ini. Kunjungi http://appleid-verifytoday.com.,phishing
+a03069,notice_phish,Alerte Apple ID : Votre compte sera désactivé à moins d'être vérifié aujourd'hui. Visitez http://appleid-verifytoday.com.,phishing
+a03070,notice_phish,Uber: Payment failed for ride. Update card at bit.ly/123,phishing
+a03071,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Zahlen Sie jetzt auf www.postal-service.com/fees/2.,phishing
+a03072,notice_phish,Colis retenu en attente au terminal : http://ffnst.com/7DH228,phishing
+a03073,notice_phish,Dapatkan penguat data seluler gratis setiap kali Anda mengambil paket telepon baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/66,phishing
+a03074,notice_phish,Packaget retenu dans le terminal : http://ffnst.com/7DH38,phishing
+a03075,notice_phish,Azione richiesta: Verifica il tuo Apple ID per evitare la chiusura dell'account. Vai su http://verifyyour-appleid.com.,phishing
+a03076,notice_phish,Paket in Transit festgehalten: http://ffnst.com/7DH465,phishing
+a03077,notice_phish,URGENT: Your account #12345 is locked!!!,phishing
+a03078,notice_phish,Paketz A été retenu au terminal: http://ffnst.com/7DH720,phishing
+a03079,notice_phish,"Wells Fargo Bank: Ihr Konto ist vorübergehend gesperrt. Bitte melden Sie sich unter http://goo.gl/2a234 an, um Ihr Konto zu sichern.",phishing
+a03080,notice_phish,Il pacco è stato tenuto in attesa al terminal: http://ffnst.com/7DH558,phishing
+a03081,notice_phish,"Package held at the terminal: http://ffnst.com/7DH278
+
+I hope this helps! Let me know if you need any more assistance.",phishing
+a03082,notice_phish,"Paket di terminal disimpan: http://ffnst.com/7DH863""",phishing
+a03083,notice_phish,Paketsendung verzögert im Terminal: http://ffnst.com/7DH207,phishing
+a03084,notice_phish,"Hinweis: Ihr iCloud-Konto erfordert eine sofortige Überprüfung. Besuchen Sie http://icloud-verifyaccount.com, um eine Unterbrechung des Dienstes zu vermeiden.",phishing
+a03085,notice_phish,Security alert: Someone tried to access your account from Russia. Confirm identity: http://secure-login.net,phishing
+a03086,notice_phish,Paket sedang tertahan di Terminal: http://ffnst.com/7DH25,phishing
+a03087,notice_phish,Akun Anda telah dikunci sementara. Silakan masuk di http://fake-bank.example.com untuk membuka kuncian.,phishing
+a03088,notice_phish,Paket Anda tidak bisa dikirim karena biaya bea cukai belum terbayar. Bayar sekarang di www.postal-service.com/fees/16,phishing
+a03089,notice_phish,Paket in der Filiale abgeholt: http://ffnst.com/7DH238,phishing
+a03090,notice_phish,Paket im Terminal has been detained: http://ffnst.com/7DH72,phishing
+a03091,notice_phish,Notice from Apple: Your account has been temporarily suspended. Verify at http://appleid-accountsuspension.com.,phishing
+a03092,notice_phish,"Package held at terminal: http://ffnst.com/7DH995
+
+This line should be translated into German as:
+Paket im Terminal festgehalten: http://ffnst.com/7DH995",phishing
+a03093,notice_phish,Votre colis attend la livraison. Veuillez confirmer votre adresse sur http://fake-parcel.com,phishing
+a03094,notice_phish,"Pos Indonesia: Karena alamat yang tidak lengkap dan nomor pos yang tidak tepat, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang menjadi tanggungan Anda. Klik tautan di bawah untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/222?fwf=LL2WOgiZM1. Silakan ganti dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga harimu menyenangkan, Pos Indonesia!",phishing
+a03095,notice_phish,Wells Fargo Bank: Your account is temporarily locked. Please log in at http://goo.gl/2a234 to secure your account.,phishing
+a03096,notice_phish,PayPal: Unusual transaction. Confirm at goo.gl/xyz,phishing
+a03097,notice_phish,"Package held at the terminal: http://ffnst.com/7DH652
+
+Das Paket wurde im Terminal festgehalten: http://ffnst.com/7DH652",phishing
+a03098,notice_phish,Ihr Paket konnte aufgrund unbezahlter Zollgebühren nicht zugestellt werden. Jetzt bezahlen unter www.postal-service.com/fees/21,phishing
+a03099,notice_phish,Il tuo pacco non ha potuto essere consegnato a causa di tasse doganali non pagate. Paga ora su www.postal-service.com/fees/18,phishing
+a03100,notice_phish,Peringatan: Akun Apple Anda akan segera dihapus. Harap verifikasi identitas Anda di http://apple-accountverification.com.,phishing
+a03101,notice_phish,"Pos Indonesia: Karena alamat yang tidak lengkap dan nomor pos yang tidak tepat, paket Anda tidak dapat diserahkan dan biaya pengiriman ulang ditanggung oleh Anda. Klik tautan di bawah ini untuk mengubah alamat dan meminta pengiriman ulang: https://tinyurl.com/dnnh27234388383839282938djsjk$?fwf=LL2WOgiZM1 Harap gantikan dalam waktu 12 jam untuk menghindari kerugian yang tidak perlu. Semoga hari Anda menyenangkan, Pos Indonesia! phishing",phishing
+a03102,notice_phish,Paketaufbewahrung im Terminal: http://ffnst.com/7DH147,phishing
+a03103,notice_phish,Paquete retenido en la terminal: http://ffnst.com/7DH,phishing
+a03104,notice_phish,Your Apple ID is due for verification. Failure to verify may lead to account suspension. Visit http://appleid-verify-now.com promptly.,phishing
+a03105,notice_phish,Package which was stuck at the terminal: http://ffnst.com/7DH665,phishing
+a03106,notice_phish,"Внимание: Ваша учетная запись iCloud требует немедленной верификации. Посетите http://icloud-verifyaccount.com, чтобы избежать прерывания сервиса.",phishing
+a03107,notice_phish,Su paquete no pudo ser entregado debido a una tarifa aduanera no pagada. Pague ahora en www.postal-service.com/fees/27,phishing
+a03108,notice_phish,Il codice di verifica di Google è 122334,phishing
+a03109,notice_phish,Your account has been suspended. Verify at tinyurl.com/abc,phishing
+a03110,notice_phish,Paket im Versandzentrum: http://ffnst.com/7DH837,phishing
+a03111,notice_phish,"La Poste Serbe : En raison de l'adresse manquante et du numéro de code postal inexact, votre colis ne peut pas être livré et les frais de réexpédition seront à votre charge. Cliquez sur le lien ci-dessous pour modifier l'adresse et demander une nouvelle livraison : https://tinyurl.com/222?fwf=LL2WOgiZM1. Effectuez ce changement dans les 12 heures pour éviter toute perte inutile. Bonne journée, La Poste Serbe! phishing",phishing
+a03112,notice_phish,Instagram: Someone tried to hack your account. Change password at bit.ly/123,phishing
+a03113,notice_phish,Paket im Terminal fortgehalten: http://ffnst.com/7DH800,phishing
+a03114,notice_phish,Il tuo pacco non può essere consegnato a causa di una tassa doganale non pagata. Paga ora su www.postal-service.com/fees/20,phishing
+a03115,notice_phish,Dapatkan penguat data seluler gratis setiap kali Anda mengambil paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/25,phishing
+a03116,notice_phish,Paket im Terminal: http://ffnst.com/7DH347 inhaftiert,phishing
+a03117,notice_phish,Paket verweilt im Terminal: http://ffnst.com/7DH560,phishing
+a03118,notice_phish,El paquete se retiene en la terminal: http://ffnst.com/7DH239,phishing
+a03119,notice_phish,Apple ID: Your account was accessed from unknown device. Secure it now: tinyurl.com/abc,phishing
+a03120,notice_phish,"Package held at the terminal: http://ffnst.com/7DH498
+
+This text is translated to German as:
+Paket im Terminal festgehalten: http://ffnst.com/7DH498",phishing
+a03121,notice_phish,Dapatkan peningkatan data seluler gratis setiap kali mengambil paket ponsel baru di MobileNet. Hubungi kami di 800-555-0199 atau kunjungi www.mobilenet.com/5.,phishing
+a03122,notice_phish,Alerte critique : Votre identifiant Apple a été compromis. Sécurisez votre compte sur http://secureapple-id.com.,phishing
+a03123,notice_phish,Paket Anda tidak dapat diserahkan karena biaya bea cukai belum dibayar. Bayar sekarang di www.postal-service.com/fees/29,phishing
+a03124,notice_phish,Le colis est en attente au terminal : http://ffnst.com/7DH871,phishing
+a03125,notice_phish,Pacco trattenuto presso il terminale: http://ffnst.com/7DH1091,phishing
+a03126,notice_phish,Google Verification code is 122334,phishing
+a03127,notice_phish,Paket tersebut sudah dikirim di terminal: http://ffnst.com/7DH275,phishing
+a03128,notice_phish,"Hi Sarah, your Amazon order is delayed. Confirm shipping at goo.gl/xyz",phishing
+a03129,notice_phish,Paket Anda tidak dapat diserahkan karena belum membayar biaya bea cukai. Bayar sekarang di www.postal-service.com/fees/28,phishing

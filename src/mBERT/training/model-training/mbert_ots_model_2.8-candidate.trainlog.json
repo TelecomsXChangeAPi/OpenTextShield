@@ -1,0 +1,27 @@
+{
+  "device": "Apple Silicon MPS",
+  "loss": "plain",
+  "epochs": 2,
+  "lr": 1e-05,
+  "seed": 7,
+  "raw_text": false,
+  "train_data": "src/mBERT/training/model-training/dataset/curated/train_v2.8_candidate.csv",
+  "best_epoch": 1,
+  "best_macro_f1": 0.9680851063829787,
+  "history": [
+    {
+      "accuracy": 0.9680851063829787,
+      "block_accuracy": 0.9932301740812379,
+      "macro_f1": 0.9680851063829787,
+      "phishing_recall": 0.9398148148148148,
+      "epoch": 1
+    },
+    {
+      "accuracy": 0.9671179883945842,
+      "block_accuracy": 0.9941972920696325,
+      "macro_f1": 0.9671179883945842,
+      "phishing_recall": 0.9606481481481481,
+      "epoch": 2
+    }
+  ]
+}

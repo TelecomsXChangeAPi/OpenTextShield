@@ -8,14 +8,17 @@
     "ads_spam:candidates": 1600,
     "legit_notice:accepted": 548,
     "legit_notice:answered": 900,
-    "legit_notice:candidates": 900
+    "legit_notice:candidates": 900,
+    "notice_phish:accepted": 329,
+    "notice_phish:answered": 630,
+    "notice_phish:candidates": 630
   },
   "agree_confidence": 0.9,
-  "combined_rows": 10034,
+  "combined_rows": 10363,
   "combined_labels": {
     "ham": 3546,
     "spam": 2489,
-    "phishing": 3999
+    "phishing": 4328
   },
   "flag_confidence": 0.7,
   "typesafe_model": "jev-1.13.0",
