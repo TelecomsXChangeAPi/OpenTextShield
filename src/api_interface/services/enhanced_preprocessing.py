@@ -16,6 +16,14 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
+def _script(ch: str) -> str:
+    """First word of the Unicode name ("LATIN", "CYRILLIC", "GREEK", ...)."""
+    try:
+        return unicodedata.name(ch).split(" ", 1)[0]
+    except ValueError:
+        return ""
+
 class EnhancedPreprocessor:
     """Enhanced text preprocessing for adversarial robustness."""
 
@@ -40,18 +48,27 @@ class EnhancedPreprocessor:
         "\u061C",  # U+061C Arabic letter mark
     })
 
-    def __init__(self):
-        # Homoglyph normalization mappings
-        self.homoglyph_map = {
-            # Cyrillic to Latin
-            'а': 'a', 'е': 'e', 'і': 'i', 'о': 'o', 'р': 'p', 'с': 'c', 'у': 'y', 'х': 'x',
-            # Greek to Latin
-            'α': 'a', 'ε': 'e', 'ι': 'i', 'ο': 'o', 'υ': 'u',
-            # Other common homoglyphs
-            'і': 'i', 'а': 'a', 'е': 'e', 'о': 'o', 'р': 'p', 'с': 'c', 'у': 'u', 'х': 'x',
-            'а': 'a', 'е': 'e', 'і': 'i', 'ο': 'o', 'р': 'p', 'с': 'c', 'υ': 'u', 'х': 'x'
-        }
+    # Cyrillic and Greek letters that render like Latin ones. Folded only where
+    # they are plausibly a spoof (see normalize_unicode), never in real
+    # Russian, Ukrainian, Bulgarian or Greek text.
+    CONFUSABLES = {
+        # Cyrillic lowercase
+        "а": "a", "с": "c", "ԁ": "d", "е": "e", "һ": "h", "і": "i", "ј": "j",
+        "ӏ": "l", "о": "o", "р": "p", "ԛ": "q", "ѕ": "s", "ԝ": "w", "х": "x",
+        "у": "y",
+        # Cyrillic uppercase
+        "А": "A", "В": "B", "С": "C", "Е": "E", "Н": "H", "І": "I", "Ӏ": "I",
+        "Ј": "J", "К": "K", "М": "M", "О": "O", "Р": "P", "Ԛ": "Q", "Ѕ": "S",
+        "Т": "T", "Ԝ": "W", "Х": "X", "Ү": "Y",
+        # Greek lowercase
+        "α": "a", "ι": "i", "κ": "k", "ν": "v", "ο": "o", "ρ": "p", "τ": "t",
+        "υ": "u", "χ": "x",
+        # Greek uppercase
+        "Α": "A", "Β": "B", "Ε": "E", "Ζ": "Z", "Η": "H", "Ι": "I", "Κ": "K",
+        "Μ": "M", "Ν": "N", "Ο": "O", "Ρ": "P", "Τ": "T", "Υ": "Y", "Χ": "X",
+    }
 
+    def __init__(self):
         # Suspicious patterns
         self.suspicious_patterns = [
             r'\b(?:bit\.ly|tinyurl\.com|goo\.gl|t\.co|ow\.ly)\b',  # URL shorteners
@@ -84,31 +101,49 @@ class EnhancedPreprocessor:
         )
 
     def normalize_unicode(self, text: str) -> str:
-        """Normalize Unicode characters and handle homoglyphs.
+        """Undo text obfuscation without damaging real non-Latin text.
 
-        Also strips zero-width / invisible formatting characters that attackers
-        insert between letters to break up keywords (e.g. "V​e​r​i​f​y" with
-        U+200B). These are removed before homoglyph mapping so an obfuscated
-        word collapses back to its real tokens for the model.
+        1. NFC, then strip zero-width / invisible characters that attackers
+           insert between letters ("V​e​r​i​f​y" with U+200B).
+        2. Fold compatibility forms of letters and digits to ASCII, so
+           fullwidth "ＰａｙＰａｌ" and math-bold "𝐏𝐚𝐲𝐏𝐚𝐥" read as "PayPal".
+           Fullwidth punctuation is folded only in mostly-Latin messages:
+           there it disguises links ("ｐａｙｐａｌ．ｃｏｍ"), while CJK text
+           uses fullwidth commas and colons natively.
+        3. Fold Cyrillic/Greek look-alikes only inside a spoof: a word that
+           mixes them with Latin letters ("РayРаl"), or a word made entirely of
+           look-alikes in a mostly-Latin message ("Log in to раураӏ"). Real
+           Russian or Greek sentences are returned unchanged.
         """
-        # NFC normalization
-        text = unicodedata.normalize('NFC', text)
+        text = unicodedata.normalize("NFC", text)
+        text = "".join(ch for ch in text if ch not in self.INVISIBLE_CHARS)
+        text = "".join(self._fold_compat_alnum(ch) for ch in text)
 
-        # Strip zero-width and invisible formatting characters. NFC does not
-        # remove these, so a zero-width-joined string survives tokenisation as
-        # a wall of [UNK]s otherwise.
-        text = ''.join(ch for ch in text if ch not in self.INVISIBLE_CHARS)
+        letters = [ch for ch in text if ch.isalpha()]
+        latin = sum(1 for ch in letters if _script(ch) == "LATIN")
+        mostly_latin = bool(letters) and latin * 2 > len(letters)
+        if mostly_latin:
+            text = "".join(
+                unicodedata.normalize("NFKC", ch) if "！" <= ch <= "～" or ch == "　" else ch
+                for ch in text
+            )
+        return re.sub(r"\S+", lambda m: self._fold_spoofed_word(m.group(), mostly_latin), text)
 
-        # Replace homoglyphs
-        normalized = []
-        for char in text:
-            normalized_char = self.homoglyph_map.get(char.lower(), char)
-            # Preserve case if original was uppercase
-            if char.isupper() and normalized_char != char:
-                normalized_char = normalized_char.upper()
-            normalized.append(normalized_char)
+    @staticmethod
+    def _fold_compat_alnum(ch: str) -> str:
+        if ch.isascii() or unicodedata.category(ch)[0] not in "LN":
+            return ch
+        folded = unicodedata.normalize("NFKC", ch)
+        return folded if len(folded) == 1 and folded.isascii() and folded.isalnum() else ch
 
-        return ''.join(normalized)
+    def _fold_spoofed_word(self, word: str, mostly_latin: bool) -> str:
+        foreign = [ch for ch in word if ch.isalpha() and _script(ch) in ("CYRILLIC", "GREEK")]
+        if not foreign or any(ch not in self.CONFUSABLES for ch in foreign):
+            return word
+        has_latin = any(ch.isalpha() and _script(ch) == "LATIN" for ch in word)
+        if has_latin or mostly_latin:
+            return "".join(self.CONFUSABLES.get(ch, ch) for ch in word)
+        return word
 
     def extract_url_features(self, text: str) -> Dict[str, int]:
         """Extract URL-related features."""
