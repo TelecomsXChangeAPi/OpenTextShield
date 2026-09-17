@@ -25,6 +25,17 @@ Example (Apple Silicon):
     --original  src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv \
     --out    src/mBERT/training/model-training/mbert_ots_model_2.7.pth \
     --epochs 4 --batch-size 32 --loss class_weighted
+
+Training on a prepared file instead (every row, no rehearsal sampling), such as
+the curated set built by evals/label_audit.py:
+  python evals/finetune_tier1.py \
+    --base      src/mBERT/training/model-training/mbert_ots_model_2.5.pth \
+    --train-csv src/mBERT/training/model-training/dataset/curated/train_v2.8_candidate.csv \
+    --out       src/mBERT/training/model-training/mbert_ots_model_2.8-candidate.pth \
+    --epochs 2 --batch-size 32 --loss plain --lr 1e-5
+
+Texts get the production cleanup before tokenising, like the API and
+run_eval.py; --raw-text skips it to reproduce older checkpoints.
 """
 
 import argparse
@@ -38,6 +49,8 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
+
+from loaders import production_normalize
 
 try:
     from sklearn.metrics import f1_score, recall_score
@@ -149,8 +162,9 @@ def evaluate(model, loader, device):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", required=True)
-    ap.add_argument("--synthetic", required=True)
-    ap.add_argument("--original", required=True)
+    ap.add_argument("--synthetic")
+    ap.add_argument("--original")
+    ap.add_argument("--train-csv", help="prepared text,label file; replaces --synthetic/--original")
     ap.add_argument("--orig-per-label", type=int, default=2500)
     ap.add_argument("--out", required=True)
     ap.add_argument("--epochs", type=int, default=4)
@@ -160,7 +174,11 @@ def main():
     ap.add_argument("--loss", choices=["class_weighted", "focal", "plain"],
                     default="class_weighted")
     ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--raw-text", action="store_true",
+                    help="skip the production text cleanup (reproduces older checkpoints)")
     args = ap.parse_args()
+    if not args.train_csv and not (args.synthetic and args.original):
+        ap.error("pass --train-csv, or both --synthetic and --original")
 
     random.seed(args.seed)
     torch.manual_seed(args.seed)
@@ -169,8 +187,13 @@ def main():
 
     tokenizer = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
 
-    rows = read_csv(args.synthetic, seed=args.seed)
-    rows += read_csv(args.original, limit_per_label=args.orig_per_label, seed=args.seed)
+    if args.train_csv:
+        rows = read_csv(args.train_csv, seed=args.seed)
+    else:
+        rows = read_csv(args.synthetic, seed=args.seed)
+        rows += read_csv(args.original, limit_per_label=args.orig_per_label, seed=args.seed)
+    if not args.raw_text:
+        rows = list(zip(production_normalize([t for t, _ in rows]), [l for _, l in rows]))
     train_rows, val_rows = stratified_split(rows, args.val_frac, seed=args.seed)
     print(f"Train: {len(train_rows)} | Val: {len(val_rows)}")
     print(f"Train dist: {Counter(ID2LABEL[l] for _, l in train_rows)}")
@@ -250,7 +273,9 @@ def main():
             print(f"  -> new best (macroF1={best_f1:.4f}), saved to {out_path}", flush=True)
 
     sidecar = out_path.with_suffix(".trainlog.json")
-    json.dump({"device": device_name, "loss": args.loss, "epochs": args.epochs,
+    json.dump({"device": device_name, "loss": args.loss, "epochs": args.epochs, "lr": args.lr,
+               "seed": args.seed, "raw_text": args.raw_text,
+               "train_data": args.train_csv or [args.synthetic, args.original],
                "best_epoch": best_epoch, "best_macro_f1": best_f1,
                "history": history}, open(sidecar, "w"), indent=2)
     print(f"\nDone. Best epoch {best_epoch} (macroF1={best_f1:.4f}).")
