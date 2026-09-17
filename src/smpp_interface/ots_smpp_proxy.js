@@ -16,43 +16,20 @@ const {customAlphabet} = require('nanoid')
 const http = require('http')
 const fs = require('fs')
 const path = require('path')
-const iconv = require('iconv-lite')
-
-// Submit_sm parameters that must round-trip from client to upstream untouched.
-// (short_message and message_payload are handled separately because they carry UDH/encoding state.)
-const FORWARDED_SUBMIT_SM_PARAMS = [
-	'service_type',
-	'source_addr_ton', 'source_addr_npi', 'source_addr',
-	'dest_addr_ton', 'dest_addr_npi', 'destination_addr',
-	'esm_class', 'protocol_id', 'priority_flag',
-	'schedule_delivery_time', 'validity_period',
-	'registered_delivery', 'replace_if_present_flag',
-	'data_coding', 'sm_default_msg_id'
-]
-
-// data_coding (low 4 bits of DCS, per 3GPP 23.038) → iconv-lite charset name.
-// Only the encodings that node-smpp's filters.message.decode does NOT already handle
-// need a fallback here — it covers ASCII (0x01), LATIN1 (0x03), UCS-2 (0x08) natively.
-//
-// We deliberately leave Japanese (0x05 JIS, 0x0A ISO-2022-JP, 0x0D X_0212_1990)
-// out: iconv-lite 0.7.x does not register iso-2022-jp, and the spec is ambiguous
-// about which JIS encoding form 0x05/0x0D actually map to in practice (some
-// operators use Shift_JIS, others EUC-JP). unclassifiableReason() routes those
-// to skip-classify instead of producing mojibake for the classifier.
-function dataCodingToCharset(dc) {
-	if (dc === undefined || dc === null) return null
-	switch (dc & 0x0F) {
-		case 0x06: return 'iso-8859-5'   // Cyrillic
-		case 0x07: return 'iso-8859-8'   // Hebrew
-		case 0x08: return 'utf16-be'     // UCS-2 (defensive — should never be hit; node-smpp decodes it)
-		case 0x0E: return 'cp949'        // KS C 5601 (Korean) — best-effort
-		default:   return null
-	}
-}
+const {
+	DEFAULT_MAX_TEXT_CHARS,
+	unclassifiableReason,
+	getMessageText,
+	textForClassification,
+	decideLabel,
+	validateClassificationConfig,
+	buildUpstreamPdu,
+} = require('./message_utils')
 
 // Load config
 const configPath = process.argv[2] || path.join(__dirname, 'config.json')
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'))
+validateClassificationConfig(config.classification)
 
 // Parse classification API URL(s) — supports single URL or array for load balancing
 let apiUrls = []
@@ -319,10 +296,16 @@ async function classifyMessage(text) {
 				}
 				try {
 					const result = JSON.parse(body)
+					// A 200 without these fields used to throw later in the submit_sm
+					// handler, leaving the client without a submit_sm_resp.
+					if (typeof result.label !== 'string' || typeof result.probability !== 'number') {
+						reject(new Error('Malformed classification response: ' + body.substring(0, 200)))
+						return
+					}
 					resolve({
 						label: result.label,
 						probability: result.probability,
-						processing_time: result.processing_time
+						processing_time: typeof result.processing_time === 'number' ? result.processing_time : 0
 					})
 				} catch(e) {
 					reject(new Error('Failed to parse classification response: ' + e.message))
@@ -342,165 +325,6 @@ async function classifyMessage(text) {
 		req.write(data)
 		req.end()
 	})
-}
-
-// ─────────────────────────────────────────────
-// Message text extraction + UDH handling
-// (ref: proxy_async.js:759-796 get_log_text + 1599-1618 UDH)
-// ─────────────────────────────────────────────
-
-// Detect inbound PDUs whose payload the classifier cannot read with high
-// confidence. Returns null when the message is classifiable, or a short
-// reason string when it should be skipped and forwarded fail-open.
-//
-// Why skip-and-forward instead of trying harder:
-//   - GSM 7-bit national language shift tables (UDH IEI 0x24/0x25) for
-//     language codes >= 0x04 (Bengali, Gujarati, Hindi, Kannada, Malayalam,
-//     Oriya, Punjabi, Tamil, Telugu, Urdu) require per-language 128-char
-//     translation tables that the vendored node-smpp does not ship. The
-//     forward path round-trips byte-equivalent through the default GSM
-//     coder (verified empirically), so the proxy CAN forward these
-//     correctly — it just can't decode the text for ML inference.
-//   - data_coding 0x04 (binary) and 0x09 (pictogram) carry non-textual
-//     payloads. Running spam classification on those is meaningless.
-//
-// Operators get a counter (messages_skipped_unsupported_encoding) and a
-// structured log entry for each skipped message so volume is observable.
-function unclassifiableReason(pdu) {
-	if (pdu.short_message && Array.isArray(pdu.short_message.udh)) {
-		for (const ie of pdu.short_message.udh) {
-			if ((ie[0] === 0x24 || ie[0] === 0x25) && ie.length >= 3 && ie[2] >= 0x04) {
-				const kind = ie[0] === 0x24 ? 'single' : 'locking'
-				return `national-shift-${kind}-lang-0x${ie[2].toString(16).padStart(2,'0')}`
-			}
-		}
-	}
-	const dc = (pdu.data_coding || 0) & 0x0F
-	if (dc === 0x04) return 'data-coding-binary'
-	if (dc === 0x09) return 'data-coding-pictogram'
-	// JIS variants — iconv-lite 0.7.x does not register iso-2022-jp, and the
-	// spec is ambiguous about which encoding form 0x05/0x0D map to in
-	// practice. Skip-classify rather than risk mojibake into the model.
-	if (dc === 0x05) return 'data-coding-jis-x0208'
-	if (dc === 0x0A) return 'data-coding-iso-2022-jp'
-	if (dc === 0x0D) return 'data-coding-jis-x0212'
-	return null
-}
-
-// Extract the human-readable message text for classification.
-//
-// node-smpp's filters.message.decode already returns a String for ASCII (0x01),
-// LATIN1 (0x03), and UCS-2 (0x08) — including UDH-bearing PDUs (UDH is split
-// into pdu.short_message.udh and the post-UDH bytes are decoded into .message).
-//
-// For data_coding values node-smpp does not register (Cyrillic 0x06, Hebrew 0x07,
-// JIS variants 0x05/0x0A/0x0D, KS C 5601 0x0E, BINARY 0x04, PICTOGRAM 0x09),
-// the decoder leaves .message as a raw Buffer of post-UDH bytes. Naively calling
-// Buffer.toString() on those bytes uses UTF-8 and produces mojibake — so we
-// route through iconv-lite when we can map the data_coding to a known charset.
-//
-// This function only affects what goes to the classifier; the original
-// pdu.short_message.message is untouched and is forwarded verbatim downstream.
-function getMessageText(pdu) {
-	let raw = null
-
-	// Prefer short_message if it carries content
-	if (pdu.short_message != undefined && pdu.short_message.message != undefined) {
-		const m = pdu.short_message.message
-		if (m !== '' && !(Buffer.isBuffer(m) && m.length === 0)) {
-			raw = m
-		}
-	}
-
-	// Long messages travel in message_payload TLV instead of short_message
-	if (raw == null && ('message_payload' in pdu) && pdu.message_payload != undefined) {
-		if (typeof pdu.message_payload === 'object' && pdu.message_payload.message != undefined) {
-			const m = pdu.message_payload.message
-			if (m !== '' && !(Buffer.isBuffer(m) && m.length === 0)) {
-				raw = m
-			}
-		} else if (typeof pdu.message_payload === 'string' || Buffer.isBuffer(pdu.message_payload)) {
-			raw = pdu.message_payload
-		}
-	}
-
-	if (raw == null) return ''
-	if (typeof raw === 'string') return raw
-
-	if (Buffer.isBuffer(raw)) {
-		const charset = dataCodingToCharset(pdu.data_coding)
-		if (charset && iconv.encodingExists(charset)) {
-			try {
-				return iconv.decode(raw, charset)
-			} catch(e) {
-				llog('getMessageText', {error: e.message, charset: charset, dc: pdu.data_coding},
-					'iconv decode failed; falling back to utf-8')
-			}
-		}
-		// Last resort — better than dropping the message; classifier may still
-		// pick up enough signal from ASCII fragments inside the buffer.
-		return raw.toString('utf8')
-	}
-
-	return ''
-}
-
-// Build the upstream submit_sm by copying every param and TLV the client sent.
-//
-// Anything we leave out gets silently dropped — and SMPP traffic is full of
-// fields that matter even when they look optional: TLV-based concatenation
-// (sar_msg_ref_num/sar_total_segments/sar_segment_seqnum), application port
-// addressing (source_port/dest_port for WAP push, vCards, MMS notifications),
-// validity_period, schedule_delivery_time, payload_type, language_indicator,
-// callback_num, etc. The proxy's job is classification, not field surgery, so
-// we forward every known param and every registered TLV unchanged.
-function buildUpstreamPdu(pdu) {
-	let upstream_pdu = {}
-
-	// 1. Standard submit_sm parameters (excluding the message payload itself)
-	for (const key of FORWARDED_SUBMIT_SM_PARAMS) {
-		if (pdu[key] !== undefined) {
-			upstream_pdu[key] = pdu[key]
-		}
-	}
-
-	// 2. Every TLV the client included. node-smpp tags decoded TLVs by their
-	// human name on the pdu object, so iterating its registry is exhaustive.
-	// message_payload is handled separately below to keep UDH/encoding logic
-	// in one place.
-	for (const tag in smpp.tlvs) {
-		if (tag === 'message_payload') continue
-		if (pdu[tag] !== undefined) {
-			upstream_pdu[tag] = pdu[tag]
-		}
-	}
-
-	// 3. UDH handling. node-smpp's decoder splits UDH into an Array of
-	// per-IE Buffers. Its encoder, however, only correctly serializes the
-	// FIRST IE when given the array form — multi-IE UDH (e.g. concat header
-	// + port addressing, or concat + national language shift) loses everything
-	// past udh[0]. Collapse to a single length-prefixed Buffer so the
-	// encoder's `else` branch (Buffer.concat) preserves all IEs verbatim.
-	if (pdu.short_message && pdu.short_message.udh !== undefined) {
-		let udh = pdu.short_message.udh
-		if (Array.isArray(udh)) {
-			const concatenated = Buffer.concat(udh)
-			const len_buf = Buffer.alloc(1)
-			len_buf.writeUInt8(concatenated.length, 0)
-			udh = Buffer.concat([len_buf, concatenated])
-		}
-		upstream_pdu.short_message = {udh: udh, message: pdu.short_message.message}
-	} else if (pdu.short_message !== undefined) {
-		upstream_pdu.short_message = pdu.short_message
-	}
-
-	// 4. message_payload — pass through whatever shape the decoder produced.
-	// String / {message,udh} / Buffer are all handled by filters.message.encode.
-	if (pdu.message_payload !== undefined) {
-		upstream_pdu.message_payload = pdu.message_payload
-	}
-
-	return upstream_pdu
 }
 
 // ─────────────────────────────────────────────
@@ -928,7 +752,7 @@ let server = smpp.createServer(function(isession) {
 		stats.messages_received++
 
 		// 1. Extract message text (handles UDH, message_payload, data_coding)
-		let text = getMessageText(pdu)
+		let text = getMessageText(pdu, (params, msg) => llog('getMessageText', params, msg))
 		if (text == '') {
 			llog('submit_sm', {dst: pdu.destination_addr}, 'Empty message, forwarding as ham')
 			await forwardToUpstream(isession, pdu)
@@ -936,26 +760,34 @@ let server = smpp.createServer(function(isession) {
 			return
 		}
 
-		// 1a. If the encoding isn't reliably readable by the classifier,
-		// fail open — forward the original PDU verbatim and log it so
-		// operators can see how much traffic falls into this bucket.
+		// 1a. If the encoding isn't reliably readable by the classifier, apply
+		// unclassifiable_action: 'forward' (default, fail open) or 'reject'.
+		// Logged either way so operators can see how much traffic falls here.
 		const skipReason = unclassifiableReason(pdu)
 		if (skipReason) {
+			const skipAction = config.classification.unclassifiable_action || 'forward'
 			llog('submit_sm', {
 				reason: skipReason,
+				action: skipAction,
 				data_coding: pdu.data_coding,
 				dst: pdu.destination_addr
-			}, 'Classification skipped (unsupported encoding) - forwarding fail-open')
+			}, 'Classification skipped (unsupported encoding)')
 			stats.messages_skipped_unsupported_encoding++
-			await forwardToUpstream(isession, pdu)
-			stats.messages_forwarded++
+			if (skipAction === 'reject') {
+				isession.send(pdu.response({command_status: 0x45}))
+				stats.messages_rejected++
+			} else {
+				await forwardToUpstream(isession, pdu)
+				stats.messages_forwarded++
+			}
 			return
 		}
 
 		// 2. Classify with OTS API
 		let classification
 		try {
-			classification = await classifyMessage(text)
+			const maxChars = config.classification.max_text_chars || DEFAULT_MAX_TEXT_CHARS
+			classification = await classifyMessage(textForClassification(text, maxChars))
 			stats.messages_classified++
 		} catch(err) {
 			llog('submit_sm', {error: err.message}, 'Classification failed, forwarding as ham (fail-open)')
@@ -972,12 +804,16 @@ let server = smpp.createServer(function(isession) {
 			dst: pdu.destination_addr
 		}, 'Classification result')
 
-		// 3. Apply confidence threshold
-		let label = classification.label
-		if (classification.probability < config.classification.confidence_threshold) {
-			llog('classify', {probability: classification.probability, threshold: config.classification.confidence_threshold},
-				'Below threshold, treating as ham')
-			label = 'ham'
+		// 3. Apply confidence threshold (below_threshold_action decides what it means)
+		const decision = decideLabel(classification, config.classification)
+		const label = decision.label
+		if (decision.belowThreshold) {
+			llog('classify', {
+				model_label: decision.modelLabel,
+				label: label,
+				probability: classification.probability,
+				threshold: config.classification.confidence_threshold
+			}, 'Below threshold')
 		}
 
 		// 4. Apply rule
