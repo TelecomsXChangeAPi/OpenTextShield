@@ -10,6 +10,9 @@ column of `label_review.csv`.
 | `typesafe_answers.jsonl` | TypeSafe's label for every unique text, keyed by a hash of the text. Saved so the build never needs TypeSafe again. |
 | `label_review.csv` | Rows where TypeSafe confidently disagrees with the label. A person fills `decision` with `ham`, `spam`, `phishing` or `remove`, and optionally `decision_source` (blank means `manual`). Unreviewed rows are listed first. |
 | `train_subset_v2.7_cleaned.csv` | The training file: approved rules applied, human decisions applied, unreviewed flagged rows left out. |
+| `additions_candidates.csv` | Step 4 candidates: advertising spam and legitimate notices sampled from the rest of the corpus, excluding the training subset, every eval set, augmented copies and rows the approved rules would change or remove. At most 40 notices per sender family. |
+| `additions_v1.csv` | Candidates kept because TypeSafe agreed with the corpus label at confidence 0.9 or higher. Labels are never changed here. |
+| `train_v2.8_candidate.csv` | The cleaned subset plus the additions: the training file for the next model. |
 | `summary.json` | Counts from the last build. |
 
 ## How labels are decided

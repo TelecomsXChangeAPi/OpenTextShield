@@ -12,6 +12,13 @@ TypeSafe or an API key, and nothing from client traffic is ever sent to it.
     # 3. Apply the approved rules, TypeSafe flags and any human decisions
     python evals/label_audit.py build
 
+Additions (step 4): real advertising spam and real legitimate notices from the
+rest of the corpus, kept only when the corpus label and TypeSafe agree.
+
+    python evals/label_audit.py candidates    # sample candidate rows once
+    python evals/label_audit.py ask --file candidates
+    python evals/label_audit.py build         # also writes additions and the combined file
+
 Review loop: fill the `decision` column of label_review.csv with ham, spam,
 phishing or remove, then run `build` again. Flagged rows without a decision
 stay out of the cleaned training file, as the guide says for unsure rows.
@@ -37,11 +44,20 @@ ANSWERS_JSONL = CURATED_DIR / "typesafe_answers.jsonl"
 CLEANED_CSV = CURATED_DIR / "train_subset_v2.7_cleaned.csv"
 REVIEW_CSV = CURATED_DIR / "label_review.csv"
 SUMMARY_JSON = CURATED_DIR / "summary.json"
+CANDIDATES_CSV = CURATED_DIR / "additions_candidates.csv"
+ADDITIONS_CSV = CURATED_DIR / "additions_v1.csv"
+COMBINED_CSV = CURATED_DIR / "train_v2.8_candidate.csv"
+# Eval texts that must never enter training. Tracked files, plus any local
+# prediction dumps (they hold the UCI and IMC25 texts, which are downloaded).
+EVAL_TEXT_FILES = [REPO_ROOT / "evals/datasets/fable5_adversarial_v1.csv",
+                   REPO_ROOT / "evals/datasets/mishra_soni_5971.csv",
+                   REPO_ROOT / "benchmark/test_dataset.json"]
 
 LABELS = ("ham", "spam", "phishing")
 REMOVE = "remove"
 TYPESAFE_MODEL = "jev-1.13.0"
 FLAG_CONFIDENCE = 0.7
+AGREE_CONFIDENCE = 0.9
 CONCURRENCY = 6
 
 csv.field_size_limit(10 * 1024 * 1024)
@@ -69,6 +85,91 @@ def freeze(args):
 
 def load_subset():
     with open(SUBSET_CSV, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+# --------------------------------------------------------------------------- #
+# candidates: rows to add in step 4
+# --------------------------------------------------------------------------- #
+_NOTICE = re.compile(
+    r"(\b(otp|code|kode|código|codice|verification|verif|passcode|pin)\b|delivered|delivery|shipped|parcel|"
+    r"package|paket|paquete|colis|pacco|\border\b|pedido|pesanan|appointment|reminder|payment|paid|debited|"
+    r"credited|balance|saldo|\bbill\b|tagihan|factura|recharge|isi ulang|transaction|transaksi|account|akun|"
+    r"rekening|cuenta|compte|konto|flight|booking|reservation|ticket)", re.I)
+# Senders whose templates were translated into many languages; cap each so a
+# few families don't dominate the additions.
+_FAMILY = re.compile(r"(voicespin|shopee|netflix|gojek|telkomsel|axis|indosat|whatsapp|google|uber|amazon|"
+                     r"paypal|linkaja|dana|ovo|tokopedia|grab|line)", re.I)
+FAMILY_CAP = 40
+
+
+def _template_key(text):
+    return re.sub(r"\s+", " ", re.sub(r"\d+", "#", text.lower())).strip()
+
+
+def _eval_texts():
+    texts = []
+    for path in EVAL_TEXT_FILES + sorted((REPO_ROOT / "evals/results").glob("predictions_*.json")):
+        if not path.exists():
+            continue
+        if path.suffix == ".csv":
+            with open(path, newline="", encoding="utf-8", errors="replace") as f:
+                texts += [r.get("text") or r.get("message") or "" for r in csv.DictReader(f)]
+        else:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            rows = data if isinstance(data, list) else data.get("samples") or data.get("messages") or []
+            texts += [r.get("text", "") for r in rows if isinstance(r, dict)]
+        print(f"  excluding eval texts from {path.relative_to(REPO_ROOT)}")
+    return texts
+
+
+def candidates(args):
+    """Sample corpus rows outside the training subset and every eval set."""
+    import random
+
+    exclude = {_template_key(r["text"]) for r in load_subset()}
+    exclude |= {_template_key(t) for t in _eval_texts() if t}
+    pools, seen, families = {"ads_spam": [], "legit_notice": []}, set(), Counter()
+    with open(ORIGINAL_CSV, newline="", encoding="utf-8", errors="replace") as f:
+        rows = list(csv.DictReader(f))
+    rng = random.Random(args.seed)
+    rng.shuffle(rows)
+    for row in rows:
+        text, label = (row.get("text") or "").strip(), row.get("label")
+        if label not in ("spam", "ham") or row.get("augmentation_type") not in ("", "original"):
+            continue
+        key = _template_key(text)
+        if not text or key in exclude or key in seen or apply_rules(text, label)[1]:
+            continue
+        seen.add(key)
+        if label == "spam":
+            pools["ads_spam"].append(text)
+        elif _NOTICE.search(text):
+            family = _FAMILY.search(text)
+            if family:
+                name = family.group(1).lower()
+                if families[name] >= FAMILY_CAP:
+                    continue
+                families[name] += 1
+            pools["legit_notice"].append(text)
+    sizes = {"ads_spam": args.spam, "legit_notice": args.notices}
+    with open(CANDIDATES_CSV, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["id", "pool", "text", "label"])
+        i = 0
+        for pool, texts in pools.items():
+            for text in texts[:sizes[pool]]:
+                w.writerow([f"a{i:05d}", pool, text, "spam" if pool == "ads_spam" else "ham"])
+                i += 1
+    print(f"wrote {CANDIDATES_CSV.relative_to(REPO_ROOT)}: "
+          f"{ {p: min(len(t), sizes[p]) for p, t in pools.items()} } from pools of "
+          f"{ {p: len(t) for p, t in pools.items()} }")
+
+
+def load_candidates():
+    if not CANDIDATES_CSV.exists():
+        return []
+    with open(CANDIDATES_CSV, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
@@ -222,7 +323,7 @@ def ask(args):
 
     done = load_answers()
     todo, seen = [], set()
-    for row in load_subset():
+    for row in (load_candidates() if args.file == "candidates" else load_subset()):
         key = text_key(row["text"])
         if key not in done and key not in seen:
             seen.add(key)
@@ -327,8 +428,33 @@ def build(args):
         w = csv.DictWriter(f, fieldnames=list(review[0].keys()) if review else ["id"])
         w.writeheader()
         w.writerows(review)
+    # Additions: keep a candidate only when TypeSafe agrees with its corpus label.
+    additions, add_stats = [], Counter()
+    for row in load_candidates():
+        rec = answers.get(text_key(row["text"]))
+        add_stats[f"{row['pool']}:candidates"] += 1
+        if rec is None:
+            continue
+        add_stats[f"{row['pool']}:answered"] += 1
+        choice = rec["answers"]["label"]
+        if choice["choice"] == row["label"] and choice["confidence"] >= AGREE_CONFIDENCE:
+            additions.append({"text": row["text"], "label": row["label"], "pool": row["pool"]})
+            add_stats[f"{row['pool']}:accepted"] += 1
+    if additions:
+        with open(ADDITIONS_CSV, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["text", "label", "pool"])
+            w.writeheader()
+            w.writerows(additions)
+        with open(COMBINED_CSV, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["text", "label"])
+            w.writeheader()
+            w.writerows(cleaned + [{"text": a["text"], "label": a["label"]} for a in additions])
+
     flows = Counter(f"{r['rule_label']}->{r['typesafe_label']}" for r in review if not r["decision"])
     summary = {"subset_rows": len(subset), "cleaned_rows": len(cleaned), "review_rows": len(review),
+               "additions": dict(sorted(add_stats.items())), "agree_confidence": AGREE_CONFIDENCE,
+               "combined_rows": len(cleaned) + len(additions),
+               "combined_labels": dict(Counter(r["label"] for r in cleaned + additions)),
                "flag_confidence": args.flag_confidence, "typesafe_model": TYPESAFE_MODEL,
                "questions_version": QUESTIONS_VERSION, "counts": dict(sorted(stats.items())),
                "unreviewed_flag_flows": dict(flows.most_common())}
@@ -342,12 +468,17 @@ def main():
     p = sub.add_parser("freeze")
     p.add_argument("--seed", type=int, default=7)
     p.add_argument("--orig-per-label", type=int, default=2500)
+    p = sub.add_parser("candidates")
+    p.add_argument("--seed", type=int, default=7)
+    p.add_argument("--spam", type=int, default=1600)
+    p.add_argument("--notices", type=int, default=900)
     p = sub.add_parser("ask")
+    p.add_argument("--file", choices=["subset", "candidates"], default="subset")
     p.add_argument("--limit", type=int, default=0)
     p = sub.add_parser("build")
     p.add_argument("--flag-confidence", type=float, default=FLAG_CONFIDENCE)
     args = ap.parse_args()
-    {"freeze": freeze, "ask": ask, "build": build}[args.cmd](args)
+    {"freeze": freeze, "candidates": candidates, "ask": ask, "build": build}[args.cmd](args)
 
 
 if __name__ == "__main__":

@@ -2,6 +2,21 @@
   "subset_rows": 9394,
   "cleaned_rows": 9029,
   "review_rows": 639,
+  "additions": {
+    "ads_spam:accepted": 457,
+    "ads_spam:answered": 1600,
+    "ads_spam:candidates": 1600,
+    "legit_notice:accepted": 548,
+    "legit_notice:answered": 900,
+    "legit_notice:candidates": 900
+  },
+  "agree_confidence": 0.9,
+  "combined_rows": 10034,
+  "combined_labels": {
+    "ham": 3546,
+    "spam": 2489,
+    "phishing": 3999
+  },
   "flag_confidence": 0.7,
   "typesafe_model": "jev-1.13.0",
   "questions_version": "13d909ad8dd2",
