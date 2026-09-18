@@ -23,6 +23,10 @@ How many legitimate notices sit in the training data decides where the model
 sits between blocking attacks and passing real messages. Block rate is what
 production acts on, since spam and phishing are both rejected.
 
+**These are single runs.** The seed section below supersedes the per-candidate
+claims here: the differences between neighbouring rows are inside the run-to-run
+spread. The direction of the dial is real; the exact ordering is not.
+
 | Training mix | IMC25 block | Mishra block | fable5 clean block | Obfuscated block | UCI false blocks | Mishra false blocks | fable5 clean false blocks | Hard legit blocked |
 |---|---|---|---|---|---|---|---|---|
 | **2.7 (today)** | 72.4% | 98.8% | 100% | 99.3% | 0.5% | 0.5% | 6.2% | 13/40 |
@@ -38,16 +42,14 @@ Reading it:
   message: IMC25 dropped 2.8 points, and the messages it started passing were
   real attacks (SBI PAN-card lures, Santander, BPOST, a MijnOverheid refund
   lure). Pairing them with notice-shaped attacks recovers most of that.
-- **2.8e is the only candidate that beats 2.7 without raising false blocks on
-  real ham.** It blocks more on IMC25 (+1.4 points) and Mishra (+0.2), reaches
-  100% on the fable5 clean split, and matches 2.7's false-block rate on UCI,
-  Mishra and fable5.
+- **2.8e looked like the only candidate beating 2.7 without raising false
+  blocks.** Three seeds later that turned out to be a lucky run, not a property
+  of the data.
 - **2.8d and 2.8f block far more** (IMC25 +8.2 and +4.9 points) but double the
   false blocks on fable5 legitimate messages. That is the wrong trade for an
   operator: a blocked bank alert is more visible than a delivered scam.
-- **The hard legit set says 2.7 is best.** It is 40 handwritten messages by one
-  author, so treat it as a smoke test, not evidence. The corpus ham sets agree
-  that 2.8e ties 2.7.
+- **The hard legit set is 40 handwritten messages by one author**, so treat it
+  as a smoke test, not evidence.
 - **Spam recall falls everywhere** because prize scams are now labeled phishing:
   UCI 99.7% to 81.3%, Mishra 98.0% to 93.7% for 2.8e. Those messages are still
   blocked (UCI block rate stays 99.9%), so this is a reporting change, not a
