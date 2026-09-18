@@ -34,6 +34,22 @@ TRANSLATION_MARKERS = [
     "மொழிபெயர்ப்பு", "மொழிபெயர்க்கவும்",
     "übersetzung:", "hier ist die übersetzung", "traduction:", "voici la traduction",
     "traduzione:", "ecco la traduzione", "```",
+    # Assistant replies that the translation step left in place of a message.
+    # Phrases are kept specific enough not to match real SMS wording.
+    "could you please provide more context", "provide more context or clarify",
+    "i'm sorry, but the text", "i'm sorry, but i cannot", "sorry, i cannot click",
+    "i cannot click on links", "as an ai", "the text is a link to a website",
+    "shortened url", "does not seem to be in", "doesn't seem to be in",
+    "does not have a meaning", "doesn't have a meaning", "remain unchanged", "remains unchanged",
+    "no tiene sentido", "no tiene un significado", "no hay significado", "no se puede traducir",
+    "no puedo traducir", "lo siento, pero el texto", "lo siento, no se puede", "sin cambios",
+    "n'a pas de sens", "ne semble pas avoir de signification", "désolé, ce texte",
+    "non ha un significato", "non ci sono informazioni comprensibili", "mi dispiace, ma la frase",
+    "keine bedeutung", "ich bin ein ai-modell", "ich kann den satz nicht",
+    "текст оставлен без изменений", "не могу предоставить перевод",
+    "ليس بواجد في اللغة", "لا يمكنني ترجمة",
+    "membuka tautan", "mengakses tautan", "tidak bisa mengunjungi tautan",
+    "tidak bisa memfasilitasi", "dapatkah anda memberikan informasi lebih lanjut",
 ]
 
 PUNCT_ONLY_RE = re.compile(r"^[\W_]+$", re.UNICODE)
@@ -98,7 +114,7 @@ def clean(in_path: str, out_path: str) -> None:
             kept_rows.append((text, label, aug))
 
     with open(out_path, "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(["text", "label", "augmentation_type"])
         w.writerows(kept_rows)
 
