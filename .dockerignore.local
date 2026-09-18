@@ -7,10 +7,13 @@ venv/
 env/
 
 # Ignore large model files (they'll be handled separately)
-*.pth
-*.bin
-*.safetensors
-*.npz
+infra/
+audit_logs/
+feedback/
+**/*.pth
+**/*.bin
+**/*.safetensors
+**/*.npz
 
 # Ignore development files
 .git/
@@ -38,7 +41,7 @@ logs/
 tmp/
 temp/
 .tmp/
-node_modules/
+**/node_modules/
 
 # Keep essential files
 !src/

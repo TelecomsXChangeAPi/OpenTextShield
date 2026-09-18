@@ -70,13 +70,32 @@ deduplicated training set. Retraining on it gives a real trade rather than a
 free win, so **model 2.7 stays**. Full evidence, including three seeds per
 configuration, is in `evals/results/DATA_CLEANUP_2.8.md`.
 
-**7. Docker images actually contain the shipped model**
+**7. Docker images ship only what they should**
 
-`.dockerignore` excluded every `*.pth` and re-included only model 2.5, while the
-API has defaulted to model 2.7 since v2.10.0. Any image built from `main` would
-start and then fail to classify, because the loader only logs a warning when the
-weights are missing. Both ignore files now include 2.7 alongside 2.5, which stays
-for the documented rollback (`OTS_MBERT_MODEL_PATH`).
+Docker's ignore patterns do not cross `/`, so a bare `*.pth` only ever matched
+root-level files. Model 2.7 was therefore never excluded, and an earlier claim in
+this branch that images built from `main` ship without the model was wrong: a real
+`docker build` disproved it. The same gap did ship three things it should not:
+
+| In the image before | Size | Why it matters |
+|---|---|---|
+| `mbert_ots_model_2.8-candidate.pth` | 711 MB | an unreleased, unvalidated checkpoint |
+| `audit_logs/` | varies | full SMS text (`audit_text_storage` defaults to `full`) |
+| `infra/` | 1.3 GB | Terraform state and provider binaries |
+
+Patterns now cross directories (`**/*.pth`, `**/node_modules/`, `**/__pycache__/`)
+with explicit re-includes for the shipped 2.7 and the 2.5 rollback target, and
+`audit_logs/`, `feedback/` and `infra/` are excluded. Verified against the real
+engine: build context 2.8 GB to 1.4 GB, image 4.25 GB containing exactly 2.5 and 2.7,
+no audit logs, no infra.
+
+**8. The loader refuses a Git LFS pointer**
+
+This is the real way an image can start and be unable to classify. A checkout
+without `git lfs pull` leaves a ~130 byte pointer file where the weights belong; it
+passes the existence check, so the service used to start and fail later inside
+`torch.load`. The loader now detects the pointer signature, logs what to run, and
+skips the model rather than pretending to serve it.
 
 ## Tests
 
@@ -85,6 +104,32 @@ for the documented rollback (`OTS_MBERT_MODEL_PATH`).
 | API unit tests | 39/39 |
 | SMPP offline (`npm test`) | 137/137 |
 | SMPP integration against model 2.7 | 47/47 and 32/32, identical to the previous proxy |
+
+## Validated locally on 2026-09-18
+
+Run on an Apple Silicon machine against the branch tip, model 2.7:
+
+| Claim | Result |
+|---|---|
+| API reports platform 2.11.0, model 2.7 | confirmed, host and container |
+| Fullwidth lure blocked | phishing 1.000 (same verdict as the plain-ASCII text) |
+| Real Russian and Greek undamaged | ham 0.999 / 0.982; normaliser output inspected directly |
+| Unsure verdicts acted on | 10 below-threshold spam/phishing verdicts kept their label and were rejected |
+| Long message no longer skipped | 661 characters via `message_payload`: classified phishing 0.9999, rejected |
+| Hidden second field no longer skipped | harmless `short_message` + phishing `message_payload`: rejected |
+| Startup config validation | unknown rule action and unknown `below_threshold_action` both exit 1 with a clear error |
+| Integration suites | 47/47 and 32/32 |
+| Unit suites | API 42/42, SMPP offline 137/137 |
+| fable5 clean block rate | 55/55 = 100%, false blocks 1/16 |
+| hard legit blocked | 13/40 |
+| Mishra | block 98.8%, false blocks 0.5% (26/4844) |
+| Docker image | builds, serves model 2.7, blocks the fullwidth lure |
+
+Two probes returned `ham` where a reader might expect otherwise: "Log in to
+раураӏ now" and a math-bold PayPal lure. The normaliser folds both correctly to
+ASCII; model 2.7 simply does not flag those short texts, and the plain-ASCII
+versions score identically. That is a model limitation, not a regression, and it is
+what the data work in `DATA_CLEANUP_2.8.md` targets.
 
 ## Upgrade notes
 

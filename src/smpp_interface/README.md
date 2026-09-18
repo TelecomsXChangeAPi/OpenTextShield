@@ -81,15 +81,17 @@ The OpenTextShield (OTS) SMPP Interface is an inline SMS classification proxy. I
   └──────────┬───────────┘
              │ OK
              ▼
-  ┌──────────────────────┐     YES    ┌─────────────────────────┐
-  │  Probability below   │ ─────────> │ Log it, then apply      │
-  │  threshold (0.7)?    │            │ below_threshold_action: │
-  └──────────┬───────────┘            │ use_label (default) or  │
-             │ NO                     │ forward_as_ham          │
-             ▼                        └─────────────────────────┘
+  ┌──────────────────────┐     YES    ┌──────────────────────────────┐
+  │  Probability below   │ ─────────> │ Log it, then pick the label  │
+  │  threshold (0.7)?    │            │ below_threshold_action:      │
+  └──────────┬───────────┘            │  use_label (default) → model │
+             │ NO                     │  forward_as_ham      → ham   │
+             │                        └───────────────┬──────────────┘
+             │      ┌─────────────────────────────────┘
+             ▼      ▼
   ┌──────────────────────┐
-  │  Apply config rule   │
-  │  for detected label  │
+  │  Apply config rule   │   Both paths land here: an unsure verdict
+  │  for the label above │   is still subject to its rule.
   └──────────┬───────────┘
              │
      ┌───────┼───────┐

@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 # Manual start (alternative - API only)
 source ots/bin/activate
-uvicorn src.api_interface.main:app --host 0.0.0.0 --port 9000
+uvicorn src.api_interface.main:app --host 0.0.0.0 --port 8002
 ```
 
 ### Frontend Interface
@@ -68,8 +68,21 @@ node ots_smpp_proxy.js config.json
 **Testing the SMPP Interface:**
 ```bash
 cd src/smpp_interface
+
+# Offline suites — no proxy, upstream or API needed
+npm test                # message_utils (26) + encoding round-trip (111)
+
+# Integration suites — need the OTS API on 8002, dummy_upstream.js on 2776 and the proxy on 2775
 node test_smpp.js       # Basic tests (47 tests)
 node test_advanced.js   # Advanced tests: UDH, emoji, async, DLR, benchmarks (32 tests)
+```
+
+Start the API for tests with auditing off, otherwise its retention policy deletes
+`audit_logs/*.jsonl` older than 90 days and writes new files:
+
+```bash
+OTS_AUDIT_ENABLED=false OTS_AUDIT_RETENTION_ENABLED=false \
+  uvicorn src.api_interface.main:app --host 127.0.0.1 --port 8002
 ```
 
 ### Running Model Tests
