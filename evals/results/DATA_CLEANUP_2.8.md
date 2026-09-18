@@ -55,18 +55,56 @@ Reading it:
 - **Phishing recall improves a lot** where the taxonomy now agrees with the
   benchmark: Mishra 6.1% to 30.9%, fable5 clean 75.6% to 78.0%.
 
+## Run-to-run variance changes the conclusion
+
+The table above is one training run per configuration. Repeating the same
+configuration with three seeds shows the spread is large enough to swamp those
+differences, so single-run comparisons were misleading.
+
+Mean of 3 seeds (seeds 7, 13, 29), same recipe, against model 2.7:
+
+| Metric | 2.7 | Cleaned data | Cleaned data + generated notice pairs |
+|---|---|---|---|
+| IMC25 block | 72.4% | 76.7% | 76.0% |
+| UCI block | 99.9% | 99.6% | 99.6% |
+| Mishra block | 98.8% | 99.3% | 99.1% |
+| fable5 clean block | 100% | 100% | 100% |
+| Obfuscated block | 99.3% | 99.1% | 97.5% |
+| UCI false blocks | 0.5% | 0.6% | 0.8% |
+| Mishra false blocks | 0.5% | 0.7% | 0.9% |
+| fable5 clean false blocks | 6.2% | 10.4% | 2.1% |
+| Hard legit blocked | 13/40 | 21/40 | 13/40 |
+
+- **Without the generated pairs the model over-blocks real notices.** It flags
+  messages 2.7 passes: "Your Amazon package was delivered", "PayPal: You sent
+  $45.00", "Venmo: Alex Kim paid you $18.50", "Sberbank: transfer received".
+  The legitimate notices taken from the corpus are mostly one-time codes, while
+  the attack side gained delivery, payment and billing lures, so the model
+  learned that transactional shapes are suspicious.
+- **With the pairs, false blocks on legitimate-looking messages come back down**
+  (fable5 clean 6.2% to 2.1%, hard legit back to 13/40), and IMC25 blocking
+  stays 3.6 points above 2.7.
+- **It is still a trade.** The paired model blocks about 290 more attacks per
+  8,000 IMC25 messages, and adds roughly 35 false blocks per 10,000 legitimate
+  messages on UCI and Mishra. It is also 1.8 points worse on obfuscated text.
+- **Single runs are not evidence.** Any future comparison needs at least three
+  seeds; the seed spread reaches 6 points on fable5 false blocks.
+
 ## Recommendation
 
-- Keep 2.7 in production.
-- Treat **2.8e** (`mbert_ots_model_2.8-candidate.pth`, trained on
-  `dataset/curated/train_v2.8_candidate.csv`) as the release candidate to
-  validate on real traffic, watching the false-block rate on A2P alerts.
-- The obvious next gain: more notice-shaped attack examples. The corpus pool ran
-  dry at 329 accepted, which is why 2.8e still carries 548 notices against 329
-  lures. Generating more through `evals/generate_synthetic.py` should move the
-  block rate up without giving back the false-block gains.
-- 102 flagged rows are still unreviewed and stay out of training until someone
-  decides them (`dataset/curated/label_review.csv`).
+- **Keep model 2.7 in production and ship the platform fixes without it.** The
+  code fixes in this release (obfuscation cleanup, the SMPP threshold and skip
+  bypasses) are wins with no model risk. The data work is committed and
+  reproducible, but no trained candidate is strictly better than 2.7.
+- **If more blocking is wanted**, build with `--with-notice-pairs` and validate
+  on real traffic. That configuration blocks the most real-world smishing of any
+  run here while keeping false blocks on legitimate-looking messages below 2.7,
+  at the cost of about 35 extra false blocks per 10,000 ordinary ham messages.
+- **Next experiments worth running**, each with three seeds: class-weighted loss
+  to offset phishing now being the largest class (42% of rows), and more benign
+  transaction and delivery notices, which is the shape the model most often gets
+  wrong.
+- All 102 flagged rows have been reviewed (`dataset/curated/label_review.csv`).
 
 ## Reproducing
 

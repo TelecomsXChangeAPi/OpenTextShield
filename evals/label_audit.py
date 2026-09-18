@@ -45,6 +45,10 @@ CLEANED_CSV = CURATED_DIR / "train_subset_v2.7_cleaned.csv"
 REVIEW_CSV = CURATED_DIR / "label_review.csv"
 SUMMARY_JSON = CURATED_DIR / "summary.json"
 CANDIDATES_CSV = CURATED_DIR / "additions_candidates.csv"
+# Generated notice pairs (evals/generate_notice_pairs.py), checked the same way.
+# Off by default in `build`: they raise the block rate but double false blocks on
+# real ham. See evals/results/DATA_CLEANUP_2.8.md. Enable with --with-notice-pairs.
+NOTICE_PAIRS_CSV = CURATED_DIR / "synthetic_notice_pairs_v1.csv"
 ADDITIONS_CSV = CURATED_DIR / "additions_v1.csv"
 COMBINED_CSV = CURATED_DIR / "train_v2.8_candidate.csv"
 # Eval texts that must never enter training. Tracked files, plus any local
@@ -171,11 +175,15 @@ def candidates(args):
           f"{ {p: len(t) for p, t in pools.items()} }")
 
 
-def load_candidates():
-    if not CANDIDATES_CSV.exists():
-        return []
-    with open(CANDIDATES_CSV, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+def load_candidates(with_notice_pairs=True):
+    """Rows offered as additions: sampled corpus rows, and generated pairs if asked."""
+    rows = []
+    paths = (CANDIDATES_CSV, NOTICE_PAIRS_CSV) if with_notice_pairs else (CANDIDATES_CSV,)
+    for path in paths:
+        if path.exists():
+            with open(path, newline="", encoding="utf-8") as f:
+                rows += list(csv.DictReader(f))
+    return rows
 
 
 # --------------------------------------------------------------------------- #
@@ -435,7 +443,7 @@ def build(args):
         w.writerows(review)
     # Additions: keep a candidate only when TypeSafe agrees with its corpus label.
     additions, add_stats = [], Counter()
-    for row in load_candidates():
+    for row in load_candidates(with_notice_pairs=args.with_notice_pairs):
         rec = answers.get(text_key(row["text"]))
         add_stats[f"{row['pool']}:candidates"] += 1
         if rec is None:
@@ -458,6 +466,7 @@ def build(args):
     flows = Counter(f"{r['rule_label']}->{r['typesafe_label']}" for r in review if not r["decision"])
     summary = {"subset_rows": len(subset), "cleaned_rows": len(cleaned), "review_rows": len(review),
                "additions": dict(sorted(add_stats.items())), "agree_confidence": AGREE_CONFIDENCE,
+               "with_notice_pairs": args.with_notice_pairs,
                "combined_rows": len(cleaned) + len(additions),
                "combined_labels": dict(Counter(r["label"] for r in cleaned + additions)),
                "flag_confidence": args.flag_confidence, "typesafe_model": TYPESAFE_MODEL,
@@ -483,6 +492,8 @@ def main():
     p.add_argument("--limit", type=int, default=0)
     p = sub.add_parser("build")
     p.add_argument("--flag-confidence", type=float, default=FLAG_CONFIDENCE)
+    p.add_argument("--with-notice-pairs", action="store_true",
+                   help="also train on the generated notice pairs (more blocking, more false blocks)")
     args = ap.parse_args()
     {"freeze": freeze, "candidates": candidates, "ask": ask, "build": build}[args.cmd](args)
 

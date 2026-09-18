@@ -1466,3 +1466,839 @@ Alerte critique : Votre identifiant Apple a été compromis. Sécurisez votre co
 Paket Anda tidak dapat diserahkan karena biaya bea cukai belum dibayar. Bayar sekarang di www.postal-service.com/fees/29,phishing,notice_phish
 "Hi Sarah, your Amazon order is delayed. Confirm shipping at goo.gl/xyz",phishing,notice_phish
 Paket Anda tidak dapat diserahkan karena belum membayar biaya bea cukai. Bayar sekarang di www.postal-service.com/fees/28,phishing,notice_phish
+Ninja Xpress: paket 670308609966 gagal dikirim karena alamat tidak lengkap. Konfirmasi di sini: ninjaxpress-portal-login.cc,phishing,notice_pair_lure
+Ninja Xpress: paket 670308609966 gagal dikirim dan menunggu di gerai selama 7 hari.,ham,notice_pair_legit
+"Banca Sella: per bloccare il bonifico appena fermato, rispondi con il codice 71072.",phishing,notice_pair_lure
+Banca Sella: 71072 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+Spotify: Ihr Abo verlängert sich am 28. für 1.99 €. Verwalten Sie es in der App oder auf spotify.de.,ham,notice_pair_legit
+"Совкомбанк: не удалось подтвердить ваши данные, интернет-банк заблокирован. Восстановите доступ за 24 часа: service-portal-login.cc",phishing,notice_pair_lure
+Совкомбанк: в воскресенье с 02:00 до 05:00 интернет-банк будет недоступен из-за техработ.,ham,notice_pair_legit
+Denizbank: 9394 ile biten kartınızdan 67 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+سمسا: الطرد 0647390579 محتجز بسبب رسوم جمركية 19.99 ريال. ادفع للإفراج عنه: service-portal-login.cc,phishing,notice_pair_lure
+سمسا: سيتم تسليم طردك 0647390579 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+"Şekerbank: bilgileriniz doğrulanamadı, internet bankacılığınız askıya alındı. 24 saat içinde erişimi açın: cutt.ly/nevt2m",phishing,notice_pair_lure
+Şekerbank: Pazar günü 02:00-05:00 arası internet bankacılığı bakımda olacaktır. İşlem yapmanıza gerek yok.,ham,notice_pair_legit
+AnterAja: paket 872229213800 gagal dikirim karena alamat tidak lengkap. Konfirmasi di sini: anteraja-portal-login.cc,phishing,notice_pair_lure
+AnterAja: paket 872229213800 gagal dikirim dan menunggu di gerai selama 7 hari.,ham,notice_pair_legit
+GLS: pacco 537014082106 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+"Боксберри: посылка 4180565833 задержана, таможенный сбор 2205 ₽ не оплачен. Оплатите для выдачи: service-id-confirm.site",phishing,notice_pair_lure
+Боксберри: посылка 4180565833 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+Iberdrola: Ihr Strom wird heute wegen einer offenen Rechnung über 2.45 € abgestellt. Jetzt begleichen: is.gd/wt5ukn,phishing,notice_pair_lure
+Iberdrola: Ihre Stromrechnung über 2.45 € ist am 28. fällig. Zahlung in der App oder auf iberdrola.de.,ham,notice_pair_legit
+"BPER: per bloccare il bonifico appena fermato, rispondi con il codice 565884.",phishing,notice_pair_lure
+BPER: 565884 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+EDF: your electricity will be cut off today over an unpaid bill of £1.99. Settle now: edf-portal-login.cc,phishing,notice_pair_lure
+"Banque Populaire : pour annuler le virement que nous avons bloqué, répondez avec le code 570666.",phishing,notice_pair_lure
+EDF: 83 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: cutt.ly/5frzpg,phishing,notice_pair_lure
+EDF: 83 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+MRW: el paquete 829778488677 está retenido por una tasa aduanera de 24.5€. Pague para liberarlo: t.ly/mxutp9,phishing,notice_pair_lure
+MRW: su paquete 829778488677 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+Bankinter: 546967 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+Hermes: Paket 553265272020 konnte wegen unvollständiger Adresse nicht zugestellt werden. Hier bestätigen: hermes-billing-update.online,phishing,notice_pair_lure
+Hermes: Paket 553265272020 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+DPD: pakket 9861642051 is niet bezorgd omdat het adres onvolledig is. Bevestig het hier: dpd-customer-verify.live,phishing,notice_pair_lure
+DPD: pakket 9861642051 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+"GLS : le colis 267612295616 est bloqué, frais de douane de 12.4 € impayés. Payez pour le libérer : rb.gy/wnrgm2",phishing,notice_pair_lure
+GLS : votre colis 267612295616 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+Abanca: se aprobó un pago de 24.5€ a un comercio nuevo con la tarjeta terminada en 5228. Cancélelo aquí: abanca-verify-now.top,phishing,notice_pair_lure
+"Abanca: cargo de 24.5€ en su tarjeta terminada en 5228. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+Audible : votre abonnement se renouvelle aujourd'hui pour 9.9 € sauf annulation. Arrêtez le prélèvement : audible-portal-login.cc,phishing,notice_pair_lure
+Audible : votre abonnement se renouvelle le 28 pour 9.9 €. Gérez-le dans l'application ou sur audible.fr.,ham,notice_pair_legit
+أرامكس: الطرد 820120845353 محتجز بسبب رسوم جمركية 2.45 ريال. ادفع للإفراج عنه: service-portal-login.cc,phishing,notice_pair_lure
+أرامكس: سيتم تسليم طردك 820120845353 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+E.ON: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 19.99 ريال. سدد الآن: rb.gy/9nfgqk,phishing,notice_pair_lure
+"OCBC NISP: data Anda tidak dapat diverifikasi, internet banking diblokir. Pulihkan akses dalam 24 jam: ocbcnisp-id-confirm.site",phishing,notice_pair_lure
+OCBC NISP: internet banking dalam pemeliharaan Minggu pukul 02.00-05.00. Tidak ada tindakan yang diperlukan.,ham,notice_pair_legit
+Strava : votre abonnement se renouvelle aujourd'hui pour 129.9 € sauf annulation. Arrêtez le prélèvement : strava-id-confirm.site,phishing,notice_pair_lure
+Strava : votre abonnement se renouvelle le 28 pour 129.9 €. Gérez-le dans l'application ou sur strava.fr.,ham,notice_pair_legit
+زاجل: الطرد 0888027044 محتجز بسبب رسوم جمركية 1.99 ريال. ادفع للإفراج عنه: shorturl.at/te4kkc,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 0888027044 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Spotify : votre abonnement se renouvelle le 28 pour 3.5 €. Gérez-le dans l'application ou sur spotify.fr.,ham,notice_pair_legit
+E.ON : votre électricité sera coupée aujourd'hui pour une facture impayée de 3.5 €. Régularisez : eon-portal-login.cc,phishing,notice_pair_lure
+Halifax: 278209 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+"SDA: il pacco 051431290777 è fermo, tassa doganale di 9.9 € non pagata. Paga per liberarlo: sda-id-confirm.site",phishing,notice_pair_lure
+SDA: il pacco 051431290777 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+Etsy: pengembalian dana Rp39200 menunggu Anda. Masukkan data kartu untuk menerimanya: shorturl.at/869z6n,phishing,notice_pair_lure
+Etsy: dana Rp39200 telah dikembalikan ke kartu 9617. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+AliExpress: un rimborso di 24.5 € ti aspetta. Inserisci i dati della carta per riceverlo: aliexpress-id-confirm.site,phishing,notice_pair_lure
+AliExpress: il rimborso di 24.5 € è stato inviato sulla carta 3009. Possono servire 5 giorni lavorativi.,ham,notice_pair_legit
+GLS : colis 834189261801 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+"Duolingo: Ihr Abo verlängert sich heute für 129.9 €, wenn Sie nicht kündigen. Abbuchung stoppen: duolingo-secure-id.info",phishing,notice_pair_lure
+Duolingo: Ihr Abo verlängert sich am 28. für 129.9 €. Verwalten Sie es in der App oder auf duolingo.de.,ham,notice_pair_legit
+"Bank Permata: data Anda tidak dapat diverifikasi, internet banking diblokir. Pulihkan akses dalam 24 jam: bankpermata-secure-id.info",phishing,notice_pair_lure
+Bank Permata: internet banking dalam pemeliharaan Minggu pukul 02.00-05.00. Tidak ada tindakan yang diperlukan.,ham,notice_pair_legit
+Duolingo : votre abonnement se renouvelle le 28 pour 249.0 €. Gérez-le dans l'application ou sur duolingo.fr.,ham,notice_pair_legit
+"Боксберри: посылка 3467917617 задержана, таможенный сбор 4320 ₽ не оплачен. Оплатите для выдачи: service-customer-verify.live",phishing,notice_pair_lure
+Боксберри: посылка 3467917617 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+"Banca Sella: per bloccare il bonifico appena fermato, rispondi con il codice 928380.",phishing,notice_pair_lure
+Trans-o-flex: Paket 0296575562 konnte wegen unvollständiger Adresse nicht zugestellt werden. Hier bestätigen: transoflex-billing-update.online,phishing,notice_pair_lure
+Trans-o-flex: Paket 0296575562 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+Vakıfbank: 5951 ile biten kartınızdan 67 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+"Spotify: подписка продлится сегодня за 1799 ₽, если не отменить. Остановить списание: spotify-account-check.xyz",phishing,notice_pair_lure
+Spotify: подписка продлится 28-го за 1799 ₽. Управление в приложении или на spotify.ru.,ham,notice_pair_legit
+"Vakıfbank: bilgileriniz doğrulanamadı, internet bankacılığınız askıya alındı. 24 saat içinde erişimi açın: is.gd/ppj46n",phishing,notice_pair_lure
+Vakıfbank: Pazar günü 02:00-05:00 arası internet bankacılığı bakımda olacaktır. İşlem yapmanıza gerek yok.,ham,notice_pair_legit
+AliExpress: a refund of £12.4 is waiting for you. Enter your card details to receive it: aliexpress-secure-id.info,phishing,notice_pair_lure
+AliExpress: your refund of £12.4 was sent back to the card ending 9110. It can take 5 working days.,ham,notice_pair_legit
+AliExpress: вам положен возврат 315 ₽. Введите данные карты для получения: aliexpress-account-check.xyz,phishing,notice_pair_lure
+AliExpress: возврат 315 ₽ отправлен на карту 6456. Зачисление занимает до 5 рабочих дней.,ham,notice_pair_legit
+Duolingo : votre abonnement se renouvelle aujourd'hui pour 12.4 € sauf annulation. Arrêtez le prélèvement : duolingo-customer-verify.live,phishing,notice_pair_lure
+Duolingo : votre abonnement se renouvelle le 28 pour 12.4 €. Gérez-le dans l'application ou sur duolingo.fr.,ham,notice_pair_legit
+AliExpress : un remboursement de 2.45 € vous attend. Saisissez vos coordonnées bancaires : aliexpress-billing-update.online,phishing,notice_pair_lure
+AliExpress : votre remboursement de 2.45 € a été envoyé sur la carte 1694. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+Nacex: el paquete 825243025510 está retenido por una tasa aduanera de 2.45€. Pague para liberarlo: is.gd/pbuxwj,phishing,notice_pair_lure
+Nacex: su paquete 825243025510 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+Disney+: paket Anda diperpanjang hari ini seharga Rp31840 kecuali dibatalkan. Hentikan tagihan: disney-id-confirm.site,phishing,notice_pair_lure
+Disney+: paket Anda diperpanjang tanggal 28 seharga Rp31840. Kelola di aplikasi atau disney.co.id.,ham,notice_pair_legit
+"OCBC NISP: transaksi Rp198400 pada kartu 1384 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+EDF: 679 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: edf-account-check.xyz,phishing,notice_pair_lure
+EDF: 679 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+"Боксберри: посылку 643265506455 не доставили, адрес неполный. Подтвердите его здесь: service-secure-id.info",phishing,notice_pair_lure
+Боксберри: посылку 643265506455 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+GLS: no pudimos entregar el paquete 5908728458 porque la dirección está incompleta. Confírmela aquí: gls-id-confirm.site,phishing,notice_pair_lure
+GLS: no pudimos entregar el paquete 5908728458. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Targobank: 19.99 € wurden heute von Karte 1602 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+PLN: 336 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: cutt.ly/xr7p2v,phishing,notice_pair_lure
+PLN: 336 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+Nacex: no pudimos entregar el paquete 266241824388. Queda 7 días en su oficina local.,ham,notice_pair_legit
+"Caisse d'Epargne : vos informations n'ont pas pu être vérifiées, votre banque en ligne est suspendue. Rétablissez l'accès sous 24h : caissedeparg-id-confirm.site",phishing,notice_pair_lure
+Caisse d'Epargne : maintenance de la banque en ligne dimanche de 02h00 à 05h00. Aucune action de votre part.,ham,notice_pair_legit
+Denizbank: 6999 ile biten kartınızdan 679 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+"Почта: посылка 2717326449 задержана, таможенный сбор 220 ₽ не оплачен. Оплатите для выдачи: service-portal-login.cc",phishing,notice_pair_lure
+Почта: посылка 2717326449 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+سمسا: الطرد 207363135133 محتجز بسبب رسوم جمركية 12.4 ريال. ادفع للإفراج عنه: is.gd/8av8nv,phishing,notice_pair_lure
+سمسا: سيتم تسليم طردك 207363135133 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Enel: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 249.0 ريال. سدد الآن: shorturl.at/bwu7wa,phishing,notice_pair_lure
+Enel: فاتورة الكهرباء بقيمة 249.0 ريال تستحق في الـ28. ادفع عبر التطبيق أو enel.com.,ham,notice_pair_legit
+Citizens Bank: 875530 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+AliExpress : un remboursement de 24.5 € vous attend. Saisissez vos coordonnées bancaires : aliexpress-portal-login.cc,phishing,notice_pair_lure
+AliExpress : votre remboursement de 24.5 € a été envoyé sur la carte 7356. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+"BPER: non siamo riusciti a verificare i tuoi dati, l'home banking è sospeso. Ripristina l'accesso entro 24h: bper-secure-id.info",phishing,notice_pair_lure
+BPER: domenica dalle 02:00 alle 05:00 l'home banking sarà in manutenzione. Nessuna azione richiesta.,ham,notice_pair_legit
+"Уралсиб: чтобы отменить заблокированный перевод, отправьте в ответ код 308271.",phishing,notice_pair_lure
+Уралсиб: 308271 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+"Spotify: Ihr Abo verlängert sich heute für 129.9 €, wenn Sie nicht kündigen. Abbuchung stoppen: spotify-verify-now.top",phishing,notice_pair_lure
+Spotify: Ihr Abo verlängert sich am 28. für 129.9 €. Verwalten Sie es in der App oder auf spotify.de.,ham,notice_pair_legit
+"Evri: parcel 4606698111 is held, a customs fee of £129.9 is unpaid. Pay to release: is.gd/8757as",phishing,notice_pair_lure
+Evri: parcel 4606698111 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+Iberdrola: hoy se cortará la luz por una factura impagada de 2.45€. Regularice ahora: iberdrola-portal-login.cc,phishing,notice_pair_lure
+Enel: 336 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: is.gd/hgp9nn,phishing,notice_pair_lure
+Enel: 336 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+Vakıfbank: 6540 ile biten kartınızdan yeni bir üye iş yerine 336 TL ödeme onaylandı. Buradan iptal edin: vakfbank-verify-now.top,phishing,notice_pair_lure
+Vakıfbank: 6540 ile biten kartınızdan 336 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+"Banque Populaire : pour annuler le virement que nous avons bloqué, répondez avec le code 856733.",phishing,notice_pair_lure
+"Hermes: Paket 684199074011 wird zurückgehalten, Zollgebühr von 48.0 € offen. Zum Freigeben zahlen: cutt.ly/m5uyh2",phishing,notice_pair_lure
+Hermes: Paket 684199074011 wird heute zwischen 14:00 und 18:00 Uhr zugestellt.,ham,notice_pair_legit
+"DPD: pakket 543929881592 is vastgehouden, douanekosten van €249.0 openstaand. Betaal om vrij te geven: dpd-billing-update.online",phishing,notice_pair_lure
+DPD: uw pakket 543929881592 wordt vandaag tussen 14:00 en 18:00 bezorgd.,ham,notice_pair_legit
+Zalando: вам положен возврат 2205 ₽. Введите данные карты для получения: zalando-billing-update.online,phishing,notice_pair_lure
+Zalando: возврат 2205 ₽ отправлен на карту 5408. Зачисление занимает до 5 рабочих дней.,ham,notice_pair_legit
+"SDA: il pacco 996778818329 è fermo, tassa doganale di 9.9 € non pagata. Paga per liberarlo: t.ly/96kfy2",phishing,notice_pair_lure
+SDA: il pacco 996778818329 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+"Yodel: parcel 643301726765 is held, a customs fee of £1.99 is unpaid. Pay to release: is.gd/w82mjt",phishing,notice_pair_lure
+Yodel: parcel 643301726765 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+GLS: no pudimos entregar el paquete 752934339288 porque la dirección está incompleta. Confírmela aquí: gls-id-confirm.site,phishing,notice_pair_lure
+GLS: no pudimos entregar el paquete 752934339288. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Duolingo: il tuo piano si rinnova il 28 a 129.9 €. Gestiscilo nell'app o su duolingo.it.,ham,notice_pair_legit
+"Bank Mega: untuk membatalkan transfer yang kami blokir, balas dengan kode 617335.",phishing,notice_pair_lure
+Spotify: your plan renews on the 28th for £9.9. Manage it in the app or at spotify.com.,ham,notice_pair_legit
+"Banco Desio: non siamo riusciti a verificare i tuoi dati, l'home banking è sospeso. Ripristina l'accesso entro 24h: t.ly/pp3w4v",phishing,notice_pair_lure
+Banco Desio: domenica dalle 02:00 alle 05:00 l'home banking sarà in manutenzione. Nessuna azione richiesta.,ham,notice_pair_legit
+"Volksbank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 736344.",phishing,notice_pair_lure
+Volksbank: 736344 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+GLS: pacco 046877690357 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Audible: Ihr Abo verlängert sich am 28. für 19.99 €. Verwalten Sie es in der App oder auf audible.de.,ham,notice_pair_legit
+PLN: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 19.99 ريال. سدد الآن: cutt.ly/q96vtb,phishing,notice_pair_lure
+GLS: el paquete 689960796231 está retenido por una tasa aduanera de 48.0€. Pague para liberarlo: gls-customer-verify.live,phishing,notice_pair_lure
+GLS: su paquete 689960796231 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+"Mondial Relay : le colis 3106838636 est bloqué, frais de douane de 19.99 € impayés. Payez pour le libérer : cutt.ly/9xwnzs",phishing,notice_pair_lure
+Mondial Relay : votre colis 3106838636 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+"GLS: pakket 100830086901 is vastgehouden, douanekosten van €2.45 openstaand. Betaal om vrij te geven: is.gd/2cak9a",phishing,notice_pair_lure
+GLS: uw pakket 100830086901 wordt vandaag tussen 14:00 en 18:00 bezorgd.,ham,notice_pair_legit
+E.ON: your electricity will be cut off today over an unpaid bill of £12.4. Settle now: eon-customer-verify.live,phishing,notice_pair_lure
+E.ON: your electricity bill of £12.4 is due on the 28th. Pay in the app or at eon.com.,ham,notice_pair_legit
+Strava: su plan se renovará el día 28 por 3.5€. Gestiónelo en la app o en strava.es.,ham,notice_pair_legit
+بنك دبي: 38042 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+"TSB: we could not verify your details, so online banking is suspended. Restore access within 24h: tsb-id-confirm.site",phishing,notice_pair_lure
+TSB: online banking will be unavailable on Sunday 02:00-05:00 for maintenance. No action needed.,ham,notice_pair_legit
+زاجل: الطرد 633970111187 محتجز بسبب رسوم جمركية 9.9 ريال. ادفع للإفراج عنه: cutt.ly/9mp724,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 633970111187 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+"MNG Kargo: 4141049982 numaralı kargo gümrükte, 833 TL tutarında ödeme bekleniyor. Serbest bırakmak için ödeyin: shorturl.at/58gbsh",phishing,notice_pair_lure
+MNG Kargo: 4141049982 numaralı kargonuz bugün 14:00-18:00 arasında teslim edilecek.,ham,notice_pair_legit
+"OCBC NISP: untuk membatalkan transfer yang kami blokir, balas dengan kode 248838.",phishing,notice_pair_lure
+Strava: il tuo piano si rinnova oggi a 3.5 € se non lo annulli. Blocca l'addebito: strava-verify-now.top,phishing,notice_pair_lure
+Strava: il tuo piano si rinnova il 28 a 3.5 €. Gestiscilo nell'app o su strava.it.,ham,notice_pair_legit
+بنك دبي: 185820 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Shein: pengembalian dana Rp3984000 menunggu Anda. Masukkan data kartu untuk menerimanya: shein-customer-verify.live,phishing,notice_pair_lure
+Shein: dana Rp3984000 telah dikembalikan ke kartu 8288. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+"Почта: посылка 004555549266 задержана, таможенный сбор 891 ₽ не оплачен. Оплатите для выдачи: service-verify-now.top",phishing,notice_pair_lure
+Почта: посылка 004555549266 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+GLS: Paket 444346735103 konnte wegen unvollständiger Adresse nicht zugestellt werden. Hier bestätigen: gls-verify-now.top,phishing,notice_pair_lure
+GLS: Paket 444346735103 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+AliExpress: eine Rückerstattung von 19.99 € wartet auf Sie. Kartendaten eingeben zum Erhalt: aliexpress-secure-id.info,phishing,notice_pair_lure
+AliExpress: Ihre Rückerstattung über 19.99 € ging an die Karte 1248. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+Unicaja: 436809 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+"Banca Sella: addebito di 12.4 € sulla carta 3574. Se non lo riconosci, chiama il numero sul retro della carta.",ham,notice_pair_legit
+بنك دبي: تعذر التحقق من بياناتك وتم تعليق الخدمة المصرفية. استعد الوصول خلال 24 ساعة: is.gd/cqhfun,phishing,notice_pair_lure
+بنك دبي: ستكون الخدمة المصرفية عبر الإنترنت تحت الصيانة يوم الأحد من 02:00 حتى 05:00.,ham,notice_pair_legit
+Nacex: no pudimos entregar el paquete 1355130785 porque la dirección está incompleta. Confírmela aquí: nacex-customer-verify.live,phishing,notice_pair_lure
+Nacex: no pudimos entregar el paquete 1355130785. Queda 7 días en su oficina local.,ham,notice_pair_legit
+"Banque Populaire : vos informations n'ont pas pu être vérifiées, votre banque en ligne est suspendue. Rétablissez l'accès sous 24h : banquepopula-billing-update.online",phishing,notice_pair_lure
+Banque Populaire : maintenance de la banque en ligne dimanche de 02h00 à 05h00. Aucune action de votre part.,ham,notice_pair_legit
+Iberdrola: 67 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: shorturl.at/74e94v,phishing,notice_pair_lure
+Iberdrola: 67 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+"OnTrac: parcel 063985044098 is held, a customs fee of £12.4 is unpaid. Pay to release: shorturl.at/9v529r",phishing,notice_pair_lure
+OnTrac: parcel 063985044098 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+Zalando: вам положен возврат 1799 ₽. Введите данные карты для получения: zalando-account-check.xyz,phishing,notice_pair_lure
+Zalando: возврат 1799 ₽ отправлен на карту 1992. Зачисление занимает до 5 рабочих дней.,ham,notice_pair_legit
+Vakıfbank: 3184 ile biten kartınızdan yeni bir üye iş yerine 8466 TL ödeme onaylandı. Buradan iptal edin: vakfbank-billing-update.online,phishing,notice_pair_lure
+Vakıfbank: 3184 ile biten kartınızdan 8466 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+PLN: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 12.4 ريال. سدد الآن: rb.gy/ym2upt,phishing,notice_pair_lure
+Audible: paket Anda diperpanjang tanggal 28 seharga Rp319840. Kelola di aplikasi atau audible.co.id.,ham,notice_pair_legit
+"Colissimo : le colis 995039020830 est bloqué, frais de douane de 12.4 € impayés. Payez pour le libérer : colissimo-account-check.xyz",phishing,notice_pair_lure
+Colissimo : votre colis 995039020830 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+Nacex: no pudimos entregar el paquete 579621425064 porque la dirección está incompleta. Confírmela aquí: nacex-secure-id.info,phishing,notice_pair_lure
+Nacex: no pudimos entregar el paquete 579621425064. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Disney+: paket Anda diperpanjang hari ini seharga Rp3984000 kecuali dibatalkan. Hentikan tagihan: disney-verify-now.top,phishing,notice_pair_lure
+Disney+: paket Anda diperpanjang tanggal 28 seharga Rp3984000. Kelola di aplikasi atau disney.co.id.,ham,notice_pair_legit
+Nacex: el paquete 969550307101 está retenido por una tasa aduanera de 129.9€. Pague para liberarlo: nacex-customer-verify.live,phishing,notice_pair_lure
+Nacex: su paquete 969550307101 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+EDF: your electricity will be cut off today over an unpaid bill of £9.9. Settle now: cutt.ly/8kutrf,phishing,notice_pair_lure
+Banque Populaire : paiement de 9.9 € autorisé chez un nouveau commerçant avec la carte 2306. Annulez ici : banquepopula-customer-verify.live,phishing,notice_pair_lure
+"Banque Populaire : 9.9 € débités aujourd'hui de la carte 2306. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+"GLS: pakket 3005767476 is vastgehouden, douanekosten van €129.9 openstaand. Betaal om vrij te geven: gls-billing-update.online",phishing,notice_pair_lure
+GLS: uw pakket 3005767476 wordt vandaag tussen 14:00 en 18:00 bezorgd.,ham,notice_pair_legit
+EDF: Ihr Strom wird heute wegen einer offenen Rechnung über 3.5 € abgestellt. Jetzt begleichen: edf-secure-id.info,phishing,notice_pair_lure
+EDF: Ihre Stromrechnung über 3.5 € ist am 28. fällig. Zahlung in der App oder auf edf.de.,ham,notice_pair_legit
+Duolingo: Ihr Abo verlängert sich am 28. für 9.9 €. Verwalten Sie es in der App oder auf duolingo.de.,ham,notice_pair_legit
+"Colissimo : le colis 8997914936 est bloqué, frais de douane de 1.99 € impayés. Payez pour le libérer : colissimo-account-check.xyz",phishing,notice_pair_lure
+Colissimo : votre colis 8997914936 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+Nacex: no pudimos entregar el paquete 4825021562 porque la dirección está incompleta. Confírmela aquí: nacex-verify-now.top,phishing,notice_pair_lure
+Nacex: no pudimos entregar el paquete 4825021562. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Bankinter: no hemos podido verificar sus datos y su banca online queda suspendida. Restablezca el acceso en 24h: bankinter-customer-verify.live,phishing,notice_pair_lure
+Bankinter: su banca online estará en mantenimiento el domingo de 02:00 a 05:00. No necesita hacer nada.,ham,notice_pair_legit
+GLS: pakket 696353370451 is niet bezorgd omdat het adres onvolledig is. Bevestig het hier: gls-verify-now.top,phishing,notice_pair_lure
+GLS: pakket 696353370451 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+AnterAja: paket 7161210993 gagal dikirim karena alamat tidak lengkap. Konfirmasi di sini: anteraja-id-confirm.site,phishing,notice_pair_lure
+AnterAja: paket 7161210993 gagal dikirim dan menunggu di gerai selama 7 hari.,ham,notice_pair_legit
+"SiCepat: paket 554656485898 tertahan, biaya bea masuk Rp39200 belum dibayar. Bayar untuk melepaskan: sicepat-secure-id.info",phishing,notice_pair_lure
+SiCepat: paket 554656485898 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+Spotify: подписка продлится 28-го за 4320 ₽. Управление в приложении или на spotify.ru.,ham,notice_pair_legit
+"SiCepat: paket 694796654305 tertahan, biaya bea masuk Rp768000 belum dibayar. Bayar untuk melepaskan: is.gd/w5uhrr",phishing,notice_pair_lure
+SiCepat: paket 694796654305 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+PLN: 421 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: rb.gy/epc3mz,phishing,notice_pair_lure
+PLN: 421 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+Zalando: tiene un reembolso de 24.5€ pendiente. Introduzca los datos de su tarjeta para recibirlo: zalando-account-check.xyz,phishing,notice_pair_lure
+Zalando: su reembolso de 24.5€ se ha enviado a la tarjeta terminada en 8421. Puede tardar 5 días hábiles.,ham,notice_pair_legit
+EDF: Ihr Strom wird heute wegen einer offenen Rechnung über 2.45 € abgestellt. Jetzt begleichen: edf-account-check.xyz,phishing,notice_pair_lure
+Iberdrola: Ihr Strom wird heute wegen einer offenen Rechnung über 9.9 € abgestellt. Jetzt begleichen: t.ly/mrnyn3,phishing,notice_pair_lure
+Iberdrola: Ihre Stromrechnung über 9.9 € ist am 28. fällig. Zahlung in der App oder auf iberdrola.de.,ham,notice_pair_legit
+Spotify: il tuo piano si rinnova oggi a 24.5 € se non lo annulli. Blocca l'addebito: spotify-customer-verify.live,phishing,notice_pair_lure
+Spotify: il tuo piano si rinnova il 28 a 24.5 €. Gestiscilo nell'app o su spotify.it.,ham,notice_pair_legit
+GLS: Paket 8087208394 konnte wegen unvollständiger Adresse nicht zugestellt werden. Hier bestätigen: gls-billing-update.online,phishing,notice_pair_lure
+GLS: Paket 8087208394 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+"Trans-o-flex: Paket 769115968920 wird zurückgehalten, Zollgebühr von 1.99 € offen. Zum Freigeben zahlen: transoflex-portal-login.cc",phishing,notice_pair_lure
+Trans-o-flex: Paket 769115968920 wird heute zwischen 14:00 und 18:00 Uhr zugestellt.,ham,notice_pair_legit
+Citizens Bank: a payment of £9.9 to a new merchant was approved on card ending 5225. Cancel it here: citizensbank-portal-login.cc,phishing,notice_pair_lure
+"Citizens Bank: £9.9 was debited from card ending 5225 today. If you do not recognise it, call the number on your card.",ham,notice_pair_legit
+AnterAja: paket 592883066957 gagal dikirim dan menunggu di gerai selama 7 hari.,ham,notice_pair_legit
+Evri: we could not deliver parcel 426659440155 because the address is incomplete. Confirm it here: evri-billing-update.online,phishing,notice_pair_lure
+Evri: parcel 426659440155 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+Audible: paket Anda diperpanjang hari ini seharga Rp198400 kecuali dibatalkan. Hentikan tagihan: audible-verify-now.top,phishing,notice_pair_lure
+Audible: paket Anda diperpanjang tanggal 28 seharga Rp198400. Kelola di aplikasi atau audible.co.id.,ham,notice_pair_legit
+Spotify : votre abonnement se renouvelle aujourd'hui pour 19.99 € sauf annulation. Arrêtez le prélèvement : spotify-verify-now.top,phishing,notice_pair_lure
+Spotify : votre abonnement se renouvelle le 28 pour 19.99 €. Gérez-le dans l'application ou sur spotify.fr.,ham,notice_pair_legit
+Banco Falabella: se aprobó un pago de 9.9€ a un comercio nuevo con la tarjeta terminada en 4542. Cancélelo aquí: bancofalabel-billing-update.online,phishing,notice_pair_lure
+"Banco Falabella: cargo de 9.9€ en su tarjeta terminada en 4542. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+Duolingo: подписка продлится 28-го за 11691 ₽. Управление в приложении или на duolingo.ru.,ham,notice_pair_legit
+EDF: hoy se cortará la luz por una factura impagada de 24.5€. Regularice ahora: t.ly/wagwpy,phishing,notice_pair_lure
+GLS: pacco 665598486890 non consegnato per indirizzo incompleto. Confermalo qui: gls-customer-verify.live,phishing,notice_pair_lure
+GLS: pacco 665598486890 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Unicaja: se aprobó un pago de 249.0€ a un comercio nuevo con la tarjeta terminada en 1428. Cancélelo aquí: unicaja-account-check.xyz,phishing,notice_pair_lure
+"Unicaja: cargo de 249.0€ en su tarjeta terminada en 1428. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+PLN: your electricity will be cut off today over an unpaid bill of £129.9. Settle now: pln-account-check.xyz,phishing,notice_pair_lure
+زاجل: الطرد 178816229908 محتجز بسبب رسوم جمركية 2.45 ريال. ادفع للإفراج عنه: service-billing-update.online,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 178816229908 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Nacex: el paquete 693327321484 está retenido por una tasa aduanera de 48.0€. Pague para liberarlo: t.ly/amng5y,phishing,notice_pair_lure
+Nacex: su paquete 693327321484 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+"Evri: parcel 888003403182 is held, a customs fee of £1.99 is unpaid. Pay to release: evri-account-check.xyz",phishing,notice_pair_lure
+Evri: parcel 888003403182 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+"Caisse d'Epargne : 2.45 € débités aujourd'hui de la carte 8969. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+Hermes: Paket 965837486572 konnte wegen unvollständiger Adresse nicht zugestellt werden. Hier bestätigen: hermes-billing-update.online,phishing,notice_pair_lure
+Hermes: Paket 965837486572 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+Enel: Ihr Strom wird heute wegen einer offenen Rechnung über 249.0 € abgestellt. Jetzt begleichen: enel-account-check.xyz,phishing,notice_pair_lure
+Enel: Ihre Stromrechnung über 249.0 € ist am 28. fällig. Zahlung in der App oder auf enel.de.,ham,notice_pair_legit
+Zalando: вам положен возврат 179 ₽. Введите данные карты для получения: zalando-id-confirm.site,phishing,notice_pair_lure
+Zalando: возврат 179 ₽ отправлен на карту 9014. Зачисление занимает до 5 рабочих дней.,ham,notice_pair_legit
+Enel: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 12.4 ريال. سدد الآن: is.gd/yrkwzy,phishing,notice_pair_lure
+Enel: فاتورة الكهرباء بقيمة 12.4 ريال تستحق في الـ28. ادفع عبر التطبيق أو enel.com.,ham,notice_pair_legit
+Etsy: a refund of £19.99 is waiting for you. Enter your card details to receive it: t.ly/bt8uz4,phishing,notice_pair_lure
+Etsy: your refund of £19.99 was sent back to the card ending 6611. It can take 5 working days.,ham,notice_pair_legit
+"OCBC NISP: transaksi Rp392000 pada kartu 5129 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+"Norisbank: Ihre Daten konnten nicht bestätigt werden, das Online-Banking ist gesperrt. Zugang in 24 Std. freischalten: norisbank-id-confirm.site",phishing,notice_pair_lure
+Norisbank: Am Sonntag von 02:00 bis 05:00 Uhr ist das Online-Banking wegen Wartung nicht erreichbar.,ham,notice_pair_legit
+"Nationwide: £12.4 was debited from card ending 4381 today. If you do not recognise it, call the number on your card.",ham,notice_pair_legit
+"Sürat Kargo: 759442839080 numaralı kargo gümrükte, 67 TL tutarında ödeme bekleniyor. Serbest bırakmak için ödeyin: rb.gy/aemrdw",phishing,notice_pair_lure
+Sürat Kargo: 759442839080 numaralı kargonuz bugün 14:00-18:00 arasında teslim edilecek.,ham,notice_pair_legit
+LCL : paiement de 24.5 € autorisé chez un nouveau commerçant avec la carte 2150. Annulez ici : lcl-portal-login.cc,phishing,notice_pair_lure
+"LCL : 24.5 € débités aujourd'hui de la carte 2150. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+زاجل: الطرد 059228212444 محتجز بسبب رسوم جمركية 249.0 ريال. ادفع للإفراج عنه: service-billing-update.online,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 059228212444 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Spotify: il tuo piano si rinnova oggi a 48.0 € se non lo annulli. Blocca l'addebito: spotify-billing-update.online,phishing,notice_pair_lure
+Spotify: il tuo piano si rinnova il 28 a 48.0 €. Gestiscilo nell'app o su spotify.it.,ham,notice_pair_legit
+OnTrac: parcel 3470639690 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+Strava: Ihr Abo verlängert sich am 28. für 2.45 €. Verwalten Sie es in der App oder auf strava.de.,ham,notice_pair_legit
+Duolingo: il tuo piano si rinnova oggi a 48.0 € se non lo annulli. Blocca l'addebito: duolingo-account-check.xyz,phishing,notice_pair_lure
+Duolingo: il tuo piano si rinnova il 28 a 48.0 €. Gestiscilo nell'app o su duolingo.it.,ham,notice_pair_legit
+Abanca: se aprobó un pago de 9.9€ a un comercio nuevo con la tarjeta terminada en 8191. Cancélelo aquí: abanca-billing-update.online,phishing,notice_pair_lure
+"Abanca: cargo de 9.9€ en su tarjeta terminada en 8191. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+Strava: paket Anda diperpanjang hari ini seharga Rp158400 kecuali dibatalkan. Hentikan tagihan: strava-id-confirm.site,phishing,notice_pair_lure
+Strava: paket Anda diperpanjang tanggal 28 seharga Rp158400. Kelola di aplikasi atau strava.co.id.,ham,notice_pair_legit
+Disney+: paket Anda diperpanjang hari ini seharga Rp2078400 kecuali dibatalkan. Hentikan tagihan: disney-account-check.xyz,phishing,notice_pair_lure
+Disney+: paket Anda diperpanjang tanggal 28 seharga Rp2078400. Kelola di aplikasi atau disney.co.id.,ham,notice_pair_legit
+E.ON: Ihr Strom wird heute wegen einer offenen Rechnung über 249.0 € abgestellt. Jetzt begleichen: eon-secure-id.info,phishing,notice_pair_lure
+E.ON: Ihre Stromrechnung über 249.0 € ist am 28. fällig. Zahlung in der App oder auf eon.de.,ham,notice_pair_legit
+GLS: pakket 961608179227 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+"BPER: per bloccare il bonifico appena fermato, rispondi con il codice 676228.",phishing,notice_pair_lure
+BPER: 676228 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+Caisse d'Epargne : paiement de 129.9 € autorisé chez un nouveau commerçant avec la carte 7688. Annulez ici : caissedeparg-id-confirm.site,phishing,notice_pair_lure
+"Caisse d'Epargne : 129.9 € débités aujourd'hui de la carte 7688. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+زاجل: الطرد 1850309870 محتجز بسبب رسوم جمركية 24.5 ريال. ادفع للإفراج عنه: t.ly/pexm3n,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 1850309870 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Hermes: Paket 9360996164 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+"Bank Permata: untuk membatalkan transfer yang kami blokir, balas dengan kode 807589.",phishing,notice_pair_lure
+EDF : votre électricité sera coupée aujourd'hui pour une facture impayée de 48.0 €. Régularisez : edf-portal-login.cc,phishing,notice_pair_lure
+"Disney+: подписка продлится сегодня за 220 ₽, если не отменить. Остановить списание: disney-billing-update.online",phishing,notice_pair_lure
+Disney+: подписка продлится 28-го за 220 ₽. Управление в приложении или на disney.ru.,ham,notice_pair_legit
+Enel: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 9.9 ريال. سدد الآن: enel-verify-now.top,phishing,notice_pair_lure
+"Postbank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 846678.",phishing,notice_pair_lure
+Postbank: 846678 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+"GLS : le colis 3230253106 est bloqué, frais de douane de 249.0 € impayés. Payez pour le libérer : gls-secure-id.info",phishing,notice_pair_lure
+GLS : votre colis 3230253106 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+بنك الرياض: تعذر التحقق من بياناتك وتم تعليق الخدمة المصرفية. استعد الوصول خلال 24 ساعة: service-account-check.xyz,phishing,notice_pair_lure
+بنك الرياض: ستكون الخدمة المصرفية عبر الإنترنت تحت الصيانة يوم الأحد من 02:00 حتى 05:00.,ham,notice_pair_legit
+GLS: no pudimos entregar el paquete 883527816366 porque la dirección está incompleta. Confírmela aquí: gls-secure-id.info,phishing,notice_pair_lure
+GLS: no pudimos entregar el paquete 883527816366. Queda 7 días en su oficina local.,ham,notice_pair_legit
+"Banco Desio: addebito di 129.9 € sulla carta 6844. Se non lo riconosci, chiama il numero sul retro della carta.",ham,notice_pair_legit
+Booking: eine Rückerstattung von 19.99 € wartet auf Sie. Kartendaten eingeben zum Erhalt: booking-account-check.xyz,phishing,notice_pair_lure
+Booking: Ihre Rückerstattung über 19.99 € ging an die Karte 2144. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+"Disney+: подписка продлится сегодня за 179 ₽, если не отменить. Остановить списание: disney-id-confirm.site",phishing,notice_pair_lure
+Disney+: подписка продлится 28-го за 179 ₽. Управление в приложении или на disney.ru.,ham,notice_pair_legit
+"Poste Delivery: il pacco 751402712391 è fermo, tassa doganale di 9.9 € non pagata. Paga per liberarlo: t.ly/epqqrq",phishing,notice_pair_lure
+Poste Delivery: il pacco 751402712391 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+"LCL : vos informations n'ont pas pu être vérifiées, votre banque en ligne est suspendue. Rétablissez l'accès sous 24h : lcl-customer-verify.live",phishing,notice_pair_lure
+LCL : maintenance de la banque en ligne dimanche de 02h00 à 05h00. Aucune action de votre part.,ham,notice_pair_legit
+Audible: your plan renews today for £129.9 unless you cancel. Stop the charge: audible-verify-now.top,phishing,notice_pair_lure
+Audible: your plan renews on the 28th for £129.9. Manage it in the app or at audible.com.,ham,notice_pair_legit
+Enel: Ihr Strom wird heute wegen einer offenen Rechnung über 9.9 € abgestellt. Jetzt begleichen: enel-account-check.xyz,phishing,notice_pair_lure
+Enel: Ihre Stromrechnung über 9.9 € ist am 28. fällig. Zahlung in der App oder auf enel.de.,ham,notice_pair_legit
+EDF: listrik Anda akan diputus hari ini karena tagihan Rp392000 belum dibayar. Bayar sekarang: edf-id-confirm.site,phishing,notice_pair_lure
+EDF: tagihan listrik Rp392000 jatuh tempo tanggal 28. Bayar di aplikasi atau edf.co.id.,ham,notice_pair_legit
+"Volksbank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 374483.",phishing,notice_pair_lure
+Volksbank: 374483 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+"Hermes: Paket 5407851701 wird zurückgehalten, Zollgebühr von 48.0 € offen. Zum Freigeben zahlen: hermes-account-check.xyz",phishing,notice_pair_lure
+Hermes: Paket 5407851701 wird heute zwischen 14:00 und 18:00 Uhr zugestellt.,ham,notice_pair_legit
+"BPER: addebito di 9.9 € sulla carta 7863. Se non lo riconosci, chiama il numero sul retro della carta.",ham,notice_pair_legit
+OCBC NISP: pembayaran Rp3984000 ke merchant baru dari kartu 8288 disetujui. Batalkan di sini: ocbcnisp-billing-update.online,phishing,notice_pair_lure
+"OCBC NISP: transaksi Rp3984000 pada kartu 8288 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+Совкомбанк: платёж 220 ₽ новому получателю по карте 9538 одобрен. Отмените здесь: service-billing-update.online,phishing,notice_pair_lure
+"Совкомбанк: списание 220 ₽ по карте 9538. Если это не вы, позвоните по номеру на обороте карты.",ham,notice_pair_legit
+Strava: paket Anda diperpanjang tanggal 28 seharga Rp31840. Kelola di aplikasi atau strava.co.id.,ham,notice_pair_legit
+GLS: pakket 9360263595 is niet bezorgd omdat het adres onvolledig is. Bevestig het hier: gls-verify-now.top,phishing,notice_pair_lure
+GLS: pakket 9360263595 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+Bank Permata: pembayaran Rp2078400 ke merchant baru dari kartu 1694 disetujui. Batalkan di sini: bankpermata-customer-verify.live,phishing,notice_pair_lure
+"Bank Permata: transaksi Rp2078400 pada kartu 1694 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+Strava: your plan renews on the 28th for £2.45. Manage it in the app or at strava.com.,ham,notice_pair_legit
+"BPER: addebito di 48.0 € sulla carta 1232. Se non lo riconosci, chiama il numero sul retro della carta.",ham,notice_pair_legit
+SDA: pacco 044214002327 non consegnato per indirizzo incompleto. Confermalo qui: sda-portal-login.cc,phishing,notice_pair_lure
+SDA: pacco 044214002327 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+"Regions Bank: we could not verify your details, so online banking is suspended. Restore access within 24h: is.gd/2wzva3",phishing,notice_pair_lure
+Regions Bank: online banking will be unavailable on Sunday 02:00-05:00 for maintenance. No action needed.,ham,notice_pair_legit
+E.ON: hoy se cortará la luz por una factura impagada de 2.45€. Regularice ahora: is.gd/e8u898,phishing,notice_pair_lure
+PLN: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 3.5 ريال. سدد الآن: pln-customer-verify.live,phishing,notice_pair_lure
+"СДЭК: посылку 6645829044 не доставили, адрес неполный. Подтвердите его здесь: service-account-check.xyz",phishing,notice_pair_lure
+СДЭК: посылку 6645829044 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+"Denizbank: bilgileriniz doğrulanamadı, internet bankacılığınız askıya alındı. 24 saat içinde erişimi açın: denizbank-portal-login.cc",phishing,notice_pair_lure
+Denizbank: Pazar günü 02:00-05:00 arası internet bankacılığı bakımda olacaktır. İşlem yapmanıza gerek yok.,ham,notice_pair_legit
+Etsy: a refund of £129.9 is waiting for you. Enter your card details to receive it: etsy-account-check.xyz,phishing,notice_pair_lure
+Etsy: your refund of £129.9 was sent back to the card ending 2130. It can take 5 working days.,ham,notice_pair_legit
+Regions Bank: 755802 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+"Postbank: Ihre Daten konnten nicht bestätigt werden, das Online-Banking ist gesperrt. Zugang in 24 Std. freischalten: postbank-verify-now.top",phishing,notice_pair_lure
+Postbank: Am Sonntag von 02:00 bis 05:00 Uhr ist das Online-Banking wegen Wartung nicht erreichbar.,ham,notice_pair_legit
+بنك الرياض: 741516 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Duolingo: su plan se renueva hoy por 129.9€ si no lo cancela. Detenga el cobro: duolingo-id-confirm.site,phishing,notice_pair_lure
+Duolingo: su plan se renovará el día 28 por 129.9€. Gestiónelo en la app o en duolingo.es.,ham,notice_pair_legit
+E.ON: your electricity will be cut off today over an unpaid bill of £2.45. Settle now: eon-id-confirm.site,phishing,notice_pair_lure
+E.ON: your electricity bill of £2.45 is due on the 28th. Pay in the app or at eon.com.,ham,notice_pair_legit
+"Audible: Ihr Abo verlängert sich heute für 249.0 €, wenn Sie nicht kündigen. Abbuchung stoppen: audible-billing-update.online",phishing,notice_pair_lure
+Audible: Ihr Abo verlängert sich am 28. für 249.0 €. Verwalten Sie es in der App oder auf audible.de.,ham,notice_pair_legit
+"Совкомбанк: чтобы отменить заблокированный перевод, отправьте в ответ код 695010.",phishing,notice_pair_lure
+Совкомбанк: 695010 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+"GLS: il pacco 9243742070 è fermo, tassa doganale di 3.5 € non pagata. Paga per liberarlo: gls-secure-id.info",phishing,notice_pair_lure
+GLS: il pacco 9243742070 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+"Боксберри: посылку 1306647877 не доставили, адрес неполный. Подтвердите его здесь: service-id-confirm.site",phishing,notice_pair_lure
+Боксберри: посылку 1306647877 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+Боксберри: посылку 9633378157 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+بنك الجزيرة: تم خصم 1.99 ريال من بطاقتك 1974. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+Zalando : un remboursement de 249.0 € vous attend. Saisissez vos coordonnées bancaires : is.gd/kh46fs,phishing,notice_pair_lure
+Zalando : votre remboursement de 249.0 € a été envoyé sur la carte 5983. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+LCL : paiement de 3.5 € autorisé chez un nouveau commerçant avec la carte 6518. Annulez ici : lcl-portal-login.cc,phishing,notice_pair_lure
+"LCL : 3.5 € débités aujourd'hui de la carte 6518. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+Audible: su plan se renueva hoy por 249.0€ si no lo cancela. Detenga el cobro: audible-verify-now.top,phishing,notice_pair_lure
+Audible: su plan se renovará el día 28 por 249.0€. Gestiónelo en la app o en audible.es.,ham,notice_pair_legit
+"Hermes: Paket 958464777726 wird zurückgehalten, Zollgebühr von 48.0 € offen. Zum Freigeben zahlen: is.gd/uueesp",phishing,notice_pair_lure
+Hermes: Paket 958464777726 wird heute zwischen 14:00 und 18:00 Uhr zugestellt.,ham,notice_pair_legit
+"SDA: il pacco 0776137214 è fermo, tassa doganale di 9.9 € non pagata. Paga per liberarlo: sda-verify-now.top",phishing,notice_pair_lure
+SDA: il pacco 0776137214 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+"Spotify: подписка продлится сегодня за 220 ₽, если не отменить. Остановить списание: spotify-customer-verify.live",phishing,notice_pair_lure
+Spotify: подписка продлится 28-го за 220 ₽. Управление в приложении или на spotify.ru.,ham,notice_pair_legit
+AliExpress: pengembalian dana Rp31840 menunggu Anda. Masukkan data kartu untuk menerimanya: aliexpress-id-confirm.site,phishing,notice_pair_lure
+AliExpress: dana Rp31840 telah dikembalikan ke kartu 6620. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+"Mondial Relay : le colis 4064182152 est bloqué, frais de douane de 19.99 € impayés. Payez pour le libérer : mondialrelay-portal-login.cc",phishing,notice_pair_lure
+Mondial Relay : votre colis 4064182152 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+Strava: подписка продлится 28-го за 891 ₽. Управление в приложении или на strava.ru.,ham,notice_pair_legit
+Etsy: вам положен возврат 1799 ₽. Введите данные карты для получения: t.ly/p4vy9y,phishing,notice_pair_lure
+Etsy: возврат 1799 ₽ отправлен на карту 5484. Зачисление занимает до 5 рабочих дней.,ham,notice_pair_legit
+PLN : votre électricité sera coupée aujourd'hui pour une facture impayée de 249.0 €. Régularisez : is.gd/z3wjah,phishing,notice_pair_lure
+Shein: un rimborso di 249.0 € ti aspetta. Inserisci i dati della carta per riceverlo: shein-id-confirm.site,phishing,notice_pair_lure
+Shein: il rimborso di 249.0 € è stato inviato sulla carta 8770. Possono servire 5 giorni lavorativi.,ham,notice_pair_legit
+Spotify: your plan renews today for £1.99 unless you cancel. Stop the charge: spotify-account-check.xyz,phishing,notice_pair_lure
+Spotify: your plan renews on the 28th for £1.99. Manage it in the app or at spotify.com.,ham,notice_pair_legit
+LCL : 899063 est votre code de connexion. Nous ne vous le demanderons jamais.,ham,notice_pair_legit
+"Почта: посылка 468475781153 задержана, таможенный сбор 1116 ₽ не оплачен. Оплатите для выдачи: service-verify-now.top",phishing,notice_pair_lure
+Почта: посылка 468475781153 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+E.ON : votre électricité sera coupée aujourd'hui pour une facture impayée de 2.45 €. Régularisez : shorturl.at/4km8bq,phishing,notice_pair_lure
+Iberdrola : votre électricité sera coupée aujourd'hui pour une facture impayée de 24.5 €. Régularisez : iberdrola-portal-login.cc,phishing,notice_pair_lure
+Iberdrola : votre facture d'électricité de 24.5 € est due le 28. Payez dans l'application ou sur iberdrola.fr.,ham,notice_pair_legit
+EDF: Ihr Strom wird heute wegen einer offenen Rechnung über 9.9 € abgestellt. Jetzt begleichen: edf-billing-update.online,phishing,notice_pair_lure
+EDF: Ihre Stromrechnung über 9.9 € ist am 28. fällig. Zahlung in der App oder auf edf.de.,ham,notice_pair_legit
+Strava: su plan se renovará el día 28 por 249.0€. Gestiónelo en la app o en strava.es.,ham,notice_pair_legit
+"Боксберри: посылку 4221753933 не доставили, адрес неполный. Подтвердите его здесь: service-billing-update.online",phishing,notice_pair_lure
+Боксберри: посылку 4221753933 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+"Уралсиб: не удалось подтвердить ваши данные, интернет-банк заблокирован. Восстановите доступ за 24 часа: service-customer-verify.live",phishing,notice_pair_lure
+Уралсиб: в воскресенье с 02:00 до 05:00 интернет-банк будет недоступен из-за техработ.,ham,notice_pair_legit
+"Credem: addebito di 129.9 € sulla carta 8519. Se non lo riconosci, chiama il numero sul retro della carta.",ham,notice_pair_legit
+"Colissimo : colis 4256339782 non livré, adresse incomplète. Confirmez-la ici : is.gd/zdsxa4",phishing,notice_pair_lure
+Colissimo : colis 4256339782 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+Disney+: su plan se renovará el día 28 por 249.0€. Gestiónelo en la app o en disney.es.,ham,notice_pair_legit
+Audible: paket Anda diperpanjang hari ini seharga Rp2078400 kecuali dibatalkan. Hentikan tagihan: audible-billing-update.online,phishing,notice_pair_lure
+Audible: paket Anda diperpanjang tanggal 28 seharga Rp2078400. Kelola di aplikasi atau audible.co.id.,ham,notice_pair_legit
+"Caisse d'Epargne : pour annuler le virement que nous avons bloqué, répondez avec le code 144344.",phishing,notice_pair_lure
+Şekerbank: 5407 ile biten kartınızdan 67 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+"Duolingo: Ihr Abo verlängert sich heute für 19.99 €, wenn Sie nicht kündigen. Abbuchung stoppen: duolingo-verify-now.top",phishing,notice_pair_lure
+Duolingo: Ihr Abo verlängert sich am 28. für 19.99 €. Verwalten Sie es in der App oder auf duolingo.de.,ham,notice_pair_legit
+Denizbank: 5911 ile biten kartınızdan yeni bir üye iş yerine 336 TL ödeme onaylandı. Buradan iptal edin: denizbank-account-check.xyz,phishing,notice_pair_lure
+Denizbank: 5911 ile biten kartınızdan 336 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+Volksbank: 12.4 € wurden heute von Karte 9358 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+Strava: su plan se renovará el día 28 por 1.99€. Gestiónelo en la app o en strava.es.,ham,notice_pair_legit
+"Боксберри: посылку 103130255879 не доставили, адрес неполный. Подтвердите его здесь: service-billing-update.online",phishing,notice_pair_lure
+Боксберри: посылку 103130255879 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+SDA: pacco 017906869810 non consegnato per indirizzo incompleto. Confermalo qui: sda-secure-id.info,phishing,notice_pair_lure
+SDA: pacco 017906869810 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Denizbank: 3454 ile biten kartınızdan yeni bir üye iş yerine 8466 TL ödeme onaylandı. Buradan iptal edin: shorturl.at/8mr8th,phishing,notice_pair_lure
+Denizbank: 3454 ile biten kartınızdan 8466 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+DHL Parcel: pakket 6373207372 is niet bezorgd omdat het adres onvolledig is. Bevestig het hier: dhlparcel-id-confirm.site,phishing,notice_pair_lure
+DHL Parcel: pakket 6373207372 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+LCL : 8610 est votre code de connexion. Nous ne vous le demanderons jamais.,ham,notice_pair_legit
+"СДЭК: посылку 306598478536 не доставили, адрес неполный. Подтвердите его здесь: service-secure-id.info",phishing,notice_pair_lure
+СДЭК: посылку 306598478536 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+Strava: Ihr Abo verlängert sich am 28. für 12.4 €. Verwalten Sie es in der App oder auf strava.de.,ham,notice_pair_legit
+MRW: no pudimos entregar el paquete 025065736369. Queda 7 días en su oficina local.,ham,notice_pair_legit
+AliExpress : un remboursement de 24.5 € vous attend. Saisissez vos coordonnées bancaires : aliexpress-id-confirm.site,phishing,notice_pair_lure
+Crédit Mutuel : paiement de 3.5 € autorisé chez un nouveau commerçant avec la carte 5236. Annulez ici : crditmutuel-portal-login.cc,phishing,notice_pair_lure
+"Crédit Mutuel : 3.5 € débités aujourd'hui de la carte 5236. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+"DHL Parcel: pakket 962324705267 is vastgehouden, douanekosten van €129.9 openstaand. Betaal om vrij te geven: cutt.ly/grggg6",phishing,notice_pair_lure
+DHL Parcel: uw pakket 962324705267 wordt vandaag tussen 14:00 en 18:00 bezorgd.,ham,notice_pair_legit
+Nacex: el paquete 0954143133 está retenido por una tasa aduanera de 19.99€. Pague para liberarlo: nacex-billing-update.online,phishing,notice_pair_lure
+Nacex: su paquete 0954143133 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+Iberdrola : votre électricité sera coupée aujourd'hui pour une facture impayée de 48.0 €. Régularisez : iberdrola-portal-login.cc,phishing,notice_pair_lure
+Iberdrola : votre facture d'électricité de 48.0 € est due le 28. Payez dans l'application ou sur iberdrola.fr.,ham,notice_pair_legit
+GLS: pacco 527763119055 non consegnato per indirizzo incompleto. Confermalo qui: gls-customer-verify.live,phishing,notice_pair_lure
+GLS: pacco 527763119055 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+بنك الرياض: 499418 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Enel: listrik Anda akan diputus hari ini karena tagihan Rp39200 belum dibayar. Bayar sekarang: enel-secure-id.info,phishing,notice_pair_lure
+Enel: tagihan listrik Rp39200 jatuh tempo tanggal 28. Bayar di aplikasi atau enel.co.id.,ham,notice_pair_legit
+Shein: un rimborso di 19.99 € ti aspetta. Inserisci i dati della carta per riceverlo: shein-verify-now.top,phishing,notice_pair_lure
+Shein: il rimborso di 19.99 € è stato inviato sulla carta 7198. Possono servire 5 giorni lavorativi.,ham,notice_pair_legit
+Duolingo: paket Anda diperpanjang tanggal 28 seharga Rp56000. Kelola di aplikasi atau duolingo.co.id.,ham,notice_pair_legit
+Zalando : un remboursement de 3.5 € vous attend. Saisissez vos coordonnées bancaires : zalando-verify-now.top,phishing,notice_pair_lure
+Zalando : votre remboursement de 3.5 € a été envoyé sur la carte 5233. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+Enel: Ihr Strom wird heute wegen einer offenen Rechnung über 48.0 € abgestellt. Jetzt begleichen: rb.gy/ynukr5,phishing,notice_pair_lure
+Enel: Ihre Stromrechnung über 48.0 € ist am 28. fällig. Zahlung in der App oder auf enel.de.,ham,notice_pair_legit
+"AnterAja: paket 323678686012 tertahan, biaya bea masuk Rp158400 belum dibayar. Bayar untuk melepaskan: is.gd/knk3dy",phishing,notice_pair_lure
+AnterAja: paket 323678686012 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+PLN: listrik Anda akan diputus hari ini karena tagihan Rp56000 belum dibayar. Bayar sekarang: pln-billing-update.online,phishing,notice_pair_lure
+Spotify: il tuo piano si rinnova oggi a 19.99 € se non lo annulli. Blocca l'addebito: spotify-billing-update.online,phishing,notice_pair_lure
+Spotify: il tuo piano si rinnova il 28 a 19.99 €. Gestiscilo nell'app o su spotify.it.,ham,notice_pair_legit
+Iberdrola: hoy se cortará la luz por una factura impagada de 1.99€. Regularice ahora: is.gd/gv8nq7,phishing,notice_pair_lure
+"Poste Delivery: il pacco 454060810301 è fermo, tassa doganale di 12.4 € non pagata. Paga per liberarlo: postedeliver-portal-login.cc",phishing,notice_pair_lure
+Poste Delivery: il pacco 454060810301 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+"LCL : 249.0 € débités aujourd'hui de la carte 3485. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+"Targobank: Ihre Daten konnten nicht bestätigt werden, das Online-Banking ist gesperrt. Zugang in 24 Std. freischalten: is.gd/avuezp",phishing,notice_pair_lure
+Targobank: Am Sonntag von 02:00 bis 05:00 Uhr ist das Online-Banking wegen Wartung nicht erreichbar.,ham,notice_pair_legit
+"AnterAja: paket 820437023158 tertahan, biaya bea masuk Rp158400 belum dibayar. Bayar untuk melepaskan: cutt.ly/67nexr",phishing,notice_pair_lure
+AnterAja: paket 820437023158 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+"Росбанк: не удалось подтвердить ваши данные, интернет-банк заблокирован. Восстановите доступ за 24 часа: is.gd/yapqds",phishing,notice_pair_lure
+Росбанк: в воскресенье с 02:00 до 05:00 интернет-банк будет недоступен из-за техработ.,ham,notice_pair_legit
+AliExpress: eine Rückerstattung von 1.99 € wartet auf Sie. Kartendaten eingeben zum Erhalt: is.gd/sn9u7p,phishing,notice_pair_lure
+AliExpress: Ihre Rückerstattung über 1.99 € ging an die Karte 8036. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+Iberdrola: 8466 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: cutt.ly/ty2ny6,phishing,notice_pair_lure
+Iberdrola: 8466 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+"Боксберри: посылку 256178819913 не доставили, адрес неполный. Подтвердите его здесь: service-billing-update.online",phishing,notice_pair_lure
+Боксберри: посылку 256178819913 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+"Banca Sella: addebito di 249.0 € sulla carta 8327. Se non lo riconosci, chiama il numero sul retro della carta.",ham,notice_pair_legit
+EDF: 4416 TL tutarındaki ödenmemiş fatura nedeniyle elektriğiniz bugün kesilecek. Şimdi ödeyin: edf-customer-verify.live,phishing,notice_pair_lure
+EDF: 4416 TL tutarındaki elektrik faturanızın son ödeme günü ayın 28'i. Uygulamadan ödeyebilirsiniz.,ham,notice_pair_legit
+"Bank Permata: untuk membatalkan transfer yang kami blokir, balas dengan kode 440394.",phishing,notice_pair_lure
+Shein: un rimborso di 3.5 € ti aspetta. Inserisci i dati della carta per riceverlo: is.gd/r3bjbk,phishing,notice_pair_lure
+Shein: il rimborso di 3.5 € è stato inviato sulla carta 8122. Possono servire 5 giorni lavorativi.,ham,notice_pair_legit
+Abanca: no hemos podido verificar sus datos y su banca online queda suspendida. Restablezca el acceso en 24h: is.gd/cf6627,phishing,notice_pair_lure
+Abanca: su banca online estará en mantenimiento el domingo de 02:00 a 05:00. No necesita hacer nada.,ham,notice_pair_legit
+"Совкомбанк: чтобы отменить заблокированный перевод, отправьте в ответ код 799089.",phishing,notice_pair_lure
+Совкомбанк: 799089 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+Halifax: 256377 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+Shein: pengembalian dana Rp39200 menunggu Anda. Masukkan data kartu untuk menerimanya: shein-id-confirm.site,phishing,notice_pair_lure
+Shein: dana Rp39200 telah dikembalikan ke kartu 7472. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+"Боксберри: посылка 2349742769 задержана, таможенный сбор 11691 ₽ не оплачен. Оплатите для выдачи: service-account-check.xyz",phishing,notice_pair_lure
+Боксберри: посылка 2349742769 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+Halifax: 761215 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+Targobank: 53734 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+Halifax: a payment of £3.5 to a new merchant was approved on card ending 7280. Cancel it here: halifax-verify-now.top,phishing,notice_pair_lure
+"Halifax: £3.5 was debited from card ending 7280 today. If you do not recognise it, call the number on your card.",ham,notice_pair_legit
+Poste Delivery: pacco 3767726391 non consegnato per indirizzo incompleto. Confermalo qui: shorturl.at/jtm5rg,phishing,notice_pair_lure
+Poste Delivery: pacco 3767726391 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Etsy : un remboursement de 2.45 € vous attend. Saisissez vos coordonnées bancaires : etsy-account-check.xyz,phishing,notice_pair_lure
+"Volksbank: Ihre Daten konnten nicht bestätigt werden, das Online-Banking ist gesperrt. Zugang in 24 Std. freischalten: volksbank-account-check.xyz",phishing,notice_pair_lure
+Volksbank: Am Sonntag von 02:00 bis 05:00 Uhr ist das Online-Banking wegen Wartung nicht erreichbar.,ham,notice_pair_legit
+"Spotify: Ihr Abo verlängert sich heute für 48.0 €, wenn Sie nicht kündigen. Abbuchung stoppen: spotify-account-check.xyz",phishing,notice_pair_lure
+Spotify: Ihr Abo verlängert sich am 28. für 48.0 €. Verwalten Sie es in der App oder auf spotify.de.,ham,notice_pair_legit
+Strava: Ihr Abo verlängert sich am 28. für 24.5 €. Verwalten Sie es in der App oder auf strava.de.,ham,notice_pair_legit
+Bankinter: 944792 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+AliExpress: pengembalian dana Rp392000 menunggu Anda. Masukkan data kartu untuk menerimanya: aliexpress-id-confirm.site,phishing,notice_pair_lure
+AliExpress: dana Rp392000 telah dikembalikan ke kartu 7125. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+PLN: hoy se cortará la luz por una factura impagada de 9.9€. Regularice ahora: is.gd/mdrfh7,phishing,notice_pair_lure
+Yodel: we could not deliver parcel 6684905985 because the address is incomplete. Confirm it here: yodel-customer-verify.live,phishing,notice_pair_lure
+Yodel: parcel 6684905985 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+SDA: pacco 724887118524 non consegnato per indirizzo incompleto. Confermalo qui: sda-account-check.xyz,phishing,notice_pair_lure
+SDA: pacco 724887118524 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Zalando : un remboursement de 2.45 € vous attend. Saisissez vos coordonnées bancaires : t.ly/npwufq,phishing,notice_pair_lure
+Zalando : votre remboursement de 2.45 € a été envoyé sur la carte 1305. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+OCBC NISP: pembayaran Rp158400 ke merchant baru dari kartu 8946 disetujui. Batalkan di sini: ocbcnisp-id-confirm.site,phishing,notice_pair_lure
+"OCBC NISP: transaksi Rp158400 pada kartu 8946 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+Booking: eine Rückerstattung von 3.5 € wartet auf Sie. Kartendaten eingeben zum Erhalt: cutt.ly/73uvzz,phishing,notice_pair_lure
+Booking: Ihre Rückerstattung über 3.5 € ging an die Karte 6789. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+Shein: pengembalian dana Rp392000 menunggu Anda. Masukkan data kartu untuk menerimanya: shein-billing-update.online,phishing,notice_pair_lure
+Shein: dana Rp392000 telah dikembalikan ke kartu 6005. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+"Banque Populaire : pour annuler le virement que nous avons bloqué, répondez avec le code 126533.",phishing,notice_pair_lure
+"Почта: посылку 373378033334 не доставили, адрес неполный. Подтвердите его здесь: cutt.ly/jub7y5",phishing,notice_pair_lure
+Почта: посылку 373378033334 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+Nacex: no pudimos entregar el paquete 2864528575. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Enel: your electricity will be cut off today over an unpaid bill of £129.9. Settle now: enel-billing-update.online,phishing,notice_pair_lure
+Enel: your electricity bill of £129.9 is due on the 28th. Pay in the app or at enel.com.,ham,notice_pair_legit
+DPD: pakket 1639597532 is niet bezorgd omdat het adres onvolledig is. Bevestig het hier: t.ly/bpq8uu,phishing,notice_pair_lure
+DPD: pakket 1639597532 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+Shein: a refund of £9.9 is waiting for you. Enter your card details to receive it: shein-id-confirm.site,phishing,notice_pair_lure
+Shein: your refund of £9.9 was sent back to the card ending 8594. It can take 5 working days.,ham,notice_pair_legit
+MRW: no pudimos entregar el paquete 973428674032 porque la dirección está incompleta. Confírmela aquí: mrw-account-check.xyz,phishing,notice_pair_lure
+MRW: no pudimos entregar el paquete 973428674032. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Yodel: we could not deliver parcel 095519319068 because the address is incomplete. Confirm it here: yodel-account-check.xyz,phishing,notice_pair_lure
+Yodel: parcel 095519319068 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+"Banco Desio: per bloccare il bonifico appena fermato, rispondi con il codice 969769.",phishing,notice_pair_lure
+Banco Desio: 969769 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+Zalando: eine Rückerstattung von 249.0 € wartet auf Sie. Kartendaten eingeben zum Erhalt: is.gd/3kx85x,phishing,notice_pair_lure
+Zalando: Ihre Rückerstattung über 249.0 € ging an die Karte 4328. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+PLN: your electricity will be cut off today over an unpaid bill of £249.0. Settle now: pln-secure-id.info,phishing,notice_pair_lure
+"Colissimo : colis 696040871473 non livré, adresse incomplète. Confirmez-la ici : colissimo-customer-verify.live",phishing,notice_pair_lure
+Colissimo : colis 696040871473 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+Yodel: we could not deliver parcel 5362768463 because the address is incomplete. Confirm it here: yodel-verify-now.top,phishing,notice_pair_lure
+Yodel: parcel 5362768463 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+Colissimo : colis 5866522380 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+"Credem: per bloccare il bonifico appena fermato, rispondi con il codice 999201.",phishing,notice_pair_lure
+Credem: 999201 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+DHL Parcel: pakket 6256592383 is niet bezorgd omdat het adres onvolledig is. Bevestig het hier: dhlparcel-verify-now.top,phishing,notice_pair_lure
+DHL Parcel: pakket 6256592383 is niet bezorgd en ligt 7 dagen klaar in het depot.,ham,notice_pair_legit
+Nationwide: a payment of £1.99 to a new merchant was approved on card ending 2781. Cancel it here: nationwide-customer-verify.live,phishing,notice_pair_lure
+"Nationwide: £1.99 was debited from card ending 2781 today. If you do not recognise it, call the number on your card.",ham,notice_pair_legit
+Enel: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 24.5 ريال. سدد الآن: enel-verify-now.top,phishing,notice_pair_lure
+"GLS : le colis 3746211428 est bloqué, frais de douane de 24.5 € impayés. Payez pour le libérer : shorturl.at/3nnkt2",phishing,notice_pair_lure
+GLS : votre colis 3746211428 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+GLS : colis 7109068091 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+PLN: your electricity will be cut off today over an unpaid bill of £1.99. Settle now: pln-portal-login.cc,phishing,notice_pair_lure
+Credem: 855441 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+E.ON : votre électricité sera coupée aujourd'hui pour une facture impayée de 1.99 €. Régularisez : eon-portal-login.cc,phishing,notice_pair_lure
+"Banque Populaire : pour annuler le virement que nous avons bloqué, répondez avec le code 218666.",phishing,notice_pair_lure
+Disney+ : votre abonnement se renouvelle aujourd'hui pour 19.99 € sauf annulation. Arrêtez le prélèvement : disney-id-confirm.site,phishing,notice_pair_lure
+Disney+ : votre abonnement se renouvelle le 28 pour 19.99 €. Gérez-le dans l'application ou sur disney.fr.,ham,notice_pair_legit
+"Боксберри: посылка 061835171754 задержана, таможенный сбор 1116 ₽ не оплачен. Оплатите для выдачи: t.ly/6jxzcd",phishing,notice_pair_lure
+Боксберри: посылка 061835171754 будет доставлена сегодня с 14:00 до 18:00.,ham,notice_pair_legit
+Zalando: pengembalian dana Rp56000 menunggu Anda. Masukkan data kartu untuk menerimanya: zalando-id-confirm.site,phishing,notice_pair_lure
+Zalando: dana Rp56000 telah dikembalikan ke kartu 8767. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+Bankinter: 770310 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+Nationwide: 432971 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+"DHL Parcel: pakket 8199298695 is vastgehouden, douanekosten van €249.0 openstaand. Betaal om vrij te geven: dhlparcel-id-confirm.site",phishing,notice_pair_lure
+DHL Parcel: uw pakket 8199298695 wordt vandaag tussen 14:00 en 18:00 bezorgd.,ham,notice_pair_legit
+Disney+ : votre abonnement se renouvelle le 28 pour 1.99 €. Gérez-le dans l'application ou sur disney.fr.,ham,notice_pair_legit
+Etsy: tiene un reembolso de 2.45€ pendiente. Introduzca los datos de su tarjeta para recibirlo: is.gd/3qkh8e,phishing,notice_pair_lure
+Etsy: su reembolso de 2.45€ se ha enviado a la tarjeta terminada en 6635. Puede tardar 5 días hábiles.,ham,notice_pair_legit
+Audible: paket Anda diperpanjang hari ini seharga Rp39200 kecuali dibatalkan. Hentikan tagihan: audible-verify-now.top,phishing,notice_pair_lure
+Audible: paket Anda diperpanjang tanggal 28 seharga Rp39200. Kelola di aplikasi atau audible.co.id.,ham,notice_pair_legit
+Halifax: 482630 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+Volksbank: 12.4 € wurden heute von Karte 5732 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+Боксберри: посылку 842554381224 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+"Spotify: подписка продлится сегодня за 2205 ₽, если не отменить. Остановить списание: spotify-account-check.xyz",phishing,notice_pair_lure
+Spotify: подписка продлится 28-го за 2205 ₽. Управление в приложении или на spotify.ru.,ham,notice_pair_legit
+"Совкомбанк: чтобы отменить заблокированный перевод, отправьте в ответ код 694035.",phishing,notice_pair_lure
+Совкомбанк: 694035 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+Nationwide: 151321 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+"Bankinter: cargo de 19.99€ en su tarjeta terminada en 4551. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+Enel: your electricity will be cut off today over an unpaid bill of £1.99. Settle now: enel-billing-update.online,phishing,notice_pair_lure
+Enel: your electricity bill of £1.99 is due on the 28th. Pay in the app or at enel.com.,ham,notice_pair_legit
+Shein: pengembalian dana Rp158400 menunggu Anda. Masukkan data kartu untuk menerimanya: cutt.ly/cez49s,phishing,notice_pair_lure
+Shein: dana Rp158400 telah dikembalikan ke kartu 4913. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+Volksbank: 3.5 € wurden heute von Karte 4443 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+"GLS: pakket 8322315116 is vastgehouden, douanekosten van €24.5 openstaand. Betaal om vrij te geven: gls-billing-update.online",phishing,notice_pair_lure
+GLS: uw pakket 8322315116 wordt vandaag tussen 14:00 en 18:00 bezorgd.,ham,notice_pair_legit
+GLS: pacco 9790961785 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Unicaja: se aprobó un pago de 249.0€ a un comercio nuevo con la tarjeta terminada en 3204. Cancélelo aquí: unicaja-customer-verify.live,phishing,notice_pair_lure
+"Unicaja: cargo de 249.0€ en su tarjeta terminada en 3204. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+Postbank: Zahlung über 1.99 € an einen neuen Händler mit Karte 2132 freigegeben. Hier stornieren: postbank-portal-login.cc,phishing,notice_pair_lure
+Postbank: 1.99 € wurden heute von Karte 2132 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+Shein: eine Rückerstattung von 12.4 € wartet auf Sie. Kartendaten eingeben zum Erhalt: rb.gy/tejccq,phishing,notice_pair_lure
+Shein: Ihre Rückerstattung über 12.4 € ging an die Karte 6574. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+AliExpress: a refund of £24.5 is waiting for you. Enter your card details to receive it: cutt.ly/4v2p8y,phishing,notice_pair_lure
+AliExpress: your refund of £24.5 was sent back to the card ending 7222. It can take 5 working days.,ham,notice_pair_legit
+Volksbank: 48.0 € wurden heute von Karte 3612 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+"Norisbank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 449001.",phishing,notice_pair_lure
+Norisbank: 449001 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+"Bankinter: para detener la transferencia que hemos bloqueado, responda con el código 946483 que le enviamos.",phishing,notice_pair_lure
+Bankinter: 946483 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+Unicaja: 329915 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+Shein: eine Rückerstattung von 2.45 € wartet auf Sie. Kartendaten eingeben zum Erhalt: cutt.ly/hguhrn,phishing,notice_pair_lure
+Shein: Ihre Rückerstattung über 2.45 € ging an die Karte 2730. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+Booking: a refund of £24.5 is waiting for you. Enter your card details to receive it: t.ly/byzj8e,phishing,notice_pair_lure
+Booking: your refund of £24.5 was sent back to the card ending 1649. It can take 5 working days.,ham,notice_pair_legit
+بنك الرياض: 761379 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Şekerbank: 2827 ile biten kartınızdan yeni bir üye iş yerine 119 TL ödeme onaylandı. Buradan iptal edin: ekerbank-verify-now.top,phishing,notice_pair_lure
+Şekerbank: 2827 ile biten kartınızdan 119 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+"Disney+: Ihr Abo verlängert sich heute für 1.99 €, wenn Sie nicht kündigen. Abbuchung stoppen: disney-customer-verify.live",phishing,notice_pair_lure
+Disney+: Ihr Abo verlängert sich am 28. für 1.99 €. Verwalten Sie es in der App oder auf disney.de.,ham,notice_pair_legit
+EDF: hoy se cortará la luz por una factura impagada de 129.9€. Regularice ahora: is.gd/a92tht,phishing,notice_pair_lure
+بنك الرياض: 642768 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Iberdrola: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 3.5 ريال. سدد الآن: rb.gy/hjafwp,phishing,notice_pair_lure
+Disney+ : votre abonnement se renouvelle le 28 pour 3.5 €. Gérez-le dans l'application ou sur disney.fr.,ham,notice_pair_legit
+Booking: pengembalian dana Rp158400 menunggu Anda. Masukkan data kartu untuk menerimanya: booking-billing-update.online,phishing,notice_pair_lure
+Booking: dana Rp158400 telah dikembalikan ke kartu 4479. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+Unicaja: 781442 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+TSB: 809827 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+"Росбанк: чтобы отменить заблокированный перевод, отправьте в ответ код 221478.",phishing,notice_pair_lure
+Росбанк: 221478 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+Hermes: Paket 111809180083 konnte nicht zugestellt werden und liegt 7 Tage in Ihrer Filiale bereit.,ham,notice_pair_legit
+Unicaja: 77552 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+"Banco Desio: per bloccare il bonifico appena fermato, rispondi con il codice 489001.",phishing,notice_pair_lure
+Banco Desio: 489001 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+سمسا: الطرد 750573154238 محتجز بسبب رسوم جمركية 2.45 ريال. ادفع للإفراج عنه: service-customer-verify.live,phishing,notice_pair_lure
+سمسا: سيتم تسليم طردك 750573154238 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Strava : votre abonnement se renouvelle aujourd'hui pour 1.99 € sauf annulation. Arrêtez le prélèvement : strava-billing-update.online,phishing,notice_pair_lure
+Strava : votre abonnement se renouvelle le 28 pour 1.99 €. Gérez-le dans l'application ou sur strava.fr.,ham,notice_pair_legit
+"Banco Desio: per bloccare il bonifico appena fermato, rispondi con il codice 818969.",phishing,notice_pair_lure
+Banco Desio: 818969 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+بنك دبي: تمت الموافقة على دفعة 19.99 ريال لتاجر جديد من البطاقة 9185. ألغها هنا: service-billing-update.online,phishing,notice_pair_lure
+بنك دبي: تم خصم 19.99 ريال من بطاقتك 9185. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+LCL : 504898 est votre code de connexion. Nous ne vous le demanderons jamais.,ham,notice_pair_legit
+"Nationwide: we could not verify your details, so online banking is suspended. Restore access within 24h: nationwide-portal-login.cc",phishing,notice_pair_lure
+Nationwide: online banking will be unavailable on Sunday 02:00-05:00 for maintenance. No action needed.,ham,notice_pair_legit
+Strava: подписка продлится 28-го за 220 ₽. Управление в приложении или на strava.ru.,ham,notice_pair_legit
+بنك الجزيرة: تم خصم 19.99 ريال من بطاقتك 8801. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+"Bank Mega: data Anda tidak dapat diverifikasi, internet banking diblokir. Pulihkan akses dalam 24 jam: shorturl.at/28x9pr",phishing,notice_pair_lure
+Bank Mega: internet banking dalam pemeliharaan Minggu pukul 02.00-05.00. Tidak ada tindakan yang diperlukan.,ham,notice_pair_legit
+بنك الرياض: تمت الموافقة على دفعة 249.0 ريال لتاجر جديد من البطاقة 7279. ألغها هنا: service-verify-now.top,phishing,notice_pair_lure
+بنك الرياض: تم خصم 249.0 ريال من بطاقتك 7279. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+"Abanca: para detener la transferencia que hemos bloqueado, responda con el código 334466 que le enviamos.",phishing,notice_pair_lure
+Abanca: 334466 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+"Bank Permata: transaksi Rp768000 pada kartu 1294 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+"Disney+: Ihr Abo verlängert sich heute für 3.5 €, wenn Sie nicht kündigen. Abbuchung stoppen: disney-account-check.xyz",phishing,notice_pair_lure
+Disney+: Ihr Abo verlängert sich am 28. für 3.5 €. Verwalten Sie es in der App oder auf disney.de.,ham,notice_pair_legit
+"AnterAja: paket 0623661641 tertahan, biaya bea masuk Rp2078400 belum dibayar. Bayar untuk melepaskan: is.gd/y9jqdy",phishing,notice_pair_lure
+AnterAja: paket 0623661641 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+Unicaja: 438894 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+Denizbank: 8374 ile biten kartınızdan 67 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+MRW: no pudimos entregar el paquete 323433206682 porque la dirección está incompleta. Confírmela aquí: mrw-id-confirm.site,phishing,notice_pair_lure
+MRW: no pudimos entregar el paquete 323433206682. Queda 7 días en su oficina local.,ham,notice_pair_legit
+Nacex: no pudimos entregar el paquete 2336338365 porque la dirección está incompleta. Confírmela aquí: nacex-billing-update.online,phishing,notice_pair_lure
+Nacex: no pudimos entregar el paquete 2336338365. Queda 7 días en su oficina local.,ham,notice_pair_legit
+بنك دبي: 321384 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Совкомбанк: платёж 2205 ₽ новому получателю по карте 8480 одобрен. Отмените здесь: service-secure-id.info,phishing,notice_pair_lure
+"Совкомбанк: списание 2205 ₽ по карте 8480. Если это не вы, позвоните по номеру на обороте карты.",ham,notice_pair_legit
+بنك الرياض: 353951 هو رمز الدخول الخاص بك. لن نطلب منك مشاركته أبدًا.,ham,notice_pair_legit
+Citizens Bank: a payment of £2.45 to a new merchant was approved on card ending 9075. Cancel it here: citizensbank-customer-verify.live,phishing,notice_pair_lure
+"Citizens Bank: £2.45 was debited from card ending 9075 today. If you do not recognise it, call the number on your card.",ham,notice_pair_legit
+"BPER: per bloccare il bonifico appena fermato, rispondi con il codice 650584.",phishing,notice_pair_lure
+BPER: 650584 è il tuo codice di accesso. Non te lo chiederemo mai.,ham,notice_pair_legit
+Strava: il tuo piano si rinnova oggi a 1.99 € se non lo annulli. Blocca l'addebito: strava-verify-now.top,phishing,notice_pair_lure
+Strava: il tuo piano si rinnova il 28 a 1.99 €. Gestiscilo nell'app o su strava.it.,ham,notice_pair_legit
+Targobank: 773675 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+Strava: Ihr Abo verlängert sich am 28. für 249.0 €. Verwalten Sie es in der App oder auf strava.de.,ham,notice_pair_legit
+LCL : 174706 est votre code de connexion. Nous ne vous le demanderons jamais.,ham,notice_pair_legit
+Etsy: tiene un reembolso de 9.9€ pendiente. Introduzca los datos de su tarjeta para recibirlo: is.gd/t86m5p,phishing,notice_pair_lure
+Etsy: su reembolso de 9.9€ se ha enviado a la tarjeta terminada en 2424. Puede tardar 5 días hábiles.,ham,notice_pair_legit
+Volksbank: Zahlung über 129.9 € an einen neuen Händler mit Karte 2093 freigegeben. Hier stornieren: volksbank-account-check.xyz,phishing,notice_pair_lure
+Volksbank: 129.9 € wurden heute von Karte 2093 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+Poste Delivery: pacco 0241069142 non consegnato per indirizzo incompleto. Confermalo qui: postedeliver-account-check.xyz,phishing,notice_pair_lure
+Poste Delivery: pacco 0241069142 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+E.ON: سيتم قطع الكهرباء اليوم بسبب فاتورة غير مدفوعة بقيمة 12.4 ريال. سدد الآن: cutt.ly/6v8af2,phishing,notice_pair_lure
+Iberdrola : votre électricité sera coupée aujourd'hui pour une facture impayée de 12.4 €. Régularisez : iberdrola-secure-id.info,phishing,notice_pair_lure
+"Sürat Kargo: 3855181125 numaralı kargo gümrükte, 679 TL tutarında ödeme bekleniyor. Serbest bırakmak için ödeyin: sratkargo-id-confirm.site",phishing,notice_pair_lure
+Sürat Kargo: 3855181125 numaralı kargonuz bugün 14:00-18:00 arasında teslim edilecek.,ham,notice_pair_legit
+أرامكس: الطرد 1424799488 محتجز بسبب رسوم جمركية 48.0 ريال. ادفع للإفراج عنه: is.gd/tqkjha,phishing,notice_pair_lure
+أرامكس: سيتم تسليم طردك 1424799488 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+بنك دبي: تمت الموافقة على دفعة 48.0 ريال لتاجر جديد من البطاقة 6651. ألغها هنا: service-account-check.xyz,phishing,notice_pair_lure
+بنك دبي: تم خصم 48.0 ريال من بطاقتك 6651. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+"OCBC NISP: untuk membatalkan transfer yang kami blokir, balas dengan kode 325175.",phishing,notice_pair_lure
+Halifax: 697302 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+Zalando : un remboursement de 24.5 € vous attend. Saisissez vos coordonnées bancaires : rb.gy/45kt8v,phishing,notice_pair_lure
+Zalando : votre remboursement de 24.5 € a été envoyé sur la carte 6233. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+بنك الرياض: تمت الموافقة على دفعة 48.0 ريال لتاجر جديد من البطاقة 3374. ألغها هنا: service-verify-now.top,phishing,notice_pair_lure
+بنك الرياض: تم خصم 48.0 ريال من بطاقتك 3374. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+PLN: your electricity will be cut off today over an unpaid bill of £2.45. Settle now: pln-secure-id.info,phishing,notice_pair_lure
+Booking: eine Rückerstattung von 129.9 € wartet auf Sie. Kartendaten eingeben zum Erhalt: rb.gy/5ube4u,phishing,notice_pair_lure
+Booking: Ihre Rückerstattung über 129.9 € ging an die Karte 1219. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+AliExpress: a refund of £249.0 is waiting for you. Enter your card details to receive it: aliexpress-secure-id.info,phishing,notice_pair_lure
+AliExpress: your refund of £249.0 was sent back to the card ending 9095. It can take 5 working days.,ham,notice_pair_legit
+بنك الجزيرة: تم خصم 12.4 ريال من بطاقتك 5746. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+Zalando: tiene un reembolso de 12.4€ pendiente. Introduzca los datos de su tarjeta para recibirlo: zalando-id-confirm.site,phishing,notice_pair_lure
+Zalando: su reembolso de 12.4€ se ha enviado a la tarjeta terminada en 4727. Puede tardar 5 días hábiles.,ham,notice_pair_legit
+Disney+: su plan se renueva hoy por 9.9€ si no lo cancela. Detenga el cobro: disney-billing-update.online,phishing,notice_pair_lure
+Disney+: su plan se renovará el día 28 por 9.9€. Gestiónelo en la app o en disney.es.,ham,notice_pair_legit
+"Colissimo : colis 2025295872 non livré, adresse incomplète. Confirmez-la ici : colissimo-billing-update.online",phishing,notice_pair_lure
+Colissimo : colis 2025295872 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+Evri: parcel 230698981319 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+Shein: eine Rückerstattung von 129.9 € wartet auf Sie. Kartendaten eingeben zum Erhalt: shein-secure-id.info,phishing,notice_pair_lure
+Shein: Ihre Rückerstattung über 129.9 € ging an die Karte 9205. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+زاجل: الطرد 1629810134 محتجز بسبب رسوم جمركية 2.45 ريال. ادفع للإفراج عنه: service-billing-update.online,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 1629810134 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+Shein: a refund of £12.4 is waiting for you. Enter your card details to receive it: shein-id-confirm.site,phishing,notice_pair_lure
+Shein: your refund of £12.4 was sent back to the card ending 7752. It can take 5 working days.,ham,notice_pair_legit
+"OCBC NISP: untuk membatalkan transfer yang kami blokir, balas dengan kode 433697.",phishing,notice_pair_lure
+"MNG Kargo: 7630686395 numaralı kargo gümrükte, 119 TL tutarında ödeme bekleniyor. Serbest bırakmak için ödeyin: cutt.ly/86qxdt",phishing,notice_pair_lure
+MNG Kargo: 7630686395 numaralı kargonuz bugün 14:00-18:00 arasında teslim edilecek.,ham,notice_pair_legit
+Iberdrola: listrik Anda akan diputus hari ini karena tagihan Rp2078400 belum dibayar. Bayar sekarang: iberdrola-billing-update.online,phishing,notice_pair_lure
+Iberdrola: tagihan listrik Rp2078400 jatuh tempo tanggal 28. Bayar di aplikasi atau iberdrola.co.id.,ham,notice_pair_legit
+E.ON: Ihr Strom wird heute wegen einer offenen Rechnung über 12.4 € abgestellt. Jetzt begleichen: eon-account-check.xyz,phishing,notice_pair_lure
+E.ON: Ihre Stromrechnung über 12.4 € ist am 28. fällig. Zahlung in der App oder auf eon.de.,ham,notice_pair_legit
+"OnTrac: parcel 0908635411 is held, a customs fee of £19.99 is unpaid. Pay to release: rb.gy/zavzc7",phishing,notice_pair_lure
+OnTrac: parcel 0908635411 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+Disney+: il tuo piano si rinnova oggi a 1.99 € se non lo annulli. Blocca l'addebito: disney-account-check.xyz,phishing,notice_pair_lure
+Disney+: il tuo piano si rinnova il 28 a 1.99 €. Gestiscilo nell'app o su disney.it.,ham,notice_pair_legit
+Crédit Mutuel : paiement de 129.9 € autorisé chez un nouveau commerçant avec la carte 8619. Annulez ici : crditmutuel-account-check.xyz,phishing,notice_pair_lure
+"Crédit Mutuel : 129.9 € débités aujourd'hui de la carte 8619. En cas de doute, appelez le numéro au dos de la carte.",ham,notice_pair_legit
+"Ninja Xpress: paket 858015127725 tertahan, biaya bea masuk Rp2078400 belum dibayar. Bayar untuk melepaskan: ninjaxpress-verify-now.top",phishing,notice_pair_lure
+Ninja Xpress: paket 858015127725 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+GLS: el paquete 247499811754 está retenido por una tasa aduanera de 2.45€. Pague para liberarlo: gls-account-check.xyz,phishing,notice_pair_lure
+GLS: su paquete 247499811754 sale hoy a reparto entre las 14:00 y las 18:00.,ham,notice_pair_legit
+Disney+ : votre abonnement se renouvelle aujourd'hui pour 48.0 € sauf annulation. Arrêtez le prélèvement : disney-id-confirm.site,phishing,notice_pair_lure
+Disney+ : votre abonnement se renouvelle le 28 pour 48.0 €. Gérez-le dans l'application ou sur disney.fr.,ham,notice_pair_legit
+Zalando: eine Rückerstattung von 1.99 € wartet auf Sie. Kartendaten eingeben zum Erhalt: zalando-account-check.xyz,phishing,notice_pair_lure
+Zalando: Ihre Rückerstattung über 1.99 € ging an die Karte 4986. Die Gutschrift dauert bis zu 5 Werktage.,ham,notice_pair_legit
+Denizbank: 6120 ile biten kartınızdan 119 TL tutarında işlem yapıldı. Tanımıyorsanız kartınızın arkasındaki numarayı arayın.,ham,notice_pair_legit
+Shein: a refund of £1.99 is waiting for you. Enter your card details to receive it: cutt.ly/hyrvgx,phishing,notice_pair_lure
+Shein: your refund of £1.99 was sent back to the card ending 1382. It can take 5 working days.,ham,notice_pair_legit
+"Уралсиб: чтобы отменить заблокированный перевод, отправьте в ответ код 997093.",phishing,notice_pair_lure
+Уралсиб: 997093 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+PLN: Ihr Strom wird heute wegen einer offenen Rechnung über 3.5 € abgestellt. Jetzt begleichen: pln-customer-verify.live,phishing,notice_pair_lure
+PLN: Ihre Stromrechnung über 3.5 € ist am 28. fällig. Zahlung in der App oder auf pln.de.,ham,notice_pair_legit
+"Mondial Relay : le colis 564931452388 est bloqué, frais de douane de 12.4 € impayés. Payez pour le libérer : mondialrelay-id-confirm.site",phishing,notice_pair_lure
+Mondial Relay : votre colis 564931452388 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+PLN : votre électricité sera coupée aujourd'hui pour une facture impayée de 12.4 €. Régularisez : is.gd/treuj5,phishing,notice_pair_lure
+PLN : votre facture d'électricité de 12.4 € est due le 28. Payez dans l'application ou sur pln.fr.,ham,notice_pair_legit
+"Targobank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 307277.",phishing,notice_pair_lure
+Targobank: 307277 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+"Совкомбанк: списание 11691 ₽ по карте 8668. Если это не вы, позвоните по номеру на обороте карты.",ham,notice_pair_legit
+"Боксберри: посылку 753957594187 не доставили, адрес неполный. Подтвердите его здесь: service-verify-now.top",phishing,notice_pair_lure
+Боксберри: посылку 753957594187 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+"Yodel: parcel 961028562827 is held, a customs fee of £249.0 is unpaid. Pay to release: yodel-id-confirm.site",phishing,notice_pair_lure
+Yodel: parcel 961028562827 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+Боксберри: посылку 4081126822 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+Poste Delivery: pacco 5821147813 non consegnato per indirizzo incompleto. Confermalo qui: is.gd/neudy6,phishing,notice_pair_lure
+Poste Delivery: pacco 5821147813 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
+Bank Permata: pembayaran Rp39200 ke merchant baru dari kartu 8962 disetujui. Batalkan di sini: bankpermata-customer-verify.live,phishing,notice_pair_lure
+"Bank Permata: transaksi Rp39200 pada kartu 8962 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+Duolingo: su plan se renueva hoy por 19.99€ si no lo cancela. Detenga el cobro: duolingo-account-check.xyz,phishing,notice_pair_lure
+Duolingo: su plan se renovará el día 28 por 19.99€. Gestiónelo en la app o en duolingo.es.,ham,notice_pair_legit
+"Hermes: Paket 1465555119 wird zurückgehalten, Zollgebühr von 249.0 € offen. Zum Freigeben zahlen: shorturl.at/grysdb",phishing,notice_pair_lure
+Hermes: Paket 1465555119 wird heute zwischen 14:00 und 18:00 Uhr zugestellt.,ham,notice_pair_legit
+OnTrac: we could not deliver parcel 414187263637 because the address is incomplete. Confirm it here: ontrac-account-check.xyz,phishing,notice_pair_lure
+OnTrac: parcel 414187263637 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+"Colissimo : colis 0773917464 non livré, adresse incomplète. Confirmez-la ici : colissimo-portal-login.cc",phishing,notice_pair_lure
+Colissimo : colis 0773917464 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+Regions Bank: 234493 is your login code. We will never ask you to share it.,ham,notice_pair_legit
+"Credem: non siamo riusciti a verificare i tuoi dati, l'home banking è sospeso. Ripristina l'accesso entro 24h: credem-secure-id.info",phishing,notice_pair_lure
+Credem: domenica dalle 02:00 alle 05:00 l'home banking sarà in manutenzione. Nessuna azione richiesta.,ham,notice_pair_legit
+Abanca: 823154 es su código de acceso. Nunca le pediremos que lo comparta.,ham,notice_pair_legit
+EDF: Ihr Strom wird heute wegen einer offenen Rechnung über 12.4 € abgestellt. Jetzt begleichen: edf-id-confirm.site,phishing,notice_pair_lure
+EDF: Ihre Stromrechnung über 12.4 € ist am 28. fällig. Zahlung in der App oder auf edf.de.,ham,notice_pair_legit
+Mondial Relay : colis 992088193412 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+AliExpress: a refund of £2.45 is waiting for you. Enter your card details to receive it: aliexpress-account-check.xyz,phishing,notice_pair_lure
+AliExpress: your refund of £2.45 was sent back to the card ending 7199. It can take 5 working days.,ham,notice_pair_legit
+Strava: su plan se renovará el día 28 por 129.9€. Gestiónelo en la app o en strava.es.,ham,notice_pair_legit
+"Crédit Mutuel : pour annuler le virement que nous avons bloqué, répondez avec le code 667477.",phishing,notice_pair_lure
+"Почта: посылку 843650305175 не доставили, адрес неполный. Подтвердите его здесь: cutt.ly/pn822t",phishing,notice_pair_lure
+Почта: посылку 843650305175 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+زاجل: الطرد 4038187677 محتجز بسبب رسوم جمركية 249.0 ريال. ادفع للإفراج عنه: service-id-confirm.site,phishing,notice_pair_lure
+زاجل: سيتم تسليم طردك 4038187677 اليوم بين الساعة 14:00 و18:00.,ham,notice_pair_legit
+"Ninja Xpress: paket 3647046221 tertahan, biaya bea masuk Rp31840 belum dibayar. Bayar untuk melepaskan: shorturl.at/9h5nhd",phishing,notice_pair_lure
+Ninja Xpress: paket 3647046221 dalam pengiriman hari ini pukul 14.00-18.00.,ham,notice_pair_legit
+Боксберри: посылку 0108618991 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+"OCBC NISP: transaksi Rp319840 pada kartu 4890 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+Shein: un rimborso di 1.99 € ti aspetta. Inserisci i dati della carta per riceverlo: shein-customer-verify.live,phishing,notice_pair_lure
+Shein: il rimborso di 1.99 € è stato inviato sulla carta 2441. Possono servire 5 giorni lavorativi.,ham,notice_pair_legit
+Ninja Xpress: paket 7097759455 gagal dikirim karena alamat tidak lengkap. Konfirmasi di sini: ninjaxpress-verify-now.top,phishing,notice_pair_lure
+Ninja Xpress: paket 7097759455 gagal dikirim dan menunggu di gerai selama 7 hari.,ham,notice_pair_legit
+Yodel: we could not deliver parcel 0724420524 because the address is incomplete. Confirm it here: yodel-secure-id.info,phishing,notice_pair_lure
+Yodel: parcel 0724420524 could not be delivered. It is waiting at your local depot for 7 days.,ham,notice_pair_legit
+PLN : votre électricité sera coupée aujourd'hui pour une facture impayée de 129.9 €. Régularisez : cutt.ly/u9vg2c,phishing,notice_pair_lure
+Booking: вам положен возврат 11691 ₽. Введите данные карты для получения: t.ly/w7mhsg,phishing,notice_pair_lure
+Booking: возврат 11691 ₽ отправлен на карту 8646. Зачисление занимает до 5 рабочих дней.,ham,notice_pair_legit
+"Trans-o-flex: Paket 254821444265 wird zurückgehalten, Zollgebühr von 19.99 € offen. Zum Freigeben zahlen: transoflex-account-check.xyz",phishing,notice_pair_lure
+Trans-o-flex: Paket 254821444265 wird heute zwischen 14:00 und 18:00 Uhr zugestellt.,ham,notice_pair_legit
+Enel: your electricity will be cut off today over an unpaid bill of £9.9. Settle now: enel-portal-login.cc,phishing,notice_pair_lure
+Bankinter: se aprobó un pago de 1.99€ a un comercio nuevo con la tarjeta terminada en 3286. Cancélelo aquí: bankinter-portal-login.cc,phishing,notice_pair_lure
+"Bankinter: cargo de 1.99€ en su tarjeta terminada en 3286. Si no lo reconoce, llame al número del reverso.",ham,notice_pair_legit
+PLN: listrik Anda akan diputus hari ini karena tagihan Rp31840 belum dibayar. Bayar sekarang: pln-account-check.xyz,phishing,notice_pair_lure
+"OnTrac: parcel 1128200516 is held, a customs fee of £12.4 is unpaid. Pay to release: shorturl.at/vfj5nj",phishing,notice_pair_lure
+OnTrac: parcel 1128200516 is out for delivery today between 14:00 and 18:00.,ham,notice_pair_legit
+Enel: listrik Anda akan diputus hari ini karena tagihan Rp31840 belum dibayar. Bayar sekarang: enel-verify-now.top,phishing,notice_pair_lure
+Enel: tagihan listrik Rp31840 jatuh tempo tanggal 28. Bayar di aplikasi atau enel.co.id.,ham,notice_pair_legit
+"GLS : le colis 117382064270 est bloqué, frais de douane de 129.9 € impayés. Payez pour le libérer : shorturl.at/5z46vy",phishing,notice_pair_lure
+GLS : votre colis 117382064270 sera livré aujourd'hui entre 14h00 et 18h00.,ham,notice_pair_legit
+"Targobank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 156209.",phishing,notice_pair_lure
+Targobank: 156209 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+Duolingo: paket Anda diperpanjang hari ini seharga Rp198400 kecuali dibatalkan. Hentikan tagihan: duolingo-billing-update.online,phishing,notice_pair_lure
+Duolingo: paket Anda diperpanjang tanggal 28 seharga Rp198400. Kelola di aplikasi atau duolingo.co.id.,ham,notice_pair_legit
+"Norisbank: um die soeben gestoppte Überweisung zu stornieren, antworten Sie mit dem Code 476120.",phishing,notice_pair_lure
+Norisbank: 476120 ist Ihr Anmeldecode. Wir fragen Sie nie nach diesem Code.,ham,notice_pair_legit
+"Уралсиб: чтобы отменить заблокированный перевод, отправьте в ответ код 145311.",phishing,notice_pair_lure
+Уралсиб: 145311 — ваш код для входа. Мы никогда не просим его сообщить.,ham,notice_pair_legit
+"Yurtiçi Kargo: 5415495310 numaralı kargo gümrükte, 679 TL tutarında ödeme bekleniyor. Serbest bırakmak için ödeyin: yurtiikargo-id-confirm.site",phishing,notice_pair_lure
+Yurtiçi Kargo: 5415495310 numaralı kargonuz bugün 14:00-18:00 arasında teslim edilecek.,ham,notice_pair_legit
+Audible: paket Anda diperpanjang tanggal 28 seharga Rp768000. Kelola di aplikasi atau audible.co.id.,ham,notice_pair_legit
+بنك الرياض: تم خصم 2.45 ريال من بطاقتك 5782. إذا لم تتعرف على العملية اتصل بالرقم خلف البطاقة.,ham,notice_pair_legit
+Etsy: pengembalian dana Rp158400 menunggu Anda. Masukkan data kartu untuk menerimanya: etsy-portal-login.cc,phishing,notice_pair_lure
+Etsy: dana Rp158400 telah dikembalikan ke kartu 3969. Proses hingga 5 hari kerja.,ham,notice_pair_legit
+Bank Mega: pembayaran Rp768000 ke merchant baru dari kartu 2246 disetujui. Batalkan di sini: bankmega-customer-verify.live,phishing,notice_pair_lure
+"Bank Mega: transaksi Rp768000 pada kartu 2246 berhasil. Jika bukan Anda, hubungi nomor di belakang kartu.",ham,notice_pair_legit
+"SDA: il pacco 0740096998 è fermo, tassa doganale di 3.5 € non pagata. Paga per liberarlo: sda-portal-login.cc",phishing,notice_pair_lure
+SDA: il pacco 0740096998 è in consegna oggi tra le 14:00 e le 18:00.,ham,notice_pair_legit
+Strava: подписка продлится 28-го за 179 ₽. Управление в приложении или на strava.ru.,ham,notice_pair_legit
+"OCBC NISP: untuk membatalkan transfer yang kami blokir, balas dengan kode 985865.",phishing,notice_pair_lure
+"Colissimo : colis 955724308544 non livré, adresse incomplète. Confirmez-la ici : colissimo-verify-now.top",phishing,notice_pair_lure
+Colissimo : colis 955724308544 non livré. Il reste 7 jours à votre point relais.,ham,notice_pair_legit
+"Боксберри: посылку 4382176539 не доставили, адрес неполный. Подтвердите его здесь: service-customer-verify.live",phishing,notice_pair_lure
+Боксберри: посылку 4382176539 не доставили. Она ждёт вас в отделении 7 дней.,ham,notice_pair_legit
+Norisbank: 48.0 € wurden heute von Karte 6407 abgebucht. Bei Fragen nutzen Sie die Nummer auf Ihrer Karte.,ham,notice_pair_legit
+Enel: hoy se cortará la luz por una factura impagada de 129.9€. Regularice ahora: is.gd/rzps7g,phishing,notice_pair_lure
+Shein : un remboursement de 12.4 € vous attend. Saisissez vos coordonnées bancaires : shein-secure-id.info,phishing,notice_pair_lure
+Shein : votre remboursement de 12.4 € a été envoyé sur la carte 9578. Comptez 5 jours ouvrés.,ham,notice_pair_legit
+"Banque Populaire : pour annuler le virement que nous avons bloqué, répondez avec le code 871165.",phishing,notice_pair_lure
+Strava: paket Anda diperpanjang tanggal 28 seharga Rp392000. Kelola di aplikasi atau strava.co.id.,ham,notice_pair_legit
+Poste Delivery: pacco 417721259280 non consegnato per indirizzo incompleto. Confermalo qui: rb.gy/9nz9m9,phishing,notice_pair_lure
+Poste Delivery: pacco 417721259280 non consegnato. Resta 7 giorni presso il punto di ritiro.,ham,notice_pair_legit
