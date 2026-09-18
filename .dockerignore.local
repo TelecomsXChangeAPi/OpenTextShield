@@ -7,10 +7,13 @@ venv/
 env/
 
 # Ignore large model files (they'll be handled separately)
-*.pth
-*.bin
-*.safetensors
-*.npz
+infra/
+audit_logs/
+feedback/
+**/*.pth
+**/*.bin
+**/*.safetensors
+**/*.npz
 
 # Ignore development files
 .git/
@@ -38,7 +41,7 @@ logs/
 tmp/
 temp/
 .tmp/
-node_modules/
+**/node_modules/
 
 # Keep essential files
 !src/
@@ -47,4 +50,5 @@ node_modules/
 !Dockerfile*
 !docker-compose.yml
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
+!src/mBERT/training/model-training/mbert_ots_model_2.7.pth
 !src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv

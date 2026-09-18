@@ -24,6 +24,24 @@ LABELS = ["ham", "spam", "phishing"]
 csv.field_size_limit(10 * 1024 * 1024)
 
 
+def production_normalize(texts):
+    """Clean texts exactly as the API does before tokenising.
+
+    Production runs EnhancedPreprocessor.normalize_unicode on every message
+    (batching_service._normalize_text). Scoring raw text would measure a
+    different pipeline from the one deployed, so the eval tools apply it too.
+    Imported lazily so the loaders stay cheap for callers that only read data.
+    """
+    from pathlib import Path
+    repo_root = str(Path(__file__).resolve().parent.parent)
+    if repo_root not in sys.path:
+        sys.path.insert(0, repo_root)
+    from src.api_interface.services.enhanced_preprocessing import EnhancedPreprocessor
+
+    pre = EnhancedPreprocessor()
+    return [pre.normalize_unicode(t) for t in texts]
+
+
 def load_fable5(path):
     samples = []
     with open(path, newline="", encoding="utf-8") as f:

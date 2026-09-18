@@ -6,19 +6,26 @@ ots_test/
 venv/
 .venv/
 env/
-__pycache__/
+**/__pycache__/
 *.pyc
 *.pyo
 
+# === INFRASTRUCTURE (terraform state and provider binaries, ~1.3GB) ===
+infra/
+
+# === AUDIT LOGS (contain full SMS text) ===
+audit_logs/
+feedback/
+
 # === LARGE MODEL FILES AND DATASETS ===
 # Exclude all model files - only production model will be included specifically
-*.pth
-*.bin
-*.safetensors
-*.npz
-*.h5
-*.pkl
-*.ckpt
+**/*.pth
+**/*.bin
+**/*.safetensors
+**/*.npz
+**/*.h5
+**/*.pkl
+**/*.ckpt
 
 # Exclude all datasets - only production dataset will be included specifically
 *.csv
@@ -33,6 +40,7 @@ src/mBERT/training/model-training/dataset/
 **/models/
 !src/api_interface/models/
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
+!src/mBERT/training/model-training/mbert_ots_model_2.7.pth
 *_v1.*
 *_v2.0.*
 *_1.*
@@ -85,7 +93,7 @@ temp/
 build/
 dist/
 *.egg-info/
-node_modules/
+**/node_modules/
 .cache/
 
 # === CONFIGURATION AND SECRETS ===
@@ -99,6 +107,7 @@ config/*.local.*
 # === KEEP ESSENTIAL FILES FOR PRODUCTION ===
 !src/api_interface/
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
+!src/mBERT/training/model-training/mbert_ots_model_2.7.pth
 !src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv
 !requirements*.txt
 !start*.sh

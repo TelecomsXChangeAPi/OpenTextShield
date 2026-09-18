@@ -17,100 +17,14 @@ const { PDU } = require('smpp/lib/pdu')
 const iconv = require('iconv-lite')
 const fs = require('fs')
 
-// The proxy's getMessageText() and buildUpstreamPdu() are vendored verbatim
-// below. Keep them in sync with ots_smpp_proxy.js — if they drift, this test
-// is the canary. Importing the proxy module directly would boot its TCP
-// server and start its upstream-pool reconnect loop, so we copy instead.
-
-const FORWARDED_SUBMIT_SM_PARAMS = [
-	'service_type',
-	'source_addr_ton', 'source_addr_npi', 'source_addr',
-	'dest_addr_ton', 'dest_addr_npi', 'destination_addr',
-	'esm_class', 'protocol_id', 'priority_flag',
-	'schedule_delivery_time', 'validity_period',
-	'registered_delivery', 'replace_if_present_flag',
-	'data_coding', 'sm_default_msg_id'
-]
-
-function dataCodingToCharset(dc) {
-	if (dc === undefined || dc === null) return null
-	switch (dc & 0x0F) {
-		case 0x06: return 'iso-8859-5'
-		case 0x07: return 'iso-8859-8'
-		case 0x08: return 'utf16-be'
-		case 0x0E: return 'cp949'
-		default:   return null
-	}
-}
-
-function unclassifiableReason(pdu) {
-	if (pdu.short_message && Array.isArray(pdu.short_message.udh)) {
-		for (const ie of pdu.short_message.udh) {
-			if ((ie[0] === 0x24 || ie[0] === 0x25) && ie.length >= 3 && ie[2] >= 0x04) {
-				const kind = ie[0] === 0x24 ? 'single' : 'locking'
-				return `national-shift-${kind}-lang-0x${ie[2].toString(16).padStart(2,'0')}`
-			}
-		}
-	}
-	const dc = (pdu.data_coding || 0) & 0x0F
-	if (dc === 0x04) return 'data-coding-binary'
-	if (dc === 0x09) return 'data-coding-pictogram'
-	if (dc === 0x05) return 'data-coding-jis-x0208'
-	if (dc === 0x0A) return 'data-coding-iso-2022-jp'
-	if (dc === 0x0D) return 'data-coding-jis-x0212'
-	return null
-}
-
-function getMessageText(pdu) {
-	let raw = null
-	if (pdu.short_message != undefined && pdu.short_message.message != undefined) {
-		const m = pdu.short_message.message
-		if (m !== '' && !(Buffer.isBuffer(m) && m.length === 0)) raw = m
-	}
-	if (raw == null && ('message_payload' in pdu) && pdu.message_payload != undefined) {
-		if (typeof pdu.message_payload === 'object' && pdu.message_payload.message != undefined) {
-			const m = pdu.message_payload.message
-			if (m !== '' && !(Buffer.isBuffer(m) && m.length === 0)) raw = m
-		} else if (typeof pdu.message_payload === 'string' || Buffer.isBuffer(pdu.message_payload)) {
-			raw = pdu.message_payload
-		}
-	}
-	if (raw == null) return ''
-	if (typeof raw === 'string') return raw
-	if (Buffer.isBuffer(raw)) {
-		const charset = dataCodingToCharset(pdu.data_coding)
-		if (charset && iconv.encodingExists(charset)) {
-			try { return iconv.decode(raw, charset) } catch(e) {}
-		}
-		return raw.toString('utf8')
-	}
-	return ''
-}
-
-function buildUpstreamPdu(pdu) {
-	let upstream_pdu = {}
-	for (const key of FORWARDED_SUBMIT_SM_PARAMS) {
-		if (pdu[key] !== undefined) upstream_pdu[key] = pdu[key]
-	}
-	for (const tag in smpp.tlvs) {
-		if (tag === 'message_payload') continue
-		if (pdu[tag] !== undefined) upstream_pdu[tag] = pdu[tag]
-	}
-	if (pdu.short_message && pdu.short_message.udh !== undefined) {
-		let udh = pdu.short_message.udh
-		if (Array.isArray(udh)) {
-			const concatenated = Buffer.concat(udh)
-			const len_buf = Buffer.alloc(1)
-			len_buf.writeUInt8(concatenated.length, 0)
-			udh = Buffer.concat([len_buf, concatenated])
-		}
-		upstream_pdu.short_message = { udh: udh, message: pdu.short_message.message }
-	} else if (pdu.short_message !== undefined) {
-		upstream_pdu.short_message = pdu.short_message
-	}
-	if (pdu.message_payload !== undefined) upstream_pdu.message_payload = pdu.message_payload
-	return upstream_pdu
-}
+// The proxy's message helpers live in message_utils.js, so these tests
+// exercise the same code the proxy runs (importing ots_smpp_proxy.js itself
+// would boot its TCP server and upstream reconnect loop).
+const {
+	unclassifiableReason,
+	getMessageText,
+	buildUpstreamPdu,
+} = require('./message_utils')
 
 // ─────────────────────────────────────────────
 // Test harness
@@ -766,17 +680,32 @@ console.log('\n=== Skip-classify: GSM national language shift (Hindi, lang 0x06)
 	eq(upstream.short_message.udh[0][2], 0x06, 'language code 0x06 preserved')
 }
 
-console.log('\n=== Skip-classify: GSM national language shift (Tamil, lang 0x0B) ===')
+console.log('\n=== Classify (NOT skipped): single shift header on text with no escapes (Tamil, lang 0x0B) ===')
 {
+	// A single shift only changes characters sent behind ESC. With none, the
+	// default-table decode is exactly what the handset shows, so skipping would
+	// let any sender bypass classification by adding this header.
 	const udh = Buffer.from([0x03, 0x24, 0x01, 0x0B]) // single shift, Tamil
-	const body = Buffer.from('hello')
-	const fullSm = Buffer.concat([udh, body])
+	const body = Buffer.from('Your account is locked, verify now')
 	const inbound = makeInboundPdu({
 		source_addr: '12345', destination_addr: '67890',
 		data_coding: 0, esm_class: 0x40,
-		short_message: fullSm
+		short_message: Buffer.concat([udh, body])
 	})
-	eq(unclassifiableReason(inbound), 'national-shift-single-lang-0x0b', 'Tamil single shift triggers skip-classify')
+	eq(unclassifiableReason(inbound), null, 'Tamil single shift without escapes is classified')
+	eq(getMessageText(inbound), 'Your account is locked, verify now', 'classifier sees the Latin text')
+}
+
+console.log('\n=== Skip-classify: single shift with an escaped character (Tamil, lang 0x0B) ===')
+{
+	const udh = Buffer.from([0x03, 0x24, 0x01, 0x0B])
+	const body = Buffer.from([0x68, 0x65, 0x6C, 0x6C, 0x6F, 0x1B, 0x65]) // "hello" + ESC e
+	const inbound = makeInboundPdu({
+		source_addr: '12345', destination_addr: '67890',
+		data_coding: 0, esm_class: 0x40,
+		short_message: Buffer.concat([udh, body])
+	})
+	eq(unclassifiableReason(inbound), 'national-shift-single-lang-0x0b', 'escaped Tamil character triggers skip-classify')
 }
 
 console.log('\n=== Classify (NOT skipped): Turkish locking shift (lang 0x01) ===')

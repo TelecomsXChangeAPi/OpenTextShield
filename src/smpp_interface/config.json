@@ -29,6 +29,9 @@
     "api_url": "http://localhost:8002/predict/",
     "model": "ots-mbert",
     "confidence_threshold": 0.7,
+    "below_threshold_action": "use_label",
+    "unclassifiable_action": "forward",
+    "max_text_chars": 512,
     "timeout": 5000,
     "rules": {
       "ham":      { "action": "forward" },

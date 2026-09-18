@@ -68,21 +68,30 @@ The OpenTextShield (OTS) SMPP Interface is an inline SMS classification proxy. I
   └──────────┬───────────┘            └────────────────┘
              │ NO
              ▼
+  ┌──────────────────────┐     YES    ┌─────────────────────────┐
+  │  Encoding can't be   │ ─────────> │ unclassifiable_action   │
+  │  read as displayed?  │            │ forward (default) or    │
+  └──────────┬───────────┘            │ reject                  │
+             │ NO                     └─────────────────────────┘
+             ▼
   ┌──────────────────────┐     FAIL   ┌────────────────┐
   │  Call OTS API        │ ─────────> │ Forward as ham  │
   │  POST /predict/      │           │ (fail-open)     │
-  └──────────┬───────────┘            └────────────────┘
+  │  (text fit to 512)   │           └────────────────┘
+  └──────────┬───────────┘
              │ OK
              ▼
-  ┌──────────────────────┐     YES    ┌────────────────┐
-  │  Probability below   │ ─────────> │ Treat as ham   │
-  │  threshold (0.7)?    │            │ → Forward       │
-  └──────────┬───────────┘            └────────────────┘
-             │ NO
-             ▼
+  ┌──────────────────────┐     YES    ┌──────────────────────────────┐
+  │  Probability below   │ ─────────> │ Log it, then pick the label  │
+  │  threshold (0.7)?    │            │ below_threshold_action:      │
+  └──────────┬───────────┘            │  use_label (default) → model │
+             │ NO                     │  forward_as_ham      → ham   │
+             │                        └───────────────┬──────────────┘
+             │      ┌─────────────────────────────────┘
+             ▼      ▼
   ┌──────────────────────┐
-  │  Apply config rule   │
-  │  for detected label  │
+  │  Apply config rule   │   Both paths land here: an unsure verdict
+  │  for the label above │   is still subject to its rule.
   └──────────┬───────────┘
              │
      ┌───────┼───────┐
@@ -254,6 +263,10 @@ Controls the integration with the OTS mBERT classification API.
   │  api_urls ───────── Multiple endpoints (round-robin)     │
   │  model ──────────── Model identifier     (ots-mbert)     │
   │  confidence_threshold ── Min probability (0.7)           │
+  │  below_threshold_action  use_label | forward_as_ham      │
+  │                          (use_label)                     │
+  │  unclassifiable_action   forward | reject   (forward)    │
+  │  max_text_chars ─── Text sent to the API (512)           │
   │  timeout ────────── HTTP timeout, ms     (5000)          │
   │  rules ──────────── Per-label actions    (see below)     │
   └──────────────────────────────────────────────────────────┘
@@ -280,7 +293,16 @@ Use `api_url` for a single API instance, or `api_urls` (array) to load-balance a
                           a synthetic message_id (OTS-XXXXXXXX).
 ```
 
-**Confidence threshold:** If the model's probability is below `confidence_threshold`, the message is treated as `ham` regardless of the predicted label. This prevents low-confidence false positives from blocking legitimate traffic.
+**Confidence threshold:** When the model's probability is below `confidence_threshold`, the proxy logs a `Below threshold` line with the model's label. What happens next depends on `below_threshold_action`:
+
+- `use_label` (default): the rule for the model's label applies. An unsure phishing verdict is still blocked.
+- `forward_as_ham`: the message is treated as `ham` and forwarded, which was the behaviour before v2.10. On the project's benchmarks this delivered far more phishing than the false blocks it prevented (for example 564 extra phishing messages on IMC25 against 5 avoided false blocks across 9,700 legitimate messages), so only use it if false blocks are the bigger risk for your traffic.
+
+**Unclassifiable encodings:** Some messages can't be decoded the way the handset will show them: GSM national language locking shift tables, single shift tables with escaped characters, shift headers on non-GSM data coding, binary (0x04), pictogram (0x09) and JIS (0x05, 0x0D, and ISO-2022-JP 0x0A that is not plain ASCII). These are counted in `messages_skipped_unsupported_encoding` and handled by `unclassifiable_action`: `forward` (default, fail open) or `reject` (error status 0x45). Headers that don't change how the text displays, such as a single shift header on text without escapes, no longer skip classification.
+
+**Long messages:** The API accepts at most 512 characters. Longer text is shortened to `max_text_chars` by keeping the start and the end of the message, where the lure and the link usually are, instead of failing the API call and forwarding unclassified. When a PDU carries both `short_message` and `message_payload`, both are classified.
+
+The proxy checks these settings at startup and exits with a clear error on unknown values, such as a typo in a rule action.
 
 **Fail-open design:** If the OTS API is unreachable or returns an error, the message is forwarded as ham. SMS delivery is never blocked by a classification outage.
 
@@ -508,6 +530,12 @@ node test_smpp.js           # Basic suite
 node test_advanced.js       # Advanced suite
 ```
 
+The offline suites need no proxy, upstream or API:
+
+```bash
+npm test                    # test_message_utils.js + test_encoding_roundtrip.js
+```
+
 ### Basic Test Suite — `test_smpp.js` (47 tests)
 
 ```
@@ -570,6 +598,9 @@ node test_advanced.js       # Advanced suite
   ├── logs/ ······················ Log output directory
   │   └── ots_smpp.log ··········· Application log
   │
+  ├── message_utils.js ··········· Message text, skip rules, label decision
+  ├── test_message_utils.js ······ Offline tests for message_utils.js
+  ├── test_encoding_roundtrip.js · Offline encoding / PDU transparency tests
   ├── test_smpp.js ··············· Basic test suite (47 tests)
   ├── test_advanced.js ··········· Advanced test suite (32 tests)
   └── dummy_upstream.js ·········· Simulated upstream SMSC for testing
@@ -612,6 +643,9 @@ node test_advanced.js       # Advanced suite
         ],
         "model": "ots-mbert",
         "confidence_threshold": 0.7,
+        "below_threshold_action": "use_label",
+        "unclassifiable_action": "forward",
+        "max_text_chars": 512,
         "timeout": 5000,
         "rules": {
             "ham":      { "action": "forward" },

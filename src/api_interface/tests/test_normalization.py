@@ -66,18 +66,66 @@ def test_invisible_chars_set_covers_key_categories():
 # --------------------------------------------------------------------------- #
 # normalize_unicode: homoglyph folding
 # --------------------------------------------------------------------------- #
-def test_cyrillic_homoglyph_folded(pre):
-    """Cyrillic look-alikes fold to their Latin forms (all chars are in the map)."""
-    # U+0440 р, U+0430 а, U+043E о, U+0445 х -> Latin p, a, o, x
-    spoofed = "раох"
-    folded = pre.normalize_unicode(spoofed)
-    assert folded == "paox"
-    assert folded.isascii(), f"homoglyphs not fully folded: {folded!r}"
+def test_mixed_script_spoof_folded(pre):
+    """A word mixing Cyrillic look-alikes with Latin letters folds to Latin."""
+    # U+0420 Р, U+0430 а inside an otherwise Latin word
+    assert pre.normalize_unicode("РayРаl: your account is limited") == "PayPal: your account is limited"
+
+
+def test_whole_word_spoof_in_latin_message_folded(pre):
+    """An all-look-alike word in a mostly Latin message is a spoof, not Russian."""
+    # раураӏ uses U+04CF palochka for 'l' and U+0443 у for 'y'
+    assert pre.normalize_unicode("Log in to раураӏ now") == "Log in to paypal now"
+
+
+def test_cyrillic_u_folds_to_y(pre):
+    """Regression: a duplicate dict key used to fold Cyrillic 'у' to 'u' ("uour")."""
+    assert pre.normalize_unicode("Update уоur details") == "Update your details"
 
 
 def test_homoglyph_preserves_uppercase(pre):
     """Uppercase Cyrillic homoglyph folds to uppercase Latin."""
-    assert pre.normalize_unicode("А") == "A"  # Cyrillic 'А' (U+0410) -> Latin 'A'
+    assert pre.normalize_unicode("Аpple ID locked") == "Apple ID locked"  # U+0410
+
+
+def test_zero_width_inside_spoof_is_stripped_then_folded(pre):
+    assert pre.normalize_unicode(f"Р{ZWSP}ayPal") == "PayPal"
+
+
+@pytest.mark.parametrize("text", [
+    "Привет, как дела? Ваш код 4821",
+    "Αποκλείστηκε ο λογαριασμός, συνδεθείτε:",
+    "Україна",
+    "раох",  # a Cyrillic-only word on its own is not treated as a spoof
+    "Оплата через iPhone-ом прошла успешно",  # Latin brand with Russian ending
+])
+def test_real_cyrillic_and_greek_unchanged(pre, text):
+    """Real non-Latin text must reach the model as written."""
+    assert pre.normalize_unicode(text) == text
+
+
+# --------------------------------------------------------------------------- #
+# normalize_unicode: compatibility forms
+# --------------------------------------------------------------------------- #
+def test_fullwidth_letters_folded(pre):
+    assert pre.normalize_unicode("ＰａｙＰａｌ account ｌｏｃｋｅｄ") == "PayPal account locked"
+
+
+def test_fullwidth_link_folded_in_latin_message(pre):
+    """Fullwidth dots and slashes disguise a link inside Latin text."""
+    assert pre.normalize_unicode("Verify at ｐａｙｐａｌ．ｃｏｍ／ｌｏｇｉｎ") == "Verify at paypal.com/login"
+
+
+def test_math_bold_letters_folded(pre):
+    assert pre.normalize_unicode("\U0001D40F\U0001D41A\U0001D432 now") == "Pay now"  # 𝐏𝐚𝐲
+
+
+@pytest.mark.parametrize("text", [
+    "你好，明天见：三点",  # fullwidth CJK punctuation is native, keep it
+    "ｶﾀｶﾅ",  # halfwidth katakana folds to fullwidth kana, not ASCII, so keep
+])
+def test_cjk_text_unchanged(pre, text):
+    assert pre.normalize_unicode(text) == text
 
 
 def test_plain_ascii_is_unchanged(pre):

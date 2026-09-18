@@ -45,15 +45,17 @@ csv.field_size_limit(10 * 1024 * 1024)
 # not cwd) so the import resolves whether run as a script or imported elsewhere.
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from loaders import LOADERS  # noqa: E402
+from loaders import LOADERS, production_normalize  # noqa: E402
 
 
-def load_logits(model_path, samples, device="cpu", batch_size=32):
+def load_logits(model_path, samples, device="cpu", batch_size=32, normalize=True):
     tok = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
     model = BertForSequenceClassification(BertConfig(vocab_size=119547, num_labels=3))
     model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     model.eval().to(device)
     texts = [s["text"] for s in samples]
+    if normalize:
+        texts = production_normalize(texts)
     order = sorted(range(len(texts)), key=lambda i: len(texts[i]))
     logits = [None] * len(texts)
     with torch.inference_mode():
@@ -97,6 +99,8 @@ def main():
                     default="macro_f1")
     ap.add_argument("--grid", type=float, default=2.0, help="max abs bias to search")
     ap.add_argument("--steps", type=int, default=9, help="grid points per class")
+    ap.add_argument("--raw-text", action="store_true",
+                    help="skip the production text cleanup (reproduces older results)")
     args = ap.parse_args()
 
     path, loader = args.data.rsplit(":", 1)
@@ -104,7 +108,7 @@ def main():
     golds = [LABELS.index(s["gold"]) for s in samples]
     print(f"Loaded {len(samples)} samples via '{loader}'")
 
-    logits = load_logits(args.model, samples)
+    logits = load_logits(args.model, samples, normalize=not args.raw_text)
     baseline = metrics_for(logits, golds, [0.0, 0.0, 0.0])
     print(f"Baseline (no bias): {baseline}")
 

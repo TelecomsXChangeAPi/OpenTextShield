@@ -72,6 +72,23 @@ class ModelManager:
                     logger.warning(f"Model file not found: {model_path}")
                     continue
 
+                # A checkout without `git lfs pull` leaves a ~130 byte text pointer in
+                # place of the weights. It passes exists(), so without this check the
+                # service starts and only fails later, deep inside torch.load.
+                if model_path.stat().st_size < 1_000_000:
+                    with open(model_path, "rb") as handle:
+                        head = handle.read(64)
+                    if head.startswith(b"version https://git-lfs"):
+                        logger.error(
+                            f"Model file {model_path} is a Git LFS pointer, not real weights. "
+                            f"Run 'git lfs pull' (or rebuild the image on a checkout that has)."
+                        )
+                        continue
+                    logger.warning(
+                        f"Model file {model_path} is only {model_path.stat().st_size} bytes; "
+                        f"this does not look like a full checkpoint."
+                    )
+
                 # Load configuration
                 bert_config = BertConfig.from_pretrained(
                     config["tokenizer"],

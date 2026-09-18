@@ -10,7 +10,8 @@
     "iconv-lite": "0.x"
   },
   "scripts": {
-    "start": "node ots_smpp_proxy.js"
+    "start": "node ots_smpp_proxy.js",
+    "test": "node test_message_utils.js && node test_encoding_roundtrip.js"
   },
   "author": "TelecomsXChange (TCXC)",
   "license": "ISC"
