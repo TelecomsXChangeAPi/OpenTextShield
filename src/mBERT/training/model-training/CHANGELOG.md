@@ -126,6 +126,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed 7,718 duplicate rows causing train/test leakage
   (7.4% → 0% under config.py split, seed=42).
 - Removed 80 machine-translation artifacts and 10 junk-text rows.
+- Extended the artifact marker list (Indonesian, Spanish, Italian, French, German,
+  Russian, Arabic assistant replies): 335 more rows removed, now 137,668 rows.
 
 ### Added
 - `clean_ots_dataset.py` — reproducible dataset cleaning utility.
