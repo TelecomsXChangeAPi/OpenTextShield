@@ -107,6 +107,15 @@ skips the model rather than pretending to serve it.
 | SMPP offline (`npm test`) | 137/137 |
 | SMPP integration against model 2.7 | 47/47 and 32/32, identical to the previous proxy |
 
+## Soak test on 2026-09-18
+
+18,482 labeled messages through the proxy in 1.2 hours (about 4 messages/s with
+hourly bursts): 0 errors or timeouts, container memory flat at 1.5 GB, proxy RSS
+flat at 30 MB, latency p50 145 ms, p99 under 470 ms, health checks all green.
+Spam blocked 97.7%, phishing 85.1%, fullwidth obfuscation 14/14. False blocks:
+2.0% on personal ham, 12.5% on synthetic A2P notices (the known model 2.7
+weakness). Full report: `SOAK_v2.11.0-rc.2.md`.
+
 ## Validated locally on 2026-09-18
 
 Run on an Apple Silicon machine against the branch tip, model 2.7:
