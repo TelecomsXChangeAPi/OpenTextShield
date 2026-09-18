@@ -13,10 +13,12 @@ on:
     branches: ["**"]
     paths:
       - "src/api_interface/**"
+      - "src/smpp_interface/**"
       - ".github/workflows/tests.yml"
   pull_request:
     paths:
       - "src/api_interface/**"
+      - "src/smpp_interface/**"
       - ".github/workflows/tests.yml"
 
 jobs:
@@ -44,3 +46,26 @@ jobs:
 
       - name: Run unit tests
         run: pytest src/api_interface/tests/ -v
+
+  smpp-offline-tests:
+    # The proxy's message helpers and encoding round-trip suites need no API,
+    # upstream or proxy process. 137 assertions covering the classification
+    # policy (below_threshold_action, unclassifiable_action, max_text_chars),
+    # PDU transparency and charset handling.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install proxy dependencies
+        working-directory: src/smpp_interface
+        run: npm ci --no-audit --no-fund
+
+      - name: Run offline SMPP suites
+        working-directory: src/smpp_interface
+        run: npm test
