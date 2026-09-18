@@ -47,4 +47,5 @@ node_modules/
 !Dockerfile*
 !docker-compose.yml
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
+!src/mBERT/training/model-training/mbert_ots_model_2.7.pth
 !src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv

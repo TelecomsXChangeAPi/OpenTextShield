@@ -70,6 +70,14 @@ deduplicated training set. Retraining on it gives a real trade rather than a
 free win, so **model 2.7 stays**. Full evidence, including three seeds per
 configuration, is in `evals/results/DATA_CLEANUP_2.8.md`.
 
+**7. Docker images actually contain the shipped model**
+
+`.dockerignore` excluded every `*.pth` and re-included only model 2.5, while the
+API has defaulted to model 2.7 since v2.10.0. Any image built from `main` would
+start and then fail to classify, because the loader only logs a warning when the
+weights are missing. Both ignore files now include 2.7 alongside 2.5, which stays
+for the documented rollback (`OTS_MBERT_MODEL_PATH`).
+
 ## Tests
 
 | Suite | Result |
@@ -89,12 +97,27 @@ configuration, is in `evals/results/DATA_CLEANUP_2.8.md`.
 
 ## Validating this RC
 
+No images are published for a release candidate. Build locally from the branch;
+Docker Hub tags follow only after validation and merge.
+
 ```bash
-git checkout local-hardening-step1
-cd src/smpp_interface && npm test
+git checkout data-cleanup-step3
+git lfs pull                                    # the .pth must be a real file
+cd src/smpp_interface && npm test               # 137 offline tests
 cd ../.. && python -m pytest src/api_interface/tests/ -q
+
+# local image, and confirm it serves the model it claims
+docker compose up --build -d
+curl -s localhost:8002/health                   # api_version 2.11.0, model 2.7
+curl -s -X POST localhost:8002/predict/ -H 'Content-Type: application/json' \
+  -d '{"text":"Your parcel is held, pay the fee: ｐａｒｃｅｌ-ｆｅｅ.top","model":"ots-mbert"}'
+
+# benchmarks against the honest eval sets
 python evals/run_eval.py \
   --model src/mBERT/training/model-training/mbert_ots_model_2.7.pth \
   --dataset fable5:evals/datasets/fable5_adversarial_v1_clean.csv \
   --dataset csv:evals/datasets/hard_legit_a2p_v1.csv --tag v2.11.0-rc1
 ```
+
+On live traffic, the number to watch is the false-block rate on A2P alerts:
+unsure spam and phishing verdicts are now acted on instead of delivered.
