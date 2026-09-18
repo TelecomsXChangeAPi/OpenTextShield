@@ -1,6 +1,8 @@
 # OpenTextShield v2.11.0 — Obfuscation and SMPP bypass fixes (model 2.7 unchanged)
 
-**Release candidate (`v2.11.0-rc.1`).** Platform version `2.11.0`. The shipped
+**Release candidate (`v2.11.0-rc.2`).** Platform version `2.11.0`. rc.2 supersedes rc.1:
+rc.1 carried an incorrect claim about the Docker build context and lacked the ignore-rule
+and Git LFS fixes below. The shipped
 classifier stays **model 2.7**. This RC is for validation on its own branch and
 is **not** a production release.
 
