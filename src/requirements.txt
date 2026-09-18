@@ -1,6 +1,6 @@
 acme==1.21.0
 annotated-types==0.6.0
-anyio==4.3.0
+anyio==4.14.2
 attrs==21.2.0
 Automat==20.2.0
 Babel==2.9.1
