@@ -16,7 +16,7 @@ class TrainingConfig:
         
         # Dataset Configuration
         self.dataset_dir = self.base_dir / "dataset"
-        self.current_dataset = "sms_spam_phishing_dataset_v2.4_combined.csv"
+        self.current_dataset = "sms_spam_phishing_dataset_v2.4.1_dedup.csv"
         self.dataset_path = self.dataset_dir / self.current_dataset
         
         # Model Configuration
