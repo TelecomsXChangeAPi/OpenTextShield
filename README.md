@@ -1,4 +1,7 @@
-<img src="https://github.com/TelecomsXChangeAPi/OpenTextShield/assets/19316784/71b21aa8-751f-4f4d-87cf-72a7a8c97341" width="300" alt="OpenTextShield Logo">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/brand/logo-dark.png">
+  <img src="docs/assets/brand/logo-light.png" width="360" alt="OpenTextShield">
+</picture>
 
 # OpenTextShield (OTS)
 
