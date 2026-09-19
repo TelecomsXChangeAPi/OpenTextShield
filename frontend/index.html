@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Open-source spam and phishing detection for SMS in 100+ languages. A compact model that runs on your own servers.">
     <title>OpenTextShield</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="canonical" href="https://ots.telecomsxchange.com/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="OpenTextShield">
@@ -91,11 +93,15 @@
             gap: 16px;
         }
         .wordmark {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
             font-weight: 600;
             font-size: 17px;
             letter-spacing: -0.01em;
             text-decoration: none;
         }
+        .wordmark .mark { width: 18px; height: 20px; flex: none; }
         .top-right { display: flex; align-items: center; gap: 10px; }
         .status {
             display: inline-flex;
@@ -347,7 +353,7 @@
 <body>
     <div class="page">
         <header class="top">
-            <a class="wordmark" href="/">OpenTextShield</a>
+            <a class="wordmark" href="/"><svg class="mark" viewBox="0 0 100 112" aria-hidden="true"><path d="M14 0H86Q100 0 100 14V62Q100 78 88 86L56 108Q50 112 44 108L12 86Q0 78 0 62V14Q0 0 14 0Z" fill="currentColor"/><path d="M30 56 L44 70 L72 40" fill="none" stroke="var(--paper)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>OpenTextShield</a>
             <div class="top-right">
                 <a class="status" id="status" data-state="checking" href="#" title="Checking the API">
                     <span class="dot"></span>
