@@ -2,467 +2,142 @@
 
 # OpenTextShield (OTS)
 
-**Professional SMS Spam & Phishing Detection API Platform**
+**Open-source spam and phishing detection for SMS, in more than 100 languages.**
 
-Open source collaborative AI platform for enhanced telecom messaging security and revenue protection, powered by multilingual BERT (mBERT) technology.
+OpenTextShield is a compact classifier (a fine-tuned multilingual BERT, about 180M parameters) that labels a text message as `ham`, `spam` or `phishing` in around 150 ms on a small CPU instance. It runs on your own servers as a REST API, an SMPP proxy in front of your SMSC, or both. No third-party AI service is involved.
 
 [![GitHub Stars](https://img.shields.io/github/stars/TelecomsXChangeAPi/OpenTextShield?style=flat-square)](https://github.com/TelecomsXChangeAPi/OpenTextShield/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=flat-square&logo=docker)](https://hub.docker.com/r/telecomsxchange/opentextshield)
+[![Docker](https://img.shields.io/badge/Docker-telecomsxchange%2Fopentextshield-blue?style=flat-square&logo=docker)](https://hub.docker.com/r/telecomsxchange/opentextshield)
 
-## 🚀 Quick Start
+**Try it:** [ots.telecomsxchange.com](https://ots.telecomsxchange.com) runs the current release.
+
+## Quick start
 
 [![Open Text Shield L - Docker Deployment](https://img.youtube.com/vi/HCaTE63lVws/0.jpg)](https://youtu.be/HCaTE63lVws?si=4D4BYAdtUxkX7wcF)
 
+**Docker** (image is multi-arch: linux/amd64 and linux/arm64, model included):
+
 ```bash
-# Prerequisites
-# Docker installation is required. Visit https://docs.docker.com/get-docker/ to install Docker.
-
-# Run the following commands.
-
 docker pull telecomsxchange/opentextshield:latest
 docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
-
-# Access Open Test Shield
-
-- Frontend Interface: http://localhost:8080
-- API Documentation: http://localhost:8002/docs
-- API Endpoint: http://localhost:8002/predict/
-
 ```
 
-
-
-
-Build from source and deploy OpenTextShield in your environment within minutes:
+**From source** (Python 3.12, about 4 GB RAM):
 
 ```bash
-# Clone the repository
 git clone https://github.com/TelecomsXChangeAPi/OpenTextShield.git
 cd OpenTextShield
-
-# Start both API and frontend (recommended)
-./scripts/start.sh
-
-# Or build using Docker
-# Build and run (includes 679MB mBERT model)
-docker build -t opentextshield .
-docker run -d -p 8002:8002 -p 8080:8080 opentextshield
-
-# Alternative if port 8080 is busy
-docker run -d -p 8002:8002 -p 8081:8080 opentextshield
+python3.12 -m venv ots && source ots/bin/activate
+pip install --upgrade pip && pip install -r requirements.txt
+./scripts/start.sh          # API on :8002, demo page on :8080
 ```
 
-**Access Points:**
-- **Frontend Interface**: http://localhost:8080
-- **API Documentation**: http://localhost:8002/docs
-- **API Endpoint**: http://localhost:8002/predict/
+Then open:
 
-## ✨ Key Features
+- Demo page: http://localhost:8080
+- API reference (Swagger): http://localhost:8002/docs
+- Health: http://localhost:8002/health
 
-- 🌍 **Multilingual Support**: Built on mBERT with coverage for 104+ languages; currently trained on 10 languages for SMS classification.
-- ⚡ **Real-time Classification**: Professional API with <200ms response time> 
-- 🔒 **Advanced Detection**: Spam, phishing, and ham classification
-- 📊 **Professional Interface**: Research-grade web interface with metrics
-- 🐳 **Docker Ready**: Complete containerized deployment
-- 🔧 **API First**: RESTful API with comprehensive documentation
-- 📈 **Revenue Protection**: Optional revenue assurance features
+## Using the API
 
-## 🛠 API Usage
-
-OpenTextShield provides both **legacy API** and **TMForum-compliant API** endpoints.
-
-### Legacy API (Direct Classification)
-
-#### Quick Test
 ```bash
-# Test the legacy API endpoint
 curl -X POST "http://localhost:8002/predict/" \
   -H "Content-Type: application/json" \
-  -d '{"text":"Your SMS content here","model":"ots-mbert"}'
+  -d '{"text":"Your account has been suspended. Verify now at http://secure-login-check.xyz","model":"ots-mbert"}'
 ```
 
-#### Response Format
 ```json
 {
-  "label": "ham|spam|phishing",
-  "probability": 0.95,
-  "processing_time": 0.15,
+  "label": "phishing",
+  "probability": 0.99996,
+  "processing_time": 0.145,
   "model_info": {
     "name": "OTS_mBERT",
-    "version": "2.1",
+    "version": "2.7",
+    "architecture": "bert-base-multilingual-cased",
     "author": "TelecomsXChange (TCXC)"
   }
 }
 ```
 
-### TMForum API (TMF922 - AI Inference Job Management)
+`text` is 1 to 512 characters. Text is normalised before classification, so full-width, look-alike and leetspeak disguises (`Ｐａｙｐａｌ`, `paypa1`) are classified as the text they imitate.
 
-#### Create Inference Job
-```bash
-# Create a TMForum-compliant inference job
-curl -X POST "http://localhost:8002/tmf-api/aiInferenceJob" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "priority": "normal",
-    "input": {
-      "inputType": "text",
-      "inputFormat": "plain",
-      "inputData": {"text": "Free money! Click here now!"}
-    },
-    "model": {
-      "id": "ots-mbert",
-      "name": "OpenTextShield mBERT",
-      "version": "2.1",
-      "type": "bert",
-      "capabilities": ["text-classification", "multilingual"]
-    },
-    "name": "SMS Classification Job"
-  }'
-```
+| Endpoint | Purpose |
+|---|---|
+| `POST /predict/` | Classify one message |
+| `GET /health` | Service status, API version and loaded model version |
+| `GET /metrics` | Prometheus metrics: throughput, batch sizes, queue depth, inference time |
+| `POST /feedback/`, `GET /feedback/download/{model}` | Report a wrong verdict; download collected feedback as CSV ([details](docs/FEEDBACK_API.md)) |
+| `GET /audit/info`, `/audit/logs`, `/audit/stats` | Audit log of classifications, when auditing is enabled |
+| `POST /tmf-api/aiInferenceJob`, `GET /tmf-api/aiInferenceJob[/{id}]` | TM Forum TMF922 job interface for operators who integrate that way |
 
-#### Check Job Status
-```bash
-# Check inference job status (replace JOB_ID with actual ID)
-curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob/JOB_ID"
-```
+Concurrent requests are coalesced into padded batches by a dynamic batcher, so per-message cost falls as load rises; on a GPU one instance handles hundreds of messages per second.
 
-#### Response Format (Completed Job)
-```json
-{
-  "id": "inference-job-123",
-  "state": "completed",
-  "priority": "normal",
-  "input": {
-    "inputType": "text",
-    "inputFormat": "plain",
-    "inputData": {"text": "Free money! Click here now!"}
-  },
-  "output": {
-    "outputType": "classification",
-    "outputFormat": "json",
-    "outputData": {
-      "label": "spam",
-      "probability": 0.95
-    },
-    "confidence": 0.95,
-    "outputMetadata": {
-      "model_used": "OTS_mBERT",
-      "model_version": "2.1",
-      "processing_time_seconds": 0.15
-    }
-  },
-  "model": {
-    "id": "ots-mbert",
-    "name": "OpenTextShield mBERT",
-    "version": "2.1",
-    "type": "bert",
-    "capabilities": ["text-classification", "multilingual"]
-  },
-  "creationDate": "2024-01-15T10:30:00Z",
-  "completionDate": "2024-01-15T10:30:15Z",
-  "processingTimeMs": 150,
-  "type": "TextClassificationInferenceJob"
-}
-```
+## How well it works
 
-#### List Inference Jobs
-```bash
-# List all inference jobs
-curl -X GET "http://localhost:8002/tmf-api/aiInferenceJob"
-```
+Current model is **2.7**. Numbers below are from [`evals/REPORT.md`](evals/REPORT.md), measured through the same text normalisation the API applies.
 
-## 📋 Installation Guide
+| Benchmark | Messages | Block rate | Phishing recall |
+|---|---|---|---|
+| UCI SMS Spam Collection (classic spam) | 5,574 | 99.5% | n/a (no phishing class) |
+| Mishra & Soni SMS phishing | 5,971 | 99.3% | 6.1% |
+| IMC 2025 smishing (modern, multilingual) | 8,007 | 72.4% | 45.7% |
+| In-house adversarial suite | 127 | 96.9% | 80.6% |
 
-### Requirements
-- Python 3.12
-- 4GB RAM minimum
-- Docker (optional)
+"Block rate" counts a spam or phishing message as blocked whichever of the two labels it received. UCI and Mishra & Soni overlap the training corpus and serve as regression gates; IMC 2025 is the most independent signal. Full method, caveats and the v2.5 to 2.7 comparison are in the report; release notes for the platform are in [`evals/results/`](evals/results/).
 
-### Local Setup
-```bash
-# Create virtual environment
-python3.12 -m venv ots
-source ots/bin/activate
+## Deploying
 
-# Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
+- **One host:** `docker compose up -d` (add `--profile production` for the nginx front). [Deployment quickstart](docs/deployment/DEPLOYMENT_QUICKSTART.md).
+- **Hardened image:** `docker build -f Dockerfile.secure -t opentextshield:secure .` (multi-stage, non-root).
+- **Several API instances behind nginx:** `docker compose -f deploy/docker-compose.2x.yml up -d` or the 10-instance file. [Guide](docs/deployment/DEPLOY_10_SERVERS.md).
+- **AWS:** Terraform for a single EC2 host with TLS via Caddy in [`infra/aws/`](infra/aws/README.md).
+- **SMPP:** the proxy in [`src/smpp_interface/`](src/smpp_interface/README.md) accepts SMPP binds, classifies each `submit_sm` through the API and forwards or rejects it according to your rules.
 
-# Start the platform
-./scripts/start.sh
-```
+Configuration is by environment variables with the `OTS_` prefix. The ones people usually change:
 
-### Docker Deployment
+| Variable | Default | Meaning |
+|---|---|---|
+| `OTS_ALLOWED_IPS` | `ANY` | Comma-separated client allow-list for the API |
+| `OTS_CORS_ORIGINS` | localhost origins | JSON list of allowed browser origins, e.g. `["*"]` |
+| `OTS_MAX_BATCH_SIZE` / `OTS_BATCH_WAIT_MS` | `64` / `50` | Dynamic batcher limits |
+| `OTS_USE_FP16` | `true` | Half precision on CUDA (ignored on CPU) |
+| `OTS_AUDIT_ENABLED` | `true` | Write classification audit logs to `audit_logs/` |
+| `OTS_MBERT_MODEL_PATH` | bundled 2.7 | Load a different `.pth`, for example to roll back |
+| `OTS_LOG_LEVEL` | `INFO` | Logging verbosity |
 
-#### 🛡️ Security-Enhanced Docker Options
+Sizing guidance for a 25 messages-per-second deployment is in [`docs/HARDWARE_SPEC_SHEET_25TPS.md`](docs/HARDWARE_SPEC_SHEET_25TPS.md).
 
-**Option 1: Enhanced Security (Recommended)**
-```bash
-# Multi-stage build with non-root user - best balance of security and functionality
-docker build -f Dockerfile.secure -t opentextshield:secure .
-docker run -d -p 8002:8002 -p 8081:8080 opentextshield:secure
-```
+## Repository layout
 
-**Option 2: Standard Build**
-```bash
-# Standard build with security updates
-docker build -t opentextshield .
-docker run -d -p 8002:8002 -p 8081:8080 opentextshield
-```
+| Path | Contents |
+|---|---|
+| `src/api_interface/` | FastAPI service: routers, batching, model loading, audit, TMF922 |
+| `src/smpp_interface/` | SMPP classification proxy (Node.js) |
+| `src/mBERT/` | Model weights, training scripts, datasets, model tests |
+| `frontend/` | The demo page, one HTML file |
+| `deploy/`, `infra/` | Multi-instance compose files and nginx config; AWS Terraform |
+| `evals/`, `benchmark/`, `tests/` | Evaluation harness and results; load benchmarks; API and adversarial tests |
+| `docs/` | Guides and reports, indexed in [`docs/README.md`](docs/README.md) |
 
-**Option 3: Maximum Security (Advanced)**
-```bash
-# Ultra-secure distroless build - minimal attack surface (API only)
-docker build -f Dockerfile.distroless -t opentextshield:distroless .
-docker run -d -p 8002:8002 opentextshield:distroless
-```
-
-#### 🏗️ Architecture-Specific Builds
-
-**x86_64 (Intel/AMD) Architecture:**
-```bash
-# Enhanced security for x86
-docker buildx build --platform linux/amd64 -f Dockerfile.secure -t opentextshield:x86-secure .
-
-# Standard x86 build
-docker buildx build --platform linux/amd64 -t telecomsxchange/opentextshield:2.1-x86-v2 .
-```
-
-**ARM64 (Apple Silicon) Architecture:**
-```bash
-# Enhanced security for ARM64
-docker buildx build --platform linux/arm64 -f Dockerfile.secure -t opentextshield:arm64-secure .
-```
-
-#### 📦 Pre-built Images
-```bash
-# Latest stable releases
-docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
-docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:2.1-x86-v2
-
-# Using Docker Compose (recommended for production)
-docker-compose up -d
-```
-
-**Container Access:**
-- API: http://localhost:8002
-- Frontend: http://localhost:8080 (or 8081)
-- Health: http://localhost:8002/health
-
-**Security Benefits:**
-- 🔒 **Enhanced**: 60-80% fewer vulnerabilities, non-root execution, multi-stage builds
-- 🛡️ **Distroless**: Minimal attack surface, no shell access, maximum security
-- 📦 **Smaller images**: Optimized builds reduce image size and vulnerabilities
-
-**Architecture Support:**
-- ARM64 (Apple Silicon): `telecomsxchange/opentextshield:latest`
-- x86_64 (Intel/AMD): `telecomsxchange/opentextshield:2.1-x86-v2`
-
-## 🏗 Architecture
-
-### Core Components
-
-**API Interface** (`src/api_interface/`)
-- Modern FastAPI application with professional structure
-- Pydantic models for request/response validation
-- Comprehensive error handling and logging
-- Security middleware and CORS support
-
-**mBERT Model** (`src/mBERT/training/model-training/`)
-- Multilingual BERT optimized for SMS classification
-- Support for 104+ languages with cross-lingual transfer learning
-- Apple Silicon MLX optimization available
-
-**Frontend Interface** (`frontend/`)
-- Professional research-grade web interface
-- Real-time system monitoring and metrics
-- Technical details and performance indicators
-
-### Performance
-- **Inference Speed**: 54 messages/second (Apple Silicon M1 Pro, single-request)
-- **Dynamic Batching**: Coalesces concurrent requests into padded GPU batches — on NVIDIA T4 (FP16, batch=32) this unlocks hundreds of MPS per instance
-- **Response Time**: <200ms typical (single-request); per-message cost drops sharply under load thanks to batching
-- **Languages**: 104+ supported via mBERT
-- **Accuracy**: Production-ready classification
-- **Tuning**: `OTS_MAX_BATCH_SIZE`, `OTS_BATCH_WAIT_MS`, `OTS_MAX_TEXT_LENGTH`, `OTS_USE_FP16` env vars
-
-## 🧪 Testing
+## Testing
 
 ```bash
-# Run comprehensive tests
-cd src/mBERT/tests
-python run_all_tests.py all
-
-# Stress testing
-python test_stress.py 1000
-python stressTest_20k_mlx_api.py
+pytest src/api_interface/tests/                 # API unit tests
+cd src/smpp_interface && npm test               # SMPP proxy, offline suites
+python src/mBERT/tests/test_sms.py              # model smoke test
+python evals/run_eval.py --help                 # benchmark evaluation
 ```
 
-## 📚 Research Background
+## Training your own model
 
-OpenTextShield leverages cutting-edge AI research to provide real-time SMS spam and phishing detection across 104+ languages. Our research focuses on the practical application of multilingual BERT (mBERT) technology for telecom security challenges.
+Datasets are CSV files with `text,label` columns and labels `ham`, `spam` or `phishing`. The training scripts, dataset tools and the [labelling guide](docs/LABELING_GUIDE.md) live under [`src/mBERT/training/model-training/`](src/mBERT/training/model-training/README.md). Contributions of labelled data in more languages are the most useful thing you can send.
 
-**Research Highlights:**
-- Comparative analysis of AI models for SMS classification
-- Multilingual spam detection using mBERT architecture  
-- Real-time processing optimization for telecom applications
-- Community-driven approach to dataset expansion
+## Contributing
 
-[**Read Full Research Paper →**](docs/RESEARCH.md)
+Issues and pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). The research background is in [docs/RESEARCH.md](docs/RESEARCH.md).
 
-## 🤝 Contributing
+## About
 
-### Ways to Contribute
-
-**🗃️ Dataset Contributions**
-We need multilingual datasets for training. Required format:
-```csv
-text,label
-"Your verification code is 12345",ham
-"Win $1000! Click here now!",spam
-"Your account is locked. Visit fake-bank.com",phishing
-```
-
-**🔧 Development**
-- API improvements and optimizations
-- Frontend enhancements
-- Model training and evaluation
-- Documentation and testing
-
-**🌍 Localization**
-- Translate interface and documentation
-- Test models in your language
-- Provide linguistic insights for regional variations
-
-**💡 Research & Testing**
-- Performance benchmarking
-- Security analysis
-- Integration testing with telecom systems
-
-### Getting Started
-1. Fork the repository
-2. Check [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines
-3. Join discussions in GitHub Issues
-4. Submit Pull Requests with improvements
-
-## 🔧 Development
-
-### Model Training
-```bash
-# Train new mBERT model
-cd src/mBERT/training/model-training/
-python train_ots_improved.py
-
-# Test model performance
-python test_training.py
-```
-
-### Frontend Development
-```bash
-# Frontend is a single HTML file with embedded CSS/JS
-# Edit frontend/index.html for customizations
-# Restart ./scripts/start.sh to see changes
-```
-
-## 🚀 Production Deployment
-
-### Docker Production
-```bash
-# Multi-arch production build
-docker buildx build --platform linux/amd64,linux/arm64 -t your-registry/opentextshield .
-
-# Production compose
-docker-compose -f docker-compose.prod.yml up -d
-```
-
-### Kubernetes
-```yaml
-# Example k8s deployment
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: opentextshield
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: opentextshield
-  template:
-    spec:
-      containers:
-      - name: ots
-        image: telecomsxchange/opentextshield:latest
-        ports:
-        - containerPort: 8002
-        - containerPort: 8080
-```
-
-## 📊 Monitoring & Analytics
-
-### Health Checks
-- **API Health**: `GET /health`
-- **Model Status**: `GET /model/status`
-- **Prometheus Metrics**: `GET /metrics` — batcher throughput, queue depth, batch-size histogram, inference time
-- **System Metrics**: Built-in performance monitoring
-
-### Logs
-- **API Logs**: Structured JSON logging with request tracking
-- **Prediction Logs**: Classification results and performance metrics
-- **Error Tracking**: Comprehensive error handling and reporting
-
-## 🔐 Security Features
-
-- **Input Validation**: Pydantic models with strict validation
-- **Rate Limiting**: Configurable API rate limits
-- **CORS Protection**: Configurable cross-origin policies
-- **Secure Headers**: Standard security headers implemented
-
-## 💼 Enterprise Features
-
-### Revenue Protection
-- Dynamic pricing based on message content analysis
-- Grey route detection and mitigation
-- Fraud pattern identification
-- Premium message routing optimization
-
-### Integration APIs
-- RESTful API with OpenAPI documentation
-- Webhook support for real-time notifications
-- Batch processing capabilities
-- Custom model loading support
-
-## 📖 Documentation
-
-- **[Installation Guide](docs/deployment/Installation.md)** - Detailed setup instructions
-- **[API Documentation](http://localhost:8002/docs)** - Interactive API explorer
-- **[Model Training Guide](src/mBERT/training/model-training/README.md)** - Train custom models
-- **[Testing Guide](src/mBERT/tests/README.md)** - Comprehensive testing suite
-- **[Docker Guide](Dockerfile)** - Container deployment options
-
-## 🌟 About TelecomsXChange (TCXC)
-
-OpenTextShield is pioneered by [TelecomsXChange](https://telecomsxchange.com), a leading telecommunications platform provider. TCXC is committed to releasing cutting-edge open-source AI tools for the global telecom community.
-
-**Key Initiative:**
-- First pre-trained open-source mBERT model for SMS classification
-- Integration with TCXC's SMPP Stack for real-time processing
-- Community-driven approach to continuous improvement
-- Revenue protection features for telecom operators
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Additional Resources
-
-- **[Research Paper](docs/RESEARCH.md)** - Complete academic research
-- **[BERT Documentation](https://arxiv.org/abs/1810.04805)** - Original BERT paper
-- **[FastAPI Documentation](https://fastapi.tiangolo.com/)** - API framework docs
-- **[MLX Framework](https://ml-explore.github.io/mlx/)** - Apple Silicon optimization
-
----
-
-**⭐ Star this repository if you find it helpful!**
-
-Made with ❤️ by the [TelecomsXChange](https://telecomsxchange.com) team and the open source community.
+OpenTextShield is built by [TelecomsXChange (TCXC)](https://telecomsxchange.com) and released under the [MIT License](LICENSE).
