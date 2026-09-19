@@ -153,6 +153,26 @@ docker run -d -p 8002:8002 -p 8080:8080 telecomsxchange/opentextshield:latest
 - **Dockerfile.distroless**: Maximum security with minimal attack surface  
 - **All secure builds**: Enhanced security posture suitable for production deployment
 
+## Repository Layout
+
+The root holds only what tooling expects there (README, Dockerfiles, `docker-compose.yml`, `requirements*.txt`). Everything else has a home:
+
+| Path | What lives there |
+|---|---|
+| `src/api_interface/` | FastAPI service (see below) |
+| `src/smpp_interface/` | SMPP classification proxy |
+| `src/mBERT/` | Model, training scripts, datasets |
+| `frontend/` | The single-file demo page and its link-preview image |
+| `deploy/` | Multi-instance compose files (`docker-compose.2x.yml`, `docker-compose.10x.yml`) and `nginx.conf`; run them with `docker compose -f deploy/<file> up` |
+| `infra/aws/` | Terraform for the ots.telecomsxchange.com host |
+| `benchmark/` | Throughput and comparison benchmarks; `benchmark/load/` has the March 2026 load, GPU and load-balancer scripts with their JSON results |
+| `evals/` | Model evaluation harness, eval sets and release results |
+| `tests/` | API, integration and adversarial tests |
+| `docs/` | All documentation: `deployment/`, `performance/`, `releases/`, `reports/`; index in `docs/README.md` |
+| `scripts/` | Start scripts and container helpers |
+
+`audit_logs/` and `feedback/` are runtime output directories and are not committed.
+
 ## Architecture Overview
 
 ### mBERT-Powered Text Classification System

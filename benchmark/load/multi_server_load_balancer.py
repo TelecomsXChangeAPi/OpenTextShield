@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-12-Server Load Balancer Test
-Simulates 12 API servers with load balancing across a 300-message burst
-Tests linear scaling with more servers
+Multi-Server Load Balancer Test
+Simulates 4 API servers with load balancing across a 300-message burst
+Tests if multiple servers improve response times
 """
 
 import asyncio
@@ -10,8 +10,10 @@ import time
 import random
 import sys
 from pathlib import Path
+from typing import List, Dict
+import json
 
-sys.path.insert(0, str(Path(__file__).parent / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
 from api_interface.services.model_loader import model_manager
 from api_interface.services.prediction_service import prediction_service
@@ -56,7 +58,10 @@ class APIServer:
         self.active = True
         while self.active:
             try:
+                # Get request from queue with timeout
                 request_data = await asyncio.wait_for(self.queue.get(), timeout=0.1)
+
+                # Simulate processing
                 start = time.time()
                 result = await prediction_service.predict(request_data['request'])
                 processing_time = time.time() - start
@@ -64,6 +69,7 @@ class APIServer:
                 self.processed_count += 1
                 self.processing_times.append(processing_time)
 
+                # Return result
                 request_data['future'].set_result({
                     'label': result.label,
                     'probability': result.probability,
@@ -94,7 +100,7 @@ class APIServer:
 class LoadBalancer:
     """Distributes requests across multiple API servers"""
 
-    def __init__(self, num_servers: int = 12):
+    def __init__(self, num_servers: int = 4):
         self.servers = [APIServer(i) for i in range(num_servers)]
         self.request_count = 0
         self.metrics = {
@@ -115,7 +121,7 @@ class LoadBalancer:
         for server in self.servers:
             server.active = False
         for task in self.server_tasks:
-            await asyncio.sleep(0.05)
+            await asyncio.sleep(0.1)
             task.cancel()
             try:
                 await task
@@ -123,7 +129,8 @@ class LoadBalancer:
                 pass
 
     async def submit_request(self, request: PredictionRequest):
-        """Submit request to least-loaded server (round-robin)"""
+        """Submit request to least-loaded server (round-robin would also work)"""
+        # Round-robin load balancing
         server_index = self.request_count % len(self.servers)
         self.request_count += 1
 
@@ -156,6 +163,7 @@ async def send_burst_request(message_index: int, balancer: LoadBalancer):
     try:
         text = random.choice(TEST_MESSAGES)
         request = PredictionRequest(text=text, model=ModelType.OTS_MBERT)
+
         result = await balancer.submit_request(request)
         return {
             'index': message_index,
@@ -173,27 +181,27 @@ async def send_burst_request(message_index: int, balancer: LoadBalancer):
 async def main():
     print("\n")
     print("█" * 80)
-    print("█ 12-Server Load Balancer Test - Maximum Scaling")
-    print("█ Burst: 300 Messages Distributed Across 12 Servers")
+    print("█ Multi-Server Load Balancer Test - 4 API Servers")
+    print("█ Burst: 300 Messages Distributed Across 4 Servers")
     print("█" * 80)
     print("\n📊 Setup:")
-    print("   • 12 API Servers (each with independent GPU/processing)")
+    print("   • 4 API Servers (each with independent GPU/processing)")
     print("   • Load Balancer (round-robin distribution)")
-    print("   • 300 burst messages (25 per server)")
+    print("   • 300 burst messages (75 per server)")
     print("\n🔄 Loading model on primary server...")
 
     model_manager.load_all_models()
     print(f"✅ Model loaded on: {str(model_manager.device).upper()}")
 
-    # Create load balancer with 12 servers
-    balancer = LoadBalancer(num_servers=12)
+    # Create load balancer with 4 servers
+    balancer = LoadBalancer(num_servers=4)
 
-    print(f"\n🚀 Starting 12 API servers...")
+    print(f"\n🚀 Starting 4 API servers...")
     await balancer.start()
-    await asyncio.sleep(1)
+    await asyncio.sleep(1)  # Let servers start
 
-    print(f"✅ 12 servers ready\n")
-    print(f"🚀 Sending 300 concurrent requests (25 per server via load balancer)...\n")
+    print(f"✅ 4 servers ready\n")
+    print(f"🚀 Sending 300 concurrent requests (75 per server via load balancer)...\n")
 
     # Create 300 concurrent tasks
     tasks = [send_burst_request(i, balancer) for i in range(300)]
@@ -228,7 +236,7 @@ async def main():
     # Print results
     print("\n")
     print("█" * 80)
-    print("█ 12-SERVER LOAD BALANCER RESULTS")
+    print("█ 4-SERVER LOAD BALANCER RESULTS")
     print("█" * 80)
 
     print(f"\n⏱️  TIMING:")
@@ -250,50 +258,34 @@ async def main():
     print(f"   Max: {max_response_time:.4f}s ({max_response_time*1000:.2f}ms)")
 
     print(f"\n🖥️  PER-SERVER LOAD DISTRIBUTION:")
-    total_per_server = []
     for server_id, times in metrics['server_loads'].items():
         if times:
             avg_time = sum(times) / len(times)
-            total_per_server.append(len(times))
-            print(f"   Server {server_id:2d}: {len(times):2d} requests, avg {avg_time*1000:6.2f}ms")
+            print(f"   Server {server_id}: {len(times)} requests, avg {avg_time*1000:.2f}ms")
 
-    # Comparison table
-    print(f"\n📊 COMPARISON: 1 vs 4 vs 12 Servers")
-    print(f"   {'Metric':<30} {'1 Server':<18} {'4 Servers':<18} {'12 Servers':<18}")
-    print(f"   {'-'*84}")
-    print(f"   {'Total Duration':<30} {'16.28s':<18} {'4.10s':<18} {f'{burst_duration:.2f}s':<18}")
-    print(f"   {'Throughput (req/s)':<30} {'18.43':<18} {'73.17':<18} {f'{300/burst_duration:.2f}':<18}")
-    print(f"   {'Max Response Time':<30} {'260.25ms':<18} {'108.69ms':<18} {f'{max_response_time*1000:.2f}ms':<18}")
-    print(f"   {'Median Response Time':<30} {'52.98ms':<18} {'52.91ms':<18} {f'{p50*1000:.2f}ms':<18}")
-    print(f"   {'Avg Response Time':<30} {'54.24ms':<18} {'55.91ms':<18} {f'{avg_response_time*1000:.2f}ms':<18}")
-    print(f"   {'P95 Response Time':<30} {'58.71ms':<18} {'58.15ms':<18} {f'{p95*1000:.2f}ms':<18}")
+    # Compare with single server
+    print(f"\n📊 COMPARISON: Single Server vs 4 Servers")
+    print(f"   {'Metric':<25} {'Single Server':<20} {'4 Servers':<20}")
+    print(f"   {'-'*65}")
+    print(f"   {'Total Duration':<25} {'16.28s':<20} {f'{burst_duration:.2f}s':<20}")
+    print(f"   {'Max Response Time':<25} {'260.25ms':<20} {f'{max_response_time*1000:.2f}ms':<20}")
+    print(f"   {'Median Response Time':<25} {'52.98ms':<20} {f'{p50*1000:.2f}ms':<20}")
+    print(f"   {'Avg Response Time':<25} {'54.24ms':<20} {f'{avg_response_time*1000:.2f}ms':<20}")
+    print(f"   {'P95 Response Time':<25} {'58.71ms':<20} {f'{p95*1000:.2f}ms':<20}")
 
-    # Calculate improvements
-    single_duration = 16.28
+    # Calculate improvement
     single_max = 260.25
-    improvement_time = ((single_duration - burst_duration) / single_duration) * 100
-    improvement_max = ((single_max - (max_response_time * 1000)) / single_max) * 100
+    improvement = ((single_max - (max_response_time * 1000)) / single_max) * 100
+    time_improvement = ((16.28 - burst_duration) / 16.28) * 100
 
-    print(f"\n🎯 IMPROVEMENT WITH 12 SERVERS:")
-    print(f"   Total Duration: {improvement_time:.1f}% faster than single server ⚡")
-    print(f"   Max Response Time: {improvement_max:.1f}% faster than single server ⚡")
+    print(f"\n🎯 IMPROVEMENT WITH 4 SERVERS:")
+    print(f"   Max Response Time: {improvement:.1f}% faster ⚡")
+    print(f"   Total Duration: {time_improvement:.1f}% faster ⚡")
     print(f"   Requests per second: {300/burst_duration:.2f} (vs 18.43 single server) 🚀")
 
-    if max_response_time < 0.1:
-        print(f"\n✅ ALL RESPONSES UNDER 100ms!")
-        print(f"   → Perfect for SMSC (assuming timeout > 100ms)")
-        print(f"   → Only ~{max_response_time*1000:.0f}ms max latency")
-
-    # Cost analysis
-    print(f"\n💰 INFRASTRUCTURE COST ANALYSIS:")
-    print(f"   1 Server:  1x cost  → 18.43 req/s   → 16.28s per burst")
-    print(f"   4 Servers: 4x cost  → 73.17 req/s   → 4.10s per burst")
-    print(f"   12 Servers: 12x cost → {300/burst_duration:.2f} req/s   → {burst_duration:.2f}s per burst")
-    print()
-    print(f"   Cost-per-second to handle burst:")
-    print(f"   1 Server:  1x × 16.28s = 16.28 cost-seconds")
-    print(f"   4 Servers: 4x × 4.10s = 16.40 cost-seconds (similar cost)")
-    print(f"   12 Servers: 12x × {burst_duration:.2f}s = {12*burst_duration:.2f} cost-seconds (less latency)")
+    if max_response_time < 0.2:
+        print(f"\n✅ ALL RESPONSES UNDER 200ms!")
+        print(f"   → No SMSC timeout issues (assuming timeout > 200ms)")
 
     print("\n" + "█" * 80)
     print("█ TEST COMPLETE")

@@ -16,10 +16,10 @@ My simulation tests showed that with **10 servers** (1 per CPU core):
 
 ```bash
 # Deploy 10 API servers + nginx load balancer
-docker-compose -f docker-compose.10x.yml up -d
+docker-compose -f deploy/docker-compose.10x.yml up -d
 
 # Verify all services started
-docker-compose -f docker-compose.10x.yml ps
+docker-compose -f deploy/docker-compose.10x.yml ps
 
 # Test the load balancer (distributes to one of 10 servers)
 curl -X POST "http://localhost:8002/predict/" \
@@ -198,8 +198,8 @@ done
 6. **Logging** aggregation
 
 ```bash
-docker-compose -f docker-compose.10x.yml up -d
+docker-compose -f deploy/docker-compose.10x.yml up -d
 # Verify
-docker-compose -f docker-compose.10x.yml logs -f
+docker-compose -f deploy/docker-compose.10x.yml logs -f
 ```
 

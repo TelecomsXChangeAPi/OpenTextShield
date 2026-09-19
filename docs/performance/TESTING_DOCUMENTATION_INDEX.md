@@ -70,7 +70,7 @@
 - Environment configuration
 - Volume mounting for source code
 ```
-**Usage:** `docker compose -f docker-compose.10x.yml up -d`
+**Usage:** `docker compose -f deploy/docker-compose.10x.yml up -d`
 **Status:** ✅ Production-ready
 
 ### ⚙️ Nginx Load Balancer Configuration
@@ -97,7 +97,7 @@
 - Classification distribution analysis
 - Saves results to JSON
 
-**Usage:** `source ots/bin/activate && python burst_test_real_10x_docker.py`
+**Usage:** `source ots/bin/activate && python benchmark/load/burst_test_real_10x_docker.py`
 **Status:** ✅ Ready to run
 
 ---
@@ -246,7 +246,7 @@ Phase 6: Comprehensive Documentation
 
 ### Scenario 1: "I need to deploy this ASAP"
 1. Read: `DEPLOYMENT_QUICKSTART.md` (5 min)
-2. Run: `docker compose -f docker-compose.10x.yml up -d`
+2. Run: `docker compose -f deploy/docker-compose.10x.yml up -d`
 3. Verify: Check all containers are healthy
 4. Test: `curl http://localhost:8002/predict/`
 

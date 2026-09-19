@@ -74,12 +74,12 @@ The API accepts the following parameters:
 - `text`: The message content to be analyzed.
 - `model`: The machine learning model to use (e.g., `bert`).
 
-For more information on API endpoints and parameters, please refer to the full documentation in the [OpenTextShield GitHub Repository](README.md).
+For more information on API endpoints and parameters, please refer to the full documentation in the [OpenTextShield GitHub Repository](../../README.md).
 
 ## Contributing
 
-We welcome contributions to Open Text Shield! Please check the [contributing guide](CONTRIBUTING.md) for guidelines on how to get involved.
+We welcome contributions to Open Text Shield! Please check the [contributing guide](../../CONTRIBUTING.md) for guidelines on how to get involved.
 
 ## License
 
-Open Text Shield is open-source and licensed under the [MIT License](LICENSE).
+Open Text Shield is open-source and licensed under the [MIT License](../../LICENSE).

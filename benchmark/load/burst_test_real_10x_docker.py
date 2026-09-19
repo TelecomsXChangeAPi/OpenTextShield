@@ -117,7 +117,7 @@ async def run_burst_test(num_messages=300):
     else:
         print("❌ Servers failed to stabilize after 30 seconds. Check Docker logs.")
         print("\nTroubleshooting:")
-        print("  docker compose -f docker-compose.10x.yml logs api-1")
+        print("  docker compose -f deploy/docker-compose.10x.yml logs api-1")
         return None
 
     # Step 2: Prepare test messages

@@ -3,94 +3,94 @@ version: '3.8'
 services:
   # 10 API Server instances
   api-1:
-    build: .
+    build: ..
     ports:
       - "9001:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-2:
-    build: .
+    build: ..
     ports:
       - "9002:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-3:
-    build: .
+    build: ..
     ports:
       - "9003:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-4:
-    build: .
+    build: ..
     ports:
       - "9004:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-5:
-    build: .
+    build: ..
     ports:
       - "9005:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-6:
-    build: .
+    build: ..
     ports:
       - "9006:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-7:
-    build: .
+    build: ..
     ports:
       - "9007:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-8:
-    build: .
+    build: ..
     ports:
       - "9008:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-9:
-    build: .
+    build: ..
     ports:
       - "9009:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   api-10:
-    build: .
+    build: ..
     ports:
       - "9010:8002"
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./src:/app/src
+      - ../src:/app/src
 
   # Nginx Load Balancer
   load-balancer:

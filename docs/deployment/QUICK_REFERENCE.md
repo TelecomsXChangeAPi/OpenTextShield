@@ -7,7 +7,7 @@
 
 ## Deploy Now
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 ## Test It
@@ -19,7 +19,7 @@ curl -X POST "http://localhost:8002/predict/" \
 
 ## Check Status
 ```bash
-docker compose -f docker-compose.10x.yml ps
+docker compose -f deploy/docker-compose.10x.yml ps
 ```
 
 ---
@@ -44,9 +44,9 @@ docker compose -f docker-compose.10x.yml ps
 ---
 
 ## Startup Checklist
-- [ ] Run: `docker compose -f docker-compose.10x.yml up -d`
+- [ ] Run: `docker compose -f deploy/docker-compose.10x.yml up -d`
 - [ ] Wait: 3-5 minutes for PyTorch download
-- [ ] Check: `docker compose -f docker-compose.10x.yml ps` (all healthy)
+- [ ] Check: `docker compose -f deploy/docker-compose.10x.yml ps` (all healthy)
 - [ ] Test: `curl http://localhost:8002/predict/`
 - [ ] Verify: Response time < 100ms
 
@@ -55,14 +55,14 @@ docker compose -f docker-compose.10x.yml ps
 ## Troubleshooting
 ```bash
 # Still starting?
-docker compose -f docker-compose.10x.yml logs -f
+docker compose -f deploy/docker-compose.10x.yml logs -f
 
 # Check resources
-docker compose -f docker-compose.10x.yml stats
+docker compose -f deploy/docker-compose.10x.yml stats
 
 # Restart everything
-docker compose -f docker-compose.10x.yml down
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml down
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 ---

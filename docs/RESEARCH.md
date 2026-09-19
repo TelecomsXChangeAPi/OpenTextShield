@@ -177,7 +177,7 @@ text,label
 
 ### Getting Started
 1. Fork the repository
-2. Check [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines
+2. Check [CONTRIBUTING.md](../CONTRIBUTING.md) for detailed guidelines
 3. Join discussions in GitHub Issues
 4. Submit Pull Requests with improvements
 
@@ -535,7 +535,7 @@ In conclusion, the collective efforts of the telecom industry, spearheaded by TC
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 
 Additional Resources

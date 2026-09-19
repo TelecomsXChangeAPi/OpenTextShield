@@ -309,7 +309,7 @@ OpenTextShield leverages cutting-edge AI research to provide real-time SMS spam 
 - Real-time processing optimization for telecom applications
 - Community-driven approach to dataset expansion
 
-[**Read Full Research Paper →**](RESEARCH.md)
+[**Read Full Research Paper →**](docs/RESEARCH.md)
 
 ## 🤝 Contributing
 
@@ -434,7 +434,7 @@ spec:
 
 ## 📖 Documentation
 
-- **[Installation Guide](Installation.md)** - Detailed setup instructions
+- **[Installation Guide](docs/deployment/Installation.md)** - Detailed setup instructions
 - **[API Documentation](http://localhost:8002/docs)** - Interactive API explorer
 - **[Model Training Guide](src/mBERT/training/model-training/README.md)** - Train custom models
 - **[Testing Guide](src/mBERT/tests/README.md)** - Comprehensive testing suite
@@ -456,7 +456,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Additional Resources
 
-- **[Research Paper](RESEARCH.md)** - Complete academic research
+- **[Research Paper](docs/RESEARCH.md)** - Complete academic research
 - **[BERT Documentation](https://arxiv.org/abs/1810.04805)** - Original BERT paper
 - **[FastAPI Documentation](https://fastapi.tiangolo.com/)** - API framework docs
 - **[MLX Framework](https://ml-explore.github.io/mlx/)** - Apple Silicon optimization

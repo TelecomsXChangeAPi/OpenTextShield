@@ -126,7 +126,7 @@ Hardware: 10-core Apple Silicon
 
 ### One-Command Deployment
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 ### What Happens
@@ -241,7 +241,7 @@ Solution: Add more GPUs for higher throughput
 
 ### Immediate (Production Deployment)
 1. ✅ Review deployment files (ready to use)
-2. ⏳ Deploy: `docker compose -f docker-compose.10x.yml up -d`
+2. ⏳ Deploy: `docker compose -f deploy/docker-compose.10x.yml up -d`
 3. ⏳ Wait 3-5 minutes for startup
 4. ⏳ Verify: `curl http://localhost:8002/predict/`
 5. ⏳ Test with real SMSC messages
@@ -321,7 +321,7 @@ You have:
 
 **Deploy with confidence:**
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 **Expected outcome:**
