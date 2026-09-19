@@ -31,14 +31,13 @@ The OpenTextShield Research Platform provides a professional web-based interface
 - **OpenAPI Spec**: http://localhost:8002/openapi.json
 
 Features:
-- Professional AI research lab aesthetic
-- Real-time system status monitoring with visual indicators
-- Advanced text analysis interface with technical terminology
-- OpenTextShield mBERT model with detailed architecture information
-- Comprehensive results display with performance metrics
-- Technical details panel showing model architecture and processing info
-- Sample message functionality for quick testing
-- Responsive design optimized for research environments
+- Single-file page (`frontend/index.html`, no build step): one composer, one verdict
+- Verdict shown as Legitimate / Spam / Phishing with confidence, latency and model version
+- Collapsible curl request and raw JSON response for the last classification
+- Live API status pill (polls `/health` every 30s, shows the loaded model version)
+- Sample messages, including a non-English one, run on click
+- Light and dark themes (follows the OS, toggle remembered per browser)
+- Responsive down to phone width; respects reduced-motion
 
 ### Testing the API
 ```bash
