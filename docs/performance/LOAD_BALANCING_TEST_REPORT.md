@@ -182,20 +182,20 @@ Nginx maintains a keepalive pool of 32 connections:
 ### Start 10-Server System with Load Balancer
 
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 ### Monitor Startup
 
 ```bash
 # Watch all containers
-docker compose -f docker-compose.10x.yml logs -f
+docker compose -f deploy/docker-compose.10x.yml logs -f
 
 # Check status
-docker compose -f docker-compose.10x.yml ps
+docker compose -f deploy/docker-compose.10x.yml ps
 
 # Monitor resources
-docker compose -f docker-compose.10x.yml stats
+docker compose -f deploy/docker-compose.10x.yml stats
 ```
 
 ### Test Load Balancer
@@ -209,13 +209,13 @@ curl -X POST "http://localhost:8002/predict/" \
 # Expected: Response in <100ms
 
 # Run automated burst test (after servers start)
-python burst_test_real_10x_docker.py
+python benchmark/load/burst_test_real_10x_docker.py
 ```
 
 ### Stop Everything
 
 ```bash
-docker compose -f docker-compose.10x.yml down
+docker compose -f deploy/docker-compose.10x.yml down
 ```
 
 ## Configuration Files Included
@@ -305,10 +305,10 @@ Before deploying to production:
 ### Immediate (Today)
 ```bash
 # Deploy the system
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 
 # Wait 5-10 minutes for startup
-docker compose -f docker-compose.10x.yml ps
+docker compose -f deploy/docker-compose.10x.yml ps
 
 # Test with real SMSC messages
 # (Point SMSC to http://localhost:8002)
@@ -348,7 +348,7 @@ Your load balancing infrastructure is **ready to deploy**. The configuration pro
 
 **Deploy with confidence:**
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 Expected result: All 300 SMSC messages processed in ~1.75 seconds ✅

@@ -14,7 +14,7 @@ from datetime import datetime
 from typing import List
 
 # Add src to path
-sys.path.insert(0, str(Path(__file__).parent / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
 from api_interface.services.model_loader import model_manager
 from api_interface.services.prediction_service import prediction_service

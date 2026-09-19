@@ -34,7 +34,7 @@ Success Rate: 100%
 
 ### Test 2: Simulated 10-Server Load Balancing (Async)
 ```
-Command: python multi_server_10x_load_balancer.py
+Command: python benchmark/load/multi_server_10x_load_balancer.py
 Setup: 1 Python process, 10 async "servers", 1 shared mBERT model
 Load: 300 simultaneous messages (round-robin distributed)
 Duration: 1.74 seconds
@@ -47,7 +47,7 @@ Success Rate: 100%
 
 ### Test 3: 12-Server Scaling Test
 ```
-Command: python multi_server_12x_load_balancer.py
+Command: python benchmark/load/multi_server_12x_load_balancer.py
 Setup: 12 concurrent async servers (beyond 10 hardware cores)
 Duration: 1.43 seconds
 Throughput: 209.79 req/s
@@ -59,7 +59,7 @@ Success Rate: 100%
 
 ### Test 4: Throughput Ceiling Analysis
 ```
-Command: python max_throughput_benchmark.py
+Command: python benchmark/load/max_throughput_benchmark.py
 Testing batch sizes: 10, 25, 50, 100, 150, 200, 250, 300
 Results: Throughput plateaus at ~19.25 req/s per GPU
 ```
@@ -212,7 +212,7 @@ T=+1,750ms: ALL responses complete
 
 ### Option 1: Docker Compose (Recommended for Production)
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 
 # This gives you:
 ✓ 10 isolated API server containers
@@ -381,7 +381,7 @@ The infrastructure is ready in `docker-compose.10x.yml` and `nginx.conf`.
 
 **Deploy with confidence**:
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 Expected startup time: 3-5 minutes (model loading)

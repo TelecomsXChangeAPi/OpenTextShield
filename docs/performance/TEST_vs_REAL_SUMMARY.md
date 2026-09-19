@@ -143,7 +143,7 @@ Request    │                           ├─ Server 3 (:9003) ─ GPU │ 1.7
 
 ### Option 1: Docker Compose (Best)
 ```bash
-docker-compose -f docker-compose.10x.yml up -d
+docker-compose -f deploy/docker-compose.10x.yml up -d
 
 # This starts:
 # - 10 containers running separate Python processes
@@ -205,7 +205,7 @@ My test is:
 
 **To get production-ready 10 servers, use:**
 ```bash
-docker-compose -f docker-compose.10x.yml up -d
+docker-compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 This will be 95% as fast as my test (only 15-20ms slower due to network).

@@ -4,7 +4,7 @@
 
 ```bash
 # Deploy 10 API servers + nginx load balancer
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 
 # Wait 3-5 minutes for models to load, then test:
 curl -X POST "http://localhost:8002/predict/" \
@@ -54,11 +54,11 @@ curl -X POST "http://localhost:8002/predict/" \
 ❌ → ⏳ → ✅
 
 Step 1: Start deployment
-  docker compose -f docker-compose.10x.yml up -d
+  docker compose -f deploy/docker-compose.10x.yml up -d
 
 Step 2: Wait for startup (~3-5 minutes)
   Watch container logs:
-  docker compose -f docker-compose.10x.yml logs -f
+  docker compose -f deploy/docker-compose.10x.yml logs -f
 
   Wait for lines like:
   api-1-1  | INFO:     Uvicorn running on http://0.0.0.0:8002
@@ -86,7 +86,7 @@ Step 4: Test through load balancer
 ### Check Container Status
 ```bash
 # See all containers and their health
-docker compose -f docker-compose.10x.yml ps
+docker compose -f deploy/docker-compose.10x.yml ps
 
 # Expected output: all containers "Up" and "(healthy)"
 ```
@@ -94,13 +94,13 @@ docker compose -f docker-compose.10x.yml ps
 ### View Logs
 ```bash
 # All containers
-docker compose -f docker-compose.10x.yml logs -f
+docker compose -f deploy/docker-compose.10x.yml logs -f
 
 # Specific server
-docker compose -f docker-compose.10x.yml logs -f api-1
+docker compose -f deploy/docker-compose.10x.yml logs -f api-1
 
 # Nginx load balancer
-docker compose -f docker-compose.10x.yml logs -f load-balancer
+docker compose -f deploy/docker-compose.10x.yml logs -f load-balancer
 ```
 
 ### Monitor in Real-Time
@@ -149,7 +149,7 @@ With 10 servers, expect: 70-90ms average latency
 ### Servers Not Starting (Taking >5 minutes)
 ```bash
 # Check logs for errors
-docker compose -f docker-compose.10x.yml logs api-1
+docker compose -f deploy/docker-compose.10x.yml logs api-1
 
 # Common issues:
 # 1. Low disk space (PyTorch is 104MB per container × 10)
@@ -157,9 +157,9 @@ docker compose -f docker-compose.10x.yml logs api-1
 # 3. Network issues (downloading PyTorch)
 
 # Solution: Stop, clean up, and restart
-docker compose -f docker-compose.10x.yml down
+docker compose -f deploy/docker-compose.10x.yml down
 docker system prune -f
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 ### Nginx Returning 502 (Bad Gateway)
@@ -169,10 +169,10 @@ sleep 30
 curl http://localhost:8002/health
 
 # If still failing, check if servers are running:
-docker compose -f docker-compose.10x.yml ps
+docker compose -f deploy/docker-compose.10x.yml ps
 
 # If containers are down, check startup errors:
-docker compose -f docker-compose.10x.yml logs api-1 | tail -100
+docker compose -f deploy/docker-compose.10x.yml logs api-1 | tail -100
 ```
 
 ### High Latency (>500ms)
@@ -184,7 +184,7 @@ docker exec opentextshield-api-1-1 python -c "import torch; print(torch.backends
 docker exec opentextshield-api-1-1 python -c "from src.services.model_manager import model_manager; print(model_manager.models)"
 
 # Check memory usage
-docker compose -f docker-compose.10x.yml stats
+docker compose -f deploy/docker-compose.10x.yml stats
 ```
 
 ### Uneven Load Distribution
@@ -210,19 +210,19 @@ kubectl scale deployment opentextshield --replicas=20
 
 ### Stop All Servers
 ```bash
-docker compose -f docker-compose.10x.yml down
+docker compose -f deploy/docker-compose.10x.yml down
 
 # Verify they're stopped
-docker compose -f docker-compose.10x.yml ps
+docker compose -f deploy/docker-compose.10x.yml ps
 ```
 
 ### Stop Individual Server (for maintenance)
 ```bash
 # Stop server 3
-docker compose -f docker-compose.10x.yml stop api-3
+docker compose -f deploy/docker-compose.10x.yml stop api-3
 
 # Restart it
-docker compose -f docker-compose.10x.yml start api-3
+docker compose -f deploy/docker-compose.10x.yml start api-3
 
 # Nginx automatically routes around failed servers
 ```
@@ -264,21 +264,21 @@ vs Single Server (for comparison):
 
 If something goes wrong:
 
-1. **Check logs**: `docker compose -f docker-compose.10x.yml logs -f`
-2. **Check status**: `docker compose -f docker-compose.10x.yml ps`
-3. **Check system resources**: `docker compose -f docker-compose.10x.yml stats`
+1. **Check logs**: `docker compose -f deploy/docker-compose.10x.yml logs -f`
+2. **Check status**: `docker compose -f deploy/docker-compose.10x.yml ps`
+3. **Check system resources**: `docker compose -f deploy/docker-compose.10x.yml stats`
 4. **Restart everything**:
    ```bash
-   docker compose -f docker-compose.10x.yml down
+   docker compose -f deploy/docker-compose.10x.yml down
    docker system prune -f
-   docker compose -f docker-compose.10x.yml up -d
+   docker compose -f deploy/docker-compose.10x.yml up -d
    ```
 
 ---
 
 **Ready to deploy?**
 ```bash
-docker compose -f docker-compose.10x.yml up -d
+docker compose -f deploy/docker-compose.10x.yml up -d
 ```
 
 See you in 3-5 minutes when your system is ready for production load! 🚀
