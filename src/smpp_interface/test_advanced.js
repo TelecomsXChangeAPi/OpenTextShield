@@ -520,7 +520,7 @@ async function testDLR() {
 		let r = await submitSm(session, {
 			source_addr: '12345',
 			destination_addr: '6789' + i,
-			short_message: 'DLR batch message ' + i + ' - normal text',
+			short_message: 'Reminder: appointment ' + i + ' tomorrow at 10am, reply C to confirm',
 			registered_delivery: 1
 		})
 		if (r.command_status === 0 && r.message_id) {

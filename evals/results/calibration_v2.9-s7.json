@@ -1,0 +1,22 @@
+{
+  "model": "src/mBERT/training/model-training/mbert_ots_model_2.9-s7.pth",
+  "data": "src/mBERT/training/model-training/dataset/curated/distill_v2.9_heldout.csv:csv",
+  "objective": "block_then_f1",
+  "baseline": {
+    "accuracy": 0.9875,
+    "block_accuracy": 0.9913,
+    "macro_f1": 0.9859,
+    "phishing_recall": 0.9854
+  },
+  "best_bias": [
+    0.0,
+    0.0,
+    0.5
+  ],
+  "calibrated": {
+    "accuracy": 0.9883,
+    "block_accuracy": 0.992,
+    "macro_f1": 0.9867,
+    "phishing_recall": 0.9883
+  }
+}

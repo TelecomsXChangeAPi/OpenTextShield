@@ -1,0 +1,41 @@
+{
+  "teacher_model": "jev-1.13.0",
+  "questions_version": "13d909ad8dd2",
+  "min_confidence": 0.6,
+  "heldout_frac": 0.05,
+  "train_rows": 134710,
+  "heldout_rows": 5660,
+  "train_labels": {
+    "spam": 18026,
+    "ham": 55528,
+    "phishing": 61156
+  },
+  "train_sources": {
+    "corpus": 106493,
+    "synthetic_fable5": 1227,
+    "notice_pairs": 939,
+    "archetypes": 3263,
+    "legit_notices": 13430,
+    "notice_twins": 9358
+  },
+  "counts": {
+    "kept_spam": 18937,
+    "kept_ham": 57806,
+    "kept_phishing": 63627,
+    "dropped_low_confidence": 17561,
+    "dropped_no_message": 5867,
+    "dropped_synthetic_disagreement_synthetic_fable5": 4,
+    "dropped_synthetic_disagreement_notice_pairs": 5,
+    "dropped_synthetic_disagreement_archetypes": 92,
+    "dropped_synthetic_disagreement_legit_notices": 86,
+    "dropped_synthetic_disagreement_notice_twins": 229
+  },
+  "label_changes": {
+    "spam->phishing": 17234,
+    "phishing->ham": 2323,
+    "spam->ham": 1366,
+    "ham->phishing": 1112,
+    "phishing->spam": 756,
+    "ham->spam": 494
+  }
+}
