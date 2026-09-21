@@ -78,12 +78,30 @@ sudo journalctl -u ots -f
 # Restart service
 sudo systemctl restart ots
 
-# Update to a new image
-sudo docker pull telecomsxchange/opentextshield:latest
-sudo systemctl restart ots
+# Update to a new image. The live unit pins a tag (not `latest`), so pull the
+# tag, try it on a side port, then edit the tag in the unit and restart.
+sudo docker pull telecomsxchange/opentextshield:2.9
+sudo docker run --rm -d --name ots-try -p 127.0.0.1:8012:8002 telecomsxchange/opentextshield:2.9
+curl -s http://127.0.0.1:8012/health        # wait for the new model version, then:
+sudo docker stop ots-try
+sudo cp /etc/systemd/system/ots.service /etc/systemd/system/ots.service.bak
+sudo sed -i 's|opentextshield:[0-9.v]*$|opentextshield:2.9|' /etc/systemd/system/ots.service
+sudo systemctl daemon-reload && sudo systemctl restart ots
 
 # Tear down everything
 terraform destroy
+```
+
+## Building images for this host
+
+The instance is `linux/amd64`. An image built with plain `docker build` on an
+Apple Silicon machine is arm64-only and fails on the host with
+`exec format error`. Always build and push multi-arch:
+
+```bash
+docker buildx build --builder ots-multiarch --platform linux/amd64,linux/arm64 \
+  -t telecomsxchange/opentextshield:2.9 -t telecomsxchange/opentextshield:latest --push .
+docker manifest inspect telecomsxchange/opentextshield:2.9   # must list amd64 and arm64
 ```
 
 ## Sizing notes
