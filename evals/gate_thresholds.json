@@ -1,0 +1,5 @@
+{
+  "bench100_v1": {"accuracy": 0.93, "block_accuracy": 0.96, "ham_recall": 0.94, "phishing_recall": 0.90},
+  "hard_legit_a2p_v1": {"accuracy": 0.95},
+  "fable5": {"block_accuracy": 0.95, "phishing_recall": 0.95}
+}

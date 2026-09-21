@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenTextShield daily probe (generate, classify, grade, log)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/opt/ots-probe
+EnvironmentFile=/etc/ots-probe.env
+Environment=OTS_PROBE_LOG_DIR=/opt/ots-probe/logs
+Environment=OTS_PROBE_REPORT=/opt/ots-probe/REPORT.md
+Environment=OTS_PROBE_API=https://ots.telecomsxchange.com
+ExecStart=/opt/ots-probe/venv/bin/python /opt/ots-probe/probe.py run --n 150
+TimeoutStartSec=3600
