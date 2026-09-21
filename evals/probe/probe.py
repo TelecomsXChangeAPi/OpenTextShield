@@ -32,7 +32,8 @@ from typing import List, Literal, Optional
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
-GUIDE = REPO / "docs/LABELING_GUIDE.md"
+GUIDE = next((p for p in (Path(os.environ.get("OTS_PROBE_GUIDE", "")), REPO / "docs/LABELING_GUIDE.md", HERE / "docs/LABELING_GUIDE.md")
+              if str(p) and p.is_file()), REPO / "docs/LABELING_GUIDE.md")  # repo layout, or the copy sync.sh --push installs
 LOG_DIR = Path(os.environ.get("OTS_PROBE_LOG_DIR", HERE / "logs"))
 REPORT = Path(os.environ.get("OTS_PROBE_REPORT", HERE / "REPORT.md"))
 GENERATOR_MODEL = os.environ.get("OTS_PROBE_GENERATOR", "claude-haiku-4-5")
@@ -139,7 +140,7 @@ def generate(n, seed, dry_run=False):
             "dates and phrasing; never reuse a sentence. No placeholders. Label each one strictly by the guide below.\n\n"
             f"<labeling_guide>\n{guide_text()}\n</labeling_guide>"
         )
-        resp = c.messages.parse(model=GENERATOR_MODEL, max_tokens=8000, temperature=1.0,
+        resp = c.messages.parse(model=GENERATOR_MODEL, max_tokens=8000,
                                 messages=[{"role": "user", "content": brief}], output_format=GeneratedBatch)
         if resp.stop_reason == "refusal":
             print("  generator refused a batch; continuing", file=sys.stderr)
