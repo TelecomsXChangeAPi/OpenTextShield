@@ -13,29 +13,29 @@ starlette>=0.46.2
 # CVE-2025-50181/50182: urllib3 redirect control
 # CVE-2024-11392/93/94: transformers security issues
 h11>=0.16.0
-# transformers 5.x is still an RC with API breaks — stay on 4.53.x until stable release.
-transformers>=4.53.0,<5.0
+# transformers 5.10.1+ and torch 2.13+ close the open security advisories.
+transformers>=5.10.1,<6.0
 requests>=2.33.0
-urllib3>=2.7.0
+urllib3>=2.8.0
 setuptools>=78.1.1
-aiohttp>=3.13.4
-cryptography>=46.0.7
+aiohttp>=3.14.3
+cryptography>=50.0.0
 
 # ML/AI dependencies - pinned to tested compatible versions
 # Upper bounds prevent untested major upgrades from breaking the container
 # torch bumped to 2.8+ for CVE-2025-3730 (DoS in torch.mkldnn_max_pool2d)
-torch>=2.9.1,<2.10
-tokenizers>=0.21,<0.22
-huggingface-hub>=0.35.3,<0.36
+torch>=2.13.0,<2.14
+tokenizers>=0.22,<0.23
+huggingface-hub>=1.0,<2.0
 safetensors>=0.4.5,<0.5
 numpy>=2.4.2,<3.0
-peft>=0.17.1,<0.18
+peft>=0.18
 
 # Other dependencies - allow latest compatible
 pydantic>=2.9.1
 pydantic-settings>=2.5.0
 click>=8.1.7
-anyio>=4.4.0
+anyio>=4.14.2
 certifi>=2024.8.30
 charset-normalizer>=3.3.2
 filelock>=3.16.0
