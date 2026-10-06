@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Open-source spam and phishing detection for SMS in 100+ languages. A compact model that runs on your own servers.">
+    <meta name="description" content="Open-source spam and phishing detection for SMS. Built on a 104-language model and trained on messages in 20 languages. Runs on your own servers.">
     <title>OpenTextShield</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="OpenTextShield">
     <meta property="og:title" content="Is this text message safe?">
-    <meta property="og:description" content="Open-source spam and phishing detection for SMS, in more than 100 languages. A compact model that runs on your own servers.">
+    <meta property="og:description" content="Open-source spam and phishing detection for SMS. Built on a 104-language model and trained on messages in 20 languages. Runs on your own servers.">
     <meta property="og:url" content="https://ots.telecomsxchange.com/">
     <meta property="og:image" content="https://ots.telecomsxchange.com/og.png">
     <meta property="og:image:width" content="2400">
@@ -19,7 +19,7 @@
     <meta property="og:image:alt" content="OpenTextShield: Is this text message safe? A sample verdict reading Phishing, 99.9%.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Is this text message safe?">
-    <meta name="twitter:description" content="Open-source spam and phishing detection for SMS, in more than 100 languages. A compact model that runs on your own servers.">
+    <meta name="twitter:description" content="Open-source spam and phishing detection for SMS. Built on a 104-language model and trained on messages in 20 languages. Runs on your own servers.">
     <meta name="twitter:image" content="https://ots.telecomsxchange.com/og.png">
     <meta name="theme-color" content="#F2F3F1" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#15171A" media="(prefers-color-scheme: dark)">
@@ -115,6 +115,31 @@
             border: 1px solid var(--hair);
         }
         .status:hover { border-color: var(--hair-strong); }
+        .status { background: transparent; cursor: pointer; font: inherit; font-size: 13px; white-space: nowrap; }
+        .status[aria-expanded="true"] { border-color: var(--hair-strong); color: var(--ink); }
+        .top-right { position: relative; }
+        .health {
+            position: absolute; top: calc(100% + 8px); right: 0; z-index: 20;
+            width: min(340px, calc(100vw - 32px));
+            background: var(--surface);
+            border: 1px solid var(--hair);
+            border-radius: 14px;
+            padding: 14px 16px 12px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, .12);
+            text-align: left;
+        }
+        .health[hidden] { display: none; }
+        .health-head { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+        .health-head .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--hair-strong); flex: none; }
+        .health[data-state="online"] .dot { background: var(--ham); }
+        .health[data-state="degraded"] .dot { background: var(--spam); }
+        .health[data-state="offline"] .dot { background: var(--phishing); }
+        .health dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; font-size: 13px; }
+        .health dt { color: var(--muted); white-space: nowrap; }
+        .health dd { margin: 0; color: var(--ink); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+        .health-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; white-space: nowrap; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--hair); font-size: 12px; color: var(--muted); }
+        .health-foot a, .health-foot button { color: var(--muted); font: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+        .health-foot a:hover, .health-foot button:hover { color: var(--ink); }
         .status .dot {
             width: 7px; height: 7px; border-radius: 50%;
             background: var(--hair-strong);
@@ -355,10 +380,25 @@
         <header class="top">
             <a class="wordmark" href="/"><svg class="mark" viewBox="0 0 100 112" aria-hidden="true"><path d="M14 0H86Q100 0 100 14V62Q100 78 88 86L56 108Q50 112 44 108L12 86Q0 78 0 62V14Q0 0 14 0Z" fill="currentColor"/><path d="M30 56 L44 70 L72 40" fill="none" stroke="var(--paper)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>OpenTextShield</a>
             <div class="top-right">
-                <a class="status" id="status" data-state="checking" href="#" title="Checking the API">
+                <button class="status" id="status" type="button" data-state="checking" title="Checking the API" aria-haspopup="dialog" aria-expanded="false" aria-controls="health">
                     <span class="dot"></span>
                     <span id="statusText">Connecting</span>
-                </a>
+                </button>
+                <div class="health" id="health" role="dialog" aria-label="API status" data-state="checking" hidden>
+                    <div class="health-head"><span class="dot"></span><span id="healthState">Checking the API</span></div>
+                    <dl>
+                        <dt>Endpoint</dt><dd id="healthEndpoint"></dd>
+                        <dt>API version</dt><dd id="healthApi">–</dd>
+                        <dt>Model</dt><dd id="healthModel">–</dd>
+                        <dt>Architecture</dt><dd id="healthArch">–</dd>
+                        <dt>Response time</dt><dd id="healthLatency">–</dd>
+                        <dt>Last checked</dt><dd id="healthWhen">–</dd>
+                    </dl>
+                    <div class="health-foot">
+                        <span>Checks every 30 s</span>
+                        <span><a href="changelog.html">What's new</a> · <button type="button" id="healthRefresh">Refresh</button> · <a id="healthRaw" href="/health" target="_blank" rel="noopener">Raw JSON</a></span>
+                    </div>
+                </div>
                 <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
                     <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
                     <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -368,7 +408,7 @@
 
         <section class="intro">
             <h1>Is this text message safe?</h1>
-            <p>Open-source spam and phishing detection for SMS, in more than 100 languages. A compact model that runs on your own servers. Paste a message to see how it is classified.</p>
+            <p>Open-source spam and phishing detection for SMS. Built on a 104-language model and trained on messages in 20 languages, it runs on your own servers. Paste a message to see how it is classified.</p>
         </section>
 
         <form id="form">
@@ -413,7 +453,8 @@
             <nav>
                 <a id="docsLink" href="/docs">API reference</a>
                 <a href="https://github.com/TelecomsXChangeAPi/OpenTextShield">GitHub</a>
-                <a id="healthLink" href="/health">Status</a>
+                <a href="changelog.html">Model changelog</a>
+                <a id="healthLink" href="/health">Health endpoint</a>
             </nav>
             <span>© <span id="year"></span> <a href="https://www.telecomsxchange.com/">TelecomsXChange</a></span>
         </footer>
@@ -454,7 +495,8 @@
         // Links and small chrome
         $('docsLink').href = `${API}/docs`;
         $('healthLink').href = `${API}/health`;
-        $('status').href = `${API}/health`;
+        $('healthRaw').href = `${API}/health`;
+        $('healthEndpoint').textContent = API.replace(/^https?:\/\//, '');
         $('year').textContent = new Date().getFullYear();
         if (!/Mac|iPhone|iPad/.test(navigator.platform)) $('hintKey').textContent = 'Ctrl';
 
@@ -478,23 +520,49 @@
             if ((e.metaKey || e.ctrlKey) && e.key === 'Enter' && !classify.disabled) form.requestSubmit();
         });
 
-        // Health
+        // Health: the pill summarises, the popover shows the details in plain rows
+        const healthPanel = $('health');
+        function renderHealth(state, j, ms) {
+            const m = j?.model || {};
+            healthPanel.dataset.state = state;
+            $('healthState').textContent = state === 'online' ? 'Online, model loaded'
+                : state === 'degraded' ? `Degraded, API reports "${j?.status || 'unknown'}"`
+                : `Offline, could not reach the API`;
+            $('healthApi').textContent = j?.api_version || j?.version || '–';
+            $('healthModel').textContent = m.version ? `${(m.name || 'OTS mBERT').replace('_', ' ')} ${m.version}` : (m.name || '–');
+            $('healthArch').textContent = m.architecture || '–';
+            $('healthLatency').textContent = ms == null ? '–' : `${Math.round(ms)} ms`;
+            $('healthWhen').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        }
         async function health() {
             const s = $('status'), t = $('statusText');
+            const t0 = performance.now();
             try {
                 const r = await fetch(`${API}/health`, { cache: 'no-store' });
                 const j = await r.json();
+                const ms = performance.now() - t0;
                 modelVersion = j.model?.version || null;
                 const ok = j.status === 'healthy';
                 s.dataset.state = ok ? 'online' : 'degraded';
                 t.textContent = ok ? (modelVersion ? `Online, model ${modelVersion}` : 'Online') : 'Degraded';
-                s.title = ok ? 'The API is up and the model is loaded' : `API reports ${j.status}`;
+                s.title = ok ? 'The API is up and the model is loaded. Click for details.' : `API reports ${j.status}. Click for details.`;
+                renderHealth(ok ? 'online' : 'degraded', j, ms);
             } catch {
                 s.dataset.state = 'offline';
                 t.textContent = 'Offline';
-                s.title = `Could not reach ${API}`;
+                s.title = `Could not reach ${API}. Click for details.`;
+                renderHealth('offline', null, null);
             }
         }
+        function setHealthOpen(open) {
+            healthPanel.hidden = !open;
+            $('status').setAttribute('aria-expanded', String(open));
+        }
+        $('status').addEventListener('click', e => { e.stopPropagation(); setHealthOpen(healthPanel.hidden); });
+        $('healthRefresh').addEventListener('click', health);
+        healthPanel.addEventListener('click', e => e.stopPropagation());
+        document.addEventListener('click', () => setHealthOpen(false));
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && !healthPanel.hidden) { setHealthOpen(false); $('status').focus(); } });
         health();
         setInterval(health, 30000);
 

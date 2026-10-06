@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the OpenTextShield probe every day
+
+[Timer]
+OnCalendar=*-*-* 06:10:00 UTC
+RandomizedDelaySec=600
+Persistent=true
+
+[Install]
+WantedBy=timers.target
