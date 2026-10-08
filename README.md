@@ -3,7 +3,6 @@
   <img src="docs/assets/brand/logo-light.png" width="360" alt="OpenTextShield">
 </picture>
 
-# OpenTextShield (OTS)
 
 **Open-source spam and phishing detection for SMS, in more than 100 languages.**
 
