@@ -4,15 +4,17 @@
 </picture>
 
 
-**Open-source spam and phishing detection for SMS, in more than 100 languages.**
+**Open-source spam and phishing detection for SMS, in many languages.**
 
-OpenTextShield is a compact classifier (a fine-tuned multilingual BERT, about 180M parameters) that labels a text message as `ham`, `spam` or `phishing` in around 150 ms on a small CPU instance. It runs on your own servers as a REST API, an SMPP proxy in front of your SMSC, or both. No third-party AI service is involved.
+OpenTextShield is a compact classifier (a fine-tuned multilingual BERT, about 180M parameters) that labels a text message as `ham`, `spam` or `phishing` in around 150 ms on a small CPU instance. It is used by telecom carriers to screen live SMS traffic and protect subscribers in real networks. It runs on your own servers as a REST API, an SMPP proxy in front of your SMSC, or both. No third-party AI service is involved.
 
 [![GitHub Stars](https://img.shields.io/github/stars/TelecomsXChangeAPi/OpenTextShield?style=flat-square)](https://github.com/TelecomsXChangeAPi/OpenTextShield/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/Docker-telecomsxchange%2Fopentextshield-blue?style=flat-square&logo=docker)](https://hub.docker.com/r/telecomsxchange/opentextshield)
+[![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-OpenTextShield-yellow?style=flat-square)](https://huggingface.co/telecomsxchange/OpenTextShield)
+[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Space-blue?style=flat-square)](https://huggingface.co/spaces/telecomsxchange/OpenTextShield)
 
-**Try it:** [ots.telecomsxchange.com](https://ots.telecomsxchange.com) runs the current release.
+**Try it:** the [Hugging Face Space](https://huggingface.co/spaces/telecomsxchange/OpenTextShield) runs the demo in your browser; [ots.telecomsxchange.com](https://ots.telecomsxchange.com) runs the current release.
 
 ## Quick start
 
@@ -75,6 +77,20 @@ curl -X POST "http://localhost:8002/predict/" \
 | `POST /tmf-api/aiInferenceJob`, `GET /tmf-api/aiInferenceJob[/{id}]` | TM Forum TMF922 job interface for operators who integrate that way |
 
 Concurrent requests are coalesced into padded batches by a dynamic batcher, so per-message cost falls as load rises; on a GPU one instance handles hundreds of messages per second.
+
+### Using the model without the API
+
+The weights are published on Hugging Face as [`telecomsxchange/OpenTextShield`](https://huggingface.co/telecomsxchange/OpenTextShield) in standard Transformers format:
+
+```python
+from transformers import pipeline
+
+classifier = pipeline("text-classification", model="telecomsxchange/OpenTextShield")
+classifier("Your package is held. Pay the fee: http://usps-redelivery.top/pay")
+# [{'label': 'phishing', 'score': 0.9999}]
+```
+
+Loaded this way you get the raw model without the API's text normalisation; apply [`EnhancedPreprocessor.normalize_unicode`](src/api_interface/services/enhanced_preprocessing.py) in front of it if your traffic may be adversarial.
 
 ## How well it works
 
