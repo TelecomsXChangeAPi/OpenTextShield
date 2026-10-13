@@ -63,10 +63,16 @@
         .earlier dt { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
         .earlier dd { margin: 0; }
         footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--hair); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; font-size: 13px; color: var(--muted); }
-        footer nav { display: flex; gap: 18px; }
+        footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
         footer a { color: var(--muted); text-decoration: none; }
         footer a:hover { color: var(--ink); }
-        @media (max-width: 520px) { h1 { font-size: 26px; } th, td { padding-right: 8px; } .release h2 { font-size: 20px; } }
+        @media (max-width: 520px) {
+            h1 { font-size: 26px; }
+            th, td { padding-right: 8px; }
+            .release h2 { font-size: 20px; }
+            .top { padding-top: 20px; gap: 12px; }
+            .back { white-space: nowrap; }
+        }
         @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
     </style>
 </head>

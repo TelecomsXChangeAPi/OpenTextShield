@@ -360,7 +360,7 @@
             font-size: 13px;
             color: var(--muted);
         }
-        footer nav { display: flex; gap: 18px; }
+        footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
         footer a { text-decoration: none; }
         footer a:hover { color: var(--ink); }
 
@@ -369,6 +369,27 @@
             textarea { font-size: 17px; padding: 18px 16px 6px; }
             .hint { display: none; }
             .samples-label { display: none; }
+        }
+
+        /* Small screens: the brand becomes a two-line lockup, the header never overflows, the footer stacks */
+        @media (max-width: 520px) {
+            .top { padding-top: 20px; gap: 12px; min-width: 0; }
+            .top-right { flex: none; }
+            .wordmark { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 9px; align-items: center; font-size: 16px; line-height: 1.15; min-width: 0; }
+            .wordmark .mark { grid-row: 1 / 3; }
+            .wordmark .product { grid-column: 2; font-size: 12.5px; letter-spacing: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            .wordmark .product::before { content: none; }
+            footer { flex-direction: column; align-items: flex-start; gap: 14px; padding: 48px 0 24px; }
+            footer nav { gap: 6px 18px; }
+            footer a { padding: 4px 0; }
+            .code { padding: 42px 14px 14px; font-size: 12.5px; }
+            .verdict-row { gap: 10px; }
+            .health-foot { flex-wrap: wrap; white-space: normal; row-gap: 4px; }
+        }
+        @media (max-width: 360px) {
+            .status { padding: 6px; gap: 0; }
+            .status .dot { width: 9px; height: 9px; }
+            .status > span:not(.dot) { display: none; }
         }
         @media (prefers-reduced-motion: reduce) {
             .meter::after, .composer, .classify { transition: none; }
