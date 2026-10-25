@@ -15,9 +15,41 @@ import hashlib
 import json
 import random
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 LABELS = ["ham", "spam", "phishing"]
+
+
+def confusion_metrics(golds, preds, labels=LABELS):
+    """One confusion-matrix pass over parallel gold/pred label-string lists.
+
+    Shared by run_eval.py's full report and finetune_distill.py's in-training
+    validation so precision/recall/f1, block accuracy (ham vs. not-ham) and
+    the false-block rate can't drift out of sync between the two.
+    """
+    n = len(golds)
+    confusion = Counter(zip(golds, preds))
+    correct = sum(v for (g, p), v in confusion.items() if g == p)
+    blocked_ok = sum(v for (g, p), v in confusion.items() if (g != "ham") == (p != "ham"))
+    per_class = {}
+    for label in labels:
+        tp = confusion.get((label, label), 0)
+        gold_n = sum(v for (g, _), v in confusion.items() if g == label)
+        pred_n = sum(v for (_, p), v in confusion.items() if p == label)
+        prec = tp / pred_n if pred_n else 0.0
+        rec = tp / gold_n if gold_n else 0.0
+        f1 = 2 * prec * rec / (prec + rec) if prec + rec else 0.0
+        per_class[label] = {"precision": round(prec, 4), "recall": round(rec, 4), "f1": round(f1, 4), "support": gold_n}
+    ham = per_class.get("ham")
+    false_block_rate = round(1 - ham["recall"], 4) if ham and ham["support"] else None
+    return {
+        "n": n,
+        "accuracy_3class": round(correct / n, 4) if n else 0,
+        "accuracy_binary_block": round(blocked_ok / n, 4) if n else 0,
+        "per_class": per_class,
+        "confusion": confusion,
+        "false_block_rate": false_block_rate,
+    }
 
 # SMS payloads with long redaction placeholders can exceed the default csv field
 # size limit; raise it once at import.

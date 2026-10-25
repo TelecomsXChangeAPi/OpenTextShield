@@ -139,50 +139,22 @@ def load_all_answers():
 
 
 def ask(args):
-    from typesafe_sdk import AsyncTypeSafeClient, RetryPolicy
-
     done = load_all_answers()
-    todo = [r for r in filtered_rows() if r["key"] not in done]
-    todo.sort(key=lambda r: r["source"] == "corpus")  # generated rows first: they are the gap the corpus lacks
+    todo_rows = [r for r in filtered_rows() if r["key"] not in done]
+    todo_rows.sort(key=lambda r: r["source"] == "corpus")  # generated rows first: they are the gap the corpus lacks
     if args.limit:
-        todo = todo[:args.limit]
+        todo_rows = todo_rows[:args.limit]
+    todo = [(r["key"], r["text"]) for r in todo_rows]
     print(f"{len(done)} texts already answered, asking about {len(todo)} more "
           f"(model {TYPESAFE_MODEL}, concurrency {args.concurrency})", flush=True)
 
-    async def run():
-        sem = asyncio.Semaphore(args.concurrency)
-        retry = RetryPolicy(max_retries=6, backoff_initial=1.0, backoff_max=30.0, timeout=60.0)
-        tokens = errors = finished = 0
-        async with AsyncTypeSafeClient(retry=retry) as client:
-            with open(CORPUS_ANSWERS, "a", encoding="utf-8") as out:
-                async def one(r):
-                    nonlocal tokens, errors, finished
-                    async with sem:
-                        try:
-                            resp = await client.system_one({"sms": r["text"]}, QUESTIONS, model=TYPESAFE_MODEL)
-                        except Exception as e:
-                            errors += 1
-                            if errors <= 20 or errors % 100 == 0:
-                                print(f"  error on {r['key']}: {type(e).__name__}: {e}", file=sys.stderr, flush=True)
-                            return
-                    rec = _answer_record(r["key"], resp)
-                    out.write(json.dumps(rec, ensure_ascii=False) + "\n")
-                    tokens += rec["usage_in"]
-                    finished += 1
-                    if finished % 1000 == 0:
-                        out.flush()
-                        print(f"  {finished}/{len(todo)} answered, {errors} errors, {tokens:,} input tokens", flush=True)
-                # bounded fan-out so 137k coroutines are not created at once
-                pending = set()
-                for r in todo:
-                    pending.add(asyncio.create_task(one(r)))
-                    if len(pending) >= args.concurrency * 4:
-                        _, pending = await asyncio.wait(pending, return_when=asyncio.FIRST_COMPLETED)
-                await asyncio.gather(*pending)
-        print(f"done: {finished} answered, {errors} errors, {tokens:,} input tokens", flush=True)
-
     CURATED_DIR.mkdir(parents=True, exist_ok=True)
-    asyncio.run(run())
+    # bounded fan-out (max_pending) so 137k coroutines are not created at once
+    finished, errors, tokens = asyncio.run(la.ask_typesafe_batch(
+        todo, CORPUS_ANSWERS, concurrency=args.concurrency,
+        retry_kwargs=dict(max_retries=6, backoff_initial=1.0, backoff_max=30.0, timeout=60.0),
+        flush_every=1000, max_pending=args.concurrency * 4, log_every_error=False))
+    print(f"done: {finished} answered, {errors} errors, {tokens:,} input tokens", flush=True)
 
 
 def build(args):

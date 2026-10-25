@@ -335,9 +335,55 @@ def _answer_record(key, response):
             "usage_in": response.usage.input_tokens, "answers": out}
 
 
-def ask(args):
+async def ask_typesafe_batch(todo, out_path, *, concurrency, retry_kwargs, flush_every=500,
+                              max_pending=None, log_every_error=True, max_logged_errors=20):
+    """Ask TypeSafe about every (key, text) in `todo`, appending answer records to
+    `out_path` as they complete. Shared by this module's and distill_labels.py's
+    `ask` commands so the retry policy, incremental JSONL writing and bounded
+    concurrency can't drift between the two.
+
+    With `max_pending` set, fans out via a bounded set of tasks instead of
+    `asyncio.gather(*todo)` so a huge todo list (distill_labels.py: ~100k+ rows)
+    doesn't create that many coroutines up front. Returns (finished, errors, tokens).
+    """
     from typesafe_sdk import AsyncTypeSafeClient, RetryPolicy
 
+    sem = asyncio.Semaphore(concurrency)
+    retry = RetryPolicy(**retry_kwargs)
+    tokens = errors = finished = 0
+    async with AsyncTypeSafeClient(retry=retry) as client:
+        with open(out_path, "a", encoding="utf-8") as out:
+            async def one(key, text):
+                nonlocal tokens, errors, finished
+                async with sem:
+                    try:
+                        response = await client.system_one({"sms": text}, QUESTIONS, model=TYPESAFE_MODEL)
+                    except Exception as e:  # keep going; rerun `ask` to retry the gaps
+                        errors += 1
+                        if log_every_error or errors <= max_logged_errors or errors % 100 == 0:
+                            print(f"  error on {key}: {type(e).__name__}: {e}", file=sys.stderr, flush=True)
+                        return
+                rec = _answer_record(key, response)
+                out.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                tokens += rec["usage_in"]
+                finished += 1
+                if finished % flush_every == 0:
+                    out.flush()
+                    print(f"  {finished}/{len(todo)} answered, {errors} errors, {tokens:,} input tokens", flush=True)
+
+            if max_pending:
+                pending = set()
+                for key, text in todo:
+                    pending.add(asyncio.create_task(one(key, text)))
+                    if len(pending) >= max_pending:
+                        _, pending = await asyncio.wait(pending, return_when=asyncio.FIRST_COMPLETED)
+                await asyncio.gather(*pending)
+            else:
+                await asyncio.gather(*(one(k, t) for k, t in todo))
+    return finished, errors, tokens
+
+
+def ask(args):
     done = load_answers()
     todo, seen = [], set()
     for row in (load_candidates() if args.file == "candidates" else load_subset()):
@@ -349,34 +395,11 @@ def ask(args):
         todo = todo[:args.limit]
     print(f"{len(done)} texts already answered, asking about {len(todo)} more")
 
-    async def run():
-        sem = asyncio.Semaphore(CONCURRENCY)
-        retry = RetryPolicy(max_retries=5, backoff_initial=1.0, backoff_max=20.0, timeout=60.0)
-        tokens, errors, finished = 0, 0, 0
-        async with AsyncTypeSafeClient(retry=retry) as client:
-            with open(ANSWERS_JSONL, "a", encoding="utf-8") as out:
-                async def one(key, text):
-                    nonlocal tokens, errors, finished
-                    async with sem:
-                        try:
-                            response = await client.system_one({"sms": text}, QUESTIONS, model=TYPESAFE_MODEL)
-                        except Exception as e:  # keep going; rerun `ask` to retry the gaps
-                            errors += 1
-                            print(f"  error on {key}: {type(e).__name__}: {e}", file=sys.stderr)
-                            return
-                    rec = _answer_record(key, response)
-                    out.write(json.dumps(rec, ensure_ascii=False) + "\n")
-                    tokens += rec["usage_in"]
-                    finished += 1
-                    if finished % 500 == 0:
-                        out.flush()
-                        print(f"  {finished}/{len(todo)} answered, {tokens:,} input tokens")
-
-                await asyncio.gather(*(one(k, t) for k, t in todo))
-        print(f"done: {finished} answered, {errors} errors, {tokens:,} input tokens")
-
     CURATED_DIR.mkdir(parents=True, exist_ok=True)
-    asyncio.run(run())
+    finished, errors, tokens = asyncio.run(ask_typesafe_batch(
+        todo, ANSWERS_JSONL, concurrency=CONCURRENCY,
+        retry_kwargs=dict(max_retries=5, backoff_initial=1.0, backoff_max=20.0, timeout=60.0)))
+    print(f"done: {finished} answered, {errors} errors, {tokens:,} input tokens")
 
 
 # --------------------------------------------------------------------------- #

@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent / "evals/results"
 SETS = [("bench100_v1", "bench100 (hand-written, 100)"), ("hard_legit_a2p_v1", "hard_legit A2P (40)"),
-        ("fable5", "fable5 clean (71)"), ("distill_v2.9_heldout", "teacher held-out corpus"),
+        ("fable5", "fable5 clean (71)"), ("distill_v{version}_heldout", "teacher held-out corpus"),
         ("mishra", "Mishra & Soni (5,971)"), ("uci", "UCI SMS Spam (5,574)"), ("imc25", "IMC25 smishing (8,005)")]
 
 
@@ -50,6 +50,7 @@ def main():
     print("| Set | Metric | 2.7 | 2.9 mean (min–max) |")
     print("|---|---|---|---|")
     for key, label in SETS:
+        key = key.format(version=args.version)
         if key not in base:
             continue
         b = metrics(base[key])

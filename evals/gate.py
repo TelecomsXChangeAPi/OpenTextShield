@@ -28,6 +28,10 @@ def main():
         cmd += ["--dataset", s]
     subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL)
     summary = json.load(open(REPO / f"evals/results/summary_{args.tag}.json"))
+    missing = [key for key in THRESHOLDS if key not in summary]
+    if missing:
+        sys.exit(f"gate_thresholds.json has key(s) {missing} that run_eval.py's summary does not produce "
+                  f"(summary has: {sorted(summary)}). Keep SETS, gate_thresholds.json and the summary in sync.")
     failed = []
     print(f"{'set':22} {'metric':18} {'value':>7} {'min':>7}")
     for key, checks in THRESHOLDS.items():
