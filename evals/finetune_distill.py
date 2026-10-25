@@ -34,7 +34,7 @@ from torch.utils.data import DataLoader, Dataset
 from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from loaders import production_normalize  # noqa: E402
+from loaders import confusion_metrics, production_normalize  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
@@ -119,20 +119,13 @@ def evaluate(model, loader, device):
         logits = model(input_ids=b["input_ids"].to(device), attention_mask=b["attention_mask"].to(device)).logits
         preds += logits.argmax(1).tolist()
         golds += b["labels"].tolist()
-    n = len(golds)
-    acc = sum(p == g for p, g in zip(preds, golds)) / n
-    f1s = {}
-    for c in LABEL2ID.values():
-        tp = sum(p == c and g == c for p, g in zip(preds, golds))
-        fp = sum(p == c and g != c for p, g in zip(preds, golds))
-        fn = sum(p != c and g == c for p, g in zip(preds, golds))
-        pr = tp / (tp + fp) if tp + fp else 0.0
-        rc = tp / (tp + fn) if tp + fn else 0.0
-        f1s[ID2LABEL[c]] = 2 * pr * rc / (pr + rc) if pr + rc else 0.0
-    block = sum((p != 0) == (g != 0) for p, g in zip(preds, golds)) / n
-    false_block = sum(p != 0 and g == 0 for p, g in zip(preds, golds)) / max(1, sum(g == 0 for g in golds))
-    return {"accuracy": round(acc, 4), "macro_f1": round(sum(f1s.values()) / 3, 4), "f1": {k: round(v, 4) for k, v in f1s.items()},
-            "block_accuracy": round(block, 4), "false_block_rate": round(false_block, 4)}
+    # One confusion-matrix pass (loaders.confusion_metrics), shared with run_eval.py's
+    # full report so "block accuracy" / "f1" can't be defined differently in the two.
+    m = confusion_metrics([ID2LABEL[g] for g in golds], [ID2LABEL[p] for p in preds])
+    f1s = {label: m["per_class"][label]["f1"] for label in LABEL2ID}
+    return {"accuracy": m["accuracy_3class"], "macro_f1": round(sum(f1s.values()) / 3, 4), "f1": f1s,
+            "block_accuracy": m["accuracy_binary_block"],
+            "false_block_rate": m["false_block_rate"] if m["false_block_rate"] is not None else 0.0}
 
 
 def main():

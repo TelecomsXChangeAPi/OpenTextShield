@@ -27,7 +27,7 @@ import argparse
 import json
 import sys
 import time
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 import torch
@@ -46,7 +46,7 @@ VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
 # defensively (from __file__, not cwd) so the import also works when this module
 # is imported from another working directory.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from loaders import LABELS, LOADERS, production_normalize  # noqa: E402
+from loaders import LABELS, LOADERS, confusion_metrics, production_normalize  # noqa: E402
 
 MAX_LEN = 96  # matches production settings.max_text_length
 BATCH_SIZE = 32
@@ -107,23 +107,10 @@ def predict(model, tokenizer, texts, batch_size=BATCH_SIZE, logit_bias=None, nor
 # ---------------------------------------------------------------- metrics
 
 def evaluate(samples, preds, confs):
-    n = len(samples)
-    correct = sum(1 for s, p in zip(samples, preds) if s["gold"] == p)
-    # Binary firewall view: ham = allow, spam/phishing = block.
-    blocked_ok = sum(1 for s, p in zip(samples, preds)
-                     if (s["gold"] != "ham") == (p != "ham"))
-    confusion = Counter((s["gold"], p) for s, p in zip(samples, preds))
-
-    per_class = {}
-    for label in LABELS:
-        tp = confusion.get((label, label), 0)
-        gold_n = sum(v for (g, _), v in confusion.items() if g == label)
-        pred_n = sum(v for (_, p), v in confusion.items() if p == label)
-        prec = tp / pred_n if pred_n else 0.0
-        rec = tp / gold_n if gold_n else 0.0
-        f1 = 2 * prec * rec / (prec + rec) if prec + rec else 0.0
-        per_class[label] = {"precision": round(prec, 4), "recall": round(rec, 4),
-                            "f1": round(f1, 4), "support": gold_n}
+    # Precision/recall/f1/block-accuracy are computed by the single confusion-matrix
+    # pass in loaders.confusion_metrics, shared with finetune_distill.py's in-training
+    # validation so the two can't define "block accuracy" or "f1" differently.
+    m = confusion_metrics([s["gold"] for s in samples], preds)
 
     by_cat = defaultdict(lambda: [0, 0])
     by_lang = defaultdict(lambda: [0, 0])
@@ -134,11 +121,11 @@ def evaluate(samples, preds, confs):
                 agg[key][0] += 1
 
     return {
-        "n": n,
-        "accuracy_3class": round(correct / n, 4) if n else 0,
-        "accuracy_binary_block": round(blocked_ok / n, 4) if n else 0,
-        "per_class": per_class,
-        "confusion": {f"{g}->{p}": v for (g, p), v in sorted(confusion.items())},
+        "n": m["n"],
+        "accuracy_3class": m["accuracy_3class"],
+        "accuracy_binary_block": m["accuracy_binary_block"],
+        "per_class": m["per_class"],
+        "confusion": {f"{g}->{p}": v for (g, p), v in sorted(m["confusion"].items())},
         "by_category": {k: {"acc": round(c / t, 4), "n": t}
                         for k, (c, t) in sorted(by_cat.items()) if k},
         "by_language": {k: {"acc": round(c / t, 4), "n": t}

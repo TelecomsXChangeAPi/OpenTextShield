@@ -24,8 +24,9 @@ async def main():
             resp = await client.system_one({"sms": r["text"]}, QUESTIONS, model=TYPESAFE_MODEL)
             ms = (time.time() - t0) * 1000
             ans = resp.answers["label"] if hasattr(resp, "answers") else resp["answers"]["label"]
-            choice = getattr(ans, "choice", None) or ans["choice"]
-            conf = getattr(ans, "confidence", None) or ans["confidence"]
+            is_attr = hasattr(ans, "choice")
+            choice = getattr(ans, "choice") if is_attr else ans["choice"]
+            conf = getattr(ans, "confidence") if is_attr else ans["confidence"]
             out.append({"text": r["text"], "gold": r["label"], "pred": choice, "conf": round(float(conf), 4),
                         "latency_ms": round(ms, 1)})
     n = len(out); acc = sum(o["pred"] == o["gold"] for o in out) / n

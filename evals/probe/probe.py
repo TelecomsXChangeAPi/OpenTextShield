@@ -223,6 +223,10 @@ def run(args):
         except Exception as e:  # keep going; the row records the failure
             r.update({"ots_label": "error", "ots_prob": 0.0, "latency_ms": None, "model_version": None, "error": str(e)[:200]})
     ok_rows = [r for r in rows if r["ots_label"] in LABELS]
+    error_rows = [r for r in rows if r["ots_label"] not in LABELS]
+    if error_rows:
+        print(f"  {len(error_rows)} rows failed classification (e.g. {error_rows[0].get('error')!r}); "
+              f"logged as unusable, not graded", flush=True)
     print(f"  {len(ok_rows)} classified; grading with {GRADER_MODEL}", flush=True)
     verdicts = grade(ok_rows, args.dry_run)
     by_id = {v.id: v for v in verdicts}
@@ -240,6 +244,15 @@ def run(args):
             if v.error_type not in ("none", "unusable"):
                 imp.write(f"{day} sev{v.severity} {v.error_type:14} gold={v.gold:8} ots={r['ots_label']}@{r['ots_prob']} "
                           f"[{r['language']}/{r['category']}] {r['text'][:110]!r} -> {v.note}\n")
+        for r in error_rows:
+            # classify() raised; not graded (nothing to grade), but kept visible so an API
+            # outage during the probe window shows up as a spike instead of disappearing.
+            rec = {**r, "gold": "unusable", "ots_correct": False, "error_type": "unusable", "severity": 0,
+                   "note": f"classification failed: {r.get('error')}",
+                   "graded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                   "generator": GENERATOR_MODEL, "grader": None}
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            n_written += 1
     usable = [by_id[i] for i in range(len(ok_rows)) if by_id[i].gold != "unusable"]
     correct = sum(v.ots_correct for v in usable)
     print(f"  wrote {n_written} rows to {out_path.name}; accuracy today {correct}/{len(usable)} on usable rows, "
@@ -301,7 +314,8 @@ def report(args):
         lines += ["## What the next training round needs", "",
                   "Grader notes, grouped by error type, most recent first. Severity 3 means high-confidence mistakes.", ""]
         for et in ("false_block", "missed_threat", "category_swap"):
-            sel = sorted([r for r in misses if r["error_type"] == et], key=lambda r: (-r["severity"], r["graded_at"]), reverse=False)[:15]
+            et_rows = sorted((r for r in misses if r["error_type"] == et), key=lambda r: r["graded_at"], reverse=True)
+            sel = sorted(et_rows, key=lambda r: -r["severity"])[:15]  # stable: recency wins within a severity tier
             if not sel:
                 continue
             lines += [f"### {et.replace('_', ' ')} ({sum(r['error_type'] == et for r in misses)})", ""]

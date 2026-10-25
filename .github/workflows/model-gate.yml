@@ -27,6 +27,7 @@ jobs:
           p=$(grep -o 'mBERT/training/model-training/mbert_ots_model_[0-9.]*\.pth' src/api_interface/config/settings.py | head -1)
           echo "path=src/$p" >> "$GITHUB_OUTPUT"
           echo "oid=$(git show HEAD:src/$p | grep oid | cut -d: -f2)" >> "$GITHUB_OUTPUT"
+          echo "vocab_oid=$(git show HEAD:evals/assets/bert-base-multilingual-cased-vocab.txt | grep oid | cut -d: -f2)" >> "$GITHUB_OUTPUT"
 
       - name: Cache the checkpoint and vocab
         id: cache
@@ -35,7 +36,7 @@ jobs:
           path: |
             ${{ steps.ckpt.outputs.path }}
             evals/assets/bert-base-multilingual-cased-vocab.txt
-          key: lfs-${{ steps.ckpt.outputs.oid }}
+          key: lfs-${{ steps.ckpt.outputs.oid }}-${{ steps.ckpt.outputs.vocab_oid }}
 
       - name: Pull the checkpoint from LFS
         if: steps.cache.outputs.cache-hit != 'true'
