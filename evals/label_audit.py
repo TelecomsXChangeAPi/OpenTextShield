@@ -116,6 +116,10 @@ def _eval_texts():
     for path in EVAL_TEXT_FILES + sorted((REPO_ROOT / "evals/results").glob("predictions_*.json")):
         if not path.exists():
             continue
+        if "distill_v" in path.name and "heldout" in path.name:
+            continue  # the teacher-labeled hold-out is carved from the corpus by hash, not an eval set
+        if path.name.endswith("_typesafe.json"):
+            continue  # a TypeSafe head-to-head dump; its texts are already covered by the bench CSV
         if path.suffix == ".csv":
             with open(path, newline="", encoding="utf-8", errors="replace") as f:
                 texts += [r.get("text") or r.get("message") or "" for r in csv.DictReader(f)]

@@ -18,7 +18,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from src.api_interface.config.settings import Settings
 
-DEFAULT_PATH = "mBERT/training/model-training/mbert_ots_model_2.7.pth"
+DEFAULT_PATH = "mBERT/training/model-training/mbert_ots_model_2.9.pth"
 ROLLBACK_PATH = "mBERT/training/model-training/mbert_ots_model_2.5.pth"
 
 

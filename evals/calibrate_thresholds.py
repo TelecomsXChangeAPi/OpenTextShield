@@ -48,10 +48,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from loaders import LOADERS, production_normalize  # noqa: E402
 
 
-def load_logits(model_path, samples, device="cpu", batch_size=32, normalize=True):
+DEVICE = "mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu"
+
+
+def load_logits(model_path, samples, device=DEVICE, batch_size=32, normalize=True):
     tok = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
     model = BertForSequenceClassification(BertConfig(vocab_size=119547, num_labels=3))
-    model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
+    model.load_state_dict(torch.load(model_path, map_location="cpu", weights_only=True))
     model.eval().to(device)
     texts = [s["text"] for s in samples]
     if normalize:

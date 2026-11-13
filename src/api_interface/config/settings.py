@@ -37,10 +37,10 @@ class Settings(BaseSettings):
     # mBERT Models
     mbert_model_configs: Dict[str, Dict[str, str]] = {
         "multilingual": {
-            "path": "mBERT/training/model-training/mbert_ots_model_2.7.pth",
+            "path": "mBERT/training/model-training/mbert_ots_model_2.9.pth",
             "tokenizer": "bert-base-multilingual-cased",
             "num_labels": "3",
-            "version": "2.7"
+            "version": "2.9"
         }
     }
 

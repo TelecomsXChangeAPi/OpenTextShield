@@ -4,7 +4,7 @@
 </picture>
 
 
-**Open-source spam and phishing detection for SMS, in many languages.**
+**Open-source spam and phishing detection for SMS. Built on a 104-language model and trained on messages in 20 languages.**
 
 OpenTextShield is a compact classifier (a fine-tuned multilingual BERT, about 180M parameters) that labels a text message as `ham`, `spam` or `phishing` in around 150 ms on a small CPU instance. It is used by telecom carriers to screen live SMS traffic and protect subscribers in real networks. It runs on your own servers as a REST API, an SMPP proxy in front of your SMSC, or both. No third-party AI service is involved.
 
