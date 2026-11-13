@@ -8,9 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.9.0] - 2026-09-21 (candidate, not deployed)
 
 ### Changed
-- Trained on TypeSafe (jev-1.13.0) verdicts for the whole 137k corpus under
-  `docs/LABELING_GUIDE.md`, with soft targets (knowledge distillation), instead
-  of the 9.4k-row subset model 2.7 learned from. See `evals/results/DISTILL_2.9.md`.
+- Trained on the whole 137k corpus relabeled under `docs/LABELING_GUIDE.md` by an
+  external reviewing model (since removed from the project), with soft targets,
+  instead of the 9.4k-row subset model 2.7 learned from.
 - Prize, job and delivery lures are now phishing rather than spam, as the guide says.
 
 ### Added
@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Improved
 - bench100 accuracy 83% -> 96%, false blocks on hard_legit 32.5% -> 0%,
-  Mishra accuracy 89% -> 95%, teacher held-out 80% -> 99%.
+  Mishra accuracy 89% -> 95%.
 - Errors are no longer made at 0.99 confidence, so the SMPP threshold can act on them.
 
 ## [2.1.0] - 2024-05-08

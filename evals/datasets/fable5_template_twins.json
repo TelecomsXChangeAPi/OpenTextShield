@@ -1,7 +1,7 @@
 {
  "source": "evals/datasets/fable5_adversarial_v1.csv",
  "compared_against": "src/mBERT/training/model-training/dataset/synthetic_fable5_v1.csv",
- "method": "For each eval row, the 6 closest synthetic rows by character 3-gram and word Jaccard were scored by TypeSafe (jev-1.13.0) on three levels: unrelated, same kind of message, same template with names/amounts/codes/links changed. Rows whose best P(same template) >= 0.9 are removed from the clean split.",
+ "method": "For each eval row, the 6 closest synthetic rows by character 3-gram and word Jaccard were scored by a reviewing model on three levels: unrelated, same kind of message, same template with names/amounts/codes/links changed. Rows whose best P(same template) >= 0.9 are removed from the clean split.",
  "removed": 56,
  "kept": 71,
  "twins": [

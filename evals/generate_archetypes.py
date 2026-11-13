@@ -11,9 +11,8 @@ than the meaning. This generator builds every message from independent pools
 (opener, reason, ask, closer, names, brands, amounts) so no two rows share a
 template, and emits the benign twin of every attack.
 
-Rows are intended labels. Nothing here trains directly: evals/distill_labels.py
-asks TypeSafe about every row and keeps only those where the teacher agrees or is
-very confident.
+Rows are intended labels. Nothing here trains directly: evals/build_train_set.py
+applies the labeling rules and any reviewed decisions before a row is used.
 
     python evals/generate_archetypes.py --n 300 --seed 11 \
         --out src/mBERT/training/model-training/dataset/curated/synthetic_archetypes_v1.csv

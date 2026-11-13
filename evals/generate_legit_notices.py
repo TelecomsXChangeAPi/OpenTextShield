@@ -2,7 +2,7 @@
 """Legitimate branded notices (bank, telco, courier, retailer, government, health)
 with real domains, amounts and routine calls to action, plus lookalike phishing twins.
 
-The distillation set built from the corpus has 844 ham rows with a link against
+The labeled corpus has 844 ham rows with a link against
 33,554 phishing rows with a link, and 4 ham rows with brand + link + amount
 against 1,420 phishing rows. Model 2.9-s7 learned exactly that prior: every
 "Verizon: your bill of $118 is available at myvzw.com" is blocked. This generator
@@ -10,8 +10,8 @@ composes legitimate notices from independent pools (brand, opener, event, amount
 action on the official domain, closer) so no two rows share a template, in 12
 languages, and emits a minimal-pair phishing twin for a share of them: the same
 notice with a lookalike domain and a threat or credential ask. Rows are intended
-labels; evals/distill_labels.py asks TypeSafe about each one and keeps the row
-only when the teacher agrees.
+labels; evals/build_train_set.py applies the labeling rules and any reviewed
+decisions before a row is used.
 
     python evals/generate_legit_notices.py --n 12000 --seed 23 \
         --out src/mBERT/training/model-training/dataset/curated/synthetic_legit_notices_v1.csv

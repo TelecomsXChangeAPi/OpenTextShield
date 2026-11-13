@@ -53,7 +53,6 @@ changed `probe.py` or guide with `evals/probe/sync.sh --push`.
 
 ## Feeding the next training round
 
-`logs/training_additions.csv` has `text,label` in the corpus format. Add it as a
-source in `evals/distill_labels.py`, run `ask` so TypeSafe confirms the grader's
-labels, then `build` and `evals/train_distill_seeds.sh`. Rows the two graders
-disagree on are dropped automatically.
+`logs/training_additions.csv` has `text,label` in the corpus format and is
+already a source of `evals/build_train_set.py`, so the next `build` picks it up;
+then train with `evals/train_seeds.sh`.

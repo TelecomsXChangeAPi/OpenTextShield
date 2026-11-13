@@ -25,7 +25,11 @@ from pathlib import Path
 
 import torch
 from torch.utils.data import DataLoader, Dataset
-from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
+from transformers import BertConfig, BertForSequenceClassification
+
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from loaders import load_tokenizer  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
@@ -89,7 +93,7 @@ def main():
     random.seed(7)
     torch.manual_seed(7)
 
-    tokenizer = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
+    tokenizer = load_tokenizer(VOCAB_FILE)
 
     rows = read_csv(args.synthetic)
     rows += read_csv(args.original, limit_per_label=args.orig_per_label)

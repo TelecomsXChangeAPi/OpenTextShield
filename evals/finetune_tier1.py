@@ -27,12 +27,16 @@ Example (Apple Silicon):
     --epochs 4 --batch-size 32 --loss class_weighted
 
 Training on a prepared file instead (every row, no rehearsal sampling), such as
-the curated set built by evals/label_audit.py:
+the curated set built by evals/build_train_set.py:
+
   python evals/finetune_tier1.py \
     --base      src/mBERT/training/model-training/mbert_ots_model_2.5.pth \
-    --train-csv src/mBERT/training/model-training/dataset/curated/train_v2.8_candidate.csv \
-    --out       src/mBERT/training/model-training/mbert_ots_model_2.8-candidate.pth \
-    --epochs 2 --batch-size 32 --loss plain --lr 1e-5
+    --train-csv src/mBERT/training/model-training/dataset/curated/train_v2.12.csv \
+    --out       src/mBERT/training/model-training/mbert_ots_model_2.12-s7.pth \
+    --epochs 2 --batch-size 32 --loss plain --lr 2e-5 --eval-every 1500 --seed 7
+
+Rows are tokenised once and padded per batch to a multiple of 16 tokens, so a
+140k-row epoch takes about half an hour on an M4 Pro.
 
 Texts get the production cleanup before tokenising, like the API and
 run_eval.py; --raw-text skips it to reproduce older checkpoints.
@@ -42,15 +46,16 @@ import argparse
 import csv
 import json
 import random
+import time
 from collections import Counter
 from pathlib import Path
 
 import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
-from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
+from transformers import BertConfig, BertForSequenceClassification
 
-from loaders import production_normalize
+from loaders import load_tokenizer, production_normalize
 
 try:
     from sklearn.metrics import f1_score, recall_score
@@ -109,20 +114,33 @@ def stratified_split(rows, val_frac, seed=7):
 
 
 class SmsDataset(Dataset):
+    """Rows tokenised once up front; padding happens per batch in collate()."""
+
     def __init__(self, rows, tokenizer):
-        self.rows = rows
-        self.tok = tokenizer
+        enc = tokenizer([t for t, _ in rows], truncation=True, max_length=MAX_LEN)
+        self.ids = enc["input_ids"]
+        self.labels = [l for _, l in rows]
 
     def __len__(self):
-        return len(self.rows)
+        return len(self.ids)
 
     def __getitem__(self, i):
-        text, label = self.rows[i]
-        enc = self.tok(text, truncation=True, max_length=MAX_LEN,
-                       padding="max_length", return_tensors="pt")
-        return {"input_ids": enc["input_ids"][0],
-                "attention_mask": enc["attention_mask"][0],
-                "labels": torch.tensor(label)}
+        return self.ids[i], self.labels[i]
+
+
+def collate(batch):
+    # Pad to a multiple of 16, not the exact longest row: an SMS is ~25 tokens, so
+    # this is 3-4x faster than padding every row to MAX_LEN, and MPS caches a
+    # compiled graph per input shape, so arbitrary widths slow a run down over time.
+    width = max(len(ids) for ids, _ in batch)
+    width = min(MAX_LEN, ((width + 15) // 16) * 16)
+    input_ids = torch.zeros(len(batch), width, dtype=torch.long)
+    mask = torch.zeros(len(batch), width, dtype=torch.long)
+    for i, (ids, _) in enumerate(batch):
+        input_ids[i, :len(ids)] = torch.tensor(ids)
+        mask[i, :len(ids)] = 1
+    return {"input_ids": input_ids, "attention_mask": mask,
+            "labels": torch.tensor([l for _, l in batch])}
 
 
 def focal_loss(logits, targets, weight, gamma=2.0):
@@ -176,6 +194,10 @@ def main():
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--raw-text", action="store_true",
                     help="skip the production text cleanup (reproduces older checkpoints)")
+    ap.add_argument("--eval-every", type=int, default=0,
+                    help="also validate every N steps and keep the best checkpoint seen")
+    ap.add_argument("--limit", type=int, help="subsample rows (smoke tests)")
+    ap.add_argument("--max-steps", type=int, help="stop early (smoke tests)")
     args = ap.parse_args()
     if not args.train_csv and not (args.synthetic and args.original):
         ap.error("pass --train-csv, or both --synthetic and --original")
@@ -185,13 +207,15 @@ def main():
     device, device_name = detect_device()
     print(f"Device: {device_name}")
 
-    tokenizer = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
+    tokenizer = load_tokenizer(VOCAB_FILE)
 
     if args.train_csv:
         rows = read_csv(args.train_csv, seed=args.seed)
     else:
         rows = read_csv(args.synthetic, seed=args.seed)
         rows += read_csv(args.original, limit_per_label=args.orig_per_label, seed=args.seed)
+    if args.limit and len(rows) > args.limit:
+        rows = random.Random(args.seed).sample(rows, args.limit)
     if not args.raw_text:
         rows = list(zip(production_normalize([t for t, _ in rows]), [l for _, l in rows]))
     train_rows, val_rows = stratified_split(rows, args.val_frac, seed=args.seed)
@@ -212,12 +236,14 @@ def main():
     model.to(device)
 
     train_loader = DataLoader(SmsDataset(train_rows, tokenizer),
-                              batch_size=args.batch_size, shuffle=True)
+                              batch_size=args.batch_size, shuffle=True, collate_fn=collate)
     val_loader = DataLoader(SmsDataset(val_rows, tokenizer),
-                            batch_size=args.batch_size, shuffle=False)
+                            batch_size=128, shuffle=False, collate_fn=collate)
 
     optim = torch.optim.AdamW(model.parameters(), lr=args.lr)
     total_steps = len(train_loader) * args.epochs
+    if args.max_steps:
+        total_steps = min(total_steps, args.max_steps)
     warmup = int(0.1 * total_steps)
 
     def lr_lambda(step):
@@ -233,11 +259,31 @@ def main():
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
+    t0 = time.time()
+
+    def validate(tag):
+        """Score the validation split; save the checkpoint if it is the best so far."""
+        nonlocal best_f1, best_epoch
+        metrics = evaluate(model, val_loader, device)
+        metrics["at"] = tag
+        history.append(metrics)
+        print(f"[val {tag}] acc={metrics['accuracy']:.4f} block={metrics['block_accuracy']:.4f} "
+              f"macroF1={metrics['macro_f1']:.4f} phishR={metrics['phishing_recall']:.4f} "
+              f"({(time.time() - t0) / 60:.0f} min)", flush=True)
+        if metrics["macro_f1"] > best_f1:
+            best_f1, best_epoch = metrics["macro_f1"], tag
+            model.eval()
+            torch.save(model.state_dict(), out_path)
+            print(f"  -> new best (macroF1={best_f1:.4f}), saved to {out_path}", flush=True)
+        model.train()
+
     step = 0
     for epoch in range(1, args.epochs + 1):
         model.train()
         running = 0.0
         for batch in train_loader:
+            if args.max_steps and step >= args.max_steps:
+                break
             optim.zero_grad()
             logits = model(input_ids=batch["input_ids"].to(device),
                            attention_mask=batch["attention_mask"].to(device)).logits
@@ -257,20 +303,10 @@ def main():
             if step % 50 == 0:
                 print(f"epoch {epoch} step {step}/{total_steps} loss {running/50:.4f}", flush=True)
                 running = 0.0
+            if args.eval_every and step % args.eval_every == 0:
+                validate(f"epoch{epoch}-step{step}")
 
-        metrics = evaluate(model, val_loader, device)
-        metrics["epoch"] = epoch
-        history.append(metrics)
-        print(f"[val] epoch {epoch}: acc={metrics['accuracy']:.4f} "
-              f"block={metrics['block_accuracy']:.4f} macroF1={metrics['macro_f1']:.4f} "
-              f"phishR={metrics['phishing_recall']:.4f}", flush=True)
-
-        if metrics["macro_f1"] > best_f1:
-            best_f1 = metrics["macro_f1"]
-            best_epoch = epoch
-            model.eval()
-            torch.save(model.state_dict(), out_path)
-            print(f"  -> new best (macroF1={best_f1:.4f}), saved to {out_path}", flush=True)
+        validate(f"epoch{epoch}")
 
     sidecar = out_path.with_suffix(".trainlog.json")
     json.dump({"device": device_name, "loss": args.loss, "epochs": args.epochs, "lr": args.lr,

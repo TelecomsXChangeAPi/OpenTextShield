@@ -31,7 +31,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import torch
-from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
+from transformers import BertConfig, BertForSequenceClassification
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 # Baseline reference, intentionally pinned to v2.5 (the last released production
@@ -46,7 +46,7 @@ VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
 # defensively (from __file__, not cwd) so the import also works when this module
 # is imported from another working directory.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from loaders import LABELS, LOADERS, production_normalize  # noqa: E402
+from loaders import LABELS, LOADERS, load_tokenizer, production_normalize  # noqa: E402
 
 MAX_LEN = 96  # matches production settings.max_text_length
 BATCH_SIZE = 32
@@ -55,7 +55,7 @@ DEVICE = torch.device("mps" if torch.backends.mps.is_available() else "cuda" if 
 
 
 def load_model(model_path: Path):
-    tokenizer = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
+    tokenizer = load_tokenizer(VOCAB_FILE)
     config = BertConfig(vocab_size=119547, num_labels=3)
     model = BertForSequenceClassification(config)
     state = torch.load(model_path, map_location="cpu", weights_only=True)

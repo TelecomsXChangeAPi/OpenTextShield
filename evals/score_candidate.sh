@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Score one checkpoint on every eval set used for the 2.9 distillation work.
+# Score one checkpoint on every eval set used for model releases since 2.9.
 #   evals/score_candidate.sh <checkpoint.pth> <tag> [eval_dir_with_uci.tsv_and_imc25.csv]
 # Writes evals/results/summary_<tag>.json plus per-set prediction dumps.
 set -euo pipefail
@@ -10,7 +10,7 @@ args=(--model "$ckpt" --tag "$tag"
   --dataset fable5:evals/datasets/fable5_adversarial_v1_clean.csv
   --dataset csv:evals/datasets/hard_legit_a2p_v1.csv
   --dataset mishra:evals/datasets/mishra_soni_5971.csv
-  --dataset csv:src/mBERT/training/model-training/dataset/curated/distill_v2.9_heldout.csv)
+  --dataset csv:evals/datasets/heldout_corpus_v2.12.csv)
 [ -f "$pub/uci.tsv" ] && args+=(--dataset "uci:$pub/uci.tsv")
 [ -f "$pub/imc25.csv" ] && args+=(--dataset "imc25:$pub/imc25.csv:8000")
 ots/bin/python evals/run_eval.py "${args[@]}" > /dev/null
