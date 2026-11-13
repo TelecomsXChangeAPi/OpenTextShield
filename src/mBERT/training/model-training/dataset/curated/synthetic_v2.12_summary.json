@@ -1,0 +1,116 @@
+{
+  "version": "2.12",
+  "generated_rows": 7276,
+  "graded_rows": 7276,
+  "kept": 7132,
+  "dropped": 144,
+  "counts": {
+    "disagree:ham->phishing": 1,
+    "disagree:phishing->ham": 10,
+    "disagree:phishing->spam": 45,
+    "disagree:phishing->unsure": 2,
+    "duplicate_of_existing": 6,
+    "eval_overlap_exact_or_shape": 5,
+    "eval_overlap_near_duplicate": 75,
+    "kept": 7132
+  },
+  "kept_by_label": {
+    "ham": 3314,
+    "phishing": 2974,
+    "spam": 844
+  },
+  "kept_by_language": {
+    "en": 2979,
+    "es": 245,
+    "pt": 239,
+    "de": 238,
+    "ar": 236,
+    "fr": 235,
+    "zh": 233,
+    "hi": 232,
+    "id": 228,
+    "ja": 226,
+    "tr": 216,
+    "ko": 212,
+    "tl": 209,
+    "ru": 198,
+    "it": 184,
+    "pl": 155,
+    "nl": 149,
+    "th": 143,
+    "el": 141,
+    "sw": 131,
+    "vi": 125,
+    "ms": 104,
+    "ta": 74
+  },
+  "kept_by_theme": {
+    "codes_alerts": {
+      "ham": 224,
+      "phishing": 108
+    },
+    "conversational_en": {
+      "ham": 369
+    },
+    "conversational_multi": {
+      "ham": 374
+    },
+    "delivery": {
+      "phishing": 248,
+      "ham": 112
+    },
+    "fintech_crypto": {
+      "phishing": 236,
+      "ham": 104
+    },
+    "government_toll": {
+      "phishing": 248,
+      "ham": 95
+    },
+    "jobs": {
+      "phishing": 143,
+      "spam": 122,
+      "ham": 85
+    },
+    "legit_ar_tr_ru_pl_el": {
+      "ham": 344
+    },
+    "legit_east_asia": {
+      "ham": 351
+    },
+    "legit_en": {
+      "ham": 381
+    },
+    "legit_south_asia_africa": {
+      "ham": 371
+    },
+    "legit_west_europe": {
+      "ham": 355
+    },
+    "linkfree_en": {
+      "phishing": 373
+    },
+    "linkfree_multi": {
+      "phishing": 349
+    },
+    "lures_latin": {
+      "phishing": 367
+    },
+    "lures_nonlatin": {
+      "phishing": 367
+    },
+    "prize_premium": {
+      "phishing": 329
+    },
+    "spam_en": {
+      "spam": 365
+    },
+    "spam_multi": {
+      "spam": 357
+    },
+    "wrong_number": {
+      "phishing": 206,
+      "ham": 149
+    }
+  }
+}

@@ -1,0 +1,374 @@
+text,label,category,language
+"Hi Mum, it's me. Dropped my phone in the sink and it's dead, this is my new number for now. Save it and delete the old one x",phishing,family_new_number,en
+"hey dad its me, new number. my phone got nicked on the bus last night. can u text me back on this one so i know it works",phishing,family_new_number,en
+"Hi Mum! New number, old one broke. Message me on here when you see this please, got a bit of a problem x",phishing,family_new_number,en
+"Mum are you there? I'm texting from a friend's phone, mine is in for repair. I need to pay a bill today and my banking app is locked on the new phone. Can you help me out? I'll pay you back Friday",phishing,family_urgent_bill,en
+"Hi mom, this is my new number, phone fell in the pool lol. Save this one. Also can you call me when you're free? Something came up",phishing,family_new_number,en
+"Hello Mum, hope you're OK. I'm on a temporary number until the insurance sorts my phone. Don't ring the old one. x",phishing,family_new_number,en
+"Dad, it's Sophie. Lost my phone at the gig so I'm on a new SIM. Can you send me £250 to cover my rent today? Bank locked me out till the new device is verified. Acct 23871190 sort code 40-22-16 (my friend Chloe's acc)",phishing,family_pay_to_account,en
+Hi Mum its James new number!!! Can you send a text so I know this is you x,phishing,family_new_number,en
+"Mum I need a favour, sorry. Phone broke so I can't log into the bank and the car insurance is due at 5pm or they cancel it. It's £412.60. Could you transfer it to Mr D Okafor 60-83-71 acc 11029384? I'll sort it with you this weekend I promise",phishing,family_pay_to_account,en
+"hey its me, got a new number, old phone is wrecked. text me back here. also are u at home? need to ask something",phishing,family_new_number,en
+"Hi Grandma it's Tyler, I'm in some trouble and I don't want mom to know. I'm on a friend's phone. Can you call me on this number when you get this?",phishing,grandchild_in_trouble,en
+"Hey Nan, it's your grandson. I had a car accident, I'm okay but I need to pay the other driver before the police get involved. Please don't tell mum. Can you send $1,800 by e-Transfer to this number? I'll explain everything later",phishing,grandchild_in_trouble,en
+"Mum, it's Hannah. I'm at the hospital, my phone's dead and I'm using the nurse's phone. Everything's fine but I need to pay for a prescription and my card's in the bag they took. Can you send money to this account please",phishing,family_urgent_bill,en
+"Hi Dad it's me on a new number. Old phone bricked after the update. Did my transfer to you come through? If not can you cover £180 for me to this account, Ms R Patel, sort code 30-96-26 acc 44170023, I'll send it back when my app works",phishing,family_pay_to_account,en
+"It's your son. Pls save this number, my old phone is broken. I'm using a work colleague's spare. Can you WhatsApp me on here, I don't have Facebook on this one",phishing,family_new_number,en
+"Mum hi, it's me. Wee bit stuck. Need to pay the deposit for the flat today and my bank has blocked my card because of the new phone. Could you send £640 to my mate's account and I'll pay you Monday? It's really important",phishing,family_urgent_bill,en
+Hi Mum. My phone screen is smashed so I'm texting from this number. Please save it as 'Emma'. Dad doesn't need to know yet x,phishing,family_new_number,en
+"hey it's me, new number, keep this one. my phone died in the rain. im sorting out a replacement with EE tomorrow",phishing,family_new_number,en
+"Hi Papa it's Arjun, I am texting from my roommate's number, my phone got stolen at the station. Please don't call the old number. I need to pay hostel fee today itself, Rs 18,500, my UPI is not working on this phone. Can you send to his GPay? I'll share the number",phishing,family_urgent_bill,en
+"Mummy good morning, it's me. My phone fell inside water. Please save this new number. I am using my friend's line for now. Also I need to beg you for something urgent, I will call you in 5 mins",phishing,family_new_number,en
+"Hi Mum, Auntie Grace gave me her spare phone, mine stopped working. Can you send me 50k naira to this account 0123456789 Access Bank, Chinedu Okoro? School fees deadline is today, I'll explain later",phishing,family_pay_to_account,en
+"Hey Mom it's Jake. New number for a bit, my phone's in the shop. Can you Zelle me $400 real quick? My account is frozen because they flagged the new device and rent autopay bounced. Zelle to this number is fine",phishing,family_pay_to_account,en
+"Mum, it's me. I'm fine but I've had a bit of a bump in the car. The other guy wants £300 cash to not go through insurance. I've no phone and my cards are at home. Can you transfer it to him? I'll send his details",phishing,family_urgent_bill,en
+"Hi Mum, phone's broken, this is my number now. Save it please and let Dad know. Love you x",phishing,family_new_number,en
+Hi it's your daughter. I lost my phone on the train. Using my boyfriend's old one. Could you help me pay my phone bill so they can transfer the number? It's $189 and my online banking is locked out for 48 hours. I'll send you the e-Transfer details,phishing,family_urgent_bill,en
+"Hey Mum, got a new number. Could you send me a message so I can save yours properly? xx",phishing,family_new_number,en
+"Dad hi, Josh here. I've been having a nightmare day, phone's busted and now my card's declined. I need to pay the mechanic £520 before I can take the car. Can you send it to his business account and I'll transfer you tonight?",phishing,family_urgent_bill,en
+"Hello Mum. It's me, I'm using a borrowed phone, mine is water damaged. I have a payment that absolutely must go out today or I lose the flat. I'll explain. Can you lend me £900 till Friday?",phishing,family_urgent_bill,en
+Hi Mum its me can you text me back on this number my phone is broke x,phishing,family_new_number,en
+"Ma, it's me. Don't panic, I'm okay. My phone got taken at the club last night. I'm on a new number. Can you send me some money for a taxi and a new SIM? Transfer to my friend's PayNow 9123 4471, I'll pay you back",phishing,family_pay_to_account,en
+"Mum it's me, my landlord is threatening to change the locks, I need £750 for the arrears by 4pm. Please transfer to Mrs L Carter 40-11-60 acc 22019933 (she's his agent). I'll call later",phishing,family_pay_to_account,en
+Hi Mom! It's Ashley. Phone broke so I'm using a temp number until Verizon sends the replacement. Save this one. Can you talk? Having an issue with my checking account,phishing,family_new_number,en
+"Daddy it's me. Please don't be angry. I lost my phone and this is a new SIM. I need 25,000 for my project submission tomorrow and my bank app is logged out. Please send to my classmate's account, I'll forward the details",phishing,family_urgent_bill,en
+"Hi Mum, it's Ben. New number. Could you do me a quick favour? I've got two payments due today and I can't get into my banking till the new phone is approved. One is £345 and the other £1,200. Could you cover them and I'll move it back Thursday?",phishing,family_pay_to_account,en
+"Hey, it's your niece Amara. Mum told me to text you from my new line, old phone got spoilt. Save my number. I will call you later about something important",phishing,family_new_number,en
+"Hiya Mum. It's me on my new number, phone drowned. Can you give me a ring when you're done at work? x",phishing,family_new_number,en
+"Mum, bit of a crisis. My phone is dead and I'm using the work one. The council are chasing £480 for a parking appeal I lost and they're adding bailiff fees at 5. Can you pay it to their account for me? I'll send you the number",phishing,family_urgent_bill,en
+"Hi Dad, phone in the sea, long story. New number is this one. Can you tell Mum? Also need to chat about money, nothing bad, just a timing thing",phishing,family_new_number,en
+"Hi Grandad, it's Liam. I've been arrested after a misunderstanding at a bar, I'm okay. The lawyer needs $2,500 for bail today. Please don't tell Mum and Dad. Can you call this number, it's the lawyer's assistant",phishing,grandchild_in_trouble,en
+"Hi Nana, it's me. I'm in Melbourne and my wallet and phone were stolen. I'm texting from the hostel manager's phone. Could you send $600 to his account so I can sort a flight? BSB 063-109 Acc 1088 2217 (M. Parker). Love you",phishing,grandchild_in_trouble,en
+"Mum, Dad, new number (dropped phone down the loo, don't laugh). Delete the old one please. Will ring tomorrow",phishing,family_new_number,en
+"Hey Mama it's your boy. My phone is broken, this is a friend's. I need you to urgently send 30k to this GTB account 0441209918 Adebayo Musa for my transport back home. I'm stranded in Abuja",phishing,family_pay_to_account,en
+Hi Mum! Sorry to bother you at work. My phone's broken and I'm on a mate's. My bank's blocked the card till I go into branch and my phone bill is due at midnight or they cut me off. Can you pay the £86.50 for me? I'll send details,phishing,family_urgent_bill,en
+"Hi Mum, it's me. Can you save this number? Phone's in the repair shop till Friday. Also, do you still have my passport number? Need it for the bank",phishing,family_new_number,en
+"Beta, this is Rohan. My number changed, old SIM is lost. Please tell Mummy. And Papa, can you send Rs 12,000 to my friend's account today? I'll explain on call tonight",phishing,family_pay_to_account,en
+"Mum I'm using Katie's phone, mine broke. The dentist won't do the root canal unless I pay the £420 upfront and my card won't work on her phone. Can you transfer to the clinic? I'll text the account",phishing,family_urgent_bill,en
+"Hi Mum, it's your eldest. Save this number, it's my new one. The other one is dead, phone got stolen in town. Text me back when you see this",phishing,family_new_number,en
+"Hi Mom, this is Emma on a borrowed phone. I need help, my rent is due today and the bank flagged my account. Can you send $950 via Interac to my roommate? Her email is on my old phone, I'll text her number instead",phishing,family_pay_to_account,en
+"Hey, did a 6 digit code just come through to your phone? I accidentally put your number in instead of mine. Can you send it over? Sorry!",phishing,code_relay_friend,en
+"Hi, this is Dan from the bank fraud team. We have sent a verification code to your mobile. Please read it back to me by replying to this message so we can cancel the £1,200 transaction.",phishing,code_relay_fake_support,en
+"Your Vodafone account change is pending. If you did NOT request this, reply with the 6-digit PIN we just sent you to cancel.",phishing,code_relay_cancel_lure,en
+PayPal: To stop the pending payment of $489.00 reply with the security code sent to this phone. Do not share this code with anyone else.,phishing,code_relay_cancel_lure,en
+"Hey sorry random question, you should have just got a text with a code from Facebook? I'm locked out and it went to your number by mistake because we used to share the account. Can you send it me",phishing,code_relay_friend,en
+"HSBC Fraud Prevention: a payment of £2,350 to AMAZON MARKETPLACE is pending. If this was not you, reply with the One Time Passcode we have sent to cancel it.",phishing,code_relay_cancel_lure,en
+"SBI Alert: Your a/c debit of Rs.49,999 is under process. To cancel, reply with the OTP received on your registered mobile within 10 mins.",phishing,code_relay_cancel_lure,en
+"Hi this is Ravi from Airtel customer care, we are updating your SIM to 5G. One OTP has come on your number, kindly tell the OTP so I can complete activation. Thank you.",phishing,code_relay_fake_support,en
+"Hey it's Mike from the Coinbase support line, I'm the one you spoke to. I've pushed the recovery code to your phone, just text it back to me here and I'll lift the lock",phishing,code_relay_fake_support,en
+"Mum its me, I'm trying to set up my new phone with the family account and Apple sent a code to your number instead. Can you text it to me? Thanks x",phishing,code_relay_family,en
+"WhatsApp: your account is being registered on a new device. To stop this, send the 6 digit code you have received to this chat immediately.",phishing,code_relay_cancel_lure,en
+"Hi Sarah, it's Tom from the office. IT reset my Microsoft login and the authenticator code went to your phone because you're my backup contact. Can you ping me the code? In a meeting, can't call",phishing,code_relay_colleague,en
+"DBS: A transfer of S$3,000 to UOB a/c has been requested. If not performed by you, reply with the 6-digit OTP to reverse. Reference TX8812",phishing,code_relay_cancel_lure,en
+"I'm from the Telstra security department, we've detected your number being cloned. You will receive a code shortly, please read it back to me by SMS to block the clone.",phishing,code_relay_fake_support,en
+"hi, lee from the gumtree listing. before i send the deposit for the sofa i need to verify ur a real seller, ill send a code to ur phone just reply with it ok",phishing,code_relay_marketplace,en
+"Hey it's Lauren, I got a new number. I'm setting up Instagram again and I used your number for recovery ages ago, did you get a 6 digit code? send it pls",phishing,code_relay_friend,en
+Barclays: Suspicious login from Birmingham. We have sent an 8-digit passcode to this device. REPLY with the passcode to secure your account. Do not ignore.,phishing,code_relay_cancel_lure,en
+"Hello, this is Priya from Paytm KYC team. Your wallet verification is incomplete. Please share the OTP sent to your mobile now to avoid wallet suspension.",phishing,code_relay_fake_support,en
+Zelle Support: A transfer of $950 was attempted from your account. Reply STOP followed by the verification code sent to you to cancel this payment.,phishing,code_relay_cancel_lure,en
+yo did you just get a code from Venmo? i typed ur number by accident lol send it over,phishing,code_relay_friend,en
+"OCBC Bank: To confirm you are the owner of this line, kindly reply with the 6-digit code sent to you in the previous SMS. Failure to do so may result in account freeze.",phishing,code_relay_cancel_lure,en
+Hi love it's me on the new phone. Google is making me verify and it sent the code to your number because you're my recovery. What does it say?,phishing,code_relay_family,en
+Amazon customer care here. Someone tried to log in from Ohio. For your protection reply to this message with the OTP you receive in the next 2 minutes.,phishing,code_relay_fake_support,en
+"MTN: Dear customer, your line is being ported to another network. If you did not request this, kindly send the 4-digit PIN sent to you to 0803 445 2210 to cancel.",phishing,code_relay_cancel_lure,en
+"Hi, this is a courtesy message from your bank's card services. We have blocked your card ending 7721. To re-enable, text back the 6 digit code you receive after this message.",phishing,code_relay_fake_support,en
+"Hey it's Grandad's new carer, Linda. The pharmacy sent a code to your number for his prescription collection, can you forward it to me so I can pick it up today",phishing,code_relay_pretext,en
+Netflix: your household verification code was sent to this number. A second device is trying to join. Reply with the code to keep your account open.,phishing,code_relay_cancel_lure,en
+Microsoft support ticket 448-91. We've sent an authentication code to this number. Please reply with the digits so our engineer can remove the malware from your PC.,phishing,code_relay_fake_support,en
+"Ola Cabs: a ride is booked using your number. If you did not book, reply with the OTP just received to cancel and avoid Rs 1,250 charge.",phishing,code_relay_cancel_lure,en
+"hi its ur cousin kemi, i'm trying to log into my old gmail and it says recovery phone ends with your digits, pls send me the code it texted u",phishing,code_relay_family,en
+"Interac e-Transfer: A deposit of $1,240.00 is waiting. To receive, reply with the verification code sent to your device within 15 min.",phishing,code_relay_cancel_lure,en
+"ANZ Security: We have paused a $2,900 transfer to a new payee. Reply with the 6-digit code we just SMS'd you if you want this payment CANCELLED.",phishing,code_relay_cancel_lure,en
+"Hi, Jess from Airbnb. The guest you spoke to wants to confirm the booking. I've triggered a code to your phone, text it back and I'll release the payout.",phishing,code_relay_marketplace,en
+This is Singtel. We detected an unauthorised SIM swap request. A code has been sent to you. Reply with the code so we can block the request.,phishing,code_relay_fake_support,en
+"did u get a verification text from TikTok?? i'm locked out & u were my backup number, send it quick b4 it expires",phishing,code_relay_friend,en
+Reply with the code we just texted you to STOP the £350 payment to EBAY UK. Lloyds Bank Fraud Team. Ref LBG/0931,phishing,code_relay_cancel_lure,en
+"Chase: Did you authorize a $1,275.00 Best Buy purchase? If NO, reply with the 6-digit code sent to your phone to dispute the charge.",phishing,code_relay_cancel_lure,en
+"Hi, Rogers Wireless here. We're migrating your account. Please text back the PIN you just received so we don't have to suspend your service during the move.",phishing,code_relay_fake_support,en
+"Hello Sir/Madam, I am from Jio care regarding your number. Please tell the 6 digit code you have received so your SIM can be verified. Otherwise number will be deactivated tonight.",phishing,code_relay_fake_support,en
+"Hey mate, Dave here from the footy club. Trying to get into the club's Facebook page and it's sending the code to your mobile for some reason. Mind sending it through?",phishing,code_relay_friend,en
+Commonwealth Bank: A NetBank login was attempted from a new device. Reply with the NetCode you have just received if this was NOT you.,phishing,code_relay_cancel_lure,en
+"Hi, it's the Evri driver. I need the 4 digit code the app just sent you to release your parcel. Text it here and I'll leave it in your safe place",phishing,code_relay_pretext,en
+"Hello, this is Mr Lim from UOB card centre. We blocked a S$2,180 charge at Apple. To confirm you are the cardholder please reply with the SMS OTP you received just now.",phishing,code_relay_fake_support,en
+Hey its ur sister lol new phone. can u send me the code Snapchat just texted u? it has ur number as my recovery,phishing,code_relay_family,en
+"Hi, I'm calling from GTBank fraud unit, we see a N250,000 transfer in progress. We have sent you a token, kindly reply with the token so we can reverse it immediately.",phishing,code_relay_fake_support,en
+Norton 360 renewal: $399.99 has been charged to your card on file for 3 years protection. To request a refund call our billing desk at 1-888-402-7719 within 24 hours.,phishing,callback_fake_renewal,en
+McAfee Total Protection renewed. Amount: USD 349.00. Auto-debit will reflect in 24 hrs. For cancellation or refund speak to an agent: +1 (315) 804-2210,phishing,callback_fake_renewal,en
+"FRAUD ALERT: Unusual activity on your NatWest account. If you did not authorise a payment of £2,198 to CURRYS PC WORLD please call our 24hr team now on 0203 905 7718",phishing,callback_bank_fraud,en
+"Your Westpac card has been used at JB Hi-Fi for $1,499. If this wasn't you call 1300 884 017 straight away to stop the transaction.",phishing,callback_bank_fraud,en
+You have a missed call. The caller left a voice message. To listen dial 0906 772 0184 (calls charged at your network rate).,phishing,callback_premium_rate,en
+Missed call from 0906 710 2231. Caller: unknown. Ring back to hear the message left for you.,phishing,callback_premium_rate,en
+Your Telstra services will be disconnected tonight due to an unpaid invoice. To avoid interruption call our billing team on 02 8003 7741 before 6pm.,phishing,callback_carrier_disconnect,en
+Important: your Rogers account has been flagged for a security review and your number will be suspended within 24 hours. Call 1-833-240-8812 to keep your service active.,phishing,callback_carrier_disconnect,en
+Sky: your package has been upgraded to Sky Ultimate TV at £112/month as requested. Didn't request it? Call 0333 015 2290 to revert.,phishing,callback_fake_order,en
+This is the Social Security Administration. Your SSN has been suspended due to suspicious activity. Call 1-877-520-3391 immediately or legal action will follow.,phishing,callback_government,en
+"Your Apple ID was used to purchase a MacBook Air ($1,299) at the Apple Store. If this is not you, call the Apple fraud line 1-866-310-7749 to cancel the order.",phishing,callback_fake_order,en
+GEEK SQUAD: Your annual subscription of $299.99 has auto-renewed. Charge will appear as BBY*GEEKSQUAD. For refund within 24h contact support 1-888-773-0410,phishing,callback_fake_renewal,en
+PayPal: You sent $599.00 to Mark Holdings for a Dyson V15. If you did not make this payment call 1 (800) 462-1132 right now to dispute it.,phishing,callback_fake_order,en
+"ATO: You have an outstanding tax debt of $3,412.00. A warrant for your arrest will be issued if you do not call 02 7208 9916 today.",phishing,callback_government,en
+CRA Notice: You are the subject of a tax fraud investigation. Our office has tried to reach you. Call 1-647-810-2290 at the earliest to avoid a court summons.,phishing,callback_government,en
+"HMRC: our records show you owe £2,867 in unpaid tax for 2024/25. A case has been filed against you. Call 020 3907 1183 within 2 hours to settle.",phishing,callback_government,en
+"Dear Customer, your State Bank of India debit card has been blocked due to a suspicious attempt. For unblocking call customer care 7982201145 immediately.",phishing,callback_bank_fraud,en
+Your BSNL landline services will be discontinued within 24 hours due to illegal activity detected. To speak with the telecom department call 011-4089 7721,phishing,callback_carrier_disconnect,en
+Ur Virgin Media bill is overdue. Services will be restricted at midnight. Pay by phone 0345 019 7762 to stay connected.,phishing,callback_carrier_disconnect,en
+Message from Royal Mail: We attempted delivery of a parcel requiring a customs fee. Call 0906 118 0441 quoting ref RM-770121 to arrange redelivery. Calls cost £6.,phishing,callback_premium_rate,en
+"Hi, this is Daniel from Microsoft Technical Dept. Your Windows licence key has been compromised and your computer is sending out viruses. Please call 1-888-610-3372 so we can fix it.",phishing,callback_tech_support,en
+Your DVLA vehicle tax payment has failed. Your vehicle is no longer taxed. Call 0300 790 6808 today to avoid an £80 penalty.,phishing,callback_government,en
+"Dear user, your Optus number will be deactivated in 48 hours as the identity documents on file are invalid. Contact customer care 1800 623 419 to update.",phishing,callback_carrier_disconnect,en
+"Your Lloyds Bank account has been accessed from a new device in Manchester. If this was not you, call us immediately on 0345 308 1182.",phishing,callback_bank_fraud,en
+A delivery driver has tried to deliver to your address. Pls call 0906 441 2208 to rebook. Ref: 4821-OD,phishing,callback_premium_rate,en
+URGENT. Amazon Prime: your membership renews at £95 today. We were unable to reach you by phone. To cancel call 0800 048 7729.,phishing,callback_fake_renewal,en
+"Dear Customer, your First Bank account has been placed on restriction due to incomplete BVN update. Kindly call 09087445120 for immediate assistance.",phishing,callback_bank_fraud,en
+"GTBank: We noticed a transaction of N185,000 from your account to OPay. If you did not authorize, call our fraud desk urgently on 0812 334 7761.",phishing,callback_bank_fraud,en
+POSB: Your account has been suspended due to suspected money laundering activity. Call our hotline 6811 2290 within 24 hours or your funds will be frozen.,phishing,callback_bank_fraud,en
+Singapore Police Force: you are being investigated for a case of money laundering. Contact Investigation Officer Tan at 9120 4471 immediately.,phishing,callback_government,en
+ICA Notice: Your passport renewal application has been flagged. Call 6221 8809 to speak with an officer before your record is suspended.,phishing,callback_government,en
+MOM: Your work pass is under review for breach of conditions. Contact officer at 8821 0094 within 24 hours.,phishing,callback_government,en
+"Hi, this is Joanne from Verizon. There is an unpaid balance of $212 on your account and your service is scheduled for interruption today. Call 1-855-220-9173 to resolve.",phishing,callback_carrier_disconnect,en
+IRS: Final notice. A lawsuit has been filed against you for tax evasion. Call 1-202-805-3372 before 5pm to avoid arrest.,phishing,callback_government,en
+Comcast Xfinity: your bill of $139.78 could not be processed. Avoid service disconnection by calling 1-888-301-7760.,phishing,callback_carrier_disconnect,en
+"Alert from Barclaycard. We have declined a £1,890 transaction at Harrods. Was this you? Call 0800 151 7733 to confirm.",phishing,callback_bank_fraud,en
+"Your O2 contract has been upgraded to a Samsung Galaxy S24 Ultra, dispatched to a new address. Not you? Call 0345 006 2201 within the hour.",phishing,callback_fake_order,en
+Reliance Jio: Your mobile services will be terminated in 24hrs due to KYC non-compliance. Call 9205518871 to speak with our executive.,phishing,callback_carrier_disconnect,en
+Your Medicare benefits will be suspended due to a new card issuance. Call 1-833-442-0917 to confirm your details and keep your coverage.,phishing,callback_government,en
+Netflix: We couldn't process your payment and your account is on hold. Call 1-855-314-7709 to update your billing information.,phishing,callback_fake_renewal,en
+Hi this is Emily at Centrelink. There is an issue with your payment. Please call us back on 02 8091 2240 to avoid your payment being cancelled.,phishing,callback_government,en
+Bell Canada: Your account is in collections. $347.21 is past due. Call 1-866-902-7715 to prevent service cancellation and credit reporting.,phishing,callback_carrier_disconnect,en
+"eBay: a Rolex Submariner (£7,250) has been bought using your saved card. If you did not make this purchase call 0203 001 7719 to cancel.",phishing,callback_fake_order,en
+TD Bank Alert: Debit card ending 4417 locked for your protection. Call 1-888-740-2201 to verify recent transactions.,phishing,callback_bank_fraud,en
+Your UPS parcel 1Z77A0R2 could not be delivered due to incomplete address. Call 1-900-555-0138 to reschedule. $4.99/min,phishing,callback_premium_rate,en
+This is your final notice from the Telecom Regulatory Authority of India. Your number is involved in illegal advertising. Call 1800-110-4423 to prevent disconnection.,phishing,callback_government,en
+"Hi, it's Kevin from Scottish Power. Your account is in credit by £182 and we need to refund it but your card details are out of date. Ring me back on 0330 810 2217.",phishing,callback_refund_lure,en
+"Your Coles Mastercard is suspended. Transactions of $2,210 flagged. Immediate action required. Call 1300 220 884.",phishing,callback_bank_fraud,en
+"Hello, this is the Windows Help Desk. We have received 42 error reports from your IP address today. Call 1-844-209-8812 to speak to a certified technician before your files are lost.",phishing,callback_tech_support,en
+Your Hulu + Live TV subscription has been renewed at $89.99. Not you? Call 1-877-330-9921 to reverse the charge within 12 hours.,phishing,callback_fake_renewal,en
+"Thank you for your order. 1 x Dyson V11 Absolute, $749.00, shipping to Phoenix AZ. Questions or to cancel: 1-888-414-2730. Order ref 8821-ZZ",phishing,callback_fake_order,en
+"Hi, John from the fraud team at Monzo. Someone is trying to move £3,400 out of your account right now. Call me back on 0203 880 1174, don't use the app, it may be compromised.",phishing,callback_bank_fraud,en
+"Dear customer, your ICICI credit card has been used for Rs 68,990 at Croma. If not done by you call 1800-266-8841 immediately to block.",phishing,callback_bank_fraud,en
+Service Ontario: your driver's licence has been suspended due to an unpaid fine. Call 1-437-220-1183 today to reinstate.,phishing,callback_government,en
+Air Canada Aeroplan: a flight YYZ-LHR has been booked using your points. Not you? Call 1-833-900-7718 within 1 hour to cancel.,phishing,callback_fake_order,en
+"Dear Standard Chartered client, a login from Malaysia was detected on your account. Call our 24hr security line 6410 2208 if you did not login.",phishing,callback_bank_fraud,en
+"Hi this is Mark, I'm calling from the Amazon security department. There is a $1,049 charge for a PS5 pending. If this isn't you call me on 1-888-603-2217 before it ships.",phishing,callback_fake_order,en
+You have 1 new voicemail from a withheld number. Dial 09066 77 0192 to retrieve. Message expires in 24 hours.,phishing,callback_premium_rate,en
+Notice from Nigerian Immigration Service: your passport has been flagged. Call 0908 112 7733 within 24 hours to avoid cancellation.,phishing,callback_government,en
+"Your MTN postpaid bill of N42,500 is outstanding. Line will be barred at midnight. Call 0701 220 8814 to settle.",phishing,callback_carrier_disconnect,en
+"Hello, this is EDF Energy. Your account is in arrears of £418. Your supply will be transferred to a prepayment meter unless you call 0333 200 7761 today.",phishing,callback_carrier_disconnect,en
+Dear Customer your SBI YONO account KYC has expired. Your A/C will be blocked within 24 hrs. Call 8130209981 to update KYC.,phishing,kyc_block_lure,en
+"Dear Airtel user, your SIM documents are invalid as per TRAI guidelines. Your SIM will be blocked today. Contact customer care 9311004521 to re-verify.",phishing,sim_block_lure,en
+"Dear HDFC Bank customer, your net banking will be suspended today as PAN card is not updated. Call 7718082241 for PAN update.",phishing,kyc_block_lure,en
+Your Paytm KYC is pending. Wallet will be blocked in 24 hrs. Call Paytm officer 7045221180 to complete KYC.,phishing,kyc_block_lure,en
+"Dear customer, your Vi SIM will be deactivated within 24 hours due to KYC non-compliance. Call 8826011903 to update your documents immediately.",phishing,sim_block_lure,en
+Your Jio SIM verification pending. Dial 9821144702 before 6 pm today otherwise all services will be stopped.,phishing,sim_block_lure,en
+IMPORTANT: Your Punjab National Bank a/c has been temporarily put on hold due to KYC. Please call 6290448117 to activate.,phishing,kyc_block_lure,en
+"Dear ICICI customer, your debit card will be blocked today due to mismatch in Aadhaar linking. Kindly call 9873301192 for assistance.",phishing,kyc_block_lure,en
+Zenith Bank: Your account has been restricted due to incomplete BVN/NIN linkage. Call 0908 221 4471 to reactivate within 24hrs.,phishing,kyc_block_lure,en
+NCC Notice: Your MTN line is not linked to your NIN. It will be barred in 24 hours. Call 0701 448 2209 to link now.,phishing,sim_block_lure,en
+"Dear Glo subscriber, your SIM registration is invalid. To avoid permanent deactivation call 0805 112 9931 now.",phishing,sim_block_lure,en
+"UBA: Dear customer, your account is flagged for KYC update. Kindly call 0817 440 2213 or your account will be deactivated by midnight.",phishing,kyc_block_lure,en
+Access Bank: Your account has been placed on PND (post no debit) due to pending BVN validation. Contact 0902 331 7748 to lift.,phishing,kyc_block_lure,en
+"Dear Vodafone customer, your SIM will be deactivated in the next 2 hours because of failed identity verification. Call 0333 304 7762 to stop this.",phishing,sim_block_lure,en
+Singtel: Your mobile line has been flagged for SIM re-registration as required by IMDA. Call 6224 9910 within 24 hours to avoid termination.,phishing,sim_block_lure,en
+Your DBS/POSB account will be suspended for non-compliance with MAS KYC rules. Call 6338 0019 now to retain access to your funds.,phishing,kyc_block_lure,en
+"Dear M1 user, your identity documents on file have expired. Services will be barred at 2359 hrs. Call 6555 2201 for re-verification.",phishing,sim_block_lure,en
+Telstra: your SIM card is scheduled for deactivation due to an incomplete ID check. To keep your number call 1800 410 221 before 5pm.,phishing,sim_block_lure,en
+Your Optus account has been flagged under the new ID verification rules. Call 1300 019 884 to confirm your identity or your number will be released.,phishing,sim_block_lure,en
+Fido Mobile: your account has failed our identity verification. Service will be suspended in 24h. Call 1-855-330-9924 to resolve.,phishing,sim_block_lure,en
+T-Mobile: Your SIM is scheduled for deactivation due to suspicious porting activity. Call 1-888-511-0043 to secure your line.,phishing,sim_block_lure,en
+AT&T: We could not verify your account identity. To avoid service interruption call 1-800-621-7730 within 24 hours.,phishing,sim_block_lure,en
+"Dear Kotak customer, your account has been temporarily locked as your KYC documents are incomplete. Call 7303018842 to unlock.",phishing,kyc_block_lure,en
+Axis Bank: Your account will be frozen tomorrow for non-updation of KYC. Contact our KYC officer at 9654120018.,phishing,kyc_block_lure,en
+"Dear Customer, your Bank of Baroda debit card has been deactivated due to pending KYC. For reactivation contact 8447209916.",phishing,kyc_block_lure,en
+"Dear Customer your Canara Bank account has been blocked. To unblock, call 9031118827 and share your PAN details with our executive.",phishing,kyc_block_lure,en
+"Bank Alert: your HDFC account has been debit frozen because KYC not done. Our representative will call you from 9811025510, kindly cooperate and share your details.",phishing,kyc_block_lure,en
+"First Bank: Dear customer, your account will be blocked due to BVN mismatch. Kindly call 0813 099 8812 with your card details handy.",phishing,kyc_block_lure,en
+MTN Nigeria: Your SIM has not been linked to NIN. It will be barred. For assistance call 0906 442 1183. Have your card PIN ready for verification.,phishing,sim_block_lure,en
+KYC ALERT: Your Union Bank account has been suspended. Please call 0803 227 7760 to update your details within 12 hours.,phishing,kyc_block_lure,en
+"Dear Customer, your Wema/ALAT account is restricted due to incomplete KYC. Call 0709 331 1402 to fix.",phishing,kyc_block_lure,en
+Your Mobile Number is about to be deactivated due to new DoT guidelines on SIM verification. Call 1800-890-7712 to complete e-KYC.,phishing,sim_block_lure,en
+StarHub: Your postpaid line has an unverified NRIC. Services will be suspended at midnight. Call 6811 7739 to verify.,phishing,sim_block_lure,en
+OCBC: Your account has been placed under review for KYC. Call our compliance desk at 6531 0092 within 24 hours.,phishing,kyc_block_lure,en
+"Dear Customer, Your Yes Bank account will be suspended, please complete your KYC today by calling 9205511183 and sharing your Aadhaar and OTP.",phishing,kyc_block_lure,en
+Lloyds: Your account requires identity re-verification under new regulations. Call 0345 602 7719 within 24 hours to avoid access being withdrawn.,phishing,kyc_block_lure,en
+"Dear EE customer, your SIM contract will be cancelled due to a failed ID check. Call 0800 079 2231 to prevent loss of your number.",phishing,sim_block_lure,en
+URGENT: your myGov linked bank details could not be verified. Payments will cease. Call 1800 229 004 to update.,phishing,kyc_block_lure,en
+"Dear Customer, your IDFC First account KYC is due. Reply with your PAN number and date of birth to avoid account freezing.",phishing,kyc_block_lure,en
+Airtel Payments Bank: your account has been debit-frozen. To unfreeze reply with your Aadhaar number and registered mobile.,phishing,kyc_block_lure,en
+"Dear 9Mobile customer, your SIM is not NIN-compliant. Reply with your NIN and date of birth within 24 hours or your line will be blocked.",phishing,sim_block_lure,en
+"Fidelity Bank: your account is flagged for incomplete KYC. Kindly reply with your BVN, date of birth and card expiry to reactivate.",phishing,kyc_block_lure,en
+"Dear Vodafone Idea user, your SIM KYC is incomplete. SIM will be blocked by tonight 11pm. Call our KYC desk 7000212298 and keep Aadhaar ready.",phishing,sim_block_lure,en
+"Dear PhonePe user, your UPI will be blocked due to pending verification. Call 8010022793 to complete.",phishing,kyc_block_lure,en
+"Hi, it's David (CEO). I'm in a board meeting and can't talk. I need you to buy 5 x £100 Apple gift cards for a client and text me the codes. Will reimburse today. Keep this between us.",phishing,boss_gift_card,en
+"Hey are you at your desk? It's Mark. Need a quick favour, pick up 4 Google Play cards $200 each from Walgreens, scratch and send me the codes. I'm tied up with investors. Thanks",phishing,boss_gift_card,en
+"Hello, this is Sandra from HR. Your payroll account details need to be re-confirmed before Friday's run. Reply with your bank name, account number and sort code.",phishing,hr_payroll_details,en
+"Hi Priya, it's Rajesh sir. I am in airport. Please transfer Rs 45,000 to this account for vendor payment urgently, I'll approve in the system later. A/C 50100228819 IFSC HDFC0001224.",phishing,boss_pay_to_account,en
+"Hi mate it's Steve your landlord. My bank account has changed, please pay this month's rent to the new account: Acc 70119382 Sort 20-45-71 (S. Baines Property). Cheers",phishing,landlord_new_account,en
+"Good morning. Please note that payment for Invoice INV-2291 should now be made to our new banking details due to an audit. Beneficiary: Rockwell Supplies Ltd, Acc 31120094, Sort 04-00-04. Regards, Accounts.",phishing,invoice_new_account,en
+"Hi, it's Tony. Can you do me a favour? I need to send a present to a client and I'm stuck in meetings. Grab 3 Steam cards (£50 each) and text me the back codes. I'll sort you out tonight.",phishing,boss_gift_card,en
+Hi this is your property manager. Rent can no longer be paid to the old account. New BSB 062-184 Acc 1099 4471 (Ray White Trust). Pay before the 1st to avoid late fees.,phishing,landlord_new_account,en
+"HMRC: You have tax arrears of £1,245.80 which must be paid today by bank transfer to avoid a court order. Payee: HMRC Collections, sort 60-70-80 acc 10027793, ref TA/221.",phishing,tax_pay_to_account,en
+"Hi, Amanda from the school office here. Term fees are now payable to our new account as we've changed banks. Please use BSB 013-442 Acc 2208 1193. Thank you.",phishing,invoice_new_account,en
+"Hi John, Peter here (Director). I'm with a client, can't call. Can you process an urgent payment of $9,850 to a new vendor today? I'll send the details, needs to go before 3pm.",phishing,boss_pay_to_account,en
+"Hi, it's Lisa from Accounts. The payment for the kitchen fitters needs to go to their updated account: Mr T Hughes, 11-22-33, 44556677. Can you action today please?",phishing,invoice_new_account,en
+"Hello, I'm your new landlord's agent. The e-Transfer email on the lease is no longer valid. Please send this month's rent by Interac to 437-220-9918 instead. Thanks.",phishing,landlord_new_account,en
+"Boss here. Pls buy 10 Amazon vouchers of Rs 5000 each for the Diwali gifts and whatsapp me the codes now. Very urgent. Don't call, I'm in meeting.",phishing,boss_gift_card,en
+"Hi Ola, it's Pastor. Please I need you to send N150,000 to this account for the church project urgently, Chukwuemeka Obi, Zenith 2290114478. I will refund on Sunday.",phishing,impersonation_pay_to_account,en
+"Hi, this is Ahmad from Finance. Your salary could not be processed due to an invalid account. Reply with your updated bank account number and NRIC to receive payment.",phishing,hr_payroll_details,en
+"Payroll notice: We're switching to a new system. To avoid a missed salary payment reply with your full name, bank, account number and date of birth.",phishing,hr_payroll_details,en
+"Hi it's your supervisor Jenny. I need you to help settle a supplier invoice from petty cash. Transfer $2,400 to BSB 083-004 Acc 5566 1102 and I'll process the reimbursement tomorrow.",phishing,boss_pay_to_account,en
+"Dear tenant, the owner has changed banks. All future rent must be paid to Standard Chartered a/c 0123-77819-20 (Lim Property Mgmt). Do not pay the old account.",phishing,landlord_new_account,en
+"It's Greg from upstairs. I'm overseas and my account's frozen, can you cover the strata levy of $880 to the body corporate? I'll send the BSB. Pay you back as soon as I'm home.",phishing,impersonation_pay_to_account,en
+"Hi, Michelle from HR. Congratulations, your bonus has been approved. To release it we need your bank details confirmed. Reply with account no. and sort code by 5pm.",phishing,hr_payroll_details,en
+"Dear student, your tuition balance of $2,350 must be paid by wire today to avoid de-enrollment. Bank: Chase, Acct 998811022, Routing 021000021, Name: Univ Bursar Services.",phishing,invoice_new_account,en
+"Reminder from your builder: final payment £4,200 due today. We've changed bank, please use Acc 00118822, Sort 16-00-15, name J&M Builders. Thanks, Mark.",phishing,invoice_new_account,en
+"Hi, this is the accounts team at your energy supplier. Your direct debit has failed. To avoid disconnection pay £312.40 by bank transfer to acc 33221100 sort 09-01-29 today.",phishing,utility_pay_to_account,en
+"Hi team, CFO here. We're closing an acquisition quietly. I need gift cards (Apple, $500 x 6) for the counterparty's team today. Send codes to me only. Confidential.",phishing,boss_gift_card,en
+"Hi, it's Mrs Okonkwo your landlady. I am abroad, please transfer this month's rent to my son's account instead: Opay 8102209918, Emeka Okonkwo. Thanks.",phishing,landlord_new_account,en
+"Your council tax is in arrears. Bailiffs will attend on Monday unless £620 is paid by transfer to Enforcement Services, sort 23-05-80, acc 19930022 today.",phishing,tax_pay_to_account,en
+"IRAS: Your income tax of S$1,840 is overdue. Pay via PayNow to UEN T08GB0027X by today to avoid a 5% penalty and travel restriction.",phishing,tax_pay_to_account,en
+Hello. This is Ms Tan from the Ministry of Manpower. Your levy payment of S$950 is outstanding. Transfer to DBS a/c 072-887710-2 within 2 hours or your helper's permit will be cancelled.,phishing,tax_pay_to_account,en
+"Good afternoon, your WorkSafe fine of $1,100 is unpaid. Pay by transfer today to Fines Collection BSB 033-001 Acc 2211 9900 to avoid court.",phishing,tax_pay_to_account,en
+"Hi Dan, it's Caroline (Partner). I'm in court all day. Need you to wire the client's refund of $18,500 to the account below before noon. Beneficiary: Harbour Consulting Inc, Acct 20019911.",phishing,boss_pay_to_account,en
+FROM THE OFFICE OF THE DIRECTOR: please procure 6 Razer Gold pins of $100 and send images of codes to this number. Urgent for client appreciation.,phishing,boss_gift_card,en
+"Hi Ravi, Suresh here from the society committee. Maintenance for this quarter to be paid to new account only: Canara Bank 110099882201, IFSC CNRB0001122. Pay today.",phishing,invoice_new_account,en
+"This is from your Uber Eats delivery partner support. Your weekly payout failed. Reply with your bank account number and IFSC to receive Rs 7,840.",phishing,hr_payroll_details,en
+"Hey it's Carl. In a meeting with the auditors, can you run to Coles and grab $500 in Apple gift cards for the team? Photo the codes and send here. I'll do the expense claim.",phishing,boss_gift_card,en
+"Hi, Rachel from Payroll. We noticed your account on file was rejected by the bank. Text back your institution, transit and account number so your pay isn't delayed.",phishing,hr_payroll_details,en
+"Hi, it's Mr Adeyemi (MD). Buy 4 Apple cards of N50,000 each at the Spar near the office and send the codes here. I'm with the governor's people, can't pick calls.",phishing,boss_gift_card,en
+"Attention tenants: as of this month rent is to be paid to the new management account, Acc 55012290, Sort 77-10-04, ref your flat number. Old account closed. Housing Office.",phishing,landlord_new_account,en
+"Hello, Garcia Roofing here. Thanks for your business. Our bank has changed, please send the remaining $3,200 to Routing 111000025, Acct 7788200193. Ignore the account on the quote.",phishing,invoice_new_account,en
+"Hi, it's the wedding photographer. Final balance of £850 due before Saturday. We've switched to a new business account, please use Sort 01-23-45, Acc 98765432. Thanks so much!",phishing,invoice_new_account,en
+"Hi, it's your manager. Need 5 Vanilla Visa cards $250 each for the client raffle before 4. Pick them up from CVS and text me photos of the front and back. Thanks, you're a star.",phishing,boss_gift_card,en
+"ATO Debt Recovery: $4,118.50 is owed. Pay today via bank transfer to BSB 092-009 Acc 1177 2290 (Commonwealth Collections) or a garnishee order will be issued.",phishing,tax_pay_to_account,en
+"Hi, Mr Sharma from the housing society office. Please pay Rs 8,400 maintenance to Secretary's account 3012207781 IFSC SBIN0001102 today, the society account is under audit.",phishing,invoice_new_account,en
+"Hi Jess, Ian here from the board. I need $1,200 in Google Play cards for a vendor demo by 2pm. I'll approve the reimbursement, just send the codes to this number.",phishing,boss_gift_card,en
+"Dear Employee, due to a payroll migration your bank mandate must be re-submitted. Reply with your bank name, account number and BVN before 5pm to receive your salary.",phishing,hr_payroll_details,en
+Congratulations! You have been selected to receive £500 compensation from the PPI settlement fund. Reply CLAIM with your full name and date of birth to proceed.,phishing,prize_reply_pii,en
+"You are 1 of 10 customers chosen for a $1000 Walmart gift card. Reply YES to accept, then your full name and address for delivery.",phishing,prize_reply_pii,en
+Tesco Clubcard: a £250 voucher is waiting for you after our customer survey. Reply WIN with your name and card number to receive.,phishing,prize_reply_pii,en
+"Lucky Draw Winner! Your mobile no. has won Rs 25,00,000 in the KBC Jio lottery. Send your name, Aadhaar no. and bank details to 7001188291 to claim.",phishing,prize_reply_pii,en
+"Dear customer, you have been awarded N2,500,000 in the MTN 25th anniversary promo. To claim, text your full name, bank and account number to 0813 220 7719.",phishing,prize_reply_pii,en
+You have won a Coles Group $500 gift card in our winter promotion! Reply CLAIM along with your full name and address within 24hrs.,phishing,prize_reply_pii,en
+"Shoppers Drug Mart: You've been chosen for $750 cash back. Text back your name, DOB and mailing address to confirm eligibility.",phishing,prize_reply_pii,en
+"COMPENSATION NOTICE: You are entitled to £1,750 for mis-sold car finance. Reply with your name, DOB and the first line of your address to start your claim.",phishing,compensation_reply_pii,en
+"Good news, your number was drawn in the NTUC FairPrice anniversary lucky draw, prize S$3,000. Reply with full name and NRIC to verify winner identity.",phishing,prize_reply_pii,en
+Hi it's Rachel from the EE loyalty team. You've qualified for a £300 bill credit. Just reply with your date of birth and account password so I can apply it.,phishing,compensation_reply_pii,en
+Your parcel insurance claim has been approved for a refund of $412.50. Reply with your card number and expiry to receive the refund within 48 hours.,phishing,refund_reply_card,en
+Vodafone Rewards: You've won a Samsung Galaxy S24. Reply WON with your full name and home address. Delivery charge of £1 applies.,phishing,prize_reply_pii,en
+"You have been selected for a Publishers Clearing House prize of $2,500 a week for life! Text your full name and address to this number to confirm your entry.",phishing,prize_reply_pii,en
+"Congratulations, your Jumia order has made you our 1 millionth customer. You've won N500,000. Reply with your bank details to receive within 24hrs.",phishing,prize_reply_pii,en
+Energy rebate: You are owed £400 from the government energy support scheme. Reply REBATE with your full name and postcode.,phishing,compensation_reply_pii,en
+Amazon customer appreciation: you have been chosen for a free Dyson Airwrap. Reply CLAIM with name & delivery address. Only 3 left.,phishing,prize_reply_pii,en
+"Dear user, your SingPost parcel lucky draw entry has won you a S$1,000 Takashimaya voucher. Reply with your full name and NRIC last 4 digits to collect.",phishing,prize_reply_pii,en
+Your Medicare rebate of $186.20 could not be deposited. Reply with your BSB and account number to receive it.,phishing,refund_reply_card,en
+"Flipkart Big Billion Winner: Mobile no. ending 8821 has won a Tata Nexon car. Pay registration fee Rs 6,500 to claim. Reply with name and city for details.",phishing,prize_advance_fee,en
+DWP: you are eligible for a one-off cost of living payment of £299. Reply with your National Insurance number and bank details to receive.,phishing,compensation_reply_pii,en
+"Service Canada: a $1,350 Climate Action Incentive payment is pending for you. Reply with your SIN and date of birth to validate.",phishing,compensation_reply_pii,en
+"Hi, this is Mark from the Lottery Commission. Your postcode has won £3,000 in our weekly draw. Reply with your name and DOB to verify.",phishing,prize_reply_pii,en
+"Big Bazaar Lucky Customer: You won Rs 50,000 cashback. SMS your name, mobile no and bank a/c to 9120044872 to receive.",phishing,prize_reply_pii,en
+Your Westpac refund of $249.00 is ready. Reply with your card number and CVV to approve.,phishing,refund_reply_card,en
+"Your BT broadband was overcharged, you are owed £78.40. Reply with your sort code and account number for the refund.",phishing,refund_reply_card,en
+"ATO: Your tax refund of $1,120.65 is being processed. Reply with your TFN and bank details to receive.",phishing,refund_reply_card,en
+O2: you're a lucky winner of a free iPhone 16 in our customer draw! Reply YES and then your full name & delivery address. Offer closes midnight.,phishing,prize_reply_pii,en
+"GRAB SG: Your account has been randomly selected for S$500 GrabPay credit. Reply with full name, NRIC and DOB to activate.",phishing,prize_reply_pii,en
+Costco Wholesale: Thank you for being a loyal member. You've been selected for a $100 reward. Reply REWARD with your membership number and date of birth.,phishing,prize_reply_pii,en
+"Dear customer, your KFC survey entry has won a year of free chicken. Reply with your full name and card details (for verification only).",phishing,prize_reply_pii,en
+"Your number has been selected for a Dubai Duty Free prize of USD 150,000. Reply with your name, passport number and bank details to our agent.",phishing,prize_reply_pii,en
+"Hi, I'm from the Insurance Ombudsman. You are owed £2,300 for an overcharged policy. Please reply with your DOB, policy number and bank account to settle.",phishing,compensation_reply_pii,en
+"ALERT: A tax refund of Rs 15,490 is approved. Reply with your bank account number and IFSC to credit.",phishing,refund_reply_card,en
+"Hey! Qantas Frequent Flyer here. You've won 100,000 bonus points in our member draw. Reply with your FF number, DOB and the PIN to credit them.",phishing,prize_reply_pii,en
+"Your Shoprite Christmas draw ticket has WON N250,000! Send your full name, bank name and account number to 0902 118 7730 before 6pm to receive.",phishing,prize_reply_pii,en
+Rogers Rewards: as a valued 10-year customer you've been awarded a $300 bill credit. Reply with your account PIN and date of birth to apply it.,phishing,compensation_reply_pii,en
+You've been overcharged for your Thames Water bill for 3 years. A refund of £612 is due. Reply with account number and sort code and it'll be with you in 3 days.,phishing,refund_reply_card,en
+"Hi, Bella from Woolworths Rewards. Your account hit a bonus milestone: $150 credit. Reply with your member card number and DOB to redeem before it lapses.",phishing,prize_reply_pii,en
+"Congratulations, your email was drawn in the Coca-Cola 2026 promo for $50,000. Reply with your full name, address and a copy of your ID to our claims agent.",phishing,prize_reply_pii,en
+"Hi, I'm Anna from HR at Tesco Online. We came across your resume on Indeed. Part-time, work from home, £300-£800/day. Interested? Reply YES for details.",phishing,job_task_scam_opener,en
+"Hello! This is Jessica with the recruiting dept. We have a remote position reviewing products, $200-$600/day, 1-2 hrs. Reply 1 if interested, 2 if not.",phishing,job_task_scam_opener,en
+"Good day, we found your CV on Jobstreet. Simple online job, no experience, earn SGD 150-500 daily. Reply with your age and name to get started.",phishing,job_task_scam_opener,en
+"Namaste, I am Pooja from Amazon work-from-home team. Earn Rs 2,000-8,000 daily by liking products. Only 30 slots left. Reply INTERESTED.",phishing,job_task_scam_opener,en
+"Hey, this is Mia from the HR department. We saw your profile on Seek. Flexible online work $300-$900 AUD per day. Reply YES and I'll send the onboarding steps on WhatsApp.",phishing,job_task_scam_opener,en
+"Hi, I'm Linda from Indeed Partners. Your application for data entry (remote, $25-$45/hr) has been shortlisted. Reply CONFIRM with your full name to proceed.",phishing,job_task_scam_opener,en
+Hi! Jennifer from Workday Recruitment here. You've been selected for a remote position paying CAD 350-800/day. Reply with your name and age to get the details.,phishing,job_task_scam_opener,en
+"Hi this is Sarah from HR, we got ur number from LinkedIn. Simple tasks like booking hotels online, commission 15% per order, daily settlement. Reply 1 to join.",phishing,job_task_scam_opener,en
+"Hello, Daniel from Shopee Partners. We are hiring online optimizers. Earn S$200-S$800 daily. Reply with your name to receive the WhatsApp onboarding.",phishing,job_task_scam_opener,en
+"Hi, I'm Emma, HR for Flipkart Seller Hub. You have been pre-selected for a part time role: rate products, earn Rs 500 per task. Reply YES to receive your first task.",phishing,job_task_scam_opener,en
+"Hello this is HR Manager Michelle. We've reviewed your resume and would like to offer a flexible position, $100-$300 per hour. Reply with your email and age if interested.",phishing,job_task_scam_opener,en
+"Hi there! TikTok Shop is recruiting part-time reviewers in your area. 3 hours a day, $180 guaranteed. Reply START to begin your first paid task.",phishing,job_task_scam_opener,en
+"Hey, I'm Kate from the YouTube Promotion Team. Get paid £50-£200 for liking and subscribing to channels. Reply YES to get your first 3 tasks today.",phishing,job_task_scam_opener,en
+"Dear candidate, your profile has been shortlisted for Amazon Delivery Partner (Remote Coordinator). Salary Rs 35,000/month + incentives. Reply with your name and Aadhaar number for registration.",phishing,job_scam_pii,en
+"Hello, I'm Grace from Indeed's talent team. We have an urgent part-time role: order processing from home, no interview, start today, $400/day. Reply YES.",phishing,job_task_scam_opener,en
+"Hi! It's Rebecca from HR at Woolworths Group. We found your resume online. Online part-time role, flexible hours, pay $350-$1200/day. Reply YES to proceed.",phishing,job_task_scam_opener,en
+"Good evening, I'm the recruiter from Lazada Marketing. We need people to help merchants increase sales. Earn S$300-S$1000 daily. Reply with name and age for onboarding.",phishing,job_task_scam_opener,en
+"Hello, I'm Tom from Amazon Flex recruitment. We've selected you for a part-time position reviewing listings, 300-800 a day. Reply YES and I'll add you on WhatsApp.",phishing,job_task_scam_opener,en
+"Dear job seeker, your application is accepted for Online Typing Job. Earn Rs 1,500 per day. Registration fee Rs 499 refundable. Reply JOIN.",phishing,job_scam_advance_fee,en
+"Hi, Olivia from the talent acquisition team. We saw your resume on Monster. Remote data labelling, $45/hr, start Monday. Reply with your full name and email.",phishing,job_task_scam_opener,en
+"Hello I'm Ben from Google Partners (Nigeria). We are employing part time online workers, 10k-50k naira daily. Reply YES to get your work ID.",phishing,job_task_scam_opener,en
+"Hi, this is Helen from HR. We are hiring product testers in Toronto. Keep the products + earn $150/day. Reply YES to receive your first assignment.",phishing,job_task_scam_opener,en
+"Hi, Mike from Jobstreet HR. Your resume has been approved for a part-time role at Shopee Logistics, S$120-S$400 per day, 20 mins work. Reply 1 to confirm.",phishing,job_task_scam_opener,en
+"Hello dear, I'm recruiter Alice. We are urgently hiring part time staff for Netflix rating tasks. Earn £60-£250 daily. Reply YES, no experience needed.",phishing,job_task_scam_opener,en
+"Good day, Priya from Naukri HR Team. Work from home, 2 hours a day, earn Rs 3000 daily. Job: Hotel booking optimization. Reply HI to start now.",phishing,job_task_scam_opener,en
+"Hi, I'm James from the recruitment team at Coles. Your application has been reviewed. Remote position, $400-$900 per day, flexible. Reply YES with your age.",phishing,job_task_scam_opener,en
+"Hello this is Nancy from Indeed, we want to invite you to a part-time job: booking app ratings. Earn 200-500 USD daily. Minimum age 23. Reply YES.",phishing,job_task_scam_opener,en
+"Hey, Jordan from Uber Eats Marketing. Looking for part-time online helpers, $50 per task, 5 tasks a day. Reply READY.",phishing,job_task_scam_opener,en
+"Hi! Nicole here from Konga HR. We saw your CV. Part time online job, 1 hour daily, N15,000 - N45,000 per day. Reply YES to receive your task.",phishing,job_task_scam_opener,en
+"Dear Applicant, you have been shortlisted for Airport Ground Staff position. Interview fee Rs 1,200 to be paid before scheduling. Reply with your name for payment details.",phishing,job_scam_advance_fee,en
+"Hi, I'm Kelly from Marriott Hotels recruitment. Online part time: rate hotels, earn S$500-S$2000 per day. Reply YES, we onboard 20 ppl today.",phishing,job_task_scam_opener,en
+"Hello, Carol from Walmart Hiring Center. You have been selected for a remote merchandising role. $250-$700 daily. Reply with your name and zip code to confirm.",phishing,job_task_scam_opener,en
+"Hi, it's Lucy from Deliveroo Partnerships. We're paying £120/day for people to place and rate test orders from home. Reply YES with your age to start today.",phishing,job_task_scam_opener,en
+"Dear candidate, congratulations on your selection as Data Entry Operator at Infosys BPO. Deposit Rs 2,500 for laptop security to confirm joining. Reply for bank details.",phishing,job_scam_advance_fee,en
+"Hi, Patrick from Canada Post hiring. Seasonal remote roles, $38/hr, no interview required. Reply with your full name, DOB and SIN to begin the background check.",phishing,job_scam_pii,en
+"Good day. I am Mrs Adeola, HR at Dangote Group. Your CV has been shortlisted. Processing fee of N5,000 applies for the medical form. Reply YES for account details.",phishing,job_scam_advance_fee,en
+"Morning babe, did you sleep well? I made another 12% on the gold contracts last night. My uncle says the window closes Friday. If you put in $2,000 with me now we can start saving for our trip",phishing,romance_crypto_deposit,en
+I know you're worried. But I would never let anything happen to your money. Just deposit the 0.1 BTC to my trading wallet and I'll show you the profits by tonight. Trust me like I trust you,phishing,romance_crypto_deposit,en
+Hi my love. The exchange says your account is verified but you need to make the first deposit of $500 USDT before the bonus is unlocked. Shall I guide you?,phishing,romance_crypto_deposit,en
+"You remember I told you about my aunt who works at the exchange? She says there's an ETH node opening tomorrow, minimum 5,000 USDT. I already put in mine. Don't you want us to grow together?",phishing,romance_crypto_deposit,en
+"Honey I'm in trouble. The platform froze my withdrawal and says I need to pay 20% tax ($8,400) before releasing it. I only have 3,000. Can you help me with the rest? I will pay you back double.",phishing,romance_money_request,en
+"Hi dear, good night from Singapore. I transferred 1,000 USDT to the node today as promised. I want you to do the same so we both earn. I can teach you step by step, it's easy",phishing,romance_crypto_deposit,en
+"I've been thinking about us all day. Since you trust me, buy USDT on Coinbase and send it to the wallet I gave you. Start with 200. I want to prove to you I am honest",phishing,romance_crypto_deposit,en
+"Baby you asked how I afford to travel. It's the arbitrage program. My mentor allowed me to bring one person. Deposit 3,000 to the platform and I will trade for you personally.",phishing,romance_crypto_deposit,en
+"Good morning sweetheart. The 1,500 you put in yesterday is now 1,890. See? Now imagine if it was 15,000. Shall we top up before the market opens?",phishing,romance_crypto_deposit,en
+"Darling, my account manager says the withdrawal fee is 5%. I need 600 USDT to unlock 12,000. I'm so embarrassed to ask but you are the only one I trust.",phishing,romance_money_request,en
+"Hey you. Remember I told you about my cousin's gold mining stake? There are 2 slots left this month. 2,500 CAD gets you in. I don't want you to miss out like last time.",phishing,romance_crypto_deposit,en
+I know we've only been talking 3 weeks but you feel like home. My trading mentor says I can add a partner wallet. Can you send 500 USDT so I can link us?,phishing,romance_crypto_deposit,en
+"Hi love, the customs here in Dubai are holding my luggage with the gift I bought you. They want $1,200 clearance. Can you Western Union it to my agent? I'll return it when I land.",phishing,romance_money_request,en
+"Sweetheart, I've paid my part of the deposit on the house. The lawyer needs your 25% ($7,500) by tomorrow to hold the price. Transfer to the escrow account I sent.",phishing,romance_money_request,en
+"Babe I can't withdraw until my account hits VIP level 3 which is 50,000 USDT. I'm at 42,000. Please help me with the 8,000, then both of us can take everything out together.",phishing,romance_money_request,en
+"Hello dear, hope your day is going fine. I just finished my shift on the oil rig. The company pays in crypto now. Can you help me convert? I'll send you 5,000 and you send me 4,500 cash. Keep 500 for yourself.",phishing,romance_money_mule,en
+"My love, I wasn't going to tell you this but the platform is doing a 2x deposit bonus for the next 6 hours only. Whatever you put in, they match. Can you do at least 2,000?",phishing,romance_crypto_deposit,en
+"I'm so sorry to ask again. The hospital won't release my daughter until the bill is paid, 4,500 USD. I have 2,000. Please my love, I'll pay you back when my contract pays out next week.",phishing,romance_money_request,en
+"Good morning. Did you set up the Binance account like I showed you? Once you buy the USDT I'll send you my team's wallet address and we start small, 300 maybe. I'll be with you every step",phishing,romance_crypto_deposit,en
+"Hey hun, my mum's surgery is tomorrow and the bank has frozen my account because I'm abroad. Can you send £800 to my friend's account and I'll sort it the moment I'm back? I'm so stressed",phishing,romance_money_request,en
+"You know I don't ask for things. But my trading account needs 10,000 USDT to join the institutional pool. I have 7,000. If you lend 3,000 we split the 30% monthly return.",phishing,romance_crypto_deposit,en
+"Baby I made 3,200 in two days on the MetaTrader signals. I showed you the screenshot. Why don't you trust me? Just deposit 1,000 and watch.",phishing,romance_crypto_deposit,en
+"Sweetie, the gift I posted you is stuck in customs in Lagos. They need N180,000 duty. Please send to the agent's account I'll forward. It's full of surprises for you",phishing,romance_money_request,en
+"My darling, I've secured our spot in the forex VIP room. Each member must fund a minimum of $5,000. Please transfer tonight before the slot goes to someone else.",phishing,romance_crypto_deposit,en
+"Hi love, the platform gave me a problem. They say your account and mine are linked and both are frozen until a 15% verification deposit is made. Can you send the 1,800 to clear it?",phishing,romance_money_request,en
+"Honey, I know you said you'd wait until payday. But the USDT staking pool closes tonight and I don't want you to feel left out. Even 500 is fine. I'll make up the rest.",phishing,romance_crypto_deposit,en
+I had a dream about us last night. Then I woke up to see our joint wallet is at +38%. Let's move your savings in before the next cycle. I'll help you with the transfer.,phishing,romance_crypto_deposit,en
+"My account manager Mr Chen says I can withdraw $45,000 but only to a verified bank account. Mine is blocked. Can I send it to your account and you send it back to me? I'll give you 10%.",phishing,romance_money_mule,en
+"Darling, the broker needs my KYC deposit of 1,200 USDT before releasing my 28,000 profit. My card limit is used up. Can you buy the USDT and send to the wallet address I'll text next?",phishing,romance_money_request,en
+"Babe my grandmother passed and I need to fly home from the rig. The company helicopter costs $3,500 and my pay is locked till the 30th. Please help me, I'll return it with interest.",phishing,romance_money_request,en
+"Love, I don't want to pressure you but my uncle at the exchange can only hold your slot till 10pm. Put in 2,000 USDT and I promise you'll see 15% by tomorrow morning.",phishing,romance_crypto_deposit,en
+"Good evening dear. Did you receive the money I sent? Please move 90% of it to the account I'll give you and keep the rest as a thank you. It's my company's salary, I can't access it abroad.",phishing,romance_money_mule,en
+"Hello handsome, miss you. Just a small thing: I'm short 700 USDT for this month's node fee. You said you'd always be there for me? Send to my wallet and I'll pay you Sunday.",phishing,romance_money_request,en
+"Hey stranger, it's Vivian. Sorry, wrong number earlier but you seem lovely. I run a small investment club with my brother, we did 22% last month. Want me to show you how it works over WhatsApp?",phishing,wrong_number_investment,en
+"Sorry, is this Dr Lim? No? Oh, my apologies. You have a kind voice in your messages though. I'm Mei, I trade gold for a living in Singapore. If you're ever curious I can teach you, it changed my life.",phishing,wrong_number_investment,en
+"Babe I'm so proud of you for making your first deposit. Now the platform says accounts under 5,000 USDT get taxed at 30% on withdrawal. Let's top up to 5,000 so we don't lose money. I'll send you 500 of mine.",phishing,romance_crypto_deposit,en
+"Hey, I feel bad asking but my son's school in Manila needs the term fee by Friday, 38,000 pesos, about $700. My pay from the ship doesn't clear till the 15th. Could you help? I'll return it with a gift.",phishing,romance_money_request,en
+"My love, I'm at the airport to come see you finally! But immigration says I need to show $2,000 in travel funds and my card is blocked abroad. Please send it to my account quickly, my flight boards in 2 hours.",phishing,romance_money_request,en
+"Darling, the Christmas bonus from my company got paid in Bitcoin and I can't cash it in Turkey. Can I send 2 BTC to your Coinbase and you transfer me the dollars minus 10% for your trouble?",phishing,romance_money_mule,en
+"Hey, I know you said not to mention the trading again. But my aunt just confirmed the Tesla pre-IPO allocation. 1,000 minimum. I put your name down because I believe in us. Can you fund it today?",phishing,romance_crypto_deposit,en
+"Hi, it's Kevin from the bank. You spoke to my colleague earlier about the suspicious payments. We need to move your money to a safe account while we investigate. Call me on 0800 222 7749 and I'll give you the details.",phishing,callback_safe_account,en
+"This is Officer Reyes, Ministry of Health. Your name is linked to the illegal sale of masks. To avoid prosecution call 6209 1182 and cooperate with our investigation.",phishing,callback_government,en
+"Dear Client, your Scotiabank card was used for $2,650.00 at Costco Richmond. If unauthorized call 1-866-880-2293 immediately. Have your card ready.",phishing,callback_bank_fraud,en
+"Reminder: Your Kaspersky Total Security has auto-renewed for $289.99. If you wish to cancel and refund, our billing team is available on 1-888-220-4471 for the next 24 hours.",phishing,callback_fake_renewal,en
+"Hey Mum, I'm using the chemist's phone, mine is broken. Can you call this number? I need to sort out a payment for the car before 5 and I can't get into my banking. Love you x",phishing,family_urgent_bill,en
+"Hi Mum, new phone, new number. Can you WhatsApp me on this number? The other one is dead. Also I've got a bit of a problem with my rent, can we talk?",phishing,family_new_number,en
+"Hi, it's Tracy from the surgery. The hospital referral fee of £150 is outstanding. Please transfer to Acc 22110099, Sort 40-47-84 by 5pm or the appointment on Monday will be cancelled.",phishing,invoice_new_account,en
+"Hello, I'm Catherine from Lloyds Fraud. We have sent a one-time passcode to your phone to verify this is you. Please reply with the passcode so I can cancel the Western Union payment of £1,800.",phishing,code_relay_fake_support,en
+"hey it's Pete, I'm using Jen's phone. I've got a code coming to your number cos my bank uses you as my trusted contact. just send it when it lands, cheers",phishing,code_relay_friend,en
+"Hi, I'm Marcus from UPS. The sender has pre-paid the customs fee but we need you to confirm the one-time code we have sent to your phone before releasing the package. Reply with it now.",phishing,code_relay_pretext,en
+"Dear Customer, your Kuda account has been flagged for suspicious login. To secure it reply with the 4 digit code sent to you now. Kuda Security.",phishing,code_relay_cancel_lure,en
+"Hey, it's me on my friend's phone. Can you text me the code Apple just sent you? I'm trying to get into my iCloud to find my phone, it's using you as the trusted number x",phishing,code_relay_family,en
+"Dear Jumia customer, your package is at the sorting centre. A clearance fee of N2,500 is pending. Transfer to Moniepoint 6110229938 Jumia Logistics and reply with proof to release.",phishing,parcel_pay_to_account,en
+DHL: Your parcel requires customs duty of S$14.80. PayNow to 8120 9918 (DHL Clearance) and reply PAID with your name to proceed with delivery.,phishing,parcel_pay_to_account,en
+Your Royal Mail parcel RM-8821XX is held pending a £2.99 redelivery fee. Pay by bank transfer to acc 60119933 sort 20-00-00 and reply with your postcode.,phishing,parcel_pay_to_account,en

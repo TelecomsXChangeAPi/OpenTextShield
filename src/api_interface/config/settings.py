@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     # API Configuration
     api_title: str = "OpenTextShield API"
     api_description: str = "Professional SMS spam and phishing detection API"
-    api_version: str = "2.11.0"
+    api_version: str = "2.12.0"
     api_host: str = "0.0.0.0"
     api_port: int = 8002
     
@@ -37,17 +37,17 @@ class Settings(BaseSettings):
     # mBERT Models
     mbert_model_configs: Dict[str, Dict[str, str]] = {
         "multilingual": {
-            "path": "mBERT/training/model-training/mbert_ots_model_2.9.pth",
+            "path": "mBERT/training/model-training/mbert_ots_model_2.12.pth",
             "tokenizer": "bert-base-multilingual-cased",
             "num_labels": "3",
-            "version": "2.9"
+            "version": "2.12"
         }
     }
 
     # Operational override for the deployed mBERT weights, relative to
     # models_base_path (or absolute). Set OTS_MBERT_MODEL_PATH to swap the model
     # without a code change — e.g. an instant rollback to the previous production
-    # checkpoint: OTS_MBERT_MODEL_PATH=mBERT/training/model-training/mbert_ots_model_2.5.pth
+    # checkpoint: OTS_MBERT_MODEL_PATH=mBERT/training/model-training/mbert_ots_model_2.9.pth
     # The version is auto-detected from the filename, so /predict and /health
     # report the rolled-back version correctly.
     mbert_model_path: Optional[str] = None

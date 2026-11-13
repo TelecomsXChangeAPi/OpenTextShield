@@ -1,0 +1,368 @@
+text,label,category,language
+【Amazon】お客様のアカウントに異常なログインが検出されました。24時間以内に本人確認を行わない場合、アカウントは一時停止されます。https://amazon-co-jp-login.xyz,phishing,ecommerce_account_anomaly,ja
+"楽天市場より：ご注文商品の決済が完了していません。未払い金額¥12,800。本日中にお支払いがない場合ご注文はキャンセルされます http://rakuten-pay.top/ij8",phishing,ecommerce_unpaid_lure,ja
+ヤマト運輸です。お荷物をお届けしましたがご不在のため持ち帰りました。再配達のご依頼はこちら https://kuroneko-yamato.icu/re,phishing,parcel_redelivery_lure,ja
+日本郵便：お客様宛のお荷物の住所が不完全です。配達を再開するには住所をご確認ください bit.ly/3jpost-x,phishing,parcel_address_lure,ja
+【NTTドコモ】ご利用料金のお支払いが確認できておりません。本日中にお支払いがない場合、回線を停止いたします。詳細：docomo-mydocomo.com/pay,phishing,telco_unpaid_cutoff,ja
+auからのお知らせ。料金未納のため本日24時にご利用停止となります。au-kddi-support.net にてご確認ください。,phishing,telco_unpaid_cutoff,ja
+SoftBank お支払い期限を過ぎております。利用停止を回避するには下記よりご確認を。sb-mysoftbank.top/kakunin,phishing,telco_unpaid_cutoff,ja
+【ETC利用照会サービス】長期間ログインがないため、アカウントは無効化されます。継続してご利用になる場合は再認証が必要です。https://etc-meisai.cc/login,phishing,toll_account_suspend,ja
+三菱UFJ銀行：お客様の口座で不正利用の可能性が確認されたため、取引を一時的に制限しております。ご本人確認はこちらからお願いいたします。mufg-bk-jp.com,phishing,bank_identity_verify,ja
+【三井住友銀行】セキュリティ強化のため、お客様情報の再登録をお願いしております。期限：11月15日 smbc-direct.cc,phishing,bank_identity_verify,ja
+"国税庁：還付金¥38,400のお受け取り手続きが未完了です。期限内にお手続きください。nta-go-jp.net/kanpu",phishing,tax_refund_lure,ja
+【重要】Amazonプライムの支払い方法に問題があります。更新がない場合サービスは停止されます→ amzn-prime-jp.co,phishing,subscription_payment_lure,ja
+お荷物のお届けにあがりましたがご不在でした。再配達はこちら http://sagawa-exp.icu/i/0921 佐川急便,phishing,parcel_redelivery_lure,ja
+楽天カード：ご利用のカードが不正利用の疑いにより一時停止されました。再開のためカード番号と有効期限をこのメッセージにご返信ください。,phishing,card_details_ask,ja
+【PayPay】アカウントに異常を検知しました。本人確認のため、SMSで届いた6桁の確認コードをこのメッセージに返信してください。,phishing,otp_ask,ja
+"メルカリ事務局です。売上金¥24,600の振込が保留中です。口座情報の確認をお願いします mercari-jp.top/kouza",phishing,marketplace_payout_lure,ja
+ドコモ光のご契約内容に変更があります。確認がない場合サービスを停止します。ご不明な点は 050-5892-3310 までお電話ください。,phishing,telco_callback_lure,ja
+【LINE】お客様のアカウントが第三者により使用された可能性があります。安全確認のため、こちらからログインしてください。line-safety.cc,phishing,messenger_account_lure,ja
+"JCBカード ご利用確認のお知らせ。11/10 ¥89,000のご利用に心当たりがない場合は至急こちらへ my-jcb.top",phishing,card_fraud_alert_lure,ja
+イオンカードよりお知らせ。本人認証サービスの有効期限が切れました。再設定はこちら aeon-cardnet.xyz,phishing,card_reauth_lure,ja
+【ゆうちょ銀行】ゆうちょダイレクトのご利用が制限されています。解除手続きはこちら jp-bank-yucho.icu,phishing,bank_account_restricted,ja
+東京電力：電気料金の引き落としができませんでした。本日中にお手続きがない場合、送電を停止させていただきます tepco-pay.top,phishing,utility_cutoff_lure,ja
+お客様のApple IDはロックされました。48時間以内に復旧手続きを行ってください appleid-jp-support.cc,phishing,tech_account_locked,ja
+【緊急】ご登録の携帯電話番号の本人確認が未完了です。マイナポータル連携のため至急ご確認ください mynaportal-go.xyz,phishing,gov_id_verify_lure,ja
+"厚生労働省：給付金¥100,000の申請が承認されました。受取口座のご登録はこちらから kyufu-mhlw.top",phishing,gov_benefit_lure,ja
+【エポスカード】重要なお知らせ。不審な取引を検知したためカードを停止しました。ご本人確認のため 0120-963-087 までお電話ください。,phishing,card_callback_lure,ja
+モバイルSuicaです。チャージ残高に異常が確認されました。アカウント確認→ suica-jre.icu,phishing,transit_wallet_lure,ja
+ヤフオク! 落札代金の入金が確認できません。期限切れ前にお支払いください yahoo-auc.top/pay,phishing,marketplace_unpaid_lure,ja
+"[Rakuten]ご登録情報が古くなっています。更新がない場合、保有ポイント3,240ptは失効します rakuten-point.cc",phishing,points_expiring_lure,ja
+荷物の保管期限は本日までです。再配達の受付はLINE ID: yamato_saihaitatsu まで（ヤマト配達担当）,phishing,parcel_line_id_lure,ja
+当選おめでとうございます🎉 ソフトバンク感謝キャンペーンで10万円分のPayPayポイントが当たりました。受取手続き：sb-campaign.top,phishing,prize_lure,ja
+【中国银行】尊敬的客户，您的账户存在异常交易，已被临时冻结。请登录 boc-cn-verify.com 进行身份核验，逾期将永久冻结。,phishing,bank_account_frozen,zh
+【工商银行】您的电子银行将于今日失效，请及时登录 icbc-ebank.top 更新信息，以免影响正常使用。,phishing,bank_identity_verify,zh
+【建设银行】您尾号6632的信用卡积分12800分即将到期清零，请登录 ccb-jifen.cc 兑换现金。,phishing,points_expiring_lure,zh
+【顺丰速运】您的快递因地址不详被暂扣，请在24小时内补全信息：sf-kuaidi.icu/0921,phishing,parcel_address_lure,zh
+【中国邮政】您有一件包裹等待派送，因运费不足需补缴2元。点击 ems-post-cn.top 补缴后将安排配送,phishing,courier_fee_lure,zh
+【社保中心】您的社保卡需升级为第三代，未升级将无法使用医保报销。请点击 shebao-12333.xyz 办理,phishing,gov_card_upgrade_lure,zh
+"【医保局】经核实，您有一笔2,860元医保报销款未领取，请于3日内登录 yibao-cn.cc 申领。",phishing,gov_refund_lure,zh
+【京东】您购买的商品因质量问题被召回，可获三倍赔付。请添加客服QQ 2847719035 办理退款。,phishing,ecommerce_refund_messenger,zh
+【淘宝】系统检测到您的订单支付异常，款项将在24小时内退回。请回复您的银行卡号和收到的验证码完成退款。,phishing,card_details_ask,zh
+【ETC】您的ETC卡已失效，为避免影响高速通行，请登录 etc-gaosu.top 重新认证。,phishing,toll_account_suspend,zh
+【公安部反诈中心】您的身份信息涉嫌一起电信诈骗案件，请立即致电 010-5890-2217 配合调查，否则将冻结名下所有账户。,phishing,police_fraud_case,zh
+【招商银行】您的掌上生活账户因长期未验证将被限制，请回复本短信告知您的6位查询密码以恢复使用。,phishing,pin_ask,zh
+"【中国移动】您的话费积分3,560分今晚24点清零，可兑换356元现金，兑换地址 10086-jifen.cc",phishing,points_expiring_lure,zh
+【中国电信】您的号码因实名信息不符将于今日停机，请登录 189-cn.top 重新实名。,phishing,telco_sim_suspend,zh
+【支付宝】您的账户存在风险，已限制付款功能。请登录 alipay-safe.icu 解除限制。,phishing,wallet_restricted_lure,zh
+【微信支付】您的账户被他人投诉，请在2小时内登录 wxpay-help.xyz 提交证明，否则将冻结余额。,phishing,wallet_restricted_lure,zh
+【菜鸟驿站】您的包裹已到站但面单损坏，请点击 cainiao-pkg.top 补填收件信息,phishing,parcel_address_lure,zh
+"【国家税务总局】2025年度个税退税1,420元待您领取，请点击 gs-shuiwu.cc 办理（限3天）。",phishing,tax_refund_lure,zh
+【农业银行】您的账户因涉嫌违规交易被监管，请致电客服 400-1189-776 核实解冻。,phishing,bank_callback_lure,zh
+【拼多多】恭喜您中奖！您已被选为幸运用户，获得iPhone一台，请点击 pdd-zhongjiang.top 填写收货地址,phishing,prize_lure,zh
+您好，我是京东金融客服。您的学生贷款账户未注销将影响征信，请加我微信 jdjr_kf88 协助注销。,phishing,loan_account_messenger_lure,zh
+【交通银行】您的信用卡临时额度已到期，可提升至50000元，请登录 bocom-ed.cc 申请。,phishing,credit_limit_lure,zh
+【圆通速递】您的快递在派送途中丢失，我们将双倍赔付。请联系理赔专员微信 ytkd_lp01,phishing,parcel_compensation_lure,zh
+【12306】您购买的车票支付失败，订单将在30分钟内取消，请登录 12306-cn.top 重新支付,phishing,ticket_payment_lure,zh
+【平安银行】检测到您的账户在异地登录，请回复本短信收到的验证码以确认是您本人操作。,phishing,otp_ask,zh
+【国家电网】您本月电费未缴，今晚22:00将停电。立即缴费 sgcc-dianfei.icu,phishing,utility_cutoff_lure,zh
+【花呗】您的花呗账单已逾期，将上报央行征信，请立即登录 huabei-hk.top 还款,phishing,credit_overdue_lure,zh
+【美团】您的外卖订单出现食品安全问题，平台将赔付500元，请点击 meituan-pc.cc 领取,phishing,compensation_lure,zh
+【法院传票】您因拖欠款项被起诉，案件编号(2025)京0105民初4421号，如需查询请致电 010-6233-9980,phishing,court_summons_lure,zh
+"尊敬的用户，您的中国联通账户积分2,980已满足兑换条件，可兑换现金，请登录 10010-cn.top 领取，今日失效。",phishing,points_expiring_lure,zh
+【抖音】您的账号涉及违规带货，需配合缴纳保证金，详询客服电话 400-855-1023,phishing,platform_penalty_callback,zh
+[KB국민은행] 고객님의 계좌가 보안상 이유로 정지되었습니다. 본인확인 후 해제 가능합니다. kb-star-bank.top,phishing,bank_account_frozen,ko
+[CJ대한통운] 송장번호 6412-0998 상품의 주소 불일치로 배송이 보류되었습니다. 주소 확인: cj-logis.icu/0998,phishing,parcel_address_lure,ko
+"[국민건강보험] 2024년 건강보험료 환급금 184,200원이 발생하였습니다. 신청: nhis-hwangeup.cc",phishing,insurance_refund_lure,ko
+[교통민원24] 과속 범칙금 미납 통지. 가산금 부과 전 납부하세요 efine-go.top,phishing,traffic_fine_lure,ko
+[쿠팡] 결제 오류로 주문이 취소되었습니다. 결제수단 재등록 후 다시 주문해 주세요 coupang-pay.xyz,phishing,ecommerce_payment_error,ko
+[부고] 아버지께서 오늘 새벽 별세하셨습니다. 장례식장 안내: bugo-anne.top/0711,phishing,funeral_notice_lure,ko
+[청첩장] 저희 결혼합니다. 모바일 청첩장 확인하세요 mcard-wedding.icu,phishing,wedding_invite_lure,ko
+[신한은행] 고객님 명의로 대출 신청이 접수되었습니다. 본인이 아닌 경우 070-4821-9930 으로 즉시 연락 주세요.,phishing,bank_callback_lure,ko
+[우리은행] 비대면 계좌개설이 감지되었습니다. 본인이 아니라면 02-6202-3391로 즉시 신고하세요.,phishing,bank_callback_lure,ko
+[카카오뱅크] 계정 보호를 위해 본인인증이 필요합니다. 방금 발송된 인증번호 6자리를 이 번호로 회신해 주세요.,phishing,otp_ask,ko
+[토스] 고객님의 토스 계정에서 비정상 접근이 확인되어 송금이 제한됩니다. 해제: toss-help.cc,phishing,wallet_restricted_lure,ko
+"[국세청] 종합소득세 환급 대상자입니다. 환급액 312,000원. 기한 내 접수하세요 hometax-refund.top",phishing,tax_refund_lure,ko
+엄마 나 폰 액정 깨져서 PC로 문자해. 급하게 인증할 게 있는데 신분증 사진하고 카드번호 좀 보내줘,phishing,family_new_number,ko
+[SK텔레콤] 미납 요금으로 인해 금일 23시 이용정지 예정입니다. 납부: tworld-pay.icu,phishing,telco_unpaid_cutoff,ko
+[KT] 고객님의 명의로 휴대폰이 추가 개통되었습니다. 본인 확인: kt-shop-m.top,phishing,telco_identity_lure,ko
+[LG유플러스] 요금 자동이체 실패. 미납 시 서비스가 중단됩니다. 카드 정보 재등록 lgu-plus.cc,phishing,telco_payment_update,ko
+[네이버] 비정상 로그인 시도가 감지되었습니다. 계정 보호를 위해 비밀번호를 재설정하세요 naver-security.top,phishing,tech_account_locked,ko
+[대법원] 귀하는 사기사건 피의자로 입건되었습니다. 출석 안내 확인: scourt-go.icu,phishing,court_summons_lure,ko
+[삼성카드] 카드가 분실 신고 처리되었습니다. 본인 확인 및 재발급 문의 1522-8870,phishing,card_callback_lure,ko
+[한진택배] 배송 중 파손이 확인되었습니다. 보상 신청 hanjin-bosang.xyz,phishing,parcel_compensation_lure,ko
+[배달의민족] 결제 취소 건이 환불되지 않았습니다. 환불 계좌 등록 baemin-refund.cc,phishing,refund_bank_details_lure,ko
+"안녕하세요 고객님, 현대캐피탈입니다. 정부지원 최저 2.9% 대출이 승인되었습니다. 신청은 카카오톡 ID hd_capital_loan 으로 연락 주세요.",phishing,loan_approved_messenger,ko
+[서울시] 재산세 체납으로 압류 예정입니다. 상세 내역 확인 seoul-tax.top,phishing,gov_tax_overdue_lure,ko
+[NH농협] 카드 비밀번호 3회 오류로 거래가 정지되었습니다. 해제를 위해 카드번호와 비밀번호를 회신하세요.,phishing,card_details_ask,ko
+[인터파크] 티켓 예매 환불 처리 중 오류가 발생했습니다. 24시간 내 확인하지 않으시면 환불이 불가합니다 interpark-tk.icu,phishing,refund_lure,ko
+[하나은행] 모바일 OTP 재발급 안내입니다. 인증번호 받으시면 그대로 회신 바랍니다.,phishing,otp_ask,ko
+택배 주소가 불명확하여 반송 예정입니다. 오늘 중 수정해 주세요 postoffice-kr.top,phishing,parcel_address_lure,ko
+"[GS25] 고객님께서 모바일 상품권 50,000원에 당첨되셨습니다! 수령: gs-gift.cc",phishing,prize_lure,ko
+[정부24] 귀하의 주민등록 정보 변경이 타인에 의해 요청되었습니다. 본인이 아니면 즉시 확인 gov24-kr.top,phishing,gov_id_verify_lure,ko
+[질병관리청] 독감 예방접종 무료 대상자로 선정되셨습니다. 예약: kdca-vaccine.top,phishing,gov_health_lure,ko
+أبشر: تم إيقاف حسابك مؤقتاً بسبب عدم تحديث البيانات. يرجى التحديث خلال 24 ساعة عبر absher-sa.top وإلا سيتم إيقاف الخدمات الحكومية,phishing,gov_id_verify_lure,ar
+الهيئة الاتحادية للهوية والجنسية: بطاقة الهوية الإماراتية الخاصة بك منتهية الصلاحية. جدد الآن لتجنب غرامة 20 درهم يومياً icp-uae.cc,phishing,gov_id_renewal_lure,ar
+STC: فاتورتك المستحقة بقيمة 312 ريال لم تُسدد. سيتم قطع الخدمة اليوم. ادفع الآن stc-pay-sa.xyz,phishing,telco_unpaid_cutoff,ar
+اتصالات: تم تعليق خطك بسبب فاتورة متأخرة 189 درهم. للسداد الفوري https://etisalat-bill.icu,phishing,telco_unpaid_cutoff,ar
+Aramex: شحنتك رقم 44210987 محجوزة في الجمارك. يرجى دفع رسوم 15 ريال لإكمال التوصيل aramex-sa.top/pay,phishing,courier_fee_lure,ar
+سمسا اكسبرس: تعذر توصيل شحنتك لعدم اكتمال العنوان. حدّث عنوانك خلال 48 ساعة smsa-ship.cc,phishing,parcel_address_lure,ar
+مصرف الراجحي: تم تعليق بطاقتك الائتمانية بسبب نشاط مشبوه. لإعادة التفعيل أرسل رقم البطاقة وتاريخ الانتهاء ورمز التحقق المرسل إليك.,phishing,card_details_ask,ar
+بنك الإمارات دبي الوطني: تم تسجيل دخول إلى حسابك من جهاز جديد. إذا لم تكن أنت، اتصل فوراً على 0097145120990 لتأمين حسابك.,phishing,bank_callback_lure,ar
+سالك: لديك مخالفة مرورية غير مسددة بقيمة 50 درهم. سدد اليوم لتجنب مضاعفة الغرامة salik-fine.top,phishing,toll_fine_lure,ar
+"هيئة الزكاة والضريبة والجمارك: لديك مبلغ مستحق للاسترداد 1,240 ريال. أكمل الطلب عبر zatca-refund.icu",phishing,tax_refund_lure,ar
+"Ooredoo: مبروك! رقمك فاز بجائزة 10,000 ريال قطري في سحب أوريدو الشهري. للاستلام تواصل واتساب 97433098821",phishing,prize_lure,ar
+"موبايلي: رصيد نقاطك 4,500 نقطة سينتهي الليلة. استبدلها الآن بقيمة نقدية mobily-neqaty.cc",phishing,points_expiring_lure,ar
+du: فشل تجديد اشتراكك. حدّث بيانات الدفع لتجنب الانقطاع du-renew.top,phishing,telco_payment_update,ar
+البريد السعودي | سبل: شحنتك في انتظار الدفع. رسوم التوصيل 11.50 ريال spl-post.xyz,phishing,courier_fee_lure,ar
+نون: تم إلغاء طلبك رقم NSA4421 بسبب مشكلة في الدفع. لإعادة المبلغ أرسل لنا رقم بطاقتك وتاريخ الانتهاء.,phishing,card_details_ask,ar
+بنك مصر: تم ايقاف الفيزا بتاعتك لحد ما تحدث بياناتك. كلمنا على 01208874412,phishing,bank_callback_lure,ar
+وزارة الصحة: أنت مؤهل للحصول على دعم طبي بقيمة 3000 جنيه. سجل بياناتك هنا moh-eg.top,phishing,gov_benefit_lure,ar
+البنك الأهلي السعودي: تنبيه أمني. تم تجميد حسابك لحين التحقق من الهوية. الرابط: alahli-sa.cc,phishing,bank_account_frozen,ar
+كريم: تم خصم 450 درهم من حسابك بالخطأ. لاسترداد المبلغ اضغط careem-refund.icu,phishing,refund_lure,ar
+وزارة الموارد البشرية: تم قبول طلب دعم حساب المواطن. أدخل بيانات الآيبان لتحويل المبلغ hrsd-support.top,phishing,gov_benefit_lure,ar
+زين: تعرض حسابك لمحاولة اختراق. أرسل رمز التحقق الذي وصلك الآن لتأكيد هويتك,phishing,otp_ask,ar
+STC Pay: محفظتك موقوفة بسبب تحديث نظام مكافحة الاحتيال. أعد التفعيل من هنا stcpay-verify.xyz,phishing,wallet_restricted_lure,ar
+الجوازات: صلاحية إقامتك ستنتهي خلال 7 أيام. جددها الآن لتجنب الغرامة jawazat-renew.cc,phishing,gov_id_renewal_lure,ar
+أرامكس: الطرد 0098 سيُعاد للمرسل خلال 48 ساعة. أكد عنوانك bit.ly/arx-sa-09,phishing,parcel_address_lure,ar
+البنك العربي: تم تعليق خدمة عربي موبايل. لتفعيلها تواصل مع خدمة العملاء على واتساب 962790118822,phishing,bank_messenger_lure,ar
+فودافون مصر: فاتورتك اتأخرت وهيتم فصل الخط النهاردة. ادفع من هنا vodafone-eg.top,phishing,telco_unpaid_cutoff,ar
+المصرف المركزي: بطاقتك ضمن قائمة البطاقات المسربة. للتحقق أدخل بياناتك على cbuae-check.top,phishing,card_leak_lure,ar
+طلبات: حسابك تم اختياره لاستلام كوبون بقيمة 500 ريال. فعّله الآن talabat-gift.cc,phishing,prize_lure,ar
+"البنك السعودي الفرنسي: تم رصد عملية سحب 2,900 ريال من بطاقتك. إن لم تكن أنت اتصل فوراً 00966115039920",phishing,card_callback_lure,ar
+وزارة الداخلية: لديك إشعار قضائي بحقك. راجع التفاصيل خلال 24 ساعة عبر moi-notify.top,phishing,court_summons_lure,ar
+مرحباً، معك قسم الأمان في بنك البلاد. حسابك يحتاج إعادة تفعيل. أرسل لنا الرقم السري لمرة واحدة عند وصوله.,phishing,otp_ask,ar
+e-Devlet: Kimlik bilgileriniz güncel değil. 24 saat içinde güncellemezseniz hesabınız askıya alınacaktır. edevlet-guncelle.com,phishing,gov_id_verify_lure,tr
+"Trendyol: İade talebiniz onaylandı. 849,90 TL tutarındaki ödemenin hesabınıza aktarılması için kart bilgilerinizi girin trendyol-iade.xyz",phishing,ecommerce_refund_lure,tr
+Yurtiçi Kargo: Adres bilgileriniz eksik olduğu için kargonuz teslim edilemedi. Güncelleme: yurtici-kargo.icu/8821,phishing,parcel_address_lure,tr
+Garanti BBVA: Hesabınızda şüpheli işlem tespit edildi ve hesabınız bloke edilmiştir. Blokeyi kaldırmak için garanti-online.top,phishing,bank_account_frozen,tr
+Ziraat Bankası: Kartınız geçici olarak kullanıma kapatıldı. Yeniden açmak için kart numaranızı ve SMS ile gelen şifreyi bu mesaja yanıtlayın.,phishing,card_details_ask,tr
+HGS: 4 adet ödenmemiş geçiş borcunuz bulunmaktadır. Cezaya düşmemesi için bugün ödeyin hgs-odeme.cc,phishing,toll_fine_lure,tr
+"OGS köprü geçiş cezanız 318,50 TL. Son ödeme tarihi bugün. ogs-ceza.top",phishing,toll_fine_lure,tr
+Turkcell: Faturanız 2 aydır ödenmemiştir. Hattınız bu gece kapatılacaktır. Hemen öde: turkcell-fatura.xyz,phishing,telco_unpaid_cutoff,tr
+Vodafone: Hediye 50 GB internet kazandınız! 24 saat içinde aktifleştirmezseniz silinir vodafone-hediye.icu,phishing,prize_lure,tr
+Türk Telekom: Numaranız üzerine yeni bir hat açılmıştır. Siz değilseniz hemen arayın 0850 532 09 87,phishing,telco_callback_lure,tr
+"PTT Kargo: Gümrük vergisi 42,30 TL ödenmediği için gönderiniz bekletiliyor ptt-gumruk.top",phishing,courier_fee_lure,tr
+Aras Kargo: Teslimat sırasında size ulaşılamadı. Yeni teslimat günü seçin aras-teslimat.cc,phishing,parcel_redelivery_lure,tr
+SGK: 2.140 TL fazla kesilen prim iadesi hesabınıza yatırılacaktır. IBAN bilginizi girin sgk-iade.xyz,phishing,insurance_refund_lure,tr
+GİB: Vergi iadeniz hazır. Tutar 1.286 TL. Başvuru için gib-iade.top adresini ziyaret edin.,phishing,tax_refund_lure,tr
+İş Bankası: İnternet şubenize farklı bir cihazdan giriş yapıldı. Siz değilseniz hesabınızı dondurun isbank-guvenlik.icu,phishing,bank_identity_verify,tr
+Akbank: Kredi kartınız bloke edildi. Çözüm için 0212 980 44 12 numarasını arayın.,phishing,card_callback_lure,tr
+Yapı Kredi: Kartınızdan 4.500 TL harcama yapıldı. Siz yapmadıysanız iptal için mobil şifrenizi yanıtlayın.,phishing,pin_ask,tr
+Hepsiburada: Siparişiniz iptal edildi. Ücret iadesi için ödeme bilgilerinizi doğrulayın hb-iade.top,phishing,ecommerce_refund_lure,tr
+Papara: Hesabınız kimlik doğrulaması bekliyor. 48 saat içinde TC ve kart bilgisi girilmezse bakiyeniz bloke olur papara-dogrula.cc,phishing,wallet_restricted_lure,tr
+Enerjisa: Elektrik borcunuz nedeniyle bugün kesinti yapılacaktır. Son ödeme: enerjisa-odeme.xyz,phishing,utility_cutoff_lure,tr
+İGDAŞ: Doğalgaz faturanız ödenmedi. Kesintiyi önlemek için igdas-fatura.icu,phishing,utility_cutoff_lure,tr
+UYAP: Hakkınızda icra dosyası açılmıştır. Dosya no 2025/44821. Detay: uyap-sorgu.top,phishing,court_summons_lure,tr
+QNB Finansbank: Kartınız yurt dışında kullanıldı. Onay vermiyorsanız 0850 222 09 91 arayın.,phishing,card_callback_lure,tr
+Getir: 200 TL hediye çekiniz hesabınıza tanımlandı. Kullanmak için kart bilgilerinizi onaylayın getir-hediye.top,phishing,prize_lure,tr
+Halkbank: Mobil şube şifrenizin süresi doldu. Yenilemek için halkbank-sifre.xyz,phishing,bank_identity_verify,tr
+sahibinden: İlanınıza yapılan 12.000 TL ödeme güvenli hesapta bekliyor. Çekmek için IBAN ve kart bilgilerinizi girin sahibinden-guvenli.icu,phishing,marketplace_payout_lure,tr
+MHRS: Randevunuz iptal edildi. Yeniden randevu almak için mhrs-randevu.top,phishing,gov_health_lure,tr
+"Merhaba, Denizbank müşteri temsilcisiyim. Hesabınızda dolandırıcılık tespit ettik. Güvenliğiniz için size gelen onay kodunu bana iletin.",phishing,otp_ask,tr
+MEB: Öğrenciniz için 2.000 TL eğitim desteği onaylandı. Başvuru: meb-destek.cc,phishing,gov_benefit_lure,tr
+BİM yılbaşı çekilişinde 5.000 TL hediye kartı kazandınız! Teslim için WhatsApp 0537 884 21 09,phishing,prize_lure,tr
+"Anne telefonum kırıldı yeni numaram bu. Acil 1.500 TL lazım, IBAN atıyorum şimdi",phishing,family_new_number,tr
+Сбербанк: по вашей карте зафиксирована подозрительная операция. Карта заблокирована. Для разблокировки перейдите sber-online.top,phishing,card_blocked_lure,ru
+"Тинькофф: вход в личный кабинет с нового устройства. Если это не вы, срочно позвоните 8 800 301 44 09",phishing,bank_callback_lure,ru
+Госуслуги: ваш аккаунт взломан. Для восстановления доступа подтвердите личность gosuslugi-vhod.ru.com,phishing,gov_account_lure,ru
+Почта России: посылка RB442109871 ожидает доплаты 49 руб. за хранение. Оплатить pochta-dostavka.icu,phishing,courier_fee_lure,ru
+СДЭК: не удалось доставить заказ. Уточните адрес в течение 24 часов cdek-track.top/8821,phishing,parcel_address_lure,ru
+Ozon: возврат 4 890 руб. по заказу 0912-4421 одобрен. Для получения укажите данные карты ozon-vozvrat.xyz,phishing,ecommerce_refund_lure,ru
+"Wildberries: ваш заказ отменён, деньги не вернулись. Оформите возврат wb-refund.cc",phishing,ecommerce_refund_lure,ru
+МТС: задолженность 1 240 руб. Номер будет отключён сегодня в 23:00. Оплатить mts-dolg.top,phishing,telco_unpaid_cutoff,ru
+ФНС России: вам положен налоговый вычет 12 600 руб. Подайте заявление nalog-vychet.icu,phishing,tax_refund_lure,ru
+ВТБ: ваша карта *4417 заблокирована. Для снятия блокировки сообщите код из СМС в ответном сообщении.,phishing,otp_ask,ru
+Альфа-Банк: оформлена заявка на кредит 350 000 руб. Если это не вы — позвоните 8 495 120 33 90,phishing,bank_callback_lure,ru
+Служба безопасности ЦБ РФ: с вашего счёта пытаются вывести средства. Срочно свяжитесь по телефону 8 800 775 20 31,phishing,bank_security_callback,ru
+Билайн: ваш номер участвует в розыгрыше. Вы выиграли 50 000 руб.! Получить beeline-prize.top,phishing,prize_lure,ru
+"Мегафон: подтвердите номер, иначе он будет передан другому абоненту megafon-id.cc",phishing,telco_sim_suspend,ru
+Авито: покупатель оплатил ваш товар 7 500 руб. через Авито Доставку. Получить деньги avito-safe-deal.icu,phishing,marketplace_payout_lure,ru
+Яндекс ID: аккаунт заблокирован за нарушения. Восстановить ya-passport.top,phishing,tech_account_locked,ru
+СФР: вам начислена компенсация 8 400 руб. неработающим пенсионерам. Оформить pfr-vyplata.xyz,phishing,gov_benefit_lure,ru
+СберМегаМаркет: ваша карта привязана к чужому аккаунту. Подтвердите номер карты и срок действия в ответе на это сообщение.,phishing,card_details_ask,ru
+"Почта Банк: карта заблокирована. Для разблокировки пришлите номер карты, срок действия и CVV.",phishing,card_details_ask,ru
+Суд г. Москвы: на вас заведено дело № 2-4421/2025. Ознакомиться sud-rf.top,phishing,court_summons_lure,ru
+"Мама, это я, телефон разбил, пишу с чужого. Срочно нужно 15 000, переведи на карту 2202 2006 7781 0923",phishing,family_new_number,ru
+Магнит: вы выбраны победителем акции. Приз 10 000 руб. на карту. Введите данные magnit-win.icu,phishing,prize_lure,ru
+"Теле2: баланс уходит в минус, подключена платная услуга. Отключить tele2-usluga.top",phishing,telco_paid_service_lure,ru
+Банк Открытие: ваши данные скомпрометированы. Перевыпуск карты бесплатно open-bank-card.cc,phishing,card_leak_lure,ru
+ЕМИАС: ваша запись к врачу аннулирована. Подтвердите данные emias-zapis.top,phishing,gov_health_lure,ru
+Росреестр: подано заявление о продаже вашей квартиры. Если это не вы — rosreestr-check.xyz,phishing,gov_property_lure,ru
+"Здравствуйте, я сотрудник Сбербанка Иванов. По вашему счёту идёт перевод. Назовите код, который сейчас придёт, чтобы отменить операцию.",phishing,otp_ask,ru
+Lamoda: возврат за заказ не прошёл. Обновите реквизиты lamoda-return.top,phishing,ecommerce_refund_lure,ru
+Мосэнергосбыт: задолженность за электроэнергию 3 120 руб. Отключение завтра. Оплатить mosenergo-pay.icu,phishing,utility_cutoff_lure,ru
+Домклик: ваша заявка на ипотеку одобрена. Для получения внесите 2 500 руб. комиссии domclick-ipoteka.top,phishing,loan_approved_fee,ru
+"InPost: Twoja paczka nr 6412098877 wymaga dopłaty 1,99 zł z tytułu niedopłaty. Opłać: inpost-doplata.pl.com",phishing,courier_fee_lure,pl
+DPD: Nie udało się dostarczyć przesyłki. Zmień termin dostawy dpd-przesylka.icu,phishing,parcel_redelivery_lure,pl
+"PGE: Zaległość za energię 184,20 zł. Odłączenie jutro o 8:00. Zapłać teraz pge-platnosc.top",phishing,utility_cutoff_lure,pl
+mBank: Twoje konto zostało zablokowane z powodu podejrzanej aktywności. Odblokuj: mbank-online.cc,phishing,bank_account_frozen,pl
+"PKO BP: Wykryto logowanie z nowego urządzenia. Jeśli to nie Ty, zadzwoń 22 480 10 33",phishing,bank_callback_lure,pl
+Allegro: Twoje konto zostało ograniczone. Zweryfikuj dane w ciągu 24h allegro-weryfikacja.xyz,phishing,marketplace_account_lure,pl
+ePUAP: Twój profil zaufany wygasa. Przedłuż profil-zaufany.top,phishing,gov_account_lure,pl
+Urząd Skarbowy: Przysługuje Ci zwrot podatku 1 240 zł. Złóż wniosek e-pit-zwrot.icu,phishing,tax_refund_lure,pl
+"Orange: Zaległa faktura 89,90 zł. Usługi zostaną zawieszone dziś o 22:00 orange-faktura.top",phishing,telco_unpaid_cutoff,pl
+"Play: Potwierdź dane karty, aby odnowić abonament play-odnowienie.cc",phishing,telco_payment_update,pl
+Poczta Polska: Przesyłka wstrzymana – niekompletny adres. Uzupełnij poczta-przesylka.xyz,phishing,parcel_address_lure,pl
+"Santander: Karta *4417 zablokowana. Aby odblokować, odpowiedz numerem karty i kodem CVV.",phishing,card_details_ask,pl
+ING: Twój Mój ING wymaga aktualizacji. Zaloguj się ing-aktualizacja.top,phishing,bank_identity_verify,pl
+ZUS: Nadpłata składek 862 zł do zwrotu. Podaj numer konta zus-zwrot.icu,phishing,insurance_refund_lure,pl
+OLX: Kupujący zapłacił za Twój przedmiot. Odbierz 450 zł olx-odbior.top,phishing,marketplace_payout_lure,pl
+Vinted: Twoja wypłata 320 zł czeka. Potwierdź dane karty vinted-wyplata.cc,phishing,marketplace_payout_lure,pl
+Policja: Wezwanie w sprawie oszustwa. Szczegóły policja-wezwanie.top,phishing,police_fraud_case,pl
+"BLIK: Twoje konto zostało zawieszone. Odpowiedz kodem z SMS, aby przywrócić dostęp.",phishing,otp_ask,pl
+Tauron: Nieopłacona faktura. Wyłączenie prądu dziś. tauron-eplatnosc.xyz,phishing,utility_cutoff_lure,pl
+Lidl: Wygrałeś bon 500 zł! Odbierz lidl-bon.icu,phishing,prize_lure,pl
+Bank Millennium: Logowanie z Niemiec. Zablokuj dostęp bankmillennium-blokada.top,phishing,bank_identity_verify,pl
+Netflix: Płatność odrzucona. Zaktualizuj metodę płatności netflix-pl-konto.cc,phishing,subscription_payment_lure,pl
+"Mamo, zbiłem telefon, piszę z nowego numeru. Potrzebuję pilnie 800 zł na BLIK, oddam w piątek",phishing,family_new_number,pl
+PKO: Wygasa ważność karty. Potwierdź dane: pko-karta.xyz,phishing,card_reauth_lure,pl
+NFZ: Zwrot za leczenie 410 zł. Wypełnij wniosek nfz-zwrot.top,phishing,gov_refund_lure,pl
+Paczkomat: Twoja paczka czeka 24h. Odbierz kod paczkomat-kod.cc,phishing,parcel_pickup_lure,pl
+"Pracownik Alior Bank: na Pana koncie trwa nieautoryzowany przelew. Proszę podać kod autoryzacyjny z SMS, aby go zatrzymać.",phishing,otp_ask,pl
+Enea: Nowe rozliczenie licznika. Dopłata 62 zł w ciągu 24h enea-rozliczenie.top,phishing,utility_fee_lure,pl
+Biedronka: Masz 300 zł do odebrania w Moja Biedronka. Potwierdź moja-biedronka.icu,phishing,prize_lure,pl
+CEIDG: Opłata za wpis 390 zł. Brak płatności = wykreślenie. ceidg-oplata.xyz,phishing,gov_fee_lure,pl
+"ΕΛΤΑ: Το δέμα σας παραμένει στην αποθήκη λόγω απλήρωτων τελών 2,50€. Πληρώστε: elta-courier.icu",phishing,courier_fee_lure,el
+ACS Courier: Αποτυχία παράδοσης. Ενημερώστε τη διεύθυνση εντός 24 ωρών acs-delivery.top,phishing,parcel_address_lure,el
+Alpha Bank: Ο λογαριασμός σας δεσμεύτηκε για λόγους ασφαλείας. Επαληθεύστε alpha-ebanking.cc,phishing,bank_account_frozen,el
+gov.gr: Το ψηφιακό πορτοφόλι σας απενεργοποιήθηκε. Επανενεργοποίηση: gov-gr-wallet.top,phishing,gov_account_lure,el
+"ΔΕΗ: Οφειλή 184,20€. Διακοπή ρεύματος αύριο. Εξόφληση dei-plirom.icu",phishing,utility_cutoff_lure,el
+"ΑΑΔΕ: Επιστροφή φόρου 412,60€ εγκρίθηκε. Καταχωρίστε IBAN aade-epistrofi.xyz",phishing,tax_refund_lure,el
+Cosmote: Ο λογαριασμός σας είναι ληξιπρόθεσμος. Αποσύνδεση σήμερα cosmote-bill.top,phishing,telco_unpaid_cutoff,el
+Εθνική Τράπεζα: Η κάρτα σας μπλοκαρίστηκε. Για ξεμπλοκάρισμα απαντήστε με αριθμό κάρτας και κωδικό.,phishing,card_details_ask,el
+Eurobank: Εντοπίστηκε συναλλαγή 1.250€. Αν δεν την αναγνωρίζετε eurobank-asfaleia.cc,phishing,card_fraud_alert_lure,el
+Vodafone: Κερδίσατε 20GB δωρεάν! Ενεργοποίηση vodafone-doro.icu,phishing,prize_lure,el
+Nova: Ανανέωση συνδρομής απέτυχε. Ενημερώστε κάρτα nova-plirom.top,phishing,subscription_payment_lure,el
+"Skroutz: Η επιστροφή 89,90€ εκκρεμεί. Επιβεβαιώστε στοιχεία κάρτας skroutz-refund.xyz",phishing,ecommerce_refund_lure,el
+e-ΕΦΚΑ: Επίδομα 600€ εγκρίθηκε. Υποβολή efka-epidoma.top,phishing,gov_benefit_lure,el
+ΔΥΠΑ: Επίδομα ανεργίας εκκρεμεί. Επαληθεύστε στοιχεία dypa-gr.cc,phishing,gov_benefit_lure,el
+"Γεια σου μαμά, έσπασα το κινητό, γράφω από άλλο. Στείλε 300€ στο IBAN που θα σου δώσω, επείγον",phishing,family_new_number,el
+Αστυνομία: Κλήση για υπόθεση απάτης. Δείτε λεπτομέρειες astynomia-klisi.top,phishing,police_fraud_case,el
+Speedex: Το δέμα επιστρέφεται στον αποστολέα. Επιβεβαίωση speedex-paradosi.icu,phishing,parcel_address_lure,el
+"Box Now: Δέμα στο locker. Πληρώστε 1,20€ για κωδικό boxnow-kodikos.xyz",phishing,courier_fee_lure,el
+Revolut: Ύποπτη δραστηριότητα. Στείλτε τον κωδικό που λάβατε για επαλήθευση.,phishing,otp_ask,el
+ΕΥΔΑΠ: Οφειλή νερού. Διακοπή παροχής eydap-ofeili.top,phishing,utility_cutoff_lure,el
+Public: Παραγγελία ακυρώθηκε. Για επιστροφή χρημάτων public-refund.cc,phishing,ecommerce_refund_lure,el
+Υπουργείο Ψηφιακής Διακυβέρνησης: Ενημερώστε ΑΜΚΑ σας εντός 48 ωρών amka-update.icu,phishing,gov_id_verify_lure,el
+Wolt: Κουπόνι 50€ στο όνομά σας. Επιβεβαίωση κάρτας wolt-coupon.top,phishing,prize_lure,el
+Attica Bank: Ο λογαριασμός σας θα κλείσει. Καλέστε 210 330 4409,phishing,bank_callback_lure,el
+Optima bank: Το e-banking σας θα απενεργοποιηθεί. Καλέστε 2111 222 991,phishing,bank_callback_lure,el
+Κληρώθηκε ο αριθμός σας! 5.000€ από Lidl Hellas lidl-gr-klirosi.xyz,phishing,prize_lure,el
+ΑΑΔΕ: Παράβαση myDATA. Πρόστιμο 250€. Ρυθμίστε aade-prostimo.top,phishing,tax_penalty_lure,el
+Τράπεζα της Ελλάδος: Η κάρτα σας σε λίστα διαρροής. Επαλήθευση bog-check.cc,phishing,card_leak_lure,el
+"Γεια σας, είμαι από την ασφάλεια της Alpha Bank. Για να ακυρώσουμε την ύποπτη μεταφορά, πείτε μου τον κωδικό OTP που θα λάβετε.",phishing,otp_ask,el
+ΕΟΠΥΥ: Επιβεβαίωση ΑΜΚΑ για ραντεβού eopyy-rantevou.top,phishing,gov_health_lure,el
+"SBI: प्रिय ग्राहक, आपका KYC आज समाप्त हो रहा है। खाता बंद होने से बचने के लिए तुरंत अपडेट करें sbi-kyc-update.in.net",phishing,bank_kyc_suspend,hi
+HDFC Bank: आपका नेट बैंकिंग 24 घंटे में निलंबित हो जाएगा। PAN अपडेट करें hdfc-pan.top,phishing,bank_kyc_suspend,hi
+आपका PAN कार्ड आधार से लिंक नहीं है। आज ही लिंक करें वरना बैंक खाता बंद होगा pan-aadhaar-link.xyz,phishing,gov_id_verify_lure,hi
+"प्रिय ग्राहक, आज रात 9:30 बजे आपका बिजली कनेक्शन काट दिया जाएगा क्योंकि पिछला बिल अपडेट नहीं हुआ। तुरंत संपर्क करें 9823410077",phishing,utility_cutoff_callback,hi
+"Paytm: बधाई हो! आपको ₹4,999 कैशबैक रिवॉर्ड मिला है। 24 घंटे में क्लेम करें paytm-reward.cc",phishing,prize_lure,hi
+"PhonePe: आपका ₹2,500 कैशबैक पेंडिंग है। UPI PIN डालकर प्राप्त करें phonepe-cash.top",phishing,pin_ask,hi
+India Post: आपका पार्सल पते की गलती के कारण रुका है। ₹25 शुल्क देकर डिलीवरी शुरू करें indiapost-parcel.icu,phishing,courier_fee_lure,hi
+Jio: आपका सिम आज रात 10 बजे बंद हो जाएगा। KYC अपडेट के लिए कॉल करें 7045129980,phishing,telco_sim_suspend,hi
+Airtel: आपका नंबर 24 घंटे में डिस्कनेक्ट होगा। दस्तावेज़ अपडेट करें airtel-kyc.top,phishing,telco_sim_suspend,hi
+"बधाई! आपका मोबाइल नंबर KBC लकी ड्रॉ में ₹25,00,000 जीता है। WhatsApp करें +91 70219 44810",phishing,lottery_lure,hi
+"ICICI Bank: आपके खाते से ₹49,000 की संदिग्ध निकासी। रोकने के लिए OTP रिप्लाई करें।",phishing,otp_ask,hi
+"Axis Bank: कार्ड ब्लॉक हो गया है। अनब्लॉक के लिए कार्ड नंबर, CVV और एक्सपायरी भेजें।",phishing,card_details_ask,hi
+"इनकम टैक्स विभाग: ₹15,490 का रिफंड स्वीकृत। बैंक विवरण की पुष्टि करें incometax-refund.xyz",phishing,tax_refund_lure,hi
+"EPFO: आपका PF ₹84,200 निकासी के लिए तैयार है। क्लेम करें epfo-claim.top",phishing,gov_refund_lure,hi
+"Flipkart: आपके ऑर्डर का रिफंड ₹1,299 असफल। बैंक डिटेल अपडेट करें flipkart-refund.cc",phishing,ecommerce_refund_lure,hi
+Amazon India: आपका अकाउंट लॉक हो गया है। वेरिफाई करें amazon-in-verify.icu,phishing,ecommerce_account_anomaly,hi
+SBI YONO: आपका YONO अकाउंट आज ब्लॉक होगा। PAN अपडेट करें sbi-yono.top,phishing,bank_kyc_suspend,hi
+BSNL: आपका नंबर अवैध गतिविधि में शामिल है। TRAI द्वारा 2 घंटे में बंद। बचने के लिए कॉल करें 8800931244,phishing,telco_sim_suspend,hi
+"PM किसान: आपकी 19वीं किस्त ₹2,000 रुकी है। e-KYC करें pmkisan-ekyc.xyz",phishing,gov_benefit_lure,hi
+"Zomato: आपका ऑर्डर कैंसल, रिफंड ₹560 पेंडिंग। बैंक डिटेल भरें zomato-refund.top",phishing,ecommerce_refund_lure,hi
+"मम्मी, मेरा फोन खराब हो गया, नया नंबर है ये। पापा को बोलो ₹8000 Paytm कर दें इस नंबर पर, अर्जेंट है",phishing,family_new_number,hi
+"LIC: आपकी पॉलिसी लैप्स हो रही है। ₹1,20,000 बोनस क्लेम करें lic-bonus.icu",phishing,insurance_bonus_lure,hi
+Kotak: आपके खाते में असामान्य लॉगिन। तुरंत कॉल करें 9311205566,phishing,bank_callback_lure,hi
+Delhi Police साइबर सेल: आपके आधार से जुड़े केस की जांच चल रही है। तुरंत संपर्क करें 011-4051-2290,phishing,police_fraud_case,hi
+Swiggy: ₹500 वाउचर जीता! कार्ड डिटेल कन्फर्म करें swiggy-voucher.top,phishing,prize_lure,hi
+Bank of Baroda: आपका खाता निष्क्रिय हो जाएगा। आधार अपडेट करें bob-aadhaar.cc,phishing,bank_kyc_suspend,hi
+"Google Pay: आपके खाते में ₹10,000 रिवॉर्ड क्रेडिट करने के लिए UPI PIN दर्ज करें gpay-reward.xyz",phishing,pin_ask,hi
+"Tata Power: आज रात बिजली कटेगी, बिल पेंडिंग। अपडेट के लिए कॉल 8291047713",phishing,utility_cutoff_callback,hi
+"Meesho: आपने ₹2,000 जीते। लिंक पर जाएं meesho-win.top",phishing,prize_lure,hi
+"FASTag: आपका FASTag बैलेंस कम है, टोल पर ब्लॉक होगा। रिचार्ज करें fastag-recharge.icu",phishing,toll_account_suspend,hi
+"आपके बेटे का एक्सीडेंट हुआ है, वो अस्पताल में है। ऑपरेशन के लिए अभी ₹20,000 इस नंबर पर भेजें 9876210044",phishing,emergency_money_lure,hi
+BCA: Rekening Anda diblokir sementara karena aktivitas mencurigakan. Verifikasi dalam 24 jam di bca-mobile.top,phishing,bank_account_frozen,id
+BRI: Kartu ATM Anda akan dinonaktifkan. Segera perbarui data Anda melalui bri-verifikasi.xyz,phishing,bank_kyc_suspend,id
+"Bank Mandiri: Livin' Anda terdeteksi login dari perangkat lain. Jika bukan Anda, hubungi 021-5091-8822",phishing,bank_callback_lure,id
+Selamat! Nomor Anda terpilih sebagai pemenang undian Shopee berhadiah Rp 50.000.000. Klaim: shopee-undian.icu,phishing,prize_lure,id
+J&T Express: Paket Anda tertahan karena alamat tidak lengkap. Konfirmasi jnt-paket.top/0921,phishing,parcel_address_lure,id
+JNE: Resi JP44210987 gagal dikirim. Bayar ongkir tambahan Rp 5.000 jne-kirim.cc,phishing,courier_fee_lure,id
+Pinjaman Anda telah disetujui Rp 15.000.000 tanpa jaminan. Cukup kirim foto KTP dan nomor rekening ke WA 0812-9918-3321,phishing,loan_approved_id_ask,id
+PLN: Tagihan listrik Anda belum dibayar. Pemutusan malam ini. Bayar segera pln-tagihan.top,phishing,utility_cutoff_lure,id
+BPJS Kesehatan: Kartu Anda nonaktif. Aktifkan kembali bpjs-aktif.xyz,phishing,gov_card_lure,id
+Undangan Pernikahan Digital. Mohon buka file terlampir: Undangan_Pernikahan.apk bit.ly/undangan-0912,phishing,wedding_apk_lure,id
+BNI: Rekening Anda diblokir. Hubungi call center 0812-7781-0923 untuk pemulihan.,phishing,bank_callback_lure,id
+GoPay: Saldo Anda dibekukan. Masukkan PIN untuk verifikasi gopay-verif.icu,phishing,pin_ask,id
+OVO: Anda mendapat cashback Rp 250.000. Klaim dengan membalas OTP yang dikirim ke nomor ini.,phishing,otp_ask,id
+DANA: Akun DANA Anda terindikasi penipuan. Verifikasi KTP dana-verifikasi.top,phishing,wallet_restricted_lure,id
+Telkomsel: Poin Anda 4.500 akan hangus hari ini. Tukar dengan pulsa telkomsel-poin.cc,phishing,points_expiring_lure,id
+Indosat: Kartu Anda akan diblokir karena registrasi tidak valid. Daftar ulang im3-registrasi.xyz,phishing,telco_sim_suspend,id
+XL Axiata: Anda memenangkan undian XL 1 unit Honda PCX. Hubungi WA 0877-2210-9981,phishing,prize_lure,id
+Tokopedia: Pengembalian dana Rp 899.000 gagal. Update rekening tokped-refund.top,phishing,ecommerce_refund_lure,id
+Bea Cukai: Paket impor Anda tertahan. Bayar pajak Rp 450.000 ke rekening penampung. Hub WA 0821-7781-2209,phishing,customs_fee_lure,id
+Kemensos: Anda berhak menerima bantuan sosial Rp 600.000. Daftar bansos-kemensos.icu,phishing,gov_benefit_lure,id
+Grab: Akun Anda ditangguhkan. Verifikasi grab-akun.top,phishing,platform_account_lure,id
+"Hai Bu, ini nomor baru aku, HP lama rusak. Transfer dulu 1,5 juta ke rek BCA 7731209981 ya, urgent",phishing,family_new_number,id
+Polri: Anda terlibat kasus pencucian uang. Segera hubungi penyidik 021-3909-1122,phishing,police_fraud_case,id
+"Kurir SiCepat: Paket Anda sudah sampai, cek resi. Download aplikasi: Cek_Resi.apk",phishing,parcel_apk_lure,id
+Bank BSI: Rekening Anda bermasalah. Kirim nomor kartu dan PIN untuk verifikasi,phishing,card_details_ask,id
+Pertamina: Selamat! Anda terpilih dapat voucher BBM Rp 1.000.000 pertamina-voucher.xyz,phishing,prize_lure,id
+Allo Bank: Login Anda gagal 3 kali. Reset allo-reset.cc,phishing,bank_identity_verify,id
+"Dirjen Pajak: SPT Anda terlambat, denda Rp 1.000.000. Lihat pajak-denda.top",phishing,tax_penalty_lure,id
+"Lazada: Pesanan Anda dibatalkan sistem. Refund via kartu, isi data lazada-refund.icu",phishing,ecommerce_refund_lure,id
+Astra Credit: Angsuran Anda jatuh tempo. Hub 0813-9920-1182 WA,phishing,loan_callback_lure,id
+CIMB Niaga: OCTO Mobile Anda dibekukan. Buka blokir cimb-octo.top,phishing,bank_account_frozen,id
+GCash: Your account has been temporarily locked due to unusual activity. I-verify ngayon: gcash-verify.top,phishing,wallet_locked_lure,tl
+"Maya: Na-detect namin ang login mula sa bagong device. Kung hindi ikaw, i-secure ang account mo: maya-secure.cc",phishing,wallet_locked_lure,tl
+BDO: Your online banking access is suspended. Update your info within 24hrs bdo-online.icu,phishing,bank_account_frozen,tl
+"BPI: May hindi kilalang transaksyon sa card mo na P12,450. I-report dito bpi-report.xyz",phishing,card_fraud_alert_lure,tl
+LBC Express: Hindi na-deliver ang parcel mo dahil kulang ang address. I-update: lbc-track.top/9921,phishing,parcel_address_lure,tl
+"Globe Rewards: Congrats! Nanalo ka ng 10,000 points. I-claim bago mag-expire globe-rewards.icu",phishing,prize_lure,tl
+Smart: Ang linya mo ay ma-disconnect ngayong gabi dahil sa unpaid bill. Magbayad na smart-bill.top,phishing,telco_unpaid_cutoff,tl
+"SSS: Pending ang P25,000 pension refund mo. I-confirm ang bank details sss-refund.cc",phishing,gov_refund_lure,tl
+"DSWD: Kwalipikado ka sa P5,000 ayuda. Mag-register dito dswd-ayuda.xyz",phishing,gov_benefit_lure,tl
+Metrobank: Your card ending 4417 was blocked. Reply with card number and OTP to unblock.,phishing,card_details_ask,tl
+UnionBank: Verify your account para hindi ma-freeze. unionbank-verify.top,phishing,bank_identity_verify,tl
+"J&T PH: Ang parcel mo ay nasa hub, may P45 na dagdag bayad. jnt-ph.icu",phishing,courier_fee_lure,tl
+"Shopee PH: Your refund of P1,299 failed. Update payment method shopee-ph-refund.top",phishing,ecommerce_refund_lure,tl
+Lazada PH: Account mo ay may violation. Appeal within 24h lazada-appeal.cc,phishing,platform_account_lure,tl
+"PhilHealth: May refund kang P3,200. Mag-claim dito philhealth-refund.xyz",phishing,gov_refund_lure,tl
+Landbank: Your account is on hold. Call 0917 882 1109 to verify.,phishing,bank_callback_lure,tl
+"Congratulations! Napili ang number mo sa Jollibee 45th Anniversary raffle. Nanalo ka ng P50,000! Text your full name and ID to 0998 213 4471",phishing,prize_lure,tl
+"Pag-IBIG: Your MP2 dividend P8,450 is ready. Confirm bank account pagibig-dividend.top",phishing,gov_refund_lure,tl
+"BIR: Tax refund P4,120 approved. I-verify ang TIN bir-refund.icu",phishing,tax_refund_lure,tl
+"Nay, ito bagong number ko, nabasag phone ko. Pa-send muna ng P3,000 sa GCash 0956 112 9930, babayaran ko bukas",phishing,family_new_number,tl
+PNP Anti-Cybercrime: Ang number mo ay konektado sa scam case. Tumawag sa 02-8231-4499 para iclear.,phishing,police_fraud_case,tl
+Converge: Overdue ang bill mo. Disconnection today. Pay now converge-pay.top,phishing,telco_unpaid_cutoff,tl
+PLDT: Account suspended. Update payment pldt-home.xyz,phishing,telco_payment_update,tl
+Cebu Pacific: Your booking refund is pending. Enter card details to receive cebupac-refund.cc,phishing,refund_lure,tl
+"Palawan Pawnshop: May padala para sa iyo na P8,500. I-claim online palawan-padala.top",phishing,remittance_lure,tl
+"Security Bank: Login detected from Taiwan. Kung hindi ikaw, i-lock: securitybank-lock.icu",phishing,bank_identity_verify,tl
+GCash Customer Care here. May pending reversal sa account mo. Pakisend ang MPIN at OTP para ma-process.,phishing,otp_ask,tl
+TikTok Shop PH: Nanalo ka ng iPhone 15 sa 11.11 giveaway! Claim: tiktokshop-ph.top,phishing,prize_lure,tl
+"Meralco: Disconnection notice. Bayaran ang P2,840 ngayon meralco-bill.xyz",phishing,utility_cutoff_lure,tl
+"LTO: May pending violation ka. Bayaran ang P2,000 bago ma-suspend ang lisensya lto-fine.cc",phishing,traffic_fine_lure,tl
+"2GO Express: Shipment on hold, customs fee P120. 2go-ship.icu",phishing,customs_fee_lure,tl
+K PLUS: บัญชีของคุณถูกระงับชั่วคราวเนื่องจากพบการเข้าถึงที่ผิดปกติ ยืนยันตัวตนภายใน 24 ชม. kplus-verify.top,phishing,bank_account_frozen,th
+SCB: ตรวจพบการเข้าสู่ระบบจากอุปกรณ์ใหม่ หากไม่ใช่คุณ โทร 02-098-4421 ด่วน,phishing,bank_callback_lure,th
+Kerry Express: พัสดุของคุณถูกตีกลับเนื่องจากที่อยู่ไม่ครบ กรอกข้อมูลใหม่ที่ kerry-th.icu/0921,phishing,parcel_address_lure,th
+Flash Express: พัสดุค้างชำระค่าบริการ 25 บาท กรุณาชำระเพื่อจัดส่งต่อ flash-pay.cc,phishing,courier_fee_lure,th
+"การไฟฟ้านครหลวง: ค้างชำระค่าไฟ 1,840 บาท จะตัดไฟคืนนี้ ชำระด่วน mea-bill.top",phishing,utility_cutoff_lure,th
+"กรมสรรพากร: คุณได้รับเงินคืนภาษี 4,120 บาท ยืนยันบัญชีรับเงิน rd-refund.xyz",phishing,tax_refund_lure,th
+"AIS: พอยท์ของคุณ 3,500 คะแนนจะหมดอายุวันนี้ แลกเป็นเงินสด ais-points.top",phishing,points_expiring_lure,th
+TrueMove H: ยอดค้างชำระ 890 บาท หมายเลขจะถูกระงับ 20:00 คืนนี้ true-bill.icu,phishing,telco_unpaid_cutoff,th
+DSI: หมายเลขของคุณพัวพันคดีฟอกเงิน กรุณาติดต่อพนักงานสอบสวน 02-831-4499 ภายในวันนี้,phishing,police_fraud_case,th
+ตำรวจไซเบอร์: พบพัสดุผิดกฎหมายในชื่อคุณ ติดต่อด่วน แอดไลน์ @police_th01,phishing,police_fraud_case,th
+กรุงไทย NEXT: บัญชีถูกล็อค กรอกเลขบัตรและรหัส PIN เพื่อปลดล็อค,phishing,card_details_ask,th
+"กรุงศรี: ตรวจพบการใช้บัตรที่ต่างประเทศ 12,500 บาท หากไม่ใช่คุณ โทร 02-296-1120",phishing,card_callback_lure,th
+ไปรษณีย์ไทย: พัสดุ EMS ค้างที่ด่านศุลกากร ชำระภาษี 150 บาท thaipost-tax.top,phishing,customs_fee_lure,th
+"ประกันสังคม: คุณมีสิทธิ์รับเงินชดเชย 7,500 บาท ยื่นคำร้องที่ sso-claim.cc",phishing,gov_benefit_lure,th
+"Shopee TH: การคืนเงิน 1,299 บาทไม่สำเร็จ อัปเดตบัตร shopee-th-refund.icu",phishing,ecommerce_refund_lure,th
+Lazada TH: บัญชีของคุณถูกจำกัด ยืนยันตัวตนภายใน 24 ชม. lazada-th.top,phishing,platform_account_lure,th
+"กรมการขนส่ง: คุณมีค่าปรับจราจรค้างชำระ 1,000 บาท ชำระ dlt-fine.xyz",phishing,traffic_fine_lure,th
+"ยินดีด้วย! หมายเลขของคุณได้รับรางวัลจาก 7-Eleven มูลค่า 50,000 บาท ติดต่อรับรางวัล แอดไลน์ @7eleven_reward",phishing,prize_lure,th
+"แม่ นี่ลูกนะ มือถือพัง ใช้เบอร์เพื่อน โอน 5,000 เข้าบัญชีนี้ก่อนนะ ด่วน 123-4-55678-9",phishing,family_new_number,th
+"ธนาคารกรุงเทพ: พบรายการโอนผิดปกติ 28,000 บาท ระงับบัญชีแล้ว ปลดระงับ bualuang-m.top",phishing,bank_account_frozen,th
+ทรูมันนี่ วอลเล็ท: บัญชีถูกระงับ ยืนยันตัวตนด้วยเลขบัตรประชาชน truemoney-verify.cc,phishing,wallet_restricted_lure,th
+กฟภ.: หม้อแปลงไฟฟ้าชำรุด ต้องเปลี่ยนมิเตอร์ ชำระค่าดำเนินการ 350 บาท pea-meter.icu,phishing,utility_fee_lure,th
+การประปา: ค้างชำระ 2 เดือน ตัดน้ำพรุ่งนี้ ชำระ mwa-pay.top,phishing,utility_cutoff_lure,th
+Grab TH: บัญชี GrabPay ถูกล็อค กรอกข้อมูลบัตร grabpay-th.xyz,phishing,wallet_locked_lure,th
+กรมที่ดิน: มีคำร้องขอโอนที่ดินในชื่อคุณ หากไม่ใช่คุณ ตรวจสอบ dol-check.top,phishing,gov_property_lure,th
+dtac: ซิมของคุณจะถูกระงับเพราะยืนยันตัวตนไม่ครบ ยืนยัน dtac-id.cc,phishing,telco_sim_suspend,th
+"สรรพากรแจ้งเตือน: คุณยื่นภาษีไม่ครบ ปรับ 2,000 บาท ตรวจสอบ rd-penalty.icu",phishing,tax_penalty_lure,th
+"เงินกู้อนุมัติแล้ว 50,000 บาท ไม่เช็คเครดิต โอนภายใน 10 นาที ส่งรูปบัตรประชาชนและเลขบัญชีมาที่ไลน์ @loan_fast99",phishing,loan_approved_id_ask,th
+"ธนาคารออมสิน: ส่งรหัส OTP ที่ได้รับกลับมาเพื่อยืนยันการยกเลิกรายการ 15,900 บาท",phishing,otp_ask,th
+"โครงการรัฐ: เงินดิจิทัล 10,000 บาท รอบสุดท้าย ลงทะเบียนรับสิทธิ์ digital-wallet-th.top",phishing,gov_benefit_lure,th

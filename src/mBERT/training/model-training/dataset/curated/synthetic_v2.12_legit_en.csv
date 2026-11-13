@@ -1,0 +1,382 @@
+text,label,category,language
+"Chase: Your Nov statement for card ending 4417 is ready. Balance $1,284.36. Min payment $35 due Dec 3. View at chase.com or in the app.",ham,bank_statement_ready,en
+Your Verizon bill of $84.20 is ready. Pay by Nov 28 at myvzw.com/bill. Reply STOP to end texts.,ham,telco_bill_ready_link,en
+"Wells Fargo: Did you attempt a $487.99 purchase at BEST BUY online with card ending 7721? Reply YES if this was you, NO if not. Msg&data rates may apply.",ham,bank_fraud_reply_yesno,en
+"Capital One: We'll never call, text or email asking for your card PIN, password or one-time code. If someone does, hang up and contact us through capitalone.com.",ham,bank_never_ask_pin,en
+Citi Alert: Your payment of $650.00 to Citi card ending 2208 was received on 11/11. Thank you.,ham,bank_payment_received,en
+"Ally: Your direct deposit of $2,146.80 from ACME LOGISTICS has posted to checking ...3380. Available balance $3,902.14.",ham,bank_credit_alert,en
+"USAA: card ending 5519 was used for a $38.60 transaction in LONDON, GB. If you are travelling no action is needed. Not you? Call 800-531-8722.",ham,bank_card_used_abroad,en
+TD Canada Trust: Your TD Visa payment of $300.00 is due Nov 20. Pay through EasyWeb at td.com or the TD app. Reply STOP to unsubscribe.,ham,bank_payment_due_link,en
+"RBC Alert: $1,450.00 Interac e-Transfer from DANIEL OKAFOR has been deposited to your chequing account ending 8812.",ham,bank_etransfer_received,en
+"Scotiabank: A pre-authorized debit of $129.99 to ENBRIDGE GAS has been set up on account ***4406. If you did not authorize this, call 1-800-472-6842.",ham,bank_direct_debit_setup,en
+BMO: Low balance alert. Your chequing account ending 2290 has dropped below $100.00. Current balance: $64.31.,ham,bank_low_balance,en
+"CIBC: Your Nov eStatement is now available in CIBC Online Banking at cibc.com. Statement balance $2,017.44, min due $40.00 by Dec 1.",ham,bank_statement_ready,en
+"Barclays: You spent £46.20 at TESCO STORES 3181 on your debit card ending 6650. Balance £1,208.93.",ham,bank_debit_alert,en
+HSBC UK: Did you just try to pay £899.00 to CURRYS ONLINE with your card ending 3011? Reply Y for yes or N for no. We will never ask you to move money.,ham,bank_fraud_reply_yesno,en
+"Lloyds Bank: Your credit card statement is ready. Balance £412.60, minimum payment £25.00 due 02 Dec. Log on at lloydsbank.com to view or pay.",ham,bank_statement_ready,en
+NatWest: A new Direct Debit to OCTOPUS ENERGY for £118.00 monthly has been set up on your account ending 2287. First collection 01 Dec. If you didn't set this up call 03457 888 444.,ham,bank_direct_debit_setup,en
+"Monzo: You paid £12.40 at Pret A Manger. You've spent £86 on eating out this month, £14 under your budget.",ham,bank_spend_notice,en
+"Santander: £2,300.00 from NHS PAYROLL has been paid into your account ending 1190. Balance £2,877.15.",ham,bank_credit_alert,en
+"Nationwide: Your card ending 0471 was used abroad for EUR 64.00 at CARREFOUR MARKET, LISBON. No action needed if this was you. Otherwise call us on 0800 055 66 22.",ham,bank_card_used_abroad,en
+"Halifax: We will NEVER ask you to move money to a 'safe account', share your full PIN or read out a one-time passcode. Anyone asking is a fraudster. Hang up.",ham,bank_never_ask_pin,en
+"Starling: Your scheduled payment of £750.00 to MRS A PATEL (rent) went out this morning. Balance now £1,064.22.",ham,bank_payment_sent,en
+"CommBank: $1,780.00 salary from WESTFIELD GROUP has been credited to your Smart Access acct. Avail bal $2,341.09. Check NetBank at commbank.com.au",ham,bank_credit_alert,en
+ANZ: Your ANZ credit card payment of $240.00 is due on 25 Nov. Pay in the ANZ App or at anz.com.au. Late payments may incur a fee.,ham,bank_payment_due_link,en
+Westpac: Was this you? $329.00 at JB HI-FI CHATSWOOD on card ending 7760 at 15:42. Reply YES or NO. Do not reply with card details.,ham,bank_fraud_reply_yesno,en
+NAB: A direct debit of $59.00 to MEDIBANK was processed from your account ending 5523 today. Avail bal $812.70.,ham,bank_direct_debit_processed,en
+Up: You tapped $4.80 at 7-Eleven Richmond. Spending account: $218.33.,ham,bank_spend_notice,en
+AIB: Your card ending 2271 was used for EUR 142.00 at RYANAIR on 12/11. If you did not make this transaction call 0818 724 724.,ham,bank_debit_alert,en
+"Bank of Ireland: Your statement for current account ending 4458 is now available in 365 Online at bankofireland.com. Closing balance EUR 1,920.33.",ham,bank_statement_ready,en
+Revolut: Card payment of EUR 23.90 to SPOTIFY declined - insufficient funds. Top up in the app to retry.,ham,bank_payment_declined,en
+Permanent TSB: We will never text you a link asking you to log in or confirm your card details. Delete any such message and call us on 0818 50 24 24.,ham,bank_never_ask_pin,en
+"GTBank: Acct: ***2286 Amt: NGN 45,000.00 DR Desc: TRANSFER TO CHINEDU OBI/OPAY Date: 12-NOV-2026 Time: 09:14 Avail Bal: NGN 183,220.50",ham,bank_debit_alert_ng,en
+"Zenith Bank: Acct ***0815 CR NGN 250,000.00 Desc: SALARY NOV 2026 - DANGOTE FLOUR Date 12/11/26 Bal: NGN 312,440.00",ham,bank_credit_alert_ng,en
+"Access Bank: Your acct ***9931 has been debited NGN 1,500.00 for SMS alert fee Oct 2026. Bal: NGN 54,120.12. Dial *901# for balance.",ham,bank_fee_debit_ng,en
+"FirstBank: NGN 12,000.00 was withdrawn from your acct ***4402 at FIRSTBANK ATM IKEJA on 12-11-26 13:02. Bal NGN 66,500.00. Not you? Call 0708 062 5000.",ham,bank_atm_withdrawal_ng,en
+"UBA: Dear Customer, your Nov e-statement is ready. Log in at ubagroup.com or on the UBA Mobile app to download. UBA will never ask for your PIN or OTP.",ham,bank_statement_ready,en
+"Kuda: You received N8,000.00 from Amaka Eze. Your balance is N41,230.50. Keep spending smart.",ham,bank_credit_alert_ng,en
+"Sterling Bank: A new standing order of NGN 20,000 monthly to AXA MANSARD has been set up on acct ***7730. If you did not do this call 0700 822 0000.",ham,bank_direct_debit_setup,en
+"FNB :-) R1,249.00 paid to CHECKERS HYPER CANAL WALK from cheq a/c..a7721 using card..6610. Avail R6,120.45. 12Nov 17:48",ham,bank_debit_alert_za,en
+"Standard Bank: R18,500.00 credited to acct ...0033 from SASOL PAYROLL. Avail bal R21,330.90.",ham,bank_credit_alert_za,en
+"Capitec: Debit order of R459.00 to VODACOM processed on acc ending 8826. Balance R2,118.33. Query? Call 0860 10 20 43.",ham,bank_direct_debit_processed,en
+"Absa: Did you spend R3,200.00 at TAKEALOT.COM on card ending 4471? Reply YES or NO. Absa will never ask for your PIN or OTP. Help 0860 557 557",ham,bank_fraud_reply_yesno,en
+Nedbank: Your card ending 1193 was used for USD 54.00 at UBER *TRIP in DUBAI AE. If this was not you call 0800 110 929.,ham,bank_card_used_abroad,en
+"TymeBank: Your GoalSave payout of R2,500.00 has landed in your EveryDay account. Bal R3,310.00.",ham,bank_credit_alert_za,en
+"DBS: S$620.00 was debited from a/c ending 2214 via PayNow to TAN WEI LING on 12 Nov 10:33. Avail bal S$4,112.20. If unauthorised call 1800 339 6963.",ham,bank_debit_alert_sg,en
+"OCBC: Your credit card statement is ready. Total due S$1,432.80, min S$50.00 by 28 Nov. View at ocbc.com or the OCBC app.",ham,bank_statement_ready,en
+UOB: A GIRO arrangement for SP GROUP has been set up on a/c ending 7760. First deduction on 1 Dec. Not you? Call 1800 222 2121.,ham,bank_direct_debit_setup,en
+POSB: Card ending 0098 used for MYR 186.40 at AEON MALL JOHOR BAHRU on 12/11. No action needed if you made this purchase.,ham,bank_card_used_abroad,en
+"Dear Customer, Rs.1,250.00 debited from a/c XX4417 on 12-Nov-26 to VPA rahul.k@okhdfcbank via UPI. Ref 631234567890. Not you? Call 1800 1080 -ICICI Bank",ham,bank_debit_alert_in,en
+"HDFC Bank: Rs.48,000.00 credited to a/c XX2206 on 12-NOV-26 by NEFT from INFOSYS LTD SALARY. Avl bal Rs.61,220.40.",ham,bank_credit_alert_in,en
+"SBI: Your a/c XX8812 has been debited Rs.599.00 for NETFLIX via auto-debit (e-mandate) on 12Nov26. Avl bal Rs.12,330.10. Dispute? Call 1800 1234.",ham,bank_direct_debit_processed,en
+"Axis Bank: Your credit card XX3390 statement for Nov is ready. Total due Rs.14,220.00, min Rs.720.00 by 02-Dec. Pay at axisbank.com or via the Axis Mobile app.",ham,bank_statement_ready,en
+"Kotak: Rs.2,000.00 withdrawn from a/c XX0071 at KOTAK ATM KORAMANGALA on 12-Nov-26 18:40. Avl bal Rs.8,410.00. SMS BLOCK 0071 to 9971056767 if not you.",ham,bank_atm_withdrawal_in,en
+"Bank of Baroda never asks for your OTP, CVV, PIN or password over call or SMS. Do not share them with anyone. Report fraud at 1800 258 4455.",ham,bank_never_ask_pin,en
+"PNC: Your available balance for checking ...2208 is $1,042.17 as of 11/12 6:00 AM. Reply STOP to end balance alerts.",ham,bank_balance_notice,en
+US Bank: Reminder - your auto loan payment of $412.33 is scheduled for 11/15. Make sure funds are available. usbank.com,ham,bank_payment_reminder,en
+"Truist: A new payee 'ALEX RIVERA' was added to your Zelle contacts. If you didn't do this, call 844-487-8478 right away.",ham,bank_new_payee_alert,en
+"Discover: Your statement is ready. New balance $329.10, minimum $35 due Dec 5. Autopay is ON for the statement balance. discover.com",ham,bank_statement_ready,en
+"Navy Federal: Your credit card payment of $150.00 posted 11/12. Available credit $4,850.00.",ham,bank_payment_received,en
+"American Express: A charge of $1,209.00 at DELTA AIR LINES was approved on card ending 1004. If you don't recognize this, call 1-800-528-4800.",ham,bank_debit_alert,en
+"Chime: Your paycheck of $1,318.46 just hit your account, 2 days early. Balance: $1,502.30.",ham,bank_credit_alert,en
+"Tesco Bank: Reminder: your credit card payment of £60.00 is due on 18 Nov. If you've already paid, thank you. tescobank.com",ham,bank_payment_reminder,en
+TSB: Your card ending 7708 was declined at ASDA SUPERSTORE for £71.10 - insufficient funds. Current balance £44.02.,ham,bank_payment_declined,en
+"Metro Bank: Scam warning. Fraudsters are calling customers pretending to be our fraud team. We will never ask you to transfer money. If in doubt, hang up and call 0345 08 08 500.",ham,bank_scam_warning,en
+"Virgin Money: Your mortgage payment of £1,140.00 was collected by Direct Debit today. Next payment 12 Dec.",ham,bank_direct_debit_processed,en
+"Bendigo Bank: Your term deposit of $20,000 matures on 20 Nov. We'll roll it over at 4.15% p.a. for 6 months unless you tell us otherwise in e-banking.",ham,bank_term_deposit_notice,en
+"ING Australia: Your Orange Everyday balance is $3,112.09. You earned $18.40 bonus interest in Oct. ing.com.au",ham,bank_balance_notice,en
+"Macquarie: You spent $89.00 at BUNNINGS WAREHOUSE with card ending 2203. Transaction account balance $4,002.77.",ham,bank_debit_alert,en
+Ulster Bank: Your account ending 9921 has gone overdrawn by EUR 32.50. Please lodge funds to avoid charges.,ham,bank_overdrawn_notice,en
+"EBS: Your mortgage repayment of EUR 1,245.00 will be debited on 15 Nov. Please ensure sufficient funds are in your account.",ham,bank_payment_reminder,en
+"Stanbic IBTC: Acct ***5540 CR NGN 75,000.00 from FUNMI ADEBAYO Ref: NIP/2026111209822 Bal: NGN 88,200.00",ham,bank_credit_alert_ng,en
+Wema Bank/ALAT: Your Nov account statement is ready. Download it in the ALAT app. Need help? Call 0700 225 2528.,ham,bank_statement_ready,en
+"Opay: You received N15,000.00 from EMEKA NWOSU. Bal: N22,340.00. Fraud alert: Opay staff will NEVER ask for your PIN or OTP.",ham,wallet_credit_alert_ng,en
+"Moniepoint: NGN 3,500.00 POS withdrawal at MONIEPOINT AGENT OJUELEGBA. Acct ***8821. Bal NGN 19,700.00.",ham,wallet_debit_alert_ng,en
+"Investec: R9,800.00 has been paid into your Private Bank account ...1102 from ERF 221 PROPERTIES. Available R14,220.67.",ham,bank_credit_alert_za,en
+"African Bank: Your loan instalment of R1,120.00 is due on 25 Nov. Make sure funds are available. Query 0861 111 011.",ham,bank_payment_reminder,en
+Discovery Bank: Did you tap R420.00 at WOOLWORTHS FOOD SANDTON? Reply YES or NO. We never ask for your PIN.,ham,bank_fraud_reply_yesno,en
+PhonePe: Rs.350 paid to Sharma Medical Store. UPI Txn ID T2611121409. Balance deducted from HDFC Bank XX2206.,ham,wallet_debit_alert_in,en
+"Paytm: Rs.2,000.00 added to Paytm Wallet from ICICI Bank XX4417. Wallet balance Rs.2,310.00. Order ID 18822039410.",ham,wallet_credit_alert_in,en
+"Your AT&T wireless bill is $142.17, due Nov 25. View or pay at att.com/myatt. AutoPay is not set up on this account.",ham,telco_bill_ready_link,en
+T-Mobile: Your bill for Nov is $75.00 and AutoPay will charge your card ending 0932 on 11/20. Details at t-mobile.com/account. Reply STOP to opt out.,ham,telco_autopay_notice,en
+Verizon: You've used 90% of your 15GB plan data for this cycle. Your cycle resets Nov 19. Manage at myvzw.com. Reply STOP to cancel alerts.,ham,telco_data_usage,en
+Visible: Your $25 payment for Dec service went through. Next charge Dec 12. Thanks for being with Visible.,ham,telco_payment_received,en
+Mint Mobile: Your 3-month plan renews on Nov 30 for $45. Update your payment method at mintmobile.com if needed.,ham,telco_plan_renewal,en
+Cricket: Payment of $60.00 received for acct ending 7721. Your service is paid through 12/11. Thanks!,ham,telco_payment_received,en
+EE: Your bill for Nov is ready: £52.00. It'll be taken by Direct Debit on 24 Nov. View it in the EE app or at ee.co.uk/mybill,ham,telco_bill_ready_link,en
+"O2: Welcome to Spain! Your Roam Like Home allowance applies, so use your UK minutes, texts and data at no extra cost. Fair use limit 25GB. o2.co.uk/roaming",ham,telco_roaming_welcome,en
+Vodafone UK: You've used 80% of your 20GB data this month. It resets on 2 Dec. Need more? Add an extra in My Vodafone.,ham,telco_data_usage,en
+Three: Your bill of £31.00 is ready. Payment will be collected on 20 Nov. If you've recently changed your bank details check at three.co.uk/myaccount,ham,telco_bill_ready_link,en
+"giffgaff: Your £10 goodybag has renewed. 15GB, unlimited mins and texts until 12 Dec. Ta!",ham,telco_plan_renewal,en
+Tesco Mobile: Your Clubcard price lock means your tariff stays £12.50 until Oct 2027. Your Nov bill is ready at tescomobile.com.,ham,telco_bill_ready_link,en
+Sky Mobile: You've rolled over 4GB of unused data into your Piggybank. You now have 22GB saved.,ham,telco_data_rollover,en
+Rogers: Your bill of $96.05 is now available. Payment due Nov 29. View at rogers.com/myrogers or in the MyRogers app. Reply STOP to unsubscribe.,ham,telco_bill_ready_link,en
+Bell: Your payment of $118.64 has been received. Thank you. Next bill date Dec 8.,ham,telco_payment_received,en
+TELUS: You've reached 100% of your shared data. Data is now slowed to 512 kbps until Nov 22. Add data at telus.com/mytelus,ham,telco_data_usage,en
+Fido: Welcome to the US! You've got 5GB of roaming data as part of your plan. Overage is $10/GB. Have a great trip.,ham,telco_roaming_welcome,en
+"Freedom Mobile: Your Nov bill is $45.20, due Dec 2. Pre-authorized payment is on. freedommobile.ca",ham,telco_bill_ready_link,en
+Koodo: Your top-up of $30 was successful. Balance $42.15. Thanks for choosing Koodo Prepaid.,ham,telco_topup_success,en
+Telstra: Your bill of $109.00 is ready. Pay by 27 Nov at telstra.com.au/mytelstra or via the My Telstra app. Reply STOP to opt out.,ham,telco_bill_ready_link,en
+Optus: You've used 50% of your 80GB. Data resets on 4 Dec. Check usage in My Optus.,ham,telco_data_usage,en
+Vodafone AU: $5 Roaming is active in New Zealand. Use your plan inclusions for $5/day. Data charged only on days you use it. vodafone.com.au/roaming,ham,telco_roaming_welcome,en
+"Boost Mobile: Your $35 recharge was successful. 30GB + unlimited calls/texts, expires 12 Dec. Recharge anytime at boost.com.au",ham,telco_topup_success,en
+amaysim: Your $30 plan has auto-renewed today. 40GB for the next 28 days. Manage your plan at amaysim.com.au,ham,telco_plan_renewal,en
+eir: Your bill of EUR 64.99 is ready to view at my.eir.ie. Payment will be taken by Direct Debit on 22 Nov.,ham,telco_bill_ready_link,en
+Vodafone IE: You have used 90% of your data allowance for this month. Your allowance renews on 1 Dec. Top up at vodafone.ie,ham,telco_data_usage,en
+Three Ireland: Your EUR 20 top-up was successful. Balance EUR 20.00. All You Can Eat data is active for 28 days.,ham,telco_topup_success,en
+48: Your 48 membership (EUR 12.99) renews tomorrow. We'll take payment from your saved card. Change plan at 48.ie,ham,telco_plan_renewal,en
+MTN: Y'ello! Your 1.5GB data bundle has been activated. Valid for 30 days. Dial *312# to check balance. Thank you for choosing MTN.,ham,telco_data_bundle_ng,en
+"Airtel NG: Recharge of N1,000 successful. Your main balance is N1,250.00. Enjoy 2x data with 1GB for N300. Dial *141#.",ham,telco_topup_success,en
+Glo: Your 5.8GB data plan expires in 2 days. Dial *777# to renew and keep your bonus. Thank you for staying with Glo.,ham,telco_plan_expiry_reminder,en
+9mobile: You have used 80% of your data. Remaining 1.2GB. Dial *200# to buy more or check balance.,ham,telco_data_usage,en
+"Vodacom: You have 500MB of data left, expiring 30 Nov. Buy a bundle on *135# or in the My Vodacom App.",ham,telco_data_usage,en
+"MTN SA: Your account bill for Nov is R599.00, due 28 Nov. View or pay at mtn.co.za or dial *136#.",ham,telco_bill_ready_link,en
+Cell C: Recharge of R50 successful. Airtime balance R52.50. Dial *147# for bundles.,ham,telco_topup_success,en
+Telkom: Your FreeMe 2GB has renewed. Next debit of R149 on 1 Dec. Manage on telkom.co.za,ham,telco_plan_renewal,en
+Rain: Your 4G unlimited plan has been paid. R479 debited. Next billing 12 Dec. Thanks for raining with us.,ham,telco_payment_received,en
+Singtel: Your Nov bill of S$68.90 is ready. Pay by 27 Nov via the My Singtel app or singtel.com. Reply STOP to unsubscribe.,ham,telco_bill_ready_link,en
+Airtel: Your Postpaid bill for Nov is Rs.699.00. Pay by 20-Nov on the Airtel Thanks app or at airtel.in/pay to avoid late fee.,ham,telco_bill_ready_link,en
+"BSNL: Dear customer, your plan Rs.199 will expire on 15-Nov-26. Recharge now to continue services. Visit bsnl.co.in",ham,telco_plan_expiry_reminder,en
+"UPS: Your package from APPLE INC is out for delivery today, Nov 12, by 7:00 PM. Tracking 1Z 999 AA1 01 2345 6784. ups.com/track",ham,courier_out_for_delivery,en
+FedEx: Your shipment 7489 2203 1104 was delivered at 2:14 PM and left at the front door. fedex.com,ham,courier_delivered,en
+USPS: Your item is arriving today between 10:45am and 2:45pm. Tracking 9400 1118 9922 3456 7890 12. Informed Delivery at usps.com,ham,courier_delivery_window,en
+Amazon: Your package with Anker USB-C Cable was delivered. Photo of delivery available in Your Orders.,ham,courier_delivered,en
+DHL Express: Shipment 4412 889 302 requires payment of import duty and VAT: $43.60. Pay securely at dhl.com/us/en/express/duties-taxes or use the DHL app. Delivery continues once paid.,ham,courier_customs_fee_real_domain,en
+Royal Mail: Your parcel from ASOS will be delivered today between 12:04 and 16:04. Track at royalmail.com/track-your-item,ham,courier_delivery_window,en
+Evri: We've got your parcel from Next and it'll be with you tomorrow. Track it at evri.com with reference H01A2B3C4D5E6F.,ham,courier_tracking_update,en
+DPD: Your parcel from JOHN LEWIS is with driver Marcin and will arrive between 09:21 and 10:21. Follow your parcel live: dpd.co.uk,ham,courier_delivery_window,en
+Parcelforce Worldwide: A customs charge of £18.72 is due on parcel PF4421938 before delivery. Pay at parcelforce.com/pay or at the Post Office with your card. Ref RM5509.,ham,courier_customs_fee_real_domain,en
+Yodel: We tried to deliver your parcel today but no one was home. We'll try again tomorrow. Track: yodel.co.uk,ham,courier_delivery_attempt,en
+Royal Mail: Your item has been held at Leeds Delivery Office as a signature was required. Collect with ID within 18 days or rearrange at royalmail.com/redelivery,ham,courier_held_at_depot,en
+Canada Post: Your parcel is out for delivery and should arrive today. Tracking 2016 1234 5678 9012. canadapost-postescanada.ca,ham,courier_out_for_delivery,en
+"Purolator: Delivery attempted at 11:03. Your package is now at Purolator Shipping Centre, 123 Main St. Pick up with ID within 5 business days. purolator.com",ham,courier_held_at_depot,en
+Canada Post: Duties and taxes of $21.47 are owed on item LX123456789CN. Pay online at canadapost-postescanada.ca/pay-duties or on delivery. Ref 70451122.,ham,courier_customs_fee_real_domain,en
+Australia Post: Your parcel from The Iconic has been delivered to your safe drop location. Tracking 33ABC1234567. auspost.com.au,ham,courier_delivered,en
+StarTrack: Your delivery from Kogan is scheduled for Thu 13 Nov. No signature required. Track at startrack.com.au,ham,courier_tracking_update,en
+AusPost: A GST and import processing charge of $38.00 applies to parcel EE123456789AU. Pay at auspost.com.au/receiving/pay-import-charges by 19 Nov so we can deliver.,ham,courier_customs_fee_real_domain,en
+An Post: Your parcel from Amazon is out for delivery today. Track it at anpost.com/track with ref CJ123456789IE.,ham,courier_out_for_delivery,en
+An Post: Customs charges of EUR 12.75 are due on parcel LB882113409GB. Pay at anpost.com/customs within 16 days. Ref 20261112.,ham,courier_customs_fee_real_domain,en
+Fastway Ireland: Your parcel is with the courier and will be delivered today. Track it at fastway.ie using PA00099123456.,ham,courier_out_for_delivery,en
+GIG Logistics: Your package waybill 1092233451 has arrived at GIGL Ikeja Experience Centre. Please come with a valid ID for pickup. Enquiries 0813 985 1120.,ham,courier_held_at_depot_ng,en
+DHL Nigeria: Shipment 2290871134 is out for delivery today in Lekki Phase 1. Our courier will call you on arrival. Track at dhl.com,ham,courier_out_for_delivery,en
+"Jumia: Your order 316728915 is out for delivery. Our agent will call you. Please keep N14,500 ready for cash on delivery.",ham,retail_cod_out_for_delivery,en
+The Courier Guy: Your parcel TCG0019283 is out for delivery today. Track at thecourierguy.co.za. Please ensure someone is available to sign.,ham,courier_out_for_delivery,en
+Aramex ZA: Parcel 4412208817 has been delivered to Reception at 12 Rivonia Rd and signed for by T. Nkosi.,ham,courier_delivered,en
+PostNet: Your parcel from Takealot is ready for collection at PostNet Rondebosch. Bring this SMS and your ID. Ref PN8822190.,ham,courier_held_at_depot,en
+SingPost: Your registered article RR123456789SG is out for delivery today. Track at singpost.com/track-items,ham,courier_out_for_delivery,en
+Ninja Van: Hi! Your parcel from Shopee (NVSGL123456789) will be delivered today 2pm-6pm. No action needed.,ham,courier_delivery_window,en
+Blue Dart: Your shipment AWB 69812233410 is out for delivery. Contact our executive at 98XXXXXX12 if needed. Track at bluedart.com,ham,courier_out_for_delivery,en
+Delhivery: Your Flipkart order will arrive today by 9 PM. OTP for delivery is 4821. Share only with the delivery executive.,ham,courier_delivery_otp,en
+India Post: Your consignment EI123456789IN has been booked and will be delivered within 3-5 days. Track at indiapost.gov.in,ham,courier_tracking_update,en
+"UPS: Hi, your package needs a signature. Nobody was available today so we'll retry tomorrow. Choose another option at ups.com/mychoice",ham,courier_delivery_attempt,en
+FedEx: Import duties of $112.30 are due on shipment 4420 1193 8821 before release from customs. Pay at fedex.com/payment or via the FedEx Mobile app.,ham,courier_customs_fee_real_domain,en
+DPD Ireland: Your parcel from Zara is at the Athlone depot and will be delivered on Monday. Track at dpd.ie with ref 15502213334456.,ham,courier_tracking_update,en
+Hermes/Evri: Sorry we missed you. Your parcel is with your neighbour at No. 14. Ref H0022110P.,ham,courier_delivered_neighbour,en
+PG&E: Your Nov bill of $186.42 is ready. Payment is due Dec 1. View or pay at pge.com/myaccount. Reply STOP to stop texts.,ham,utility_bill_ready_link,en
+Con Edison: A payment of $94.10 was received on your account ending 3302. Thank you. coned.com,ham,utility_payment_received,en
+Duke Energy: Power outage reported in your area. Estimated restoration 4:30 PM. Crews are on their way. Updates at duke-energy.com/outages,ham,utility_outage_notice,en
+City of Austin Utilities: Your water usage was 30% higher than last month. Check for leaks. View details at austinenergy.com,ham,utility_usage_notice,en
+British Gas: Your energy bill for Oct is £142.60. It'll be taken by Direct Debit on 24 Nov. View it at britishgas.co.uk/youraccount,ham,utility_bill_ready_link,en
+Octopus Energy: Thanks for your meter reading! Your bill for Oct-Nov is £98.20. Your Direct Debit covers it. Statement at octopus.energy,ham,utility_bill_ready_link,en
+Thames Water: We're fixing a burst main on Elm Road. Your water may be off until 6pm. Sorry for the disruption. thameswater.co.uk/updates,ham,utility_outage_notice,en
+EDF: Your smart meter reading was received. Balance: £46.30 in credit. No action needed.,ham,utility_balance_notice,en
+Hydro One: Your bill of $141.88 is due Nov 30. Pay at hydroone.com or through your bank. Reply STOP to unsubscribe.,ham,utility_bill_ready_link,en
+"BC Hydro: Power is out for approx 2,100 customers in Burnaby. Crews assigned. Estimated restore 3:15 PM. bchydro.com/outages",ham,utility_outage_notice,en
+Enbridge Gas: Your pre-authorized payment of $88.12 will be withdrawn on Nov 18. enbridgegas.com,ham,utility_autopay_notice,en
+"Origin: Your gas bill is $84.90, due 2 Dec. Direct debit will take care of it. View at originenergy.com.au",ham,utility_bill_ready_link,en
+Sydney Water: Planned maintenance on Tue 18 Nov 9am-3pm may interrupt your water supply. Store water in advance. sydneywater.com.au,ham,utility_outage_notice,en
+Electric Ireland: Your bill of EUR 198.50 is now available at electricireland.ie. Payment due 26 Nov. Thanks for being a customer.,ham,utility_bill_ready_link,en
+Bord Gais Energy: Your Direct Debit of EUR 120.00 will be collected on 20 Nov. View your statement at bordgaisenergy.ie,ham,utility_autopay_notice,en
+Uisce Eireann: Water supply in Dundrum may be disrupted today due to repairs. Expected restored by 7pm. water.ie/updates,ham,utility_outage_notice,en
+"Ikeja Electric: Payment of NGN 10,000 received for meter 04512289011. Token: 1234 5678 9012 3456 7890. Units 45.2kWh. Thank you.",ham,utility_prepaid_token_ng,en
+"EKEDC: Dear customer, planned maintenance on Ajah 33kV feeder on 13 Nov 9am-4pm. Supply will be interrupted. We regret the inconvenience.",ham,utility_outage_notice,en
+"City of Cape Town: Your municipal account for Nov is R1,842.60, due 30 Nov. View at capetown.gov.za/eservices. Reply STOP to unsubscribe.",ham,council_bill_ready_link,en
+SP Group: Your Nov utilities bill is S$142.30. GIRO deduction on 20 Nov. View at spgroup.com.sg or the SP app.,ham,utility_bill_ready_link,en
+"Tata Power-DDL: Your electricity bill for Nov is Rs.2,340.00. Due 25-Nov. Pay at tatapower-ddl.com or via UPI/BBPS to avoid late payment surcharge.",ham,utility_bill_ready_link,en
+Mahanagar Gas: Your bill of Rs.812.00 for Nov is generated. Pay by 22-Nov at mahanagargas.com. Thank you.,ham,utility_bill_ready_link,en
+Leeds City Council: Your Council Tax instalment of £168.00 will be collected by Direct Debit on 1 Dec. leeds.gov.uk/counciltax,ham,council_payment_reminder,en
+Camden Council: Your garden waste collection is on Thursday this week instead of Wednesday due to the bank holiday.,ham,council_service_notice,en
+"City of Toronto: Your property tax instalment of $1,204.50 is due Dec 1. Pay through your bank or at toronto.ca/propertytax",ham,council_payment_reminder,en
+"Brisbane City Council: Your rates notice is ready. Amount $512.80, due 30 Nov. View at brisbane.qld.gov.au/rates",ham,council_bill_ready_link,en
+Dublin City Council: Your parking permit for Ranelagh expires 30 Nov. Renew at dublincity.ie/parking. Ref PP-8821-0193.,ham,council_renewal_reminder,en
+Lagos State: Your LASRRA card is ready for pickup at Ikeja Registration Centre. Bring your acknowledgement slip. lagosresidents.gov.ng,ham,government_document_ready,en
+GEICO: Your auto policy renews Dec 1. Six-month premium $612.40. Nothing to do if you have autopay. Review at geico.com,ham,insurer_renewal_notice,en
+State Farm: Your payment of $118.22 has been received for policy ending 4471. Thank you. statefarm.com,ham,insurer_payment_received,en
+Progressive: Your claim #26-4410229 has been assigned to adjuster Maria Lopez. She will call you within 1 business day.,ham,insurer_claim_update,en
+Allstate: Reminder - your premium of $204.00 is due Nov 20. Pay at allstate.com or in the app. Reply STOP to opt out.,ham,insurer_payment_due_link,en
+Aviva: Your car insurance renews on 03 Dec. New premium £486.20 for the year. Check your details at aviva.co.uk/myaviva,ham,insurer_renewal_notice,en
+Admiral: Thanks for renewing. Your policy documents are in your account at admiral.com. Policy no. P01234567.,ham,insurer_documents_ready,en
+"Direct Line: Your home insurance claim 0922184 has been approved. Payment of £1,250.00 will reach your account within 5 working days.",ham,insurer_claim_update,en
+"Intact Insurance: Your policy renewal documents are ready. Annual premium $1,882.00. View at intact.ca/clientcentre",ham,insurer_renewal_notice,en
+Manulife: Your group benefits claim for $86.50 (dental) has been processed. Funds will be deposited in 2-3 business days.,ham,insurer_claim_update,en
+"NRMA Insurance: Your car policy renews 1 Dec. Premium $1,204.33. Pay by then at nrma.com.au or we'll debit your card. Reply STOP to opt out.",ham,insurer_renewal_notice,en
+Medibank: Your premium of $212.40 is due 20 Nov. Pay at medibank.com.au or we'll debit your nominated account.,ham,insurer_payment_due_link,en
+"VHI: Your health insurance renewal is due 1 Dec. Annual premium EUR 1,640.00. Manage at vhi.ie/myvhi",ham,insurer_renewal_notice,en
+"NTUC Income: Your motor policy renews 1 Dec. Premium S$1,120.00. Check details at income.com.sg. Reply STOP to unsubscribe.",ham,insurer_renewal_notice,en
+Great Eastern: Your premium of S$186.00 for policy ending 2210 is due 25 Nov. Pay via GIRO or at greateasternlife.com,ham,insurer_payment_due_link,en
+"LIC of India: Premium of Rs.12,500 for policy 884412209 is due 28-Nov-26. Pay at licindia.in or via LIC Pay Direct. Ignore if already paid.",ham,insurer_payment_due_link,en
+Delta: Check-in is open for DL 1182 ATL-LAX on Nov 13. Depart 7:45 AM. Check in at delta.com or in the Fly Delta app. Conf # H7K2LQ,ham,airline_checkin_open,en
+United: Gate change for UA 523 to Denver. New gate B32. Boarding begins 2:10 PM.,ham,airline_gate_change,en
+American Airlines: Your flight AA 1047 is delayed. New departure 6:20 PM. Record locator XZB4TQ. aa.com,ham,airline_delay_notice,en
+Southwest: Bags fly free! Your trip to Nashville is tomorrow. Check in 24 hrs before at southwest.com. Conf: 2KQ9RX,ham,airline_trip_reminder,en
+"British Airways: Online check-in is now open for BA 117 LHR-JFK, 14 Nov 08:25. Booking ref 3PX9LT. ba.com/checkin",ham,airline_checkin_open,en
+easyJet: Your flight EZY8402 to Malaga now departs from Gate 22. Boarding closes 30 mins before departure.,ham,airline_gate_change,en
+Ryanair: Check-in for FR 2201 Dublin-Faro on 15 Nov is open. Check in at ryanair.com or the app to avoid a EUR 55 airport fee. Ref QW4RT2,ham,airline_checkin_open,en
+Air Canada: Your flight AC 102 YYZ-YVR is on time. Gate D28. Boarding 4:35 PM. Ref 2BXK7Q.,ham,airline_status_update,en
+WestJet: Check in now for WS 712 to Calgary tomorrow at westjet.com. Reservation code YHG5T1.,ham,airline_checkin_open,en
+"Qantas: Check-in is open for QF 401 SYD-MEL, 13 Nov 06:00. Booking ref 5HQZ2W. qantas.com",ham,airline_checkin_open,en
+Jetstar: JQ 510 to Gold Coast is delayed 45 mins. New departure 11:15. Sorry for the hold-up. jetstar.com,ham,airline_delay_notice,en
+Virgin Australia: Your flight VA 814 now departs Gate 12. Boarding 14:05. Booking XK3P9T.,ham,airline_gate_change,en
+Aer Lingus: Check in for EI 152 DUB-LHR tomorrow 07:10 at aerlingus.com. Booking ref 2ZQ8LR.,ham,airline_checkin_open,en
+Air Peace: Your flight P47120 Lagos-Abuja on 13 Nov departs 08:00. Please arrive 2 hours before. Booking ref ABX12Q. flyairpeace.com,ham,airline_trip_reminder,en
+Ibom Air: Flight QI 320 to Uyo has been rescheduled to 14:30. Booking ref 8KL2MN. We apologise for the inconvenience.,ham,airline_delay_notice,en
+FlySafair: Online check-in is open for FA 101 JNB-CPT 14 Nov 06:15. Ref ZX4P2L. flysafair.co.za,ham,airline_checkin_open,en
+Marriott Bonvoy: Your room at Courtyard Boston Downtown is ready. Check-in from 4 PM. Confirmation 88214052. Mobile key available in the app.,ham,hotel_checkin_notice,en
+Hilton Honors: Your reservation at Hilton London Metropole for 15-17 Nov is confirmed. Conf # 3301204418. Digital key in the Hilton app.,ham,hotel_booking_confirmed,en
+Premier Inn: Your room at Premier Inn Manchester Piccadilly is booked for 20 Nov. Ref PIN44209811. Check-in from 3pm. premierinn.com,ham,hotel_booking_confirmed,en
+Airbnb: Your reservation at Sunny Loft in Lisbon is confirmed for Dec 3-7. Host Marta will send check-in details 2 days before. airbnb.com/trips,ham,hotel_booking_confirmed,en
+"Booking.com: Reminder - your stay at Hotel Zuri White Sands, Goa starts tomorrow. Confirmation 2231.448.102. Free cancellation has ended.",ham,hotel_booking_reminder,en
+Target: Your order is ready for Drive Up. Tap 'I'm on my way' in the Target app when you leave. We'll bring it out.,ham,retail_order_ready,en
+Walmart: Your refund of $42.99 for order #2000112-44902 has been issued to your card ending 0932. Allow 5-7 business days.,ham,retail_refund_issued,en
+Best Buy: Your order BBY01-806422108812 is ready for pickup at Best Buy Union Square. Bring your ID and this text.,ham,retail_order_ready,en
+"Sephora: You've earned 120 Beauty Insider points. Total: 1,480. Redeem in store or at sephora.com",ham,retail_loyalty_points,en
+Argos: Your order 4412209 is ready to collect at Argos Stratford until 19 Nov. Bring your collection code and card.,ham,retail_order_ready,en
+Tesco: Your Clubcard vouchers worth £12.50 are ready to spend. View them in the Tesco app or at tesco.com/clubcard,ham,retail_loyalty_points,en
+Sainsbury's: Your delivery is on its way! Driver Sam will arrive between 18:00 and 19:00. 2 substitutions in your order.,ham,retail_delivery_window,en
+John Lewis: We've refunded £89.00 to your card ending 6650 for order 3302118. It can take 3-5 days to show.,ham,retail_refund_issued,en
+ASOS: Your order 7210044812 has been dispatched with Evri. Expected delivery Fri 14 Nov. asos.com/orders,ham,retail_order_shipped,en
+Next: Your order 220-9931-04 is ready to collect from Next Oxford Street. We'll hold it for 7 days.,ham,retail_order_ready,en
+Boots: You've got 320 Advantage Card points worth £3.20. Spend them at boots.com or in store.,ham,retail_loyalty_points,en
+Canadian Tire: Your order #CT22109341 has shipped. Track with Canada Post 2016 8812 2203 4451. canadiantire.ca,ham,retail_order_shipped,en
+"PC Optimum: You earned 12,500 points at Shoppers Drug Mart. Balance 48,200 pts ($48). pcoptimum.ca",ham,retail_loyalty_points,en
+Woolworths: Your online order is on its way. Expected 5:00-6:00pm. 1 item out of stock has been refunded. woolworths.com.au,ham,retail_delivery_window,en
+"Coles: Your Flybuys points are in! 2,000 points = $10 off your next shop. flybuys.com.au",ham,retail_loyalty_points,en
+JB Hi-Fi: Your Click & Collect order 20112290 is ready at JB Hi-Fi Bondi Junction. Bring photo ID and your order confirmation.,ham,retail_order_ready,en
+Kmart: Refund of $34.00 for order 1192203 processed to your original payment method. Allow up to 5 business days. kmart.com.au,ham,retail_refund_issued,en
+Dunnes Stores: Your EUR 10 off EUR 50 voucher is on your Shop & Save card until Sunday. Happy shopping.,ham,retail_loyalty_points,en
+SuperValu: Your Real Rewards balance is EUR 7.50. Vouchers can be used at any SuperValu. supervalu.ie,ham,retail_loyalty_points,en
+Jumia: Order 318820114 delivered. Thank you for shopping with Jumia. Rate your experience in the app.,ham,retail_delivered,en
+Konga: Your order KG-20261112-2219 has been shipped and will arrive in 2-4 days. Track at konga.com,ham,retail_order_shipped,en
+Takealot: Your order 22109834 has been shipped and is expected on Thu 13 Nov. Track at takealot.com/orders,ham,retail_order_shipped,en
+Pick n Pay: Smart Shopper: you saved R42.60 today and have R118.00 in points. Switch them to cash at the till. pnp.co.za,ham,retail_loyalty_points,en
+Checkers Sixty60: Your order is on its way! Driver Sipho is 8 minutes away.,ham,retail_delivery_window,en
+Woolworths SA: Your WRewards voucher of R50 is ready. Scan your card in store before 30 Nov. woolworths.co.za,ham,retail_loyalty_points,en
+Shopee: Your order 2611120AB1C2D has been shipped by Ninja Van. Expected 13-14 Nov. Track in the Shopee app.,ham,retail_order_shipped,en
+Lazada: Refund of S$29.90 for order 882201123 has been processed to your card. Allow 7-14 working days.,ham,retail_refund_issued,en
+"FairPrice: Your Linkpoints balance is 1,240. Redeem at any FairPrice outlet. fairprice.com.sg",ham,retail_loyalty_points,en
+Netflix: Your membership renews on Nov 20. We'll charge $15.49 to your Visa ending 0932. Manage your plan at netflix.com/account,ham,subscription_renewal_notice,en
+Netflix: We couldn't process your payment for this month. Update your payment method at netflix.com/youraccount so you can keep watching.,ham,subscription_payment_failed_real_domain,en
+Spotify: Your Premium subscription renewed. $11.99 charged to card ending 4417. Receipt at spotify.com/account,ham,subscription_renewal_notice,en
+"Disney+: Starting Dec 12, your monthly price will change from $13.99 to $15.99. No action needed. Details at disneyplus.com/plans",ham,subscription_price_change,en
+Hulu: Payment for your subscription failed. Please update your billing info at hulu.com/account to avoid interruption.,ham,subscription_payment_failed_real_domain,en
+YouTube Premium: Your membership has been renewed for $13.99. Manage at youtube.com/paid_memberships,ham,subscription_renewal_notice,en
+Amazon Prime: Your Prime membership renews on Dec 1 for $139/year. Manage at amazon.com/prime,ham,subscription_renewal_notice,en
+Sky: Your Nov bill is £68.00 and will be collected on 25 Nov. View at sky.com/mybill. Reply STOP to opt out of texts.,ham,subscription_bill_ready_link,en
+NOW: Your Entertainment Membership price is changing from £9.99 to £11.99 a month from 10 Dec. Cancel anytime at nowtv.com/account,ham,subscription_price_change,en
+BT: Your broadband bill of £34.99 is ready at bt.com/mybt. Direct Debit on 22 Nov.,ham,subscription_bill_ready_link,en
+Crave: Your subscription renewed for $19.99 + tax. Next billing Dec 12. Manage at crave.ca,ham,subscription_renewal_notice,en
+Stan: Your payment of $17.00 failed. Update your card at stan.com.au/account to keep streaming.,ham,subscription_payment_failed_real_domain,en
+Kayo Sports: Your Basic plan renews on 15 Nov for $25. kayosports.com.au/account,ham,subscription_renewal_notice,en
+Foxtel: Your bill of $99.00 is ready. Due 28 Nov. Pay at foxtel.com.au/myaccount,ham,subscription_bill_ready_link,en
+Showmax: Your Pro subscription renews tomorrow. R349 will be charged to your card ending 8826. showmax.com/account,ham,subscription_renewal_notice,en
+DStv: Your Compact subscription of R479 is due on 15 Nov. Pay at dstv.com or via your banking app to avoid disconnection. Smartcard 4122098812.,ham,subscription_payment_due_link,en
+Hotstar: Your Super plan has been renewed for Rs.899/year. Enjoy. Manage at hotstar.com/subscribe,ham,subscription_renewal_notice,en
+Audible: Your 1 credit for Nov has arrived. Use it at audible.com. Membership renews Dec 12 for $14.95.,ham,subscription_renewal_notice,en
+Microsoft 365: Your Family subscription renews on 20 Nov for $99.99. Manage at account.microsoft.com/services,ham,subscription_renewal_notice,en
+Adobe: Your Creative Cloud payment of $59.99 could not be processed. Update your card at account.adobe.com to keep your apps.,ham,subscription_payment_failed_real_domain,en
+PlayStation: Your PS Plus Essential renews 18 Nov for $9.99. Turn off auto-renew at playstation.com/account,ham,subscription_renewal_notice,en
+Peloton: Your All-Access Membership price will be $44/month from Jan 1. Details at onepeloton.com/membership,ham,subscription_price_change,en
+Walgreens: Rx #0442213 is ready. Pick up at 1200 Main St by Nov 19 or it will be returned to stock.,ham,health_prescription_ready,en
+"Kaiser Permanente: Reminder - appointment with Dr. Chen on Nov 14 at 10:30 AM, Oakland Medical Center, Bldg 3. Reply C to confirm, R to reschedule.",ham,health_appointment_reminder,en
+Zocdoc: Your appointment with Dr. Priya Nair (Dermatology) is tomorrow at 2:15 PM. Address: 44 W 23rd St. Arrive 10 min early.,ham,health_appointment_reminder,en
+LabCorp: Your test results are available in your Labcorp Patient portal. labcorp.com/patients,ham,health_results_ready,en
+NHS: You have an appointment at Royal Free Hospital Outpatients on 18 Nov at 09:40. Reply YES to confirm or call 020 7794 0500 to change.,ham,health_appointment_reminder,en
+Boots Pharmacy: Your prescription is ready to collect from Boots High Street Kensington. Bring ID if collecting for someone else.,ham,health_prescription_ready,en
+Your GP practice: Flu jabs are now available for over-65s. Book at your surgery or at nhs.uk/book-a-flu-vaccination,ham,health_vaccination_notice,en
+Lloyds Pharmacy: Your repeat prescription has been sent to your GP for approval. We'll text when it's ready.,ham,health_prescription_update,en
+"Ontario Health: Your COVID/flu vaccine appointment is confirmed for Nov 15 at 3:20 PM, Rexdale Community Health Centre. Bring your health card.",ham,health_appointment_reminder,en
+LifeLabs: Your results are ready. Sign in to my results at lifelabs.com to view.,ham,health_results_ready,en
+Chemist Warehouse: Your script is ready for collection at Chemist Warehouse Parramatta. Ref 22109.,ham,health_prescription_ready,en
+"Bupa Dental: Reminder of your check-up with Dr Walsh on Fri 14 Nov at 11:00, Chatswood. Reply Y to confirm.",ham,health_appointment_reminder,en
+Medicare: Your claim of $74.80 for your GP visit on 10 Nov has been paid to your bank account. my.gov.au,ham,health_claim_paid,en
+HSE: Your appointment at Beaumont Hospital Cardiology Clinic is on 20 Nov at 14:00. Please bring your referral letter. Call 01 809 3000 to change.,ham,health_appointment_reminder,en
+Boots Ireland: Your prescription is ready to collect at Boots Liffey Valley. Open until 9pm.,ham,health_prescription_ready,en
+Clicks: Your prescription is ready for collection at Clicks Cavendish. Trading hours 9am-7pm. Ref CL8821.,ham,health_prescription_ready,en
+Dis-Chem: Reminder - your chronic medication is due for collection. Visit Dis-Chem Fourways or call 011 465 6600.,ham,health_prescription_update,en
+Netcare: Your appointment with Dr Naidoo at Netcare Milpark is on 15 Nov at 08:30. Please arrive 15 mins early.,ham,health_appointment_reminder,en
+ParentPay: Your balance for Olivia's school dinners is £2.40. Top up at parentpay.com to avoid interruption.,ham,school_payment_reminder,en
+Oakwood Primary: School will close at 1pm tomorrow due to a staff training afternoon. Please collect children on time.,ham,school_notice,en
+Arbor: Year 9 parents' evening is on 20 Nov 4-7pm. Book slots in the Arbor app by Friday.,ham,school_notice,en
+ClassDojo: Mr Patel posted a new photo of 3B's science fair in your class story.,ham,school_app_notice,en
+SchoolMessenger: Lincoln High School is closed Friday Nov 14 due to a water main break. All activities cancelled.,ham,school_closure_notice,en
+Compass: Your child Liam was marked absent for period 1 today. If this is unexpected please contact the school.,ham,school_attendance_notice,en
+Aladdin Connect: Reminder - St Brigid's NS swimming lessons fee of EUR 45 is due by Friday. Pay via Aladdin.,ham,school_payment_reminder,en
+Seesaw: Ava has 2 new activities to complete this week. Check the Seesaw Family app.,ham,school_app_notice,en
+"TDSB: Due to the snowstorm, all TDSB schools are closed today. Buses are cancelled.",ham,school_closure_notice,en
+Uber: Your Thursday evening trip with Uber cost $18.42. Rate your trip in the app.,ham,ridehail_receipt,en
+"Lyft: Your ride with Dana is confirmed. Pickup at 123 Market St in 4 min. Black Honda Civic, CA 7XYZ890.",ham,ridehail_driver_arriving,en
+"Bolt: Your driver Kwame is 3 min away in a grey Hyundai Elantra, KJA 221 XY. Ride code 4471.",ham,ridehail_driver_arriving,en
+"Bolt: Thanks for riding! Your trip cost N2,350. Receipt in the app. Rate Kwame.",ham,ridehail_receipt,en
+Uber Eats: Your order from Chipotle is on its way with Jordan. ETA 12 min. Track it live in the app.,ham,food_delivery_update,en
+DoorDash: Your Dasher has picked up your order from Shake Shack. Estimated arrival 7:42 PM.,ham,food_delivery_update,en
+Deliveroo: Your order from Dishoom is being prepared. Rider assigned. Arriving in 20-30 min.,ham,food_delivery_update,en
+Just Eat: Your order from Pizza Express has been delivered. Enjoy! Rate your order at just-eat.co.uk,ham,food_delivery_update,en
+Menulog: Your order from Guzman y Gomez is 5 minutes away. Courier Alex is in a blue hatchback.,ham,food_delivery_update,en
+"ADP: Your pay statement for 11/14 is available in ADP Mobile. Net pay $2,218.44 deposited to account ending 3380.",ham,payroll_pay_statement,en
+"Gusto: You got paid! $1,876.20 was deposited to your bank account ending 2290 today. View your paystub at app.gusto.com",ham,payroll_pay_statement,en
+Paychex: Your W-2 for 2025 is ready to download in Paychex Flex. paychexflex.com,ham,payroll_tax_document,en
+Workday: Your timesheet for the week ending Nov 9 is due today by 5 PM. Submit in Workday.,ham,payroll_timesheet_reminder,en
+Deputy: Your shift tomorrow is 9:00am-5:30pm at Westfield Store. Reply ACCEPT to confirm.,ham,payroll_shift_notice,en
+"Sage HR: Your Nov payslip is available in Sage HR. Net pay £2,310.55 paid 28 Nov.",ham,payroll_pay_statement,en
+"Xero Me: Your payslip for the fortnight ending 9 Nov is ready. Net pay $2,480.10.",ham,payroll_pay_statement,en
+"IRS: Your refund of $1,204.00 was sent to your bank account on 11/10. Allow up to 5 days for your bank to post it. Where's My Refund at irs.gov",ham,government_tax_refund,en
+"Social Security Administration: Your Nov benefit payment of $1,812.00 was deposited on 11/12. Manage your account at ssa.gov/myaccount",ham,government_benefit_paid,en
+California DMV: Your vehicle registration for plate 8ABC123 expires 12/31. Renew online at dmv.ca.gov. Fee $214.00.,ham,government_renewal_reminder,en
+"Texas DPS: Your driver license renewal appointment is Nov 18 at 10:40 AM, Austin North office. Confirmation 44210938.",ham,government_appointment,en
+NYC 311: Alternate side parking is suspended today for Veterans Day. Meters are in effect.,ham,government_service_notice,en
+HMRC: Your Self Assessment tax refund of £312.40 has been issued to your bank account ending 2287. It can take 5 days to arrive. gov.uk/hmrc,ham,government_tax_refund,en
+"HMRC: We will never ask for your bank details or payment by text or email. If you get a message about a refund or penalty with a link, report it at gov.uk/report-scam-text",ham,government_scam_warning,en
+"DWP: Your Universal Credit payment of £1,018.22 will be paid on 15 Nov. Check your journal at gov.uk/sign-in-universal-credit",ham,government_benefit_paid,en
+DVLA: Your vehicle tax for KX21 ABC expires on 30 Nov. Tax it at gov.uk/vehicle-tax or you may be fined. 12 months: £190.00,ham,government_renewal_reminder,en
+TV Licensing: Your TV Licence renews on 1 Dec. Your Direct Debit of £14.12 monthly continues. tvlicensing.co.uk,ham,government_renewal_reminder,en
+GOV.UK: Your passport application 1234-5678-9012 has been approved. Your new passport will be delivered within 7 days.,ham,government_document_ready,en
+NHS: Your NHS COVID Pass has been updated. View it in the NHS App.,ham,government_service_notice,en
+CRA: Your 2025 tax refund of $842.10 has been deposited to your bank account. View your Notice of Assessment in My Account at canada.ca/my-cra-account,ham,government_tax_refund,en
+Service Canada: Your Canada Child Benefit payment of $614.40 was deposited Nov 20. canada.ca,ham,government_benefit_paid,en
+"ServiceOntario: Your health card renewal appointment is Nov 19 at 2:30 PM, 777 Bay St. Bring 2 pieces of ID.",ham,government_appointment,en
+"ATO: Your tax return has been processed. A refund of $1,412.00 will be paid to your nominated account within 3 business days. Check myGov at my.gov.au",ham,government_tax_refund,en
+Services Australia: Your Family Tax Benefit payment of $412.60 has been paid. View in myGov.,ham,government_benefit_paid,en
+Service NSW: Your driver licence expires on 30 Dec. Renew online at service.nsw.gov.au. 5 years: $214.,ham,government_renewal_reminder,en
+myGov: A new message from Medicare is in your myGov inbox. Sign in at my.gov.au to read it.,ham,government_service_notice,en
+Revenue: Your Statement of Liability for 2025 is available in myAccount at revenue.ie. A refund of EUR 418.20 will issue to your bank account.,ham,government_tax_refund,en
+Intreo: Your Jobseeker's payment of EUR 232.00 has been paid to your account. mywelfare.ie,ham,government_benefit_paid,en
+NDLS: Your driving licence renewal appointment is 19 Nov 11:20 at NDLS Tallaght. Bring your current licence and PPSN.,ham,government_appointment,en
+NIMC: Your National Identification Number has been generated. Dial *346# to retrieve it. NIMC will never ask you to pay via SMS.,ham,government_document_ready,en
+FRSC: Your driver's licence is ready for collection at FRSC Ojodu Office. Bring your temporary licence and ID. Ref DL/LA/2026/44210.,ham,government_document_ready,en
+JAMB: Your 2026 UTME result is available. Check at jamb.gov.ng/efacility. Do not share your profile code.,ham,government_result_notice,en
+"SARS: Your 2026 tax assessment has been issued. A refund of R3,412.00 will be paid within 72 hours. View at sars.gov.za/efiling. SARS will never ask you to click a link to receive a refund.",ham,government_tax_refund,en
+SASSA: Your SRD grant of R370 for Nov has been approved and paid to your bank account.,ham,government_benefit_paid,en
+"IRAS: Your Notice of Assessment for YA2026 is ready at myTax Portal (iras.gov.sg). Tax payable S$1,240.00 by 15 Dec, or via GIRO instalments.",ham,government_tax_notice,en
+"CPF Board: Your employer's CPF contribution of S$1,110.00 for Oct has been credited. View at cpf.gov.sg",ham,government_benefit_paid,en
+LTA: Road tax for SKV1234A expires 30 Nov. Renew at onemotoring.lta.gov.sg. 6 months: S$372.,ham,government_renewal_reminder,en
+"Income Tax Dept: Your ITR for AY 2026-27 has been processed. Refund of Rs.8,420 credited to a/c XX4417. Check at incometax.gov.in",ham,government_tax_refund,en
+"EPFO: Your PF claim has been settled. Rs.42,100 credited to a/c XX2206. Check passbook at epfindia.gov.in",ham,government_benefit_paid,en
+Chase: Fraud alert. Did you use card ending 4417 for $604.11 at WALMART.COM on 11/12? Reply YES or NO. We never ask for your PIN or password. Msg&data rates may apply.,ham,bank_fraud_reply_yesno,en
+"Capital One: Did you make a $1.00 then $349.00 purchase at SHELL OIL 4412 with card ending 2201? Reply 1 for YES, 2 for NO.",ham,bank_fraud_reply_yesno,en
+"Barclays: We've temporarily blocked a payment of £1,200 to a new payee. If this was you, approve it in the Barclays app. If not, call the number on your card. We never ask for your PIN.",ham,bank_fraud_reply_yesno,en
+"Monzo: Scam warning. If anyone calls claiming to be from Monzo and asks you to move money or share a code, hang up. We'll never do that. monzo.com/security",ham,bank_scam_warning,en
+CommBank: Scammers are impersonating CommBank. We'll never ask you to transfer money to a 'safe' account or share your NetCode. Report at commbank.com.au/hoax,ham,bank_scam_warning,en
+AIB Fraud: Did you authorise EUR 850.00 to HARVEY NORMAN on card ending 2271? Reply Y or N. AIB will never ask for your full PIN or card reader codes.,ham,bank_fraud_reply_yesno,en
+"GTBank: Beware of fraudsters! GTBank will never call or SMS you asking for your PIN, OTP, card details or token codes. Report suspicious calls to 0700 482 666 328.",ham,bank_scam_warning,en
+"FNB: Was this you? R2,999.00 at TAKEALOT with card ..6610. Reply YES to approve or NO to decline. FNB will never ask for your PIN or OTP.",ham,bank_fraud_reply_yesno,en
+"DBS: Did you authorise a S$1,500.00 FAST transfer to LEE M K? Reply Y or N. DBS staff will never ask for your PIN, OTP or iBanking password.",ham,bank_fraud_reply_yesno,en
+SBI: Beware of fake SMS/links asking you to update KYC or claiming your account is blocked. SBI never sends such links. Report at report.phishing@sbi.co.in,ham,bank_scam_warning,en
+"USPS: We will never text you a link asking for payment to redeliver a package. If you got one, forward it to 7726 (SPAM). Learn more at uspis.gov",ham,courier_scam_warning,en
+Royal Mail: We're aware of scam texts about unpaid fees. We'll only ask for a fee on a grey card left at your door or at royalmail.com. Report scams to 7726.,ham,courier_scam_warning,en
+Australia Post: We'll never text you a link to pay a fee to release a parcel. Report scams at auspost.com.au/scams,ham,courier_scam_warning,en
+Telstra: Scam alert - we're seeing fake Telstra texts about bill refunds. We only ask you to pay through the My Telstra app or telstra.com.au. Report to scams@telstra.com.au,ham,telco_scam_warning,en
+"Netflix: We'll never ask for your card details or password by text. If you get a suspicious message, forward it to phishing@netflix.com.",ham,subscription_scam_warning,en
+ATO: We will never send you a text with a link to log in or claim a refund. Report scam messages to ReportScams@ato.gov.au,ham,government_scam_warning,en
+"CRA: We do not text links or ask for payment by e-transfer or gift card. If in doubt, sign in at canada.ca or call 1-800-959-8281.",ham,government_scam_warning,en
+Revenue: Revenue will never text you a link to claim a refund or ask for card details. Delete such messages. revenue.ie/scams,ham,government_scam_warning,en
+"MTN: MTN will never ask for your PIN or OTP. Do not share them with anyone, even someone claiming to be MTN staff. Report fraud to 1234.",ham,telco_scam_warning,en
+Your Chase verification code is 482913. Don't share it with anyone. Chase will never ask for it.,ham,otp_code_delivery,en
+Your Amazon OTP is 229184. Do not share this with anyone.,ham,otp_code_delivery,en
+"NAB: Your home loan interest rate will change to 6.24% p.a. from 1 Dec. Your new repayment is $2,118/month. nab.com.au/rates",ham,bank_rate_change,en
+"Verizon: Your international travel pass is active in Canada. $10/day gets you your domestic talk, text and data. myvzw.com/travelpass",ham,telco_roaming_welcome,en
+Singtel: Your Dash wallet top-up of S$50 was successful. Balance S$72.40.,ham,wallet_credit_alert_sg,en
+Jio: Your Jio number 9198XXXX12 plan expires tomorrow. Recharge with Rs.299 at jio.com or the MyJio app to continue uninterrupted service.,ham,telco_plan_expiry_reminder,en
+UPS: Your package has been rerouted to the UPS Access Point at CVS 44 Main St as you requested. Pick up within 7 days with a photo ID.,ham,courier_held_at_depot,en
+Expedia: Your trip to Cancun is in 3 days. Itinerary 7231099822. Check in with the airline 24 hrs before.,ham,travel_trip_reminder,en
+"Enterprise: Your rental is confirmed for Nov 14 at LAX. Confirmation 1192203. Compact car, $48/day. enterprise.com",ham,travel_booking_confirmed,en
+Transperth: Your SmartRider has been auto-topped up with $20. Balance $24.60.,ham,transit_topup,en
+Gautrain: Your Gold Card balance is R42.00. Top up at any station or on the Gautrain app.,ham,transit_balance,en
+Hertz: Thanks for renting with us. Your receipt for $212.44 is at hertz.com/receipts. Rental record 884210938.,ham,travel_receipt,en
+Tesco: Thanks for your order. Your delivery slot is Thu 13 Nov 7-8pm. Order total £84.60. Edit until 11:45pm tonight at tesco.com,ham,retail_delivery_window,en
+Shoprite: Your Xtra Savings balance is R68.00. Swipe your card at the till to use it. shoprite.co.za,ham,retail_loyalty_points,en
+Spotify: Your Premium Family plan price is changing from $16.99 to $19.99 per month starting Dec 15. Details at spotify.com/account,ham,subscription_price_change,en
+Sky: Your payment of £68.00 didn't go through. Please check your bank details at sky.com/mybill. We'll try again in 5 days.,ham,subscription_payment_failed_real_domain,en
+DStv: Your payment of R479 was not received. Pay at dstv.com or via EFT to avoid disconnection on 15 Nov. Smartcard 4122098812.,ham,subscription_payment_failed_real_domain,en
+Xbox: Your Game Pass Ultimate payment of $16.99 failed. Update your payment method at account.microsoft.com to keep playing.,ham,subscription_payment_failed_real_domain,en
+"Payroll - Acme Corp: Your Nov payslip is ready on the staff portal. Net pay £2,418.20 paid 28 Nov. HR: hr@acme.co.uk",ham,payroll_pay_statement,en
+City of Johannesburg: Your prepaid electricity meter will be migrated to the new system on 18 Nov. No action required. joburg.org.za,ham,council_service_notice,en

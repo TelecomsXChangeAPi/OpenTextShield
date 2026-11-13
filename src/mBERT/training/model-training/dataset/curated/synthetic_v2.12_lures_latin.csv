@@ -1,0 +1,368 @@
+text,label,category,language
+Barclays: Your online banking access has been suspended due to a failed security check. Verify within 24h to avoid closure: barclays-secure-verify.com,phishing,account_locked_verify,en
+Chase Alert: We detected an irregularity on your account ending 4417. Access is restricted until you confirm your identity at chase-id-review.com/4417,phishing,account_locked_verify,en
+HSBC: unusual activity on your account. for your security we have limited access. restore now hsbc-online-restore.co,phishing,account_locked_verify,en
+Your Lloyds account will be closed in 24 hours. Confirm your details to keep it active: lloyds-confirm.net,phishing,account_locked_verify,en
+Wells Fargo: Your account has been temporarily locked. Reactivate now http://wf-secure-portal.icu or your funds will be held.,phishing,account_locked_verify,en
+BOA: Due to a recent security update you must re-verify your profile. Failure to do so within 24hrs results in permanent suspension. rb.gy/bofa24,phishing,account_locked_verify,en
+Santander Security: Access to your account is on hold pending verification. Please complete it today at santander-verify-uk.com to avoid interruption.,phishing,account_locked_verify,en
+NatWest: We were unable to verify your mobile device. Online banking will be suspended at midnight unless you confirm: natwest-device.com,phishing,account_locked_verify,en
+Capital One - your account requires immediate attention. Login via tinyurl.com/cap1-review to prevent deactivation.,phishing,account_locked_verify,en
+ACCOUNT LOCKED. Multiple failed login attempts on your TD account. Unlock: td-bank-unlock.com,phishing,account_locked_verify,en
+"Citi: For your protection, we have paused your card and online access. Call 1-888-240-7716 to speak with the fraud team and restore access.",phishing,bank_callback_lure,en
+Halifax: a security hold has been placed on your account. Please reply with your sort code and account number to lift the hold.,phishing,bank_reply_details_lure,en
+"Monzo here. We've frozen your account after a security review. To unfreeze, follow the steps at monzo-help-centre.com within the next 12 hours.",phishing,account_locked_verify,en
+Nationwide: Important. Your account has been flagged for inactivity and will be deactivated. Please confirm your identity: nationwide-id.co.uk-check.com,phishing,account_locked_verify,en
+Revolut: Your identity verification has expired. Your account is now limited. Re-verify here: revolut-kyc.app,phishing,account_locked_verify,en
+"Starling Bank: Your access has been suspended. To restore, call our security line on 0203 884 1190 before 6pm today.",phishing,bank_callback_lure,en
+"Chase: A new login was detected from Houston, TX at 03:12. If this was not you, secure your account now at chase-login-alert.com",phishing,unusual_login_fake_domain,en
+"Apple ID: Your account was used to sign in on a new device (Windows PC). If this wasn't you, confirm your identity: appleid-signin-review.com",phishing,unusual_login_fake_domain,en
+"Google: Someone just signed in to your account from Lagos, Nigeria. Was this you? Review activity: google-account-check.xyz",phishing,unusual_login_fake_domain,en
+"PayPal: New device login detected. If you don't recognise this, verify your account within 24 hours or it will be limited. paypal-resolution-center.net",phishing,unusual_login_fake_domain,en
+Microsoft account security: unusual sign-in activity from an unrecognised location. Confirm it was you: cutt.ly/ms-signin,phishing,unusual_login_fake_domain,en
+"Amazon: Your account was accessed from a new device in Istanbul. If this wasn't you, click here to secure it: amzn-security-check.com",phishing,unusual_login_fake_domain,en
+"Facebook: Someone tried to log in to your account. Was it you? If not, protect your account here: fb-recover-login.com",phishing,unusual_login_fake_domain,en
+Netflix: a new sign-in from a Samsung TV in Berlin. Not you? Confirm your identity at netflix-account-activity.com or your account will be paused.,phishing,unusual_login_fake_domain,en
+"Coinbase: We noticed a login from an unfamiliar IP. If this wasn't you, call 1-855-408-2212 immediately to secure your wallet.",phishing,unusual_login_callback,en
+"instagram: your password was changed from a new device. if you didn't do this, reply NO and we will reset it for you",phishing,unusual_login_reply_lure,en
+"Barclays: new device registered to your online banking at 14:52. If this wasn't you, call 0203 991 7730 now and have your card and PIN ready.",phishing,bank_callback_lure,en
+Your Visa debit card ending 7731 has been blocked due to suspicious transactions. Reactivate: visa-card-reactivate.com,phishing,card_blocked_reactivate,en
+"Mastercard Alert: Card ****2290 has been temporarily deactivated. To reactivate, verify your card details at mc-secure-activation.com",phishing,card_blocked_reactivate,en
+Your card has been suspended as a precaution. To reactivate please call 0800 433 9120 and have your 16 digit card number ready.,phishing,card_blocked_callback,en
+Amex: your card was declined at Argos for GBP 349.00 and has been placed on hold. Lift the hold: americanexpress-hold.com,phishing,card_blocked_reactivate,en
+Capital One: card ending 0046 locked. Reactivate in 2 mins: bit.ly/3Xk9capone,phishing,card_blocked_reactivate,en
+ur card has been blocked. reactivate at card-unlock-now.top or it will be cancelled permanently,phishing,card_blocked_reactivate,en
+Discover: we blocked a $812.44 purchase at Best Buy. Your card is frozen. Confirm it was you and restore service: discover-cardservices.com,phishing,card_blocked_reactivate,en
+Your contactless payments have been disabled following a security alert. Enable them again: barclaycard-contactless.com,phishing,card_blocked_reactivate,en
+Royal Mail: your parcel has a GBP 1.99 unpaid shipping fee. Pay now to avoid return to sender: royalmail-redelivery-fee.com,phishing,parcel_fee_lure,en
+DHL: Your shipment DHL4471220 is on hold at our depot. A customs charge of EUR 1.99 is due. Settle here: dhl-customs-pay.com,phishing,parcel_fee_lure,en
+USPS: We attempted to deliver your package but the address was incomplete. Pay the $0.30 redelivery fee: usps-redeliver.us,phishing,parcel_fee_lure,en
+FedEx: parcel 7749 0012 8831 awaiting payment of import duty (2.49). Pay within 48h or it will be returned. fedex-duty.online,phishing,parcel_fee_lure,en
+UPS: Your package could not be delivered. A delivery fee of 1.45 is outstanding. Pay here: ups-tracking-pay.com,phishing,parcel_fee_lure,en
+Evri: We missed you today! Reschedule your delivery for a small fee of GBP 1.45: evri-reschedule.co,phishing,parcel_fee_lure,en
+DPD: Your parcel is being held pending a customs fee of 2.99. Please pay via tinyurl.com/dpd-fee to release it.,phishing,parcel_fee_lure,en
+Hermes: parcel held at depot. Unpaid fee 1.99. rb.gy/hermespkg,phishing,parcel_fee_lure,en
+Your parcel #AU883112 is waiting at our facility. There is an outstanding customs fee of 1.99 payable at: auspost-fees.com,phishing,parcel_fee_lure,en
+Canada Post: A $2.95 handling fee is required before your item can be released. Pay at canadapost-release.ca-fee.com,phishing,parcel_fee_lure,en
+An Post: We were unable to deliver your package due to an unpaid customs charge of EUR 2.50. Pay: anpost-customs.ie-pay.com,phishing,parcel_fee_lure,en
+GLS: your parcel is waiting. Confirm your address and pay the 1.50 redelivery charge here: gls-redelivery.com,phishing,parcel_fee_lure,en
+Royal Mail: Parcel RM2290118GB held due to insufficient postage. Please pay the GBP 2.99 shortfall: cutt.ly/rm-postage,phishing,parcel_fee_lure,en
+Your package could not be delivered because the house number is missing. Update your address: is.gd/pkgaddr,phishing,parcel_address_lure,en
+USPS: Your package is on hold. Confirm your address within 24 hours or it will be returned: bit.ly/3usps-hold,phishing,parcel_address_lure,en
+We tried to deliver your parcel today but nobody was home. Confirm your address for redelivery: tinyurl.com/deliv-confirm,phishing,parcel_address_lure,en
+FedEx: Address incomplete. Package 6201 8812 7734 will be returned unless you confirm details here: rb.gy/fdxaddr,phishing,parcel_address_lure,en
+DHL Express: Your shipment is pending address confirmation. Click to confirm: dhl-express-confirm.com/track,phishing,parcel_address_lure,en
+Delivery failed. Your parcel (1Z44A9) is at our depot. Enter your address to schedule redelivery: cutt.ly/ups1z44,phishing,parcel_address_lure,en
+Amazon: Your order cannot be delivered due to an address error. Confirm within 12h to avoid cancellation: amazon-delivery-confirm.com,phishing,parcel_address_lure,en
+Your Hermes parcel is on its way but the postcode is invalid. Update it now: evri-postcode-update.com,phishing,parcel_address_lure,en
+USPS: Final notice. Package held at facility due to incorrect address. Verify: usps-package-verify.com,phishing,parcel_address_lure,en
+"E-ZPass: You have an unpaid toll balance of $6.99. To avoid a $50.00 late fee, pay by 11/14 at ezpass-tollservices.com",phishing,toll_fine_lure,en
+SunPass: Your account has an outstanding toll invoice of $4.15. Pay now to avoid penalties: sunpass-toll-payment.com,phishing,toll_fine_lure,en
+Dartford Crossing: You have not paid your Dart Charge. Pay GBP 2.50 by midnight to avoid a GBP 70 penalty: dartford-charge-pay.co.uk-gov.com,phishing,toll_fine_lure,en
+FasTrak: Unpaid toll notice. Your vehicle passed a toll point on 11/02. Balance due $5.60. Pay at fastrak-pay.com to avoid license suspension.,phishing,toll_fine_lure,en
+Toll Roads: final reminder. Your invoice is overdue. Pay $11.69 at thetollroads-pay.com or your DMV record will be flagged.,phishing,toll_fine_lure,en
+Peach Pass: outstanding toll fee of $3.95. Settle here to avoid a $35 administrative fee: is.gd/peachtoll,phishing,toll_fine_lure,en
+TfL: You have an unpaid Congestion Charge of GBP 15. A penalty of GBP 180 will apply if not paid by tomorrow. Pay: tfl-pay-congestion.com,phishing,toll_fine_lure,en
+DVLA: Your vehicle is no longer taxed. You must pay before 15/11 to avoid a fine. Pay now: dvla-vehicle-tax.co,phishing,toll_fine_lure,en
+You have 1 outstanding parking fine. Pay GBP 60 within 14 days to avoid court action: penaltycharge-pay.uk,phishing,toll_fine_lure,en
+Final Notice: E-ZPass toll violation. Pay $12.51 immediately to avoid your vehicle registration being suspended. ezpass-violations.net,phishing,toll_fine_lure,en
+Linkt: Your toll invoice is overdue. Pay $7.80 now to avoid additional charges. linkt-tolls-au.com,phishing,toll_fine_lure,en
+Illinois Tollway: unpaid toll of $3.80. Reply PAY to receive a payment link.,phishing,toll_fine_reply_lure,en
+TxTag: A toll charge of $2.60 remains unpaid. Pay now to avoid a late fee of $25: txtag-payment.com,phishing,toll_fine_lure,en
+HMRC: You are eligible for a tax refund of GBP 428.60. Claim within 72 hours: hmrc-refund-claim.com,phishing,tax_refund_lure,en
+Revenue: A tax rebate of EUR 311.20 is available to you. Confirm your bank details: revenue-refund-ie.com,phishing,tax_refund_lure,en
+HMRC: We have recalculated your tax for 2024-25. You are due GBP 294.33. Reply REFUND with your bank details to receive it.,phishing,tax_refund_reply_lure,en
+ATO: Your tax return has been processed. A refund of $892.40 is waiting. Claim: ato-refund.au-gov.com,phishing,tax_refund_lure,en
+IRS Notice: your refund could not be deposited. Update your banking info within 24 hours: cutt.ly/irs-deposit,phishing,tax_refund_lure,en
+CRA: You have a refund of CAD 612.00 available for your 2025 return. Claim at cra-refund.ca-tax.com,phishing,tax_refund_lure,en
+HMRC: Final reminder. Your tax refund of GBP 189.50 will expire on 18/11. Claim at tinyurl.com/hmrc-rebate,phishing,tax_refund_lure,en
+Govt Tax Office: You qualify for a one-off rebate. To process it we need your sort code and account number. Reply to this message.,phishing,tax_refund_reply_lure,en
+Your Spotify Premium payment could not be processed. Update your payment method within 48h to avoid losing your playlists: spotify-billing.co,phishing,subscription_payment_lure,en
+Disney+: We were unable to charge your card for this month. Please update your details: disneyplus-payments.com,phishing,subscription_payment_lure,en
+Amazon Prime: your membership is on hold. Payment failed. Update now: prime-membership-renew.com,phishing,subscription_payment_lure,en
+Netflix: Your account has been suspended due to a billing issue. Restart your membership here: netflx-restart.com,phishing,subscription_payment_lure,en
+Apple: Your iCloud storage payment failed. Your photos will be deleted in 48 hours unless you update your billing info. apple-icloud-billing.com,phishing,subscription_payment_lure,en
+Hulu: We couldn't process your payment. Update within 24 hours or your account will be cancelled: hulu-account-billing.com,phishing,subscription_payment_lure,en
+"Your Sky subscription payment has failed. To avoid service interruption, update your card at sky-billing-update.com",phishing,subscription_payment_lure,en
+YouTube Premium: billing problem detected. Update your payment method at rb.gy/ytprem to continue ad-free.,phishing,subscription_payment_lure,en
+Microsoft 365: Your subscription could not be renewed. Your files will be locked in 3 days. Fix payment: ms365-renew.net,phishing,subscription_payment_lure,en
+"Netflix: we're having trouble with your current billing information. We'll try again, but in the meantime you may want to update your payment details. netflix-help-billing.com",phishing,subscription_payment_lure,en
+NOW TV: payment declined. Reactivate your pass: bit.ly/nowtv-reactivate,phishing,subscription_payment_lure,en
+Vodafone: Your bill of GBP 54.20 is overdue. Your service will be disconnected tonight unless paid at vodafone-pay-bill.com,phishing,telco_overdue_lure,en
+"EE: Payment for your account has failed. To avoid your line being cut off at midnight, pay now: ee-mybill.co",phishing,telco_overdue_lure,en
+O2: Your account is in arrears. Services will be restricted in 24 hours. Pay GBP 38.90 at o2-billing-pay.com,phishing,telco_overdue_lure,en
+Three: Your direct debit was returned unpaid. Update your details today or lose service: three-payment-update.com,phishing,telco_overdue_lure,en
+Verizon: Your account is past due. Service interruption scheduled for 11/13. Pay now: verizon-bill-pay.com,phishing,telco_overdue_lure,en
+AT&T: your payment could not be processed. To keep your service active pay $89.14 at att-paymybill.net before 9pm,phishing,telco_overdue_lure,en
+T-Mobile: Final notice. Your account balance of $112.50 is overdue. Pay now to avoid suspension: tmobile-payments.co,phishing,telco_overdue_lure,en
+BT: Your broadband payment is overdue. We will suspend your connection tonight. Pay at bt-mybill-pay.com,phishing,telco_overdue_lure,en
+Sky Mobile: your bill is unpaid. reply PAY to settle by card now.,phishing,telco_overdue_reply_lure,en
+Telstra: Your bill of $76.00 is overdue. Avoid disconnection by paying today: telstra-overdue.com,phishing,telco_overdue_lure,en
+Optus: We've been unable to collect your payment. Your service will be cut at midnight tonight. Pay here: optus-pay-now.com,phishing,telco_overdue_lure,en
+Rogers: Payment failed. Call 1-877-520-3309 to pay by card and keep your service connected.,phishing,telco_overdue_callback,en
+giffgaff: your goodybag payment failed and your number will be deactivated in 24h. Update card: giffgaff-renew.co,phishing,telco_overdue_lure,en
+"HSBC: A new payee 'J Thompson' was added to your account at 10:14. If this wasn't you, cancel it here: hsbc-cancel-payee.com",phishing,bank_new_payee_lure,en
+"Lloyds: You have set up a new payment of GBP 1,200 to MR K OBI. If you did not authorise this, visit lloyds-fraud-stop.com immediately.",phishing,bank_new_payee_lure,en
+"Barclays: A payment of GBP 850.00 to AMAZON MARKETPLACE is pending. If this wasn't you, call 0203 991 0442 to block it.",phishing,bank_callback_lure,en
+"Chase: A Zelle payment of $1,450 to Marcus R. has been requested. Not you? Cancel: chase-zelle-cancel.com",phishing,bank_new_payee_lure,en
+"NatWest: new payee added - A SINGH. If you do not recognise this, click to cancel: natwest-payee-alert.co",phishing,bank_new_payee_lure,en
+Santander: a new device has been authorised to make payments from your account. Didn't do this? Secure your account: santander-secure-device.com,phishing,bank_new_payee_lure,en
+"Bank of America: A wire transfer of $2,300 is scheduled for 11/13. If you did not authorize it, reply STOP with your account number.",phishing,bank_reply_details_lure,en
+"Nationwide: a payment to BINANCE of GBP 2,000 was attempted. If it wasn't you, call our fraud team now on 0203 554 1180.",phishing,bank_callback_lure,en
+Halifax: Someone has added 'EUROPE CAR HIRE' as a payee. Cancel within 30 minutes: is.gd/hfxpayee,phishing,bank_new_payee_lure,en
+Your refund of GBP 42.99 from Argos is ready. Claim it here: argos-refunds.com,phishing,refund_cashback_lure,en
+Uber: You were overcharged on a recent trip. A refund of $18.40 is available. Claim: uber-refund-center.com,phishing,refund_cashback_lure,en
+Amazon: You are eligible for a refund of $67.00 for a returned item. Confirm your card to receive it: amazon-refund-claim.com,phishing,refund_cashback_lure,en
+Congratulations! You've earned GBP 25 cashback from your Tesco Clubcard. Claim before it expires: tesco-cashback.co,phishing,refund_cashback_lure,en
+Your energy supplier has overcharged you. A refund of GBP 134.60 is pending. Claim at energy-refund-uk.com,phishing,refund_cashback_lure,en
+PayPal: A refund of EUR 89.00 is awaiting your approval. Log in to accept: paypal-refund-approve.com,phishing,refund_cashback_lure,en
+Thames Water: You have been overcharged. We owe you GBP 72.18. Claim your refund: thameswater-refunds.com,phishing,refund_cashback_lure,en
+Just Eat: Sorry about your order! A GBP 15 goodwill refund has been issued. Confirm your details to receive it: justeat-refund.com,phishing,refund_cashback_lure,en
+"Your cashback reward of $50 has been approved. To receive it, reply with your full name and card number.",phishing,refund_reply_details_lure,en
+Gov UK: You are eligible for the GBP 400 Energy Support Payment. Apply before 30/11: energy-support-gov.uk-apply.com,phishing,energy_rebate_lure,en
+British Gas: You qualify for an energy rebate of GBP 150. Enter your details to receive it: britishgas-rebate.com,phishing,energy_rebate_lure,en
+Ofgem: You are owed a rebate under the Energy Price Guarantee. Claim GBP 230 here: ofgem-rebate.com,phishing,energy_rebate_lure,en
+EDF Energy: We owe you GBP 96.40 under the Warm Home Discount. Confirm your bank details: edf-warmhome.co,phishing,energy_rebate_lure,en
+Energy Rebate Alert: Your household has been approved for a $300 utility credit. Claim it: utility-rebate-usa.com,phishing,energy_rebate_lure,en
+Octopus Energy: you have a credit of GBP 88.20 on your account. Request a refund to your bank: octopus-energy-refund.com,phishing,energy_rebate_lure,en
+ENERGY BILL SUPPORT: You have not yet claimed your GBP 600 payment. Claim now or forfeit: rb.gy/ukenergy600,phishing,energy_rebate_lure,en
+Scottish Power: A rebate of GBP 120 is waiting for you. Reply YES with your account number and postcode to claim.,phishing,energy_rebate_reply_lure,en
+NHS: You have been in contact with someone who tested positive. Order your free test kit: nhs-test-order.com,phishing,government_impersonation,en
+"GOV.UK: Your driving licence expires soon. Renew online to avoid a GBP 1,000 fine: dvla-licence-renew.com",phishing,government_impersonation,en
+DWP: Your Cost of Living payment of GBP 299 has not been claimed. Apply: dwp-cost-of-living.com,phishing,government_impersonation,en
+USCIS: Your case requires immediate action. Confirm your details within 24 hours: uscis-case-update.com,phishing,government_impersonation,en
+Medicare: Your new card is ready. Confirm your Medicare number to receive it: medicare-newcard.com,phishing,government_impersonation,en
+Electoral Commission: You are not registered to vote. Register before the deadline: register-vote-uk.com,phishing,government_impersonation,en
+Services Australia: Your myGov account has been locked. Verify your identity: mygov-verify.au-service.com,phishing,government_impersonation,en
+TV Licensing: Your licence could not be renewed. Update your payment details to avoid prosecution: tvlicensing-renew.co,phishing,government_impersonation,en
+URGENT!!! Your Chase account is LOCKED. Verify NOW -> chase-unlock.xyz,phishing,account_locked_verify,en
+FINAL WARNING: Your PayPal account will be permanently closed in 24 HOURS unless verified. paypal-verify-now.com,phishing,account_locked_verify,en
+ur netflix has been suspended. fix payment here netflix-fix.top,phishing,subscription_payment_lure,en
+royal mail: parcel waiting. unpaid fee 1.99. pay or lose it. rm-fee.site,phishing,parcel_fee_lure,en
+"hi, this is Amazon. your account is on hold because of a billing problem. please update here amazon-hold.co",phishing,account_locked_verify,en
+ALERT: Your bank card has been used in Lagos. If not you confirm immediately via tinyurl.com/stop-card-use,phishing,card_blocked_reactivate,en
+Barclays Fraud Team: we need to speak to you about your account urgently. Call 0203 880 4411 and have your card and PIN ready.,phishing,bank_callback_lure,en
+This is Santander. Your account has been compromised. Please move your funds to the safe account we have set up for you. Call 0800 772 1930 now.,phishing,safe_account_scam,en
+"Your Apple ID has been locked for security reasons. To unlock, text your Apple ID email and password to this number.",phishing,credential_reply_lure,en
+"HSBC Secure: Your One Time Passcode has been requested. If you did not request it, reply with the 6-digit code you received so we can cancel the transaction.",phishing,otp_relay_lure,en
+"Lloyds: We've noticed a payment you may not have made. To confirm it's genuine, reply with the last 4 digits of your card and your date of birth.",phishing,bank_reply_details_lure,en
+Delivery notice: your parcel is held. Reply with your full address and postcode to arrange redelivery.,phishing,parcel_reply_details_lure,en
+DHL: Customs duty of GBP 3.42 is outstanding on your parcel. Reply PAY and a secure link will be sent.,phishing,parcel_fee_reply_lure,en
+"Amazon Customer Service: Your order of an iPhone 15 ($1,099) has been placed. If you did not make this purchase, call 1-805-301-7721 to cancel.",phishing,fake_order_callback,en
+Vodafone: Your bill is overdue. To avoid disconnection call 0345 812 9910 and quote ref VF-77210.,phishing,telco_overdue_callback,en
+USPS: your package is on hold. reply with your zip code and we will reschedule the delivery.,phishing,parcel_reply_details_lure,en
+Netflix: Your account will be cancelled today. Call 1-888-702-5541 to update your billing info.,phishing,subscription_callback_lure,en
+Your O2 contract has been cancelled due to non payment. Reply RESTORE with your card details to reinstate.,phishing,telco_overdue_reply_lure,en
+"IRS: You owe $1,872 in back taxes. A warrant will be issued if unpaid. Call 1-202-559-3340 today.",phishing,tax_debt_callback,en
+Microsoft: Your Office licence has been suspended. Call 1-844-320-8810 to reactivate.,phishing,subscription_callback_lure,en
+"Hello, it's your bank. We've blocked a suspicious payment of GBP 499 to Currys. Please reply with your card number to confirm it was you.",phishing,bank_reply_details_lure,en
+"Hi, this is a message from HSBC UK. We've noticed a payment on your account that doesn't match your usual pattern. For your security, please review it at hsbc-uk-paymentreview.com. There's no need to call us.",phishing,unusual_login_fake_domain,en
+"Thank you for banking with Chase. As part of our ongoing security improvements, we ask all customers to confirm their contact details before 15 November. You can do this in a few minutes at chase.com-update-profile.net.",phishing,account_locked_verify,en
+"DPD: Good news, your parcel is nearly with you. There's a small customs charge of GBP 1.45 to pay before we can release it. Pay securely here: dpd-uk-customs.com. Thanks!",phishing,parcel_fee_lure,en
+"Netflix: We weren't able to process your most recent payment. Don't worry, your account is still active for now. Please update your payment details when you can: netflix.com-account-billing.help",phishing,subscription_payment_lure,en
+"Royal Mail: Hello, we tried to deliver your item today but need a little more information about your address. Please update it at your convenience: royalmail-redelivery.co.uk-update.net",phishing,parcel_address_lure,en
+"Apple: Your Apple ID was used to sign in to iCloud via a web browser. If this was you, no action is required. If not, please review your account at appleid-account-review.com.",phishing,unusual_login_fake_domain,en
+"A gentle reminder from Vodafone UK: your October bill is still outstanding. To keep things running smoothly, please settle it today at vodafone-uk-mybill.com.",phishing,telco_overdue_lure,en
+Wise: your account has been restricted following a compliance review. Upload your documents within 48 hours: wise-compliance-review.com,phishing,account_locked_verify,en
+"BBVA: Hemos detectado un acceso no autorizado a tu cuenta. Por seguridad, tu banca online quedará bloqueada en 24h si no verificas tu identidad: bbva-verificacion-cliente.com",phishing,account_locked_verify,es
+CaixaBank: Su tarjeta terminada en 4417 ha sido bloqueada por operaciones sospechosas. Reactívela aquí: caixabank-reactivar.es-online.com,phishing,card_blocked_reactivate,es
+"Santander: se ha añadido un nuevo beneficiario (M. Torres) a su cuenta. Si no ha sido usted, cancélelo en: santander-cancelar.com",phishing,bank_new_payee_lure,es
+"Correos: Su paquete está retenido en nuestras instalaciones por falta de pago de aduanas (1,99 EUR). Abone el importe en: correos-aduanas-pago.com",phishing,parcel_fee_lure,es
+SEUR: no hemos podido entregar tu envío por dirección incompleta. Confirma tus datos aquí: seur-entrega.info,phishing,parcel_address_lure,es
+DGT: Tiene una multa pendiente de pago. Si no la abona en 48 horas se incrementará un 50%. Consulte y pague en: dgt-multas-pago.es-sede.com,phishing,toll_fine_lure,es
+"Agencia Tributaria: Le corresponde una devolución de 318,40 EUR de la Renta 2024. Para recibirla confirme su cuenta bancaria: aeat-devolucion.com",phishing,tax_refund_lure,es
+Netflix: No hemos podido procesar tu pago. Actualiza tu forma de pago en las próximas 24 horas para no perder tu cuenta: netflix-pagos-es.com,phishing,subscription_payment_lure,es
+"Movistar: Tu factura de 48,30 EUR está pendiente. El servicio se cortará esta noche si no realizas el pago: movistar-factura-pago.com",phishing,telco_overdue_lure,es
+Vodafone: Hemos detectado un impago en tu línea. Regulariza tu situación hoy mismo o perderás tu número: bit.ly/vf-impago,phishing,telco_overdue_lure,es
+"Iberdrola: Tienes derecho a un reembolso de 96,20 EUR por regularización de consumo. Solicítalo aquí: iberdrola-reembolso.com",phishing,energy_rebate_lure,es
+ING: Hemos bloqueado tu Cuenta Naranja por seguridad. Llama al 910 221 884 para desbloquearla.,phishing,bank_callback_lure,es
+"Bizum: Has recibido una solicitud de pago de 150 EUR de un desconocido. Si no la reconoces, cancélala en bizum-cancelar.com",phishing,bank_new_payee_lure,es
+"Bankinter: Se ha registrado un nuevo dispositivo en su banca móvil. Si no ha sido usted, verifique su identidad: bankinter-dispositivo.com",phishing,unusual_login_fake_domain,es
+"MRW: tu paquete llega mañana pero falta pagar 1,45 EUR de gestión. Paga aquí: cutt.ly/mrw-envio",phishing,parcel_fee_lure,es
+"Endesa: Su factura ha sido devuelta por el banco. Para evitar el corte de luz, actualice sus datos de pago: endesa-clientes-pago.com",phishing,utility_overdue_lure,es
+Sabadell: su tarjeta ha sido suspendida temporalmente. Para reactivarla responda a este SMS con su número de tarjeta y fecha de caducidad.,phishing,card_blocked_reply_lure,es
+Orange: Tu pago no se ha podido realizar. Evita la suspensión de tu línea actualizando tu tarjeta: orange-pagos.es-clientes.com,phishing,telco_overdue_lure,es
+Correos: tu envío CP441200ES no pudo ser entregado. Confirma tu dirección: is.gd/correosCP,phishing,parcel_address_lure,es
+Hacienda: Tiene una notificación pendiente. Acceda con su DNI y clave para evitar sanciones: sede-hacienda-notificaciones.com,phishing,government_impersonation,es
+Abanca: Detectamos un intento de acceso desde un dispositivo desconocido. Confirma que eres tú: abanca-seguridad.com,phishing,unusual_login_fake_domain,es
+Tu cuenta de Amazon ha sido bloqueada por actividad sospechosa. Verifica tu identidad en 24h: amazon-es-verificar.com,phishing,account_locked_verify,es
+"DHL: Su paquete está en espera. Pague la tasa de 2,99 EUR para liberarlo: dhl-tasas.com",phishing,parcel_fee_lure,es
+Unicaja: su acceso a la banca digital ha caducado. Renuévelo en: unicaja-renovar-acceso.com o perderá el acceso definitivamente.,phishing,account_locked_verify,es
+BBVA México: Tu cuenta ha sido suspendida por movimientos inusuales. Reactívala en bbva-mx-reactivar.com antes de 24 hrs.,phishing,account_locked_verify,es
+"Bancolombia: Hemos detectado un inicio de sesión desde Cali. Si no fuiste tú, ingresa de inmediato a bancolombia-seguridad.co",phishing,unusual_login_fake_domain,es
+"SAT: Tienes un saldo a favor de $4,280 MXN. Reclámalo antes del 30 de noviembre en sat-devolucion-mx.com",phishing,tax_refund_lure,es
+Telcel: Tu línea será suspendida hoy por falta de pago. Paga tu factura en telcel-pagos.mx-online.com,phishing,telco_overdue_lure,es
+Mercado Libre: Tu paquete no pudo ser entregado. Confirma tu dirección aquí: mercadolibre-envios.co,phishing,parcel_address_lure,es
+"Banamex: Se agregó un nuevo dispositivo a tu Banca Móvil. Si no fuiste tú, comunícate al 55 8421 9930 ahora.",phishing,bank_callback_lure,es
+Banco Azteca: Tu tarjeta fue bloqueada. Para desbloquearla responde con tu número de tarjeta y NIP.,phishing,card_blocked_reply_lure,es
+Claro: Tu factura está vencida. Evita el corte del servicio pagando hoy en claro-pagos.com.co-factura.com,phishing,telco_overdue_lure,es
+ALERTA BBVA: TU CUENTA SERA CANCELADA. Verifica YA en bbva-verifica.xyz,phishing,account_locked_verify,es
+"Hola, somos de CaixaBank. Hemos visto un cargo de 299 EUR en Zara que no parece tuyo. Si no lo reconoces, llama al 931 004 220 y te ayudamos a cancelarlo.",phishing,bank_callback_lure,es
+"Movistar: tu línea tiene un recibo devuelto. Para evitar la baja, llama al 900 811 240 antes de las 22:00 con tu tarjeta a mano.",phishing,telco_overdue_callback,es
+"Crédit Agricole : un nouvel appareil a été ajouté à votre espace client. Si vous n'êtes pas à l'origine de cette opération, sécurisez votre compte : credit-agricole-securite.com",phishing,unusual_login_fake_domain,fr
+BNP Paribas : votre accès à vos comptes en ligne est suspendu suite à une anomalie. Régularisez votre situation sous 24h : bnpparibas-client-verif.com,phishing,account_locked_verify,fr
+"La Poste : votre colis est en attente de livraison. Des frais de douane de 1,99 EUR sont à régler : laposte-colis-douane.com",phishing,parcel_fee_lure,fr
+Chronopost : nous n'avons pas pu livrer votre colis (adresse incomplète). Confirmez votre adresse : chronopost-livraison.info,phishing,parcel_address_lure,fr
+"Colissimo : votre colis n'a pas pu être livré. Reprogrammez la livraison moyennant 1,45 EUR : cutt.ly/colissimo-fr",phishing,parcel_fee_lure,fr
+"ANTS : une amende de 35 EUR pour stationnement reste impayée. Au-delà de 48h, elle sera majorée à 75 EUR. Payez ici : ants-amendes.gouv-fr.com",phishing,toll_fine_lure,fr
+Ameli : votre nouvelle carte Vitale est disponible. Confirmez vos informations pour la recevoir : ameli-carte-vitale.com,phishing,government_impersonation,fr
+Netflix : votre paiement a été refusé. Mettez à jour votre moyen de paiement sous 48h pour conserver votre compte : netflix-paiement-fr.com,phishing,subscription_payment_lure,fr
+"Orange : votre facture de 42,90 EUR est impayée. Votre ligne sera coupée ce soir sans règlement : orange-facture-paiement.com",phishing,telco_overdue_lure,fr
+SFR : un incident de paiement a été détecté. Mettez à jour votre carte bancaire pour éviter la suspension : sfr-regularisation.com,phishing,telco_overdue_lure,fr
+Free : votre prélèvement a été rejeté. Régularisez avant minuit : rb.gy/free-regul,phishing,telco_overdue_lure,fr
+"EDF : vous avez trop payé. Un remboursement de 118,20 EUR vous attend. Demandez-le ici : edf-remboursement-client.com",phishing,energy_rebate_lure,fr
+"Société Générale : un virement de 1 450 EUR vers M. DIALLO est en attente. Si vous n'en êtes pas l'auteur, annulez-le : societegenerale-annulation.com",phishing,bank_new_payee_lure,fr
+"Boursorama : votre identité doit être revérifiée. Sans action de votre part, votre compte sera clôturé le 20/11 : boursorama-verification.com",phishing,account_locked_verify,fr
+"La Banque Postale : votre carte a été bloquée suite à des opérations suspectes. Pour la réactiver, appelez le 09 70 44 12 80.",phishing,card_blocked_callback,fr
+"Crédit Mutuel : un paiement de 599 EUR chez Fnac a été refusé. Si vous n'êtes pas à l'origine de cette opération, répondez NON avec les 4 derniers chiffres de votre carte.",phishing,bank_reply_details_lure,fr
+"Mondial Relay : votre colis attend en point relais. Frais de redistribution 1,90 EUR à régler : mondialrelay-colis.com",phishing,parcel_fee_lure,fr
+"Vinci Autoroutes : un passage au péage du 03/11 n'a pas été réglé. Payez 4,60 EUR sous 48h pour éviter une majoration : vinci-autoroutes-peage.com",phishing,toll_fine_lure,fr
+"Sanef : télépéage impayé. Montant 7,20 EUR. Régularisez ici : sanef-paiement.fr-peage.com",phishing,toll_fine_lure,fr
+CAF : votre dossier est incomplet. Mettez à jour vos informations sous 7 jours pour continuer à percevoir vos droits : caf-mise-a-jour.com,phishing,government_impersonation,fr
+Engie : prime énergie de 150 EUR disponible. Réclamez-la avant le 30/11 : engie-prime-energie.com,phishing,energy_rebate_lure,fr
+Chèque énergie : vous n'avez pas encore réclamé votre aide de 277 EUR. Faites-le ici : cheque-energie-gouv.com,phishing,energy_rebate_lure,fr
+"Bouygues Telecom : votre facture est en retard. Pour éviter la coupure, répondez PAYER et un lien sécurisé vous sera envoyé.",phishing,telco_overdue_reply_lure,fr
+"DHL : votre colis est bloqué en douane. Taxe de 2,99 EUR à régler : is.gd/dhlfr99",phishing,parcel_fee_lure,fr
+Canal+ : échec du prélèvement. Mettez à jour vos informations bancaires pour continuer à profiter de vos chaînes : canalplus-paiement.com,phishing,subscription_payment_lure,fr
+LCL : connexion détectée depuis Marseille à 02h47. Ce n'était pas vous ? Sécurisez votre compte : lcl-securite-connexion.com,phishing,unusual_login_fake_domain,fr
+Leboncoin : le paiement de votre vente (85 EUR) est bloqué. Confirmez votre carte pour le recevoir : leboncoin-paiement.info,phishing,refund_cashback_lure,fr
+URGENT : votre compte CIC est BLOQUÉ. Vérifiez immédiatement : cic-verif.xyz,phishing,account_locked_verify,fr
+"Bonjour, c'est votre conseiller Crédit Agricole. Nous avons remarqué un virement inhabituel. Merci de nous rappeler au 01 76 44 09 12 avec votre carte sous la main.",phishing,bank_callback_lure,fr
+"votre colis chronopost est retenu, frais de 1,99 eur a payer sinon retour expediteur: tinyurl.com/chrono-frais",phishing,parcel_fee_lure,fr
+TotalEnergies : votre facture d'électricité a été rejetée par votre banque. Mettez à jour votre RIB : totalenergies-clients-paiement.com,phishing,utility_overdue_lure,fr
+"Orange : un impayé de 38,50 EUR bloque votre ligne. Rappelez le 09 72 11 48 30 pour régulariser par carte avant la coupure définitive.",phishing,telco_overdue_callback,fr
+"Volksbank: Ein neues Gerät wurde für Ihr Konto registriert. Falls Sie das nicht waren, sperren Sie den Zugriff hier: volksbank-sicherheit.net",phishing,unusual_login_fake_domain,de
+"DHL: Ihr Paket liegt im Zollamt. Zur Freigabe ist eine Gebühr von 1,99 EUR fällig: dhl-zoll-gebuehr.com",phishing,parcel_fee_lure,de
+"Hermes: Zustellung fehlgeschlagen. Bitte bestätigen Sie Ihre Adresse, sonst geht das Paket zurück: hermes-zustellung.info",phishing,parcel_address_lure,de
+"Deutsche Post: Ihre Sendung konnte nicht zugestellt werden. Nachporto 1,45 EUR zahlen: cutt.ly/dpost-nachporto",phishing,parcel_fee_lure,de
+"Finanzamt: Ihnen steht eine Steuererstattung von 412,30 EUR zu. Geben Sie Ihre Bankverbindung an: finanzamt-erstattung.de-online.com",phishing,tax_refund_lure,de
+ELSTER: Ihr Zugang wurde gesperrt. Zur Reaktivierung bestätigen Sie Ihre Identität: elster-zugang-pruefen.com,phishing,government_impersonation,de
+"Telekom: Ihre Rechnung über 54,99 EUR ist überfällig. Ohne Zahlung bis heute Abend wird Ihr Anschluss gesperrt: telekom-rechnung-zahlen.com",phishing,telco_overdue_lure,de
+"Vodafone: Ihre Lastschrift wurde zurückgebucht. Aktualisieren Sie Ihre Zahlungsdaten, um eine Sperrung zu vermeiden: vodafone-zahlung-de.com",phishing,telco_overdue_lure,de
+o2: Zahlungsproblem festgestellt. Ihre Rufnummer wird in 24h deaktiviert. Jetzt prüfen: rb.gy/o2-zahlung,phishing,telco_overdue_lure,de
+"Netflix: Ihre Zahlung ist fehlgeschlagen. Bitte aktualisieren Sie Ihre Zahlungsmethode, um weiter streamen zu können: netflix-konto-de.com",phishing,subscription_payment_lure,de
+Amazon: Ihr Konto wurde wegen verdächtiger Aktivitäten vorübergehend gesperrt. Verifizieren Sie sich innerhalb von 24 Stunden: amazon-de-konto-pruefung.com,phishing,account_locked_verify,de
+PayPal: Neue Anmeldung aus Frankfurt erkannt. Waren Sie das nicht? Konto jetzt sichern: paypal-sicherheitscenter.de-login.com,phishing,unusual_login_fake_domain,de
+Commerzbank: Ihre girocard wurde gesperrt. Zur Entsperrung rufen Sie bitte 0800 589 2210 an und halten Sie Ihre Karte bereit.,phishing,card_blocked_callback,de
+DKB: Ein neuer Empfänger 'M. Yilmaz' wurde Ihrem Konto hinzugefügt. Nicht von Ihnen? Jetzt stornieren: dkb-empfaenger-pruefen.com,phishing,bank_new_payee_lure,de
+N26: Deine Identitätsprüfung ist abgelaufen. Dein Konto ist eingeschränkt. Verifiziere dich erneut: n26-verify.app,phishing,account_locked_verify,de
+"Postbank: Ihr BestSign-Verfahren wurde deaktiviert. Richten Sie es neu ein, um weiter Überweisungen tätigen zu können: postbank-bestsign-neu.com",phishing,account_locked_verify,de
+"Zoll: Für Ihre Sendung aus China ist Einfuhrumsatzsteuer von 3,20 EUR fällig. Bitte zahlen Sie hier: zoll-einfuhr-abgabe.com",phishing,parcel_fee_lure,de
+"Klarna: Deine Zahlung ist überfällig. Begleiche 89,00 EUR heute, um Mahngebühren zu vermeiden: klarna-rechnung-zahlen.com",phishing,subscription_payment_lure,de
+"E.ON: Ihnen steht eine Rückzahlung von 143,60 EUR aus der Jahresabrechnung zu. Jetzt anfordern: eon-rueckzahlung.com",phishing,energy_rebate_lure,de
+Bundesregierung: Die Energiepauschale von 300 EUR wurde Ihnen noch nicht ausgezahlt. Beantragen Sie sie hier: energiepauschale-antrag.de-bund.com,phishing,energy_rebate_lure,de
+"Deutsche Bahn: Ihre Erstattung von 47,50 EUR ist bereit. Bestätigen Sie Ihre Kontodaten: bahn-erstattung.com",phishing,refund_cashback_lure,de
+ING: Ihr Zugang wurde aus Sicherheitsgründen gesperrt. Antworten Sie mit Ihrer Zugangsnummer und Ihrem Geburtsdatum zur Entsperrung.,phishing,bank_reply_details_lure,de
+"1&1: Ihre Rechnung wurde nicht bezahlt. Antworten Sie mit JA, um einen Zahlungslink zu erhalten und die Sperrung zu verhindern.",phishing,telco_overdue_reply_lure,de
+"DPD: Ihr Paket wartet im Depot. Zollgebühr 2,49 EUR fällig: is.gd/dpd-zoll",phishing,parcel_fee_lure,de
+"Sparkasse: Eine Überweisung von 1.200 EUR an BINANCE wurde beantragt. Falls nicht von Ihnen, rufen Sie sofort 069 1200 4471 an.",phishing,bank_callback_lure,de
+"Ordnungsamt: Verwarnungsgeld 25 EUR wegen Falschparkens offen. Zahlen Sie innerhalb von 7 Tagen, sonst Bußgeldverfahren: verwarnungsgeld-online.com",phishing,toll_fine_lure,de
+ACHTUNG: Ihr Konto wird GESPERRT! Jetzt verifizieren: sparkasse-verify.xyz,phishing,account_locked_verify,de
+ihr dhl paket konnte nicht zugestellt werden. adresse bestaetigen: tinyurl.com/dhl-adr-de,phishing,parcel_address_lure,de
+"Guten Tag, hier ist Ihre Volksbank. Wir haben eine ungewöhnliche Abbuchung von 379 EUR festgestellt. Zur Prüfung melden Sie sich bitte kurz unter volksbank-de-pruefung.com an. Es besteht kein Grund zur Sorge.",phishing,unusual_login_fake_domain,de
+Vattenfall: Ihre Abschlagszahlung konnte nicht eingezogen werden. Aktualisieren Sie Ihr SEPA-Mandat: vattenfall-sepa.com,phishing,utility_overdue_lure,de
+comdirect: Ihre photoTAN-App wurde auf einem neuen Gerät aktiviert. Nicht Sie? Jetzt sperren: comdirect-phototan-sperren.com,phishing,unusual_login_fake_domain,de
+Apple: Ihre iCloud-Zahlung ist fehlgeschlagen. Ihre Fotos werden in 48 Stunden gelöscht. Zahlungsdaten aktualisieren: apple-icloud-de.com,phishing,subscription_payment_lure,de
+Telekom: Ihr Anschluss wird heute um 22 Uhr gesperrt. Zur Begleichung per Karte rufen Sie 0800 330 7721 an.,phishing,telco_overdue_callback,de
+Intesa Sanpaolo: rilevato accesso anomalo al tuo conto. Per sicurezza l'operatività è sospesa. Verifica entro 24 ore: intesasanpaolo-verifica.com,phishing,account_locked_verify,it
+UniCredit: la tua carta è stata bloccata per operazioni sospette. Riattivala qui: unicredit-riattiva-carta.com,phishing,card_blocked_reactivate,it
+PostePay: il tuo conto è stato limitato. Conferma la tua identità per riattivarlo: postepay-sblocco.it-online.com,phishing,account_locked_verify,it
+"Poste Italiane: il tuo pacco è in giacenza. Paga 1,99 EUR di spese doganali per lo sblocco: poste-giacenza-pagamento.com",phishing,parcel_fee_lure,it
+"BRT: consegna non riuscita, indirizzo incompleto. Conferma i tuoi dati: brt-consegna.info",phishing,parcel_address_lure,it
+"SDA: il tuo pacco è fermo al deposito. Spese di riconsegna 1,45 EUR: cutt.ly/sda-pacco",phishing,parcel_fee_lure,it
+"Agenzia delle Entrate: ti spetta un rimborso IRPEF di 356,80 EUR. Inserisci il tuo IBAN per riceverlo: agenziaentrate-rimborso.com",phishing,tax_refund_lure,it
+INPS: la tua domanda è incompleta. Aggiorna i dati entro 48 ore per non perdere la prestazione: inps-aggiornamento.com,phishing,government_impersonation,it
+"TIM: la tua fattura di 39,90 EUR non è stata pagata. La linea verrà disattivata questa sera: tim-pagamento-fattura.com",phishing,telco_overdue_lure,it
+Vodafone: addebito non riuscito. Aggiorna la carta per evitare la sospensione della linea: vodafone-it-pagamenti.com,phishing,telco_overdue_lure,it
+WindTre: il tuo pagamento è in ritardo. Regolarizza subito: rb.gy/w3-fattura,phishing,telco_overdue_lure,it
+Netflix: il pagamento è stato rifiutato. Aggiorna il metodo di pagamento entro 24 ore: netflix-it-abbonamento.com,phishing,subscription_payment_lure,it
+"Autostrade per l'Italia: pedaggio non pagato il 02/11 (Firenze Sud). Importo 6,40 EUR. Paga entro 48 ore per evitare la sanzione: autostrade-pedaggio-pagamento.com",phishing,toll_fine_lure,it
+Telepass: addebito respinto. Aggiorna il metodo di pagamento per evitare il blocco del dispositivo: telepass-pagamenti.com,phishing,toll_fine_lure,it
+"Enel Energia: hai diritto a un rimborso di 128,40 EUR per conguaglio. Richiedilo qui: enel-rimborso-clienti.com",phishing,energy_rebate_lure,it
+Bonus bollette 2025: non hai ancora richiesto i 200 EUR a cui hai diritto. Fallo entro il 30/11: bonus-energia-gov.com,phishing,energy_rebate_lure,it
+Fineco: nuovo dispositivo associato al tuo conto. Non sei stato tu? Blocca subito: fineco-sicurezza.com,phishing,unusual_login_fake_domain,it
+"BPER: è stato aggiunto un nuovo beneficiario (G. Russo) al tuo conto. Se non lo riconosci, annulla: bper-annulla-bonifico.com",phishing,bank_new_payee_lure,it
+Mediolanum: il tuo conto è stato sospeso. Per riattivarlo chiama lo 02 8723 1190 con la carta a portata di mano.,phishing,bank_callback_lure,it
+BNL: abbiamo bloccato un pagamento di 480 EUR su Amazon. Se non sei stato tu rispondi NO con le ultime 4 cifre della carta.,phishing,bank_reply_details_lure,it
+Nexi: la tua carta è stata disabilitata. Rispondi con numero carta e scadenza per riattivarla.,phishing,card_blocked_reply_lure,it
+Iliad: la tua offerta non è stata rinnovata per mancato pagamento. Rispondi PAGA per ricevere il link di pagamento.,phishing,telco_overdue_reply_lure,it
+"DHL: il tuo pacco è bloccato in dogana. Tasse 2,99 EUR: is.gd/dhl-it-dog",phishing,parcel_fee_lure,it
+"GLS: pacco in attesa. Conferma indirizzo e paga 1,50 EUR: gls-riconsegna.com",phishing,parcel_fee_lure,it
+Bollo auto: risulta non pagato. Regolarizza entro 5 giorni per evitare la sanzione del 30%: bollo-auto-pagamento.it-regione.com,phishing,toll_fine_lure,it
+SPID: la tua identità digitale sta per scadere. Rinnovala subito: spid-rinnovo-identita.com,phishing,government_impersonation,it
+Amazon: il tuo account è stato bloccato per attività sospette. Verifica entro 24 ore: amazon-it-verifica.com,phishing,account_locked_verify,it
+ATTENZIONE: conto Intesa BLOCCATO. Verifica ORA: intesa-verifica.xyz,phishing,account_locked_verify,it
+"il tuo pacco poste e in giacenza, paga 1,99 o torna al mittente tinyurl.com/poste-giac",phishing,parcel_fee_lure,it
+"Buongiorno, siamo UniCredit. Abbiamo notato un bonifico di 1.250 EUR che non sembra il suo. Per verificarlo la preghiamo di richiamarci al 02 4401 8800.",phishing,bank_callback_lure,it
+Credem: il suo accesso all'internet banking scade oggi. Lo rinnovi su credem-rinnovo-accesso.com per non perdere l'operatività.,phishing,account_locked_verify,it
+A2A: la sua bolletta è stata respinta dalla banca. Aggiorni l'IBAN per evitare il distacco: a2a-clienti-pagamento.com,phishing,utility_overdue_lure,it
+"Eni Plenitude: rimborso di 94,20 EUR disponibile. Conferma il tuo IBAN: plenitude-rimborso.com",phishing,energy_rebate_lure,it
+"Poste Italiane: pacco in giacenza da 3 giorni. Rispondi con indirizzo completo e CAP per la riconsegna, altrimenti rientra al mittente.",phishing,parcel_reply_details_lure,it
+"Itaú: Identificamos um acesso ao seu app de um aparelho não reconhecido. Se não foi você, bloqueie agora: itau-seguranca-acesso.com",phishing,unusual_login_fake_domain,pt
+Nubank: sua conta foi temporariamente bloqueada por segurança. Regularize em até 24h: nubank-desbloqueio.com,phishing,account_locked_verify,pt
+Bradesco: Seu cartão final 4417 foi bloqueado por suspeita de fraude. Reative aqui: bradesco-reativar-cartao.com,phishing,card_blocked_reactivate,pt
+Correios: objeto BR441220 não pôde ser entregue. Confirme seu endereço: cutt.ly/correios-end,phishing,parcel_address_lure,pt
+"Receita Federal: Você tem R$ 1.284,50 de restituição do IRPF pendente. Informe seus dados bancários: receita-restituicao.gov-br.com",phishing,tax_refund_lure,pt
+"Banco do Brasil: foi cadastrada uma nova chave Pix na sua conta. Se não foi você, cancele imediatamente: bb-pix-cancelar.com",phishing,bank_new_payee_lure,pt
+Caixa: Seu Auxílio foi aprovado. Confirme seus dados para receber: caixa-beneficio-liberado.com,phishing,government_impersonation,pt
+"Vivo: Sua fatura de R$ 89,90 está em atraso. Sua linha será bloqueada hoje à noite. Pague em: vivo-fatura-pagar.com",phishing,telco_overdue_lure,pt
+Claro: Pagamento não identificado. Evite o corte do serviço regularizando agora: rb.gy/claro-fatura,phishing,telco_overdue_lure,pt
+TIM: sua recarga falhou e sua linha será cancelada em 24h. Atualize o cartão: tim-recarga-br.com,phishing,telco_overdue_lure,pt
+Netflix: não conseguimos processar seu pagamento. Atualize sua forma de pagamento para continuar assistindo: netflix-pagamento-br.com,phishing,subscription_payment_lure,pt
+"Mercado Pago: detectamos uma compra de R$ 1.890 não reconhecida. Se não foi você, cancele: mercadopago-cancelar.com",phishing,bank_new_payee_lure,pt
+"Santander: sua senha foi alterada. Caso não tenha sido você, ligue agora para 0800 772 1130.",phishing,bank_callback_lure,pt
+"Detran: Você possui uma multa pendente de R$ 195,23. Pague até 48h para evitar a suspensão da CNH: detran-multas-pagamento.com",phishing,toll_fine_lure,pt
+Serasa: seu nome será negativado amanhã. Regularize sua dívida com 90% de desconto: serasa-limpa-nome.com,phishing,government_impersonation,pt
+Enel: Sua conta de luz está vencida. O fornecimento será cortado hoje. Pague agora: enel-segunda-via-br.com,phishing,utility_overdue_lure,pt
+Inter: nova chave Pix cadastrada em outro aparelho. Não reconhece? Responda NAO com seu CPF para cancelar.,phishing,bank_reply_details_lure,pt
+"PicPay: seu saldo foi bloqueado. Para liberar, responda com o número do cartão e código de segurança.",phishing,card_blocked_reply_lure,pt
+"Magalu: você tem um reembolso de R$ 249,90 disponível. Confirme seu cartão para receber: magalu-reembolso.com",phishing,refund_cashback_lure,pt
+CGD: O acesso ao Caixadirecta foi suspenso por motivos de segurança. Valide os seus dados em 24h: cgd-caixadirecta-validar.com,phishing,account_locked_verify,pt
+"Millennium bcp: foi adicionado um novo beneficiário à sua conta. Se não reconhece, cancele aqui: millenniumbcp-cancelar.com",phishing,bank_new_payee_lure,pt
+"CTT: a sua encomenda aguarda pagamento de taxas aduaneiras (1,99 EUR). Pague aqui: ctt-alfandega-pagamento.com",phishing,parcel_fee_lure,pt
+CTT Expresso: não foi possível entregar a sua encomenda. Confirme a morada: is.gd/ctt-morada,phishing,parcel_address_lure,pt
+"Autoridade Tributária: tem um reembolso de IRS de 287,40 EUR por receber. Confirme o seu IBAN: portaldasfinancas-reembolso.com",phishing,tax_refund_lure,pt
+"Via Verde: portagem em dívida de 3,85 EUR. Pague em 48h para evitar coima: viaverde-portagens-pagar.com",phishing,toll_fine_lure,pt
+"MEO: a sua fatura de 41,20 EUR está por pagar. O serviço será suspenso esta noite: meo-fatura-pagamento.com",phishing,telco_overdue_lure,pt
+NOS: débito direto devolvido. Atualize os dados de pagamento para evitar a suspensão: nos-pagamentos.pt-cliente.com,phishing,telco_overdue_lure,pt
+"EDP: tem direito a um reembolso de 112,60 EUR do acerto de contas. Peça aqui: edp-reembolso-clientes.com",phishing,energy_rebate_lure,pt
+Novo Banco: o seu cartão foi bloqueado. Para reativar ligue 21 044 8810 e tenha o cartão consigo.,phishing,card_blocked_callback,pt
+SNS: a sua consulta foi cancelada. Confirme os seus dados para remarcar: sns-marcacoes.pt-saude.com,phishing,government_impersonation,pt
+URGENTE: conta Nubank BLOQUEADA. Desbloqueie JÁ: nubank-libera.xyz,phishing,account_locked_verify,pt
+"sua encomenda ctt esta retida, pague 1,99 eur ou sera devolvida tinyurl.com/ctt-taxa",phishing,parcel_fee_lure,pt
+"Olá, aqui é do Itaú. Vimos uma compra de R$ 2.350 na Amazon que parece fora do seu padrão. Se não reconhece, retorne para (11) 4002-8810 e cancelamos para você.",phishing,bank_callback_lure,pt
+"Vivo: para evitar o bloqueio da sua linha hoje, ligue 0800 940 2217 e pague com cartão em 2 minutos.",phishing,telco_overdue_callback,pt
+ING: Uw toegang tot Mijn ING is tijdelijk geblokkeerd na een mislukte veiligheidscontrole. Verifieer binnen 24 uur: ing-verificatie-nl.com,phishing,account_locked_verify,nl
+Rabobank: er is een nieuw apparaat gekoppeld aan uw rekening. Was dit niet u? Blokkeer het direct: rabobank-apparaat-beveiliging.com,phishing,unusual_login_fake_domain,nl
+ABN AMRO: uw betaalpas is geblokkeerd wegens verdachte transacties. Heractiveer uw pas: abnamro-pas-activeren.com,phishing,card_blocked_reactivate,nl
+"PostNL: uw pakket wacht op betaling van invoerkosten (EUR 1,99). Betaal hier om het vrij te geven: postnl-invoerkosten.com",phishing,parcel_fee_lure,nl
+"PostNL: wij hebben u gemist. Plan uw bezorging opnieuw (EUR 1,45): cutt.ly/postnl-bezorg",phishing,parcel_fee_lure,nl
+"DHL: adres onvolledig. Bevestig uw gegevens, anders gaat uw pakket retour: dhl-bezorging-nl.info",phishing,parcel_address_lure,nl
+"Belastingdienst: u heeft recht op een teruggave van EUR 318,60. Vul uw rekeningnummer in: belastingdienst-teruggave.nl-online.com",phishing,tax_refund_lure,nl
+DigiD: uw DigiD verloopt binnenkort. Verleng nu om toegang te behouden: digid-verlengen.com,phishing,government_impersonation,nl
+"CJIB: u heeft een openstaande verkeersboete van EUR 95,00. Betaal binnen 48 uur om verhoging te voorkomen: cjib-boete-betalen.com",phishing,toll_fine_lure,nl
+"KPN: uw factuur van EUR 47,50 is nog niet betaald. Vanavond wordt uw aansluiting afgesloten: kpn-factuur-betalen.com",phishing,telco_overdue_lure,nl
+Odido: uw automatische incasso is mislukt. Werk uw betaalgegevens bij om afsluiting te voorkomen: odido-betaling.com,phishing,telco_overdue_lure,nl
+Ziggo: betalingsachterstand. Uw internet wordt om 00:00 uitgeschakeld. Betaal nu: rb.gy/ziggo-betaal,phishing,telco_overdue_lure,nl
+Netflix: uw betaling is mislukt. Werk uw betaalmethode binnen 24 uur bij: netflix-betaling-nl.com,phishing,subscription_payment_lure,nl
+bol.com: er is een bestelling van EUR 899 geplaatst vanaf een nieuw apparaat. Niet u? Annuleer hier: bolcom-bestelling-annuleren.com,phishing,unusual_login_fake_domain,nl
+"Tikkie: u heeft nog EUR 24,50 tegoed. Vul uw rekeningnummer in om het te ontvangen: tikkie-terugbetaling.com",phishing,refund_cashback_lure,nl
+SNS: er is een nieuwe begunstigde (M. de Vries) toegevoegd. Herkent u dit niet? Annuleer: sns-begunstigde.com,phishing,bank_new_payee_lure,nl
+bunq: je identiteitsverificatie is verlopen. Je rekening is beperkt. Verifieer opnieuw: bunq-verify.app,phishing,account_locked_verify,nl
+Energietoeslag: u heeft uw EUR 1.300 nog niet aangevraagd. Doe dit vóór 30/11: energietoeslag-aanvragen.com,phishing,energy_rebate_lure,nl
+"Eneco: u heeft EUR 142,30 teveel betaald. Vraag uw teruggave aan: eneco-teruggave.com",phishing,energy_rebate_lure,nl
+Essent: uw incasso is gestorneerd. Werk uw IBAN bij om afsluiting te voorkomen: essent-betaalgegevens.com,phishing,utility_overdue_lure,nl
+RDW: uw APK-keuring is verlopen. Betaal de boete van EUR 150 binnen 7 dagen: rdw-boete-betalen.com,phishing,toll_fine_lure,nl
+DUO: uw studiefinanciering wordt stopgezet. Bevestig uw gegevens binnen 48 uur: duo-gegevens-bevestigen.com,phishing,government_impersonation,nl
+ING: uw rekening is geblokkeerd. Bel 020 440 1180 met uw pas bij de hand om de blokkade op te heffen.,phishing,bank_callback_lure,nl
+Rabobank: een overboeking van EUR 1.850 naar Binance staat klaar. Niet door u? Reageer NEE met uw rekeningnummer.,phishing,bank_reply_details_lure,nl
+Vodafone: uw factuur is niet betaald. Reageer met BETAAL om een betaallink te ontvangen en afsluiting te voorkomen.,phishing,telco_overdue_reply_lure,nl
+"DPD: pakket in depot. Douanekosten EUR 2,49: is.gd/dpd-douane",phishing,parcel_fee_lure,nl
+Marktplaats: de betaling voor uw verkoop (EUR 120) staat vast. Bevestig uw pas om te ontvangen: marktplaats-betaalverzoek.com,phishing,refund_cashback_lure,nl
+LET OP: uw ING rekening wordt GEBLOKKEERD! Verifieer NU: ing-verify.xyz,phishing,account_locked_verify,nl
+"uw postnl pakket kon niet bezorgd worden, bevestig adres: tinyurl.com/postnl-adr",phishing,parcel_address_lure,nl
+"Goedemiddag, dit is ABN AMRO. We zagen een afschrijving van EUR 349 bij Coolblue die niet bij uw patroon past. Wilt u die even controleren via abnamro-nl-controle.com? Geen zorgen, dit is uitsluitend een voorzorgsmaatregel.",phishing,unusual_login_fake_domain,nl
+"NS: u heeft recht op EUR 36,80 restitutie voor vertraging. Vul uw IBAN in: ns-restitutie.com",phishing,refund_cashback_lure,nl
+ASN Bank: uw inlogpoging vanuit Antwerpen is geblokkeerd. Bevestig dat u het was: asnbank-inlog-controle.com,phishing,unusual_login_fake_domain,nl
+UWV: uw uitkering is opgeschort. Bevestig uw gegevens om de betaling te hervatten: uwv-uitkering-herstel.com,phishing,government_impersonation,nl
+Belastingdienst: uw teruggave kon niet worden uitbetaald. Reageer met uw BSN en rekeningnummer zodat wij dit kunnen herstellen.,phishing,tax_refund_reply_lure,nl

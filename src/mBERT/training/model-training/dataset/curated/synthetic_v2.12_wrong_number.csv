@@ -1,0 +1,356 @@
+text,label,category,language
+"Hi Dr. Lee, is our golf lesson still on for Saturday? Oh, wrong number? So sorry. You seem very polite though, I'm Anna from Singapore. Mind if we chat sometime on WhatsApp?",phishing,wrong_number_pig_butchering,en
+"Hey Mark its Jessica from the conference last week, still on for drinks? ... Oh this isnt Mark? My mistake. You sound nice anyway, do you use WhatsApp?",phishing,wrong_number_pig_butchering,en
+"Is this the delivery contact for order 4471? No? Sorry! Haha I get so many wrong numbers. I'm Linda btw, new to Houston and barely know anyone. Want to chat?",phishing,delivery_contact_pivot,en
+"Good morning David, the Range Rover is ready for pickup at 3. Not David? Apologies. Well, lucky accident maybe. I'm Vivian, I trade forex in Dubai. Tell me about you?",phishing,luxury_bait_opener,en
+"Hello, this is Mia. My friend Carol gave me your number and said you're a good person to know. Can we get acquainted? I'm on Telegram @mia_lifestyle",phishing,friend_referral_opener,en
+"Hi I saw your profile and thought you looked interesting. Im Sofia from Singapore, 29. Are you single? Add me on Line: sofia.sg29",phishing,saw_your_profile_opener,en
+"hey are u coming to aunt Rose's bday dinner tonight?? ... oh no wrong number sorry!! youre sweet for replying tho. im Emma, 31, just moved to LA. chat?",phishing,wrong_number_pig_butchering,en
+"Sorry to bother you, but I think fate brought us here. I texted the wrong person yet you answered so kindly. I'm Chloe. I run a small jewelry business in NYC. Coffee someday?",phishing,wrong_number_romance_hook,en
+"Hi is this Ken from the yacht club? I know you said wrong number but you seem like a gentleman. I'm Grace, I invest in gold and digital assets. Let me send you my photo on WhatsApp.",phishing,wrong_number_crypto_mention,en
+Hello friend! My name is Lily. My aunt works at a bank in Hong Kong and taught me how to grow money. I don't have many friends here. Can we talk? Add me +852 6133 0921,phishing,aunt_at_bank_opener,en
+"Michael, did you get the contract I emailed? ... Not Michael? Oh! Well since we're already talking, I'm Rachel, 34, divorced, successful in real estate. How is your day going?",phishing,wrong_number_pig_butchering,en
+"I know its a wrong number but I enjoyed our little chat yesterday. Can I keep texting you? I promise Im not a bot lol. Here, my WhatsApp is +1 213 555 0184",phishing,wrong_number_persistent,en
+"Hey!! Long time no see, how was Bali? ... wait who is this? oh my god so sorry. you seem fun though haha. im Nina. you on telegram?",phishing,wrong_number_pig_butchering,en
+"Hi, this is Amy from the gym. Did you leave your gloves? No? Hmm, the trainer gave me this number. Anyway you're welcome to keep talking with me, I'm pretty lonely since relocating 😊",phishing,lonely_new_city_hook,en
+"Dear Mr. Tan, your table at Nobu is confirmed for 8pm. Oh, you're not Mr. Tan? I apologize sincerely. You replied so quickly, I like that. I'm Isabella. Shall we be friends?",phishing,luxury_bait_opener,en
+"You said wrong number but I keep thinking about how kind you were. Most people just ignore me. I'm Hannah, 28, I do crypto trading from home. Can I show you my life on Instagram?",phishing,wrong_number_persistent,en
+"hi, is this Steven's new number? Sorry if not. I'm Jenny, Steven's old classmate. Anyway, nice to meet you! Are you from Texas too? Where do you work?",phishing,wrong_number_pig_butchering,en
+"Hello handsome, remember me? We met at the airport lounge in Miami. No? Maybe I have the wrong number. But I'd still love to talk. I'm Elena, financial advisor, 32.",phishing,wrong_number_romance_hook,en
+"Hey! Our hiking group is meeting at 7am Sunday, you still coming? ... Oh not Jake. Lol sorry. Do you hike? Im always looking for new friends to go with. Im Olivia btw",phishing,wrong_number_pig_butchering,en
+"Mr Johnson, the Cartier watch you reserved is in stock. Not Mr Johnson? My apologies sir. By the way I'm Cindy from the boutique, maybe you'd like to see our collection? Here is my personal WhatsApp.",phishing,luxury_bait_opener,en
+"Hi there, I think you texted me earlier? No? Strange. Well hello anyway, I'm Sarah, 30, from Vancouver. I love cooking and traveling. Tell me a bit about yourself?",phishing,reverse_wrong_number_opener,en
+"Hey this is Brian from Tinder, we matched last night right? No?? Oh wow awkward. Well you have a nice vibe. What do you do for fun?",phishing,wrong_number_romance_hook,en
+"ur number was in my contacts as ""Tony golf"" but i dont remember u haha. anyway im Sophie. do u golf? im learning. we should play sometime 😄",phishing,wrong_number_pig_butchering,en
+"Sorry, wrong number. But honestly I'm glad. It's rare to meet a kind stranger. I'm Mei, I own two restaurants in Kuala Lumpur and trade BTC on the side. Can we continue on WhatsApp?",phishing,wrong_number_crypto_mention,en
+Hi is this Dr. Patel? I need to reschedule my appointment. Oh it's not? Sorry!! You text very politely though. I'm Angela. Are you a doctor too? 😊,phishing,wrong_number_pig_butchering,en
+"I'm so sorry I texted the wrong number yesterday. I just wanted to say thank you for being nice about it. Can I ask your name? I'm Victoria, 33.",phishing,wrong_number_persistent,en
+"Hello? Is this Robert Chen? Your package from Louis Vuitton couldn't be delivered. Not Robert? Oh. Well hello stranger, I'm Yuki, I work for a luxury courier. Nice to meet you!",phishing,delivery_contact_pivot,en
+"Hey Dad, can you pick me up at 6? ... Wait this isn't my dad's number? Omg sorry. Haha you must get this a lot. I'm Ashley, 27. Where are you from?",phishing,wrong_number_pig_butchering,en
+"Hey it's Lucas, we talked about the Tesla at the dealership. Not you? Sorry mate. Anyway I'm into cars and investing, if you ever want tips on passive income hit me on Telegram @lucas_wealth",phishing,wrong_number_crypto_mention,en
+"hi, Linda gave me ur number and said u were looking for a tennis partner? no? lol she always mixes things up. im Kate, 29. u play any sports?",phishing,friend_referral_opener,en
+"Good evening. I apologize for the interruption. I'm looking for Mr. Williams about a property viewing. If this isn't him, perhaps you'd like a friend instead? I'm Natalie, 31, Realtor.",phishing,wrong_number_pig_butchering,en
+"Hi James! Mom said to text you about Thanksgiving. Not James? Oops, sorry. You seem nice tho. I'm Lauren. I'm new in Chicago and don't know anyone, maybe you could show me around?",phishing,lonely_new_city_hook,en
+"Are you the contact for the Amazon package at 42 Oak Street? Hello? ... oh wrong number, I'm sorry. Honestly I'm just bored at home, mind chatting a little? I'm Alice 🙂",phishing,delivery_contact_pivot,en
+"Hello, I'm Eva from Taiwan. I got your number from a mutual friend at the business forum. I'm a fund manager. I'd love to connect and exchange ideas. WhatsApp me?",phishing,friend_referral_opener,en
+"I keep getting your number instead of my friend Jason's lol. Fate maybe? I'm Diana. 30, single, I own a nail salon in Vegas. You seem cool, let's be friends",phishing,wrong_number_persistent,en
+"Sorry I know you said I had the wrong number but can I just say you have a very warm way of texting. I'm Bella. I'm a widow, 35, and I don't talk to many people. Would you talk with me?",phishing,wrong_number_persistent,en
+"Hey Tom, your horse is ready for the ride at 10 tomorrow. Not Tom? Oh I'm sorry. You must think I'm silly. I'm Charlotte, I own a small stable in Kentucky. Do you ride?",phishing,luxury_bait_opener,en
+"Hi there! Is this still Melissa's number? I'm Zoe, her college roommate. Oh it changed? Well, since I have you... you seem friendly. What city are you in?",phishing,wrong_number_pig_butchering,en
+"hello, are you the one selling the iPhone on Facebook Marketplace? no? sorry! hey you seem nice, Im Lucy. I just got back from Europe. Want to see some pics? add me on WhatsApp +44 7700 900123",phishing,photo_offer_hook,en
+"Hi, I'm Stella, your new neighbor at unit 4B! Oh you're not in my building? Ha, the landlord gave me the wrong number. You sound sweet though. Can we still chat?",phishing,wrong_number_pig_butchering,en
+"Did you forget our dinner tonight?? I waited an hour. ... Oh no, you're not Peter. I'm so embarrassed. Well, you seem much nicer than Peter anyway. I'm Monica. 😅",phishing,wrong_number_romance_hook,en
+"Hey, this is Kevin's wife Amanda. Just checking if Kevin left his wallet at your place? No? Sorry, wrong number. By the way, you have a nice tone. Hope we can talk again.",phishing,wrong_number_pig_butchering,en
+"Hello sir, I got your contact from the Golf Club member list. I'm new, my name is Jasmine. I'm 30, I manage my family's import business. Could you be my friend here?",phishing,cold_opener_business_lady,en
+"Sorry, is this Henry? I'm his cousin from Toronto. Not Henry? Oh dear. Well, thank you for replying anyway. I'm Grace, 32. I love yoga and reading. What about you?",phishing,wrong_number_pig_butchering,en
+"Hi, I'm Ava. A friend recommended you as someone who knows a lot about investments. Is that right? Even if not, I'd love to talk. I'm learning crypto and doing well so far.",phishing,wrong_number_crypto_mention,en
+"still thinking about how you replied so politely when i texted the wrong number last week. most people are rude. im Nancy, 29, from San Diego. can we be friends?",phishing,wrong_number_persistent,en
+"Hey babe, I'm landing at 4, pick me up at terminal 2? ... wait who is this? OMG this isn't my boyfriend's number. I'm dying of embarrassment 😂 I'm Tiffany. Hi?",phishing,wrong_number_romance_hook,en
+"Hi, is this Mr. Garcia? Your Mercedes service is complete. Not him? Sorry! I'm Rose from the dealership. By the way I'm single and new in town haha. Do you drive a Mercedes?",phishing,luxury_bait_opener,en
+"Good day. I'm Catherine, 34, Singapore. I'm a mother of one and I run an online boutique. I hit the wrong number but I believe every meeting is destiny. Would you like to know me?",phishing,wrong_number_romance_hook,en
+"hey its me, did u get home safe last night? ... oh ur not Alex. sorry!! lol. u seem chill tho, im Brooke. where u from?",phishing,wrong_number_pig_butchering,en
+"Hi this is Daisy, my aunt who works at HSBC told me to connect with high-net-worth friends. Sorry if wrong person. Anyway, I'm 31, love fine wine and travel. Let's talk?",phishing,aunt_at_bank_opener,en
+"I think I got the wrong WhatsApp but let's not waste the moment. I'm Fiona, 30. I've been in Los Angeles 3 months and my only friends are my cat and my trading charts lol",phishing,lonely_new_city_hook,en
+"Hi Richard, the kids are asking if you're coming to the recital. ... Not Richard? Oh, I'm sorry. You replied so kindly. I'm Laura, single mom, 36. How's your evening?",phishing,wrong_number_romance_hook,en
+"Hello, I'm Jade. I saw your number on a group chat about investing. I'm a beginner too! Maybe we can learn together? I'm 28 and from Sydney.",phishing,wrong_number_crypto_mention,en
+"Hey sweetie, did you send the money to the florist? Oh this isn't Mike? Sorry hon. Well I'm Patricia, 38. Not many people text back politely. Can we talk more?",phishing,wrong_number_pig_butchering,en
+"Hi, are you the guy from the cafe who dropped his card this morning? No? My mistake. I'm Carmen, 29. I own a cafe in Austin. Come by sometime, or text me 😊",phishing,wrong_number_romance_hook,en
+"Dear customer, your furniture delivery is scheduled for Tuesday, reply to confirm. ... Oh, wrong number? I'm so sorry! I'm the driver, Jimmy. You seem nice, where are you from?",phishing,delivery_contact_pivot,en
+"Hey Chris! Did you see the game last night?? ... Not Chris?? Hahaha omg. Well I'm Kelly, 30, into sports and crypto trading. What team do you support?",phishing,wrong_number_crypto_mention,en
+"Hello, is this the number for Daniel the photographer? No? Sorry about that. I'm Chelsea, model, 27. Do you take photos by any chance? I'd love to show you my portfolio on Instagram",phishing,photo_offer_hook,en
+"I'm sorry I woke you up with a wrong number text. Let me make it up to you with a good morning ☀️ I'm Serena, 33. Do you drink coffee? I'm having mine on my balcony in Marina Bay.",phishing,wrong_number_persistent,en
+"Hi, this is Wendy. Is this Mr. Kim? No? Sorry. Honestly I'm glad, I've been wanting to meet new people. I'm an accountant, 30, I love hiking. Are you outdoorsy?",phishing,wrong_number_pig_butchering,en
+"hi stranger, I know we don't know each other but you replied to my wrong-number text yesterday and it made my day. I'm Melody, 31. I live in Sydney, work in finance. Hi again 😊",phishing,wrong_number_persistent,en
+"Hello Ben, the boat rental is confirmed for the weekend. Not Ben? Oh gosh I'm sorry. I'm Vanessa, I own a yacht charter company in Miami. You should come by sometime!",phishing,luxury_bait_opener,en
+"Hi my name is Joy. I'm 29 from Malaysia. My friend Alan said you're very kind. Is this really you? Even if he gave me the wrong number, I want to make a new friend. Add me: Line joy_my29",phishing,friend_referral_opener,en
+"Hey, you're not Aaron, are you? Sorry. I'm Rebecca. I don't usually text strangers but you seem harmless lol. I just moved to Dallas for work (I trade stocks). Know any good restaurants?",phishing,lonely_new_city_hook,en
+"Hello, this is Ling from Shenzhen. I'm visiting the US next month and looking for friends. I think I got your number from a WeChat group. Can we chat? I can share my photos.",phishing,photo_offer_hook,en
+omg sorry wrong number!! but hey ur reply was funny 😂 im Madison. 28. what do u do for a living?,phishing,wrong_number_pig_butchering,en
+"Hello, I'm Irene, 33, from Hong Kong. I invest in gold and I own a small spa. I texted you by accident but I don't believe in accidents. Would you like to be friends?",phishing,wrong_number_crypto_mention,en
+"Hi Paul, are we still on for the investment seminar Saturday? ... Not Paul? Sorry! I'm Amber, I'm actually the one giving the talk haha. Are you interested in passive income?",phishing,wrong_number_crypto_mention,en
+"Hey is this Sam from the wedding? No? Damn. Well you were nice about it. I'm Julia, 30, I bake for a living and trade a little crypto on the side. What about you?",phishing,wrong_number_crypto_mention,en
+"Sorry wrong number... but wait, are you in Seattle too? The area code looks the same. I'm Clara, 31, just moved here and super lonely. Coffee?",phishing,lonely_new_city_hook,en
+"Hello, I'm Nicole, I think my cousin gave me this number to reach his friend Mark. Not Mark? Oh. Can I still be your friend? I'm 29, I run a cosmetics brand. 💄",phishing,friend_referral_opener,en
+"good evening sir, I'm Helen the assistant to Mr. Zhang. Did you receive the gift box? No? Wrong number, forgive me. You seem like a gentleman. May I know your name?",phishing,luxury_bait_opener,en
+"Hey it's Lisa, I'm outside your house with the cake! ... Wait this isn't Jenny's house? Oh no 😭 sorry! You seem fun though, I'm a pastry chef, 30. Where are you located?",phishing,wrong_number_pig_butchering,en
+"Hi, is this the number I saved as ""cute guy from the gym""? 😂 No? My friend must've pranked me. I'm Haley, 27. Well... do you go to the gym? Lol",phishing,wrong_number_romance_hook,en
+"Hey Dave, Dad wants to know if you fixed the boat. Oh sorry, not Dave. You seem nice tho. Im Megan, 30, Florida. Honestly Im bored can we chat",phishing,wrong_number_pig_butchering,en
+"I'm Sunny, 30 years old, from Taipei. I'm sorry for texting the wrong number. But since you are kind, I want to know you. I do e-commerce and Bitcoin. Let's chat on WhatsApp?",phishing,wrong_number_crypto_mention,en
+"Hi there! Is this Mrs. Baker? I'm calling about the puppy adoption. Oh, wrong number? I'm so sorry. I'm Joanna, 29. Do you like dogs? I have two 🐶 Want to see pics?",phishing,photo_offer_hook,en
+"Hey, this is Anthony's new number, save it. ... wait you're not Marcus? haha my bad. anyway man how's it going, you into crypto? I've been killing it lately",phishing,wrong_number_crypto_mention,en
+"Hi I'm Lena, 32, originally from Ukraine, now in New York. My colleague gave me your number by mistake. I don't have many friends here. Can we talk sometimes? My Telegram @lena.ny",phishing,lonely_new_city_hook,en
+"Hello Dr. Adams, this is the pharmacy. Your order is ready. ... Oh you're not a doctor? I'm sorry. Honestly you have a very friendly way of writing. I'm Jenna 😊 what do you do?",phishing,wrong_number_pig_butchering,en
+"Hey Ryan, happy birthday!! 🎂 ... oh it's not Ryan? Haha I'm so sorry. Well happy unbirthday then. I'm Scarlett, 28. Let's be friends?",phishing,wrong_number_pig_butchering,en
+"Hi is this Jonathan from the property seminar? No? Apologies. I'm Michelle, I help people grow their savings through digital assets. You seem smart, want to know more?",phishing,wrong_number_crypto_mention,en
+you don't know me but you replied to my wrong number text and I just want to say it made me smile. I'm Ivy. 31. I live in Toronto with my dog. where do you live?,phishing,wrong_number_persistent,en
+"Hi! Is this Emily's dad? I'm her teacher. Oh, wrong number? Sorry! Haha I'm Miss Carter, 29. You seem polite. Do you have kids?",phishing,wrong_number_pig_butchering,en
+"hey, u left ur jacket at my place last night. ... wait this isnt Eric. omg sorry!! lol im Brianna. u seem cool, u live in Phoenix?",phishing,wrong_number_romance_hook,en
+"Hello, I'm Rina, 30. A friend from church gave me your number as someone who's good with money. If I'm wrong, sorry. But I'd still love to get to know you. I'm on WhatsApp.",phishing,friend_referral_opener,en
+"Hi, I'm new to this number, I don't know who you are but you're in my contacts as ""Nice guy"". Lol. I'm Kiara, 27. Mind telling me who you are?",phishing,wrong_number_romance_hook,en
+"Hi Mr. Lewis, your private jet charter quote is attached. Not Mr. Lewis? My sincere apologies. I'm Sabrina from the charter company. Perhaps we can be friends anyway?",phishing,luxury_bait_opener,en
+"Hey sis, did you pick up the dress? ... oh this isn't my sister's number? Sorry!! You seem nice. I'm Tasha, 29, Atlanta. What are you up to tonight?",phishing,wrong_number_pig_butchering,en
+"I apologize for the wrong-number text yesterday. I was taught to thank people for their patience. I'm Winnie, 33, Singapore. I manage a family office. Can we stay in touch?",phishing,wrong_number_persistent,en
+"hello! my name is Aria, 28, I'm a flight attendant based in Dubai. a coworker gave me ur number, maybe wrong one. but let's talk anyway? I travel a lot, I can show you photos 😊",phishing,photo_offer_hook,en
+"Hi, are you the plumber? No? Sorry, Google gave me a wrong number lol. Hey, you seem chill. I'm Dana, 30, I flip houses in Nashville. Do you own property?",phishing,wrong_number_pig_butchering,en
+"Hey Greg, are you coming to Dad's 60th? ... Oh you're not Greg! Haha sorry. I'm Rosie, 29, from Portland. I don't usually talk to strangers but you seem kind. Hi 🙂",phishing,wrong_number_pig_butchering,en
+"Hello, it's Camila. I believe we met at the crypto meetup in Austin? No? My apologies. I'm 31, I trade full time. Maybe I can share some tips sometime. Telegram @camila_trades",phishing,wrong_number_crypto_mention,en
+"I know this is random but my phone saved your number as ""Sam"" and I've no idea why. I'm Mila, 30. Anyway, you seem friendly. Where are you from?",phishing,wrong_number_pig_butchering,en
+"Hi, I'm Priya, 30, from Mumbai, now in Dubai. My uncle gave me your number as a business contact. Wrong number? Oh. Well I'd still love to connect. I'm in gold trading.",phishing,wrong_number_crypto_mention,en
+"Hey Adam, did you book the tickets for Cabo? ... Not Adam? Omg my bad. Well since I'm already here, I'm Jada, 28, I love beaches and good conversation. You?",phishing,wrong_number_romance_hook,en
+"Dear Mr. Robinson, your Rolex has arrived at our Beverly Hills boutique. Not Mr. Robinson? My apologies. I'm Vivienne, sales manager. Perhaps you'd like a private viewing anyway?",phishing,luxury_bait_opener,en
+"Hi, this is Lin. Someone gave me your WhatsApp and said you can teach me about stocks. No? Oh sorry. But I'm a quick learner and we can learn together 😊",phishing,wrong_number_crypto_mention,en
+"heyyy its Kayla, u still want those concert tickets? ... oh not Josh? lol oops. ur funny tho. what kinda music u like?",phishing,wrong_number_pig_butchering,en
+"Hello, my name is Angelina. I'm 32, from Spain, living in London. My friend gave me this number by mistake. I enjoy texting you though. Can I send you a picture so you know I'm real?",phishing,photo_offer_hook,en
+"Hi Mr. Harris, your golf cart has been serviced. Wrong number? I'm sorry! I'm Lia, I work at the country club. You sound nice, are you a member anywhere?",phishing,luxury_bait_opener,en
+"hey sorry, is this the dog walker? no? ugh wrong number. you seem nice though. I'm Avery, 29. I'm a nurse, just moved to Denver. Do you know the area?",phishing,lonely_new_city_hook,en
+"Hi! I'm Cherry from the Philippines, 27. I got your number from a job group chat. I don't know who you are but let's be friends. I'm friendly and I love to talk 😊",phishing,cold_opener_business_lady,en
+"Oops, wrong number. But you replied so fast, you must be bored too lol. I'm Hazel, 30. I work from home trading forex. What do you do?",phishing,wrong_number_crypto_mention,en
+"Hi, is this Marcus Lee? Your BMW X7 financing was approved. Not Marcus? Sorry! I'm Tina from the dealership. You sound like a nice man. Do you live nearby?",phishing,luxury_bait_opener,en
+"Hi, my name is Yuna, 29, Korean living in LA. I think I have the wrong number but I'm too shy to delete this. Can we talk? I'll send a photo so you know who I am.",phishing,photo_offer_hook,en
+"Hey Tyler it's Coach, practice is cancelled. ... oh not Tyler? haha sorry man. I'm Coach Jen, 31. Do you play any sports? Lol I'm always recruiting new friends",phishing,wrong_number_pig_butchering,en
+"Hello, I'm Alice from Hong Kong. My dad is a bank director and I'm learning investing from him. I wanted to text my classmate but got you. Nice to meet you anyway!",phishing,aunt_at_bank_opener,en
+"hiii is this Jordan? I'm Kristen from the party Saturday. No?? OMG I'm so sorry. hahaha. ok well you seem nice, where do you live?",phishing,wrong_number_pig_butchering,en
+"Hi, I'm Lydia, I think I got your number from a mutual friend named Chris. He said you're a trustworthy guy. Even if he's wrong lol, let's talk. I'm 30, into fitness and finance.",phishing,friend_referral_opener,en
+"hey u. did u make it to the gym this morning? ... oh wrong number sorry!! lol ok well im Jasmine, 28, personal trainer in Vegas. u work out?",phishing,wrong_number_pig_butchering,en
+"Hello, I'm Claire. I apologize, I was trying to reach my driver. But I'm happy to meet you. I'm 34, I own a boutique hotel in Bali. If you ever visit, text me 😊",phishing,luxury_bait_opener,en
+"Hi Dr. Morgan, the lab results are in. ... Oh I'm so sorry, you're not Dr. Morgan. I'm Nora, 29, a nurse. You text very politely! Are you a doctor?",phishing,wrong_number_pig_butchering,en
+"I don't usually do this but you were so nice when I texted the wrong number. I'm Celine, 32, from Paris, living in Dubai. Can I know your name? Here is my WhatsApp: +971 50 123 4567",phishing,wrong_number_persistent,en
+"Hey Hunter, the Lamborghini is ready for the shoot tomorrow. Not Hunter? Oops. I'm Ariana, I do luxury car photography in Miami. You like cars? 😊",phishing,luxury_bait_opener,en
+"Hi, is this Eric? I'm Lucy, we met at the wine tasting. No? Wrong number! Haha. Well I love wine and travel. Just back from Santorini. Want to see pics? WhatsApp +1 310 555 0177",phishing,photo_offer_hook,en
+"hello, Grace here. im looking for Mr. Wang about the Tesla purchase. not him? sorry. im 31, i sell cars and trade crypto. nice to meet you, where are you based?",phishing,wrong_number_crypto_mention,en
+"Hey! Is this the number for the cat sitter? No? Sorry! I'm Ruby, 28, I just need someone to watch my cat lol. Anyway you seem nice, what part of town are you in?",phishing,wrong_number_pig_butchering,en
+"Hello?? Why are you ignoring me. I only want to be friends. Yes I texted the wrong number but I'm a real person, not a scammer. Just say hi back.",phishing,wrong_number_persistent,en
+"This is the third time I text you and you don't reply. I'm not a robot, just a lonely woman in Houston who made a dialing mistake. Please give me a chance to be your friend.",phishing,wrong_number_persistent,en
+"You said stop texting but I feel like we have a connection. One coffee? I'll pay, I just closed a big deal this week and have nobody to celebrate with.",phishing,wrong_number_persistent,en
+"I saw your profile on LinkedIn and I think we're in the same industry. I'm Mina, 31. Can we talk on Telegram instead? It's easier for me. @mina_invests",phishing,saw_your_profile_opener,en
+"Hey, I noticed your profile pic in a group chat. You look kind. I'm Rose. Not a bot I promise! Let's talk a little?",phishing,saw_your_profile_opener,en
+Would you like to see what I look like? My friends say I'm pretty. Just reply yes and I'll send a photo. - Wendy (the wrong number from yesterday),phishing,photo_offer_hook,en
+"Hola Carlos, ¿sigue en pie la cena del sábado? ... ¿No eres Carlos? Perdona. Igual eres muy amable, me llamo Valeria, soy de Madrid. ¿Hablamos por WhatsApp?",phishing,wrong_number_pig_butchering,es
+"Disculpa, ¿eres el del envío de Amazon? ¿No? Ay, perdón. Oye, pareces buena persona. Soy Camila, 30 años, nueva en Barcelona y no conozco a nadie. ¿Charlamos?",phishing,delivery_contact_pivot,es
+"Sé que me equivoqué de número ayer pero me quedé pensando en lo educado que fuiste. Soy Lucía, 32, trabajo en inversiones en cripto. ¿Puedo seguir escribiéndote?",phishing,wrong_number_crypto_mention,es
+"Hola, soy Daniela. Una amiga me pasó tu número y dijo que eras buena onda. ¿Te interesa conocerme? Agrégame en Telegram @dani.mx",phishing,friend_referral_opener,es
+"Buenas, don Rodrigo, su Mercedes ya está listo. ¿No es don Rodrigo? Mil disculpas. Soy Fernanda, de la agencia. Oiga, qué amable contesta usted. ¿Vive por aquí?",phishing,luxury_bait_opener,es
+"Hola guapo, ¿te acuerdas de mí? Nos conocimos en Cancún. ¿No? Entonces me equivoqué jaja. Pero da igual, soy Andrea, 29. ¿Quieres ver una foto mía?",phishing,photo_offer_hook,es
+"oye amor llegaste bien?? ... espera, no eres Javier? ay dios qué pena 😂 soy Mariana, 28. bueno, ya que estamos, ¿de dónde eres?",phishing,wrong_number_romance_hook,es
+"Me dijiste que era número equivocado pero sigo aquí. No soy bot, soy una mujer de verdad, sola en Miami. Mi tía trabaja en un banco y me enseñó a invertir. Hablemos, por favor.",phishing,wrong_number_persistent,es
+"Oi Rafael, a reunião ainda é às 3? ... Não é o Rafael? Desculpa! Mas você respondeu com tanta educação. Sou a Beatriz, 30, de São Paulo. Bora conversar no WhatsApp?",phishing,wrong_number_pig_butchering,pt
+"Boa tarde, é o contato da entrega do pedido 8821? Não? Perdão. Rs, erro bom esse. Sou a Juliana, cheguei em Lisboa faz pouco e não conheço ninguém. Posso te chamar de vez em quando?",phishing,delivery_contact_pivot,pt
+"Sei que foi número errado, mas gostei da sua resposta. Sou a Larissa, 31, trabalho com investimentos em cripto. Posso te mandar uma foto pra você ver que sou real?",phishing,photo_offer_hook,pt
+"Oi, aqui é a Camila. Minha amiga Paula me passou seu número, disse que você é gente boa. Vamos nos conhecer? Me add no Telegram @camila.sp",phishing,friend_referral_opener,pt
+"Olá Dr. Souza, sua partida de golfe está confirmada pra sábado. Não é o doutor? Mil desculpas. Sou a Marina, do clube. Você também joga? 😊",phishing,luxury_bait_opener,pt
+"amor cheguei no aeroporto, me busca? ... espera, vc não é o Lucas?? meu Deus que vergonha kkkk sou a Gabi, 27. e aí, de onde vc é?",phishing,wrong_number_romance_hook,pt
+"Você falou pra eu parar de escrever, mas sinto que tem uma conexão aqui. Só um café? Eu pago. Fechei um negócio grande essa semana e queria comemorar com alguém.",phishing,wrong_number_persistent,pt
+"Oi, sou a Fernanda, 33, moro em Dubai. Minha tia trabalha num banco e me ensinou a aplicar em ouro. Errei o número, mas não acredito em acaso. Me conta de você?",phishing,aunt_at_bank_opener,pt
+李医生，周六的高尔夫课还上吗？……啊，不是李医生？抱歉打错了。不过你回得很客气，我叫安娜，在新加坡。方便加个微信聊聊吗？,phishing,wrong_number_pig_butchering,zh
+您好，请问是4471号订单的收货人吗？不是？不好意思。呵呵，打错也是缘分，我叫小雨，刚来上海没什么朋友，可以聊聊吗？,phishing,delivery_contact_pivot,zh
+我知道昨天发错号码了，但你回复得很有礼貌，让我印象很深。我叫林婉，31岁，做数字货币投资的。可以继续跟你聊天吗？,phishing,wrong_number_crypto_mention,zh
+你好，我是陈静。朋友把你的号码给我，说你人很好。能认识一下吗？我的Telegram是 @chenjing_hk,phishing,friend_referral_opener,zh
+王先生，您预订的劳力士已到店。不是王先生？实在抱歉。我是专柜的Vivian，您说话真客气，请问您在哪个城市呢？,phishing,luxury_bait_opener,zh
+老公你到了吗？来接我一下……等等，你不是张伟？天哪，太尴尬了😂 我叫思思，28岁。既然聊上了，你是哪里人？,phishing,wrong_number_romance_hook,zh
+你说我发错了，但我还是想和你做朋友。我不是机器人，是真人，一个人在深圳很孤单。我阿姨在银行上班，教我理财。给我个机会好吗？,phishing,wrong_number_persistent,zh
+你好，我在群里看到你的头像，感觉你很善良。我叫美琪，台湾人，30岁，做外贸也炒币。想跟你认识一下，可以发张照片给你看看我。,phishing,saw_your_profile_opener,zh
+田中先生、土曜のゴルフレッスンは予定通りですか？…あ、田中先生じゃないんですね、失礼しました。でも丁寧なご返信ありがとうございます。アンナと申します。LINE交換しませんか？,phishing,wrong_number_pig_butchering,ja
+お荷物（伝票番号4471）のお届け先の方ですか？違いますか、すみません。でもこれもご縁ですよね。ミカです、東京に来たばかりで友達がいなくて…少しお話しませんか？,phishing,delivery_contact_pivot,ja
+昨日間違えてメッセージしてしまいましたが、優しく返してくださって嬉しかったです。私は美咲、31歳、仮想通貨の投資をしています。また連絡してもいいですか？,phishing,wrong_number_crypto_mention,ja
+はじめまして、さくらです。友人からあなたの番号を教えてもらいました。とても良い人だと聞いています。仲良くなれませんか？Telegram: @sakura_tk,phishing,friend_referral_opener,ja
+佐藤様、ご予約のロレックスが入荷いたしました。佐藤様ではない？大変失礼いたしました。店員の由美です。ご丁寧な方ですね、どちらにお住まいですか？,phishing,luxury_bait_opener,ja
+ねえ、着いた？迎えに来て〜 …え、ゆうたじゃない？やばい恥ずかしい😂 りなです、28歳。せっかくだからお話ししませんか？,phishing,wrong_number_romance_hook,ja
+間違いだと言われましたが、まだ友達になりたいです。ボットじゃありません、本物の人間です。叔母が銀行で働いていて資産運用を教えてくれました。写真を送ってもいいですか？,phishing,wrong_number_persistent,ja
+دكتور أحمد، هل درس الجولف يوم السبت ما زال قائماً؟ ... أوه، لست الدكتور أحمد؟ آسفة. لكن ردك لطيف جداً، أنا سارة من دبي. ممكن نتكلم على واتساب؟,phishing,wrong_number_pig_butchering,ar
+مرحبا، هل أنت المسؤول عن استلام الطلب رقم 4471؟ لا؟ عذراً. يبدو أن الخطأ نصيب 😊 أنا ليلى، جديدة في الرياض ولا أعرف أحداً. نتعرف؟,phishing,delivery_contact_pivot,ar
+أعرف أنني أخطأت بالرقم أمس لكن أدبك في الرد لم يفارق تفكيري. أنا نور، 31 سنة، أعمل في تداول العملات الرقمية. ممكن أكمل الكتابة لك؟,phishing,wrong_number_crypto_mention,ar
+أهلاً، أنا مريم. صديقتي أعطتني رقمك وقالت إنك شخص محترم. ممكن نتعرف؟ أضفني على تيليجرام @mariam_ae,phishing,friend_referral_opener,ar
+سيد خالد، ساعة الرولكس التي حجزتها وصلت للمعرض. لست السيد خالد؟ أعتذر بشدة. أنا هدى من المحل. أسلوبك لطيف، في أي مدينة أنت؟,phishing,luxury_bait_opener,ar
+حبيبي وصلت؟ تعال خذني من المطار ... لحظة، أنت مش عمر؟ يا الله كم أنا محرجة 😂 أنا ريم، 28 سنة. وبما أننا نتكلم، من أين أنت؟,phishing,wrong_number_romance_hook,ar
+قلت لي إنه رقم خاطئ لكني ما زلت أريد أن نكون أصدقاء. أنا لست روبوت، أنا إنسانة حقيقية ووحيدة في القاهرة. خالتي تعمل في بنك وعلمتني الاستثمار. أعطني فرصة؟,phishing,wrong_number_persistent,ar
+"डॉ. शर्मा, शनिवार का गोल्फ लेसन है ना? ... अरे, आप डॉ. शर्मा नहीं हैं? सॉरी, गलत नंबर। पर आपने इतने प्यार से जवाब दिया। मैं अनन्या, सिंगापुर से। WhatsApp पर बात करें?",phishing,wrong_number_pig_butchering,hi
+"हेलो, ऑर्डर 4471 की डिलीवरी आपके लिए है? नहीं? माफ़ कीजिए। हा हा, गलत नंबर भी किस्मत होती है। मैं प्रिया, मुंबई में नई हूँ, कोई दोस्त नहीं। बात करेंगे?",phishing,delivery_contact_pivot,hi
+"कल गलती से आपको मैसेज कर दिया था, पर आपका जवाब इतना अच्छा था कि भूल नहीं पाई। मैं रिया, 31, क्रिप्टो ट्रेडिंग करती हूँ। क्या मैं आपसे बात करती रह सकती हूँ?",phishing,wrong_number_crypto_mention,hi
+"हाय, मैं नेहा। मेरी दोस्त ने आपका नंबर दिया, बोली आप बहुत अच्छे इंसान हो। दोस्ती करें? Telegram पर add करो @neha_dxb",phishing,friend_referral_opener,hi
+"मिस्टर वर्मा, आपकी बुक की हुई Rolex शोरूम में आ गई है। आप मिस्टर वर्मा नहीं? सॉरी सर। मैं सिमरन, शोरूम से। आप बहुत विनम्र हैं, कहाँ रहते हैं आप?",phishing,luxury_bait_opener,hi
+"बाबू पहुँच गए? एयरपोर्ट से पिक कर लो ... रुको, आप राहुल नहीं हो? हाय राम कितनी शर्म की बात 😂 मैं काजल, 28। चलो अब बात हो ही गई, आप कहाँ से हो?",phishing,wrong_number_romance_hook,hi
+"आपने कहा गलत नंबर है, फिर भी मैं दोस्ती करना चाहती हूँ। मैं bot नहीं, असली इंसान हूँ, दुबई में अकेली। मेरी मौसी बैंक में हैं, उन्होंने मुझे पैसा बढ़ाना सिखाया। एक मौका दोगे?",phishing,wrong_number_persistent,hi
+"Pak Budi, les golf hari Sabtu masih jadi? ... Oh, bukan Pak Budi? Maaf salah nomor. Tapi balasannya sopan banget. Aku Anna dari Singapura. Boleh lanjut ngobrol di WhatsApp?",phishing,wrong_number_pig_butchering,id
+"Halo, ini penerima paket order 4471? Bukan? Maaf ya. Hehe salah nomor tapi mungkin takdir. Aku Dinda, baru pindah ke Jakarta, belum punya teman. Kenalan boleh?",phishing,delivery_contact_pivot,id
+"Aku tahu kemarin salah nomor, tapi cara kamu bales sopan banget sampai aku kepikiran. Aku Sari, 31, kerja di trading crypto. Boleh aku chat kamu terus?",phishing,wrong_number_crypto_mention,id
+"Hai, aku Maya. Temanku kasih nomormu, katanya kamu orang baik. Boleh kenalan? Add Telegram aku @maya_jkt",phishing,friend_referral_opener,id
+"Bapak Hendra, Rolex pesanan Bapak sudah sampai di butik. Bukan Pak Hendra? Mohon maaf. Saya Vina dari butik. Bapak ramah sekali, tinggal di kota mana?",phishing,luxury_bait_opener,id
+"sayang udah sampe? jemput aku di bandara dong ... eh, kamu bukan Rian?? ya ampun malu banget 😂 aku Putri, 28. ya udah sekalian kenalan, kamu dari mana?",phishing,wrong_number_romance_hook,id
+"Kamu bilang salah nomor, tapi aku tetap mau temenan. Aku bukan bot, aku orang asli, sendirian di Bali. Tante aku kerja di bank dan ngajarin aku investasi. Kasih kesempatan dong?",phishing,wrong_number_persistent,id
+"Dr. Reyes, tuloy pa ba ang golf lesson natin sa Sabado? ... Ay, hindi si Dr. Reyes? Sorry, wrong number. Pero ang bait mong sumagot. Ako si Anna, taga-Singapore. Pwede tayong mag-chat sa WhatsApp?",phishing,wrong_number_pig_butchering,tl
+"Hello, ikaw po ba ang tatanggap ng order 4471? Hindi? Pasensya. Haha, baka destiny na ang wrong number. Ako si Jen, bago lang sa Manila, wala pang kaibigan. Chat tayo?",phishing,delivery_contact_pivot,tl
+"Alam kong wrong number kahapon pero hindi ko makalimutan ang bait ng reply mo. Ako si Carla, 31, nagta-trade ng crypto. Pwede ba kitang i-text pa?",phishing,wrong_number_crypto_mention,tl
+"Hi, ako si Mika. Binigay ng friend ko number mo, sabi mabait ka. Pwede tayong maging friends? Add mo ko sa Telegram @mika_ph",phishing,friend_referral_opener,tl
+"Sir Dela Cruz, dumating na po ang Rolex na in-order niyo. Hindi si Sir Dela Cruz? Sorry po. Ako si Grace mula sa boutique. Ang polite niyo po, saan po kayo nakatira?",phishing,luxury_bait_opener,tl
+"babe nakarating ka na? sunduin mo ko sa airport ... teka, hindi ikaw si Marco?? nakakahiya 😂 ako si Bea, 28. since nagka-usap na tayo, taga-saan ka?",phishing,wrong_number_romance_hook,tl
+"Sabi mo wrong number pero gusto ko pa ring maging kaibigan mo. Hindi ako bot, totoong tao ako, mag-isa dito sa Dubai. Nagtatrabaho sa bangko ang tita ko at tinuruan ako mag-invest. Bigyan mo ko ng chance?",phishing,wrong_number_persistent,tl
+"Hallo Dr. Weber, bleibt es bei der Golfstunde am Samstag? ... Oh, Sie sind nicht Dr. Weber? Entschuldigung. Aber Sie antworten so höflich. Ich bin Anna aus Zürich. Wollen wir über WhatsApp weiterschreiben?",phishing,wrong_number_pig_butchering,de
+"Hallo, sind Sie der Empfänger für Bestellung 4471? Nein? Verzeihung. Haha, vielleicht ist das Schicksal. Ich bin Lena, neu in Berlin und kenne niemanden. Schreiben wir ein bisschen?",phishing,delivery_contact_pivot,de
+"Ich weiß, ich hatte gestern die falsche Nummer, aber deine freundliche Antwort ging mir nicht aus dem Kopf. Ich bin Sophie, 31, handle mit Krypto. Darf ich dir weiter schreiben?",phishing,wrong_number_crypto_mention,de
+"Hi, ich bin Mia. Eine Freundin hat mir deine Nummer gegeben und meinte, du bist ein feiner Kerl. Lernen wir uns kennen? Telegram: @mia_muc",phishing,friend_referral_opener,de
+"Herr Schneider, Ihre reservierte Rolex ist eingetroffen. Nicht Herr Schneider? Bitte entschuldigen Sie. Ich bin Vanessa aus der Boutique. Sie schreiben so nett, wo wohnen Sie denn?",phishing,luxury_bait_opener,de
+"Schatz, bist du gelandet? Holst du mich ab? ... Moment, du bist nicht Jonas?? Oh Gott, wie peinlich 😂 Ich bin Laura, 28. Na, wo kommst du her?",phishing,wrong_number_romance_hook,de
+"Du hast gesagt, falsche Nummer, aber ich möchte trotzdem mit dir befreundet sein. Ich bin kein Bot, eine echte Frau, allein in Wien. Meine Tante arbeitet bei einer Bank und hat mir Investieren beigebracht. Gibst du mir eine Chance?",phishing,wrong_number_persistent,de
+"Bonjour Dr Martin, la leçon de golf de samedi est maintenue ? ... Ah, vous n'êtes pas le Dr Martin ? Pardon. Mais vous répondez si gentiment. Je suis Anna, de Genève. On continue sur WhatsApp ?",phishing,wrong_number_pig_butchering,fr
+"Bonjour, vous êtes bien le destinataire de la commande 4471 ? Non ? Désolée. Haha, le hasard fait bien les choses. Je suis Léa, nouvelle à Paris, je ne connais personne. On discute ?",phishing,delivery_contact_pivot,fr
+"Je sais que je me suis trompée de numéro hier, mais ta réponse si polie m'a touchée. Je suis Camille, 31 ans, je fais du trading crypto. Je peux continuer à t'écrire ?",phishing,wrong_number_crypto_mention,fr
+"Salut, c'est Chloé. Une amie m'a donné ton numéro, elle dit que tu es quelqu'un de bien. On fait connaissance ? Ajoute-moi sur Telegram @chloe_prs",phishing,friend_referral_opener,fr
+"Monsieur Dubois, votre Rolex réservée est arrivée en boutique. Pas M. Dubois ? Toutes mes excuses. Je suis Inès, de la boutique. Vous écrivez si bien, vous habitez où ?",phishing,luxury_bait_opener,fr
+"mon amour t'es arrivé ? tu viens me chercher à l'aéroport ? ... attends, t'es pas Hugo ?? mon dieu la honte 😂 je suis Manon, 28. bon, tant qu'on y est, t'es d'où ?",phishing,wrong_number_romance_hook,fr
+"Tu m'as dit mauvais numéro mais je veux quand même qu'on soit amis. Je ne suis pas un bot, une vraie femme, seule à Marseille. Ma tante travaille dans une banque et m'a appris à investir. Donne-moi une chance ?",phishing,wrong_number_persistent,fr
+"Здравствуйте, доктор Иванов, урок гольфа в субботу в силе? ... Ой, вы не доктор Иванов? Простите. Но вы так вежливо ответили. Я Анна, из Дубая. Продолжим в WhatsApp?",phishing,wrong_number_pig_butchering,ru
+"Здравствуйте, вы получатель заказа 4471? Нет? Извините. Ха-ха, ошибка номером — это судьба. Я Лена, недавно переехала в Москву, никого не знаю. Пообщаемся?",phishing,delivery_contact_pivot,ru
+"Знаю, вчера ошиблась номером, но ваш вежливый ответ не выходит из головы. Я Катя, 31, занимаюсь криптотрейдингом. Можно я буду вам ещё писать?",phishing,wrong_number_crypto_mention,ru
+"Привет, я Марина. Подруга дала твой номер и сказала, что ты хороший человек. Познакомимся? Добавь меня в Telegram @marina_msk",phishing,friend_referral_opener,ru
+"Господин Петров, забронированные вами Rolex прибыли в бутик. Не господин Петров? Прошу прощения. Я Виктория из бутика. Вы так приятно пишете, в каком вы городе?",phishing,luxury_bait_opener,ru
+"любимый ты приземлился? встретишь меня в аэропорту? ... стоп, ты не Дима?? боже как стыдно 😂 я Настя, 28. ну раз уж заговорили, ты откуда?",phishing,wrong_number_romance_hook,ru
+"Ты сказал, что я ошиблась номером, но я всё равно хочу дружить. Я не бот, я настоящая, одна в Петербурге. Моя тётя работает в банке и научила меня инвестировать. Дай мне шанс?",phishing,wrong_number_persistent,ru
+"Sorry, wrong number.",ham,wrong_number_apology,en
+"Is this Dave? No? Apologies, must have typed it wrong.",ham,wrong_number_query,en
+"Hey it's Tom from the gym, is this still Sam's number?",ham,number_check_acquaintance,en
+"Who is this? Sorry, don't have you saved.",ham,wrong_number_query,en
+"You texted the wrong person, no worries 👍",ham,wrong_number_reply,en
+"I think you have the wrong number, I'm not Maria.",ham,wrong_number_reply,en
+"Hi, this is Priya from the Saturday class, you said to text you about the book.",ham,acquaintance_first_contact,en
+"Honey did you remember to pick up Lily from practice? ... oh sorry, this was meant for my husband, wrong number!",ham,parent_wrong_recipient,en
+"Hi, this is Dr. Nguyen's office confirming your cleaning tomorrow at 2:15. Reply C to confirm. — Sorry, I'm not a patient there, think you have the wrong number.",ham,office_wrong_patient,en
+Hey man are you coming to Jake's thing tonight or what,ham,friend_casual_wrong_number,en
+"No problem, happens all the time. Hope you find the right Mike!",ham,wrong_number_reply,en
+hello?? this is Grandma. Is this Ethan?,ham,family_wrong_number,en
+"Hi, it's Marcus, we met at the Kowalski's BBQ on Sunday. You mentioned the hiking trail map, could you send it when you get a chance?",ham,acquaintance_first_contact,en
+"sorry who's this? new phone, lost all my contacts",ham,wrong_number_query,en
+"Wrong number mate, there's no Lisa here.",ham,wrong_number_reply,en
+"Oops, that was meant for my sister. Ignore!",ham,wrong_number_apology,en
+"Hi this is Sandra from Hill Street Vet, just a reminder that Biscuit is due for his shots. — Hi Sandra, I think you've got the wrong number, I don't have a dog.",ham,office_wrong_patient,en
+"Hey is this the number for the guy selling the bike on Craigslist? — Nope, sorry! — No worries, thanks",ham,wrong_number_exchange,en
+"This is Coach Ramirez. Practice moved to 5pm Thursday. — I think this went to the wrong parent, my kids don't play soccer. — Oh sorry about that!",ham,office_wrong_patient,en
+Hi! It's Aisha from the book club. Nadia gave me your number so we can coordinate snacks for next week.,ham,acquaintance_first_contact,en
+"Hey, Dan from the office next door. You said to text about the parking spot swap?",ham,acquaintance_first_contact,en
+lol wrong number but have a good day anyway,ham,wrong_number_reply,en
+Is this Karen's new number? It's Bill from choir.,ham,number_check_acquaintance,en
+"Sorry I've been getting texts for someone named Jordan all week, I think they gave out the wrong number",ham,wrong_number_reply,en
+"Hi, this is Tom. I think you accidentally texted me instead of Tom Hughes? I'm a different Tom haha",ham,wrong_number_reply,en
+"Mum says dinner's at 6 not 7, don't be late",ham,family_casual_wrong_number,en
+No this isn't Rachel. You've got the wrong number. Good luck!,ham,wrong_number_reply,en
+"hey, it's Omar from the Tuesday pickup game. still good for 7?",ham,acquaintance_first_contact,en
+"Please stop texting this number, there is no Anthony here. Thanks.",ham,wrong_number_reply,en
+"Hi, this is Leila, the babysitter Mrs. Park recommended. Is this a good time to talk about Saturday?",ham,acquaintance_first_contact,en
+"Hey, this is Greg from apartment 3C. Your package got delivered to my door by mistake, I left it outside yours.",ham,neighbor_first_contact,en
+who dis?? ur not in my phone,ham,wrong_number_query,en
+"Sorry, I think you've got a wrong number, I don't know any Brad",ham,wrong_number_reply,en
+Hi Sam! It's Dana from the farmers market. You asked me to text when the honey came in. It's in!,ham,acquaintance_first_contact,en
+Not sure who this is but you have the wrong number. No worries though!,ham,wrong_number_reply,en
+hey its Josh. did you mean to add me to the fantasy league chat? i think you added the wrong Josh lol,ham,group_chat_mixup,en
+"This is a group chat for the Henderson family reunion. If you got added by mistake, sorry! Just leave the group.",ham,group_chat_mixup,en
+"Hi, this is Kyle, Nate's roommate. He said you had his charger?",ham,acquaintance_first_contact,en
+"Hello, is this the Patels? Your table is ready. — Sorry, wrong number, we're not at a restaurant! — Apologies!",ham,wrong_number_exchange,en
+"ur not Jess? sorry, must have fat fingered the number",ham,wrong_number_apology,en
+"Hey it's Mike from the hardware store. The part you ordered came in. — I didn't order anything, think you have the wrong number. — Oh! Sorry about that, thank you.",ham,wrong_number_exchange,en
+"Hey, it's Nadia. We met at Zoe's housewarming, you said you had a plumber recommendation?",ham,acquaintance_first_contact,en
+"I'm not Jen, you've got the wrong number. Hope she gets your message!",ham,wrong_number_reply,en
+"This is Sarah, Lucas's mom from school. Lucas said Oliver could come over Friday, does that still work?",ham,parent_first_contact,en
+Ok so clearly this isn't Mark. Sorry for the spam!,ham,wrong_number_apology,en
+"Hi there, Rob from the running club here. Elena passed on your number, are you joining Sunday's 10k?",ham,acquaintance_first_contact,en
+Did you mean to send me that? I think it was for someone else,ham,wrong_number_reply,en
+"hey I think you texted me by mistake last night, just letting you know in case it was important",ham,wrong_number_reply,en
+Wrong number! But happy birthday to whoever Tony is 🎉,ham,wrong_number_reply,en
+"Hello, this is Anita from the dentist on Elm St, confirming Mr. Alvarez's appointment tomorrow at 9. — This isn't Mr. Alvarez, sorry. — Thank you for letting us know!",ham,office_wrong_patient,en
+"Hey Dad it's me, I'm using Lucy's phone, mine died. Can you pick me up at 5?",ham,family_borrowed_phone,en
+Hi! Is this Ben? It's Chloe from the pottery class. You said you'd share the glaze recipe.,ham,acquaintance_first_contact,en
+"Sorry, no Steve here. You might have the wrong area code.",ham,wrong_number_reply,en
+lol i've no idea who you are but good luck with your exam tomorrow,ham,wrong_number_reply,en
+"Hi, it's Mrs. Chen from next door. Did you get my note about the fence?",ham,neighbor_first_contact,en
+"Think you've got the wrong number mate, I'm in Leeds not London",ham,wrong_number_reply,en
+"Hey it's Alex, is this Jamie? Got your number from Sara for the carpool.",ham,acquaintance_first_contact,en
+This is the wrong number. Please update your records. Thanks.,ham,wrong_number_reply,en
+"Hi it's Carlos from the Saturday soccer league, are you still looking for a sub this weekend?",ham,acquaintance_first_contact,en
+"Hey, you're not Taylor are you? My cousin gave me this number.",ham,wrong_number_query,en
+"nope wrong number, but no harm done",ham,wrong_number_reply,en
+"Hey hun, dinner's in the fridge, I'll be home late. — Um, I think you meant to send this to someone else? — OMG yes sorry!!",ham,wrong_number_exchange,en
+"Hi, this is Jordan from the shelter. Is this the right number for Mr. Davis about the adoption application?",ham,office_number_check,en
+"I just got a text meant for ""Kevin"" — not Kevin, sorry!",ham,wrong_number_reply,en
+"Hello, who's this? I don't have this number saved.",ham,wrong_number_query,en
+"Hi it's Emma, Ava's mom. Did Ava leave her jacket at your place after the sleepover?",ham,parent_first_contact,en
+"Hey it's Dr. Patel's assistant. Your lab results are ready, call us at your convenience. — Sorry I'm not a patient, wrong number. — Apologies, thank you.",ham,office_wrong_patient,en
+"Hey Ravi, it's Sunil from the cricket club. You still have my bat?",ham,acquaintance_first_contact,en
+You've got the wrong number but I hope your mom's surgery goes well 🙏,ham,wrong_number_reply,en
+"This is Jen. I think you added me to the wrong group chat, I don't know any of these people lol",ham,group_chat_mixup,en
+"Hi, this is Mr. Thompson, Ellie's teacher. Could we chat about the field trip form?",ham,school_first_contact,en
+Yeah this isn't Chris. Wrong number. No worries.,ham,wrong_number_reply,en
+"Hi Pat, it's Linda from the quilting group, are we meeting at the library or your place?",ham,acquaintance_first_contact,en
+"hey its Noah, Liam gave me ur number for the group project. when u free to meet?",ham,acquaintance_first_contact,en
+"Hi, not sure if this is right, is this Hannah from the interview on Monday? It's Mark from HR.",ham,office_number_check,en
+"sorry to bother you, this number was listed for a Dr. Lee's clinic but I think it's wrong?",ham,wrong_number_query,en
+"Hey it's Amy, Kayla's roommate. She left her keys at mine, is she with you?",ham,acquaintance_first_contact,en
+"You've reached the wrong number, but thanks for the polite message!",ham,wrong_number_reply,en
+"Hello, is this Ms. Okafor? This is the school nurse, Jamal has a fever. — Wrong number, I'm sorry! — Oh no, thank you!",ham,office_wrong_patient,en
+"hey it's Pete from the bar last night, you said to text you about the band",ham,acquaintance_first_contact,en
+"Not Michelle, sorry! Hope you find her.",ham,wrong_number_reply,en
+"Hi, Rosa here, the cleaner Mrs. Gupta recommended. Would Thursday morning work for a first visit?",ham,acquaintance_first_contact,en
+ok I'm pretty sure you've got the wrong number because I have no idea what you're talking about lol,ham,wrong_number_reply,en
+Hey this is Mia's dad. Is this the number for the piano teacher?,ham,office_number_check,en
+"Wrong number, I'm afraid. No Dave at this number.",ham,wrong_number_reply,en
+"Hi, it's Hiro from Japanese class. Sensei asked me to remind everyone about Thursday's test.",ham,acquaintance_first_contact,en
+"Hey, you texted me asking about the sofa. I think you meant someone else, I'm not selling anything.",ham,wrong_number_reply,en
+"I think my aunt gave you my number by mistake, are you the one asking about the wedding photographer?",ham,wrong_number_query,en
+"is this still Sarah's number? it's Jake from highschool, found this in an old notebook lol",ham,number_check_acquaintance,en
+"Perdona, número equivocado.",ham,wrong_number_apology,es
+"¿Eres Miguel? ¿No? Ay, disculpa, me equivoqué.",ham,wrong_number_query,es
+"Hola, soy Paula, la del curso de los sábados. Me dijiste que te escribiera por lo del libro.",ham,acquaintance_first_contact,es
+"Mamá, ¿a qué hora es la comida del domingo? ... ay perdón, esto era para mi madre jaja",ham,family_wrong_recipient,es
+"Creo que te has equivocado de número, aquí no vive ninguna Marta.",ham,wrong_number_reply,es
+"Oye, soy Andrés, el del fútbol de los martes. ¿Sigue en pie lo de mañana a las 8?",ham,acquaintance_first_contact,es
+"Desculpa, número errado.",ham,wrong_number_apology,pt
+Quem é? Não tenho esse número salvo.,ham,wrong_number_query,pt
+"Oi, é a Camila da aula de sábado, você falou pra te mandar mensagem sobre o livro.",ham,acquaintance_first_contact,pt
+"Acho que você errou o número, aqui não tem nenhuma Ana.",ham,wrong_number_reply,pt
+"Filho, não esquece de buscar a vó às 5 ... ops, mandei pro número errado, desculpa!",ham,parent_wrong_recipient,pt
+"Boa tarde, aqui é da clínica do Dr. Ramos confirmando a consulta de amanhã às 10h. — Acho que é engano, não sou paciente aí. — Desculpe, obrigada!",ham,office_wrong_patient,pt
+不好意思，打错号码了，刚才那条消息请直接忽略吧。,ham,wrong_number_apology,zh
+请问你是哪位？我手机里没存这个号码，换手机了。,ham,wrong_number_query,zh
+你好，我是周六班的小雅，你说让我发消息给你聊那本书。,ham,acquaintance_first_contact,zh
+你是不是打错了？我不是李先生，这里没有这个人。,ham,wrong_number_reply,zh
+儿子，周末回来吃饭吗？……哎呀发错人了，对不起！,ham,parent_wrong_recipient,zh
+嗨，我是打羽毛球那个阿强，明天七点还打吗？,ham,acquaintance_first_contact,zh
+すみません、番号を間違えました。失礼しました。,ham,wrong_number_apology,ja
+どちら様ですか？番号が登録されていなくて。,ham,wrong_number_query,ja
+こんにちは、土曜クラスの佐藤です。本のことで連絡してと言われたので。,ham,acquaintance_first_contact,ja
+番号お間違えだと思います。こちらは田中ではありません。,ham,wrong_number_reply,ja
+お母さん、日曜の集合何時？…あ、ごめん間違えた、母に送るつもりでした！,ham,family_wrong_recipient,ja
+آسف، الرقم غلط، تجاهل الرسالة.,ham,wrong_number_apology,ar
+مين معي؟ الرقم مش محفوظ عندي.,ham,wrong_number_query,ar
+مرحبا، أنا سارة من صف يوم السبت، قلت لي أرسل لك بخصوص الكتاب.,ham,acquaintance_first_contact,ar
+أعتقد أنك أخطأت بالرقم، لا يوجد أحمد هنا.,ham,wrong_number_reply,ar
+يا ماما، الغدا يوم الجمعة الساعة كم؟ ... أوه آسف، كانت للوالدة، غلط بالرقم!,ham,family_wrong_recipient,ar
+"सॉरी, गलत नंबर लग गया।",ham,wrong_number_apology,hi
+आप कौन? ये नंबर मेरे पास सेव नहीं है।,ham,wrong_number_query,hi
+"हाय, मैं प्रिया, शनिवार की क्लास वाली। आपने कहा था किताब के बारे में मैसेज करना।",ham,acquaintance_first_contact,hi
+"लगता है आपने गलत नंबर डायल किया, यहाँ कोई राहुल नहीं है।",ham,wrong_number_reply,hi
+"बेटा, रविवार को घर आ रहे हो? ... अरे, ये तो गलत नंबर पर चला गया, सॉरी!",ham,parent_wrong_recipient,hi
+"Maaf, salah nomor. Abaikan aja ya.",ham,wrong_number_apology,id
+Ini siapa ya? Nomornya nggak tersimpan.,ham,wrong_number_query,id
+"Halo, ini Dinda dari kelas Sabtu, katanya suruh chat soal buku itu.",ham,acquaintance_first_contact,id
+"Kayaknya salah nomor, di sini nggak ada yang namanya Budi.",ham,wrong_number_reply,id
+"Nak, Minggu pulang nggak? ... eh, salah kirim, maaf ya!",ham,parent_wrong_recipient,id
+"Sorry, wrong number po.",ham,wrong_number_apology,tl
+Sino 'to? Wala akong saved na ganitong number.,ham,wrong_number_query,tl
+"Hi, si Jen 'to from Saturday class, sabi mo i-text kita tungkol sa libro.",ham,acquaintance_first_contact,tl
+"Wrong number po, walang Marco dito.",ham,wrong_number_reply,tl
+"Anak, uuwi ka ba sa Linggo? ... ay, mali ang na-send, sorry!",ham,parent_wrong_recipient,tl
+"Sorry, falsche Nummer.",ham,wrong_number_apology,de
+Wer ist da? Die Nummer ist nicht eingespeichert.,ham,wrong_number_query,de
+"Hallo, hier ist Lisa aus dem Samstagskurs, du hattest gesagt, ich soll dir wegen dem Buch schreiben.",ham,acquaintance_first_contact,de
+"Ich glaube, Sie haben sich verwählt, hier ist kein Thomas.",ham,wrong_number_reply,de
+"Schatz, holst du die Kinder ab? ... oh, falsche Nummer, Entschuldigung!",ham,parent_wrong_recipient,de
+"Hallo, hier ist die Zahnarztpraxis Dr. Krause. Wir bestätigen Ihren Termin morgen um 9 Uhr. — Ich glaube, da ist ein Fehler, ich bin kein Patient bei Ihnen. — Oh, danke für den Hinweis!",ham,office_wrong_patient,de
+"Désolé, mauvais numéro.",ham,wrong_number_apology,fr
+C'est qui ? J'ai pas ce numéro enregistré.,ham,wrong_number_query,fr
+"Salut, c'est Léa du cours du samedi, tu m'avais dit de t'écrire pour le livre.",ham,acquaintance_first_contact,fr
+"Je crois que vous vous êtes trompé de numéro, il n'y a pas de Julien ici.",ham,wrong_number_reply,fr
+"Maman, on mange à quelle heure dimanche ? ... oups, c'était pour ma mère, désolé !",ham,family_wrong_recipient,fr
+"Bonjour, c'est Karim du foot du mardi. Toujours OK pour demain 20h ?",ham,acquaintance_first_contact,fr
+"Извините, ошибся номером.",ham,wrong_number_apology,ru
+Кто это? Номер не сохранён.,ham,wrong_number_query,ru
+"Привет, это Лена с субботних занятий, ты говорил написать тебе насчёт книги.",ham,acquaintance_first_contact,ru
+"Вы, кажется, ошиблись номером, здесь нет никакого Сергея.",ham,wrong_number_reply,ru
+"Сынок, в воскресенье приедешь? ... ой, не туда отправила, извини!",ham,parent_wrong_recipient,ru

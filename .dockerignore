@@ -42,6 +42,7 @@ src/mBERT/training/model-training/dataset/
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
 !src/mBERT/training/model-training/mbert_ots_model_2.7.pth
 !src/mBERT/training/model-training/mbert_ots_model_2.9.pth
+!src/mBERT/training/model-training/mbert_ots_model_2.12.pth
 *_v1.*
 *_v2.0.*
 *_1.*
@@ -110,6 +111,7 @@ config/*.local.*
 !src/mBERT/training/model-training/mbert_ots_model_2.5.pth
 !src/mBERT/training/model-training/mbert_ots_model_2.7.pth
 !src/mBERT/training/model-training/mbert_ots_model_2.9.pth
+!src/mBERT/training/model-training/mbert_ots_model_2.12.pth
 !src/mBERT/training/model-training/dataset/sms_spam_phishing_dataset_v2.4_combined.csv
 !requirements*.txt
 !start*.sh

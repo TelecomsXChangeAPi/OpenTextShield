@@ -1,0 +1,145 @@
+theme,text,label,grade,why,language
+legit_en,"BofA: A $212.50 purchase was made at COSTCO WHSE #412 with your debit card ending in 0932 on 11/12. If this wasn't you, call the number on the back of your card.",ham,ham,eval_overlap_near_duplicate,en
+legit_en,AGL: Your electricity bill of $312.47 is ready. Due 28 Nov. Pay at agl.com.au or in the AGL app. Need more time? Call 131 245.,ham,ham,eval_overlap_near_duplicate,en
+legit_en,Amazon: Your order #112-4420193-8821024 has shipped. Arriving Thursday. Track in Your Orders.,ham,ham,eval_overlap_near_duplicate,en
+legit_en,CVS Pharmacy: Your prescription for ATORVASTATIN is ready for pickup at CVS 5th Ave. Open until 10 PM. Reply STOP to opt out.,ham,ham,eval_overlap_near_duplicate,en
+legit_en,Shoppers Drug Mart: Your prescription is ready for pickup at store #1142. Open until 10pm. Reply STOP to opt out.,ham,ham,eval_overlap_near_duplicate,en
+legit_en,"Uber: Your driver Marcus is arriving in 2 min in a silver Toyota Camry, plate 8ABC123.",ham,ham,eval_overlap_near_duplicate,en
+legit_en,G-440219 is your Google verification code.,ham,ham,duplicate_of_existing,en
+legit_ar_tr_ru_pl_el,رمز التحقق الخاص بك من مصرف الراجحي هو 482913. لا تشاركه مع أي شخص، البنك لن يطلبه منك أبداً.,ham,ham,eval_overlap_near_duplicate,ar
+legit_ar_tr_ru_pl_el,Яндекс: Код подтверждения 331 204. Никому не сообщайте.,ham,ham,eval_overlap_near_duplicate,ru
+legit_ar_tr_ru_pl_el,"Госуслуги: Код подтверждения 441 902. Никому не сообщайте его, даже сотрудникам Госуслуг.",ham,ham,eval_overlap_near_duplicate,ru
+legit_west_europe,Banco Nación: tu código de seguridad es 904 118. No lo compartas con nadie.,ham,ham,eval_overlap_near_duplicate,es
+legit_west_europe,iFood: Código de verificação: 4471. Não compartilhe.,ham,ham,eval_overlap_near_duplicate,pt
+lures_latin,"IRS: You have a pending tax refund of $1,247.00. Submit your details to receive it: irs-refund-portal.com",phishing,phishing,eval_overlap_near_duplicate,en
+lures_latin,Netflix: Your payment was declined. Update your card to keep watching: netflix-billing-update.com,phishing,phishing,eval_overlap_near_duplicate,en
+lures_latin,Social Security Administration: Your SSN has been suspended due to suspicious activity. Call 1-833-402-7719 immediately.,phishing,phishing,eval_overlap_near_duplicate,en
+lures_latin,"TSB: we have detected a login from a new browser. If this was not you, call 0203 772 5590 right away.",phishing,ham,disagreement,en
+lures_latin,"impots.gouv : vous avez droit à un remboursement de 283,50 EUR au titre de votre impôt sur le revenu. Saisissez vos coordonnées bancaires : impots-remboursement.fr-gouv.com",phishing,phishing,eval_overlap_near_duplicate,fr
+lures_latin,Crit'Air : votre vignette n'est plus valide. Commandez la nouvelle avant une amende de 68 EUR : certificat-critair.fr-vignette.com,phishing,phishing,eval_overlap_near_duplicate,fr
+lures_latin,Sparkasse: Ihr Online-Banking wurde aus Sicherheitsgründen eingeschränkt. Bestätigen Sie Ihre Daten innerhalb von 24 Stunden: sparkasse-kundenservice-de.com,phishing,phishing,eval_overlap_near_duplicate,de
+lures_latin,"Correios: Sua encomenda está retida por falta de pagamento de taxa alfandegária (R$ 2,99). Pague em: correios-taxa-liberacao.com",phishing,phishing,eval_overlap_near_duplicate,pt
+lures_nonlatin,"[롯데카드] 해외승인 1,250,000원 (AMAZON). 본인 사용이 아닐 경우 02-3148-9920 으로 연락 바랍니다.",phishing,ham,disagreement,ko
+lures_nonlatin,"Pekao: Zlecono przelew 3 500 zł. Jeśli to nie Ty, zadzwoń 22 591 22 09",phishing,ham,disagreement,pl
+lures_nonlatin,Τράπεζα Πειραιώς: Νέα σύνδεση από άγνωστη συσκευή. Αν δεν είστε εσείς καλέστε 210 480 2290,phishing,ham,disagreement,el
+linkfree_en,Your Amazon order #114-7731902 for Apple iPhone 15 Pro (£849.00) has been placed and will ship today. If you did not place this order call 0800 041 7730 immediately to cancel.,phishing,phishing,eval_overlap_near_duplicate,en
+linkfree_en,"Bank of America: a wire transfer of $4,750 to WELLS FARGO acct ...9931 is pending. Call 1-800-293-1104 NOW if you did not authorize this.",phishing,phishing,eval_overlap_near_duplicate,en
+linkfree_en,"NAB: a new payee 'J Nguyen' has been added to your account. If this wasn't you, call 1300 781 092 to remove it.",phishing,ham,disagreement,en
+linkfree_en,"Hello dear, I'm Chloe from a recruitment agency. We offer part-time online jobs, 15-30 min a day, earn 5,000 to 20,000 naira weekly. Reply YES to start now.",phishing,spam,disagreement,en
+linkfree_en,"Hi, Susan from the HR dept here. Our company pays $5-$10 per product review. No experience. Daily payment via PayPal. Reply with your full name to start.",phishing,spam,disagreement,en
+linkfree_multi,SFR : une demande de nouvelle carte SIM a été enregistrée pour votre ligne. Si vous n'êtes pas à l'origine de cette demande appelez immédiatement le 01 70 61 92 48.,phishing,unsure,disagreement,fr
+wrong_number,"Hey Grandpa it's Leo, Mom said to text you my new number. Save it!",ham,phishing,disagreement,en
+codes_alerts,G-583920 is your Google verification code.,ham,ham,duplicate_of_existing,en
+codes_alerts,Your Uber code is 7782. Never share this code.,ham,ham,eval_overlap_exact_or_shape,en
+codes_alerts,"Netflix: your password was changed. If this wasn't you, go to netflix.com/security",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Chase: Did you make a $612.40 purchase at BEST BUY #1123 with card ending 4417? Reply YES or NO.,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Your Discord verification code is 611 920,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Your LinkedIn verification code is 418117.,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Your Venmo code is 3182. Don't share this with anyone. Venmo will never ask for it.,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,"Lloyds Bank: Your one time passcode is 371 926. Never share this code, not even with Lloyds staff.",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,"Facebook: 221 087 is your recovery code. Don't share it. If you didn't request it, you can ignore this text.",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Bolt: Your code is 8821. Don't share it with anyone.,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Twitch: 884 220 is your verification code,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,USPS Informed Delivery: Your verification code is 441 812.,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,"HDFC Bank: 220118 is the OTP for txn of INR 4,500.00 at FLIPKART on card xx8820. Do not share OTP with anyone. -HDFCBK",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Adobe: Your verification code is 220118.,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Proton: Your verification code is 220 118,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,"Outlook: Your security code is 220118. If you didn't request this, someone may have your password. Change it at account.microsoft.com",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,"Apple: Your Apple Account password was changed on 11 Nov. If you didn't do this, go to iforgot.apple.com",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,"Discord: A new login to your account from Ubuntu, Toronto. If this wasn't you, change your password now.",ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Your Okta verification code is 220118,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Your Mercari verification code is 8821,ham,ham,eval_overlap_near_duplicate,en
+codes_alerts,Tu código de WhatsApp es 441-290. No lo compartas con nadie. 4sgLq1p5sV6,ham,ham,eval_overlap_near_duplicate,es
+codes_alerts,Tu código de verificación de Mercado Libre es 220118. No lo compartas.,ham,ham,eval_overlap_near_duplicate,es
+codes_alerts,Doctolib : votre code de connexion est 118220. Il expire dans 5 minutes.,ham,ham,eval_overlap_near_duplicate,fr
+codes_alerts,"Nubank: seu código de verificação é 441290. Não compartilhe com ninguém, nem com o Nubank.",ham,ham,eval_overlap_near_duplicate,pt
+codes_alerts,iFood: seu código é 4418. Não compartilhe com ninguém.,ham,ham,eval_overlap_near_duplicate,pt
+codes_alerts,رمز التحقق الخاص بك في واتساب هو 441-290. لا تشاركه مع أي شخص. 4sgLq1p5sV6,ham,ham,eval_overlap_near_duplicate,ar
+codes_alerts,أبشر: رمز التحقق الخاص بك هو 220118. لا تقم بمشاركته مع أي شخص.,ham,ham,eval_overlap_near_duplicate,ar
+codes_alerts,Ваш код WhatsApp: 441-290. Никому не сообщайте его. 4sgLq1p5sV6,ham,ham,eval_overlap_near_duplicate,ru
+codes_alerts,Госуслуги: Ваш код подтверждения 220118. Никому не говорите его.,ham,ham,eval_overlap_near_duplicate,ru
+codes_alerts,Яндекс: код подтверждения 7718. Никому не сообщайте.,ham,ham,eval_overlap_near_duplicate,ru
+codes_alerts,Ozon: ваш код 118220. Не сообщайте его никому.,ham,ham,eval_overlap_near_duplicate,ru
+prize_premium,You are a winner U have been specially selected 2 receive £1000 cash or a 4* holiday (flights inc) speak to a live operator 2 claim 0871277810810,phishing,phishing,eval_overlap_exact_or_shape,en
+prize_premium,Thanks for your subscription to Ringtone UK your mobile will be charged £4.50 per month. Reply STOP to 83738 to cancel. Else we assume you want this.,phishing,spam,disagreement,en
+prize_premium,Trivia time! Which city is the capital of Australia? Text A Sydney B Canberra C Perth to 82468 and win an iPad. 150p/msg + std rate,phishing,spam,disagreement,en
+prize_premium,We tried to contact you re your reply to our offer of a Video Phone 750 anytime any network mins HALF PRICE rental camcorder. Call 08000930705 now or reply for delivery tomorrow,phishing,spam,disagreement,en
+prize_premium,"Your account has been credited with 500 FREE Text Messages. To activate, just txt the word: CREDIT to No: 80488 T&Cs www.80488.biz",phishing,phishing,duplicate_of_existing,en
+prize_premium,You have WON a guaranteed £1000 cash or a £2000 prize. To claim yr prize call our customer service representative on 08714712394 between 10am-7pm,phishing,phishing,eval_overlap_exact_or_shape,en
+prize_premium,Ur cash-balance is currently 500 pounds - to maximize ur cash-in now send COLLECT to 83600 only 150p/msg. CC: 08718720201 PO BOX 114/14 TCR/W1,phishing,phishing,duplicate_of_existing,en
+prize_premium,"Last chance! Claim ur £150 worth of discount vouchers today! Text YES to 85023 now! SavaMob, member offers mobile! T Cs 08717898035. £3.00 Sub. 16 . Remove txt X or STOP",phishing,spam,disagreement,en
+prize_premium,"Congrats! 1 year special cinema pass for 2 is yours. call 09061209465 now! C Suprman V, Matrix3, StarWars3, etc all 4 FREE! bx420-ip4-5we. 150pm. Dont miss out!",phishing,phishing,duplicate_of_existing,en
+prize_premium,Please call our customer service representative on FREEPHONE 0808 145 4742 between 9am-11pm as you have WON a guaranteed £1000 cash or £5000 prize!,phishing,phishing,eval_overlap_exact_or_shape,en
+prize_premium,"SMS SERVICES. for your inclusive text credits, pls goto www.comuk.net login= 3qxj9 unsubscribe with STOP, no extra charge. help 08702840625.COMUK. 220-CM2 9AE",phishing,phishing,duplicate_of_existing,en
+prize_premium,"This is the 2nd time we have tried 2 contact u. U have won the £750 Pound prize. 2 claim is easy, call 087187272008 NOW1! Only 10p per minute. BT-national-rate.",phishing,phishing,eval_overlap_exact_or_shape,en
+prize_premium,"Your free ringtone is waiting to be collected. Simply text the password MIX to 85069 to verify. Get Usher and Britney. FML, PO Box 5249, MK17 92H. 450Ppw 16",phishing,spam,disagreement,en
+prize_premium,Who wants 2 win a FREE PS5? Our weekly quiz - Q1: how many sides does a hexagon have? Txt ans to 84477. 150p/msg recd + std,phishing,spam,disagreement,en
+prize_premium,Congratulations! You've been selected to receive a $1000 Walmart gift card. Claim here: walmart-rewardz.com/claim ref 4417,phishing,phishing,eval_overlap_near_duplicate,en
+prize_premium,"Trivia Challenge: What is the largest planet? Reply A Jupiter B Mars to 68877 for a chance at $10,000. $1.99/msg",phishing,spam,disagreement,en
+prize_premium,Someone has a crush on you! SMS WHO to 34001 to find out. R10/sms,phishing,spam,disagreement,en
+prize_premium,"¡Alguien está enamorado de ti! Descubre quién llamando al 806 400 777. 1,50€/min desde red fija",phishing,spam,disagreement,es
+prize_premium,"Sua encomenda retida foi aprovada para entrega. Pague taxa de liberação de R$ 2,90: correios-liberar-br.com",phishing,phishing,eval_overlap_near_duplicate,pt
+prize_premium,"Impots.gouv : vous avez droit à un remboursement de 346,20€. Confirmez votre RIB sur impots-remboursement-gouv.com",phishing,phishing,eval_overlap_near_duplicate,fr
+prize_premium,"Quiz SMS : Quelle est la capitale de l'Italie ? Répondez A Rome B Milan au 81212 et gagnez 10 000€ ! 1,50€/SMS",phishing,spam,disagreement,fr
+prize_premium,"Quiz: Wie viele Beine hat eine Spinne? Antwort an 88888 senden und 10.000€ gewinnen! 1,99€/SMS",phishing,spam,disagreement,de
+prize_premium,May crush sa'yo! 😍 Text WHO send to 2929 para malaman kung sino. P15/text,phishing,spam,disagreement,tl
+prize_premium,شخص معجب بك! لمعرفة من هو أرسل WHO إلى 90909. 10 ريال/رسالة,phishing,spam,disagreement,ar
+government_toll,Linkt: Your toll of $7.52 is overdue. Pay today to avoid a $35 late fee: linkt-tolls-au.com,phishing,phishing,eval_overlap_near_duplicate,en
+government_toll,Social Security Administration: Your SSN has been suspended due to suspicious activity. Call 1-888-555-0190 to reactivate.,phishing,phishing,eval_overlap_near_duplicate,en
+government_toll,"HMRC will never text you asking for personal or financial details or offering a tax refund. If you get a suspicious text, forward it to 60599.",ham,ham,eval_overlap_near_duplicate,en
+government_toll,Your myGov security code is 482913. Do not share this code with anyone.,ham,ham,eval_overlap_near_duplicate,en
+government_toll,USPS: Your package was delivered at 2:14 PM in or at the mailbox. Tracking 9400 1118 9922 3344 5566 77,ham,ham,eval_overlap_near_duplicate,en
+government_toll,"impots.gouv : Un remboursement de 418,30€ vous est dû. Confirmez vos coordonnées bancaires avant le 15/11 : impots-remboursement.com",phishing,phishing,eval_overlap_near_duplicate,fr
+government_toll,أبشر: رمز التحقق الخاص بك هو 583920. لا تشاركه مع أي شخص.,ham,ham,eval_overlap_near_duplicate,ar
+fintech_crypto,[Binance] Your account has been frozen due to suspicious activity. Verify now at binance-secure-xyz.com to restore access.,phishing,phishing,eval_overlap_near_duplicate,en
+fintech_crypto,PayPal: You sent $499.00 to Crypto LLC. If you did not authorise this payment call +1 (888) 402-7719 to dispute within 24 hours.,phishing,phishing,eval_overlap_near_duplicate,en
+fintech_crypto,"I turned $500 into $9,000 in one week with Coach Mike's signals. Join my private group before it closes: t.me/mikeprofits_vip",phishing,spam,disagreement,en
+fintech_crypto,Venmo: Your account has been limited. Confirm your identity within 24 hours to avoid permanent suspension: venmo-identity-check.com,phishing,phishing,eval_overlap_near_duplicate,en
+fintech_crypto,"I made $3,200 yesterday copying trades from Anna. She only accepts 10 more students. Message her: wa.me/447700912233",phishing,spam,disagreement,en
+fintech_crypto,"🔥 My mentor turned my $300 into $6,800 in 6 days. Guaranteed returns, no experience needed. DM ""PROFIT"" on Telegram @cryptoqueen_signals",phishing,spam,disagreement,en
+fintech_crypto,"Bitcoin mining investment: deposit $250, receive $2,500 in 7 days. 100% guaranteed by smart contract. Start: bit.ly/btc-7day",phishing,spam,disagreement,en
+fintech_crypto,"Hey! Did you see my post? I quit my job after Forex Academy taught me how to make $800/day. I'll show you for free, just text me on WhatsApp 📲 +1 (754) 221-9034",phishing,spam,disagreement,en
+fintech_crypto,Your Coinbase verification code is 482913. Never share this code with anyone. Coinbase will never ask for it.,ham,ham,eval_overlap_near_duplicate,en
+fintech_crypto,"Venmo: Jake Morrison paid you $25.00 for ""pizza 🍕""",ham,ham,eval_overlap_near_duplicate,en
+fintech_crypto,Chase: Did you attempt a $540.00 purchase at BestBuy.com with card ending 8120? Reply YES or NO.,ham,ham,eval_overlap_near_duplicate,en
+fintech_crypto,"Coinbase: A new device signed in to your account (Chrome on Windows, London). If this wasn't you, change your password at coinbase.com.",ham,ham,eval_overlap_near_duplicate,en
+fintech_crypto,"aus 500€ in einer woche 7.800€ gemacht 🚀 kein witz. komm in meine gruppe, nur noch 15 plätze: t.me/kryptogewinne_de",phishing,spam,disagreement,de
+fintech_crypto,Convertí 500 € en 9.000 € en una semana con las señales de Carlos. Quedan 10 plazas en el grupo: t.me/senalescripto_vip,phishing,spam,disagreement,es
+fintech_crypto,Tu código de verificación de Binance es 904127. No lo compartas con nadie.,ham,ham,eval_overlap_near_duplicate,es
+fintech_crypto,transformei 500 reais em 9 mil em uma semana com o robô do Lucas!! entra no grupo antes que feche: t.me/lucascripto_vip,phishing,spam,disagreement,pt
+fintech_crypto,Seu código de verificação Mercado Pago é 712034. Não compartilhe com ninguém.,ham,ham,eval_overlap_near_duplicate,pt
+fintech_crypto,J'ai transformé 500 € en 9 000 € en une semaine grâce aux signaux de Sophie 💶 Rejoins le groupe privé : t.me/sophietrading_vip,phishing,spam,disagreement,fr
+fintech_crypto,"Ho trasformato 500 € in 9.000 € in una settimana con i segnali di Giulia! Entra nel gruppo, ultimi 10 posti: t.me/giuliacrypto_vip",phishing,spam,disagreement,it
+fintech_crypto,"5.000 TL'yi bir haftada 90.000 TL yaptım 🚀 Ahmet hocanın grubuna gir, son 20 kişi: t.me/ahmetkripto_vip",phishing,spam,disagreement,tr
+fintech_crypto,"Я превратил 50 000 ₽ в 900 000 ₽ за неделю с сигналами Дмитрия 🚀 Вступай в закрытый чат, осталось 10 мест: t.me/dmitry_crypto_vip",phishing,spam,disagreement,ru
+fintech_crypto,Код подтверждения Binance: 710284. Никому не сообщайте его.,ham,ham,eval_overlap_near_duplicate,ru
+fintech_crypto,"حولت 2000 ريال إلى 36,000 في أسبوع واحد مع إشارات أبو فهد 🚀 انضم للمجموعة الخاصة قبل الإغلاق: t.me/abufahad_crypto",phishing,spam,disagreement,ar
+fintech_crypto,رمز التحقق الخاص بك في Binance هو 338920. لا تشاركه مع أي شخص.,ham,ham,eval_overlap_near_duplicate,ar
+fintech_crypto,"मैंने ₹10,000 को एक हफ्ते में ₹1,80,000 बना दिया 🚀 विकास सर के ग्रुप में जुड़ो, सिर्फ 15 सीट बाकी: t.me/vikas_crypto_vip",phishing,spam,disagreement,hi
+fintech_crypto,"Saya ubah Rp 2 juta jadi Rp 36 juta dalam seminggu dengan sinyal Pak Budi 🚀 Gabung grup VIP, sisa 10 slot: t.me/budicrypto_vip",phishing,spam,disagreement,id
+fintech_crypto,5万円を1週間で90万円にしました🚀 佐藤先生のグループに参加、残り10名: t.me/sato_crypto_vip,phishing,spam,disagreement,ja
+fintech_crypto,我用5000元一周赚了9万 🚀 加入王老师的VIP群，仅剩10个名额：t.me/wanglaoshi_vip,phishing,spam,disagreement,zh
+fintech_crypto,"50만원을 일주일 만에 900만원으로 만들었어요 🚀 박대표 VIP 리딩방 참여, 10자리 남음: t.me/parkcrypto_vip",phishing,spam,disagreement,ko
+fintech_crypto,"Em biến 10 triệu thành 180 triệu trong 1 tuần nhờ thầy Tuấn 🚀 Vào nhóm VIP, còn 10 chỗ: t.me/thaytuan_crypto",phishing,spam,disagreement,vi
+fintech_crypto,"Ginawa kong ₱90,000 ang ₱5,000 ko sa isang linggo 🚀 Sali sa VIP group ni Coach Jun, 10 slots na lang: t.me/coachjun_crypto",phishing,spam,disagreement,tl
+delivery,"DHL: Your parcel is arriving, track here:",phishing,unsure,disagreement,en
+delivery,"Yodel: good news, your parcel is nearly with you. Track it live here:",phishing,ham,disagreement,en
+delivery,DHL: your shipment 4582 1190 7723 is out for delivery today between 10:00-14:00. Track at dhl.com/track,ham,ham,eval_overlap_near_duplicate,en
+delivery,"Correos Express: tu paquete 7742 llega hoy, síguelo aquí:",phishing,ham,disagreement,es
+delivery,Chronopost : votre colis XY123456789FR sera livré aujourd'hui entre 9h et 12h. Suivi sur chronopost.fr,ham,ham,eval_overlap_near_duplicate,fr
+delivery,ヤマト運輸：お荷物のお届け予定をお知らせします。詳細はこちら：,phishing,ham,disagreement,ja
+delivery,JNE: Kurir tidak dapat menemukan alamat. Hubungi kurir via WhatsApp 0812-3344-5566,phishing,ham,disagreement,id
+delivery,Sendy: Dereva hakukupata. Tuma WhatsApp 0712 334 556 kupanga tena,phishing,ham,disagreement,sw
+jobs,"Congratulations! You've been selected for a remote data-entry position at Amazon. $450/day, 2-3 hrs. Join our onboarding group: t.me/amz_hr_onboard7",phishing,phishing,eval_overlap_near_duplicate,en
+jobs,We are looking for a trusted individual to receive payments on behalf of our company and forward them. Keep 10% commission. No fees. Email ops.ledgerpay@gmail.com,phishing,spam,disagreement,en
+jobs,"Youtube Likes Job: 3 USD per like, 150+/day guaranteed, salary paid every evening via PayPal. Message supervisor Lina on Telegram @LinaTaskHR",phishing,spam,disagreement,en
+jobs,"We are hiring a Logistics Coordinator to receive and inspect electronics at your home address. $2,500/mo + bonuses. Fill out the form: reship-logistics.top/form",phishing,spam,disagreement,en
+jobs,"Wir suchen eine zuverlässige Person in Deutschland, die Zahlungen unserer Kunden empfängt und weiterleitet. 10 % Provision. Keine Erfahrung nötig. Antworten Sie mit JA",phishing,spam,disagreement,de
+jobs,"Kerja paruh waktu TikTok Shop: like video, dapat Rp 300rb–2jt per hari, cair hari itu juga. Balas 1 untuk mulai",phishing,spam,disagreement,id
+jobs,Kami mencari orang terpercaya untuk menerima pembayaran klien perusahaan kami dan meneruskannya. Komisi 10%. Tanpa pengalaman. WA 0812-7788-2309,phishing,spam,disagreement,id
+jobs,نبحث عن شخص موثوق لاستلام مدفوعات عملائنا في حسابه وتحويلها لنا. عمولة 10%. بدون خبرة. واتساب +971 50 882 1190,phishing,spam,disagreement,ar
+jobs,当社顧客からの入金を受け取り、転送していただける方を募集。報酬は入金額の10%。経験不問。LINE ID: fin_agent_jp,phishing,spam,disagreement,ja
+jobs,저희 회사 고객 결제금을 대신 수령 후 송금해주실 분 모집. 수수료 10% 지급. 경험 무관. 카톡 ID: finagent_kr,phishing,spam,disagreement,ko
+jobs,Ищем надёжного человека для приёма платежей от наших клиентов на карту с последующим переводом. 10% ваши. Опыт не нужен. Пишите в Telegram @fin_agent_ru,phishing,spam,disagreement,ru
+jobs,"Earn $2,000 a week from home. No experience needed, start today. Info: wfh-income-now.com",spam,spam,eval_overlap_near_duplicate,en
+jobs,Your Glassdoor verification code is 905 118,ham,ham,eval_overlap_near_duplicate,en

@@ -52,7 +52,7 @@ DECISIONS = LABELS + (REMOVE, "unsure")
 
 def sources_for(version):
     """Fixed sources plus every synthetic_v<version>_*.csv in the curated directory."""
-    extra = sorted(CURATED_DIR.glob(f"synthetic_v{version}_*.csv"))
+    extra = sorted(p for p in CURATED_DIR.glob(f"synthetic_v{version}_*.csv") if not p.stem.endswith("_dropped"))
     return FIXED_SOURCES + [(p, p.stem.replace(f"synthetic_v{version}_", "gen_")) for p in extra]
 
 

@@ -1,0 +1,62 @@
+{
+  "version": "2.12",
+  "source_rows": 176933,
+  "train_rows": 160050,
+  "heldout_rows": 6538,
+  "train_labels": {
+    "spam": 26419,
+    "ham": 65791,
+    "phishing": 67840
+  },
+  "train_sources": {
+    "corpus": 123319,
+    "legit_notices": 13863,
+    "notice_twins": 9947,
+    "archetypes": 3514,
+    "synthetic_fable5": 1266,
+    "notice_pairs": 982,
+    "gen_legit_en": 381,
+    "gen_conversational_multi": 374,
+    "gen_linkfree_en": 373,
+    "gen_legit_south_asia_africa": 371,
+    "gen_conversational_en": 369,
+    "gen_lures_latin": 367,
+    "gen_lures_nonlatin": 367,
+    "gen_spam_en": 365,
+    "gen_delivery": 360,
+    "gen_spam_multi": 357,
+    "gen_legit_west_europe": 355,
+    "gen_wrong_number": 355,
+    "gen_legit_east_asia": 351,
+    "gen_jobs": 350,
+    "gen_linkfree_multi": 349,
+    "gen_legit_ar_tr_ru_pl_el": 344,
+    "gen_government_toll": 343,
+    "gen_fintech_crypto": 340,
+    "gen_codes_alerts": 332,
+    "gen_prize_premium": 329,
+    "probe": 27
+  },
+  "label_changes": 27430,
+  "change_flows": {
+    "spam->phishing": 16727,
+    "spam->remove": 4648,
+    "phishing->spam": 2536,
+    "phishing->ham": 1963,
+    "spam->ham": 995,
+    "ham->spam": 370,
+    "ham->remove": 94,
+    "phishing->remove": 54,
+    "ham->phishing": 43
+  },
+  "review_decisions": 12052,
+  "flagged_clusters": 12052,
+  "counts": {
+    "excluded_exact_or_shape": 2270,
+    "excluded_near_duplicate": 3279,
+    "kept": 147292,
+    "removed": 4796,
+    "review": 12659,
+    "rule": 16982
+  }
+}

@@ -1,0 +1,345 @@
+text,label,category,language
+عميلنا العزيز، فاتورتك من stc لشهر أكتوبر بقيمة 287.50 ر.س. آخر موعد للسداد 25/11. ادفع عبر تطبيق mystc أو stc.com.sa,ham,telecom_bill_notice,ar
+اتصالات من e&: فاتورتك لشهر نوفمبر 345.00 درهم. تاريخ الاستحقاق 20/11. ادفع عبر تطبيق My e& أو etisalat.ae,ham,telecom_bill_notice,ar
+du: تم تجديد باقة بيانات 10GB بنجاح. الرصيد المتبقي 12.40 درهم. لإدارة باقاتك du.ae,ham,telecom_package_renewed,ar
+زين: تم استلام دفعتك بقيمة 150 ر.س. شكراً لك. رصيدك الحالي 150.00 ر.س,ham,telecom_payment_received,ar
+موبايلي: استهلكت 80% من باقة الإنترنت. لتجديد الباقة أو شراء إضافية اتصل بـ 1100 أو عبر mobily.com.sa,ham,telecom_data_usage,ar
+Ooredoo: رصيدك الحالي 23.5 ر.ق. صلاحية الرصيد حتى 14/12/2026. لإعادة الشحن اطلب *100#,ham,telecom_balance,ar
+اورنج مصر: استهلكت 1 جيجا من باقتك الشهرية وباقي 4 جيجا. اطلب #100* لمعرفة التفاصيل,ham,telecom_data_usage,ar
+فودافون مصر: تم تجديد باقة فليكس 200 بنجاح وخصم 110 ج.م من رصيدك. استمتع!,ham,telecom_package_renewed,ar
+"Emirates NBD: تم خصم 1,250.00 درهم من بطاقتك المنتهية بـ 4417 لدى CARREFOUR MOE بتاريخ 11/11 14:32. إن لم تقم بهذه العملية اتصل على 600540000",ham,bank_transaction_alert,ar
+"مصرف الراجحي: تم إيداع راتب بمبلغ 9,500.00 ر.س في حسابك المنتهي بـ 8821. الرصيد المتاح 14,230.15 ر.س",ham,bank_salary_credit,ar
+QNB: عملية شراء بمبلغ 320.00 ر.ق من TALABAT على بطاقتك المنتهية بـ 2290 بتاريخ 11/11 20:15. للاستفسار اتصل 44407777,ham,bank_transaction_alert,ar
+"CIB: تم سحب نقدي بمبلغ 2000 ج.م من ماكينة ATM مدينة نصر بالبطاقة المنتهية 5512. رصيدك المتاح 8,450.60 ج.م. للاستفسار 19666",ham,bank_transaction_alert,ar
+أرامكس: شحنتك 4471 2201 998 خرجت للتوصيل اليوم. سيتصل بك المندوب قبل الوصول. للتتبع aramex.com,ham,parcel_out_for_delivery,ar
+SMSA: شحنتك رقم 290011887654 وصلت فرع الرياض - العليا. يرجى الاستلام خلال 5 أيام. للتتبع smsaexpress.com,ham,parcel_ready_pickup,ar
+نون: تم شحن طلبك NSAB40022987. التوصيل المتوقع غداً بين 10 ص و6 م. تابع طلبك من التطبيق,ham,order_shipped,ar
+طلبات: الكابتن محمد استلم طلبك من البيك وراح يوصل بعد 12 دقيقة تقريباً 🛵,ham,food_delivery_update,ar
+كريم: وصل الكابتن أحمد. تويوتا كامري بيضاء، لوحة ر ن ب 4452,ham,ride_arrived,ar
+سالك: تم خصم 4 دراهم لمرور مركبتك عبر بوابة البرشاء بتاريخ 11/11 08:42. الرصيد المتبقي 36 درهم. salik.ae,ham,toll_deduction,ar
+فوري: تم سداد فاتورة الكهرباء رقم 3302145 بمبلغ 412.50 ج.م بنجاح. رقم العملية 88213340. شكراً لاستخدامك فوري,ham,payment_confirmation,ar
+أبشر: تم تجديد رخصة القيادة الخاصة بك بنجاح. الرخصة سارية حتى 14/11/2031. absher.sa,ham,government_notice,ar
+شرطة دبي: تم تسجيل مخالفة مرورية على المركبة رقم N 44521 بقيمة 400 درهم بتاريخ 10/11/2026. للاستعلام والسداد dubaipolice.gov.ae,ham,traffic_fine_notice,ar
+بنك الإمارات دبي الوطني لن يطلب منك أبداً رقم البطاقة أو كلمة المرور أو رمز OTP عبر الهاتف أو الرسائل. لا تشارك بياناتك مع أحد. للإبلاغ 600540000,ham,bank_scam_warning,ar
+"تنبيه من الراجحي: عملية مشبوهة بمبلغ 3,400 ر.س على بطاقتك المنتهية بـ 7731. هل قمت بهذه العملية؟ رد بـ نعم أو لا",ham,bank_fraud_alert_reply,ar
+رمز أبشر: 553201. لا تشارك هذا الرمز مع أي شخص.,ham,government_otp,ar
+زين الأردن: تم تعبئة رصيدك بـ 5 دنانير. رصيدك الحالي 7.350 دينار. شكراً لاختيارك زين,ham,telecom_topup,ar
+أورنج الأردن: فاتورتك لشهر 10 بقيمة 18.750 دينار. آخر موعد للدفع 25/11. ادفع من تطبيق Orange أو orange.jo,ham,telecom_bill_notice,ar
+اتصالات المغرب: تم شحن رصيدك بـ 50 درهم. رصيدك الحالي 63.20 درهم صالح إلى 11/12/2026. iam.ma,ham,telecom_topup,ar
+Ooredoo تونس: رصيدك 4.850 د.ت. باقة الإنترنت 5 جيغا تنتهي يوم 20/11. للتجديد *111#,ham,telecom_balance,ar
+Ooredoo الجزائر: تم تفعيل عرض Haya 1000. لديك 20 جيغا إنترنت صالحة 30 يوما. التفاصيل على ooredoo.dz,ham,telecom_package_activated,ar
+فوري: كود الدفع 9183 4421 02. ادفع 350 ج.م في أي منفذ فوري قبل 13/11 لإتمام طلبك,ham,payment_code,ar
+"stc pay: تم تحويل 500 ر.س إلى محمد ع*** بنجاح. رقم المرجع 7781920034. رصيدك 1,240.50 ر.س",ham,wallet_transfer_confirmation,ar
+موعدك في مركز صحي العزيزية يوم الثلاثاء 18/11 الساعة 9:30 ص. يرجى الحضور قبل الموعد بـ 15 دقيقة. وزارة الصحة,ham,medical_appointment,ar
+اتصالات: استهلكت 90% من بيانات باقتك. اطلب باقة إضافية بالرد بـ DATA أو من تطبيق My e&,ham,telecom_data_usage,ar
+du: تم استلام دفعتك بقيمة 250 درهم. شكراً لك. فاتورتك القادمة بتاريخ 05/12,ham,telecom_payment_received,ar
+شرطة دبي: شكراً لك، تم سداد المخالفة رقم 2026-55-889211 بمبلغ 600 درهم. رقم الإيصال DP-7741203,ham,fine_payment_receipt,ar
+أرامكس: شحنتك 2201 334 112 تخضع لرسوم جمركية بقيمة 42 ر.س. يمكن السداد عند التسليم أو مسبقاً عبر aramex.com,ham,parcel_customs_notice,ar
+نون: تم استرجاع 189.00 ر.س إلى بطاقتك المنتهية بـ 3310 لطلبك NSAB39921100. قد يستغرق ظهور المبلغ 5-7 أيام عمل,ham,refund_notice,ar
+طلبات: طلبك #TLB-88291 تم تسليمه. بالعافية! قيّم تجربتك من التطبيق,ham,food_delivered,ar
+كريم: تم خصم 28.50 درهم لرحلتك من مول الإمارات إلى المارينا. الفاتورة متوفرة في التطبيق,ham,ride_receipt,ar
+سالك: رصيدك منخفض (8 دراهم). يرجى إعادة الشحن عبر salik.ae أو التطبيق لتجنب الغرامة,ham,toll_low_balance,ar
+"فودافون كاش: استلمت 500 ج.م من 0100****221. رصيدك الحالي 1,320.75 ج.م. رقم العملية 44120983",ham,wallet_received,ar
+اورنج مصر: الفاتورة بتاعتك لشهر 10 بقيمة 265 ج.م. آخر موعد للدفع 15/11. ادفع من تطبيق My Orange أو orange.eg,ham,telecom_bill_notice,ar
+"ya 3ammar el code wasalni men el bank, 7awelt el flous, shouf 7esabak w 2olli",ham,friend_money_transfer_arabizi,ar
+يا زلمة وصلتني رسالة من البنك إنه الراتب نزل اليوم، بشوفك بعد الدوام بالكافيه,ham,friend_chat,ar
+زين: تم تفعيل خدمة 5G على رقمك مجاناً. استمتع بسرعات أعلى في مناطق تغطية 5G,ham,telecom_service_activated,ar
+QNB: رمز الدخول لتطبيق QNB Mobile هو 771209. صالح لمدة 5 دقائق. لا تشاركه مع أحد,ham,bank_otp,ar
+"CIB: الرقم السري لمرة واحدة لعملية شراء بقيمة 1,499 ج.م من Jumia هو 304817. لا تشارك هذا الرقم مع أي شخص حتى لو كان موظف بنك",ham,bank_otp,ar
+"Emirates NBD: تم تنفيذ تحويل بمبلغ 2,000 درهم إلى حساب خارجي. المرجع FT26315XK. إن لم تكن أنت من قام بذلك اتصل فوراً 600540000",ham,bank_transfer_alert,ar
+أبشر: المنصة لا ترسل روابط عبر الرسائل النصية ولا تطلب بيانات الدخول. تجاهل أي رسالة من هذا النوع وبلّغ عنها عبر تطبيق كلنا أمن,ham,government_scam_warning,ar
+stc: لن نطلب منك رمز التحقق أو بيانات بطاقتك عبر الهاتف أو الرسائل. تجاهل أي رسالة تطلب ذلك وبلّغ عنها على 900,ham,telecom_scam_warning,ar
+موبايلي: أهلاً بك في تركيا. أسعار التجوال: المكالمات 2.5 ر.س/دقيقة والبيانات 1 ر.س/MB. لتفعيل باقة تجوال أرسل R إلى 1100,ham,telecom_roaming_welcome,ar
+سمسا: تم تسليم شحنتك 290011887654 إلى المستلم بتاريخ 11/11 15:20. شكراً لاستخدامك سمسا,ham,parcel_delivered,ar
+مصلحة الأحوال المدنية: موعدك لاستلام بطاقة الرقم القومي يوم الأحد 16/11 الساعة 11 ص بالسجل المدني مصر الجديدة. يرجى إحضار الإيصال,ham,government_appointment,ar
+Careem Pay: تم إيداع 50 درهم في محفظتك كرصيد مرتجع لرحلتك الملغاة,ham,wallet_refund,ar
+طلبات: تحديث من المطعم - صنف غير متوفر وتم استبداله حسب اختيارك. طلبك في الطريق,ham,food_order_update,ar
+اتصالات: استلمنا طلبك لنقل الرقم. سيتم التفعيل خلال 24 ساعة. للاستفسار اتصل 101,ham,telecom_port_request,ar
+Ooredoo قطر: فاتورة ما بعد الدفع لشهر أكتوبر 215 ر.ق. موعد الاستحقاق 27/11. ادفع من تطبيق Ooredoo أو ooredoo.qa,ham,telecom_bill_notice,ar
+شرطة دبي: تم استلام بلاغك رقم 118-2026-77421 وتحويله للجهة المختصة. سيتم التواصل معكم. للمتابعة اتصل 901,ham,police_report_ack,ar
+الراجحي: تم تحديث رقم الجوال المرتبط بحسابك بنجاح. إن لم تقم بهذا التغيير اتصل فوراً على 920003344,ham,bank_profile_change_alert,ar
+نون: رمز التحقق 2290. لا تشاركه مع أحد.,ham,ecommerce_otp,ar
+كريم: كود التحقق الخاص بك هو 8812,ham,app_otp,ar
+وزارة الداخلية - أبشر: تم تجديد الإقامة للمكفول عبدالرحمن م. حتى 03/2028. يمكن طباعة الوثيقة من absher.sa,ham,government_notice,ar
+زين: تم خصم 50 ر.س لتجديد باقة شباب. الباقة سارية حتى 11/12. للتفاصيل اطلب *141#,ham,telecom_package_renewed,ar
+فودافون مصر: فاتورتك عن شهر أكتوبر 310.00 ج.م. ادفع قبل 22/11 من تطبيق أنا فودافون أو vodafone.com.eg,ham,telecom_bill_notice,ar
+SMSA: الشحنة 290011990012 قيد التوصيل. المندوب فهد سيصل خلال ساعتين. إن لم تكن بالمنزل رد بـ 2 لإعادة الجدولة,ham,parcel_out_for_delivery,ar
+Fawry: Fawry 7awel 200 geneh l ma7fazet Vodafone Cash beta3tak. Ra2am el 3amaleya 55120093,ham,payment_confirmation_arabizi,ar
+هيئة الطرق والمواصلات: تم تجديد تسجيل مركبتك V 55421 بنجاح. بطاقة الملكية الجديدة سترسل عبر أرامكس خلال 3 أيام عمل,ham,government_notice,ar
+QNB: البنك لا يتصل بالعملاء لطلب رقم البطاقة أو الرقم السري أو رمز OTP. إذا تلقيت مثل هذه المكالمة أنهها فوراً وأبلغنا على 44407777,ham,bank_scam_warning,ar
+"CIB: اعتباراً من 1/12 سيتم تطبيق الحد اليومي الجديد للسحب من ATM وهو 30,000 ج.م. للاستفسار 19666",ham,bank_service_notice,ar
+ديوا: تم إصدار فاتورة الكهرباء والمياه لشهر أكتوبر بقيمة 612.40 درهم. الاستحقاق 28/11. ادفع عبر dewa.gov.ae,ham,utility_bill_notice,ar
+"Turkcell: Kasim ayi faturaniz 349,90 TL olarak olusmustur. Son odeme tarihi 25.11.2026. Odemek icin Turkcell uygulamasi veya turkcell.com.tr",ham,telecom_bill_notice,tr
+"Vodafone: Ekim faturanız 285,50 TL. Son ödeme tarihi 20 Kasım. Vodafone Yanımda uygulamasından veya vodafone.com.tr adresinden ödeyebilirsiniz.",ham,telecom_bill_notice,tr
+Türk Telekom: İnternet paketinizin %80'ini kullandınız. Ek paket almak için EKPAKET yazıp 5555'e gönderin veya turktelekom.com.tr,ham,telecom_data_usage,tr
+"Garanti BBVA: 4417 ile biten kartinizdan 11/11 14:32'de MIGROS'ta 486,75 TL harcama yapildi. Kullanilabilir limit 12.350,00 TL",ham,bank_transaction_alert,tr
+"Ziraat Bankasi: Hesabiniza 18.750,00 TL maas odemesi yapilmistir. Bakiyeniz 21.204,15 TL",ham,bank_salary_credit,tr
+"Is Bankasi: Internet subesi giris sifreniz 384201. Sifrenizi kimseyle paylasmayin, bankamiz sifrenizi asla sormaz.",ham,bank_otp,tr
+"Akbank: 2290 ile biten kartinizla 3.200 TL'lik islem denemesi tespit edildi. Islemi siz yaptiysaniz EVET, yapmadiysaniz HAYIR yazip bu mesaja yanit verin.",ham,bank_fraud_alert_reply,tr
+"Yapi Kredi: Kredi karti ekstreniz olustu. Donem borcu 4.812,30 TL, asgari odeme 1.924,92 TL, son odeme 18.11.2026. Detaylar Yapi Kredi Mobil'de",ham,credit_card_statement,tr
+Trendyol: Siparişiniz (No: 10234455678) kargoya verildi. Yurtiçi Kargo takip no: 1234567890123. Trendyol uygulamasından takip edebilirsiniz.,ham,order_shipped,tr
+Hepsiburada: 2211334455 numarali siparisiniz teslim edildi. Keyifli kullanimlar! Urunu degerlendirmek icin hepsiburada.com,ham,order_delivered,tr
+YURTICI KARGO: 7781234567890 nolu gonderiniz dagitima cikti. Kuryemiz bugun 12:00-18:00 arasi adresinizde olacaktir. yurticikargo.com,ham,parcel_out_for_delivery,tr
+Aras Kargo: 3345566778 takip numarali gonderiniz Kadikoy subemize ulasti. 3 is gunu icinde teslim alabilirsiniz. araskargo.com.tr,ham,parcel_ready_pickup,tr
+PTT: RR123456789TR barkodlu kayitli gonderiniz adresinize teslim edilememistir. Besiktas PTT Merkezi'nden 7 gun icinde teslim alabilirsiniz. ptt.gov.tr,ham,parcel_missed_delivery,tr
+e-Devlet Kapısı doğrulama kodunuz: 442190. Kodu kimseyle paylaşmayınız. turkiye.gov.tr,ham,government_otp,tr
+BiP dogrulama kodunuz: 118-204,ham,app_otp,tr
+Getir: Siparişin yola çıktı! Kuryemiz Emre yaklaşık 9 dakika içinde kapında olacak 🛵,ham,food_delivery_update,tr
+"Ziraat Bankasi: Bankamiz hicbir zaman SMS veya telefonla sifre, kart bilgisi ya da tek kullanimlik kod talep etmez. Boyle bir talep alirsaniz 0850 220 00 00'i arayin.",ham,bank_scam_warning,tr
+MHRS: 18.11.2026 09:40 tarihli Kadikoy Devlet Hastanesi Dahiliye randevunuz olusturulmustur. Iptal icin ALO 182 veya mhrs.gov.tr,ham,medical_appointment,tr
+"Turkcell: 500 TL yukleme basariyla gerceklesti. Guncel bakiyeniz 512,40 TL. Iyi gunlerde kullanin.",ham,telecom_topup,tr
+"Vodafone: Yurt disi kullanim bildirimi - Almanya'da hos geldiniz! Pasaport tarifeniz aktif, gunluk 149 TL ile 2 GB. Detay: vodafone.com.tr",ham,telecom_roaming_welcome,tr
+"Türk Telekom: Ödemeniz için teşekkürler. 310,00 TL tutarındaki faturanız 11.11.2026 tarihinde tahsil edilmiştir.",ham,telecom_payment_received,tr
+Garanti BBVA: Internet bankaciligi girisiniz 11.11.2026 21:04'te yapildi. Siz degilseniz 444 0 333'u arayin.,ham,bank_login_alert,tr
+"Is Bankasi: 8821 ile biten hesabiniza 2.400,00 TL FAST ile gelen transfer. Gonderen: AYSE K. Bakiye 6.112,80 TL",ham,bank_incoming_transfer,tr
+"Akbank: Kredi karti borcunuz 2.150,00 TL, son odeme tarihi 15.11.2026. Odemenizi Akbank Mobil'den yapabilirsiniz.",ham,credit_card_due_reminder,tr
+"Yapi Kredi: 7731 ile biten kartinizla 11/11 09:12'de internet uzerinden 1.299,00 TL TRENDYOL odemesi yapildi. Siz degilseniz 444 0 444",ham,bank_transaction_alert,tr
+Trendyol: Siparişiniz teslim edildi. İade etmek isterseniz 14 gün içinde Siparişlerim sayfasından talep oluşturabilirsiniz.,ham,order_delivered,tr
+"Hepsiburada: 1.499,00 TL tutarindaki iadeniz 5512 ile biten kartiniza aktarildi. Bankaniza gore 2-7 is gunu icinde yansir.",ham,refund_notice,tr
+"Yurtici Kargo: Gonderiniz 7781234567890 teslim edildi. Teslim alan: A. YILMAZ, 11.11.2026 15:40. Bizi tercih ettiginiz icin tesekkurler.",ham,parcel_delivered,tr
+Aras Kargo: Kuryemiz adresinizde sizi bulamadi. Gonderiniz yarin tekrar dagitima cikacaktir. Farkli bir gun icin 444 25 52,ham,parcel_missed_delivery,tr
+PTT: Pasaportunuz kargoya verilmistir. Takip no: PT123456789TR. Tahmini teslim 2 is gunu. ptt.gov.tr,ham,government_document_shipped,tr
+e-Devlet: 34 ABC 123 plakali aracinizin muayene tarihi 30.11.2026'da sona eriyor. Randevu icin tuvturk.com.tr,ham,vehicle_inspection_reminder,tr
+Getir: Siparişin teslim edildi. Afiyet olsun! Kuryeni değerlendirmek için uygulamayı aç.,ham,food_delivered,tr
+Turkcell: Faturaniza itiraziniz 11.11.2026 tarihinde alindi. Talep no: 2026111144521. 7 is gunu icinde sonuclandirilacaktir.,ham,telecom_complaint_ack,tr
+Vodafone: Hat tasima talebiniz onaylandi. Numaraniz 13.11.2026 saat 02:00'den itibaren Vodafone'da aktif olacaktir. Hos geldiniz!,ham,telecom_port_request,tr
+Türk Telekom: Hattınızın adres bilgisi güncellendi. İşlemi siz yapmadıysanız 444 1 444'ü arayın.,ham,telecom_profile_change_alert,tr
+"Garanti BBVA: Bonus kartiniza 11/11 tarihli alisverisinizden 48,60 TL bonus kazandiniz. Toplam bonusunuz 212,30 TL",ham,card_rewards_notice,tr
+"Ziraat Bankasi: 4417 ile biten kartinizla ATM'den 2.000 TL nakit cekim yapildi. 11.11.2026 18:22. Bakiye 3.410,50 TL",ham,bank_transaction_alert,tr
+Is Bankasi: Kredi karti son odeme tarihiniz 3 gun sonra (14.11). Asgari tutar 1.080 TL. IsCep'ten odeyebilirsiniz.,ham,credit_card_due_reminder,tr
+"Akbank: Tek kullanimlik sifreniz 905512. 29,90 TL tutarindaki NETFLIX islemi icin gecerlidir. Kimseyle paylasmayin.",ham,bank_otp,tr
+"Yapi Kredi: Bankamiz adina arayip kart bilgisi, sifre veya SMS kodu isteyen kisilere itibar etmeyin. Supheli durumlarda 444 0 444'u arayin.",ham,bank_scam_warning,tr
+"Trendyol: Kuryemiz siparişinizle adresinize yaklaşıyor, lütfen telefonunuzu açık tutun.",ham,parcel_out_for_delivery,tr
+"Hepsiburada: HepsiJet kuryeniz Mehmet, 4455667788 nolu siparisinizi bugun 14:00-17:00 arasi teslim edecek.",ham,parcel_out_for_delivery,tr
+PTT: Ptt Kargo gonderiniz 1234567890123 Ankara Transfer Merkezi'nden cikis yapti. Tahmini teslim 13.11.2026,ham,parcel_in_transit,tr
+e-Devlet: Adres degisikligi bildiriminiz Nüfus Müdürlüğü tarafından onaylanmıştır. Yeni adresiniz 11.11.2026 itibarıyla gecerlidir.,ham,government_notice,tr
+"BiP: Hesabiniz yeni bir cihazda acildi (iPhone, Istanbul). Siz degilseniz BiP ayarlarindan oturumu kapatin.",ham,app_login_alert,tr
+"Getir: Siparişindeki 1 ürün stokta kalmadı, tutarı (34,50 TL) kartına iade edildi. Kalan ürünler yolda.",ham,food_order_update,tr
+"Turkcell: Hattiniz icin 10 GB ek internet paketi tanimlandi. 29,90 TL faturaniza yansitilacaktir. Kullanim: *123#",ham,telecom_package_activated,tr
+Vodafone: Hattiniz yurt disinda kullanimda. Sim kartiniz sizde degilse 0850 542 0542'yi arayin.,ham,telecom_security_alert,tr
+SGK: 2026 Ekim donemi emekli maasiniz 11.11.2026 tarihinde Ziraat Bankasi hesabiniza yatirilmistir.,ham,government_payment_notice,tr
+Garanti BBVA: Hesap ozetiniz hazir. Garanti BBVA Mobil > Hesaplarim bolumunden inceleyebilirsiniz.,ham,bank_statement_ready,tr
+Ziraat Bankasi: Mobil bankacilik girisi icin dogrulama kodunuz 772091. Bu kodu kimseyle paylasmayin.,ham,bank_otp,tr
+"Is Bankasi: 11.11.2026 tarihli 850,00 TL tutarindaki otomatik fatura odemeniz (IGDAS) gerceklesti.",ham,autopay_notice,tr
+Akbank: Kartiniz guvenlik nedeniyle gecici olarak kullanima kapatildi. Tekrar acmak icin 444 25 25'i arayin ya da Akbank Mobil'den islem yapin.,ham,card_blocked_official_number,tr
+"Yapi Kredi: World karti ekstreniz 25.11'de kesilecek. Guncel donem harcamaniz 3.120,45 TL",ham,credit_card_statement,tr
+Trendyol: Değerlendirmen için teşekkürler! Yorumun yayınlandı ve 10 TL Trendyol puanı hesabına tanımlandı.,ham,review_thanks,tr
+Yurtiçi Kargo: 7781234567899 nolu gönderiniz için teslimat günü 13.11 olarak güncellendi. yurticikargo.com,ham,parcel_rescheduled,tr
+Aras Kargo: Teslimat kodunuz 4471. Kuryemize bu kodu soyleyerek gonderinizi teslim alabilirsiniz.,ham,parcel_delivery_code,tr
+PTT: Elektronik tebligat kodunuz 331204. Kodu kimseyle paylasmayiniz.,ham,government_otp,tr
+"e-Devlet: 2026 yili MTV 2. taksit son odeme tarihi 31.07 idi, borcunuz bulunmamaktadir. Bilgilendirme amaclidir.",ham,tax_info_notice,tr
+"Getir: Kuryen adresine ulaştı, kapıda bekliyor.",ham,food_delivery_update,tr
+Turkcell: Aradiginiz 0532 *** 44 21 numarali abone artik ulasilabilir durumda.,ham,telecom_callback_notice,tr
+Türk Telekom: Fiber internet kurulum randevunuz 14.11.2026 Cumartesi 10:00-13:00 arası planlandı. Teknisyenimiz sizi arayacaktır.,ham,installation_appointment,tr
+"Vodafone: Kasim faturaniz icin otomatik odeme talimatiniz 20.11'de 285,50 TL olarak calisacaktir.",ham,autopay_notice,tr
+Garanti BBVA: Dolandiricilar bankamiz adina arayip 'guvenli hesaba' para transferi isteyebilir. Boyle bir hesap yoktur. Supheli aramalarda 444 0 333,ham,bank_scam_warning,tr
+"Hepsiburada: Hesabiniza yeni cihazdan giris yapildi (Android, Izmir). Siz degilseniz sifrenizi hepsiburada.com uzerinden degistirin.",ham,app_login_alert,tr
+"Ziraat Bankasi: Konut kredisi taksitiniz 7.250,00 TL 15.11.2026 tarihinde hesabinizdan tahsil edilecektir. Bakiyenizi kontrol ediniz.",ham,loan_installment_reminder,tr
+"Trendyol: Siparisiniz icin kargo firmasina teslim suresi uzadi, ozur dileriz. Yeni tahmini teslim 15.11",ham,order_delay_notice,tr
+"Akbank: 11/11 tarihli 186,50 TL BIM harcamaniz 4417 ile biten kartinizdan alindi.",ham,bank_transaction_alert,tr
+MHRS: Yarin 09:40'taki randevunuzu hatirlatiriz. Gelemeyecekseniz lutfen randevunuzu iptal edin. mhrs.gov.tr,ham,appointment_reminder,tr
+"Сбер: Покупка 1 250 р. PYATEROCHKA, карта *4417. Баланс 18 430,55 р.",ham,bank_transaction_alert,ru
+"Т-Банк: Никому не говорите код 4821, даже сотрудникам банка. Вход в приложение.",ham,bank_otp,ru
+"Альфа-Банк: Зачисление зарплаты 85 000 р. на счёт *8821. Доступно 112 340,20 р.",ham,bank_salary_credit,ru
+"ВТБ: Перевод 15 000 р. на карту *2290 выполнен. Остаток 4 120 р. Если это не вы, позвоните 1000",ham,bank_transfer_alert,ru
+МТС: Ваш счёт за октябрь 650 руб. Оплатите до 20.11 в приложении Мой МТС или на mts.ru,ham,telecom_bill_notice,ru
+"Билайн: Осталось 2,4 ГБ из 30 ГБ до 25.11. Подключить ещё: *105*22# или beeline.ru",ham,telecom_data_usage,ru
+"МегаФон: Платёж 500 р. зачислен. Баланс 612,30 р. Спасибо!",ham,telecom_topup,ru
+Tele2: Абонентская плата 450 р. списана. Следующее списание 11.12. Баланс 120 р. tele2.ru,ham,telecom_fee_charged,ru
+"Ozon: Заказ 1234567-0012 прибыл в пункт выдачи на ул. Ленина, 15. Заберите до 18.11. Код получения 4471",ham,parcel_ready_pickup,ru
+Wildberries: Ваш заказ доставлен в пункт выдачи. Код для получения 992 84. Храним 7 дней.,ham,parcel_ready_pickup,ru
+"Яндекс Go: Водитель Алексей подъезжает. Белая Kia Rio, А452МР 777",ham,ride_arrived,ru
+Почта России: Посылка RA123456789RU прибыла в отделение 101000. Заберите в течение 15 дней. Отслеживание: pochta.ru,ham,parcel_ready_pickup,ru
+"CDEK: Заказ 1498877211 доставлен в ПВЗ ул. Садовая, 10. Ждём вас до 20.11. cdek.ru",ham,parcel_ready_pickup,ru
+"Госуслуги: Вам начислен штраф ГИБДД 500 р., постановление 18810177260011223344. Скидка 50% при оплате до 30.11. Подробнее в личном кабинете gosuslugi.ru",ham,traffic_fine_notice,ru
+"Сбер: Сотрудники банка никогда не просят назвать код из СМС, данные карты или перевести деньги на «безопасный счёт». Если вам так звонят, положите трубку и позвоните 900.",ham,bank_scam_warning,ru
+Т-Банк: Подозрительная операция 24 900 р. ALIEXPRESS по карте *7731. Это вы? Ответьте ДА или НЕТ.,ham,bank_fraud_alert_reply,ru
+"Запись к врачу: 18.11 в 09:30, поликлиника №12, терапевт Иванова А.С. Отменить запись можно на gosuslugi.ru",ham,medical_appointment,ru
+"Сбер: Зачисление 3 500 р. от ЕЛЕНА П. на карту *8821. Баланс 21 930,55 р.",ham,bank_incoming_transfer,ru
+"Альфа-Банк: Вход в Альфа-Онлайн с нового устройства (Samsung, Москва) 11.11 21:04. Если это не вы, позвоните 8 800 200-00-00",ham,bank_login_alert,ru
+ВТБ: Карта *4417 заблокирована по вашему запросу. Для перевыпуска обратитесь в отделение или в ВТБ Онлайн.,ham,card_blocked_confirmation,ru
+"МТС: Спасибо за оплату! Платёж 650 р. зачислен, доступ к услугам восстановлен.",ham,telecom_payment_received,ru
+Билайн: Вы в Турции. Опция «Планета Zero» активна: 1 ГБ в день за 350 р. Отключить: *110*0#,ham,telecom_roaming_welcome,ru
+"МегаФон: Остаток минут 120 из 600, интернет 15,2 ГБ из 40 ГБ. Период до 03.12. Подробнее в приложении МегаФон",ham,telecom_usage_summary,ru
+Tele2: Ваш номер успешно перенесён в Tele2. Добро пожаловать! Тариф «Мой онлайн» активен.,ham,telecom_port_complete,ru
+Ozon: Курьер Дмитрий доставит заказ 1234567-0015 сегодня с 12:00 до 16:00. Будьте на связи.,ham,parcel_out_for_delivery,ru
+Wildberries: Возврат 2 490 р. за товар из заказа 55121199 одобрен. Деньги вернутся на карту *3310 в течение 3-5 дней.,ham,refund_notice,ru
+"Яндекс Маркет: Заказ 88211234 собран и передан в доставку. Привезём завтра, 13.11, с 10 до 14.",ham,order_shipped,ru
+"Почта России: Заказное письмо ZK123456789RU вручено адресату 11.11 в 14:20. Спасибо, что пользуетесь Почтой России.",ham,parcel_delivered,ru
+"CDEK: Курьер не смог доставить заказ 1498877233, вы не ответили на звонок. Повторная доставка завтра. Изменить дату: cdek.ru",ham,parcel_missed_delivery,ru
+"Госуслуги: Ваше заявление на замену водительского удостоверения принято. Запись в ГИБДД 20.11 в 10:00, окно 5.",ham,government_appointment,ru
+Госуслуги: Срок действия загранпаспорта истекает через 6 месяцев. Подать заявление на новый можно на gosuslugi.ru,ham,government_reminder,ru
+Т-Банк: Оплата 890 р. в YANDEX.TAXI с карты *2290. Доступно 14 320 р.,ham,bank_transaction_alert,ru
+Сбер: Код 55120 для входа в СберБанк Онлайн. Никому его не сообщайте.,ham,bank_otp,ru
+Альфа-Банк: Выписка по счёту за октябрь готова. Посмотреть в Альфа-Онлайн.,ham,bank_statement_ready,ru
+"ВТБ: Платёж по кредиту 12 450 р. будет списан 15.11. Проверьте, что на счёте достаточно средств.",ham,loan_installment_reminder,ru
+МТС: Ваш номер подключён к услуге «Запрет контента» бесплатно. Отключить: *152#,ham,telecom_service_activated,ru
+Билайн: Счёт за ноябрь сформирован: 890 р. Оплатить до 25.11 в приложении Билайн или на beeline.ru,ham,telecom_bill_notice,ru
+МегаФон: Код для входа в личный кабинет 7719. Не передавайте его третьим лицам.,ham,telecom_otp,ru
+Tele2: Ваше обращение №2026111144521 принято. Ответим в течение 24 часов.,ham,telecom_complaint_ack,ru
+"Ozon: Код для входа 8812. Не сообщайте его никому, в том числе сотрудникам Ozon.",ham,ecommerce_otp,ru
+"Wildberries: Пункт выдачи на ул. Мира, 7 временно не работает 12.11. Ваш заказ будет доступен с 13.11. Извините за неудобства.",ham,pickup_point_notice,ru
+Яндекс Еда: Заказ из «Вкусно - и точка» готовится. Курьер приедет примерно через 25 минут.,ham,food_delivery_update,ru
+Почта России: Посылка из Китая RB223344556CN прибыла в Россию и передана на таможенное оформление. pochta.ru,ham,parcel_in_transit,ru
+CDEK: Заказ 1498877244 принят к доставке. Ожидаемая дата прибытия в Казань 15.11.,ham,parcel_in_transit,ru
+"Госуслуги: Запись на приём в МФЦ подтверждена: 19.11, 14:30, ул. Тверская, 12, талон А-112.",ham,government_appointment,ru
+"Сбер: По карте *4417 операция 45 000 р. RUSSIAN RAILWAYS. Если это не вы, заблокируйте карту в СберБанк Онлайн или по номеру 900.",ham,bank_transaction_alert,ru
+Т-Банк: Мы никогда не звоним с просьбой перевести деньги или назвать код. Все звонки сотрудников только через чат в приложении.,ham,bank_scam_warning,ru
+Альфа-Банк: Кэшбэк за октябрь 1 240 р. зачислен на счёт *8821.,ham,card_rewards_notice,ru
+ВТБ: Код для подтверждения перевода 15 000 р. на карту *2290: 904471. Никому не сообщайте.,ham,bank_otp,ru
+МТС Банк: Пополнение 10 000 р. через СБП. Баланс 10 320 р.,ham,bank_incoming_transfer,ru
+"Билайн: Ваша SIM-карта активирована в новом устройстве. Если это не вы, обратитесь в салон Билайн с паспортом.",ham,telecom_security_alert,ru
+"МегаФон: Напоминаем, оплата по тарифу 650 р. будет списана 15.11. Пополните баланс, чтобы остаться на связи.",ham,telecom_payment_reminder,ru
+"Яндекс: Вход в аккаунт с нового устройства (Chrome, Санкт-Петербург). Это не вы? Смените пароль на passport.yandex.ru",ham,app_login_alert,ru
+Ozon: Товар из заказа 1234567-0018 задерживается на складе. Новая дата доставки 16.11. Приносим извинения.,ham,order_delay_notice,ru
+Wildberries: Заказ 55121233 передан в доставку. Ожидайте в пункте выдачи 13.11.,ham,order_shipped,ru
+Госуслуги: Налоговое уведомление за 2025 год размещено в вашем личном кабинете. Срок уплаты до 1 декабря.,ham,tax_notice,ru
+ФНС России: Напоминаем об уплате имущественных налогов до 01.12.2026. Сумма указана в уведомлении на nalog.gov.ru,ham,tax_notice,ru
+"Сбер: Автоплатёж МТС 650 р. выполнен с карты *4417. Баланс 17 780,55 р.",ham,autopay_notice,ru
+Почта России: Код для получения посылки RA123456789RU в отделении: 2290. Назовите его оператору.,ham,parcel_pickup_code,ru
+CDEK: Код для получения заказа 1498877211: 7731,ham,parcel_pickup_code,ru
+Т-Банк: Выписка по кредитной карте сформирована. Минимальный платёж 3 200 р. до 25.11.,ham,credit_card_statement,ru
+"Tele2: Пополните баланс на 100 р. до 13.11, иначе услуги связи будут приостановлены. Баланс сейчас 12 р.",ham,telecom_payment_reminder,ru
+МТС: Переадресация вызовов на номер +7 916 *** 44 21 подключена. Отключить: ##21#,ham,telecom_service_activated,ru
+Альфа-Банк: Мы не рассылаем ссылки для входа в банк. Заходите только через приложение или alfabank.ru,ham,bank_scam_warning,ru
+Ozon Банк: Покупка 356 р. OZON.RU с Ozon Карты. Баланс 4 890 р.,ham,bank_transaction_alert,ru
+"Яндекс Go: Поездка завершена. Стоимость 412 р., списано с карты *2290. Чек в приложении.",ham,ride_receipt,ru
+Госуслуги: Электронный больничный №910044556677 закрыт. Выплата поступит от СФР в течение 10 рабочих дней.,ham,government_payment_notice,ru
+ВТБ: Ваш платёж за ЖКУ 6 240 р. успешно проведён. Квитанция в ВТБ Онлайн.,ham,payment_confirmation,ru
+"PKO BP: Przelew przychodzacy 2 450,00 PLN od JAN K. na rachunek ...8821. Dostepne srodki: 5 120,33 PLN",ham,bank_incoming_transfer,pl
+"mBank: Kod autoryzacyjny do przelewu 1 200,00 PLN na rachunek 12 1140 ... 4417 to 482913. Nie podawaj go nikomu.",ham,bank_otp,pl
+"ING: Transakcja karta ...4417 na kwote 186,50 PLN w BIEDRONKA 11.11 14:32. Dostepne srodki 3 210,00 PLN",ham,bank_transaction_alert,pl
+Bank Pekao: Czy to Ty autoryzujesz transakcje 3 400 PLN karta ...7731 w ALLEGRO? Odpowiedz TAK lub NIE.,ham,bank_fraud_alert_reply,pl
+Santander: Twoje haslo do logowania w Santander mobile to 118204. Wazne 5 minut.,ham,bank_otp,pl
+"Orange: Twoja faktura za 10/2026 wynosi 89,99 zł, termin płatności 25.11.2026. Zapłać w Mój Orange lub na orange.pl",ham,telecom_bill_notice,pl
+"Play: Wykorzystales 80% pakietu danych. Dokup GB w aplikacji Play24 lub na play.pl. Pozdrawiamy, Play",ham,telecom_data_usage,pl
+"Plus: Dziekujemy za doladowanie 30 zl. Stan konta: 34,50 zl, wazne do 11.12.2026.",ham,telecom_topup,pl
+"T-Mobile: Faktura za listopad: 65,00 zł. Termin: 20.11. Szczegóły w Mój T-Mobile lub na t-mobile.pl",ham,telecom_bill_notice,pl
+InPost: Twoja paczka 520000012345678901234 czeka w Paczkomacie WAW123M (ul. Marszalkowska 10). Odbierz do 14.11 23:59. Kod odbioru: 441902,ham,parcel_ready_pickup,pl
+"Poczta Polska: Przesylka 00359007734123456789 oczekuje w placowce Warszawa 15, ul. Swietokrzyska 31. Odbior do 25.11. poczta-polska.pl",ham,parcel_ready_pickup,pl
+DPD: Kurier dostarczy paczke 0000123456789Q dzis w godz. 10:00-13:00. Sledz: dpd.com.pl,ham,parcel_out_for_delivery,pl
+Allegro: Zamówienie 1234567890 zostało wysłane. Numer przesyłki InPost 520000098765432109876. Śledź w aplikacji Allegro.,ham,order_shipped,pl
+"Zabka: Twoj kod do odbioru paczki: 7781. Sklep: ul. Dluga 5, Krakow. Odbierz do 15.11.",ham,parcel_pickup_code,pl
+ePUAP: Kod autoryzacyjny do podpisania dokumentu profilem zaufanym: 331204. Nie udostepniaj go nikomu.,ham,government_otp,pl
+"PGE: Faktura za energie nr 123456789/11/2026 na kwote 312,45 zl. Termin platnosci 28.11.2026. Oplac w eBOK: ebok.gkpge.pl",ham,utility_bill_notice,pl
+"PKO Bank Polski nigdy nie prosi w SMS o podanie loginu, hasla ani kodu BLIK. Jesli otrzymasz taka wiadomosc, nie klikaj w link i zglos ja pod 800 302 302.",ham,bank_scam_warning,pl
+e-Urząd Skarbowy: Twoje zeznanie PIT-37 za 2025 r. zostało przyjęte. UPO dostępne w e-US na podatki.gov.pl,ham,tax_notice,pl
+"NFZ: Przypominamy o wizycie 18.11.2026 o 9:30 w Przychodni Rejonowej, ul. Polna 3, gab. 12. Odwołanie: 22 123 45 67",ham,medical_appointment,pl
+"mBank: Platnosc karta ...2290 na 54,99 PLN w ZABKA 11.11 08:12. Saldo 1 890,22 PLN",ham,bank_transaction_alert,pl
+"ING: Logowanie do Moje ING z nowego urzadzenia (iPhone, Poznan) 11.11 21:04. Jesli to nie Ty, zadzwon 32 357 00 69",ham,bank_login_alert,pl
+"Bank Pekao: Wynagrodzenie 6 800,00 PLN wplynelo na rachunek ...8821. Saldo 9 120,45 PLN",ham,bank_salary_credit,pl
+"Santander: Rata kredytu 1 240,00 PLN zostanie pobrana 15.11. Upewnij sie, ze masz srodki na rachunku.",ham,loan_installment_reminder,pl
+"Orange: Dziękujemy za płatność 89,99 zł. Twoja faktura została opłacona.",ham,telecom_payment_received,pl
+"Play: Jesteś w Niemczech. W UE korzystasz z pakietu jak w Polsce, limit danych w roamingu: 25 GB. Miłej podróży!",ham,telecom_roaming_welcome,pl
+Plus: Twoj numer zostal pomyslnie przeniesiony do Plusa. Witamy! Taryfa Plus Pakiet M aktywna.,ham,telecom_port_complete,pl
+T-Mobile: Kod weryfikacyjny do Mój T-Mobile: 904471. Nie podawaj go nikomu.,ham,telecom_otp,pl
+InPost: Kurier doreczy paczke 520000012345678901235 dzis miedzy 14:00 a 17:00. Przygotuj kod odbioru z aplikacji.,ham,parcel_out_for_delivery,pl
+Poczta Polska: Przesylka polecona nr 00359007734123456790 zostala doreczona 11.11 o 11:20. Dziekujemy.,ham,parcel_delivered,pl
+"DPD: Nie zastalismy Cie pod adresem. Paczka 0000123456789Q trafi jutro do punktu DPD Pickup, ul. Krakowska 8. dpd.com.pl",ham,parcel_missed_delivery,pl
+"Allegro: Zwrot 149,00 zl za zamowienie 1234567891 zostal zaksiegowany. Srodki pojawia sie na karcie w ciagu 3-5 dni.",ham,refund_notice,pl
+Żabka: Paczka 520000012345678901236 czeka na Ciebie w Żabce przy ul. Długiej 5. Odbierz do 16.11.,ham,parcel_ready_pickup,pl
+gov.pl: Twoj wniosek o dowod osobisty zostal przyjety. Dokument bedzie gotowy do odbioru w urzedzie ok. 25.11. Status: gov.pl,ham,government_notice,pl
+PGE: Odczyt licznika zaplanowano na 14.11.2026. Prosimy o udostepnienie licznika inkasentowi.,ham,utility_meter_reading,pl
+PKO BP: Kod BLIK 441 902 wazny 2 minuty. Nie podawaj go nikomu.,ham,bank_otp,pl
+mBank: Wyciag za pazdziernik jest dostepny w aplikacji mBank i w serwisie transakcyjnym.,ham,bank_statement_ready,pl
+ING: Karta ...4417 zostala zablokowana na Twoje zyczenie. Nowa karta dotrze w ciagu 7 dni roboczych.,ham,card_blocked_confirmation,pl
+"Bank Pekao: Zblizeniowa platnosc 23,40 PLN w ORLEN z karty ...5512. Saldo 1 203,11 PLN",ham,bank_transaction_alert,pl
+Santander Bank Polska nie wysyła linków do logowania w SMS. Loguj się tylko przez aplikację lub santander.pl. Podejrzane wiadomości zgłoś: 1 9999,ham,bank_scam_warning,pl
+Orange: Twój pakiet 50 GB został odnowiony. Ważny do 11.12. Stan pakietu sprawdzisz w Mój Orange.,ham,telecom_package_renewed,pl
+"Play: Przypominamy o terminie platnosci faktury 79,00 zl - 15.11. Zaplac w Play24, aby uniknac przerwy w uslugach.",ham,telecom_payment_reminder,pl
+"Plus: Zmiana adresu korespondencyjnego zostala zarejestrowana. Jesli to nie Ty, zadzwon 601 102 601.",ham,telecom_profile_change_alert,pl
+T-Mobile: Twoja reklamacja nr 2026111144521 zostala przyjeta. Odpowiemy w ciagu 14 dni.,ham,telecom_complaint_ack,pl
+InPost: Paczka 520000012345678901237 odebrana z Paczkomatu 11.11 18:42. Dziekujemy!,ham,parcel_delivered,pl
+Poczta Polska: Przesylka 00359007734123456791 jest w drodze do Twojego urzedu pocztowego. Spodziewane doreczenie 13.11.,ham,parcel_in_transit,pl
+DPD: Kod odbioru paczki 0000123456790Q w punkcie DPD Pickup: 7731. Wazny do 18.11.,ham,parcel_pickup_code,pl
+"Allegro: Kod logowania do Allegro: 118204. Nie podawaj go nikomu, nawet pracownikom Allegro.",ham,ecommerce_otp,pl
+Żabka: Dziękujemy za zakupy! Zdobyłeś 15 żappsów. Stan konta: 420 żappsów.,ham,loyalty_points_notice,pl
+ePUAP: Pismo z Urzedu Miasta Krakowa oczekuje na odbior w Twojej skrzynce ePUAP. Zaloguj sie na epuap.gov.pl,ham,government_notice,pl
+"PGE: Dziekujemy za platnosc 312,45 zl. Faktura 123456789/11/2026 zostala rozliczona.",ham,payment_confirmation,pl
+"PKO BP: Przelew 850,00 PLN do ANNA W. zostal zrealizowany. Saldo 4 270,33 PLN",ham,bank_transfer_confirmation,pl
+"mBank: Wykryto nietypowa transakcje 2 999 PLN karta ...4417 w sklepie internetowym. Jesli to Ty, odpowiedz TAK. Jesli nie, zadzwon 42 6 300 800",ham,bank_fraud_alert_reply,pl
+"ING: Przypominamy, 14.11 mija termin splaty karty kredytowej. Kwota minimalna 240,00 PLN.",ham,credit_card_due_reminder,pl
+Bank Pekao: Kod do logowania w PeoPay: 772091. Wazny 3 minuty.,ham,bank_otp,pl
+"Santander: Na Twoj rachunek ...8821 wplynelo 1 500,00 PLN od MAREK S. Saldo 3 990,12 PLN",ham,bank_incoming_transfer,pl
+"Orange: Zmieniłeś hasło do Mój Orange. Jeśli to nie Ty, zadzwoń na 510 100 100.",ham,telecom_profile_change_alert,pl
+"Play: Twoja karta SIM zostala aktywowana w nowym telefonie. Jesli to nie Ty, skontaktuj sie z nami: 790 500 500",ham,telecom_security_alert,pl
+"Plus: Faktura za 11/2026 na kwote 59,00 zl jest dostepna w iPlus. Termin platnosci 24.11.2026. plus.pl",ham,telecom_bill_notice,pl
+T-Mobile: Dziekujemy za doladowanie 50 zl. Twoje konto wazne do 11.02.2027.,ham,telecom_topup,pl
+"InPost: Twoja paczka jest juz w Paczkomacie, ale pamietaj - masz 48 godzin na odbior. Potem wroci do nadawcy.",ham,parcel_pickup_reminder,pl
+"Poczta Polska: Awizo. Przesylka 00359007734123456792 do odbioru w UP Gdansk 6 od 12.11, przez 14 dni.",ham,parcel_missed_delivery,pl
+DPD: Paczka 0000123456791Q zostala doreczona 11.11 o 15:40. Odebral: M. NOWAK,ham,parcel_delivered,pl
+"Allegro: Sprzedajacy nadal Twoje zamowienie 1234567892 za posrednictwem Allegro One Box. Powiadomimy, gdy dotrze.",ham,order_shipped,pl
+ZUS: Twoj wniosek o swiadczenie 800+ zostal rozpatrzony pozytywnie. Pierwsza wyplata do 20.11. Szczegoly na PUE ZUS.,ham,government_payment_notice,pl
+PGE: Prognozowana faktura za okres 11-12/2026 wyniesie ok. 298 zl. Dokladna kwota na ebok.gkpge.pl,ham,utility_bill_notice,pl
+"PKO BP: Logowanie do iPKO 11.11 20:15 z Warszawy. Jesli to nie Ty, zadzwon 800 302 302.",ham,bank_login_alert,pl
+mBank: Przelew 300 PLN na telefon 600 *** 221 zrealizowany.,ham,bank_transfer_confirmation,pl
+"ING: Pamietaj, bank nie prosi o instalowanie aplikacji do zdalnego dostepu ani o przelewy na konto techniczne. Watpliwosci? 32 357 00 69",ham,bank_scam_warning,pl
+"Urząd Miasta Warszawa: Twoja wizyta w sprawie rejestracji pojazdu: 19.11.2026, 11:00, stanowisko 4, al. Jerozolimskie 28.",ham,government_appointment,pl
+Orange: Twoj internet domowy bedzie niedostepny 13.11 w godz. 01:00-05:00 z powodu prac serwisowych. Przepraszamy.,ham,service_maintenance_notice,pl
+"COSMOTE: Ο λογαριασμός σας για τον Οκτώβριο είναι 48,30€. Λήξη πληρωμής 25/11. Πληρώστε μέσω My COSMOTE app ή στο cosmote.gr",ham,telecom_bill_notice,el
+Vodafone: Έχετε καταναλώσει το 80% των δεδομένων σας. Για επιπλέον GB: My Vodafone app ή vodafone.gr,ham,telecom_data_usage,el
+"NOVA: Η πληρωμή 35,00€ καταχωρήθηκε. Ευχαριστούμε. Επόμενος λογαριασμός 05/12. nova.gr",ham,telecom_payment_received,el
+"Alpha Bank: Αγορά 86,40€ στο ΣΚΛΑΒΕΝΙΤΗΣ με κάρτα ****4417 στις 11/11 14:32. Διαθέσιμο υπόλοιπο 1.230,55€",ham,bank_transaction_alert,el
+"Τράπεζα Πειραιώς: Κωδικός μίας χρήσης για συναλλαγή 149,00€ στο SKROUTZ: 482913. Μην τον μοιραστείτε με κανέναν.",ham,bank_otp,el
+"Eurobank: Πίστωση μισθοδοσίας 1.450,00€ στον λογαριασμό ****8821. Διαθέσιμο 2.310,12€",ham,bank_salary_credit,el
+Εθνική Τράπεζα: Εντοπίστηκε ύποπτη συναλλαγή 1.200€ με την κάρτα ****7731. Την πραγματοποιήσατε εσείς; Απαντήστε ΝΑΙ ή ΟΧΙ.,ham,bank_fraud_alert_reply,el
+ΕΛΤΑ: Το δέμα σας RA123456789GR βρίσκεται στο κατάστημα Παγκράτι. Παραλαβή εντός 10 ημερών με ταυτότητα. elta.gr,ham,parcel_ready_pickup,el
+ACS: Η αποστολή 1234567890 παραδίδεται σήμερα 10:00-15:00. Παρακολούθηση: acscourier.net,ham,parcel_out_for_delivery,el
+Skroutz: Η παραγγελία #88211234 εστάλη! Θα παραδοθεί σε Skroutz Point αύριο. Κωδικός παραλαβής: 4471,ham,order_shipped,el
+efood: Η παραγγελία σου από Goody's ετοιμάζεται 🍔 Εκτιμώμενη παράδοση 20:45,ham,food_delivery_update,el
+gov.gr: Ο κωδικός επιβεβαίωσης σας είναι 331204. Μην τον κοινοποιήσετε σε κανέναν.,ham,government_otp,el
+"ΔΕΗ: Ο λογαριασμός σας για την περίοδο 09-10/2026 είναι 112,70€ με λήξη 28/11. Εξόφληση στο dei.gr ή στην εφαρμογή ΔΕΗ myEnergy",ham,utility_bill_notice,el
+"Alpha Bank: Η τράπεζα δεν θα σας ζητήσει ποτέ κωδικούς μέσω SMS ή τηλεφώνου. Αν λάβετε τέτοιο μήνυμα, μην απαντήσετε και καλέστε 210 326 0000.",ham,bank_scam_warning,el
+Ραντεβού ΠΦΥ: Το ραντεβού σας στο Κέντρο Υγείας Νέας Σμύρνης είναι 18/11 στις 09:30. Για ακύρωση καλέστε 1535.,ham,medical_appointment,el
+"COSMOTE: Ευχαριστούμε για την πληρωμή 48,30€. Ο λογαριασμός σας εξοφλήθηκε.",ham,telecom_payment_received,el
+Vodafone: Καλώς ήρθατε στην Ιταλία! Χρησιμοποιείτε το πρόγραμμά σας όπως στην Ελλάδα. Όριο δεδομένων ΕΕ: 20GB.,ham,telecom_roaming_welcome,el
+"NOVA: Ο λογαριασμός Νοεμβρίου είναι 42,90€. Λήξη 24/11. Δείτε τον στο My Nova ή nova.gr",ham,telecom_bill_notice,el
+"Τράπεζα Πειραιώς: Μεταφορά 500,00€ προς ΜΑΡΙΑ Κ. ολοκληρώθηκε. Υπόλοιπο 1.820,40€",ham,bank_transfer_confirmation,el
+"Eurobank: Σύνδεση στο e-Banking από νέα συσκευή (Android, Θεσσαλονίκη) 11/11 21:04. Αν δεν ήσασταν εσείς καλέστε 210 955 5000",ham,bank_login_alert,el
+Εθνική Τράπεζα: Η κάρτα ****4417 μπλοκαρίστηκε κατόπιν αιτήματός σας. Η νέα κάρτα θα σταλεί σε 5 εργάσιμες.,ham,card_blocked_confirmation,el
+ΕΛΤΑ Courier: Το δέμα 9876543210 παραδόθηκε 11/11 15:20. Υπογραφή: Κ. ΠΑΠΑΔΟΠΟΥΛΟΣ. Ευχαριστούμε!,ham,parcel_delivered,el
+ACS: Δεν σας βρήκαμε στη διεύθυνση. Το δέμα 1234567891 θα παραδοθεί ξανά αύριο. Αλλαγή ημέρας: acscourier.net,ham,parcel_missed_delivery,el
+"Skroutz: Η επιστροφή 59,90€ για την παραγγελία #88211200 εγκρίθηκε. Τα χρήματα θα πιστωθούν στην κάρτα ****3310 σε 3-5 ημέρες.",ham,refund_notice,el
+efood: Ο διανομέας Γιώργος παρέλαβε την παραγγελία σου και είναι καθ' οδόν 🛵 Περίπου 12 λεπτά.,ham,food_delivery_update,el
+gov.gr: Το ψηφιακό πιστοποιητικό οικογενειακής κατάστασης εκδόθηκε και είναι διαθέσιμο στη Θυρίδα σας στο gov.gr,ham,government_notice,el
+"ΔΕΗ: Ευχαριστούμε για την πληρωμή 112,70€. Ο λογαριασμός σας εξοφλήθηκε 11/11.",ham,payment_confirmation,el
+Alpha Bank: Κωδικός myAlpha Code: 905512. Ισχύει για 2 λεπτά.,ham,bank_otp,el
+"COSMOTE: Υπενθύμιση - η προθεσμία πληρωμής του λογαριασμού σας (48,30€) λήγει 25/11. cosmote.gr",ham,telecom_payment_reminder,el
+"Vodafone CU: Το πακέτο 10GB ανανεώθηκε. Υπόλοιπο 3,50€. Ισχύει έως 11/12.",ham,telecom_package_renewed,el
+NOVA: Το αίτημα φορητότητας σας εγκρίθηκε. Ο αριθμός σας θα ενεργοποιηθεί στη Nova 13/11 στις 02:00.,ham,telecom_port_request,el
+"Τράπεζα Πειραιώς: Η δόση δανείου 420,00€ θα χρεωθεί στις 15/11. Παρακαλούμε βεβαιωθείτε ότι υπάρχει επαρκές υπόλοιπο.",ham,loan_installment_reminder,el
+"Eurobank: Αγορά 23,80€ στο SHELL με κάρτα ****5512 στις 11/11 18:22. Υπόλοιπο 2.286,32€",ham,bank_transaction_alert,el
+Εθνική Τράπεζα: Ποτέ δεν σας καλούμε για να ζητήσουμε κωδικούς e-Banking ή μεταφορά σε «ασφαλή λογαριασμό». Αναφορές: 210 484 8484,ham,bank_scam_warning,el
+ΕΛΤΑ: Η συστημένη επιστολή RB223344556GR δεν παραδόθηκε. Παραλαβή από ΕΛΤΑ Αμπελοκήπων εντός 15 ημερών με ταυτότητα.,ham,parcel_missed_delivery,el
+ACS: Κωδικός παραλαβής από ACS SmartPoint: 7731. Ισχύει έως 18/11.,ham,parcel_pickup_code,el
+Skroutz: Κωδικός σύνδεσης Skroutz: 118204. Μην τον δώσετε σε κανέναν.,ham,ecommerce_otp,el
+efood: Η παραγγελία σου παραδόθηκε. Καλή όρεξη! Αξιολόγησε το κατάστημα από την εφαρμογή.,ham,food_delivered,el
+gov.gr: Ο κωδικός για την υπεύθυνη δήλωση είναι 772091. Ισχύει για 5 λεπτά.,ham,government_otp,el
+ΔΕΗ: Προγραμματισμένη διακοπή ρεύματος στην περιοχή σας 13/11 09:00-13:00 για εργασίες ΔΕΔΔΗΕ. Ζητούμε συγγνώμη.,ham,service_maintenance_notice,el
+"Alpha Bank: Πίστωση 300,00€ από ΝΙΚΟΣ Α. στον λογαριασμό ****8821. Υπόλοιπο 1.530,55€",ham,bank_incoming_transfer,el
+"COSMOTE: Η κάρτα SIM σας ενεργοποιήθηκε σε νέα συσκευή. Αν δεν ήσασταν εσείς, καλέστε 13888.",ham,telecom_security_alert,el
+"Vodafone: Ο λογαριασμός σας Νοεμβρίου (36,50€) είναι διαθέσιμος στο My Vodafone. Λήξη 22/11. vodafone.gr",ham,telecom_bill_notice,el
+NOVA: Το αίτημά σας #2026111144521 καταχωρήθηκε. Θα επικοινωνήσουμε εντός 48 ωρών.,ham,telecom_complaint_ack,el
+"Τράπεζα Πειραιώς: Το statement της πιστωτικής σας είναι διαθέσιμο στο winbank. Ελάχιστη καταβολή 85,00€ έως 25/11.",ham,credit_card_statement,el
+"Eurobank: Κωδικός για συναλλαγή 1.200,00€ προς ΔΕΗ: 441902. Αν δεν κάνετε εσείς τη συναλλαγή, καλέστε 210 955 5000.",ham,bank_otp,el
+"Εθνική Τράπεζα: Ανάληψη 200€ από ΑΤΜ Σύνταγμα με κάρτα ****2290, 11/11 12:05. Υπόλοιπο 980,15€",ham,bank_transaction_alert,el
+ΕΛΤΑ: Το δέμα σας από Κίνα LP123456789CN έφτασε στην Ελλάδα και βρίσκεται σε τελωνειακό έλεγχο. Ενημέρωση στο elta.gr,ham,parcel_in_transit,el
+ACS: Το δέμα 1234567892 παραλήφθηκε από τον αποστολέα και αναμένεται στην Πάτρα 13/11.,ham,parcel_in_transit,el
+Skroutz: Η παραγγελία #88211256 παραδόθηκε στο Skroutz Point Κολωνάκι. Παραλαβή εντός 3 ημερών με τον κωδικό από την εφαρμογή.,ham,parcel_ready_pickup,el
+ΑΑΔΕ: Εκδόθηκε το εκκαθαριστικό ΕΝΦΙΑ 2026. Δείτε το στο myAADE (aade.gr). Πρώτη δόση έως 30/11.,ham,tax_notice,el
+ΕΦΚΑ: Η σύνταξη Νοεμβρίου πιστώθηκε στον λογαριασμό σας στην Εθνική Τράπεζα.,ham,government_payment_notice,el
+"gov.gr: Η αίτηση σας για νέα ταυτότητα καταχωρήθηκε. Ραντεβού 20/11 10:00, Α.Τ. Καλλιθέας. Φέρτε μία φωτογραφία.",ham,government_appointment,el
+"ΔΕΗ: Υπενθύμιση - ο λογαριασμός 112,70€ λήγει σε 3 ημέρες. Πληρωμή στο dei.gr, σε ΕΛΤΑ ή με πάγια εντολή.",ham,utility_payment_reminder,el
+Alpha Bank: Το Bonus σας για τον Οκτώβριο: 1.240 πόντοι. Σύνολο 8.912 πόντοι.,ham,card_rewards_notice,el
+COSMOTE: Κωδικός σύνδεσης My COSMOTE: 8812,ham,telecom_otp,el
+"Vodafone: Η αλλαγή διεύθυνσης χρέωσης ολοκληρώθηκε. Αν δεν την ζητήσατε εσείς, καλέστε 13830.",ham,telecom_profile_change_alert,el
+NOVA: Ο τεχνικός για την εγκατάσταση fiber θα έρθει 14/11 10:00-13:00. Παρακαλούμε να είστε διαθέσιμοι.,ham,installation_appointment,el
+"Τράπεζα Πειραιώς: Αυτόματη πληρωμή COSMOTE 48,30€ εκτελέστηκε από τον λογαριασμό ****8821.",ham,autopay_notice,el
+Eurobank: Ο Οκτωβρίου λογαριασμός κίνησης είναι διαθέσιμος στο Eurobank Mobile App.,ham,bank_statement_ready,el
+"efood: Το κατάστημα άλλαξε ένα προϊόν της παραγγελίας σου (μη διαθέσιμο). Η διαφορά 1,20€ επιστρέφεται στην κάρτα σου.",ham,food_order_update,el
+ΕΛΤΑ: Κωδικός παραλαβής δέματος RA123456789GR: 2290. Δηλώστε τον στο κατάστημα.,ham,parcel_pickup_code,el
+"ACS: Το δέμα σας 1234567893 χρεώνεται με αντικαταβολή 34,90€. Παράδοση σήμερα, παρακαλούμε να έχετε ακριβή μετρητά ή κάρτα.",ham,parcel_cod_notice,el
+Skroutz: Το αίτημα επιστροφής για #88211260 εγκρίθηκε. Στείλτε το προϊόν με ACS χρησιμοποιώντας το voucher από την εφαρμογή.,ham,return_approved,el
+gov.gr: Η κλήση ΚΟΚ 40€ (αρ. 112233) για το όχημα ΙΖΗ 4452 καταχωρήθηκε. Πληρωμή με 50% έκπτωση εντός 10 ημερών στο gov.gr,ham,traffic_fine_notice,el
+"Εθνική Τράπεζα: Κωδικός i-bank: 553201. Μην τον αποκαλύψετε σε κανέναν, ούτε σε υπαλλήλους της τράπεζας.",ham,bank_otp,el
+COSMOTE: Έχετε 500MB από τα 5GB του πακέτου σας. Ανανέωση 03/12. Έξτρα GB από το My COSMOTE app.,ham,telecom_data_usage,el

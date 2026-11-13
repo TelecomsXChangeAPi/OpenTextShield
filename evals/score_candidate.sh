@@ -10,7 +10,7 @@ args=(--model "$ckpt" --tag "$tag"
   --dataset fable5:evals/datasets/fable5_adversarial_v1_clean.csv
   --dataset csv:evals/datasets/hard_legit_a2p_v1.csv
   --dataset mishra:evals/datasets/mishra_soni_5971.csv
-  --dataset csv:evals/datasets/heldout_corpus_v2.12.csv)
+  --dataset csv:src/mBERT/training/model-training/dataset/curated/heldout_v2.12.csv)
 [ -f "$pub/uci.tsv" ] && args+=(--dataset "uci:$pub/uci.tsv")
 [ -f "$pub/imc25.csv" ] && args+=(--dataset "imc25:$pub/imc25.csv:8000")
 ots/bin/python evals/run_eval.py "${args[@]}" > /dev/null

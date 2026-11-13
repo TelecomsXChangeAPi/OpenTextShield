@@ -1,0 +1,352 @@
+text,label,category,language
+【楽天市場】ご注文ありがとうございます。注文番号 312456-20261108-0098712 の商品を発送しました。配送状況は購入履歴（rakuten.co.jp）からご確認ください。,ham,ecommerce_shipped,ja
+"楽天カードご利用のお知らせ：11/9 14:22 ファミリーマート 1,280円。ご利用内容は楽天カードアプリでご確認ください。",ham,card_transaction_notice,ja
+【楽天】ワンタイムパスワード：482913。有効期限は10分です。この番号を他人に教えないでください。,ham,otp_code,ja
+"楽天ポイント 1,250ポイントが11月末で失効します。楽天市場または楽天ペイでご利用ください。",ham,loyalty_points_expiry,ja
+"【楽天銀行】お振込が完了しました。振込先：カ）ミドリフードサービス 金額 54,000円 11/11 10:02",ham,bank_transfer_done,ja
+"【楽天モバイル】11月分ご利用料金 3,278円を確定しました。my 楽天モバイル（network.mobile.rakuten.co.jp）でご確認いただけます。",ham,telco_bill_notice,ja
+【楽天モバイル】データ利用量が20GBを超えました。今月はこのまま無制限でご利用いただけます。,ham,telco_data_usage,ja
+【楽天トラベル】ご予約確認：11/22〜11/23 ホテル日航金沢 ツイン1室 予約番号 R34567890。チェックインは15:00からです。,ham,travel_booking_confirm,ja
+Amazon.co.jp: お荷物を配達しました。ご注文 249-5529871-0012345 は玄関に置き配しました。,ham,parcel_delivered,ja
+Amazon: ご注文の商品は本日お届け予定です。配達状況はアプリの「注文履歴」でご確認ください。,ham,parcel_out_for_delivery,ja
+Amazonの認証コードは 607213 です。他の人に共有しないでください。,ham,otp_code,ja
+Amazon.co.jp: ご注文の商品(1点)は本日配送業者に引き渡されました。配送業者: ヤマト運輸 お問い合わせ番号 4567-8912-3456,ham,ecommerce_shipped,ja
+【ヤマト運輸】お荷物をお届けに伺いましたが、ご不在でした。再配達のご依頼は kuronekoyamato.co.jp またはLINE公式アカウントから。伝票番号 3456-7890-1234,ham,parcel_missed_delivery,ja
+ヤマト運輸：本日14時〜16時にお荷物をお届け予定です。ご都合が悪い場合はクロネコメンバーズから日時変更ができます。,ham,parcel_out_for_delivery,ja
+クロネコヤマトです。お荷物（伝票番号 4321-0987-6543）を本日お届け完了しました。ご利用ありがとうございました。,ham,parcel_delivered,ja
+【日本郵便】ゆうパック お問い合わせ番号 1234-5678-9012 は本日配達予定です。追跡は japanpost.jp からご確認ください。,ham,parcel_out_for_delivery,ja
+日本郵便：ご不在のためお荷物を持ち戻りました。不在票をご確認のうえ再配達をご依頼ください。保管期限は11/16までです。,ham,parcel_missed_delivery,ja
+佐川急便です。お荷物（お問い合せ送り状No. 5123-4567-8901）を本日お届け予定です。配達状況は sagawa-exp.co.jp でご確認ください。,ham,parcel_out_for_delivery,ja
+【佐川急便】本日お届けのお荷物は、ご不在のため営業所でお預かりしております。スマートクラブより再配達をご依頼ください。,ham,parcel_missed_delivery,ja
+佐川急便はSMSによるご不在連絡は行っておりません。当社を装った不審なSMSのリンクは開かないでください。,ham,courier_scam_warning,ja
+【日本郵便】日本郵便を装った不在通知のSMSが多発しています。当社がSMSでお届けのお知らせをすることはありません。心当たりのないSMSは開かず削除してください。,ham,courier_scam_warning,ja
+"【ドコモ】11月ご利用料金のお知らせ：7,865円（税込）。詳細はMy docomo（my.docomo.ne.jp）でご確認ください。",ham,telco_bill_notice,ja
+ドコモからのお知らせ：データ利用量が契約容量の80%に達しました。追加購入はMy docomoから。,ham,telco_data_usage,ja
+【dアカウント】セキュリティコード：539104 心当たりのない場合はこのメッセージを無視してください。,ham,otp_code,ja
+"ドコモ：ご契約のahamoプランの料金 2,970円を11/30にお引き落としいたします。",ham,telco_autopay_notice,ja
+【ドコモ】ドコモを装ったSMSにご注意ください。「料金未納」「アカウント停止」などの文面でリンクを開かせる手口が確認されています。ドコモがSMSで暗証番号を尋ねることはありません。,ham,telco_scam_warning,ja
+"【au】11月分のご利用料金は 6,402円です。My auアプリまたは au.com でご確認ください。",ham,telco_bill_notice,ja
+"auからのお知らせ：auかんたん決済のご利用がありました。11/10 Google Play 1,500円。心当たりのないご利用は157へお問い合わせください。",ham,carrier_billing_notice,ja
+au：本人確認コード 274859。有効期限は5分です。,ham,otp_code,ja
+"【ソフトバンク】11月ご請求金額 8,233円。My SoftBank（my.softbank.jp）からご確認ください。お支払期限 12/1",ham,telco_bill_notice,ja
+ソフトバンク：ご契約内容の変更手続きが完了しました。内容はMy SoftBankでご確認いただけます。,ham,telco_account_change,ja
+"ソフトバンクからのお知らせ。ご利用料金 8,233円の口座振替が完了しました。",ham,telco_autopay_notice,ja
+【三菱UFJ銀行】三菱UFJダイレクトにログインがありました。11/10 09:12。ご本人によるものでない場合はお取引店またはカード裏面の電話番号へご連絡ください。,ham,bank_login_alert,ja
+三菱UFJ銀行：ワンタイムパスワード 918273（三菱UFJダイレクト）。当行が電話やSMSで暗証番号を尋ねることはありません。,ham,otp_code,ja
+【三菱UFJ銀行】当行を装った偽SMSにご注意ください。「口座が凍結」「本人確認」などのリンクは開かず、必ず bk.mufg.jp または公式アプリをご利用ください。,ham,bank_scam_warning,ja
+"【三井住友銀行】SMBCダイレクトで振込（50,000円）が完了しました。お取引内容はアプリでご確認ください。",ham,bank_transfer_done,ja
+"三井住友銀行：11/15は口座振替日です（電気料金 8,412円）。残高をご確認ください。",ham,bank_autopay_reminder,ja
+【三井住友カード】ご利用速報：11/11 10:45 セブン-イレブン 648円。Vpassアプリで明細をご確認いただけます。,ham,card_transaction_notice,ja
+三井住友銀行より：フィッシング詐欺が増えています。当行がSMSでパスワードや暗証番号の入力を求めることはありません。不審なSMSは開かずに削除してください。,ham,bank_scam_warning,ja
+PayPay認証コード：381945 このコードは他人に教えないでください。,ham,otp_code,ja
+"PayPay：1,200円のお支払いが完了しました（ローソン）。残高 4,316円",ham,wallet_payment_done,ja
+"【PayPay】送金が届きました。タナカさんから 3,000円。アプリで受け取りを確認してください。",ham,wallet_money_received,ja
+PayPayからのお知らせ：11月のPayPayポイント 412ポイントを付与しました。,ham,loyalty_points_notice,ja
+【PayPay】新しい端末からログインがありました。ご本人の操作でなければアプリの「セキュリティ」から確認してください。,ham,wallet_login_alert,ja
+【メルカリ】商品が購入されました！「ノースフェイス ダウンジャケット L」発送期限は11/13です。,ham,marketplace_item_sold,ja
+メルカリ：出品した商品が購入者に到着しました。受取評価をお待ちください。,ham,marketplace_status,ja
+メルカリの認証番号は 772061 です。,ham,otp_code,ja
+"【メルカリ】売上金 12,800円が反映されました。メルペイ残高に移行できます。",ham,marketplace_payout,ja
+"LINE Pay：コンビニ支払い 980円が完了しました。残高 2,410円",ham,wallet_payment_done,ja
+"【LINE Pay】チャージ（5,000円）が完了しました。",ham,wallet_topup_done,ja
+【えきねっと】東北新幹線 はやぶさ15号 11/14 8:20東京発 のきっぷを受け取りました。登録の交通系ICカードでご乗車ください。eki-net.com,ham,rail_ticket_confirm,ja
+"JR東日本：Suicaへのオートチャージ 3,000円を実行しました。残高 4,210円（モバイルSuica）",ham,transit_autocharge,ja
+"【スマートEX】ご予約内容：11/20 のぞみ21号 新大阪→東京 1名 14,720円。予約番号 K8H2L3。smart-ex.jp",ham,rail_ticket_confirm,ja
+JR西日本からのお知らせ：11/13 山陽新幹線は保守工事のため一部列車が運休します。詳細は jr-odekake.net,ham,rail_service_notice,ja
+【ANA】NH21 11/18 羽田(HND)→新千歳(CTS) 09:30発 のオンラインチェックインが可能になりました。ana.co.jp,ham,airline_checkin_open,ja
+ANA：ご搭乗便 NH465 は機材繰りのため出発が約40分遅れる見込みです。ご迷惑をおかけし申し訳ございません。,ham,airline_delay_notice,ja
+"ANAマイレージクラブ：11月末に 2,500マイルが失効予定です。ご確認はANAアプリから。",ham,loyalty_points_expiry,ja
+"【東京電力】11月分電気料金 9,845円を確定しました。くらしTEPCO web でご確認ください。",ham,utility_bill_notice,ja
+"東京ガス：11月分ガス料金 4,120円。myTOKYOGASでご確認いただけます。",ham,utility_bill_notice,ja
+【横浜市】ご予約の粗大ごみ（11/15 収集）のリマインドです。前日夜〜当日朝8時までに所定の場所へお出しください。,ham,gov_service_reminder,ja
+【マイナポータル】お住まいの市区町村からのお知らせが届いています。マイナポータルアプリでご確認ください。,ham,gov_notice,ja
+国民健康保険：11月分保険料の納期限は11/30です。コンビニまたは口座振替でお支払いください。,ham,gov_payment_reminder,ja
+【区役所】インフルエンザ予防接種の助成期間は1/31までです。対象の方には接種券を郵送済みです。,ham,gov_health_notice,ja
+【さくら歯科】明日11/13 15:30のご予約のリマインドです。変更の際はお早めにお電話ください。,ham,appointment_reminder,ja
+ホットペッパービューティー：明日11/14 13:00 hair salon Lien（渋谷）のご予約です。beauty.hotpepper.jp,ham,appointment_reminder,ja
+【ユニクロ】店舗受け取りのご注文商品が到着しました。11/20までにお受け取りください。,ham,store_pickup_ready,ja
+"【U-NEXT】月額プラン 2,189円の更新が完了しました。次回更新日は12/12です。",ham,subscription_renewal,ja
+【dアニメストア】月額 550円の決済を11/12に行いました。,ham,subscription_renewal,ja
+【ゆうちょ銀行】ゆうちょ通帳アプリにログインしました（11/11 20:14）。ご本人でない場合はアプリから直ちにパスワードを変更してください。,ham,bank_login_alert,ja
+"【みずほ銀行】みずほダイレクト：お振込（28,500円）を受付しました。",ham,bank_transfer_done,ja
+"【セブン銀行】ATMで 30,000円をお引き出しになりました。11/12 12:08",ham,bank_withdrawal_notice,ja
+"【イオンカード】ご利用のお知らせ 11/11 ドン・キホーテ 3,980円 暮らしのマネーサイトでご確認ください。",ham,card_transaction_notice,ja
+[쿠팡] 주문하신 상품이 배송 출발했습니다. 오늘(11/12) 도착 예정이에요. 배송조회는 coupang.com,ham,ecommerce_shipped,ko
+[쿠팡] 로켓배송 상품이 문 앞에 배송 완료되었습니다. 배송 사진은 쿠팡 앱에서 확인하세요.,ham,parcel_delivered,ko
+[쿠팡] 인증번호 [493027] 타인에게 절대 알려주지 마세요.,ham,otp_code,ko
+"[쿠팡] 결제완료 41,900원 (쿠팡페이) 주문번호 2026111200398",ham,ecommerce_payment_done,ko
+[쿠팡이츠] 주문이 접수되었습니다. 예상 도착 25~35분.,ham,food_delivery_status,ko
+"[쿠팡] 와우 멤버십 월회비 7,890원이 11/15 결제 예정입니다. 변경은 앱 > 와우 멤버십에서 가능합니다.",ham,subscription_renewal,ko
+(Web발신)[쿠팡] 반품 수거가 완료되었습니다. 환불은 영업일 기준 3~5일 내 처리됩니다.,ham,ecommerce_return_status,ko
+"[네이버페이] 결제 15,800원 CU편의점 11/12 13:40 (잔여 포인트 2,310원)",ham,wallet_payment_done,ko
+[네이버] 인증번호 [218504]를 입력해 주세요. 네이버는 전화로 인증번호를 묻지 않습니다.,ham,otp_code,ko
+"[네이버페이] 머니 충전 50,000원이 완료되었습니다.",ham,wallet_topup_done,ko
+[네이버] 새 기기(Galaxy S24)에서 로그인했습니다. 본인이 아니라면 naver.com > 내정보 > 보안설정에서 확인하세요.,ham,account_login_alert,ko
+[카카오] 인증번호는 [580213] 입니다. 10분 내 입력해주세요.,ham,otp_code,ko
+"[카카오페이] 송금 완료 30,000원 → 이*현 11/12 18:02",ham,wallet_transfer_done,ko
+"[카카오페이] 결제 8,900원 스타벅스 11/12 09:15",ham,wallet_payment_done,ko
+"[카카오톡] 다른 기기에서 카카오계정 로그인이 있었습니다(iPhone, 서울). 본인이 아니면 카카오톡 설정>개인/보안에서 해당 기기를 로그아웃하세요.",ham,account_login_alert,ko
+[카카오T] 택시 호출이 접수되었습니다. 기사님이 3분 내 도착 예정입니다. 차량번호 12가3456,ham,ride_hailing_status,ko
+"[카카오페이] 통신사 요금 자동결제 59,000원이 11/25 예정입니다.",ham,wallet_autopay_notice,ko
+"[KB국민은행] 입금 1,250,000원 11/12 10:30 홍*동 잔액 3,482,100원",ham,bank_deposit_notice,ko
+"[KB국민카드] 승인 23,400원 일시불 이마트 11/12 19:04 (3*4*)",ham,card_transaction_notice,ko
+[KB국민은행] KB스타뱅킹 인증번호 [731945] 본인이 요청하지 않았다면 카드 뒷면 고객센터로 연락하세요.,ham,otp_code,ko
+[KB국민은행] 금융사기 주의: 은행은 어떠한 경우에도 문자로 앱 설치나 비밀번호 입력을 요구하지 않습니다. 의심되면 112 또는 금감원 1332로 신고하세요.,ham,bank_scam_warning,ko
+[KB국민은행] 해외 출금 승인 USD 120.00 11/12 02:14 본인 거래가 아니면 즉시 카드 뒷면 번호로 신고하세요.,ham,card_fraud_check,ko
+"[신한은행] 출금 450,000원 11/12 14:22 자동이체(관리비) 잔액 1,120,330원",ham,bank_withdrawal_notice,ko
+"[신한카드] 승인 125,000원 일시불 쿠팡 11/12 20:41 (4*1*)",ham,card_transaction_notice,ko
+[신한은행] 신한 SOL 로그인 인증번호 [604182],ham,otp_code,ko
+"[신한카드] 11월 결제예정금액 487,200원, 결제일 11/25. 명세서는 신한카드 앱에서 확인하세요.",ham,card_statement_notice,ko
+[신한은행] 보이스피싱 주의! 검찰·경찰·금감원은 절대 계좌 이체나 현금 인출을 요구하지 않습니다. 의심 전화는 즉시 끊으세요.,ham,bank_scam_warning,ko
+"[SKT] 11월 이용요금 69,340원이 청구되었습니다. 납기일 11/25. 상세내역은 T world(tworld.co.kr)에서 확인 가능합니다.",ham,telco_bill_notice,ko
+[SKT] 고객님의 데이터 사용량이 기본 제공량의 90%에 도달했습니다.,ham,telco_data_usage,ko
+"[SKT] 요금 자동납부(국민은행)가 정상 처리되었습니다. 69,340원",ham,telco_autopay_notice,ko
+[SK텔레콤] 본인확인 인증번호 [375219],ham,otp_code,ko
+[SKT] 스미싱 주의 안내: SKT는 문자로 URL을 보내 앱 설치를 요구하지 않습니다. 출처 불명 링크는 클릭하지 마세요.,ham,telco_scam_warning,ko
+"[SKT] T멤버십 포인트 1,200P가 적립되었습니다. T멤버십 앱에서 확인하세요.",ham,loyalty_points_notice,ko
+"[KT] 11월 청구요금 54,890원 납기 11/28. 마이케이티 앱에서 요금을 확인하세요.",ham,telco_bill_notice,ko
+"[KT] 휴대폰 소액결제 승인 9,900원 (Google Play) 11/12. 본인 결제가 아니면 114로 문의하세요.",ham,carrier_billing_notice,ko
+[KT] 인터넷 A/S 방문 예정: 11/14(금) 14:00~16:00 기사님이 방문 전 연락드립니다.,ham,technician_visit_reminder,ko
+[KT] 인증번호 [884127]를 입력해주세요.,ham,otp_code,ko
+"[LG U+] 11월 요금 48,500원이 11/20 자동납부 예정입니다. 당신의 U+(uplus.com)에서 확인하세요.",ham,telco_bill_notice,ko
+[LG유플러스] 데이터 리필 쿠폰 1개가 지급되었습니다. 유효기간 2026.12.31,ham,telco_benefit_notice,ko
+[LG U+] 본인인증 번호 [192837] 타인 노출 금지,ham,otp_code,ko
+[CJ대한통운] 고객님의 상품이 오늘 배송 예정입니다. 운송장 6512-3498-7721 담당기사 김*수 010-****-5523,ham,parcel_out_for_delivery,ko
+[CJ대한통운] 배송완료: 경비실에 맡겨두었습니다. 11/12 16:40,ham,parcel_delivered,ko
+[CJ대한통운] 상품이 집하되었습니다. 배송조회는 cjlogistics.com,ham,parcel_picked_up,ko
+(Web발신)[CJ대한통운] 택배 사칭 문자 주의. 저희는 문자로 주소 확인 링크를 보내지 않습니다. 운송장 조회는 공식 앱에서만 하세요.,ham,courier_scam_warning,ko
+[배달의민족] 주문 접수 완료. 가게에서 조리를 시작했어요. 예상 배달 40분,ham,food_delivery_status,ko
+[마켓컬리] 샛별배송 완료! 신선식품은 바로 냉장 보관해 주세요.,ham,parcel_delivered,ko
+"[삼성카드] 승인 3,000원 지하철(교통) 11/12 08:12",ham,card_transaction_notice,ko
+[우체국택배] 등기 우편물이 11/13 배달 예정입니다. 부재 시 우편함에 안내서를 남깁니다.,ham,parcel_out_for_delivery,ko
+[행정안전부] 국민비서 알림: 11/15 자동차 정기검사 만료일입니다. 미검사 시 과태료가 부과됩니다. gov.kr,ham,gov_service_reminder,ko
+[국세청] 홈택스: 종합소득세 중간예납 납부기한은 11/30입니다. hometax.go.kr,ham,gov_payment_reminder,ko
+[질병관리청] 65세 이상 인플루엔자 무료 예방접종이 진행 중입니다. 가까운 지정 의료기관을 방문하세요.,ham,gov_health_notice,ko
+[서울시] 11/13 06:00 초미세먼지 주의보 발령. 외출 시 마스크를 착용하고 실외활동을 자제하세요.,ham,gov_alert,ko
+"[한국전력] 11월 전기요금 38,420원, 납기 11/25. 한전ON에서 확인하세요.",ham,utility_bill_notice,ko
+[서울대병원] 11/18(수) 10:30 내과 외래 예약 안내. 접수는 예약 30분 전까지 해주세요.,ham,appointment_reminder,ko
+[연세치과] 내일 11/13 오후 2시 예약입니다. 변경이 필요하시면 미리 전화 주세요.,ham,appointment_reminder,ko
+"[멜론] 스트리밍 클럽 이용권이 11/20 자동결제(10,900원)됩니다.",ham,subscription_renewal,ko
+"[SRT] 예매완료 11/20 SRT 311 수서→부산 08:00 성인1 51,800원. 승차권은 SRT 앱에서 확인하세요.",ham,rail_ticket_confirm,ko
+[코레일] KTX 승차권 예매가 완료되었습니다. 11/21 KTX 105 서울 07:00→동대구 08:48. letskorail.com,ham,rail_ticket_confirm,ko
+[대한항공] KE1201 11/19 김포 08:00 → 제주 09:10 온라인 체크인이 가능합니다. koreanair.com,ham,airline_checkin_open,ko
+[올리브영] 주문하신 상품을 매장에서 픽업하실 수 있습니다. 보관기한은 11/15까지입니다.,ham,store_pickup_ready,ko
+[GS25] 편의점택배 상품이 도착했습니다. 11/15까지 매장에서 수령해주세요.,ham,store_pickup_ready,ko
+[토스] 인증번호 [417286] 본인 확인용입니다.,ham,otp_code,ko
+"[토스] 자동이체 안내: 11/13 아파트 관리비 215,400원 출금 예정",ham,wallet_autopay_notice,ko
+[당근] 새 채팅이 도착했습니다. 앱에서 확인하세요.,ham,app_notification,ko
+[SSG] 쓱배송 완료. 현관 앞에 두었습니다. 11/12 07:10,ham,parcel_delivered,ko
+"[하나은행] 입금 2,000,000원 급여 11/12 (주)대성",ham,bank_deposit_notice,ko
+"[국민건강보험] 11월 건강보험료 142,300원 고지. 납부기한 12/10",ham,gov_payment_reminder,ko
+"[카카오뱅크] 26주적금 자동이체 30,000원 완료",ham,bank_autopay_done,ko
+[우리은행] 우리WON뱅킹 로그인 11/12 22:05 (Android). 본인이 아니면 앱에서 비밀번호를 변경하세요.,ham,bank_login_alert,ko
+【淘宝】您的订单已发货，快递单号 SF1234567890123，预计11月14日送达。登录淘宝App可查看物流。,ham,ecommerce_shipped,zh
+【淘宝网】验证码 582913，用于登录验证，5分钟内有效。请勿泄露给他人。,ham,otp_code,zh
+【天猫】您购买的「戴森吹风机」已签收，如非本人签收请联系卖家。,ham,parcel_delivered,zh
+【淘宝】双11订单提醒：您有1件商品待付尾款，截止11月13日23:59。,ham,ecommerce_payment_reminder,zh
+【京东】您的订单 268912345678 已由京东快递揽收，预计明天送达。,ham,ecommerce_shipped,zh
+【京东】京东快递小哥张师傅正在为您派送，联系电话 188****2231，请保持手机畅通。,ham,parcel_out_for_delivery,zh
+"【京东金融】您尾号4417的白条账单 ￥1,286.50 将于11月15日自动还款，请确保账户余额充足。",ham,credit_autopay_notice,zh
+【京东】验证码 440192，您正在登录京东，请勿告知他人。,ham,otp_code,zh
+【京东】您的包裹已存放在小区自提柜，取件码 7731，请24小时内取件。,ham,parcel_locker_pickup,zh
+"【支付宝】您的账户于11月12日 09:12 消费 ￥35.00（美团），余额 ￥1,204.56。",ham,wallet_payment_done,zh
+【支付宝】校验码 193847，您正在登录支付宝。支付宝客服不会索要校验码。,ham,otp_code,zh
+【支付宝】转账到账提醒：王**向您转账 ￥500.00，已存入余额。,ham,wallet_money_received,zh
+"【支付宝】花呗11月账单 ￥2,310.80 已出，还款日12月10日。请在支付宝App内查看。",ham,credit_statement_notice,zh
+【支付宝】安全提醒：支付宝官方不会以「账户异常」「冻结」为由让您点击链接。请在App内核实，谨防诈骗。,ham,wallet_scam_warning,zh
+【微信支付】您已成功支付 ￥128.00 给 瑞幸咖啡（北京朝阳大悦城店）。,ham,wallet_payment_done,zh
+【微信】验证码 673920，用于微信登录。请勿转发。,ham,otp_code,zh
+【微信支付】零钱通今日收益 ￥0.86，累计收益 ￥212.40。,ham,wallet_balance_notice,zh
+"【财付通】您的微信支付账户收到 ￥2,000.00 转账，来自 李*。",ham,wallet_money_received,zh
+【中国移动】尊敬的客户，您11月账单已出，应缴费用 ￥128.00，可通过中国移动App或 10086.cn 缴费。,ham,telco_bill_notice,zh
+【中国移动】您本月流量已使用80%，剩余 4.2GB。回复 CXLL 查询详情。,ham,telco_data_usage,zh
+【中国移动】您的话费余额不足 ￥10，为避免停机请及时充值。,ham,telco_low_balance,zh
+【中国移动】验证码 285710，请在10分钟内输入。中国移动工作人员不会向您索取验证码。,ham,otp_code,zh
+【中国移动】防诈骗提醒：凡是自称「客服」要求您转账、提供验证码的，均为诈骗。如有疑问请拨打10086。,ham,telco_scam_warning,zh
+【中国联通】您的11月账单 ￥99.00 已生成，请登录中国联通App查询。,ham,telco_bill_notice,zh
+【中国电信】您办理的宽带业务已开通，装维人员将于11月14日上午上门安装，请保持电话畅通。,ham,technician_visit_reminder,zh
+【顺丰速运】您的快件 SF3092831920385 预计今日送达，快递员 刘师傅 139****8821。,ham,parcel_out_for_delivery,zh
+【顺丰速运】快件已签收，签收人：本人。感谢使用顺丰。,ham,parcel_delivered,zh
+【顺丰速运】您的快件已到达丰巢快递柜（3号楼大堂），取件码 283947。,ham,parcel_locker_pickup,zh
+【顺丰速运】温馨提示：顺丰不会以「包裹异常」「地址错误」要求您点击链接填写银行卡信息，谨防诈骗。,ham,courier_scam_warning,zh
+"【工商银行】您尾号7721的借记卡11月12日 14:03 支出 ￥3,500.00，余额 ￥18,204.11。",ham,bank_withdrawal_notice,zh
+"【工商银行】您尾号7721的卡于11月12日收入（工资）￥12,800.00。",ham,bank_deposit_notice,zh
+"【工商银行】动态密码 719384，用于手机银行转账 ￥1,000.00。请勿向任何人透露。",ham,otp_code,zh
+"【工商银行】您的信用卡11月账单 ￥4,215.60，最后还款日11月28日。",ham,credit_statement_notice,zh
+【工商银行】提醒：我行不会通过短信链接要求您输入密码、验证码。请通过手机银行App办理业务，如有疑问致电95588。,ham,bank_scam_warning,zh
+"【中国银行】您尾号3302账户11月12日 10:21 转出 ￥20,000.00，余额 ￥56,120.33。",ham,bank_withdrawal_notice,zh
+【中国银行】验证码 530192，用于中银手机银行登录。,ham,otp_code,zh
+"【中国银行】您的中银信用卡11月还款金额 ￥1,980.00，到期还款日11月25日。",ham,credit_statement_notice,zh
+"【中国银行】尊敬的客户，您预约的外币现钞（USD 2,000）已到店，请于3个工作日内携身份证到朝阳门支行领取。",ham,bank_service_notice,zh
+【7-ELEVEN】您的包裹已到店（台北民生門市），請於11/15前憑取貨碼 A3K9 至門市取貨。,ham,store_pickup_ready,zh
+【統一超商】取貨付款包裹已送達 新竹光復門市，金額 NT$890，請於7天內取貨。,ham,store_pickup_ready,zh
+【蝦皮購物】您的訂單 2611120AB3 已由賣家出貨，預計2-3天送達7-11取貨門市。,ham,ecommerce_shipped,zh
+【全家便利商店】包裹到店通知：請於11/16前至 台中中港店 取件，取件編號 F1234567。,ham,store_pickup_ready,zh
+"【中華電信】您11月帳單金額 NT$1,299，繳費期限 11/25。可至中華電信App或 cht.com.tw 查詢繳費。",ham,telco_bill_notice,zh
+【中華電信】您的行動上網量已使用90%。如需加購請至 cht.com.tw。,ham,telco_data_usage,zh
+【中華電信】簡訊驗證碼：482017，請於5分鐘內輸入。中華電信不會以電話要求您提供驗證碼。,ham,otp_code,zh
+【中華電信】提醒您：近期有詐騙集團假冒本公司名義發送「帳單異常」簡訊，請勿點擊不明連結。有疑問請撥打客服。,ham,telco_scam_warning,zh
+【台灣大哥大】您的帳單 NT$799 已產生，請於11/20前繳費。,ham,telco_bill_notice,zh
+【台灣高鐵】訂位代號 0B2K7F 11/18 車次 0623 台北 08:31 → 左營 10:05 已完成付款，請記得取票。thsrc.com.tw,ham,rail_ticket_confirm,zh
+"【國泰世華】您尾號8812信用卡於11/12 12:10消費 NT$1,580（全聯福利中心）。如非本人消費請致電卡片背面電話。",ham,card_transaction_notice,zh
+【玉山銀行】網路銀行登入通知：11/12 21:03 新裝置登入。非本人操作請立即致電客服。,ham,bank_login_alert,zh
+【HSBC】閣下的滙豐信用卡（尾號4417）於11月12日 13:22 已簽賬 HKD 320.00 於 百佳超級市場。如非閣下交易，請致電信用卡背面電話。,ham,card_transaction_notice,zh
+【HSBC HK】一次性密碼 (OTP): 739201。請勿向任何人透露，包括銀行職員。,ham,otp_code,zh
+"【滙豐】閣下已成功透過轉數快(FPS)轉賬 HKD 2,500.00 至 CHAN ***。",ham,bank_transfer_done,zh
+【HSBC】防騙提示：滙豐不會透過短訊連結要求閣下輸入網上理財密碼。如有懷疑，請致電防騙易18222。,ham,bank_scam_warning,zh
+【八達通】您的八達通（尾號1234）已成功自動增值 HKD 250.00。餘額 HKD 268.50。,ham,transit_autocharge,zh
+【八達通App】您已成功以八達通支付 HKD 45.00（惠康）。,ham,wallet_payment_done,zh
+【八達通】轉賬收款：您已收到 HKD 300.00 來自 WONG***。,ham,wallet_money_received,zh
+【香港郵政】您的掛號郵件 RB123456789HK 將於今日派遞，如無人收件將存放於中環郵政局。hongkongpost.hk,ham,parcel_out_for_delivery,zh
+【港鐵MTR】因信號故障，荃灣綫列車服務現時受阻，請預留額外乘車時間。,ham,rail_service_notice,zh
+"【中銀香港】閣下賬戶（尾號5566）於11/12 09:01 自動轉賬 HKD 8,800.00（租金）已完成。",ham,bank_autopay_done,zh
+【菜鸟】您的包裹已到 幸福小区菜鸟驿站，凭取件码 12-3-4567 取件，营业至21:00。,ham,parcel_pickup_ready,zh
+【美团】您的外卖已送达，请及时取餐。本单由骑手 王师傅 配送。,ham,food_delivery_status,zh
+【12306】订单 E123456789，11月15日 G1234 次 北京南 08:00 开，上海虹桥 12:38 到，二等座 05车12F，已出票。,ham,rail_ticket_confirm,zh
+【滴滴出行】司机 京A·12345 已接单，预计3分钟到达，请在上车点等候。,ham,ride_hailing_status,zh
+【国家电网】尊敬的用户，您户号 1234567890 11月电费 ￥186.42 已出账，请通过网上国网App缴费。,ham,utility_bill_notice,zh
+【北京市税务局】您的个人所得税年度汇算已完成，退税 ￥312.00 将于5个工作日内到账。,ham,gov_tax_notice,zh
+【北京市交管局】您的车辆 京N·88K12 于11月10日在朝阳路违法停车，请通过「交管12123」App处理。,ham,gov_traffic_notice,zh
+【协和医院】您已预约11月14日 上午 内分泌科 门诊，请提前30分钟到院取号。,ham,appointment_reminder,zh
+【携程】订单确认：11/20-11/22 上海外滩W酒店 豪华房1间，订单号 1234567890。,ham,travel_booking_confirm,zh
+【哈啰出行】本次骑行 18分钟，费用 ￥2.50 已自动支付。,ham,ride_payment_done,zh
+【中国银联】云闪付：您尾号2201的卡消费 ￥86.00（永辉超市）。,ham,card_transaction_notice,zh
+【招商银行】您账户9988于11月12日 消费 ￥258.00（京东）。如非本人操作请致电95555。,ham,card_transaction_notice,zh
+"KBank: เงินเข้า บช X-1234 1,500.00 บาท 12/11 14:02 คงเหลือ 8,420.55 บาท",ham,bank_deposit_notice,th
+K PLUS: รหัส OTP ของคุณคือ 482913 (Ref: KX7Q) ห้ามบอกรหัสนี้กับผู้อื่น ธนาคารไม่มีนโยบายขอ OTP จากลูกค้า,ham,otp_code,th
+KBank: คุณใช้จ่ายผ่านบัตรเดบิต X-5521 จำนวน 349.00 บาท ที่ 7-ELEVEN 12/11 19:20,ham,card_transaction_notice,th
+KBank แจ้งเตือน: ธนาคารไม่มีนโยบายส่ง SMS แนบลิงก์ให้กดเข้าสู่ระบบหรืออัปเดตข้อมูล หากพบ โปรดอย่ากด และโทร 02-8888888,ham,bank_scam_warning,th
+"KBank: โอนเงินสำเร็จ 2,000.00 บาท ไปยัง SCB X-4411 ค่าธรรมเนียม 0.00 บาท",ham,bank_transfer_done,th
+K PLUS: มีการเข้าสู่ระบบจากอุปกรณ์ใหม่ 12/11 22:10 หากไม่ใช่คุณ โทร 02-8888888 ทันที,ham,bank_login_alert,th
+"SCB: รายการเงินออก บช X-7788 3,250.00 บาท 12/11 10:15 (SCB EASY) คงเหลือ 12,003.12 บาท",ham,bank_withdrawal_notice,th
+SCB EASY: รหัส OTP 603124 สำหรับการเข้าใช้งาน อ้างอิง T9MA หมดอายุใน 3 นาที,ham,otp_code,th
+"SCB: บัตรเครดิต X-9901 ใช้จ่าย 1,290.00 บาท ที่ Lazada 12/11 หากไม่ใช่รายการของคุณ โทร 02-777-7777",ham,card_fraud_check,th
+SCB เตือนภัย! มิจฉาชีพแอบอ้างเป็นธนาคารส่งลิงก์ให้โหลดแอป ธนาคารไม่มีนโยบายส่งลิงก์ทาง SMS หากสงสัยโทร 02-777-7777,ham,bank_scam_warning,th
+Krungthai NEXT: โอนเงินสำเร็จ 500.00 บาท ไปยัง พร้อมเพย์ 08x-xxx-1234 12/11 08:45,ham,bank_transfer_done,th
+"กรุงไทย: เงินเข้า บช X-0088 จำนวน 15,000.00 บาท (เงินเดือน) 25/11",ham,bank_deposit_notice,th
+Krungthai: รหัส OTP 318247 สำหรับยืนยันการทำรายการ อ้างอิง 7HGK อย่าเปิดเผยให้ผู้อื่น,ham,otp_code,th
+"เป๋าตัง: ชำระค่าไฟฟ้า MEA 1,245.60 บาท สำเร็จ เลขที่อ้างอิง 2026111200123",ham,wallet_bill_paid,th
+"TrueMoney Wallet: คุณได้รับเงิน 300.00 บาท จาก สมชาย ว. ยอดคงเหลือ 1,245.00 บาท",ham,wallet_money_received,th
+TrueMoney: รหัส OTP 947210 ใช้ได้ภายใน 5 นาที ทรูมันนี่ไม่มีนโยบายขอรหัส OTP จากลูกค้า,ham,otp_code,th
+TrueMoney Wallet: ชำระเงิน 89.00 บาท ที่ 7-Eleven สาขาสุขุมวิท 24 สำเร็จ,ham,wallet_payment_done,th
+AIS: ค่าบริการรอบบิล 1-30 พ.ย. 699.00 บาท ชำระภายใน 15 ธ.ค. ตรวจสอบและชำระได้ที่แอป myAIS,ham,telco_bill_notice,th
+AIS: คุณใช้เน็ตไปแล้ว 80% ของแพ็กเกจ เช็กยอดคงเหลือกด *121# ฟรี,ham,telco_data_usage,th
+AIS: ชำระค่าบริการ 699.00 บาท เรียบร้อยแล้ว ขอบคุณที่ใช้บริการ,ham,telco_payment_done,th
+AIS: รหัสยืนยัน (OTP) 285176 สำหรับเข้าใช้ myAIS หมดอายุใน 5 นาที,ham,otp_code,th
+AIS เตือน: ระวัง SMS ปลอมแอบอ้างชื่อ AIS ส่งลิงก์ให้กดรับสิทธิ์ AIS จะไม่ส่งลิงก์ให้ลูกค้ากรอกข้อมูลบัตร หากสงสัยโทร 1185,ham,telco_scam_warning,th
+True: ใบแจ้งค่าบริการเดือน พ.ย. 899.00 บาท ครบกำหนด 20 ธ.ค. ชำระผ่านแอป True iService,ham,telco_bill_notice,th
+TrueMove H: เติมเงิน 100 บาท สำเร็จ ยอดคงเหลือ 112.50 บาท ใช้ได้ถึง 15/01/27,ham,telco_topup_done,th
+True: นัดหมายช่างติดตั้ง True Online วันที่ 14 พ.ย. ช่วง 13:00-17:00 ช่างจะโทรก่อนเข้าพื้นที่,ham,technician_visit_reminder,th
+True: รหัส OTP 571930 สำหรับ True iService,ham,otp_code,th
+dtac: ค่าบริการเดือนนี้ 549.00 บาท ชำระภายใน 18 ธ.ค. ผ่านแอป dtac ได้เลย,ham,telco_bill_notice,th
+dtac: แพ็กเกจเน็ตของคุณจะหมดอายุวันที่ 14/11 เวลา 23:59 ตรวจสอบได้ที่แอป dtac,ham,telco_package_expiry,th
+dtac: ยอดเงินคงเหลือ 23.50 บาท โปรดเติมเงินก่อน 20/11 เพื่อใช้บริการต่อเนื่อง,ham,telco_low_balance,th
+Kerry Express: พัสดุ KEX12345678901 กำลังนำส่งโดย คุณวิทยา โทร 09x-xxx-xx12 โปรดเตรียมรับพัสดุวันนี้,ham,parcel_out_for_delivery,th
+Kerry Express: พัสดุของคุณถูกนำส่งสำเร็จแล้ว 12/11 15:40 ผู้รับ: ตัวแทน (ป้อมยาม) ติดตามที่ th.kerryexpress.com,ham,parcel_delivered,th
+Kerry: พัสดุ KEX98765432109 เข้าสาขาปลายทางแล้ว คาดว่าจะถึงมือคุณพรุ่งนี้,ham,parcel_in_transit,th
+Flash Express: พัสดุ TH0123456789A กำลังจัดส่ง พนักงาน คุณอนันต์ 08x-xxx-4421 กรุณารอรับ,ham,parcel_out_for_delivery,th
+Flash Express: ส่งพัสดุสำเร็จ เลขพัสดุ TH0123456789A 12/11 11:02 ขอบคุณที่ใช้บริการ,ham,parcel_delivered,th
+Flash Express: นำส่งไม่สำเร็จ (ไม่มีผู้รับ) จะนำส่งอีกครั้งพรุ่งนี้ กรุณาเปิดโทรศัพท์,ham,parcel_missed_delivery,th
+Lazada: คำสั่งซื้อ 123456789012345 ถูกจัดส่งแล้ว คาดว่าจะถึง 13-14 พ.ย. ติดตามได้ในแอป Lazada,ham,ecommerce_shipped,th
+Lazada: รหัสยืนยัน 318204 ห้ามเปิดเผยให้ผู้อื่น,ham,otp_code,th
+Lazada: พัสดุของคุณถึงแล้ว! ยืนยันการรับสินค้าในแอปภายใน 3 วัน,ham,parcel_delivered,th
+Shopee: คำสั่งซื้อ 2611120ABCDE ได้รับการจัดส่งโดย SPX Express แล้ว ติดตามพัสดุได้ที่แอป Shopee,ham,ecommerce_shipped,th
+Shopee: รหัส OTP ของคุณคือ 493027 Shopee ไม่มีนโยบายขอรหัสจากคุณ,ham,otp_code,th
+ShopeePay: ชำระ 259.00 บาท สำเร็จ ยอดคงเหลือ 341.00 บาท,ham,wallet_payment_done,th
+SPX Express: พัสดุ SPXTH012345678 ถึงแล้ว ส่งถึง: ตู้รับพัสดุหน้าคอนโด,ham,parcel_delivered,th
+Grab: รหัสยืนยัน 772105 ของคุณ ห้ามแชร์ให้ใคร,ham,otp_code,th
+GrabFood: ไรเดอร์กำลังมาส่งอาหารของคุณ ประมาณ 8 นาที,ham,food_delivery_status,th
+Grab: คนขับ สมศักดิ์ ทะเบียน กข 1234 กรุงเทพ กำลังมารับคุณ ประมาณ 4 นาที,ham,ride_hailing_status,th
+GrabPay: ชำระค่าเดินทาง 145.00 บาท สำเร็จ,ham,ride_payment_done,th
+"MEA: ค่าไฟฟ้าเดือน ต.ค. 1,845.20 บาท ครบกำหนด 20 พ.ย. ชำระผ่านแอป MEA Smart Life",ham,utility_bill_notice,th
+กปน.: ค่าน้ำเดือน พ.ย. 245.00 บาท ชำระได้ที่แอป MWA onMobile หรือเคาน์เตอร์ธนาคาร,ham,utility_bill_notice,th
+กรมการขนส่งทางบก: ภาษีรถยนต์ทะเบียน 1กข 5678 จะหมดอายุ 30 พ.ย. ต่อภาษีได้ที่แอป DLT Vehicle Tax,ham,gov_service_reminder,th
+กรมสรรพากร: ท่านยื่นแบบ ภ.ง.ด.90 เรียบร้อยแล้ว เลขอ้างอิง 1234567890 ตรวจสอบสถานะที่ rd.go.th,ham,gov_tax_notice,th
+ปภ.: แจ้งเตือนฝนตกหนักในพื้นที่กรุงเทพฯ และปริมณฑลคืนนี้ โปรดระวังน้ำท่วมขังและขับขี่ด้วยความระมัดระวัง,ham,gov_alert,th
+สปสช.: นัดหมายตรวจสุขภาพประจำปี 15 พ.ย. 09:00 ที่ รพ.สต. บางกะปิ กรุณานำบัตรประชาชนมาด้วย,ham,appointment_reminder,th
+รพ.ศิริราช: นัดพบแพทย์ อายุรกรรม 16 พ.ย. 10:30 กรุณามาก่อนเวลา 30 นาที,ham,appointment_reminder,th
+โรงพยาบาลบำรุงราษฎร์: ยืนยันนัดหมาย 17 พ.ย. 14:00 แผนกผิวหนัง ชั้น 10 หากต้องการเลื่อนนัดกรุณาโทรแจ้งล่วงหน้า,ham,appointment_reminder,th
+ไปรษณีย์ไทย: EMS EF123456789TH จะนำจ่ายวันนี้ ติดตามที่ track.thailandpost.co.th,ham,parcel_out_for_delivery,th
+ไปรษณีย์ไทย: พัสดุ RJ987654321TH นำจ่ายไม่สำเร็จ โปรดติดต่อรับที่ ปณ.ลาดพร้าว ภายใน 15 วัน,ham,parcel_missed_delivery,th
+Rabbit: เติมเงินบัตร Rabbit 200 บาท สำเร็จ ยอดคงเหลือ 265 บาท,ham,transit_topup_done,th
+AIS PLAY: ต่ออายุแพ็กเกจรายเดือน 119 บาท สำเร็จ ใช้ได้ถึง 12 ธ.ค.,ham,subscription_renewal,th
+Major Cineplex: ตั๋วหนัง 2 ที่นั่ง รอบ 19:30 โรง 5 เอ็มควอเทียร์ รหัสจอง MJ8K2P แสดงรหัสที่ตู้รับตั๋ว,ham,ticket_confirm,th
+การบินไทย: TG102 กรุงเทพ(BKK)-เชียงใหม่(CNX) 18 พ.ย. 08:00 เช็กอินออนไลน์ได้แล้วที่ thaiairways.com,ham,airline_checkin_open,th
+AirAsia: FD3425 DMK-HKT 20/11 เปิดเช็กอินออนไลน์แล้ว airasia.com,ham,airline_checkin_open,th
+LINE MAN: ไรเดอร์รับอาหารแล้ว กำลังไปส่ง ประมาณ 12 นาที,ham,food_delivery_status,th
+7-Eleven ALL member: คุณได้รับแสตมป์ 5 ดวงจากการซื้อวันนี้ ตรวจสอบได้ในแอป 7-Eleven,ham,loyalty_points_notice,th
+"ttb: บช X-3321 เงินออก 1,200.00 บาท 12/11 (ttb touch) คงเหลือ 5,330.00 บาท",ham,bank_withdrawal_notice,th
+"Krungsri: บัตรเครดิต X-7102 ใช้จ่าย 4,500.00 บาท ที่ Central 12/11 ไม่ใช่รายการของคุณ? โทร 1572",ham,card_fraud_check,th
+"ธนาคารกรุงเทพ: โอนเงินผ่าน Bualuang mBanking 10,000.00 บาท สำเร็จ 12/11 16:20",ham,bank_transfer_done,th
+PEA: ค่าไฟ พ.ย. 968.40 บาท ชำระภายใน 25 พ.ย. ที่แอป PEA Smart Plus,ham,utility_bill_notice,th
+สำนักงานประกันสังคม: เงินสมทบประจำเดือน ต.ค. 750 บาท ได้รับการบันทึกแล้ว ตรวจสอบที่แอป SSO Connect,ham,gov_notice,th
+"VCB: So du TK 0071001234567 +5,000,000 VND luc 12-11-2026 09:15. So du 12,450,000 VND. Ref MBVCB.1234567. ND: LUONG T11",ham,bank_deposit_notice,vi
+"Vietcombank: Ma OTP giao dich cua ban la 482913. Khong cung cap ma nay cho bat ky ai, ke ca nhan vien ngan hang.",ham,otp_code,vi
+"VCB: TK 0071001234567 -350,000 VND luc 12-11-2026 19:42. So du 12,100,000 VND. Ref: thanh toan QR WINMART",ham,bank_withdrawal_notice,vi
+Vietcombank cảnh báo: Ngân hàng không bao giờ gửi link yêu cầu đăng nhập hay cung cấp OTP qua SMS. Không nhấn vào đường dẫn lạ. Hotline 1900 54 54 13.,ham,bank_scam_warning,vi
+"VCB Digibank: Đăng nhập thành công trên thiết bị mới lúc 12/11 21:03. Nếu không phải bạn, đổi mật khẩu ngay trên ứng dụng.",ham,bank_login_alert,vi
+"Techcombank: TK 19031234567890 +2,000,000 VND 12/11 14:20 So du 5,230,000 VND ND: NGUYEN VAN A chuyen tien",ham,bank_deposit_notice,vi
+"Techcombank: Ma xac thuc (OTP) 731945 cho giao dich chuyen 1,000,000 VND. Hieu luc 2 phut.",ham,otp_code,vi
+"Techcombank: Thẻ tín dụng ****4417 vừa chi tiêu 1,250,000 VND tại SHOPEE lúc 12/11 10:05. Nếu không phải bạn, gọi số sau thẻ ngay.",ham,card_fraud_check,vi
+"Techcombank: Dư nợ thẻ tín dụng kỳ 11/2026 là 4,860,000 VND, hạn thanh toán 25/11. Kiểm tra trên app Techcombank Mobile.",ham,credit_statement_notice,vi
+MoMo: Bạn nhận được 200.000đ từ Trần Minh. Số dư Ví 1.245.000đ. Mở MoMo để xem.,ham,wallet_money_received,vi
+MoMo: Mã xác thực của bạn là 583102. MoMo KHÔNG BAO GIỜ gọi điện hay nhắn tin hỏi mã này.,ham,otp_code,vi
+MoMo: Thanh toán 45.000đ cho Highlands Coffee thành công. Số dư 1.200.000đ,ham,wallet_payment_done,vi
+MoMo: Bạn vừa thanh toán hóa đơn điện EVN 820.500đ thành công. Mã GD 1234567890,ham,wallet_bill_paid,vi
+MoMo: Đăng nhập trên thiết bị mới (Samsung A54) lúc 12/11 08:12. Không phải bạn? Vào Cài đặt > Bảo mật để kiểm tra.,ham,wallet_login_alert,vi
+MoMo: Hóa đơn nước SAWACO 125.000đ đến hạn ngày 15/11. Bạn có thể thanh toán ngay trên MoMo.,ham,wallet_bill_reminder,vi
+Viettel: Tai khoan cua ban con 12.500d. Han su dung den 30/11/2026. Soan *101# de kiem tra.,ham,telco_low_balance,vi
+Viettel: Cuoc thang 11 cua TB 098xxx1234 la 185.000d. Han thanh toan 20/12. Tra cuoc tren app My Viettel.,ham,telco_bill_notice,vi
+"Viettel: Goi ST120K da duoc gia han thanh cong, 4GB/ngay, han den 12/12. Chi tiet soan KT DATA gui 191.",ham,telco_package_renewed,vi
+Viettel: Ma xac thuc My Viettel cua ban la 294817. Khong chia se ma nay.,ham,otp_code,vi
+"Viettel cảnh báo: Viettel không yêu cầu khách hàng cung cấp OTP, mật khẩu qua điện thoại hay SMS. Cảnh giác với cuộc gọi mạo danh. Hotline 18008098.",ham,telco_scam_warning,vi
+"VinaPhone: TK chinh con 8.200d. De tiep tuc su dung, vui long nap the. Chuc Quy khach vui ve!",ham,telco_low_balance,vi
+VinaPhone: Cuoc thang 11 cua Quy khach la 220.000d. Vui long thanh toan truoc 25/12 qua app My VNPT.,ham,telco_bill_notice,vi
+VinaPhone: Goi D60G cua Quy khach se het han luc 23:59 ngay 14/11.,ham,telco_package_expiry,vi
+"VNPT: Lich hen ky thuat vien lap dat Internet: 14/11, 8h-11h. KTV se goi truoc khi den.",ham,technician_visit_reminder,vi
+"VinaPhone cảnh báo: Không cung cấp mã OTP, không chuyển tiền theo yêu cầu qua điện thoại. VinaPhone không bao giờ yêu cầu khách hàng chuyển tiền.",ham,telco_scam_warning,vi
+MobiFone: Quy khach da nap thanh cong 100.000d. TK chinh 112.500d.,ham,telco_topup_done,vi
+MobiFone: Cuoc thang 11: 165.000d. Han thanh toan 22/12. Xem chi tiet tai app My MobiFone.,ham,telco_bill_notice,vi
+MobiFone: Ma OTP cua Quy khach la 660214. Hieu luc 5 phut.,ham,otp_code,vi
+"GHN: Don hang GHN1234567890 dang duoc giao, shipper Tuan 09xx xxx 221. Vui long de y dien thoai.",ham,parcel_out_for_delivery,vi
+Giao Hàng Nhanh: Đơn GHN0987654321 đã giao thành công lúc 12/11 15:30. Cảm ơn bạn!,ham,parcel_delivered,vi
+GHN: Giao khong thanh cong (khach khong nghe may). Shipper se giao lai vao ngay mai.,ham,parcel_missed_delivery,vi
+GHN: Don hang cua ban da den buu cuc Quan 7. Du kien giao trong hom nay.,ham,parcel_in_transit,vi
+Shopee: Don hang 2611120XYZ da duoc nguoi ban giao cho SPX Express. Theo doi tren ung dung Shopee.,ham,ecommerce_shipped,vi
+"Shopee: Mã xác minh của bạn là 318204. Không chia sẻ mã này với bất kỳ ai, kể cả Shopee.",ham,otp_code,vi
+SPX Express: Don hang SPXVN012345678 dang giao den ban. Shipper: Hung 09xx 234 xxx,ham,parcel_out_for_delivery,vi
+ShopeePay: Thanh toan 125.000d thanh cong. So du 540.000d,ham,wallet_payment_done,vi
+"Shopee: Đơn hàng của bạn đã được giao. Vui lòng xác nhận ""Đã nhận hàng"" trong ứng dụng trong 3 ngày.",ham,parcel_delivered,vi
+Tiki: Don hang 123456789 da duoc dong goi va dang chuyen den ban. Du kien giao 13/11. Theo doi tai tiki.vn,ham,ecommerce_shipped,vi
+Tiki: TikiNOW da giao thanh cong don 123456789. Danh gia san pham de nhan Tiki Xu!,ham,parcel_delivered,vi
+Tiki: Ma OTP 871043 de dang nhap. Hieu luc 5 phut.,ham,otp_code,vi
+EVNHCMC: Tien dien thang 11/2026 ma KH PE0400123456 la 1.235.400d. Han thanh toan 20/11. Thanh toan qua app EVNHCMC CSKH hoac vi dien tu.,ham,utility_bill_notice,vi
+"EVNHANOI: Thong bao tam ngung cap dien de bao tri luoi dien ngay 15/11 tu 8h00-12h00 khu vuc P. Dich Vong, Q. Cau Giay. Mong Quy khach thong cam.",ham,utility_outage_notice,vi
+EVN: Chi so dien ky 11/2026: 412 kWh. Hoa don dien tu da gui qua email. Xem tai cskh.evnhcmc.vn,ham,utility_bill_notice,vi
+EVNSPC: Quy khach da thanh toan tien dien 862.000d thanh cong. Cam on Quy khach.,ham,utility_payment_done,vi
+BHXH Việt Nam: Hồ sơ hưởng BHXH một lần của bạn đã được tiếp nhận. Mã HS 1234567890. Tra cứu trên ứng dụng VssID.,ham,gov_notice,vi
+Bộ Công an: Tài khoản VNeID của bạn đã được kích hoạt định danh mức 2 thành công.,ham,gov_notice,vi
+Cục Thuế TP.HCM: Tờ khai thuế điện tử kỳ Q3/2026 đã được ghi nhận. Tra cứu tại thuedientu.gdt.gov.vn,ham,gov_tax_notice,vi
+CSGT: Phuong tien 51G-123.45 co thong bao vi pham qua hinh anh. Tra cuu tai csgt.vn,ham,gov_traffic_notice,vi
+UBND P. Ben Nghe: Lich tiem vac xin cum mien phi cho nguoi tren 65 tuoi ngay 16/11 tai Tram y te phuong.,ham,gov_health_notice,vi
+Vietnam Airlines: Chuyến bay VN215 SGN-HAN 18/11 07:00 đã mở làm thủ tục trực tuyến. vietnamairlines.com,ham,airline_checkin_open,vi
+Vietjet Air: VJ130 HAN-SGN 20/11 khoi hanh luc 15:20. Vui long co mat tai san bay truoc 2 tieng.,ham,airline_reminder,vi
+"Grab: Tài xế Nguyễn Văn B, biển số 59X1-123.45 đang đến đón bạn trong 3 phút.",ham,ride_hailing_status,vi
+"GrabFood: Đơn hàng của bạn đang được giao, dự kiến 10 phút nữa.",ham,food_delivery_status,vi
+Be: Ma xac thuc 441702. Khong chia se ma nay cho bat ky ai.,ham,otp_code,vi
+VNPAY: Thanh toan QR 350.000d tai CIRCLE K thanh cong. Ma GD VNP12345678,ham,wallet_payment_done,vi
+ZaloPay: Ban da nhan 100.000d tu Le Thi H. So du 450.000d,ham,wallet_money_received,vi
+Zalo: Mã xác thực của bạn là 773102. Không chia sẻ với người khác.,ham,otp_code,vi
+BIDV: TK 2601234567 +1.500.000VND 12/11 11:20 SD 3.200.000VND ND: HOAN TIEN,ham,bank_deposit_notice,vi
+"VPBank: The ****2201 chi tieu 560.000 VND tai GRAB 12/11. Neu khong phai ban, goi 1900 545415",ham,card_fraud_check,vi
+ACB: Ma OTP 905182 cho giao dich 2.000.000 VND. Khong cung cap cho bat ky ai.,ham,otp_code,vi
+"Vinmec: Nhắc lịch khám: 14/11 09:00, Khoa Nội, Vinmec Times City. Vui lòng đến trước 15 phút.",ham,appointment_reminder,vi
+"BV Cho Ray: Lich kham ngay 15/11, so thu tu 42, phong 203. Vui long den dung gio.",ham,appointment_reminder,vi
+"Bách Hóa Xanh: Đơn hàng online của bạn đã sẵn sàng, nhận tại cửa hàng Lê Văn Sỹ trước 20h hôm nay.",ham,store_pickup_ready,vi
+Thế Giới Di Động: Đơn hàng 123456 đã giao thành công. Bảo hành điện tử đã được kích hoạt. Cảm ơn bạn!,ham,parcel_delivered,vi
+FPT Telecom: Hoa don Internet thang 11: 220.000d. Thanh toan truoc 15/11 qua app Hi FPT.,ham,telco_bill_notice,vi
+"Viettel Post: Buu gui 123456789012 da den buu cuc Thanh Xuan, du kien giao hom nay.",ham,parcel_in_transit,vi
+Sacombank: Tai khoan ****8899 -1.200.000 VND 12/11 (chuyen khoan NAPAS). SD 4.100.000 VND,ham,bank_withdrawal_notice,vi
+FPT Play: Goi VIP da gia han 85.000d. Han den 12/12.,ham,subscription_renewal,vi
+Vietnam Post: Buu pham EMS EE123456789VN da phat thanh cong luc 10:30 12/11.,ham,parcel_delivered,vi
+Agribank: TK 1234567890123 +3.000.000 VND 12/11 LUONG. SD 6.750.000 VND,ham,bank_deposit_notice,vi

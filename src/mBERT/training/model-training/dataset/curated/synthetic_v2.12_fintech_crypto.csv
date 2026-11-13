@@ -1,0 +1,341 @@
+text,label,category,language
+Binance: Withdrawal of 0.82 BTC is pending. Confirm your identity within 12h or the request will be cancelled: binance-verify-id.com,phishing,exchange_withdrawal_pending,en
+"Coinbase: We noticed a login from Moscow, Russia. If this wasn't you, secure your wallet immediately: coinbase-wallet-protect.net",phishing,exchange_suspicious_login,en
+Revolut: A payment of £312.50 is on hold. Confirm your card details to release the funds: revolut-cardcheck.co,phishing,neobank_payment_hold,en
+Zelle Alert: Your account will be limited on 14 Nov. Verify your information to keep sending money: zelle-accountreview.com,phishing,zelle_account_limited,en
+Cash App: Congratulations! You've been chosen for a $750 reward. Claim here before it expires -> cashapp-bonus750.xyz,phishing,cashapp_reward_lure,en
+MetaMask: Your wallet is out of sync and may lose funds. Re-sync with your secret recovery phrase at metamask-sync.app,phishing,wallet_seed_phrase,en
+Trust Wallet notice: Mandatory wallet migration. Import your 12-word seed phrase at trustwallet-upgrade.io before Dec 1 or lose access.,phishing,wallet_seed_phrase,en
+Your 2025 crypto tax report is ready. Download the statement: taxreport-crypto.top/view,phishing,crypto_tax_report_lure,en
+Ledger: Our customer database was breached. Update your device firmware now at ledger-recovery-update.com to protect your assets.,phishing,hardware_wallet_breach,en
+"You are eligible for the ARB airdrop! 1,250 ARB waiting. Connect wallet to claim: bit.ly/arb-claim-24",phishing,airdrop_claim,en
+"Your USDT deposit of 2,400 failed. Re-enter your wallet address to recover funds: usdt-recover.net",phishing,deposit_failed_reenter,en
+"Hi James, this is Daniel your investment manager. Your account made 18% this week. Add $1,000 more and I guarantee you double it by Friday. WhatsApp me +44 7911 220 455",phishing,investment_manager_followup,en
+"Your withdrawal of $12,350 from TradeMaxFX is approved. Pay the 10% tax ($1,235) to release your funds. Deposit USDT to TQmZ9x...k2Lp",phishing,withdrawal_tax_fee,en
+Klarna: Your payment failed. Update your card now to avoid a late fee: klarna-payment-update.com,phishing,bnpl_payment_failed,en
+Afterpay: Payment declined. We will suspend your account unless you verify your card at afterpay-billing.co,phishing,bnpl_payment_failed,en
+"Stripe: Your payout of $3,480.00 is on hold pending identity verification. Complete it here: stripe-payouts-verify.com",phishing,payout_hold,en
+Shopify Payments: Payout paused due to a compliance review. Verify your business details within 48h: shopify-payouts-review.net,phishing,payout_hold,en
+"Chase: A new device (iPhone 15) was registered to your account. If this wasn't you, remove it now: chase-devicecheck.com",phishing,bank_new_device,en
+"GCash: I accidentally sent you 3,500 pesos. Please send it back to 0917 884 2211, I really need it for my mother's medicine 🙏",phishing,mistaken_transfer_reversal,en
+Kraken: Unusual withdrawal attempt blocked. Confirm your account ownership to unlock: kraken-security-check.com,phishing,exchange_account_frozen,en
+Bybit: Your account has been flagged for AML review. Upload ID within 24 hours or funds will be frozen: bybit-kyc-portal.com,phishing,exchange_kyc_lure,en
+OKX: Withdrawal to 0x8f...3a2c pending. Not you? Cancel now: okx-cancel-withdrawal.xyz,phishing,exchange_withdrawal_pending,en
+"Wise: Your transfer of 2,000 EUR is on hold. Confirm your identity to continue: wise-transfer-hold.com",phishing,neobank_payment_hold,en
+N26: Your card has been temporarily blocked. Reactivate at n26-card-service.com or call 0800 589 1122,phishing,neobank_card_blocked,en
+"Monzo: Suspicious transaction of £240 at Argos. If this was NOT you, move your money to our secure holding account. Call 0203 519 7001 now.",phishing,safe_account_scam,en
+Chime: Your direct deposit is on hold. Verify your SpotMe account: chime-verify-now.com,phishing,neobank_payment_hold,en
+Zelle: You have an incoming payment of $450 from Mark T. Accept it here: zelle-accept-payment.com,phishing,zelle_fake_incoming,en
+Cash App Support: Your $600 Cash App payment is pending verification. Reply with your Cash PIN to release.,phishing,pin_request,en
+Your Coinbase account will be permanently disabled in 24 hours. Confirm ownership: coinbase-restore.org,phishing,exchange_account_frozen,en
+"Binance Security: 2FA was disabled on your account. If you didn't do this, restore it here: binance.com-security-alert.top",phishing,exchange_2fa_lure,en
+"New sign-in to your Kraken account from Lagos, Nigeria. Secure your account: krakensecure-login.com",phishing,exchange_suspicious_login,en
+"PayPal: You sent $1,200.00 to Bitcoin Exchange Ltd. Not you? Call 1-833-611-0452 immediately.",phishing,paypal_fake_payment_callback,en
+PayPal Resolution Center: An unauthorised transaction of $856.99 was detected. To cancel call (877) 320-9981.,phishing,paypal_fake_payment_callback,en
+Revolut: We've detected a login from a new device in Spain. Confirm it was you: revolut-login-confirm.com,phishing,neobank_new_device,en
+Revolut Business: Your account verification has expired. Re-verify within 48h: rev-verify-business.co,phishing,neobank_reverify,en
+Wise: Your account has been locked for security reasons. Unlock here: wise-unlock.help,phishing,neobank_account_locked,en
+N26: Important! Your TAN procedure needs to be renewed. Do it now: n26-tan-renewal.com,phishing,neobank_reverify,en
+Monzo: We've frozen your card after 3 failed PIN attempts. Verify to unfreeze: monzo-cardhelp.co.uk,phishing,neobank_card_blocked,en
+"Hey, I sent you $280 on Venmo by mistake instead of my cousin. Can you send it back to @marcus-reid88? Thank you so much",phishing,mistaken_transfer_reversal,en
+"Zelle Fraud Dept: Did you authorize $975 to Tiffany Wells? If NO, call 888-204-5513 to reverse.",phishing,zelle_fake_fraud_callback,en
+"MetaMask: Due to a recent security breach, all users must validate their wallets. Validate here: metamask-validation.net",phishing,wallet_seed_phrase,en
+Trust Wallet: Your wallet has been selected for a security audit. Verify your recovery phrase here: trustwallet-audit.com,phishing,wallet_seed_phrase,en
+Phantom Wallet: Suspicious activity detected. Import your seed to our secure vault to prevent loss: phantom-vault.xyz,phishing,wallet_seed_phrase,en
+Ledger Live: An update is required to keep your assets safe. Download the new version: ledger-live-update.net,phishing,hardware_wallet_breach,en
+Trezor: We detected a vulnerability affecting your device. Enter your recovery seed at trezor-patch.com to apply the fix.,phishing,hardware_wallet_breach,en
+Uniswap airdrop: 400 UNI reserved for your wallet. Claim before midnight: uniswap-claim.io,phishing,airdrop_claim,en
+Your wallet qualifies for the official LayerZero ZRO airdrop. Claim 950 ZRO: layerzero-rewards.xyz,phishing,airdrop_claim,en
+🎁 Free 0.5 ETH airdrop for early MetaMask users. Only 200 spots left. Connect: eth-airdrop-event.top,phishing,airdrop_claim,en
+"USDT recovery notice: Your deposit of 5,000 USDT (TRC20) was not credited. Re-submit wallet address: tinyurl.com/usdt-fix",phishing,deposit_failed_reenter,en
+"Dear investor, your BTC withdrawal has failed due to network error. Re-enter wallet credentials here: btc-withdraw-fix.com",phishing,deposit_failed_reenter,en
+"Hello Sarah, Mark here from Golden Eagle Capital. Your portfolio is at $14,200 (+42%). To withdraw you'll need to upgrade to Gold tier for $800. Shall I send the wallet address?",phishing,investment_manager_followup,en
+"Your account manager Lisa: profits are ready for withdrawal ($27,600). Please clear the 15% anti-money-laundering fee first. USDT only.",phishing,withdrawal_tax_fee,en
+"Congratulations! Your trading account on CoinVault Pro has profits of $18,900. Verification fee $350 required to withdraw. Pay via Bitcoin.",phishing,withdrawal_tax_fee,en
+Klarna: We couldn't process your payment of £86.40. Update your details within 24h or your order will be returned: klarna-uk-payments.com,phishing,bnpl_payment_failed,en
+Afterpay: A payment of $42.50 is overdue. Avoid account suspension - pay now: afterpay-pay.co,phishing,bnpl_payment_failed,en
+Affirm: Your loan payment failed. Update your bank account: affirm-update.net,phishing,bnpl_payment_failed,en
+Stripe Support: Your account has been flagged for unusual activity. Payouts frozen until you confirm your details at stripe-account-review.com,phishing,payout_hold,en
+"Shopify: Action required. Your payout of $5,112 could not be deposited. Update your bank info: shopify-payouts.help",phishing,payout_hold,en
+"Square: Your deposit of $1,340 is pending. Verify your identity to receive it: squareup-verify.co",phishing,payout_hold,en
+"Bank of America: A new device has been added to your online banking. If this was not you, visit bofa-securedevice.com",phishing,bank_new_device,en
+Wells Fargo: Unrecognised device logged in from Houston TX. Confirm or block: wf-devicealert.com,phishing,bank_new_device,en
+"HSBC: Your card ending 4417 was added to a new mobile wallet. If this wasn't you, call 0203 981 2272 now.",phishing,bank_new_device_callback,en
+"Barclays: New payee ""Crypto Services Ltd"" added. Not you? Cancel at barclays-payee-cancel.com",phishing,bank_new_payee,en
+Lloyds: Your Internet Banking has been suspended after a failed login. Restore access: lloyds-restore-access.com,phishing,bank_account_suspended,en
+PayPal: Your account has been limited because of a policy violation. Resolve within 24h: paypal-resolution-centre.net,phishing,p2p_account_limited,en
+Cash App: Your account is under review and will be closed in 48h. Verify identity to keep your funds: cashapp-review.online,phishing,p2p_account_limited,en
+"Cash App Giveaway: You won $1,000 in our Friday giveaway! Reply with your $cashtag and PIN to receive it.",phishing,giveaway_pin_ask,en
+Chime: Unusual spend detected at Walmart ($389). Confirm or freeze your card: chime-cardalert.com,phishing,neobank_fake_fraud_alert,en
+Venmo: We've noticed suspicious activity. Confirm your login: venmo-secure-login.net,phishing,p2p_suspicious_login,en
+"Zelle: Pending transfer of $1,250 needs approval. Approve: bit.ly/zelle-approve",phishing,zelle_fake_incoming,en
+Robinhood: Your account is restricted due to a failed identity check. Reupload your ID: robinhood-id-verify.com,phishing,broker_kyc_lure,en
+"eToro: Your withdrawal request of €4,300 is awaiting confirmation. Confirm card details: etoro-withdraw.net",phishing,broker_withdrawal_pending,en
+Crypto.com: Your account has been accessed from an unknown IP. Lock it now: crypto-com-security.xyz,phishing,exchange_suspicious_login,en
+Gemini: Your 2FA code request was denied. Reset your security here: gemini-2fa-reset.com,phishing,exchange_2fa_lure,en
+KuCoin: Your account will be deleted due to inactivity. Log in to keep your assets: kucoin-keep-assets.com,phishing,exchange_inactivity_lure,en
+Nexo: Your loan collateral is below threshold. Deposit more funds in 2 hours or face liquidation: nexo-collateral.app,phishing,crypto_liquidation_lure,en
+"UPI: You have received a collect request of Rs 15,000 from ""Refund Dept"". Approve in your UPI app to receive money.",phishing,upi_collect_request,en
+"Paytm: Rs.9,500 cashback approved. Open your UPI app and ENTER YOUR PIN to receive the amount.",phishing,upi_collect_request,en
+"Hello, I sent Ksh 3,000 to your number by mistake, that was my child's school fees. Please send it back to 0722 118 340. God bless you",phishing,mistaken_transfer_reversal,en
+Your crypto tax statement from CoinTracker is ready. Download before it is deleted: cointracker-statements.co,phishing,crypto_tax_report_lure,en
+"IRS Crypto Compliance: You failed to report $18,440 in crypto gains. Pay now to avoid a lien: irs-cryptotax-payment.com",phishing,crypto_tax_authority_lure,en
+Your Binance referral bonus of 50 USDT has expired. Reactivate in 2 hours: binance-bonus.cc,phishing,exchange_bonus_lure,en
+Coinbase Wallet: You have 0.74 ETH unclaimed from a staking reward. Claim now: cb-staking-rewards.com,phishing,exchange_bonus_lure,en
+"Hi, this is Alex from Coinbase support. We detected malware on your account. Install our secure desk tool at cb-remote-support.com and call 1-800-310-2298 so we can clean it.",phishing,remote_access_support_scam,en
+Kraken Compliance: Your Proof of Funds documents were rejected. Upload again: kraken-compliance.co,phishing,exchange_kyc_lure,en
+"Bybit Launchpad: You've won 2,000 USDT in the draw! Claim within 6 hours: bybit-launchpad-win.com",phishing,exchange_bonus_lure,en
+OKX Rewards: 300 USDT welcome bonus credited. Verify account to unlock: okx-rewards.top,phishing,exchange_bonus_lure,en
+"Hey it's me again from the Bitcoin webinar. Your free $100 trial account is ready, log in and withdraw once you see profit: tinyurl.com/trial-btc100",phishing,fake_trading_platform,en
+"CoinFlex Capital: Hi Joan, your $5k investment has matured to $21,300. Please send $2,130 (10%) as capital gains tax to release. Regards, Tom",phishing,withdrawal_tax_fee,en
+WARNING: Your Ledger wallet is exposed in the latest leak. Secure it: ledger-leak-check.com,phishing,hardware_wallet_breach,en
+Exodus Wallet: your version is outdated and unsafe. Restore wallet from seed in new app: exodus-wallet-restore.com,phishing,wallet_seed_phrase,en
+"Trust Wallet: 1,500 TWT reward is waiting in your wallet. Sync to receive: twt-sync.xyz",phishing,airdrop_claim,en
+FINAL NOTICE: PayPal account suspended. Confirm your card to reactivate. paypal-support-id.com,phishing,p2p_account_limited,en
+"Revolut: Someone tried to change your phone number. If it wasn't you, secure your account: revolut-phone-secure.com",phishing,neobank_suspicious_change,en
+"Starling Bank: Your card has been used for a £1,450 purchase at Apple. If not you, move funds to the safe account we text you. Reply HELP.",phishing,safe_account_scam,en
+"Chime: Your paycheck of $1,890 is pending. Confirm your login: chime-deposit-confirm.com",phishing,neobank_payment_hold,en
+Wise: We need you to re-verify your address. Upload a bill: wise-address-check.com,phishing,neobank_reverify,en
+Monzo: Your Flex payment failed. Update your card: monzo-flex-update.co.uk,phishing,bnpl_payment_failed,en
+Zelle: Enroll to receive $320 from your buyer. Enroll at zelle-business-enroll.com. Payment will expire in 2 hours.,phishing,zelle_fake_incoming,en
+Hi it's Jenna from Marketplace! I sent the $500 for the sofa via Zelle but you need a business account to accept it. Pay the $300 upgrade and I'll refund you.,phishing,marketplace_zelle_upgrade,en
+"Venmo: $1,000 reward for being a loyal user! Claim: venmo-loyalty.xyz",phishing,cashapp_reward_lure,en
+Apple Pay: Your card has been suspended. Reactivate: applepay-card-reactivate.com,phishing,wallet_card_suspended,en
+"Google Pay: Rs 2,000 cashback is waiting. Scan this QR and enter UPI PIN to receive it. bit.ly/gpay-cash",phishing,upi_collect_request,en
+PhonePe: Your KYC is incomplete. Your wallet will be blocked in 24 hrs. Complete at phonepe-kyc-update.in,phishing,wallet_kyc_lure,en
+Your Binance Pay transaction of 850 USDT to Unknown is being processed. Not you? Stop it: binance-stop-payment.com,phishing,exchange_fake_transaction,en
+Coinbase Pro has been migrated. Your remaining balance 1.2 ETH must be moved manually: coinbase-migration.net,phishing,exchange_migration_lure,en
+"Hi, I'm Amanda, a certified crypto analyst. I can help you recover funds lost in scams. 95% success rate. WhatsApp +1 (929) 300-1177",phishing,recovery_scam,en
+Recovery Specialists: We traced your lost 0.6 BTC. Pay the $400 retrieval fee and it's yours. Contact us on Telegram @btc_recovery_team,phishing,recovery_scam,en
+"Your Kraken staking rewards (2,340 ADA) are blocked due to unverified tax status. Verify: kraken-tax.co",phishing,crypto_tax_report_lure,en
+Crypto.com: Your card has been declined 3 times. Update card: cryptocom-card-update.com,phishing,exchange_card_update,en
+Coinbase: Verify your identity to avoid an account hold. Scan your ID: coinbase-id-scan.com,phishing,exchange_kyc_lure,en
+Cash App: your bitcoin withdrawal of 0.03 BTC is pending. Confirm with your PIN: cashapp-btc-confirm.com,phishing,pin_request,en
+MoneyGram: Your transfer of $900 has been held by compliance. Verify sender details: moneygram-hold.com,phishing,remittance_hold,en
+Western Union: Your payout is ready. Pay $45 release fee: wu-payout-release.com,phishing,remittance_fee,en
+"Sorry for the random text, is this Katie? I was told you're the one who helped my sister with BTC investing. I have $20k to put in.",phishing,wrong_number_investment,en
+Zelle: A refund of $230.00 from Amazon is waiting. Log in to accept: zelle-refund-center.com,phishing,zelle_fake_incoming,en
+Wells Fargo: Your Zelle access has been limited. Restore: wellsfargo-zelle.help,phishing,zelle_account_limited,en
+"Your BlockFi claim of $4,210 is approved. Enter your wallet address to receive it: blockfi-claims.net",phishing,bankruptcy_claim_lure,en
+"FTX Recovery Fund: You are owed $2,870. Claim before Dec 15: ftx-creditor-claims.com",phishing,bankruptcy_claim_lure,en
+Celsius distribution: 0.42 BTC allocated to you. Connect wallet to receive: celsius-payout.io,phishing,bankruptcy_claim_lure,en
+ur binance acct will be deleted 2nite. last chance to withdraw: bnb-withdraw-now.xyz,phishing,exchange_account_frozen,en
+Chime Support: we refunded you $450 by mistake instead of $45. Please send the difference back to $chimerefunds on Cash App today or your account will be flagged.,phishing,mistaken_transfer_reversal,en
+"[Binance] Verification code: 739204. Do not share this code with anyone, including Binance staff.",ham,otp_code,en
+Coinbase: Your withdrawal of 0.05 BTC to bc1q...x7p2 has been confirmed. View on coinbase.com,ham,withdrawal_confirmed,en
+"Binance: Withdrawal of 1,200 USDT (TRC20) completed. TxID ending 9f3a. If you did not make this request, contact support via binance.com.",ham,withdrawal_confirmed,en
+PayPal: You sent $40.00 to Maria Lopez. Transaction ID 7HK29301TW. See details at paypal.com/activity,ham,p2p_payment_sent,en
+"Revolut: Card payment of €12.40 at Lidl, Berlin. Balance: €418.22",ham,card_payment_notice,en
+Wise: Your transfer of 500 GBP to Priya Nair has arrived. Reference: W-28819302,ham,transfer_arrived,en
+"Cash App: You received $60 from Tom Blake for ""concert tickets""",ham,p2p_payment_received,en
+Zelle: You received $120.00 from Dan Whitfield. Money is now in your checking account.,ham,p2p_payment_received,en
+"Rs.500 credited to a/c ending 4417 by UPI ref 331204988812 from RAHUL S on 11-Nov-26. Avl bal Rs.12,450.20 -SBI",ham,upi_credit_notice,en
+Klarna: Your payment of £15.00 is due on 12 Dec. Manage your payments at klarna.com,ham,bnpl_due_reminder,en
+"Monzo: We'll never ask you to move money to a 'safe account'. If someone does, it's a scam. Hang up and chat with us in the app.",ham,scam_warning_notice,en
+"Binance: We never ask for your password, 2FA code or private keys. Stay safe. Learn more at binance.com/security",ham,scam_warning_notice,en
+"Price alert: BTC has crossed $92,000 (your target). Open the Coinbase app to trade.",ham,price_alert,en
+"Kraken price alert: ETH fell below $3,100.00, the threshold you set.",ham,price_alert,en
+"Stripe: Your payout of $1,284.50 has been sent to your bank account ending 2201 and should arrive by Thursday.",ham,payout_sent,en
+Your Direct Debit to Octopus Energy for £84.00 will be collected on 15 Nov. - Monzo,ham,direct_debit_notice,en
+Your Kraken withdrawal of 250 ADA has been sent. Check status at kraken.com,ham,withdrawal_confirmed,en
+PayPal: You received $150.00 from Lindsey Park. Funds are available in your PayPal balance.,ham,p2p_payment_received,en
+"Revolut: Your salary of £2,350.00 from Hollins Ltd has arrived. 💸",ham,deposit_received,en
+"Wise: We've converted 1,000 USD to 918.40 EUR at the mid-market rate. Check wise.com for details.",ham,fx_conversion_notice,en
+"Shopify Payments: Your payout of $2,310.77 was deposited today. View in your admin.",ham,payout_sent,en
+"Afterpay: Reminder, your instalment of $31.25 is due tomorrow. View at afterpay.com",ham,bnpl_due_reminder,en
+"Chime: You received a direct deposit of $1,420.00 from Target Corp. It's in your account now.",ham,deposit_received,en
+"MPESA confirmed. Ksh2,000.00 sent to JANE WANJIKU 0722***340 on 11/11/26 at 2:14 PM. New M-PESA balance is Ksh5,480.00. Transaction cost Ksh33.00.",ham,mobile_money_confirmation,en
+Coinbase: Your recurring buy of $50 in ETH was completed.,ham,recurring_buy_notice,en
+Hey did you get the £30 I sent via Monzo? Should show as 'Sam W',ham,friend_money_chat,en
+"sent you the 200 for the deposit on cash app, let me know when it lands",ham,friend_money_chat,en
+"Mum the Revolut payment went through, thanks! I'll pay you back on Friday x",ham,friend_money_chat,en
+yo did your binance withdrawal go through? mine took like 2 hours yesterday,ham,friend_money_chat,en
+Zelle: Your payment of $800.00 to Greenway Property Mgmt has been sent.,ham,p2p_payment_sent,en
+PayPal: Your automatic payment of $12.99 to Spotify was completed.,ham,subscription_payment_notice,en
+Robinhood: Your deposit of $500.00 has been initiated and will be available within 5 business days.,ham,deposit_received,en
+Klarna: Thanks! Your final payment of £22.50 for order #KL-77102 has been received.,ham,bnpl_payment_received,en
+Lloyds Bank will never ask you to move money or share your full PIN. Report suspicious texts to 7726.,ham,scam_warning_notice,en
+Wise: Your account statement for October is ready to download in the app.,ham,statement_ready,en
+Stripe: A payout of €940.00 failed because your bank account is closed. Update it at dashboard.stripe.com,ham,payout_failed_real,en
+Cash App: Your weekly Bitcoin purchase of $20 is complete. You now own 0.00021 BTC.,ham,recurring_buy_notice,en
+Venmo: Your bank transfer of $300.00 has been initiated. Expect it in 1-3 business days.,ham,transfer_initiated,en
+Chase: Your Zelle payment to Amy Chen for $75.00 was sent on 11/11.,ham,p2p_payment_sent,en
+Google Pay: You paid ₹240 to Swiggy. UPI txn ID 4321099812.,ham,upi_debit_notice,en
+"Monzo: Your card was used for £4.20 at Pret A Manger, King's Cross.",ham,card_payment_notice,en
+Coinbase: Your tax forms (1099-MISC) for 2025 are now available at coinbase.com/taxes,ham,tax_form_ready_real,en
+"N26: Ihre Karte wurde aufgrund verdächtiger Aktivitäten gesperrt. Bitte verifizieren Sie sich unter n26-sicherheit-service.de, um die Sperre aufzuheben.",phishing,neobank_card_blocked,de
+"Binance: Ihre Auszahlung von 0,35 BTC steht aus. Bestätigen Sie Ihre Identität innerhalb von 24 Std.: binance-verifizierung.net",phishing,exchange_withdrawal_pending,de
+"PayPal: Sie haben 489,00 € an Krypto Handel GmbH gesendet. Nicht Sie? Rufen Sie sofort 0800 724 1190 an, um die Zahlung zu stornieren.",phishing,paypal_fake_payment_callback,de
+"Trade Republic: Neues Gerät (Samsung Galaxy) wurde registriert. Falls nicht von Ihnen, hier blockieren: traderepublic-geraet.com",phishing,broker_new_device,de
+"Klarna: Ihre Zahlung ist fehlgeschlagen. Aktualisieren Sie Ihre Zahlungsdaten bis morgen, sonst fallen Mahngebühren an: klarna-zahlung-de.com",phishing,bnpl_payment_failed,de
+"Hallo Herr Becker, hier Katrin von Ihrer Vermögensberatung. Ihr Depot steht bei +2.400 € in 5 Tagen. Wenn Sie heute 1.000 € nachlegen, ist der Gewinn garantiert. WhatsApp: +49 160 9988 2231",phishing,investment_manager_followup,de
+Sparkasse: Ihr pushTAN-Verfahren läuft ab. Reaktivieren Sie es jetzt: sparkasse-pushtan-aktiv.de,phishing,bank_reverify,de
+"Ledger: Datenleck bestätigt. Aktualisieren Sie Ihr Gerät sofort unter ledger-update-de.com, um Ihre Coins zu schützen.",phishing,hardware_wallet_breach,de
+"Entschuldigung, ich habe Ihnen gerade versehentlich 180 € per PayPal geschickt, das war für meine Schwester. Könnten Sie es bitte an +49 171 442 8890 zurücksenden? Danke!",phishing,mistaken_transfer_reversal,de
+"N26: Kartenzahlung 23,80 € bei REWE Berlin. Kontostand: 1.204,55 €",ham,card_payment_notice,de
+Trade Republic: Dein Sparplan über 100 € in MSCI World wurde ausgeführt.,ham,recurring_buy_notice,de
+Ihr Binance-Verifizierungscode lautet 582014. Geben Sie ihn niemals weiter.,ham,otp_code,de
+Sparkasse: Wir fragen Sie niemals per SMS nach TAN oder PIN. Bei Verdacht: Karte sperren unter 116 116.,ham,scam_warning_notice,de
+"PayPal: Sie haben 35,00 € an Jonas Weber gesendet. Details unter paypal.de",ham,p2p_payment_sent,de
+Bizum: Tienes un pago pendiente de 150 €. Confirma tu tarjeta para recibirlo: bizum-cobro.es-pago.com,phishing,p2p_fake_incoming,es
+"BBVA: Se ha registrado un nuevo dispositivo en tu banca online. Si no has sido tú, bloquéalo aquí: bbva-dispositivo-seguro.com",phishing,bank_new_device,es
+Binance: Tu cuenta ha sido congelada por actividad sospechosa. Verifica tu identidad en binance-verificar.es antes de 24 h.,phishing,exchange_account_frozen,es
+Coinbase: Detectamos un inicio de sesión desde Rusia. Protege tu wallet ahora: coinbase-proteccion.net,phishing,exchange_suspicious_login,es
+"Hola, soy Marta, tu gestora de inversiones. Tu saldo ya es de 8.350 €. Para retirar debes abonar el impuesto del 10%. Te paso la dirección USDT por aquí.",phishing,withdrawal_tax_fee,es
+"Revolut: Pago de 212,90 € retenido. Confirma los datos de tu tarjeta para liberarlo: revolut-retenido.com",phishing,neobank_payment_hold,es
+Hacienda: Su declaración de criptomonedas contiene un error. Regularice ahora para evitar sanción: agenciatributaria-cripto.com,phishing,crypto_tax_authority_lure,es
+"Perdona, te envié 200 € por Bizum por error, era para mi hermano. ¿Me lo puedes devolver al 611 23 44 90? Gracias de corazón",phishing,mistaken_transfer_reversal,es
+MetaMask: Tu wallet está desincronizada. Introduce tu frase semilla para recuperarla: metamask-es-sync.com,phishing,wallet_seed_phrase,es
+"BBVA: Compra con tarjeta *4417 de 18,60 € en Mercadona. Saldo disponible: 932,10 €",ham,card_payment_notice,es
+"Bizum: Has recibido 25,00 € de Laura Gómez. Concepto: cena viernes",ham,p2p_payment_received,es
+"Revolut: Tu nómina de 1.850,00 € de Indra Sistemas ha llegado.",ham,deposit_received,es
+"CaixaBank nunca te pedirá por SMS tus claves ni que muevas dinero a una ""cuenta segura"". Si dudas, llama al 900 40 40 90.",ham,scam_warning_notice,es
+"Nubank: Identificamos uma compra suspeita de R$ 1.299,00. Se não foi você, bloqueie agora: nubank-bloqueio.com",phishing,neobank_fake_fraud_alert,pt
+"Pix: Você recebeu uma solicitação de cobrança de R$ 850,00. Aprove no app para receber o dinheiro. nubank.com-pix.top",phishing,pix_collect_request,pt
+"Binance: Seu saque de 0,2 BTC está pendente. Confirme sua identidade em 12h: binance-confirmar.com.br",phishing,exchange_withdrawal_pending,pt
+"Oi, mandei R$ 400 por Pix pra você sem querer, era pro meu irmão. Pode devolver pra chave 11 98877 2231? Tô desesperada 😭",phishing,mistaken_transfer_reversal,pt
+Mercado Pago: Sua conta será limitada em 24h. Regularize seus dados: mercadopago-regularizar.com,phishing,p2p_account_limited,pt
+"Sou o Rafael, seu gestor de investimentos. Seu lucro de R$ 12.600 está liberado. Pague a taxa de 10% para sacar. Segue a chave Pix.",phishing,withdrawal_tax_fee,pt
+Receita Federal: você não declarou ganhos em cripto. Regularize para evitar multa: receita-cripto-regularizacao.com,phishing,crypto_tax_authority_lure,pt
+Itaú: Novo dispositivo cadastrado no seu app. Não foi você? Cancele: itau-dispositivo.com,phishing,bank_new_device,pt
+PicPay: Seu saldo de R$ 760 está bloqueado. Confirme sua senha para liberar: picpay-liberar.net,phishing,wallet_balance_hold,pt
+"Nubank: Pix recebido! R$ 250,00 de Lucas Ferreira. Saldo: R$ 1.830,45",ham,p2p_payment_received,pt
+"Itaú: compra aprovada no cartão final 4417, R$ 32,90 em iFood.",ham,card_payment_notice,pt
+Binance: Saque de 500 USDT concluído. Verifique em binance.com,ham,withdrawal_confirmed,pt
+"Oi mãe, fiz o Pix do mercado, R$ 180. Confere aí se caiu",ham,friend_money_chat,pt
+"Revolut : Un paiement de 312,50 € est en attente. Confirmez votre carte pour le débloquer : revolut-verif-carte.fr",phishing,neobank_payment_hold,fr
+Binance : Votre compte a été gelé suite à une activité suspecte. Vérifiez votre identité sous 24h : binance-securite-fr.com,phishing,exchange_account_frozen,fr
+"PayPal : Vous avez envoyé 499,00 € à Crypto Trading SAS. Ce n'est pas vous ? Appelez le 09 70 44 12 88 pour contester.",phishing,paypal_fake_payment_callback,fr
+"Boursorama : Un nouvel appareil a été ajouté à votre compte. Si ce n'est pas vous, bloquez-le : boursorama-appareil.com",phishing,bank_new_device,fr
+"Bonjour Mme Durand, Julien, votre conseiller. Votre capital est passé à 11 200 €. Pour le retrait, il faut d'abord régler la taxe de 10 %. Je vous envoie l'adresse USDT.",phishing,withdrawal_tax_fee,fr
+Ledger : Fuite de données confirmée. Mettez à jour votre appareil immédiatement : ledger-mise-a-jour.com,phishing,hardware_wallet_breach,fr
+"Lydia : J'ai fait un virement de 150 € sur ton compte par erreur, tu peux me le renvoyer au 06 44 21 90 33 stp ? Merci",phishing,mistaken_transfer_reversal,fr
+Impots.gouv : votre déclaration de crypto-actifs est incomplète. Régularisez sous 48h : impots-crypto-regularisation.fr,phishing,crypto_tax_authority_lure,fr
+MetaMask : Votre portefeuille doit être synchronisé. Saisissez votre phrase de récupération : metamask-sync-fr.com,phishing,wallet_seed_phrase,fr
+"Revolut : Paiement par carte de 12,40 € chez Lidl, Lyon. Solde : 418,22 €",ham,card_payment_notice,fr
+Lydia : Tu as reçu 20 € de Camille pour « resto hier soir »,ham,p2p_payment_received,fr
+Votre code de vérification Coinbase est 338201. Ne le partagez jamais.,ham,otp_code,fr
+Boursorama : Votre virement de 500 € vers Livret A a été exécuté.,ham,transfer_arrived,fr
+Wise : Votre transfert de 300 EUR vers Ahmed Benali est arrivé. Réf. W-91022811,ham,transfer_arrived,fr
+PostePay: la tua carta è stata bloccata per attività sospetta. Sblocca ora: postepay-sblocco.it-verifica.com,phishing,neobank_card_blocked,it
+"Binance: il tuo prelievo di 0,4 BTC è in sospeso. Conferma la tua identità entro 24 ore: binance-conferma.net",phishing,exchange_withdrawal_pending,it
+Intesa Sanpaolo: nuovo dispositivo registrato sul tuo conto. Non sei stato tu? Blocca qui: intesa-dispositivi.com,phishing,bank_new_device,it
+"Ciao, sono Marco, il tuo consulente. Il tuo capitale è salito a 9.800 €. Per prelevare serve il pagamento della tassa del 10%. Ti mando l'indirizzo USDT.",phishing,withdrawal_tax_fee,it
+"Satispay: ti ho inviato 120 € per sbaglio, era per mio cugino. Puoi rimandarmeli al 347 882 1190? Grazie mille",phishing,mistaken_transfer_reversal,it
+"Revolut: pagamento di 212,90 € in attesa. Conferma i dati della carta: revolut-verifica-it.com",phishing,neobank_payment_hold,it
+Agenzia delle Entrate: le tue criptovalute non sono state dichiarate. Regolarizza entro 48h: agenziaentrate-crypto.com,phishing,crypto_tax_authority_lure,it
+"Intesa Sanpaolo: pagamento di 14,30 € con carta *4417 presso Esselunga. Saldo: 1.102,40 €",ham,card_payment_notice,it
+Satispay: hai ricevuto 15 € da Luca Bianchi. Messaggio: pizza 🍕,ham,p2p_payment_received,it
+Il tuo codice di verifica Binance è 627190. Non condividerlo con nessuno.,ham,otp_code,it
+PostePay non ti chiederà mai via SMS codici o dati della carta. Se hai dubbi chiama il 800 00 33 22.,ham,scam_warning_notice,it
+Papara: Hesabınız şüpheli işlem nedeniyle askıya alındı. 24 saat içinde doğrulayın: papara-dogrulama.com,phishing,wallet_account_suspended,tr
+"Binance TR: 0,3 BTC çekim talebiniz beklemede. Kimliğinizi onaylayın: binance-tr-onay.net",phishing,exchange_withdrawal_pending,tr
+Garanti BBVA: Hesabınıza yeni bir cihaz tanımlandı. Siz değilseniz hemen engelleyin: garanti-cihaz-guvenlik.com,phishing,bank_new_device,tr
+"Merhaba, ben yatırım danışmanınız Burak. Bakiyeniz 85.000 TL'ye ulaştı. Çekim için %10 vergi ödemeniz gerekiyor. USDT adresini gönderiyorum.",phishing,withdrawal_tax_fee,tr
+"Papara'dan yanlışlıkla size 1.500 TL gönderdim, kardeşime gidecekti. 0532 441 22 90 numarasına geri yollar mısınız lütfen? Allah razı olsun",phishing,mistaken_transfer_reversal,tr
+Ziraat Bankası: İnternet şubeniz güvenlik nedeniyle kapatıldı. Yeniden aktifleştirin: ziraat-aktif.com,phishing,bank_account_suspended,tr
+Paribu: Hesabınız dondurulmuştur. İşlemlere devam etmek için kimlik yükleyin: paribu-kyc.com,phishing,exchange_kyc_lure,tr
+"Papara: Ayşe Kaya size 250,00 TL gönderdi. Bakiyeniz: 1.840,50 TL",ham,p2p_payment_received,tr
+"Garanti BBVA: 4417 ile biten kartınızla Migros'ta 184,90 TL harcama yapıldı.",ham,card_payment_notice,tr
+Binance TR doğrulama kodunuz: 490213. Kimseyle paylaşmayın.,ham,otp_code,tr
+"Ziraat Bankası hiçbir zaman SMS ile şifre, kart bilgisi veya para transferi istemez. Şüpheli durumda 444 00 00.",ham,scam_warning_notice,tr
+"Сбербанк: К вашему аккаунту привязано новое устройство. Если это не вы, заблокируйте: sber-ustroystvo.ru-security.com",phishing,bank_new_device,ru
+"Binance: Ваш вывод 0,5 BTC приостановлен. Подтвердите личность в течение 24 часов: binance-podtverdit.net",phishing,exchange_withdrawal_pending,ru
+Тинькофф: Карта заблокирована из-за подозрительной операции. Разблокировать: tinkoff-razblok.com,phishing,bank_card_blocked,ru
+"Здравствуйте, это Алексей, ваш инвестиционный менеджер. Ваш баланс 420 000 ₽. Для вывода оплатите налог 10%. Отправлю адрес USDT.",phishing,withdrawal_tax_fee,ru
+"Извините, я по ошибке перевёл вам 15 000 ₽ через СБП, это были деньги на лекарства. Верните, пожалуйста, на +7 912 445 88 21",phishing,mistaken_transfer_reversal,ru
+ЮMoney: Ваш кошелёк будет ограничен через 24 часа. Пройдите верификацию: yoomoney-verif.com,phishing,wallet_account_suspended,ru
+Ledger: Утечка данных. Срочно обновите устройство: ledger-obnovlenie.com,phishing,hardware_wallet_breach,ru
+"Сбербанк: Покупка 1 240 ₽, карта *4417, Пятёрочка. Баланс: 18 350 ₽",ham,card_payment_notice,ru
+Тинькофф: Перевод 5 000 ₽ от Иван П. зачислен. Баланс 23 410 ₽,ham,p2p_payment_received,ru
+Сбербанк никогда не просит перевести деньги на «безопасный счёт». Если вам звонят с такой просьбой — это мошенники. 900,ham,scam_warning_notice,ru
+بنك الراجحي: تم تسجيل جهاز جديد على حسابك. إذا لم تكن أنت، أوقفه فوراً: alrajhi-device.com,phishing,bank_new_device,ar
+Binance: تم تجميد حسابك بسبب نشاط مشبوه. أكد هويتك خلال 24 ساعة: binance-tahqeeq.net,phishing,exchange_account_frozen,ar
+STC Pay: محفظتك معلقة. يرجى تحديث بياناتك لتفادي الإغلاق: stcpay-tahdeeth.com,phishing,wallet_account_suspended,ar
+"مرحباً، أنا خالد مدير محفظتك الاستثمارية. أرباحك وصلت 38,000 ريال. لسحبها يجب دفع ضريبة 10% أولاً. سأرسل لك عنوان USDT.",phishing,withdrawal_tax_fee,ar
+السلام عليكم، حولت لك 1500 درهم بالخطأ عبر فودافون كاش، كانت لأخي. أرجوك رجعها على الرقم 0501 442 889 جزاك الله خير,phishing,mistaken_transfer_reversal,ar
+PayPal: أرسلت 499 دولاراً إلى Crypto LLC. إذا لم تقم بذلك اتصل فوراً على 8001-234-567,phishing,paypal_fake_payment_callback,ar
+Ledger: تسريب بيانات. حدّث جهازك الآن لحماية أصولك: ledger-arab-update.com,phishing,hardware_wallet_breach,ar
+"الراجحي: شراء بمبلغ 85.50 ريال بطاقة *4417 لدى بندة. الرصيد: 3,240.10 ريال",ham,card_payment_notice,ar
+"STC Pay: استلمت 200 ريال من محمد العلي. رصيدك: 1,150 ريال",ham,p2p_payment_received,ar
+بنك الراجحي لا يطلب أبداً رمز التحقق أو كلمة المرور عبر الرسائل. في حال الشك اتصل على 920003344,ham,scam_warning_notice,ar
+PhonePe: आपकी KYC अपूर्ण है। 24 घंटे में वॉलेट ब्लॉक हो जाएगा। अभी अपडेट करें: phonepe-kyc-update.in,phishing,wallet_kyc_lure,hi
+SBI: आपके खाते में नया डिवाइस रजिस्टर हुआ है। अगर आप नहीं हैं तो तुरंत ब्लॉक करें: sbi-device-block.com,phishing,bank_new_device,hi
+"Paytm: ₹5,000 कैशबैक अप्रूव हुआ। पाने के लिए UPI ऐप खोलें और अपना PIN डालें। bit.ly/ptm-cash",phishing,upi_collect_request,hi
+"आपको ₹12,000 की collect request आई है ""Refund Dept"" से। पैसा पाने के लिए UPI ऐप में approve करें।",phishing,upi_collect_request,hi
+"नमस्ते, मैं राहुल आपका इन्वेस्टमेंट मैनेजर। आपका प्रॉफिट ₹1,85,000 है। निकालने के लिए 10% टैक्स पहले भरें। USDT एड्रेस भेज रहा हूँ।",phishing,withdrawal_tax_fee,hi
+"भाई गलती से आपके नंबर पर ₹3,000 UPI से चले गए, वो मेरी माँ की दवाई के थे। प्लीज 98211 44890 पर वापस भेज दो 🙏",phishing,mistaken_transfer_reversal,hi
+WazirX: आपका अकाउंट फ्रीज़ कर दिया गया है। 24 घंटे में ID अपलोड करें: wazirx-kyc-portal.com,phishing,exchange_kyc_lure,hi
+HDFC Bank: आपका नेट बैंकिंग सस्पेंड हो गया है। फिर से एक्टिव करें: hdfc-netbanking-active.com,phishing,bank_account_suspended,hi
+"आपके खाते XX4417 में ₹2,000 जमा हुए, UPI रेफ 631204998812, PRIYA M से। उपलब्ध बैलेंस ₹14,320.50 -HDFC",ham,upi_credit_notice,hi
+PhonePe: ₹240 Swiggy को भेजे गए। UPI ट्रांज़ैक्शन ID T2411098812,ham,upi_debit_notice,hi
+आपका WazirX वेरिफिकेशन कोड 509231 है। इसे किसी से शेयर न करें।,ham,otp_code,hi
+"SBI कभी भी SMS या कॉल पर OTP, PIN या CVV नहीं मांगता। ऐसी कॉल आए तो 1930 पर रिपोर्ट करें।",ham,scam_warning_notice,hi
+"Paytm: आपको राकेश शर्मा से ₹500 मिले। वॉलेट बैलेंस ₹1,230",ham,p2p_payment_received,hi
+DANA: Akun Anda dibekukan karena aktivitas mencurigakan. Verifikasi dalam 24 jam: dana-verifikasi.id-akun.com,phishing,wallet_account_suspended,id
+"Binance: Penarikan 0,2 BTC Anda tertunda. Konfirmasi identitas sekarang: binance-konfirmasi.net",phishing,exchange_withdrawal_pending,id
+BCA: Perangkat baru terdaftar di m-BCA Anda. Bukan Anda? Blokir di sini: bca-blokir-perangkat.com,phishing,bank_new_device,id
+"Halo, saya Andi manajer investasi Anda. Profit Anda sudah Rp 45.000.000. Untuk tarik dana bayar pajak 10% dulu ya. Saya kirim alamat USDT.",phishing,withdrawal_tax_fee,id
+"Maaf kak, saya salah transfer Rp 1.500.000 ke GoPay kamu, itu uang buat berobat ibu. Tolong kembalikan ke 0812 3344 9980 ya 🙏",phishing,mistaken_transfer_reversal,id
+OVO: Saldo Anda Rp 2.300.000 ditahan. Masukkan PIN untuk mencairkan: ovo-cairkan.com,phishing,wallet_balance_hold,id
+Indodax: Akun Anda akan dihapus karena tidak aktif. Login untuk menyimpan aset: indodax-login-aset.com,phishing,exchange_inactivity_lure,id
+DANA: Kamu menerima Rp 150.000 dari Rina Sari. Saldo: Rp 820.000,ham,p2p_payment_received,id
+BCA: Transaksi kartu *4417 Rp 58.500 di Indomaret berhasil. Saldo Rp 3.420.100,ham,card_payment_notice,id
+Kode verifikasi Indodax kamu: 718204. Jangan bagikan ke siapa pun.,ham,otp_code,id
+GoPay tidak pernah meminta PIN atau kode OTP lewat SMS/telepon. Waspada penipuan.,ham,scam_warning_notice,id
+【PayPay】アカウントに不審なログインを検知しました。24時間以内に本人確認を行ってください: paypay-honnin-kakunin.com,phishing,wallet_suspicious_login,ja
+bitFlyer: 0.3 BTCの出金が保留中です。本人確認を完了してください: bitflyer-kakunin.net,phishing,exchange_withdrawal_pending,ja
+三菱UFJ銀行: 新しい端末が登録されました。お客様でない場合は直ちにブロック: mufg-tanmatsu.com,phishing,bank_new_device,ja
+こんにちは、投資マネージャーの田中です。お客様の残高は285万円に増えました。出金には10%の税金の先払いが必要です。USDTアドレスを送ります。,phishing,withdrawal_tax_fee,ja
+"すみません、間違えてあなたのPayPayに15,000円送金してしまいました。母の薬代なんです。090-4412-8890に返してもらえませんか🙏",phishing,mistaken_transfer_reversal,ja
+楽天銀行: 口座が一時的に制限されました。解除はこちら: rakuten-kaijo.com,phishing,bank_account_suspended,ja
+コインチェック: 2段階認証が無効になりました。復元はこちら: coincheck-fukugen.com,phishing,exchange_2fa_lure,ja
+"【PayPay】山田太郎さんから2,500円を受け取りました。残高: 18,340円",ham,p2p_payment_received,ja
+"三菱UFJ銀行: カード*4417でセブンイレブン 680円のご利用。残高 124,300円",ham,card_payment_notice,ja
+bitFlyerの認証コード: 512094。誰にも教えないでください。,ham,otp_code,ja
+楽天銀行はSMSで暗証番号やワンタイムキーをお尋ねすることはありません。不審な場合は0120-776-910へ。,ham,scam_warning_notice,ja
+【币安】您的账户因异常活动已被冻结，请在24小时内完成身份验证：binance-yanzheng.com,phishing,exchange_account_frozen,zh
+【支付宝】检测到新设备登录您的账户，如非本人操作请立即处理：alipay-shebei.com,phishing,wallet_new_device,zh
+【OKX】您有一笔 0.5 BTC 提现待确认，非本人请立即取消：okx-quxiao.xyz,phishing,exchange_withdrawal_pending,zh
+"您好，我是您的投资顾问李经理。您的账户盈利已达 ¥186,000，提现需先缴纳10%税费。USDT地址稍后发送。",phishing,withdrawal_tax_fee,zh
+不好意思，我刚通过微信转错了3000元到你这里，是给我妈买药的钱，麻烦退回到138 0012 4499，谢谢🙏,phishing,mistaken_transfer_reversal,zh
+【imToken】您的钱包需要同步，请输入助记词恢复：imtoken-tongbu.com,phishing,wallet_seed_phrase,zh
+【工商银行】您的网银已被暂停，请点击恢复：icbc-huifu.com,phishing,bank_account_suspended,zh
+"【支付宝】您向美团支付了¥38.50，余额¥1,240.20",ham,wallet_payment_notice,zh
+"【工商银行】您尾号4417卡11月11日消费¥86.00，余额¥12,340.50",ham,card_payment_notice,zh
+【币安】您的验证码是 920413，请勿泄露给任何人。,ham,otp_code,zh
+【工商银行】我行不会以短信方式索要密码或验证码，如有疑问请致电95588,ham,scam_warning_notice,zh
+[업비트] 고객님의 계정이 이상 활동으로 동결되었습니다. 24시간 내 신원 확인: upbit-hwakin.com,phishing,exchange_account_frozen,ko
+[카카오페이] 새로운 기기에서 로그인되었습니다. 본인이 아니면 즉시 차단: kakaopay-chadan.com,phishing,wallet_new_device,ko
+[바이낸스] 0.3 BTC 출금 요청이 보류 중입니다. 지금 확인: binance-kr-hwakin.net,phishing,exchange_withdrawal_pending,ko
+"안녕하세요, 투자 매니저 김민수입니다. 고객님 수익이 2,800만원 도달했습니다. 출금을 위해 10% 세금을 먼저 납부해주세요. USDT 주소 보내드립니다.",phishing,withdrawal_tax_fee,ko
+"죄송해요, 토스로 15만원 잘못 보냈어요. 어머니 약값인데 010-4412-8890으로 돌려주시면 안 될까요 🙏",phishing,mistaken_transfer_reversal,ko
+[토스] 계정이 일시 제한되었습니다. 해제하려면 본인 인증: toss-haeje.com,phishing,wallet_account_suspended,ko
+[국민은행] 인터넷뱅킹이 정지되었습니다. 재활성화: kbstar-jaehwal.com,phishing,bank_account_suspended,ko
+"[카카오페이] 이지은님이 25,000원을 보냈습니다. 잔액: 183,400원",ham,p2p_payment_received,ko
+"[국민은행] 4417 카드 GS25 4,500원 승인. 잔액 1,243,000원",ham,card_payment_notice,ko
+[업비트] 인증번호 [612094]. 타인에게 절대 알려주지 마세요.,ham,otp_code,ko
+국민은행은 문자로 비밀번호나 OTP를 요구하지 않습니다. 의심되면 1588-9999로 문의하세요.,ham,scam_warning_notice,ko
+MoMo: Tài khoản của bạn bị khóa do giao dịch bất thường. Xác minh trong 24h: momo-xacminh.com,phishing,wallet_account_suspended,vi
+Vietcombank: Thiết bị mới vừa đăng ký trên tài khoản của bạn. Không phải bạn? Chặn ngay: vcb-chan-thietbi.com,phishing,bank_new_device,vi
+"Binance: Lệnh rút 0,2 BTC đang chờ xử lý. Xác nhận danh tính ngay: binance-xacnhan.net",phishing,exchange_withdrawal_pending,vi
+"Chào anh, em là Linh quản lý đầu tư. Lợi nhuận của anh đã đạt 185 triệu. Để rút cần nộp thuế 10% trước. Em gửi địa chỉ USDT nhé.",phishing,withdrawal_tax_fee,vi
+"Chị ơi em chuyển nhầm 3 triệu qua MoMo cho chị, tiền thuốc của mẹ em. Chị chuyển lại số 0912 334 889 giúp em với 🙏",phishing,mistaken_transfer_reversal,vi
+ZaloPay: Số dư 2.300.000đ của bạn bị tạm giữ. Nhập mã PIN để nhận: zalopay-nhantien.com,phishing,wallet_balance_hold,vi
+Techcombank: Internet Banking đã bị tạm ngưng. Kích hoạt lại: techcombank-kichhoat.com,phishing,bank_account_suspended,vi
+MoMo: Bạn nhận được 150.000đ từ Nguyễn Văn An. Số dư: 820.000đ,ham,p2p_payment_received,vi
+Vietcombank: Thẻ *4417 chi tiêu 58.500đ tại Circle K. Số dư 3.420.100đ,ham,card_payment_notice,vi
+Mã xác thực Binance của bạn: 718204. Không chia sẻ với bất kỳ ai.,ham,otp_code,vi
+Vietcombank không bao giờ yêu cầu mã OTP hay mật khẩu qua SMS. Nghi ngờ lừa đảo gọi 1900 54 54 13.,ham,scam_warning_notice,vi
+GCash: Na-lock ang account mo dahil sa suspicious activity. I-verify sa loob ng 24 oras: gcash-verify-ph.com,phishing,wallet_account_suspended,tl
+"Maya: May bagong device na nag-login sa account mo. Kung hindi ikaw, i-block agad: maya-block-device.com",phishing,wallet_new_device,tl
+Binance: Pending ang withdrawal mo ng 0.1 BTC. Kumpirmahin ang identity mo ngayon: binance-ph-verify.net,phishing,exchange_withdrawal_pending,tl
+"Hello po, ako si Kuya Mark, investment manager mo. Umabot na sa ₱185,000 ang profit mo. Para ma-withdraw kailangan bayaran muna ang 10% tax. Isesend ko ang USDT address.",phishing,withdrawal_tax_fee,tl
+"Sorry po, nagkamali ako ng send ng ₱3,500 sa GCash mo, pambili ng gamot ng mama ko. Pasend back po sa 0917 884 2211, salamat 🙏",phishing,mistaken_transfer_reversal,tl
+"Maya: ₱2,300 ang balance mong naka-hold. I-enter ang MPIN mo para ma-release: maya-release.ph-app.com",phishing,wallet_balance_hold,tl
+BPI: Na-suspend ang online banking mo. I-reactivate: bpi-reactivate.com,phishing,bank_account_suspended,tl
+"Nakatanggap ka ng ₱500.00 mula kay Juan Dela Cruz via GCash. Ref No. 1011 882 3340. Bagong balance: ₱1,820.50",ham,p2p_payment_received,tl
+"Maya: Nakatanggap ka ng ₱250.00 mula kay Ana Reyes. Balance: ₱1,820.50",ham,p2p_payment_received,tl
+"BPI: Card *4417 ginamit sa SM Supermarket ₱1,245.00. Balance ₱12,340.50",ham,card_payment_notice,tl
+GCash verification code mo: 418209. Huwag i-share kahit kay GCash staff.,ham,otp_code,tl
+"Hindi kailanman hihingi ang BPI ng OTP o password sa text. Kung may nag-text, i-report sa 889-10000.",ham,scam_warning_notice,tl
