@@ -1,0 +1,351 @@
+text,label,category,language
+"Hi, I'm Jessica from Indeed HR. Your resume was shortlisted for a flexible online role (USD 300-800/day). Reply YES to receive details.",phishing,job_scam_fake_recruiter,en
+"TikTok Shop part-time: like videos, earn 50-300/day. No experience, paid same day. Reply 1 to start.",phishing,job_scam_task_platform,en
+"Shein order-processing task centre. Process 30 orders a day from your phone, daily settlement 120-400 USD. WhatsApp +1 (315) 209-8841 to be assigned a supervisor.",phishing,job_scam_task_platform,en
+"Netflix is hiring content reviewers! $35/hr, work from home, rate shows & movies. Limited slots. Start here: netflix-careers-apply.xyz",phishing,job_scam_brand_lookalike,en
+"Your application for Customer Support Agent (remote) has been APPROVED. To secure your position, pay the $50 training/registration fee today via the link: bit.ly/3kHr9zq",phishing,job_scam_fee_advance,en
+"Hello candidate, before we schedule your interview please send a photo of your ID, SSN and bank details to complete onboarding. HR Dept, Walmart Remote Team",phishing,job_scam_data_harvest,en
+"FEDERAL GOVT RECRUITMENT 2026: 1,200 vacancies, no exam required. Register now with N2,000 processing fee. Portal: fed-recruit-ng.com",phishing,job_scam_fake_government,en
+Emirates Airline cabin crew offer letter attached. Kindly remit USD 350 for visa processing to our travel agent within 48hrs to confirm your slot. Ref EK/HR/4471,phishing,job_scam_airline_visa_fee,en
+"Mystery Shopper Programme: we will mail you a cheque for $2,850. Deposit it, buy 5 x $500 gift cards at the store assigned, send us the codes, keep $350. Reply START",phishing,mystery_shopper_check,en
+"Temu Merchant Assist: you have been chosen to help boost product ratings. 5-10 min per task, 80 USD/task. Add our coordinator on WhatsApp: wa.me/447451290031",phishing,job_scam_task_platform,en
+"Hi! I'm Mark, recruiter at LinkedIn Talent Solutions. A hiring partner reviewed your profile and wants to pay you $1,500/wk for a part-time admin job. Interested? Text back",phishing,job_scam_fake_recruiter,en
+Walmart has approved your Order Processor application. Earn $38/hr handling return labels. Download the onboarding app here: walmart-hire.top/app,phishing,job_scam_brand_lookalike,en
+"Greetings from Hilton Hotels Dubai HR. You are shortlisted for Front Desk (AED 6,500 + housing). Pay AED 1,200 medical & work permit fee to proceed. Reply for bank details",phishing,job_scam_hotel_visa_fee,en
+"Costco Remote Hiring: your profile matched Data Clerk, $27/hr, equipment provided. Complete W-4 & direct deposit form now: costco-jobs-portal.com/w4",phishing,job_scam_data_harvest,en
+We saw your CV on Indeed. Our client needs a Payment Processing Rep. You receive client funds to your account and wire the rest to suppliers. 8% per transaction. No experience,phishing,money_mule_recruitment,en
+"Dear applicant, you have been selected for the Canada Govt Caregiver Program. Job + free visa. Pay CAD 190 document verification to begin. canada-caregiver-jobs.icu",phishing,job_scam_fake_government_visa,en
+"Amazon Flex Bonus Team: your account was picked for a $1,200 weekly guaranteed package. Confirm your login at amazonflex-bonus.com to activate.",phishing,job_scam_brand_credentials,en
+"URGENT: your Upwork payment of $2,340 is on hold pending identity re-verification. Upload ID + card photo within 24h: upwork-verify-id.com",phishing,freelance_platform_hold,en
+"Hello, this is Sarah with Robert Half. Your resume was chosen for a $42/hr virtual assistant position. The interview is by text on Google Chat, add hr.roberthalf.recruit@gmail.com",phishing,job_scam_fake_recruiter,en
+Delta Air Lines Remote Reservation Agent - you are pre-approved. Starting $29/hr. We will send a check for your home office equipment. Reply with full name + address,phishing,job_scam_equipment_check,en
+"DHL Logistics Partner Program: receive parcels at your home, re-ship to our clients, earn $45 per parcel. Weekly pay. Apply: dhl-partners-hire.com",phishing,reshipping_mule,en
+Your Fiverr seller account has been selected for the Pro Partner payout tier ($5k/mo). Verify your bank card to unlock: fiverr-pro-verify.net,phishing,freelance_platform_credentials,en
+"Hey, got your number from the Indeed job fair list. We're hiring remote chat moderators for OnlyFans creators, $400/day. Small $25 background check fee. Interested?",phishing,job_scam_fee_advance,en
+NHS England is recruiting Health Care Assistants with visa sponsorship. Certificate of Sponsorship fee GBP 450 payable before interview. Contact: nhs.cos.team@outlook.com,phishing,job_scam_fake_government_visa,en
+"Hi this is Mr Chen from Apple HR Department. After reviewing your details you qualify for product testing job, keep the iPhone + $200. Pay $9.99 shipping: apple-tester-hire.xyz",phishing,job_scam_brand_lookalike,en
+Microsoft Work-From-Home Program: You were selected to receive training materials. Confirm your Social Security Number and date of birth to finalize enrollment. Reply now,phishing,job_scam_data_harvest,en
+"Hiring: Financial Agent. Our company receives payments from US clients. You get $3,000 into your account, keep $300, send $2,700 by Zelle to our vendor. Daily tasks. Text HIRE",phishing,money_mule_recruitment,en
+UPS is looking for Package Handlers to work from home verifying labels. $31/hr. Finish your application by paying the $15 uniform deposit: ups-careers-now.com,phishing,job_scam_fee_advance,en
+your airbnb host assistant application is approved!! 150$/day review listings. first click to set password and link ur bank for payouts: airbnb-hostjobs.co,phishing,job_scam_brand_credentials,en
+"We are McKinsey & Company Talent Team. Your profile has been selected for a confidential consulting engagement, GBP 4,000/wk. Share passport scan + bank details to onboard",phishing,job_scam_data_harvest,en
+Google Ads Reviewer wanted. We chose you from the Google Opinion Rewards pool. $280/day. Begin the paid training ($39 refunded on first pay): google-reviewer-jobs.top,phishing,job_scam_fee_advance,en
+"Hello dear, I am HR manager for Alibaba Overseas. Your number was referred by a friend for a product rating job. Daily commission 100-500$. Do you want to try? Reply Y",phishing,job_scam_task_platform,en
+Qatar Airways Recruitment 2026 - Shortlisted candidate. To collect your appointment letter pay QAR 750 for medical screening to agent Mr. Yusuf. WhatsApp +974 3344 1098,phishing,job_scam_airline_visa_fee,en
+"Final notice: your Shopify Partner Reviewer offer ($3,200/mo) expires tonight. Pay the $69 account activation fee to keep your seat. Pay here: tinyurl.com/shpfy-act",phishing,job_scam_fee_advance,en
+"Cruise ship jobs: Royal Caribbean has selected you for Housekeeping Attendant, $2,400/mo + tips. Processing fee USD 220 for seafarer book. rc-crew-recruit.com",phishing,job_scam_fee_advance,en
+"this is Emma from Adecco, we tried to call. a client approved you for a remote survey job $25/survey. please confirm your card number for the payroll card setup",phishing,job_scam_data_harvest,en
+CONGRATS you passed the first stage for the Coca-Cola Brand Ambassador program. Sign the contract and pay $120 branding kit fee: cocacola-ambassadors.xyz,phishing,job_scam_fee_advance,en
+"Hi there, it's Daniel from Glassdoor Talent. Walmart wants to hire 20 remote reviewers at $600/wk. We just need your login to Glassdoor to confirm: glassdoor-confirm.com",phishing,job_scam_brand_credentials,en
+"Recruitment Agent for Australia Farm Work: 2 yr visa, AUD 28/hr, accommodation included. Secure your spot with AUD 300 deposit before Friday. ozfarm-visa.net",phishing,job_scam_visa_fee,en
+Earn $5 per WhatsApp message forwarded. We pick 50 agents daily. You are agent #37 today. Claim your $50 sign-on bonus with your PayPal login: wa-agent-pay.com,phishing,job_scam_task_platform,en
+Hello. I represent an art dealer in Singapore. We need a US-based payment receiver for our buyers. 10% of each transfer is yours. Reply with your bank name to begin,phishing,money_mule_recruitment,en
+"Chevron is hiring offshore workers with free flights and USD 9,000/mo. Shortlisted applicants must pay USD 500 HSE certificate fee. chevron-offshore-hr.com",phishing,job_scam_fee_advance,en
+"Due to high demand, Starbucks is hiring online baristas-in-training at $24/hr (yes, remote!). Enter your details to reserve: sbux-remote-hire.top",phishing,job_scam_brand_lookalike,en
+"Hi, Priya from Amazon Recruitment. We have a WFH typing job 2hr/day, Rs 25,000/month. Registration Rs 499 refundable. Pay via UPI to amzjobs@ybl and send screenshot",phishing,job_scam_fee_advance,en
+CVS Health Remote Pharmacy Clerk - you are approved! $30/hr. Your first paycheck requires a verified payroll account: cvs-payroll-setup.com/verify,phishing,job_scam_brand_credentials,en
+"Mystery shopper assignment #4471 (Walmart). Check for $1,980 mailed via FedEx. Keep $400, use $1,500 for Apple gift cards and text us the back codes. Deadline 48h",phishing,mystery_shopper_check,en
+Ur IRS stimulus data-entry job is approved. $34/hr govt contract. Confirm identity w/ SSN & DL at irs-jobs-portal.com,phishing,job_scam_fake_government,en
+"Hello from PwC HR Africa. You passed the online test. Pay KES 3,500 training manual fee to M-Pesa 0712 448 710 (Ms Wanjiru) to receive your appointment letter",phishing,job_scam_fee_advance,en
+"Hi I am Kevin, a Toyota Motors recruiter. You have been selected for an immediate job with relocation to Japan. Fee for COE processing: $890. Pay now to avoid losing it",phishing,job_scam_visa_fee,en
+"Cash App Hiring Team: process 20 mobile check deposits per day, $45 each. We provide the checks. Send your Cash App tag and bank login to activate",phishing,money_mule_recruitment,en
+"You applied to our ad on Craigslist. Position is yours! Payroll runs via a company card we mail you. Just need your DOB, SSN and a selfie with ID. Reply ASAP",phishing,job_scam_data_harvest,en
+"Pfizer Clinical Data Assistant (remote, $41/hr). Your profile has been selected. The hiring manager will interview you on Telegram: t.me/pfizer_hr_lead",phishing,job_scam_brand_telegram,en
+"Hello, Hays Recruitment here. Your submitted CV matches an urgent role. Our client prepaid your laptop; pay only GBP 45 courier insurance: hays-equipment.co",phishing,job_scam_fee_advance,en
+"Dubai Expo Jobs 2026 - waiter/cashier/driver, AED 4,000. Guaranteed visa. Processing AED 900 (refundable). WhatsApp Ahmed +971 52 996 1143",phishing,job_scam_visa_fee,en
+"Booking.com needs hotel review writers. 10 reviews/day, $6 each + bonus. Selected via your email. Activate account with a $20 refundable deposit: bookingtasks.top",phishing,job_scam_task_platform,en
+"Hi babe its Joanna from the recruiter office, remember we spoke at the fair? the FedEx WFH job came thru. send ur routing + account # so payroll can set up. hurry",phishing,job_scam_data_harvest,en
+Attention: your Indeed account was chosen to receive a $750 job seeker grant. Log in to claim before midnight: indeed-grants.com,phishing,job_scam_brand_credentials,en
+Online English teacher position (Cambly partner). Pay $22/hr. Your demo is approved. Submit $35 for background check to begin: cambly-teachers-hire.xyz,phishing,job_scam_fee_advance,en
+"Hello, we represent a Chinese textile company. We need a UK representative to receive invoice payments from our clients and send on via bank transfer. 10% is yours",phishing,money_mule_recruitment,en
+"Target Remote Hiring Team has reviewed your resume - APPROVED for Customer Chat ($26/hr). Equipment check for $3,450 is mailed. Cash it, send $2,800 to our vendor",phishing,job_scam_equipment_check,en
+"SELECTED: Lagos State Teachers Recruitment. Pay N5,000 screening fee to 0233 886 110 (Zenith) and send name + phone. Deadline Monday",phishing,job_scam_fake_government,en
+Spotify Playlist Curator Program: $300/wk to listen to music. We chose 50 users from your area. Verify Spotify login to begin: spotify-curator-jobs.com,phishing,job_scam_brand_credentials,en
+"Dear Jobseeker, your UAE work visa is approved for Carrefour cashier role. Pay the final USD 400 attestation fee by Western Union to our agent. Reply for details",phishing,job_scam_visa_fee,en
+we r hiring product testers 4 Samsung! keep the Galaxy S26 + $150. selected by phone number. small $4.95 handling: samsung-test-hire.top,phishing,job_scam_brand_lookalike,en
+"HR Amazon Warehouse remote supervisor role - you were recommended by a staff member. Salary 1,800 USD/wk. Click to accept offer: amzn-offerletter.icu",phishing,job_scam_brand_lookalike,en
+"Hey it's Tom, your Zip Recruiter agent. Chevron has approved you for a $38/hr data role. I need your online banking username to set up direct deposit. Send it now",phishing,job_scam_data_harvest,en
+"Online part-time: book hotel orders for Expedia merchants, 40 orders/day, profit 15% per order. Deposit required to unlock orders. Mentor: t.me/ExpediaTaskMentor",phishing,job_scam_task_platform,en
+Hello it's Rachel at Accenture Talent. You're pre-selected. To issue your offer letter we need a $75 document notarization fee. Pay with Apple gift card and text the code,phishing,job_scam_fee_advance,en
+"You have been shortlisted by Shell Petroleum Nigeria for Graduate Trainee. Pay N10,500 for your medical form to Access Bank 0784 112 309 before Thursday",phishing,job_scam_fee_advance,en
+Instacart Shopper Hiring Office: your background check is cleared. Enter your SSN and card details on instacart-hire-verify.com to activate your payout card,phishing,job_scam_data_harvest,en
+"Hi, I am Anna, HR at Bolt. We are looking for people to top-up rider accounts. Receive funds, forward 90%, keep 10%. Legit and easy. Reply 'ok' to start",phishing,money_mule_recruitment,en
+BBC is recruiting remote transcribers at GBP 32/hr. You were matched by your profile. Click to accept and enter your National Insurance number: bbc-transcribe-jobs.co,phishing,job_scam_data_harvest,en
+"Hello! You are selected for a Google Maps business review job (no interview). 2-4 USD per review, 50 reviews a day. Our HR Vivian: WhatsApp +60 11-2908 7741",phishing,job_scam_task_platform,en
+Ryanair Cabin Crew - Offer Letter ready. Confirm by paying EUR 290 for your Cabin Crew Attestation course. Transfer to IBAN provided here: ryanair-crewhire.com,phishing,job_scam_airline_visa_fee,en
+Payroll Department Notice: New hire paperwork incomplete. Upload voided check or bank login to receive first salary by Friday. hr-payroll-newhire.com,phishing,job_scam_data_harvest,en
+We need an Executive Personal Assistant for a Pastor travelling abroad. $600/wk. He will send a check to buy supplies; you forward the balance. Email pastorjudehr@outlook.com,phishing,job_scam_equipment_check,en
+"Hi Alex, Marcus here from TikTok HR. Only 3 seats left in the $1,200/wk video rating program. Secure yours with a one-time $59 activation. tiktok-rate-hr.xyz",phishing,job_scam_fee_advance,en
+"Zara Online Store needs 'order confirmers'. Confirm 20 orders daily from your phone, earn 100-350 USD. Selected from the Zara member list. Reply 'JOIN'",phishing,job_scam_task_platform,en
+"Felicidades, has sido seleccionado(a) para un puesto de captura de datos remoto en Mercado Libre. $450 USD/día, 2 hrs. Únete al grupo: t.me/ml_rrhh_mx",phishing,job_scam_brand_selected,es
+"Hola, soy Valeria de Recursos Humanos de Amazon México. Tu CV fue preseleccionado. Para asegurar la vacante paga la cuota de inscripción de $850 MXN. Responde SI",phishing,job_scam_fee_advance,es
+"Trabajo Shein: procesa pedidos desde tu celular, pago diario 800-2,500 pesos. Escribe a nuestra supervisora por WhatsApp +52 1 55 4480 9921",phishing,job_scam_task_platform,es
+Buscamos persona de confianza en España para recibir pagos de nuestros clientes y reenviarlos. Te quedas el 10%. Sin experiencia. Escribe a pagos.iberfin@gmail.com,phishing,money_mule_recruitment,es
+"Tu entrevista en Walmart está confirmada. Antes, envíanos foto del INE por ambos lados y tu CLABE interbancaria para dar de alta tu nómina. Depto RH Walmart",phishing,job_scam_data_harvest,es
+"Convocatoria SEP 2026: 3,000 plazas sin examen. Registro con pago de $350 de gestión en sep-convocatoria-mx.com. Cupo limitado",phishing,job_scam_fake_government,es
+"Parabéns! Você foi selecionado(a) para vaga de digitador remoto na Amazon Brasil. R$ 1.200/dia, 2h de trabalho. Entre no grupo: t.me/amazon_rh_br",phishing,job_scam_brand_selected,pt
+"Oi, sou a Camila do RH do Magalu. Seu currículo foi aprovado! Pra garantir a vaga, pague a taxa de cadastro de R$ 89,90 via Pix: rh.magalu.vagas@gmail.com",phishing,job_scam_fee_advance,pt
+"Tarefa Shopee: avalie produtos pelo celular e receba R$ 150 a R$ 600 por dia, pagamento no mesmo dia. Responda 1 para começar",phishing,job_scam_task_platform,pt
+Precisamos de pessoa de confiança em Portugal para receber transferências dos nossos clientes e reenviar. Comissão de 10%. Sem experiência. Fale com Ricardo: +351 912 704 118,phishing,money_mule_recruitment,pt
+Concurso Correios 2026: vagas sem prova! Inscreva-se com taxa de R$ 45 em correios-inscricao.com. Últimas vagas,phishing,job_scam_fake_government,pt
+"Antes da entrevista no iFood envie foto do RG, CPF e dados bancários para concluir o cadastro. Equipe RH iFood",phishing,job_scam_data_harvest,pt
+"Félicitations ! Vous avez été sélectionné(e) pour un poste de saisie de données chez Amazon France, 400 €/jour. Rejoignez le groupe : t.me/amazonfr_rh",phishing,job_scam_brand_selected,fr
+"Bonjour, Camille du service RH Indeed. Votre CV a été retenu pour un poste à distance. Frais d'inscription de 49 € à régler pour valider : indeed-recrutement.co",phishing,job_scam_fee_advance,fr
+Nous recherchons une personne de confiance en France pour recevoir les paiements de nos clients et les transférer. Vous gardez 10 %. Contact : finance.lmgroupe@gmail.com,phishing,money_mule_recruitment,fr
+"Avant votre entretien chez La Poste, merci d'envoyer votre pièce d'identité, numéro de sécu et RIB pour finaliser l'intégration. Service RH La Poste",phishing,job_scam_data_harvest,fr
+Air France recrute du personnel de cabine. Candidature pré-acceptée. Frais de dossier et visa 290 € à régler sous 48h : airfrance-recrutement-pnc.com,phishing,job_scam_airline_visa_fee,fr
+"Glückwunsch! Sie wurden für eine Remote-Stelle in der Datenerfassung bei Amazon ausgewählt. 400 €/Tag, 2–3 Std. Treten Sie der Gruppe bei: t.me/amazon_de_hr",phishing,job_scam_brand_selected,de
+"Hallo, hier ist Lena vom Indeed-Recruiting. Ihr Lebenslauf wurde ausgewählt. Zur Vertragsunterzeichnung benötigen wir Ausweiskopie und IBAN. Bitte heute senden",phishing,job_scam_data_harvest,de
+"Zalando Bestellbearbeitung: 30 Bestellungen täglich vom Handy, 150–450 € pro Tag, tägliche Auszahlung. WhatsApp an Betreuerin: +49 1521 7709 341",phishing,job_scam_task_platform,de
+Lufthansa Kabinenpersonal: Ihre Bewerbung wurde angenommen. Zur Sicherung der Stelle zahlen Sie 190 € Schulungsgebühr: lufthansa-crew-jobs.de-karriere.com,phishing,job_scam_airline_visa_fee,de
+"बधाई हो! आपको Amazon में रिमोट डेटा एंट्री जॉब के लिए चुना गया है। ₹3,500/दिन, 2 घंटे काम। ग्रुप जॉइन करें: t.me/amazon_hr_india",phishing,job_scam_brand_selected,hi
+"नमस्ते, मैं Naukri.com HR से प्रिया। आपका रिज़्यूमे शॉर्टलिस्ट हुआ है। जॉब कन्फर्म करने के लिए ₹499 रजिस्ट्रेशन फीस UPI priyahr@paytm पर भेजें",phishing,job_scam_fee_advance,hi
+"Flipkart पार्ट टाइम जॉब: प्रोडक्ट रेटिंग दो, रोज़ ₹2,000-8,000 कमाओ। आज ही पेमेंट। शुरू करने के लिए 1 रिप्लाई करें",phishing,job_scam_task_platform,hi
+"हमारी कंपनी के लिए पेमेंट रिसीव करने वाला भरोसेमंद व्यक्ति चाहिए। पैसा आपके खाते में आएगा, 10% रखो बाकी भेजो। WhatsApp 98xxx नहीं, Telegram @FinAgentIndia",phishing,money_mule_recruitment,hi
+भारतीय रेलवे भर्ती 2026: बिना परीक्षा 5000 पद। ₹299 फॉर्म फीस के साथ रजिस्टर करें: railway-bharti-2026.com,phishing,job_scam_fake_government,hi
+"Selamat! Anda terpilih untuk posisi input data remote di Shopee Indonesia. Rp 1,5 juta/hari, 2 jam kerja. Gabung grup: t.me/shopee_hrd_id",phishing,job_scam_brand_selected,id
+"Halo, saya Dewi dari HRD Tokopedia. CV Anda lolos seleksi. Untuk mengamankan posisi, transfer biaya pendaftaran Rp 150.000 ke BCA 8821 0094 112. Balas YA",phishing,job_scam_fee_advance,id
+Lowongan Garuda Indonesia pramugari/pramugara. Anda lolos tahap 1. Bayar biaya medical Rp 1.200.000 dalam 24 jam untuk lanjut. Hubungi Pak Andi 0857 1120 3398,phishing,job_scam_airline_visa_fee,id
+"Congrats! Napili ka para sa remote data encoder job sa Lazada. P2,500/day, 2 hrs lang. Join sa group: t.me/lazada_hr_ph",phishing,job_scam_brand_selected,tl
+"Hi, ako si Grace from JobStreet HR. Na-shortlist ang resume mo. Para ma-secure ang slot, magbayad ng P500 processing fee via GCash 0917 448 2210. Reply YES",phishing,job_scam_fee_advance,tl
+"Shopee part-time: mag-like ng products, kumita ng P800-3,000 per day, bayad same day. Reply 1 para magsimula",phishing,job_scam_task_platform,tl
+Need namin ng trusted person na tatanggap ng payments ng company namin sa GCash/bank at i-forward. Keep 10% commission. Walang experience needed. PM Telegram @FinAgentPH,phishing,money_mule_recruitment,tl
+"DFA/POEA approved: Canada caregiver jobs, P90k/month. Para sa visa processing magbayad ng P15,000 sa agency. Walang exam. canada-caregiver-ph.com",phishing,job_scam_fake_government_visa,tl
+مبروك! تم اختيارك لوظيفة إدخال بيانات عن بُعد في أمازون. 450 دولار يومياً، ساعتان عمل. انضم للمجموعة: t.me/amazon_hr_ar,phishing,job_scam_brand_selected,ar
+مرحباً، أنا سارة من قسم التوظيف في بيت.كوم. تم ترشيح سيرتك الذاتية. لتأكيد الوظيفة ادفع رسوم التسجيل 150 ريال عبر الرابط: bayt-hr-register.com,phishing,job_scam_fee_advance,ar
+وظيفة جزئية من نون: قيّم المنتجات من جوالك واربح 200-800 ريال يومياً، التحويل في نفس اليوم. أرسل 1 للبدء,phishing,job_scam_task_platform,ar
+"طيران الإمارات: تم قبولك مبدئياً كمضيف/مضيفة. لإصدار عقدك ادفع 1,200 درهم رسوم الفيزا والفحص الطبي خلال 48 ساعة. للتواصل: +971 56 300 2277",phishing,job_scam_airline_visa_fee,ar
+【Amazon採用】おめでとうございます。在宅データ入力スタッフに選ばれました。日給4万円、1日2時間。こちらから参加 t.me/amazon_jp_hr,phishing,job_scam_brand_selected,ja
+"こんにちは、リクナビ人事担当の佐藤です。あなたの履歴書が選考を通過しました。採用確定のため登録料5,000円をお支払いください: rikunabi-hr-touroku.com",phishing,job_scam_fee_advance,ja
+"TikTok Shop副業：動画に「いいね」するだけで日給8,000円〜3万円。即日払い。開始するには「1」と返信",phishing,job_scam_task_platform,ja
+面接の前に本人確認書類の写真、マイナンバー、銀行口座情報を送ってください。入社手続きに必要です。楽天 人事部,phishing,job_scam_data_harvest,ja
+恭喜！您已被选中担任亚马逊远程数据录入员，日薪3000元，每天2小时。请加入群组：t.me/amazon_hr_cn,phishing,job_scam_brand_selected,zh
+您好，我是BOSS直聘人事小张。您的简历已通过初筛，为锁定岗位请支付报名费199元：boss-zhipin-hr.top,phishing,job_scam_fee_advance,zh
+拼多多兼职：手机点赞商品，日赚300-1500元，当天结算。回复1立即开始,phishing,job_scam_task_platform,zh
+招聘代收款人员：客户货款打入您的账户，您保留10%佣金后转出。无需经验，日结。微信：fin_agent88,phishing,money_mule_recruitment,zh
+国企招聘2026免笔试！报名费99元，名额有限，立即登记：guoqi-zhaopin.icu,phishing,job_scam_fake_government,zh
+"축하합니다! 쿠팡 재택 데이터 입력 직원으로 선정되셨습니다. 일당 40만원, 하루 2시간. 그룹 참여: t.me/coupang_hr_kr",phishing,job_scam_brand_selected,ko
+"안녕하세요, 사람인 인사팀 김민지입니다. 이력서가 서류 통과되었습니다. 채용 확정을 위해 등록비 5만원을 입금해주세요: saramin-hr-join.com",phishing,job_scam_fee_advance,ko
+"쿠팡 알바: 상품 좋아요 누르고 하루 10만~50만원, 당일 정산. 시작하려면 1 답장",phishing,job_scam_task_platform,ko
+"면접 전 신분증 사진, 주민등록번호, 통장사본을 보내주세요. 입사 절차에 필요합니다. 네이버 인사팀",phishing,job_scam_data_harvest,ko
+"Tebrikler! Trendyol'da uzaktan veri giriş pozisyonu için seçildiniz. Günlük 4.500 TL, 2 saat. Gruba katılın: t.me/trendyol_ik_tr",phishing,job_scam_brand_selected,tr
+"Merhaba, ben Kariyer.net İK'dan Elif. Özgeçmişiniz ön elemeyi geçti. Pozisyonu garantilemek için 350 TL kayıt ücreti ödeyin: kariyernet-ik-kayit.com",phishing,job_scam_fee_advance,tr
+"Hepsiburada ek iş: ürün beğen, günlük 1.000-5.000 TL kazan, aynı gün ödeme. Başlamak için 1 yazın",phishing,job_scam_task_platform,tr
+Şirketimizin müşteri ödemelerini hesabında alıp aktaracak güvenilir kişi aranıyor. %10 komisyon. Deneyim gerekmez. WhatsApp 0 532 118 77 40,phishing,money_mule_recruitment,tr
+THY kabin memuru alımı: ön kabul aldınız. Sözleşme için 2.900 TL eğitim ve vize ücretini 48 saat içinde yatırın: thy-kabin-alim.com,phishing,job_scam_airline_visa_fee,tr
+"Поздравляем! Вы выбраны на удалённую вакансию оператора данных в Ozon. 12 000 ₽/день, 2 часа. Вступайте в группу: t.me/ozon_hr_rf",phishing,job_scam_brand_selected,ru
+"Здравствуйте, Анна из HR hh.ru. Ваше резюме прошло отбор. Для закрепления вакансии оплатите регистрационный взнос 990 ₽: hh-hr-registr.ru-job.com",phishing,job_scam_fee_advance,ru
+"Подработка Wildberries: ставьте лайки товарам, 3 000–15 000 ₽ в день, выплата в тот же день. Ответьте 1 чтобы начать",phishing,job_scam_task_platform,ru
+"Перед собеседованием в Сбере отправьте фото паспорта, СНИЛС и реквизиты карты для оформления. Отдел кадров Сбербанк",phishing,job_scam_data_harvest,ru
+"Hongera! Umechaguliwa kwa kazi ya kuingiza data mtandaoni kutoka Jumia. KSh 15,000 kwa siku, masaa 2. Jiunge na group: t.me/jumia_hr_ke",phishing,job_scam_brand_selected,sw
+"Habari, naitwa Amina kutoka HR BrighterMonday. CV yako imechaguliwa. Kuthibitisha nafasi lipa ada ya usajili KSh 1,500 kwa M-Pesa 0722 904 118. Jibu NDIO",phishing,job_scam_fee_advance,sw
+"Kazi ya muda TikTok: like video, pata KSh 2,000-8,000 kwa siku, malipo siku hiyo hiyo. Jibu 1 kuanza",phishing,job_scam_task_platform,sw
+Tunahitaji mtu wa kuaminika kupokea malipo ya wateja wetu kwa M-Pesa na kutuma kwetu. Unabaki na 10%. Hakuna uzoefu unaohitajika. WhatsApp 0712 334 908,phishing,money_mule_recruitment,sw
+"Kenya Airways inaajiri wahudumu wa ndege. Umechaguliwa! Lipa KSh 8,500 ada ya medical na visa ndani ya masaa 48. Piga 0790 112 445",phishing,job_scam_airline_visa_fee,sw
+"Drivers wanted! Flexible hours, weekly pay, own van preferred. Apply at swiftcouriers-jobs.co.uk or call 0800 331 2277",spam,driver_recruitment_ad,en
+"Work from home packing jobs. No experience required, we train you. Up to GBP 400/wk. Text PACK to 60300",spam,wfh_packing_ad,en
+Learn forex trading from scratch. FREE live webinar Thursday 7pm. Register: fxmasterclass.live,spam,forex_course_ad,en
+"HIRING NOW: Warehouse operatives, all shifts, GBP 12.50/hr. Text JOBS to 87999 for an application link",spam,warehouse_hiring_shortcode,en
+"StaffLink Recruitment: 40+ live vacancies this week in Manchester - picking, packing, forklift, cleaning. Walk-in registration Mon-Fri 9-4, 12 Deansgate",spam,agency_mass_blast,en
+Become a Bolt driver and get a GBP 300 sign-up bonus in your first 30 days. Keep 100% of your tips. Sign up: bolt.eu/driver,spam,gig_driver_signup_promo,en
+"Uber is looking for drivers in your city. Earn on your schedule, cash out up to 5x a day. Get started at uber.com/drive",spam,gig_driver_signup_promo,en
+"Online tutoring jobs - teach English from your phone, set your own rate. Join 10,000 tutors. Apply: tutorsphere.app",spam,online_tutoring_ad,en
+Tired of your 9-5? Be your own boss. Our wellness team earns residual income every month. Ask me how! Reply INFO,spam,mlm_pitch,en
+Joe's Diner on Main St is hiring part-time servers & dishwashers. Evenings & weekends. Pop in with your CV or call (614) 555-0191,spam,local_shop_hiring,en
+DoorDash: Dash when you want. New Dashers earn a guaranteed $500 for 50 deliveries. Sign up today: doordash.com/dasher,spam,gig_app_promo,en
+"Get paid to take surveys! $1-$5 per survey, cash out via PayPal. Join free: surveycashclub.com",spam,survey_income_ad,en
+"Care workers needed urgently across Leeds. GBP 13-15/hr, full training, immediate starts. Apply now at caresupport-jobs.co.uk",spam,care_recruitment_ad,en
+Make money while you sleep! Our automated Amazon FBA system does the work. Free training video: fba-freedom.net,spam,ecommerce_course_ad,en
+"Now recruiting: Security Officers (SIA licence). GBP 14.20/hr, nights available. Reply SEC for details or visit guardforce-careers.com",spam,security_recruitment_ad,en
+Deliveroo riders wanted in Bristol. Earn up to GBP 20/hr at peak times. Bike or scooter. Apply: deliveroo.co.uk/apply,spam,gig_app_promo,en
+"Side hustle alert: sell our skincare line on social media, 30% commission, no inventory. DM to join the team!",spam,mlm_pitch,en
+Need extra cash? Rent out your parking space with ParkSpot. Earn up to $250/mo doing nothing. parkspot.co,spam,passive_income_app_ad,en
+"Hiring Class A CDL drivers. $0.65/mile, home weekends, $3,000 sign-on. Call 1-800-555-0120 or apply at haulpro.com",spam,driver_recruitment_ad,en
+Free 3-day crypto trading bootcamp. Learn how our members made 40% last month. Seats limited. cryptoacademy.pro,spam,crypto_course_ad,en
+"Looking for weekend bar staff - Kings Head pub, no exp needed, GBP 11.50/hr + tips. Ask for Dave or text this number",spam,local_shop_hiring,en
+Amazon is hiring seasonal warehouse associates near you. Up to $19/hr + benefits. Apply at amazon.jobs,spam,brand_hiring_ad,en
+"Become a certified medical coder in 4 months. Online, flexible, job placement help. Enrol today: medcodeinstitute.com",spam,training_course_ad,en
+"ATTENTION job seekers: 500 temp roles for the Christmas rush. Pickers, packers, drivers. Register today: tempforce.co.uk/xmas",spam,agency_mass_blast,en
+"Earn passive income with our vending machine franchise. 20% ROI, we place the machines. Request a free info pack: vendkings.biz",spam,franchise_ad,en
+"Nurses wanted for Australia & NZ. Visa support, relocation package. Free info session Saturday. Register: nurses-abroad.com.au",spam,overseas_recruitment_ad,en
+Flexible babysitting & pet sitting gigs on the Care.com app. Set your own hours. Download and create a profile today,spam,gig_app_promo,en
+"Get hired in tech without a degree! 12-week coding bootcamp, pay after you get a job. Info session: codefast.io",spam,training_course_ad,en
+"Hiring: Cleaners for offices in central London, early mornings, GBP 12/hr. Call 020 7946 0233 or text CLEAN",spam,cleaning_recruitment_ad,en
+"Make $100-$300 daily with print-on-demand. No stock, no shipping, no experience. Free guide: podprofits.co",spam,ecommerce_course_ad,en
+"Join our team of freelance translators. Pay per word, remote. Register at lingoworks.net/apply",spam,freelance_recruitment_ad,en
+"Our bakery on Elm Street needs a morning counter assistant, 6am-12pm, Tue-Sat. Apply in person",spam,local_shop_hiring,en
+"Lyft drivers earn an extra $1,000 after 100 rides in 30 days. Limited time. Apply now at lyft.com/drive",spam,gig_driver_signup_promo,en
+Real estate agents wanted. No licence? We sponsor your course. Uncapped commission. Info night Weds 6pm. homesquad.realty,spam,sales_recruitment_ad,en
+Stay-at-home mums: earn GBP 500+/mo with our candle business. Starter kit GBP 49. Reply CANDLE,spam,mlm_pitch,en
+Fancy a career change? Train as an HGV driver in 6 weeks. Finance available. truckschool.co.uk,spam,training_course_ad,en
+"Teach English online to kids in Asia. $18-25/hr, work from anywhere. Bachelor's required. Apply: teachlingo.com",spam,online_tutoring_ad,en
+"WE ARE HIRING: forklift ops, GBP 13.40/hr, day & night shifts, immediate start, Birmingham. Text FORK to 66777",spam,warehouse_hiring_shortcode,en
+Dropshipping made easy: our mentors built 6-figure stores in 90 days. Free masterclass tonight. dropshipmentor.live,spam,ecommerce_course_ad,en
+Wanted: mystery shoppers in your area. Get paid to eat out and shop. Sign up free at shopperpanel.co.uk,spam,mystery_shopper_ad,en
+"Join Just Eat as a courier. Weekly pay, flexible shifts, free kit. couriers.justeat.co.uk",spam,gig_app_promo,en
+Earn money renting out your car on Turo when you're not using it. Avg host earns $600/mo. turo.com/list,spam,passive_income_app_ad,en
+"Hiring: Receptionist for busy dental practice, Mon-Fri, GBP 23k. Send CV to jobs@brightsmiledental.co.uk",spam,local_business_hiring,en
+"Launch your Herbalife business today! Health, wealth and freedom. Message me for your free consultation.",spam,mlm_pitch,en
+"Call centre agents needed, no experience, GBP 11.44/hr + bonus, Glasgow city centre. Apply at connectcall-jobs.com",spam,call_centre_recruitment_ad,en
+Get paid to test websites & apps. $10 per 20-minute test. Sign up: usertesting.com,spam,gig_platform_ad,en
+HIRING chefs & kitchen porters for new restaurant opening in Soho. Competitive pay. Interviews this week. Email hello@ovenandvine.com,spam,local_business_hiring,en
+Daily profits trading gold with our AI signals. 92% win rate. Free trial: goldsignals.vip,spam,trading_signals_ad,en
+"Sell on Etsy and turn your hobby into income. Free 'first 1,000 sales' workshop Sunday. etsygrowth.co",spam,ecommerce_course_ad,en
+Seasonal retail staff wanted for H&M Oxford Street. Apply via career.hm.com. Weekend availability essential,spam,brand_hiring_ad,en
+"Students! Flexible promo work, GBP 15/hr, weekends. Join our brand ambassador pool: promostaff.uk",spam,promo_staff_ad,en
+Investors wanted: our rental property fund paid 11% last year. Minimum GBP 5k. Info: brickyield.co.uk,spam,investment_ad,en
+"Hiring bus drivers! Full training, GBP 15.80/hr once qualified, pension. Apply at firstbus.co.uk/careers",spam,driver_recruitment_ad,en
+Make $50/hr as a notary signing agent. Our course gets you certified in 2 weeks. notaryincome.com,spam,training_course_ad,en
+"Virtual assistants wanted. Work from home, choose your clients, $15-30/hr. Join the VA network: vahub.io",spam,freelance_recruitment_ad,en
+"Marshall's Garage needs an MOT tester. Good rates, no weekends. Call Pete 07700 900 334",spam,local_business_hiring,en
+Fancy earning GBP 1k/mo renting your spare room to students? List free on roomshare.co.uk,spam,passive_income_app_ad,en
+Top recruiter tip: 300 new jobs added today on jobsboard.ie - apply from your phone in 2 taps,spam,job_board_promo,en
+Start a profitable laundromat business with zero experience. Webinar Tues 8pm. laundrybiz.co,spam,franchise_ad,en
+"Hiring lifeguards for summer 2026, pool on-site training provided, $16/hr. Apply: citypools.gov/jobs",spam,seasonal_hiring_ad,en
+"Join our network marketing team - travel discounts, car bonus, residual income. Zoom intro call Thurs. Reply TEAM",spam,mlm_pitch,en
+"Get a job in Dubai! Hospitality, retail, construction. Free registration at gulfjobs-fair.com. Fair in London 14 Dec",spam,overseas_recruitment_ad,en
+Need a job yesterday? QuickTemp has same-day shifts in catering and events. Download the app: quicktemp.app,spam,gig_app_promo,en
+"Delivery drivers needed for Evri, self-employed, use own car, GBP 500-800/wk. Apply: evri.com/couriers",spam,driver_recruitment_ad,en
+"Train as a yoga teacher online, 200hr certified, start earning in 8 weeks. 50% off enrolment this week. yogapathway.com",spam,training_course_ad,en
+"Gana $2,000 USD a la semana desde casa. Sin experiencia, empieza hoy. Info: ingresos-casa.net",spam,wfh_generic_ad,es
+"Se buscan repartidores con moto propia. Horarios flexibles, pago semanal. Postula en rapidomoto.mx o llama al 55 1234 0098",spam,driver_recruitment_ad,es
+"Se busca personal para tienda de abarrotes, medio tiempo, turno matutino. Informes en la tienda, Calle Morelos 45",spam,local_shop_hiring,es
+"Hazte conductor de Didi y recibe bono de $3,000 MXN en tu primer mes. Regístrate en didi-food.com/mx",spam,gig_driver_signup_promo,es
+"Agencia TalentoYa: 60 vacantes esta semana en Madrid: camareros, mozos de almacén, limpieza. Inscripción gratuita en talentoya.es",spam,agency_mass_blast,es
+"Ganhe R$ 8.000 por mês trabalhando de casa. Sem experiência, comece hoje. Saiba mais: rendaextra-casa.com",spam,wfh_generic_ad,pt
+"Motoboys com moto própria. Horário flexível, pagamento semanal. Candidate-se em rapidexpress.com.br ou ligue (11) 4002-8922",spam,driver_recruitment_ad,pt
+"Padaria do Zé contrata atendente meio período, manhã. Interessados comparecer na Rua das Flores, 120 com currículo",spam,local_shop_hiring,pt
+Seja entregador iFood e ganhe bônus de R$ 300 nas primeiras 50 entregas. Cadastre-se: entregador.ifood.com.br,spam,gig_app_promo,pt
+"Gagnez 2 000 € par semaine depuis chez vous. Aucune expérience requise, commencez aujourd'hui. Infos : revenu-maison.net",spam,wfh_generic_ad,fr
+"Recherchons chauffeurs-livreurs, horaires flexibles, paie hebdo. Postulez sur livrexpress-emploi.fr ou appelez le 01 84 00 22 10",spam,driver_recruitment_ad,fr
+Devenez chauffeur Uber et touchez une prime de 300 € après 50 courses. Inscrivez-vous sur uber.com/fr/drive,spam,gig_driver_signup_promo,fr
+Marre du métro-boulot-dodo ? Devenez votre propre patron avec notre équipe bien-être. Revenus mensuels récurrents. Répondez INFO,spam,mlm_pitch,fr
+"Verdienen Sie 2.000 € pro Woche von zu Hause. Keine Erfahrung nötig, heute starten. Infos: heimarbeit-einkommen.net",spam,wfh_generic_ad,de
+"Fahrer gesucht! Flexible Zeiten, wöchentliche Auszahlung, eigener Transporter von Vorteil. Bewerben: flinkkurier-jobs.de oder 0800 123 4455",spam,driver_recruitment_ad,de
+"Werde Lieferando-Fahrer: Minijob oder Teilzeit, E-Bike gestellt, Bonus nach 50 Lieferungen. lieferando.de/fahrer",spam,gig_app_promo,de
+"Jobmesse Hamburg: 120 Arbeitgeber, Lager, Pflege, Gastro. Eintritt frei, Sa 10–16 Uhr, Messehalle B4. jobmesse-hh.de",spam,agency_mass_blast,de
+"घर बैठे ₹50,000 महीना कमाएं। कोई अनुभव नहीं चाहिए, आज ही शुरू करें। जानकारी: gharse-kamai.net",spam,wfh_generic_ad,hi
+"डिलीवरी बॉय चाहिए! अपनी बाइक, फ्लेक्सिबल टाइम, हफ्ते में पेमेंट। अप्लाई करें: fastdelivery-jobs.in या कॉल 1800 123 4567",spam,driver_recruitment_ad,hi
+"Zomato डिलीवरी पार्टनर बनें, पहले 50 ऑर्डर पर ₹2,000 बोनस। रजिस्टर करें: zomato.com/deliver-food",spam,gig_app_promo,hi
+"ऑनलाइन ट्यूशन जॉब - मोबाइल से बच्चों को पढ़ाएं, ₹300-800/घंटा। अप्लाई: tutorbharat.app",spam,online_tutoring_ad,hi
+"Penghasilan Rp 10 juta/bulan dari rumah. Tanpa pengalaman, mulai hari ini. Info: cuan-dirumah.net",spam,wfh_generic_ad,id
+"Dicari driver motor! Jam fleksibel, gaji mingguan. Daftar di kurircepat-loker.id atau telp 0800-1-234567",spam,driver_recruitment_ad,id
+"Warung Bu Sari butuh karyawan part time, shift pagi. Langsung datang ke Jl. Mawar No. 8",spam,local_shop_hiring,id
+"Jadi mitra Gojek, bonus Rp 500rb di bulan pertama. Daftar sekarang: gojek.com/driver",spam,gig_driver_signup_promo,id
+"Kumita ng P40,000 kada buwan sa bahay lang. Walang experience needed, simulan ngayon. Info: kita-sabahay.net",spam,wfh_generic_ad,tl
+"Hiring riders! Own motor, flexible hours, weekly payout. Apply sa bilisdeliver-jobs.ph o tumawag sa 0917 100 2233",spam,driver_recruitment_ad,tl
+"Maging Grab driver, may P3,000 sign-up bonus sa first month. Register: grab.com/ph/driver",spam,gig_driver_signup_promo,tl
+"Pagod na sa boss? Maging sarili mong boss! Join our wellness team, may monthly residual income. Reply INFO",spam,mlm_pitch,tl
+"اربح 7,000 ريال شهرياً من منزلك. بدون خبرة، ابدأ اليوم. التفاصيل: dakhl-manzil.net",spam,wfh_generic_ad,ar
+مطعم أبو خليل يطلب موظف كاشير دوام جزئي، فترة مسائية. التقديم في المطعم، شارع الملك فهد,spam,local_shop_hiring,ar
+كن كابتن كريم واحصل على مكافأة 500 ريال في أول شهر. سجّل الآن: careem.com/captains,spam,gig_driver_signup_promo,ar
+"وظائف فورية: موظفو خدمة عملاء بدون خبرة، 4,500 ريال + تأمين. سجّل في wazayef-callcenter.com",spam,call_centre_recruitment_ad,ar
+配達ドライバー急募！シフト自由、週払いOK。応募はquickhaibin-job.jp または 0120-345-678,spam,driver_recruitment_ad,ja
+パン屋ふらんすで朝のレジスタッフ募集（パート）。履歴書持参で店頭へ。駅前通り3-2,spam,local_shop_hiring,ja
+Uber Eats配達パートナー登録で初回ボーナス1万円。登録：ubereats.com/jp/deliver,spam,gig_app_promo,ja
+オンライン英会話講師募集。スマホで指導、時給は自分で設定。登録：tutor-jp.app,spam,online_tutoring_ad,ja
+在家月入3万元，无需经验，今天就开始。详情：zaijia-shouru.net,spam,wfh_generic_ad,zh
+急招外卖骑手！时间自由，周结工资。报名：kuaisong-zhaopin.cn 或致电 400-123-4567,spam,driver_recruitment_ad,zh
+加入滴滴车主，首月奖励2000元。立即注册：didiglobal.com/driver,spam,gig_driver_signup_promo,zh
+厌倦打工？做自己的老板！加入我们的大健康团队，每月被动收入。回复 INFO 了解,spam,mlm_pitch,zh
+"배달 라이더 급구! 자유 근무, 주급 지급. 지원: quickbaedal-job.kr 또는 1588-1234",spam,driver_recruitment_ad,ko
+김밥천국 역삼점 오전 파트타임 구함. 이력서 들고 매장 방문,spam,local_shop_hiring,ko
+쿠팡이츠 배달파트너 가입하고 첫 달 보너스 10만원 받으세요. 등록: coupangeats.com/partner,spam,gig_app_promo,ko
+"온라인 과외 선생님 모집 - 스마트폰으로 수업, 시급 직접 설정. 지원: tutorkr.app",spam,online_tutoring_ad,ko
+"Evden haftalık 40.000 TL kazanın. Deneyim gerekmez, bugün başlayın. Bilgi: evden-kazanc.net",spam,wfh_generic_ad,tr
+"Motokurye aranıyor! Esnek saatler, haftalık ödeme. Başvuru: hizlikurye-is.com veya 0850 222 1100",spam,driver_recruitment_ad,tr
+"Yemeksepeti kuryesi ol, ilk ay 2.000 TL bonus kazan. Kayıt: yemeksepeti.com/kurye",spam,gig_app_promo,tr
+"Patronundan bıktın mı? Kendi patronun ol! Wellness ekibimize katıl, her ay pasif gelir. INFO yaz",spam,mlm_pitch,tr
+"Зарабатывайте 150 000 ₽ в месяц из дома. Без опыта, начните сегодня. Подробнее: dohod-doma.net",spam,wfh_generic_ad,ru
+"Требуются курьеры! Свободный график, еженедельные выплаты. Анкета на bystro-kurier-rabota.ru или 8 800 555 35 35",spam,driver_recruitment_ad,ru
+"Пекарня «Хлебница» ищет продавца на утреннюю смену, подработка. Обращаться в магазин, ул. Ленина 14",spam,local_shop_hiring,ru
+"Стань водителем Яндекс Такси, бонус 5 000 ₽ в первый месяц. Регистрация: taxi.yandex.ru/driver",spam,gig_driver_signup_promo,ru
+"Madereva wa boda wanahitajika! Masaa yako, malipo kila wiki. Omba kwenye haraka-kazi.co.ke au piga 0800 720 100",spam,driver_recruitment_ad,sw
+"Duka la Mama Njeri linahitaji msaidizi wa muda, shifti ya asubuhi. Fika dukani na CV, Moi Avenue",spam,local_shop_hiring,sw
+"Kuwa dereva wa Bolt na upate bonasi ya KSh 5,000 mwezi wa kwanza. Jisajili: bolt.eu/ke/driver",spam,gig_driver_signup_promo,sw
+"Umechoka na bosi? Kuwa bosi wako mwenyewe! Jiunge na timu yetu ya wellness, kipato cha kila mwezi. Jibu INFO",spam,mlm_pitch,sw
+"Hi Sam, it's Laura from Hays. Are you free for a quick call about the analyst role tomorrow at 10? Let me know what works.",ham,recruiter_followup,en
+"Hello Priya, this is Tom at Reed. Thanks for applying to the Finance Assistant post. The client would like to meet you Thursday at 2pm, 4th floor reception. Can you make it?",ham,interview_invite,en
+Your application for Software Engineer II at Stripe has been received. We will review it and get back to you within two weeks. - Stripe Recruiting (Greenhouse),ham,application_received,en
+Workday: Thank you for applying to Senior Accountant (R-20471) at Deloitte. Track your status at deloitte.wd1.myworkdayjobs.com,ham,application_received,en
+"Hey Marcus, any chance you could swap your Saturday shift with my Tuesday? Got a wedding. I'll owe you one",ham,shift_swap_colleague,en
+"Hi Jen, can you cover Saturday 9-5? Dan called in sick. Let me know by tonight please - Mike",ham,manager_cover_request,en
+Your October payslip is now available on the HR portal (People Hub). Log in with your staff ID to view or download.,ham,payslip_notice,en
+Reminder: your first day is Monday 9am. Please bring photo ID and proof of right to work (passport or BRP). Ask for Helen at reception. Welcome aboard!,ham,onboarding_reminder,en
+"Hi Aisha, it's Grace from Michael Page. The Indeed assessment link is in your email (check junk too). Give me a shout if it hasn't arrived by lunchtime.",ham,recruiter_assessment_notice,en
+Your LinkedIn verification code is 482913. Do not share this code.,ham,linkedin_code,en
+"Hi, it's Ben from Office Angels. Just checking you're still interested in the receptionist role at the law firm? They want to move quickly.",ham,recruiter_followup,en
+"Interview confirmed: Marketing Coordinator, Tue 18 Nov, 11:00, Unilever House, 100 Victoria Embankment. Please allow 15 mins for security. Reply to reschedule.",ham,interview_confirmation,en
+"UNISON members: branch meeting Weds 5.30pm, Room 2B, to discuss the pay offer. All welcome. Tea and biscuits provided.",ham,union_notice,en
+HR notice: the office will be closed Fri 26 Dec and Mon 29 Dec. Please submit any outstanding expense claims by the 19th.,ham,hr_notice,en
+"hey its Carla from the cafe, boss says u can start training thurs 10am, wear black trousers & flat shoes",ham,new_job_start_details,en
+"Hi Omar, Rachel here from Randstad. Your timesheet for w/e 7 Nov hasn't been approved yet - can you chase your line manager? Payroll cut-off is 12 noon tomorrow.",ham,agency_timesheet_reminder,en
+"Thanks for your application to Monzo. Unfortunately we won't be progressing this time, but we'd encourage you to apply for future roles. Best, Monzo Talent Team",ham,application_rejection,en
+Your Indeed verification code is 732 019. It expires in 10 minutes.,ham,indeed_code,en
+"Hi all, rota for next week is up on the staff WhatsApp. Shout if there are any problems before Friday. Cheers, Dee",ham,rota_notice,en
+"Hi Leo, it's Nadia from Robert Walters. Good news - the client wants to offer you the role! Call me when you get a chance to go through the package.",ham,recruiter_offer_news,en
+Reminder: mandatory fire safety training tomorrow 2pm in the canteen. Should take about 40 mins. - Facilities,ham,hr_training_notice,en
+"Hi Dave, it's Sunita (HR). Your P60 for 2025/26 has been uploaded to your Sage HR account. No action needed.",ham,payroll_document_notice,en
+Can anyone do a double tomorrow? Two people off sick. Extra shift paid at time and a half. Text me back - Kev,ham,manager_cover_request,en
+"Hello Fatima, your Zoom interview with the Head of Operations is at 15:30 today. The link was sent to your Gmail at 9am. Good luck! - Jess, Talent Acquisition",ham,interview_confirmation,en
+"Hi Sam, your contract and new starter forms are ready to sign on DocuSign - you'll have an email from docusign.net. Deadline Friday. Thanks, Maria (HR)",ham,onboarding_documents,en
+"Hey, did u get the email about the Christmas shift bonus? Double pay on the 25th if we volunteer. Thinking of doing it",ham,colleague_chat,en
+"Hi Tom, it's Keisha from Amazon Recruiting. Confirming your onsite loop on 20 Nov at the Seattle Day 1 building. Agenda is in your Amazon Jobs email. Any questions, text me.",ham,interview_confirmation,en
+"Payroll: your bank details change has been processed. Your next salary will be paid to the account ending 4417. If you did not request this, contact HR immediately on ext 2200.",ham,payroll_change_notice,en
+"Hi Anna, following up on the Product Designer role you applied for on our careers site. Would you be open to a 20-min intro call this week? - Jake, Figma Recruiting",ham,recruiter_followup,en
+Shift reminder: you're on tomorrow 06:00-14:00 at the Reading depot. Clock in with your badge. - DPD Ops,ham,shift_reminder,en
+"Hi, it's Carl from the warehouse. Did you leave your lanyard in the locker room? I've put it in the office",ham,colleague_chat,en
+"Your Zoom interview with Shopify has been rescheduled to Wed 19 Nov, 1pm GMT, at the hiring manager's request. The updated calendar invite is in your inbox.",ham,interview_reschedule,en
+"Welcome to Tesco! Your colleague number is 884210. Your induction is Tue 9am at the Hatfield store, meet at the colleague entrance. Bring your passport.",ham,onboarding_reminder,en
+"Hi Josh, Lucy from Hays here. Just to say thanks for coming in today - I've sent your details to the client and should hear back by Monday.",ham,recruiter_followup,en
+"Union ballot closes Friday 5pm. If you haven't received your ballot paper, call the GMB office on 0161 000 0000.",ham,union_notice,en
+"Hi Ellie, can you send me your availability for December by Weds so I can finalise the rota? Ta, Steve",ham,rota_request,en
+"Hello, this is Dr Patel's office. Your reference for Amy Lawson has been received, thank you for your time.",ham,reference_received,en
+Your right-to-work check has been completed. Welcome to the team - you will receive your login details on your first day. IT Service Desk,ham,onboarding_notice,en
+"hiya, Kath here from the salon. Can you do an extra hour tomorrow? got a bridal party at 8. lmk x",ham,manager_cover_request,en
+"Hey Raj, Marcus from the Monday night team. We're short two people for the stocktake Sun 8am. Any chance you're free?",ham,colleague_cover_request,en
+Greenhouse: Your interview with Airbnb has been scheduled. Details and the video link are in the email we sent to the address on your application.,ham,interview_confirmation,en
+"Hi Sophie, your DBS certificate has arrived at the office. Pop in to collect it any time this week. - Hannah, School Office",ham,hr_document_notice,en
+"Thanks for interviewing with us yesterday, Ahmed. We'll be in touch with next steps by end of week. - Priya, Talent Partner, Revolut",ham,interview_followup,en
+"Hola Marta, soy Laura de Adecco. ¿Tienes un momento mañana a las 10 para hablar del puesto de analista al que aplicaste? Avísame qué hora te viene bien.",ham,recruiter_followup,es
+Tu solicitud para el puesto de Analista de Datos en BBVA ha sido recibida. Te contactaremos en los próximos 15 días. Equipo de Talento BBVA,ham,application_received,es
+"Recordatorio: tu primer día es el lunes a las 9. Trae INE, CURP y comprobante de domicilio. Pregunta por Daniela en recepción. ¡Bienvenido!",ham,onboarding_reminder,es
+Sua candidatura para Analista Financeiro na Ambev foi recebida. Entraremos em contato em até duas semanas. Equipe de Recrutamento Ambev (Gupy),ham,application_received,pt
+"Bruna, consegue cobrir o sábado das 9 às 17? O Diego ficou doente. Me responde até hoje à noite, por favor. - Marcos",ham,manager_cover_request,pt
+"Lembrete: seu primeiro dia é segunda às 9h. Traga RG, CPF e carteira de trabalho digital. Pergunte pela Fernanda na recepção. Bem-vindo!",ham,onboarding_reminder,pt
+"Bonjour Thomas, c'est Claire de Manpower. Êtes-vous disponible demain à 10h pour un appel au sujet du poste d'analyste ? Dites-moi ce qui vous convient.",ham,recruiter_followup,fr
+"Salut Karim, tu pourrais échanger ton samedi contre mon mardi ? J'ai un mariage. Je te revaudrai ça",ham,shift_swap_colleague,fr
+Rappel : votre premier jour est lundi à 9h. Merci d'apporter une pièce d'identité et votre carte Vitale. Demandez Sophie à l'accueil. Bienvenue !,ham,onboarding_reminder,fr
+"Hallo Jonas, hier ist Katrin von Hays. Hätten Sie morgen um 10 Uhr Zeit für ein kurzes Telefonat zur Analystenstelle, auf die Sie sich beworben haben?",ham,recruiter_followup,de
+Ihre Bewerbung als Sachbearbeiter (m/w/d) bei der Deutschen Bahn ist eingegangen. Wir melden uns innerhalb von zwei Wochen. DB Recruiting,ham,application_received,de
+"Hey Lukas, kannst du am Samstag meine Schicht übernehmen? Ich hab eine Hochzeit. Ich übernehm dafür deinen Dienstag",ham,shift_swap_colleague,de
+"हाय रोहित, मैं Randstad से नेहा। कल 10 बजे एनालिस्ट रोल के बारे में बात करने के लिए फ्री हो? बताओ कौन सा टाइम ठीक रहेगा।",ham,recruiter_followup,hi
+Infosys में Systems Engineer पद के लिए आपका आवेदन प्राप्त हुआ है। हम दो सप्ताह में संपर्क करेंगे। Infosys Talent Acquisition,ham,application_received,hi
+याद दिलाना: पहला दिन सोमवार सुबह 9 बजे। आधार कार्ड और PAN की कॉपी लेकर आएं। रिसेप्शन पर प्रिया से मिलें। स्वागत है!,ham,onboarding_reminder,hi
+"Halo Rina, saya Budi dari Michael Page. Besok jam 10 bisa telepon sebentar soal posisi analis yang kamu lamar? Kabari ya jam berapa yang cocok.",ham,recruiter_followup,id
+"Bro, bisa tukar shift Sabtu sama Selasa gue? Ada nikahan. Gue traktir kopi deh",ham,shift_swap_colleague,id
+"Pengingat: hari pertama kerja Senin jam 9. Bawa KTP, NPWP, dan fotokopi ijazah. Tanya Mbak Sari di resepsionis. Selamat bergabung!",ham,onboarding_reminder,id
+"Hi Mark, si Joy ito from Manpower. Free ka ba bukas 10am para sa quick call tungkol sa analyst role na in-apply mo? Sabihin mo lang anong oras okay sa'yo.",ham,recruiter_followup,tl
+Natanggap na namin ang application mo para sa Customer Service Rep sa Globe. Makakarinig ka sa amin within two weeks. Globe Talent Team,ham,application_received,tl
+"Pre, pwede bang i-swap mo yung Saturday shift mo sa Tuesday ko? May kasal ako. Utang ko sa'yo",ham,shift_swap_colleague,tl
+تم استلام طلبك لوظيفة محاسب في شركة أرامكو. سنتواصل معك خلال أسبوعين. فريق التوظيف - أرامكو,ham,application_received,ar
+يا أحمد، ممكن تبدل معي شفت السبت بالثلاثاء؟ عندي عرس. الله يخليك,ham,shift_swap_colleague,ar
+تذكير: أول يوم عمل الاثنين الساعة 9 صباحاً. أحضر الهوية الوطنية وصورة من المؤهل. اسأل عن نورة في الاستقبال. أهلاً بك!,ham,onboarding_reminder,ar
+田中さん、リクルートエージェントの山本です。ご応募いただいたアナリスト職について、明日10時にお電話でお話しできますか？ご都合をお知らせください。,ham,recruiter_followup,ja
+ソニー株式会社 経理担当職へのご応募を受け付けました。2週間以内にご連絡いたします。ソニー採用チーム,ham,application_received,ja
+リマインド：初出勤は月曜9時です。身分証とマイナンバー確認書類をご持参ください。受付で佐藤をお呼びください。,ham,onboarding_reminder,ja
+李先生您好，我是智联招聘的王丽。您应聘的分析师岗位，明天上午10点方便电话沟通吗？请告知您合适的时间。,ham,recruiter_followup,zh
+哥，周六的班能跟我周二换一下吗？要去参加婚礼。欠你一顿饭,ham,shift_swap_colleague,zh
+提醒：周一上午9点入职。请携带身份证和学历证明原件，到前台找张女士。欢迎加入！,ham,onboarding_reminder,zh
+"민수님, 로버트월터스 박지영입니다. 지원하신 애널리스트 포지션 관련해 내일 오전 10시 통화 가능하신가요? 편한 시간 알려주세요.",ham,recruiter_followup,ko
+삼성전자 재무담당 직무에 지원해주셔서 감사합니다. 접수가 완료되었으며 2주 내 연락드리겠습니다. 삼성전자 채용팀,ham,application_received,ko
+"형, 토요일 근무 내 화요일이랑 바꿔줄 수 있어? 결혼식 있어서. 신세 갚을게",ham,shift_swap_colleague,ko
+Garanti BBVA Finans Uzmanı pozisyonuna başvurunuz alınmıştır. İki hafta içinde sizinle iletişime geçeceğiz. Garanti BBVA İK,ham,application_received,tr
+Kanka cumartesi vardiyamı salıyla değişir misin? Düğün var. Borcum olsun,ham,shift_swap_colleague,tr
+Hatırlatma: ilk iş günün pazartesi 09.00. Kimlik ve diploma fotokopisi getir. Resepsiyonda Ayşe Hanım'ı sor. Aramıza hoş geldin!,ham,onboarding_reminder,tr
+"Здравствуйте, Иван! Это Мария из Kelly Services. Удобно ли вам созвониться завтра в 10 по поводу вакансии аналитика, на которую вы откликались?",ham,recruiter_followup,ru
+Ваш отклик на вакансию «Бухгалтер» в Яндексе получен. Мы свяжемся с вами в течение двух недель. Команда подбора Яндекса,ham,application_received,ru
+"Напоминание: первый рабочий день в понедельник в 9:00. Возьмите паспорт, СНИЛС и ИНН. На ресепшене спросите Ольгу. Добро пожаловать!",ham,onboarding_reminder,ru
+"Habari Joseph, ni Mercy kutoka Corporate Staffing. Uko huru kesho saa nne asubuhi tuongee kuhusu nafasi ya analyst uliyoomba? Nijulishe muda unaokufaa.",ham,recruiter_followup,sw
+"Bro, unaweza nibadilishie shift ya Jumamosi na Jumanne yangu? Nina harusi. Nitakulipa",ham,shift_swap_colleague,sw
+Kumbusho: siku yako ya kwanza ni Jumatatu saa tatu asubuhi. Leta kitambulisho na KRA PIN. Uliza Wanjiru kwenye mapokezi. Karibu!,ham,onboarding_reminder,sw

@@ -24,6 +24,27 @@ LABELS = ["ham", "spam", "phishing"]
 csv.field_size_limit(10 * 1024 * 1024)
 
 
+def load_tokenizer(vocab_file):
+    """The bert-base-multilingual-cased tokenizer, built offline from the vendored vocab.
+
+    Built through the `tokenizers` library and wrapped in BertTokenizerFast:
+    with transformers 5.x, ``BertTokenizerFast(vocab_file=...)`` silently yields
+    a 5-token vocabulary that maps every word to [UNK]. The result produces the
+    same ids as ``AutoTokenizer.from_pretrained("bert-base-multilingual-cased")``,
+    which the API uses.
+    """
+    from tokenizers import BertWordPieceTokenizer
+    from transformers import BertTokenizerFast
+
+    wp = BertWordPieceTokenizer(vocab=str(vocab_file), lowercase=False, clean_text=True, handle_chinese_chars=True)
+    tok = BertTokenizerFast(tokenizer_object=wp._tokenizer, do_lower_case=False, unk_token="[UNK]",
+                            sep_token="[SEP]", pad_token="[PAD]", cls_token="[CLS]", mask_token="[MASK]",
+                            model_max_length=512)
+    if tok.vocab_size < 100_000:
+        raise RuntimeError(f"tokenizer vocabulary has only {tok.vocab_size} entries; check {vocab_file}")
+    return tok
+
+
 def production_normalize(texts):
     """Clean texts exactly as the API does before tokenising.
 

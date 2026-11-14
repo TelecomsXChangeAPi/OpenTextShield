@@ -1,0 +1,70 @@
+{
+  "base": "src/mBERT/training/model-training/mbert_ots_model_2.9.pth",
+  "device": "Apple Silicon MPS",
+  "loss": "plain",
+  "epochs": 2,
+  "lr": 2e-05,
+  "seed": 42,
+  "raw_text": false,
+  "train_data": "src/mBERT/training/model-training/dataset/curated/train_v2.12.csv",
+  "best_epoch": "epoch2-step9000",
+  "best_macro_f1": 0.991988496302383,
+  "history": [
+    {
+      "accuracy": 0.9761709120788825,
+      "block_accuracy": 0.9903451109285127,
+      "macro_f1": 0.9761709120788825,
+      "phishing_recall": 0.9971414959504526,
+      "at": "epoch1-step1500"
+    },
+    {
+      "accuracy": 0.9868529170090387,
+      "block_accuracy": 0.9944535743631882,
+      "macro_f1": 0.9868529170090387,
+      "phishing_recall": 0.9961886612672701,
+      "at": "epoch1-step3000"
+    },
+    {
+      "accuracy": 0.9897288414133114,
+      "block_accuracy": 0.9940427280197206,
+      "macro_f1": 0.9897288414133114,
+      "phishing_recall": 0.993806574559314,
+      "at": "epoch1-step4500"
+    },
+    {
+      "accuracy": 0.9864420706655711,
+      "block_accuracy": 0.9940427280197206,
+      "macro_f1": 0.9864420706655711,
+      "phishing_recall": 0.9976179132920439,
+      "at": "epoch1"
+    },
+    {
+      "accuracy": 0.9889071487263763,
+      "block_accuracy": 0.9944535743631882,
+      "macro_f1": 0.9889071487263763,
+      "phishing_recall": 0.9966650786088613,
+      "at": "epoch2-step6000"
+    },
+    {
+      "accuracy": 0.9891125718981101,
+      "block_accuracy": 0.9938373048479868,
+      "macro_f1": 0.9891125718981101,
+      "phishing_recall": 0.9971414959504526,
+      "at": "epoch2-step7500"
+    },
+    {
+      "accuracy": 0.991988496302383,
+      "block_accuracy": 0.9960969597370584,
+      "macro_f1": 0.991988496302383,
+      "phishing_recall": 0.9966650786088613,
+      "at": "epoch2-step9000"
+    },
+    {
+      "accuracy": 0.9909613804437141,
+      "block_accuracy": 0.9958915365653246,
+      "macro_f1": 0.9909613804437141,
+      "phishing_recall": 0.9966650786088613,
+      "at": "epoch2"
+    }
+  ]
+}

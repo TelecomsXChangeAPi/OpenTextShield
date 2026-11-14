@@ -1,0 +1,302 @@
+text,label,category,language
+USPS: your package 9400 1118 9956 3044 71 could not be delivered because the street number is missing. Update here: bit.ly/3xUsp7Kd,phishing,courier_address_incomplete,en
+Royal Mail: we attempted delivery of your item at 11:42 today. To arrange redelivery visit https://tinyurl.com/rm-redeliv8k,phishing,courier_missed_delivery,en
+[DHL] Shipment 4417209385 is on hold at customs. A duty of Rs 148.00 is payable before release. cutt.ly/dHk29Lw,phishing,courier_customs_fee,en
+"Evri: sorry we missed you. your parcel H01QTA0048213 has gone back to the depot, pick a new day at rb.gy/x7m2pq",phishing,courier_missed_delivery,en
+AusPost: Your parcel is waiting at the depot. Postage underpaid by $2.99. Pay before Fri 20/11 to avoid return to sender pkg-hold.top/au,phishing,courier_redelivery_fee,en
+"Canada Post: Item 7023 4410 0098 held, incomplete address. Confirm your postal code within 48h: t.ly/cPz4",phishing,courier_address_incomplete,en
+An Post: Your parcel CE448120937IE is awaiting customs charge of EUR 3.50. Pay online at shorturl.at/bnQR7 to release,phishing,courier_customs_fee,en
+LBC Express: Your package is on hold due to incorrect address details. Kindly update within 24hrs to avoid return: bit.ly/lbc-upd8,phishing,courier_address_incomplete,en
+SingPost: We were unable to deliver your parcel RR318840127SG on 12 Nov. Reschedule delivery at s.id/sp-redel,phishing,courier_missed_delivery,en
+"NIPOST: Dear customer, your EMS item EE209118734NG is at Ikeja sorting centre. Clearance fee N850. Pay via ng-clearance.xyz/ems to receive",phishing,courier_customs_fee,en
+FedEx: Delivery exception for tracking 7741 2209 6635. Recipient not available. Choose a new delivery window https://t.co/Fx9aQw2LmB,phishing,courier_missed_delivery,en
+UPS: second delivery attempt failed 13/11 09:15. Package will be returned to shipper on 16/11 unless rescheduled. tinyurl.com/ups2nd-att,phishing,courier_second_attempt,en
+DPD: Your driver Kamil tried to deliver your parcel but nobody was in. Rebook: cutt.ly/Dpd0Rebk,phishing,courier_missed_delivery,en
+Delhivery: Your order AWB 1490817733421 delivery failed due to incomplete address.Update landmark here https://bit.ly/dlv-adr9,phishing,courier_address_incomplete,en
+The Courier Guy: Waybill TCG88120447 could not be delivered. Outstanding handling fee R24.50. Settle at is.gd/tcgfee to rebook.,phishing,courier_redelivery_fee,en
+"StarTrack: we hold a parcel for you at Chullora depot. ID required for collection, confirm details first rb.gy/st4rk9",phishing,courier_depot_hold,en
+Purolator: Your shipment PIN 331 448 902 117 requires an address correction. No fee. t.ly/puroFix,phishing,courier_address_incomplete,en
+J&T Express PH: Parcel 820114479356 returned to hub - consignee unreachable. Re-arrange delivery po here: shorturl.at/jtPH2,phishing,courier_missed_delivery,en
+"Ninja Van: hi, your parcel NVSGXKL00448127 failed delivery (unit no. missing). pls update addr by 6pm today https://s.id/nv-sg-addr",phishing,courier_address_incomplete,en
+India Post: Your Speed Post article EK448120975IN is held at NSH Mumbai for want of PIN code. Update within 12 hrs: goo.su/iPost7,phishing,courier_address_incomplete,en
+Your parcel has been at our depot for 3 days and will be sent back tomorrow. Final notice. Yodel ref JD0002239911047. Arrange delivery: depot-rebook.icu/y9,phishing,courier_depot_hold,en
+Parcelforce Worldwide: customs charge of GBP 11.20 due on parcel PBZX4471209. Pay online to avoid storage fees from 17 Nov tinyurl.com/pfw-customs,phishing,courier_customs_fee,en
+USPS NOTICE: PACKAGE HELD - UNPAID POSTAGE $0.30. YOUR ITEM WILL BE DESTROYED IN 24 HRS. PAY NOW postage-due.top/30c,phishing,courier_redelivery_fee,en
+"Hi, this is your Amazon Logistics driver. I couldn't find your address, pls confirm it here so I can come back today is.gd/drv4421",phishing,courier_driver_lure,en
+Blue Dart: Shipment 50412298761 undelivered - consignee premises closed. Reschedule or self collect: rb.gy/bd-resch,phishing,courier_missed_delivery,en
+"Aramex: Dear Customer, shipment 44712098335 arrived in Johannesburg. Customs VAT of ZAR 62.10 is due. Pay securely t.ly/arx62",phishing,courier_customs_fee,en
+Fastway Couriers: Label damaged on parcel FW0044812. We need your Eircode to complete delivery. shorturl.at/fwEir,phishing,courier_address_incomplete,en
+Toll: Consignment 8812 0044 7715 delayed. Receiver details incomplete. Verify at goo.su/toll-rcv,phishing,courier_address_incomplete,en
+Intelcom: your package INTLCMI448120 was not delivered today. Schedule a second attempt: https://bit.ly/intl-2e,phishing,courier_second_attempt,en
+PHLPost: You have a parcel from abroad pending at CMEC. Customs presentation fee PHP 112.00 unpaid. cmec-pay.xyz/112,phishing,courier_customs_fee,en
+GIG Logistics: Shipment 1100448127 is at Yaba centre. Home delivery not completed because phone was unreachable. Rebook: cutt.ly/gigL-rb,phishing,courier_missed_delivery,en
+DHL Express: we need a customs declaration for waybill 2291 4408 13 before 14:00 tomorrow. Complete form at is.gd/dhlCd3,phishing,courier_customs_form,en
+UPS My Choice: A package from MACYS is scheduled for today but requires a signature. Not home? Authorize release rb.gy/upsAuth7,phishing,courier_signature_release,en
+Royal Mail Group Ltd: Your item has a GBP 1.45 unpaid shipping fee. If not paid by 15/11/2026 it will be returned to sender. t.ly/rmg145,phishing,courier_redelivery_fee,en
+Evri update:Parcel left at depot after 2 failed attempts.Storage charge applies after 48hrs.Reschedule now shorturl.at/evr2X,phishing,courier_depot_hold,en
+Ekart Logistics: Delivery of your Flipkart order OD4298117340 attempted. Customer not reachable. Choose slot: goo.su/ekSlot,phishing,courier_missed_delivery,en
+PostNet: your parcel PN-JHB-448120 is ready for collection at PostNet Rosebank. Confirm ID number to release: collect-id.online/rsbk,phishing,courier_depot_hold,en
+Australia Post: A redelivery fee of $1.80 applies to article 33LPL0448120. Pay within 2 business days tinyurl.com/ap-redel180,phishing,courier_redelivery_fee,en
+"Canada Post / Postes Canada: Notice card left. Item awaiting pickup, duties owing $4.75. View and pay cutt.ly/cpDuty475",phishing,courier_customs_fee,en
+An Post: we could not deliver your parcel today as no one was available. Please select a new delivery date is.gd/anp-date,phishing,courier_missed_delivery,en
+2GO Express: Good day! Your cargo AWB 7700448120 is for redelivery. Confirm receiver mobile and address rb.gy/2go-conf,phishing,courier_second_attempt,en
+SingPost SmartPac SP448120937 held: insufficient postage $0.90. Top up at t.ly/spTop to continue delivery. Msg 1/1,phishing,courier_redelivery_fee,en
+"DHL NG: Your shipment from Guangzhou is held at MMIA cargo. Clearing charge N4,200. Pay before 17/11 or it will be auctioned!! cargo-clear.site/mmia",phishing,courier_customs_fee,en
+"FedEx Ground: address on label is not deliverable (apt # missing). please correct within 2 days, no charge. goo.su/fdxApt",phishing,courier_address_incomplete,en
+"USPS: Tracking 9205 5903 3448 1200 7741 22 - Arrived at regional facility, delivery suspended. Reason: ZIP mismatch. bit.ly/zip-fix-us",phishing,courier_address_incomplete,en
+DPD Local: Parcel 15501 4481 209 is with your local depot in Hinckley. A 2.99 redelivery charge is due - tinyurl.com/dpd-hck,phishing,courier_redelivery_fee,en
+Your DTDC consignment D44812097 is on hold due to KYC of receiver not done. Complete KYC to get delivery today kyc-delivery.in.net/d44,phishing,courier_kyc_hold,en
+SA Post Office: Item RR448120937ZA awaiting collection at Witspos. Customs + handling R37.00 outstanding. Pay online is.gd/sapo37,phishing,courier_customs_fee,en
+CouriersPlease: We tried to deliver CPAXYZ0448120 at 2:17pm. No safe place to leave. Authorise ATL or rebook rb.gy/cp-atl,phishing,courier_missed_delivery,en
+"Purolator: CUSTOMS DUE $6.12 on your international shipment. Avoid return, pay today t.ly/puro612",phishing,courier_customs_fee,en
+DPD Ireland: your parcel is out for delivery but the driver needs directions. Add them here shorturl.at/dpdIE9,phishing,courier_address_incomplete,en
+"J&T: Mam/Sir your parcel has COD discrepancy, need verify before rider dispatch. click rider-verify.cc/cod",phishing,courier_cod_verify,en
+Ninja Van SG: Parcel pending GST payment S$2.14. Delivery will resume after payment. bit.ly/nvgst214,phishing,courier_customs_fee,en
+"Dear customer, your parcel cannot be delivered because of an invalid house number. Royal Mail ref QF448120975GB. Amend at tinyurl.com/qf-amend",phishing,courier_address_incomplete,en
+USPS: we have your package but need a redelivery request on file. It only takes a minute - https://cutt.ly/usRedl,phishing,courier_second_attempt,en
+FedEx: Import duties and taxes of $14.36 are due for shipment 2864 4812 0937. Pay to schedule delivery is.gd/fdx1436,phishing,courier_customs_fee,en
+UPS: Pkg 1Z88A4E20344812093 delayed - commercial invoice missing. Upload doc: rb.gy/1zdoc,phishing,courier_customs_form,en
+Evri: we've left a card. Your parcel will be kept for 5 days at the ParcelShop. Confirm collection: t.ly/evPS5,phishing,courier_depot_hold,en
+Yodel: Hi! Your parcel from ASOS could not be posted through the letterbox. Pick a safe place shorturl.at/ydlSafe,phishing,courier_missed_delivery,en
+INDIA POST: Your parcel will be RETURNED today. Address update pending. Click immediately addr-upd.live/ip,phishing,courier_address_incomplete,en
+"Delhivery: Dear Customer, Rs.25 redelivery charge pending for AWB 2844812093711. Pay via UPI link bit.ly/dlv25upi",phishing,courier_redelivery_fee,en
+"The Courier Guy: your parcel is at our Midrand hub. the address on the waybill has no suburb, please add it tinyurl.com/tcg-suburb",phishing,courier_address_incomplete,en
+Aramex AU: Your parcel is running late and we need to confirm your contact details before the next run. cutt.ly/arxAU3,phishing,courier_contact_confirm,en
+AusPost: Final reminder - item awaiting collection since 06/11. Return to sender on 14/11. Extend hold hold-ext.info/ap,phishing,courier_depot_hold,en
+Canada Post: Your package could not be delivered on 2026-11-12. Reason: signature required. Rebook delivery rb.gy/cpSig,phishing,courier_missed_delivery,en
+An Post customs: parcel from UK seller held under new EU rules. VAT EUR 6.84 + fee EUR 3.50. t.ly/anpVAT,phishing,courier_customs_fee,en
+"LBC: Tracking 144812093771 - delivery unsuccessful, receiver not around. You may reschedule or pick up at branch: shorturl.at/lbcRS",phishing,courier_missed_delivery,en
+SingPost: Your registered article is being returned to sender in 3 days. To request redelivery pay $1.50 admin fee goo.su/spg150,phishing,courier_redelivery_fee,en
+"NIPOST EMS: delivery failed, wrong LGA on address label. Kindly correct and pay N500 re-route fee: reroute-desk.online/ng500",phishing,courier_redelivery_fee,en
+DHL: Your parcel is arriving today between 13:00-17:00. Not in? Change delivery free of charge: tinyurl.com/dhl-chg-od,phishing,courier_delivery_change,en
+FedEx Notification: Package #448120 has been waiting since Nov 9. Set your delivery preferences cutt.ly/fxPref,phishing,courier_depot_hold,en
+USPS - the carrier attempted delivery and no secure location was available. Tell us where to leave it: is.gd/uspsLoc,phishing,courier_missed_delivery,en
+DPD: 1 item from Currys needs an age check on delivery. Verify your details in advance rb.gy/dpdAge,phishing,courier_id_check,en
+"Blue Dart: customs duty of INR 1,247 payable on your international shipment 69448120937. Pay to avoid demurrage t.ly/bdDuty",phishing,courier_customs_fee,en
+PARCEL ALERT (SAPO): 2nd notice. Item will be returned abroad in 48hrs. Pay R19.99 now parcel-notice.top/za,phishing,courier_second_attempt,en
+"StarTrack Express: Consignment STX4481209 requires an authority to leave. Submit online, takes 30 seconds goo.su/stxATL",phishing,courier_signature_release,en
+UPS Canada: brokerage fee of $9.85 CAD outstanding on your import. Delivery on hold. bit.ly/upsca985,phishing,courier_customs_fee,en
+"Fastway: your parcel is in Portlaoise depot, driver could not locate the address. please confirm tinyurl.com/fway-loc",phishing,courier_address_incomplete,en
+Ninja Van PH: Your parcel NVPH4481209 has been rescheduled 3 times. Last attempt tomorrow. Confirm availability: cutt.ly/nvph-last,phishing,courier_second_attempt,en
+"SingPost: Dear Customer, parcel SGA448120 delivery failed - no one at home. Collect from POPStation after verifying NRIC last 4: is.gd/pop4",phishing,courier_depot_hold,en
+"GIGL: Your waybill 448120937 has an underpayment of N1,150 after re-weighing. Balance must be cleared before pickup rb.gy/giglBal",phishing,courier_redelivery_fee,en
+ROYAL MAIL: ACTION REQUIRED. Your package is being held. Failure to pay 2.99 today = return to sender!! rdlv.icu/299,phishing,courier_redelivery_fee,en
+Evri: your parcel has a damaged label and we can't read the postcode. Enter it here and we'll send it tomorrow: shorturl.at/evPc,phishing,courier_address_incomplete,en
+"FedEx: scheduled delivery tomorrow by end of day. Adult signature required, sign online to skip goo.su/fxSign",phishing,courier_signature_release,en
+Your Shopee Xpress parcel SPXPH0448120937 is undeliverable: incomplete barangay. Update: bit.ly/spx-brgy,phishing,courier_address_incomplete,en
+Australia Post: customs has released your item. Import processing charge AUD 4.20 unpaid. tinyurl.com/ap-ipc420,phishing,courier_customs_fee,en
+Purolator notice 2/2: package returns to sender Nov 16. Rebook: last-rebook.site/p2,phishing,courier_second_attempt,en
+"An Post: Delivery to your Parcel Locker failed, locker full. Choose another locker or home delivery is.gd/anpLock",phishing,courier_missed_delivery,en
+Msg from DHL eCommerce: weight mismatch on parcel GM448120937. Extra Rs 39 to be paid by receiver. rb.gy/gm39,phishing,courier_redelivery_fee,en
+USPS: Your item was returned to the post office - mailbox blocked. Reschedule by 11/16 at mbx-resched.info/us,phishing,courier_missed_delivery,en
+"IRS: Your 2025 federal refund of $1,284.00 has been approved but direct deposit failed. Confirm bank details at bit.ly/irs-dd1284",phishing,gov_tax_refund,en
+E-ZPass: you have an unpaid toll balance of $6.99 from 11/04. To avoid a $50 late fee pay by 11/15 tinyurl.com/ez-699,phishing,gov_toll_unpaid,en
+DMV Final Notice: Enforcement begins Nov 15. Outstanding traffic ticket on record. Registration will be suspended and reported. Pay now: cutt.ly/dmvFn15,phishing,gov_traffic_fine,en
+SunPass: toll invoice #448120937 remains unpaid. amount due $3.25. is.gd/snp325,phishing,gov_toll_unpaid,en
+SSA Notice: your Social Security statement for 2026 is ready and a COLA adjustment needs your confirmation. rb.gy/ssa-cola,phishing,gov_benefits,en
+USCIS: Case MSC2690448120 - additional evidence requested. Upload within 72 hours to avoid denial. t.ly/uscRFE,phishing,gov_immigration_notice,en
+FasTrak: Your vehicle used the Bay Bridge express lane on 11/07 without a valid tag. Toll $8.00 due. shorturl.at/ftBay8,phishing,gov_toll_unpaid,en
+IRS notice CP2000: we found a discrepancy in your return. review the proposed changes and respond goo.su/cp2000r,phishing,gov_tax_return_error,en
+County Court Clerk: You missed jury duty on 11/02. A failure-to-appear citation of $275 has been issued. Resolve online: juror-resolve.info/fta,phishing,gov_court_notice,en
+Medicare: your new card is ready to be mailed. Confirm your Medicare number and address bit.ly/mcare-card26,phishing,gov_health_service,en
+HMRC: You are eligible for a tax refund of GBP 276.44 for the 2025/26 tax year. Claim online: tinyurl.com/hmrc-27644,phishing,gov_tax_refund,en
+"DVLA: Your vehicle tax payment failed. Your vehicle is no longer taxed. Update billing to avoid a fine of up to £1,000 cutt.ly/dvlaTx",phishing,gov_vehicle_renewal,en
+NHS: you are due a free health check and your GP record needs confirming first. Book: is.gd/nhsChk40,phishing,gov_health_service,en
+TV Licensing: we couldn't take your Direct Debit. Your licence expires 18 Nov. Set up payment rb.gy/tvl-dd,phishing,gov_licence_renewal,en
+Student Finance England: we need to verify your bank details before your January instalment can be paid. t.ly/sfe-jan,phishing,gov_student_funding,en
+DWP: Cost of Living support - our records show you have not claimed your £300 payment. Apply before 20 Nov shorturl.at/dwp300,phishing,gov_benefits,en
+HM Courts & Tribunals: PCN ZY44812093 unpaid. Charge increases to £195 in 48h and bailiff action may follow. goo.su/pcn195,phishing,gov_court_notice,en
+GOV.UK Notify: Your Self Assessment contains an error in box 14. Correct it online to avoid a penalty. sa-amend.online/form,phishing,gov_tax_return_error,en
+Home Office UKVI: your eVisa account needs to be linked to your passport before 30 Nov. bit.ly/ukvi-link,phishing,gov_immigration_notice,en
+"Dart Charge: crossing on 08/11 not paid, reg ending 7KD. pay £2.50 by midnight to avoid £70 PCN tinyurl.com/dart250",phishing,gov_toll_unpaid,en
+"Income Tax Dept: Refund of Rs 15,490 approved for AY 2026-27. A/c XXXX4417 validation failed. Revalidate: cutt.ly/itr-15490",phishing,gov_tax_refund,en
+e-Challan: Vehicle MH12AB4417 challan no. MH448120937 Rs 500 pending. Pay before court referral is.gd/echln500,phishing,gov_traffic_fine,en
+UIDAI: Your Aadhaar has not been updated in 10 years and will be deactivated. Upload documents rb.gy/aadhr10,phishing,gov_id_update,en
+"EPFO: Dear member, UAN 100448120937 KYC is incomplete. PF withdrawal blocked until e-KYC is done. t.ly/epfKyc",phishing,gov_benefits,en
+"PM-KISAN: 21st installment Rs.2000 on hold, eKYC pending. Complete today shorturl.at/pmk21",phishing,gov_benefits,en
+Passport Seva: police verification report for file BO4481209376 pending. Pay Rs 150 re-verification fee goo.su/pskPV,phishing,gov_passport_notice,en
+"Dear Taxpayer, your PAN is inoperative as it is not linked. Link now to avoid TDS at 20%. link-status.co.in/v",phishing,gov_id_update,en
+Parivahan: your driving licence DL-0420110448120 expires on 30/11/2026. Renew online without visiting RTO bit.ly/dl-renew-rto,phishing,gov_licence_renewal,en
+GSTN: Notice u/s 61 issued against GSTIN 27ABCDE4417F1Z5 for mismatch in GSTR-3B. View notice tinyurl.com/gst-asmt10,phishing,gov_tax_return_error,en
+Ayushman Bharat: your PMJAY card is ready. Download after Aadhaar OTP verification cutt.ly/pmjay-dl,phishing,gov_health_service,en
+"SARS: Your ITR12 assessment is complete. A refund of R3,418.27 is due to you. Confirm banking details: is.gd/sars3418",phishing,gov_tax_refund,en
+SASSA: SRD R370 grant for November is pending. Your ID needs to be re-verified. rb.gy/srd370,phishing,gov_benefits,en
+"AARTO Infringement Notice 02-4481-209376-1: speeding 78 in a 60 zone, Sandton. R750, 50% discount if paid in 32 days t.ly/aarto750",phishing,gov_traffic_fine,en
+Home Affairs: your Smart ID card application is ready but collection requires online booking and R35 fee. shorturl.at/dhaID,phishing,gov_id_update,en
+RTMC: your vehicle licence disc expired 31/10/2026. Renew online and get it delivered goo.su/discRnw,phishing,gov_vehicle_renewal,en
+SARS eFiling: You have 1 unread letter - Notice of penalty for outstanding return 2025. View: efile-letter.site/za,phishing,gov_tax_return_error,en
+"UIF: your claim ref 4481209376 has been approved. Payment of R4,112 awaits bank verification bit.ly/uif-4112",phishing,gov_benefits,en
+SANRAL e-toll: account 4417 overdue R286.40. Avoid handover to collections tinyurl.com/sanral286,phishing,gov_toll_unpaid,en
+NSFAS: your 2027 funding application is provisionally approved. Upload your ID copy to finalise cutt.ly/nsfas27,phishing,gov_student_funding,en
+ATO: You have a new message in your myGov inbox regarding your 2025-26 tax return. View message is.gd/mygovAto,phishing,gov_tax_return_error,en
+myGov: your account has been restricted after unusual sign-in. Verify identity to restore access rb.gy/mygv-restr,phishing,gov_account_restricted,en
+Linkt: Your toll account is overdue. $12.48 outstanding. Pay now to avoid additional fees t.ly/lnkt1248,phishing,gov_toll_unpaid,en
+Service NSW: Your rego for plate CX47QP expires 19/11/2026. Renew online: shorturl.at/nswRego,phishing,gov_vehicle_renewal,en
+Centrelink: you are eligible for a one-off Cost of Living payment of $750. Claim before 21 Nov goo.su/cl750,phishing,gov_benefits,en
+Medicare: Your details are out of date. Benefit of $148.60 could not be paid. Update bank account bit.ly/mcare-au148,phishing,gov_health_service,en
+Fines Victoria: Infringement 4481209376 is overdue. Licence suspension may apply from 20/11. pay-notice.info/vic,phishing,gov_traffic_fine,en
+"ATO Refund Notice: $2,104.55 pending. Reference ATO-44812. Confirm details today or refund will be cancelled! tinyurl.com/ato210455",phishing,gov_tax_refund,en
+Services Australia: your Child Care Subsidy will stop unless you confirm your income estimate. cutt.ly/ccsEst,phishing,gov_benefits,en
+CRA: You have received a refund of $481.20 CAD from your 2025 assessment. Deposit via Interac: is.gd/cra48120,phishing,gov_tax_refund,en
+Service Canada: Your EI claim requires additional information. Complete report by Nov 15 rb.gy/ei-rpt,phishing,gov_benefits,en
+407 ETR: Invoice 4481209376 unpaid - $18.42. Late interest will be added Nov 17. t.ly/407pay,phishing,gov_toll_unpaid,en
+"ServiceOntario: your licence plate sticker renewal is overdue. Renew online, no fee shorturl.at/onPlate",phishing,gov_vehicle_renewal,en
+"CRA: the Canada Carbon Rebate of $140 was not deposited, banking info outdated. goo.su/ccr140",phishing,gov_benefits,en
+IRCC: A document is missing from your application W448120937. Upload within 7 days. bit.ly/ircc-doc7,phishing,gov_immigration_notice,en
+"City of Montreal: parking ticket 448-120-937 unpaid, $82. Pay before late penalty tinyurl.com/mtl-tkt82",phishing,gov_traffic_fine,en
+"ICBC: your driver's licence renewal could not be processed, payment declined. Retry: renew-dl.live/bc",phishing,gov_licence_renewal,en
+NSLSC: your Canada Student Loan repayment assistance application needs income confirmation. cutt.ly/nslscRAP,phishing,gov_student_funding,en
+Revenue: You are due a tax refund of EUR 392.18 from your 2025 PAYE review. Claim via myAccount: is.gd/rev39218,phishing,gov_tax_refund,en
+eFlow: You have an unpaid M50 toll of EUR 3.80. A penalty of EUR 3.00 will be added tomorrow rb.gy/m50-380,phishing,gov_toll_unpaid,en
+HSE: your medical card is due for review. Complete the online renewal to keep cover t.ly/hseMC,phishing,gov_health_service,en
+NCT: your vehicle test is overdue. Book now to avoid penalty points shorturl.at/nctBk,phishing,gov_vehicle_renewal,en
+SUSI: your grant payment for November could not be processed. Please reconfirm your IBAN goo.su/susiNov,phishing,gov_student_funding,en
+MyWelfare: Your Fuel Allowance lump sum is ready. Verify PPSN to release payment bit.ly/mw-fuel,phishing,gov_benefits,en
+Courts Service: fixed charge notice 448120937 remains unpaid. Summons will issue on 20/11. fcn-pay.online/ie,phishing,gov_court_notice,en
+Motor Tax Online: your motor tax for 191-D-44812 expired on 31 Oct. Renew: tinyurl.com/motortax-rn,phishing,gov_vehicle_renewal,en
+BIR: Your TIN has a pending Letter of Authority for 2025 ITR discrepancy. View eLA: cutt.ly/birLA25,phishing,gov_tax_return_error,en
+"LTO: You have an unsettled traffic violation, plate NDA 4417. Fine PHP 1,000. Settle online to avoid license alarm is.gd/ltoAlrm",phishing,gov_traffic_fine,en
+"SSS: your salary loan of PHP 20,000 is approved for disbursement. Enroll your account via rb.gy/sssDisb",phishing,gov_benefits,en
+PhilHealth: Your contribution for Oct 2026 was not posted. Membership will be tagged inactive. t.ly/phPost,phishing,gov_health_service,en
+"Pag-IBIG Fund: MP2 dividend of P3,418.20 ready for crediting. Validate your Loyalty Card Plus shorturl.at/mp2Div",phishing,gov_benefits,en
+"DSWD AICS: You are qualified for P5,000 cash assistance. Register with your GCash number today goo.su/aics5k",phishing,gov_benefits,en
+Autosweep RFID: Your account balance is negative (-PHP 84.00). Reload now to avoid penalty at toll plaza. rfid-reload.top/as,phishing,gov_toll_unpaid,en
+PSA: your National ID (ePhilID) is ready for download. verify with birthdate and mobile no. bit.ly/ephilid-dl,phishing,gov_id_update,en
+IRAS: Your Notice of Assessment for YA2026 shows a tax credit of S$218.40. Claim via PayNow: tinyurl.com/iras-21840,phishing,gov_tax_refund,en
+LTA: ERP charge for SLK4417B on 09/11 unpaid. Admin fee of $10 applies after 14 days. cutt.ly/ltaErp,phishing,gov_toll_unpaid,en
+Singpass: Your account will be deactivated due to inactive profile. Re-verify by 15 Nov is.gd/spVerif,phishing,gov_account_restricted,en
+CPF Board: you have an unclaimed MediSave top-up of $300. Log in to accept rb.gy/cpf300,phishing,gov_benefits,en
+ICA: Your re-entry permit renewal is incomplete. Missing document. Submit at t.ly/icaREP,phishing,gov_immigration_notice,en
+HDB: Season parking for SLK4417B expires 30/11. Renewal by GIRO failed. shorturl.at/hdbSP,phishing,gov_vehicle_renewal,en
+MOH Healthier SG: your $20 Healthpoints voucher expires this week. log in with Singpass to redeem goo.su/hsg20,phishing,gov_health_service,en
+GovSG: you are eligible for the Assurance Package cash payout of $600. Update PayNow-NRIC link: payout-link.xyz/ap,phishing,gov_benefits,en
+FIRS: Your TIN 2044812093-0001 has outstanding tax liability. Tax Clearance Certificate suspended. View: bit.ly/firsTCC,phishing,gov_tax_return_error,en
+"NIMC: Your NIN is not linked to your SIM and bank records. Avoid restriction, link now tinyurl.com/nin-lnk26",phishing,gov_id_update,en
+"FRSC: Traffic offence booked against vehicle LSD-441-AB. Fine N10,000. Pay within 7 days cutt.ly/frsc10k",phishing,gov_traffic_fine,en
+"NIS: your passport application 448120937 is approved for capture. Pay booking fee N2,500 to pick date is.gd/nisCap",phishing,gov_passport_notice,en
+"NELFUND: Your student loan upkeep of N20,000 is ready. Confirm account number rb.gy/nelfUp",phishing,gov_student_funding,en
+"JAMB: Your 2026 admission status has changed. Check and accept offer, processing N1,000 t.ly/jambAdm",phishing,gov_student_funding,en
+"N-Power: Your outstanding stipend of N150,000 has been approved for payment. Validate BVN here stipend-validate.xyz/np",phishing,gov_benefits,en
+"LASG: Land Use Charge bill LUC-448120 overdue N42,300. 25% penalty applies from 20 Nov goo.su/luc423",phishing,gov_tax_unpaid,en
+Verizon: Your bill payment of $87.14 was declined. Service will be interrupted on 11/16. Update payment bit.ly/vz-8714,phishing,carrier_bill_unpaid,en
+AT&T Free Msg: Thanks for paying your October bill. Here's a little gift for you: tinyurl.com/att-oct-gift,phishing,carrier_gift_lure,en
+"T-Mobile: your account has 4,300 reward points that expire tonight. redeem cutt.ly/tmPts",phishing,carrier_points_expiring,en
+Xfinity Mobile: SIM change request received for line ending 4417. If this wasn't you cancel here is.gd/xfSim,phishing,carrier_sim_swap,en
+PG&E: Disconnection notice. Your power will be shut off today between 2-4PM for non-payment. Pay $148.20 now rb.gy/pge148,phishing,utility_disconnection,en
+ConEd: your autopay failed for account ending 0937. amount due $212.66. t.ly/coned212,phishing,utility_bill_unpaid,en
+"Verizon Msg: You have 1 new voicemail from +1 (646) 555-0144, duration 0:42. Listen: shorturl.at/vzVm",phishing,carrier_voicemail,en
+Duke Energy: we overcharged your account by $63.40. Claim your credit before the billing cycle closes goo.su/duke63,phishing,utility_refund_lure,en
+EE: We couldn't process your latest bill. To avoid restrictions on your account update your details at bit.ly/ee-billupd,phishing,carrier_bill_unpaid,en
+O2: Your payment details did not match our records. Your number will be suspended in 24hrs. tinyurl.com/o2-match,phishing,carrier_number_suspension,en
+"Vodafone: you've earned a loyalty reward. 2,150 VeryMe points expire 15/11. Claim cutt.ly/vfVeryMe",phishing,carrier_points_expiring,en
+"Three: Your plan is changing from 1 Dec. New price £24.60/mo. If you did not request this, cancel: is.gd/3planX",phishing,carrier_plan_change,en
+British Gas: your meter reading is overdue and an estimated bill of £318.20 has been issued. Submit reading rb.gy/bgMtr,phishing,utility_bill_unpaid,en
+Octopus Energy: You're owed a refund of £84.15 after your final statement. Tell us where to send it t.ly/oct8415,phishing,utility_refund_lure,en
+Thames Water: payment failed for a/c 4481209376. Supply restrictions may apply. shorturl.at/twPay,phishing,utility_bill_unpaid,en
+Voicemail: You have (1) new message received 13/11 08:14. Dial in or play online: vm-play.info/uk1,phishing,carrier_voicemail,en
+"giffgaff: your goodybag couldn't auto-renew. card ending 4417 was declined, update here goo.su/ggBag",phishing,carrier_bill_unpaid,en
+"Jio: Dear Customer, your Jio SIM KYC has expired. Number will be blocked within 24 hrs. Update e-KYC: bit.ly/jio-ekyc24",phishing,carrier_sim_kyc,en
+Airtel: Your postpaid bill of Rs 799 for 98XXXXX417 is overdue. Outgoing barred from tomorrow. Pay tinyurl.com/artl799,phishing,carrier_bill_unpaid,en
+"Dear Consumer, your electricity power will be disconnected tonight at 9.30 pm because your previous month bill was not updated. Update immediately cutt.ly/elecUpd930",phishing,utility_disconnection,en
+"Vi: Congratulations, 5GB bonus data + 1,200 reward coins credited. Activate before midnight is.gd/viCoins",phishing,carrier_points_expiring,en
+BSNL: SIM card 8991XXXX4417 documents pending verification as per TRAI. Submit Aadhaar rb.gy/bsnlTrai,phishing,carrier_sim_kyc,en
+"MSEDCL: Consumer No 170448120937 bill Rs 2,340 due 10/11 not received. Supply liable for disconnection. t.ly/mseb2340",phishing,utility_disconnection,en
+TRAI: your mobile number will be deactivated in 2 hours due to illegal activity complaints. Verify identity: number-verify.live/c,phishing,carrier_number_suspension,en
+Tata Play: your DTH a/c 1448120937 will be deactivated tomorrow. Recharge Rs 349 here to keep channels active shorturl.at/tp349,phishing,utility_bill_unpaid,en
+"Jio Fiber: plan upgrade request confirmed for Rs 1,499/mo. Not requested by you? Cancel within 24h goo.su/jfCancel",phishing,carrier_plan_change,en
+"Mahanagar Gas: your PNG connection BP 4481209376 will be disconnected for non-payment of Rs 1,186. bit.ly/mgl1186",phishing,utility_disconnection,en
+"Vodacom: Your number has been flagged for RICA re-registration. Avoid suspension, update by 15/11 tinyurl.com/vc-rica",phishing,carrier_sim_kyc,en
+"MTN: Y'ello! You have 3,480 MTN points expiring 14 Nov. Redeem for airtime or vouchers cutt.ly/mtnPts",phishing,carrier_points_expiring,en
+"Eskom: account 4481209376 in arrears R1,842.90. Supply will be disconnected within 48 hours. is.gd/esk1842",phishing,utility_disconnection,en
+City Power Jhb: prepaid meter 0420 1144 812 requires a KRN token update or it will stop accepting units. rb.gy/krnUpd,phishing,utility_meter_update,en
+Cell C: your contract upgrade is ready. Confirm ID and delivery address to receive your new device t.ly/ccUpg,phishing,carrier_plan_change,en
+Telkom: debit order for R699.00 returned unpaid. Services will be soft-locked on 16/11. shorturl.at/tkm699,phishing,carrier_bill_unpaid,en
+City of Cape Town: water account 2044812093 overdue R968.15. Restriction device to be installed. Pay: muni-pay.site/cpt,phishing,utility_disconnection,en
+Vodacom: SIM swap request received for 082 XXX 4417. If you did not request this click to stop: goo.su/vcSwap,phishing,carrier_sim_swap,en
+Telstra: Your latest bill payment was unsuccessful. Please update your payment method to keep your services active bit.ly/tls-paymt,phishing,carrier_bill_unpaid,en
+Optus: We've noticed unusual activity. Your service will be suspended until ID is confirmed. tinyurl.com/opt-idc,phishing,carrier_number_suspension,en
+"Telstra Plus: you have 12,400 points about to expire. Use them in the rewards store today cutt.ly/tplus124",phishing,carrier_points_expiring,en
+AGL: Your electricity bill of $284.31 is now overdue. Disconnection scheduled 18/11. is.gd/agl28431,phishing,utility_disconnection,en
+Origin Energy: we owe you $112.90 after a billing review. Claim rb.gy/orig1129,phishing,utility_refund_lure,en
+Vodafone AU: 1 new voicemail from 0412 XXX 937 (0:27). Listen t.ly/vfauVM,phishing,carrier_voicemail,en
+"Sydney Water: Direct debit failed. Bill 4481 209 376, $196.05. Update your details shorturl.at/sw19605",phishing,utility_bill_unpaid,en
+NBN Co: your connection is scheduled for disconnection due to a technical fault at your address. Book a technician: line-fault.online/bk,phishing,utility_disconnection,en
+Rogers: Your payment was received twice. A credit of $94.12 is available. Claim by e-Transfer goo.su/rog9412,phishing,carrier_refund_lure,en
+Bell: Your account is past due. To avoid service interruption please pay $126.47 bit.ly/bell12647,phishing,carrier_bill_unpaid,en
+TELUS: your plan was changed to 5G+ Unlimited 150GB at $95/mo. Didn't request it? tinyurl.com/tls-revert,phishing,carrier_plan_change,en
+Fido: your SIM will be deactivated in 12 hours for failing identity verification! cutt.ly/fidoSIM,phishing,carrier_number_suspension,en
+Hydro One: FINAL DISCONNECTION NOTICE. Crew dispatched for acct ending 4417. Pay $203.18 within 1 hour is.gd/h1-203,phishing,utility_disconnection,en
+BC Hydro: you qualify for the $100 affordability credit. Apply with your account number rb.gy/bch100,phishing,utility_refund_lure,en
+"Enbridge Gas: bill ready, $148.02 due Nov 20. Autopay failed, card expired. t.ly/enb148",phishing,utility_bill_unpaid,en
+Freedom Mobile: voicemail box full. 3 unheard messages will be deleted. Review shorturl.at/fmVM3,phishing,carrier_voicemail,en
+eir: Your bill is ready. We were unable to collect EUR 64.99 by direct debit. Pay now goo.su/eir6499,phishing,carrier_bill_unpaid,en
+Three Ireland: your 3Plus rewards expire soon. 1 free reward waiting bit.ly/3plus-ie,phishing,carrier_points_expiring,en
+"Vodafone IE: Your number is being ported to another network. If this is not you, stop the port: tinyurl.com/vf-port-stop",phishing,carrier_sim_swap,en
+Electric Ireland: Disconnection notice for MPRN 10044812093. Arrears EUR 318.40. cutt.ly/ei318,phishing,utility_disconnection,en
+Bord Gais Energy: you are due the Government electricity credit of EUR 125. Confirm your account is.gd/bge125,phishing,utility_refund_lure,en
+Uisce Eireann: supply to your address will be interrupted unless account details are confirmed. water-notice.info/ie,phishing,utility_disconnection,en
+Globe: Your SIM registration is incomplete. Your SIM will be deactivated on Nov 15. Register now: rb.gy/globeSIMreg,phishing,carrier_sim_kyc,en
+"Smart: You have 2,340 Smart Points expiring today. Redeem load or gadgets here t.ly/smartPts",phishing,carrier_points_expiring,en
+"Meralco: Notice of Disconnection. CAN 4481209376, amount due PHP 3,418.75. Pay to avoid cut-off tomorrow shorturl.at/mer3418",phishing,utility_disconnection,en
+DITO: your number won a free 25GB loyalty data pack. Claim within 24 hrs goo.su/dito25,phishing,carrier_points_expiring,en
+"PLDT Home: Your account 0244812093 is overdue. Service is for temporary disconnection. Settle P1,699 bit.ly/pldt1699",phishing,carrier_bill_unpaid,en
+Maynilad: your water bill for Oct is unpaid. PHP 842.10. tinyurl.com/mayn842,phishing,utility_bill_unpaid,en
+GOMO: sim expiring. your number will be recycled in 3 days unless re-verified cutt.ly/gomoRev,phishing,carrier_number_suspension,en
+Globe At Home: plan downgrade request received. Speed will change to 50Mbps on your next bill. Not you? is.gd/gahPlan,phishing,carrier_plan_change,en
+Singtel: Your bill of $68.37 is overdue. Mobile line 9XXX 4417 will be suspended on 16 Nov. Pay: rb.gy/sgtl6837,phishing,carrier_bill_unpaid,en
+StarHub: you have unredeemed Rewards points worth $30. Expiring 15/11. t.ly/shRwd30,phishing,carrier_points_expiring,en
+M1: Your SIM card needs to be re-registered under IMDA rules. Complete with Singpass shorturl.at/m1Reg,phishing,carrier_sim_kyc,en
+SP Services: Your utilities account 8944812093 has an outstanding amount of $214.60. Supply may be disconnected. goo.su/sps2146,phishing,utility_disconnection,en
+Simba: auto-renew failed for your $10 plan. Line expires in 2 days. renew-line.top/sg,phishing,carrier_bill_unpaid,en
+Singtel Voicemail: 1 new msg from 6XXX 0937 at 10:52. Play: bit.ly/sgtl-vm1052,phishing,carrier_voicemail,en
+MTN NG: Your line will be barred today for incomplete NIN-SIM linkage. Link now tinyurl.com/mtn-nin-ng,phishing,carrier_sim_kyc,en
+"Airtel NG: Congrats! Your line has earned N5,000 airtime loyalty bonus. Activate cutt.ly/artlNG5k",phishing,carrier_points_expiring,en
+"Ikeja Electric: Acct 0144812093 owing N48,750. Disconnection team scheduled for your street 14/11. Pay is.gd/ie48750",phishing,utility_disconnection,en
+"Glo: Dear subscriber, your 4G SIM upgrade is due. Lines not upgraded will lose data service. rb.gy/glo4g",phishing,carrier_sim_kyc,en
+EKEDC prepaid: meter 0444812093 token rejected. Update tariff band to continue vending meter-band.site/ek,phishing,utility_meter_update,en
+9mobile: You have 1 voice message from 0809 XXX 4417. Retrieve: shorturl.at/9mVM,phishing,carrier_voicemail,en
+Netflix: We're having trouble with your current billing information. Update payment to keep watching bit.ly/nflx-bill26,phishing,streaming_billing_update,en
+Spotify Premium: payment failed. Your account reverts to Free in 2 days. tinyurl.com/spfy-prem,phishing,streaming_billing_update,en
+Disney+: your subscription has been paused. Card ending 4417 declined on 12 Nov. cutt.ly/dplus4417,phishing,streaming_billing_update,en
+Amazon: Your order #112-4481209-3764417 could not be shipped due to a payment issue. Review is.gd/amz112,phishing,shopping_order_problem,en
+Apple: Your iCloud storage is full. Photos and backups have stopped. Get 50GB free for a year rb.gy/icl50,phishing,account_storage_full,en
+"Google: Unusual sign-in attempt blocked (Lagos, NG). Review activity t.ly/gSign",phishing,account_signin_alert,en
+Microsoft account: your Outlook mailbox is 99% full. Incoming mail will bounce. Increase quota shorturl.at/olkQuota,phishing,account_storage_full,en
+Facebook: Your page has been reported for violating community standards and will be unpublished in 24h. Appeal goo.su/fbAppeal,phishing,social_account_disabled,en
+Instagram: Someone tried to log in to your account from a Samsung S23 in Durban. If this wasn't you secure it: acct-secure.live/ig,phishing,account_signin_alert,en
+WhatsApp: your account will expire today. Renew verification to keep your chats bit.ly/wa-renew,phishing,social_account_disabled,en
+TikTok: your account is eligible for the Creator Rewards payout of $148. Confirm payout method tinyurl.com/tt-crp148,phishing,social_payout_lure,en
+eBay: An item you sold is awaiting payout but your details are incomplete. cutt.ly/ebPayout,phishing,shopping_payout_lure,en
+"Flipkart: Refund of Rs 1,299 for order OD4481209376 failed. Re-enter bank/UPI details is.gd/fkRef1299",phishing,shopping_refund_lure,en
+Takealot: Your order 144812093 is delayed. Delivery address verification needed rb.gy/tklAddr,phishing,shopping_order_problem,en
+Showmax: your subscription payment of R99 was unsuccessful. t.ly/smx99,phishing,streaming_billing_update,en
+DStv: Your Compact package was disconnected. Pay R469 and get reconnected instantly + 1 free month shorturl.at/dstv469,phishing,streaming_billing_update,en
+Shopee: Your account has been limited due to suspicious orders. Verify within 12 hours to avoid permanent ban! goo.su/shpVer,phishing,shopping_account_disabled,en
+"Lazada: Parcel refund PHP 1,250 pending. Claim to your wallet: bit.ly/lzd-ref1250",phishing,shopping_refund_lure,en
+"Jumia: You have a N15,000 voucher from your last order that was not applied. Claim: tinyurl.com/jum15k",phishing,shopping_refund_lure,en
+"Disney+ Hotstar: Your annual plan renewal of Rs 1,499 failed. Avoid losing access during the match cutt.ly/hs1499",phishing,streaming_billing_update,en
+Stan: we couldn't process your monthly payment. update your card to continue streaming is.gd/stanCard,phishing,streaming_billing_update,en
+Crave: Billing issue on your account. Subscription ends Nov 15. rb.gy/crvBill,phishing,streaming_billing_update,en
+"Walmart: your order #2004481-209376 is on hold. Item out of stock, choose refund or replacement t.ly/wmtHold",phishing,shopping_order_problem,en
+Costco: Thank you for your recent purchase. Your membership reward of $90 is ready. shorturl.at/cst90,phishing,shopping_reward_lure,en
+Tesco Clubcard: you have £18.50 in vouchers that expire on 30 Nov. Convert them now goo.su/tcc1850,phishing,shopping_reward_lure,en
+"Argos: Sorry, we could not deliver order AD448120937. Refund is ready, confirm card to receive: refund-desk.online/ar",phishing,shopping_refund_lure,en
+Amazon Prime: Your membership renewal of £95.00 was charged. Not you? Cancel and refund bit.ly/prm-cncl95,phishing,streaming_billing_update,en
+Gmail: Storage 15 GB of 15 GB used. You can no longer send or receive email. Free up or upgrade cutt.ly/gm15gb,phishing,account_storage_full,en
+Yahoo Mail: we are closing all old versions of mailbox as from 15 Nov. Upgrade to avoid deactivation is.gd/ymUpg,phishing,email_account_disabled,en
+X: Your account has been locked for a copyright violation. Submit a counter-notice within 48 hrs rb.gy/xDmca,phishing,social_account_disabled,en
+LinkedIn: You appeared in 14 searches and have 1 pending message from a recruiter. Account verification needed to view t.ly/lnVerif,phishing,social_verify_lure,en
+Snapchat: Your account was accessed from a new device. Memories will be deleted unless verified. shorturl.at/scMem,phishing,account_signin_alert,en
+Telegram: your account is flagged for deletion. Confirm you are the owner goo.su/tgOwn,phishing,social_account_disabled,en
+Netflix: Your membership has expired. As a loyal member you can extend for 90 days free. bit.ly/nf-90ext,phishing,streaming_reward_lure,en
+Uber: A trip charge of $64.20 was disputed on your account. Confirm card to resolve. trip-dispute.info/u,phishing,account_billing_update,en
+Grab: your GrabPay wallet has been temporarily suspended. Reactivate with your PIN tinyurl.com/grb-react,phishing,account_disabled,en
+Swiggy: Refund of Rs 486 for order #4481209376 is initiated but UPI ID is invalid. Update: cutt.ly/swRef486,phishing,shopping_refund_lure,en
+Myntra: order delivered? we received a return request you may not have made. cancel return is.gd/mynRet,phishing,shopping_order_problem,en
+Vinted: Your item has sold! To receive £42.00 confirm your payout card rb.gy/vntd42,phishing,shopping_payout_lure,en
+Etsy: your shop has been suspended pending billing verification. t.ly/etsyBill,phishing,shopping_account_disabled,en
+Dropbox: Your files are scheduled for deletion - plan lapsed. Restore access shorturl.at/dbxRest,phishing,account_storage_full,en
+Kayo Sports: payment declined. your subscription will cancel before this weekend's games. goo.su/kayoPay,phishing,streaming_billing_update,en
+Microsoft 365: Your subscription expired on 11/11/2026. Renew today for uninterrupted access to your files. renew-desk.top/365,phishing,account_billing_update,en
+Checkers Sixty60: your Xtra Savings account has R150 cashback expiring Sunday. Log in to keep it bit.ly/xtra150,phishing,shopping_reward_lure,en
+"Zalora SG: your order ZSG448120 is cancelled, refund S$89.90 needs bank confirmation tinyurl.com/zlr-8990",phishing,shopping_refund_lure,en

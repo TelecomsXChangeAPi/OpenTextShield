@@ -1,0 +1,350 @@
+text,label,category,language
+"Mamá soy yo, se me cayó el móvil al agua y estoy con este número nuevo. Guárdalo porfa. Luego te cuento una cosa",phishing,family_new_number,es
+"Hola papá, es Lucía desde el número de una amiga. Necesito que me hagas un bizum de 350€ a este número ya, luego te explico. No me llames que no tengo saldo",phishing,family_urgent_payment,es
+"Buenas tardes, le hablamos del Departamento de Seguridad de BBVA. Hemos detectado un cargo de 489€ en Amazon desde su tarjeta. Si no lo reconoce llame al 910 05 73 28 antes de 2 horas",phishing,bank_callback_vishing,es
+Banco Santander: su tarjeta terminada en 4417 ha sido bloqueada por seguridad. Para desbloquearla contacte con el 900 83 11 62 en las próximas 24h.,phishing,bank_card_blocked_callback,es
+CaixaBank informa: tu acceso a CaixaBankNow quedará suspendido por falta de verificación. Llama al 931 220 884 hoy mismo para evitar la cancelación,phishing,account_block_callback,es
+Soy Marcos del soporte técnico de Movistar. Le acabamos de enviar un código de 6 cifras por SMS para confirmar su identidad. ¿Me lo puede indicar por aquí para seguir con la gestión?,phishing,otp_relay_fake_support,es
+"ey, te acaba de llegar un codigo al movil? me he equivocado y puse tu numero en vez del mio jaja, me lo pasas?",phishing,otp_relay_friend,es
+Vodafone: su línea será dada de baja en 48h por documentación incompleta (KYC). Regularice su situación llamando al 911 98 44 02. Atención 24h.,phishing,sim_kyc_block_callback,es
+Orange: hemos recibido una solicitud de duplicado de SIM para su número. Si no ha sido usted llame urgentemente al 910 60 12 93 para cancelarla.,phishing,sim_swap_callback,es
+"Hola, soy Jorge (el jefe). Estoy en una reunión y no puedo hablar. Necesito que compres 4 tarjetas regalo de Google Play de 100€ para unos clientes y me mandes los códigos por aquí. Te lo reembolso mañana.",phishing,boss_gift_cards,es
+"Buenos días, desde Administración. La factura de Suministros Delgado SL (ref 2024-0871, 6.420,00€) debe abonarse hoy en la nueva cuenta: ES21 0049 1500 0512 3456 7890. Confirma cuando esté hecho.",phishing,invoice_new_account,es
+"Correos: su paquete 00 213 884 11 está retenido en la oficina por falta de pago de aduanas (2,99€). Llame al 902 11 73 65 para gestionar la entrega. Se devolverá al remitente en 24h.",phishing,courier_callback_fee,es
+SEUR: no hemos podido entregar su envío. Indíquenos su DNI completo y dirección respondiendo a este SMS para reprogramar la entrega.,phishing,courier_reply_id,es
+"Agencia Tributaria: tiene pendiente una devolución de 341,20€ del ejercicio 2023. Para tramitarla responda con su nombre completo y número de DNI.",phishing,tax_refund_reply_id,es
+ENHORABUENA! Su número ha sido seleccionado en el sorteo mensual de El Corte Inglés. Premio: tarjeta regalo 1.000€. Responda con nombre y DNI para reclamarlo antes del viernes.,phishing,prize_reply_id,es
+"Hemos revisado tu CV en InfoJobs. Puesto de asistente online, 2-3 horas al día, 150-400€ diarios. Si te interesa responde 1 y te contactamos por WhatsApp.",phishing,job_task_opener,es
+"Hola!! Soy Andrea de Recursos Humanos de Mercadona. Tenemos vacantes para trabajo desde casa, pago diario entre 180€ y 600€. Edad 22-60. Si quieres info responde SÍ",phishing,job_task_opener,es
+Llamada perdida de 806 51 42 90. Tiene un mensaje de voz importante pendiente. Devuelva la llamada para escucharlo.,phishing,missed_call_premium,es
+"Te llamé antes y no pudiste coger. Tengo una noticia muy buena para ti. Llámame al 803 433 212 cuando puedas, es importante.",phishing,ringback_premium,es
+"Cariño ya he hablado con mi asesor, si depositas los 500 USDT hoy antes de las 20h entras en la operación conmigo. Te paso la dirección de la wallet: TQn8xH4vR2kL9mPz7dYcW3bFgJ5sA6eN1u. Confía en mí",phishing,romance_crypto_deposit,es
+"Carlos, la ventana de la operación cierra esta noche. Con 300€ más en la plataforma pasas a nivel VIP y desbloqueas el retiro de los 4.200€. Envíalos por Bizum al 611 23 90 45 y te lo activo yo.",phishing,investment_crypto_followup,es
+"Señora, le llamo del Hospital Clínico. Su hijo ha tenido un accidente de moto y lo están operando. Necesitamos cubrir 1.200€ de material quirúrgico ahora. Transferencia a ES76 2100 0418 4502 0005 1332. Luego la llama el doctor.",phishing,relative_accident_money,es
+"abuela soy yo, estoy en comisaría, me han detenido por un malentendido. no se lo digas a mamá. necesito 900€ para la fianza, mi abogado te dice cómo pagarlo. llámale al 644 07 31 28",phishing,grandchild_arrest_money,es
+"Hola Antonio! Gracias por contactar con nosotros sobre el piso de la calle Mayor. Para reservar la visita necesitamos un depósito de 200€ por Bizum al 622 84 19 77. Es reembolsable. Saludos, Inmobiliaria Luz",phishing,rental_deposit_fake,es
+"BANKINTER: operación de 1.250€ pendiente de autorizar en su cuenta. Si no es usted, ¡llame YA al 917 02 58 61 para anularla!",phishing,bank_callback_vishing,es
+"Oi mãe, sou eu. Caiu meu celular e quebrou, tô com esse número novo. Salva aí. Depois te explico uma coisa que aconteceu",phishing,family_new_number,pt
+"Pai, é a Bia, tô no número de uma amiga. Preciso que vc faça um pix de R$ 480 pra chave 11 98877-4521 agora, é urgente, depois te conto. Não liga pq tô sem crédito",phishing,family_urgent_payment,pt
+"Olá, sou a Juliana da Central de Segurança do Itaú. Identificamos uma compra de R$ 2.390,00 no seu cartão final 7731. Caso não reconheça, ligue imediatamente para 0800 741 2208 para contestar.",phishing,bank_callback_vishing,pt
+NUBANK INFORMA: sua conta foi temporariamente bloqueada por atividade suspeita. Regularize em até 24h ligando para (11) 4002-8130. Após o prazo a conta será encerrada.,phishing,account_block_callback,pt
+"Bradesco: detectamos tentativa de PIX de R$ 1.500 para Marcos A. S. Se não foi você, responda NÃO e aguarde a ligação do nosso gerente com o protocolo. Tenha seu cartão e senha em mãos.",phishing,bank_callback_credentials,pt
+"Boa tarde, aqui é o Rafael do suporte da Caixa. Acabamos de enviar um código de 6 dígitos pro seu celular pra confirmar que é vc mesmo. Pode me passar ele por aqui?",phishing,otp_relay_fake_support,pt
+amigo chegou um codigo no seu zap? coloquei seu numero sem querer kkk me manda ele rapidinho pfv,phishing,otp_relay_friend,pt
+Vivo: seu chip será CANCELADO em 48 horas por cadastro incompleto. Evite o bloqueio ligando para 0800 030 7784. Atendimento 24h.,phishing,sim_kyc_block_callback,pt
+"Claro informa: foi solicitada a troca de chip da sua linha. Se não reconhece esta solicitação, ligue agora para (11) 3003-9910 e cancele. Prazo: 2 horas.",phishing,sim_swap_callback,pt
+"Oi, é o Dr. Henrique. Tô em reunião e não posso ligar. Preciso que vc compre 5 gift cards do Google Play de R$ 200 pra premiar a equipe e me mande os códigos aqui. Te reembolso hoje ainda.",phishing,boss_gift_cards,pt
+"Bom dia, Financeiro. O fornecedor Metalúrgica Souza mudou de banco. O boleto de R$ 18.750,00 vence hoje, favor pagar via PIX para a chave CNPJ 44.218.907/0001-55 e enviar o comprovante.",phishing,invoice_new_account,pt
+"Correios: sua encomenda BR 7731 9920 44 está retida por pendência de taxa alfandegária R$ 9,87. Ligue 0800 725 0100 opção 3 para liberar. Prazo 24h antes da devolução.",phishing,courier_callback_fee,pt
+"Receita Federal: você possui restituição de IRPF no valor de R$ 1.283,44 pendente. Responda com nome completo e CPF para liberação do crédito em até 3 dias úteis.",phishing,tax_refund_reply_id,pt
+PARABÉNS!!! Seu número foi sorteado na promoção Magalu Dia das Mães. Prêmio: R$ 5.000 em compras. Responda com NOME e CPF até amanhã para resgatar.,phishing,prize_reply_id,pt
+"Vimos seu currículo no Vagas e no LinkedIn. Trabalho home office, 2h por dia avaliando produtos, ganhos de R$ 200 a R$ 650 por dia. Interessado? Responda 1 e nossa recrutadora te chama no WhatsApp",phishing,job_task_opener,pt
+"Olá! Sou a Camila do RH da Shopee Brasil. Temos vagas remotas, pagamento diário entre R$ 150 e R$ 500, sem experiência. Idade 20-55. Responda SIM pra saber mais",phishing,job_task_opener,pt
+Você tem 1 chamada perdida de 0300 313 8044. Há um recado de voz urgente aguardando. Retorne a ligação para ouvir.,phishing,missed_call_premium,pt
+"te liguei agora a pouco mas caiu. tenho uma notícia muito boa pra vc, me liga nesse número 0900 788 1234 assim que puder",phishing,ringback_premium,pt
+"Amor, falei com meu analista. Se vc colocar 2.000 USDT hoje a gente entra juntos na operação de amanhã. Minha carteira: 0x7f3A9bC21dE4F58a0B6c9D3e1F2a4B5c6D7e8F90. Depois eu te mostro como sacar, confia em mim",phishing,romance_crypto_deposit,pt
+"Fernando, sua conta na plataforma travou no saque dos R$ 12.400 por falta de verificação. Deposite R$ 1.100 de taxa via PIX na chave 21 98123-4477 e o saque cai em 20 min.",phishing,investment_crypto_followup,pt
+"Bom dia! Aqui é a Patrícia da Serasa. Consta uma dívida de R$ 3.218,90 em seu CPF que pode ser quitada hoje com 90% de desconto. Para negociar ligue (11) 3003-6300 até as 18h.",phishing,debt_settlement_callback,pt
+"Senhora, estou ligando do Hospital Albert Einstein. Seu filho sofreu um acidente de moto e está na cirurgia. Precisamos de R$ 3.200 para material cirúrgico agora. PIX para 21 99655-3078. O médico entra em contato depois.",phishing,relative_accident_money,pt
+"vó sou eu, tô na delegacia, me pegaram num mal entendido. não conta pra mãe. preciso de R$ 1.500 pra fiança, meu advogado te explica. liga pra ele 11 97744-2016",phishing,grandchild_arrest_money,pt
+"Oi João! Obrigado pelo interesse no apartamento da Vila Mariana. Pra garantir a visita de sábado pedimos uma caução de R$ 300 via PIX (chave 11 96221-8870), devolvida no dia. Abraço, Imobiliária Horizonte",phishing,rental_deposit_fake,pt
+SANTANDER: compra de R$ 4.780 em São Paulo aguardando aprovação. NÃO FOI VOCÊ? Ligue AGORA 0800 762 7777 e bloqueie antes da efetivação.,phishing,bank_callback_vishing,pt
+"Maman c'est moi, j'ai cassé mon téléphone, je t'écris du nouveau numéro. Enregistre-le stp. Je t'expliquerai un truc après",phishing,family_new_number,fr
+"Papa c'est Chloé je t'écris du tel d'une copine. Il faut que tu me fasses un virement de 450€ aujourd'hui, c'est urgent, je t'explique après. IBAN FR76 3000 4000 0312 3456 7890 143. M'appelle pas j'ai plus de batterie",phishing,family_urgent_payment,fr
+"Bonjour, Service Fraude de la Société Générale. Un paiement de 739€ chez Cdiscount a été initié avec votre carte finissant par 2208. Si vous n'en êtes pas l'auteur, appelez le 09 70 73 56 21 dans les 2h.",phishing,bank_callback_vishing,fr
+CREDIT AGRICOLE : votre carte a été bloquée suite à 3 tentatives suspectes. Pour la débloquer contactez le 01 86 76 43 90 sous 24h.,phishing,bank_card_blocked_callback,fr
+BNP Paribas : votre accès en ligne sera suspendu faute de mise à jour de vos justificatifs. Appelez le 09 72 11 45 60 avant ce soir pour éviter la clôture.,phishing,account_block_callback,fr
+"Bonjour, c'est Thomas du service technique Orange. Vous venez de recevoir un code à 6 chiffres par SMS, pouvez-vous me le communiquer ici pour valider votre identité ? Merci",phishing,otp_relay_fake_support,fr
+hey t'as reçu un code par sms là ? j'ai tapé ton numéro au lieu du mien mdr tu me l'envoies ?,phishing,otp_relay_friend,fr
+Free Mobile : votre ligne sera résiliée sous 48h pour dossier d'identité incomplet. Régularisez en appelant le 09 74 75 01 33 (7j/7).,phishing,sim_kyc_block_callback,fr
+"Bonjour c'est Philippe (direction). Je suis en réunion toute la journée, injoignable. J'ai besoin que tu achètes 6 cartes cadeaux Apple de 100€ pour des clients et que tu m'envoies les codes ici. Je te rembourse demain. Merci c'est urgent",phishing,boss_gift_cards,fr
+"Bonjour, service compta. Le fournisseur Menuiserie Lambert a changé de banque. Merci de régler la facture n°F-2024-331 (8 940,00€) aujourd'hui sur le nouveau RIB : FR76 1027 8060 1200 0204 5670 189 et de confirmer.",phishing,invoice_new_account,fr
+"La Poste : votre colis 6A 1234 5678 90 est en attente de frais de douane (2,99€). Appelez le 0 899 70 12 34 pour organiser la livraison. Retour à l'expéditeur sous 48h.",phishing,courier_callback_fee,fr
+"Chronopost : adresse incomplète pour votre colis. Répondez à ce SMS avec votre nom, adresse complète et numéro de pièce d'identité pour une nouvelle livraison.",phishing,courier_reply_id,fr
+"Direction Générale des Finances Publiques : un remboursement de 412,80€ est en attente sur votre dossier 2023. Répondez avec nom, prénom et numéro fiscal pour le débloquer.",phishing,tax_refund_reply_id,fr
+"FÉLICITATIONS ! Vous êtes le gagnant du tirage mensuel Carrefour : une carte cadeau de 1 000€. Répondez avec vos nom, prénom et n° de pièce d'identité avant vendredi pour la recevoir.",phishing,prize_reply_id,fr
+"Nous avons vu votre CV sur Indeed. Poste d'assistant e-commerce à domicile, 2-3h/jour, 180-550€/jour. Intéressé(e) ? Répondez 1 et une recruteuse vous contacte sur WhatsApp.",phishing,job_task_opener,fr
+"Bonjour ! Je suis Sarah des RH Amazon France. Nous recrutons pour des missions à distance, paiement quotidien 200 à 600€, sans expérience, 21-60 ans. Répondez OUI pour les détails.",phishing,job_task_opener,fr
+Appel manqué du 0 899 89 20 20. Un message vocal important vous attend. Rappelez pour l'écouter.,phishing,missed_call_premium,fr
+"je t'ai appelé tout à l'heure mais ça a coupé. j'ai une super nouvelle pour toi, rappelle-moi au 08 99 65 11 22 dès que tu peux",phishing,ringback_premium,fr
+"Mon cœur, j'ai parlé à mon conseiller. Si tu déposes 1 500 USDT ce soir on entre ensemble sur l'opération de demain. Mon adresse : bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq. Après je te montre comment retirer, fais-moi confiance",phishing,romance_crypto_deposit,fr
+"Julien, votre retrait de 9 800€ est bloqué faute de niveau VIP. Un dépôt complémentaire de 700€ débloque le compte. Virement sur FR76 1695 8000 0130 1234 5678 901 et je valide dans l'heure.",phishing,investment_crypto_followup,fr
+"Madame, Hôpital de la Pitié-Salpêtrière. Votre fils a eu un accident de scooter, il est au bloc. Nous devons régler 1 800€ de matériel chirurgical immédiatement. Virement sur FR76 4061 8803 0000 0401 2345 678. Le chirurgien vous rappelle ensuite.",phishing,relative_accident_money,fr
+"mamie c'est moi, je suis au commissariat, ils m'ont arrêté pour un malentendu. le dis pas à maman stp. il faut 1 200€ pour la caution, mon avocat t'explique, appelle-le au 06 44 71 20 38",phishing,grandchild_arrest_money,fr
+"Bonjour Nicolas ! Merci pour votre intérêt pour le T2 rue des Lilas. Pour bloquer la visite de samedi nous demandons une caution de 250€ par virement (remboursée sur place). IBAN FR76 1820 6000 1234 5678 9012 345. Cdt, Agence Horizon",phishing,rental_deposit_fake,fr
+"LCL : opération de 2 150€ en attente de validation. Si ce n'est pas vous, appelez SANS DÉLAI le 09 77 40 22 18 pour l'annuler.",phishing,bank_callback_vishing,fr
+"Hallo Mama, ich bin's. Mein Handy ist kaputt, das ist meine neue Nummer. Speicher sie bitte ab. Ich erzähl dir später was passiert ist",phishing,family_new_number,de
+"Papa, hier ist Lena vom Handy einer Freundin. Ich brauch dringend 480€, bitte überweis sie heute noch an DE89 3704 0044 0532 0130 00 (Lena Hoffmann). Erklär ich dir später. Ruf nicht an, hab keinen Akku",phishing,family_urgent_payment,de
+"Guten Tag, hier spricht die Sicherheitsabteilung der Sparkasse. Es wurde eine Abbuchung von 689,00€ bei Zalando mit Ihrer Karte ending 4417 festgestellt. Falls Sie das nicht veranlasst haben, rufen Sie innerhalb von 2 Stunden 0800 589 2234 an.",phishing,bank_callback_vishing,de
+Commerzbank: Ihre Girocard wurde aufgrund verdächtiger Aktivitäten gesperrt. Zur Entsperrung kontaktieren Sie uns binnen 24h unter 069 1370 8821.,phishing,bank_card_blocked_callback,de
+"Deutsche Bank: Ihr Online-Banking wird wegen fehlender Legitimation (GwG) eingeschränkt. Rufen Sie heute 030 2201 4590 an, um die Sperrung zu verhindern.",phishing,account_block_callback,de
+"Hallo, hier ist Markus vom technischen Support der Telekom. Wir haben Ihnen gerade einen 6-stelligen Code per SMS geschickt. Bitte teilen Sie mir den Code hier mit, damit wir Ihre Identität bestätigen können.",phishing,otp_relay_fake_support,de
+hey hast du grad nen code per sms bekommen? hab aus versehen deine nummer eingegeben statt meiner haha schick ihn mir mal,phishing,otp_relay_friend,de
+"Vodafone: Ihre SIM-Karte wird in 48 Stunden deaktiviert, da Ihre Ausweisdaten nicht verifiziert wurden. Bitte rufen Sie 0800 172 1212 an. 24h erreichbar.",phishing,sim_kyc_block_callback,de
+"O2: Für Ihre Rufnummer wurde eine Ersatz-SIM beantragt. Falls Sie das nicht waren, rufen Sie sofort 089 2442 7810 an, um den Vorgang zu stoppen.",phishing,sim_swap_callback,de
+"Hallo, hier Dr. Weber. Ich sitze im Meeting und kann nicht telefonieren. Bitte kaufen Sie 5 Google-Play-Gutscheine à 100€ für Kundengeschenke und schicken mir die Codes hier. Erstattung morgen über die Buchhaltung.",phishing,boss_gift_cards,de
+"Guten Morgen, Buchhaltung hier. Der Lieferant Müller Stahlbau hat die Bankverbindung geändert. Rechnung RE-2024-0558 (12.360,00€) bitte heute auf die neue IBAN DE02 1203 0000 0000 2020 51 überweisen und Beleg senden.",phishing,invoice_new_account,de
+"DHL: Ihr Paket 00340434161094215902 liegt wegen offener Zollgebühr (2,99€) im Depot. Bitte rufen Sie 0900 1 234 567 an, um die Zustellung zu veranlassen. Rücksendung in 24h.",phishing,courier_callback_fee,de
+"Hermes: Zustellung nicht möglich, Adresse unvollständig. Antworten Sie mit Name, vollständiger Adresse und Ausweisnummer für einen neuen Zustellversuch.",phishing,courier_reply_id,de
+"Finanzamt: Für Sie liegt eine Steuererstattung von 398,70€ (VZ 2023) bereit. Antworten Sie mit vollem Namen und Steuer-ID zur Auszahlung innerhalb von 5 Werktagen.",phishing,tax_refund_reply_id,de
+HERZLICHEN GLÜCKWUNSCH! Ihre Nummer wurde bei der Lidl-Monatsverlosung gezogen. Gewinn: 1.000€ Einkaufsgutschein. Antworten Sie bis Freitag mit Name und Personalausweisnummer.,phishing,prize_reply_id,de
+"Wir haben Ihren Lebenslauf auf StepStone gesehen. Homeoffice-Job, 2-3 Std/Tag, 150-500€ täglich. Interesse? Antworten Sie mit 1, unsere Recruiterin meldet sich per WhatsApp.",phishing,job_task_opener,de
+"Hallo! Ich bin Nina aus der Personalabteilung von Zalando. Wir suchen Mitarbeiter für Remote-Aufgaben, tägliche Auszahlung 200-600€, keine Erfahrung nötig, 20-60 Jahre. Antworten Sie JA.",phishing,job_task_opener,de
+Verpasster Anruf von 0137 7 88 12 34. Eine wichtige Sprachnachricht wartet auf Sie. Bitte rufen Sie zurück.,phishing,missed_call_premium,de
+"hab dich grad angerufen aber es ging nicht durch. hab ne richtig gute nachricht für dich, ruf mich zurück unter 0900 5 123 456 sobald du kannst",phishing,ringback_premium,de
+"Schatz, ich hab mit meinem Berater gesprochen. Wenn du heute 1.200 USDT einzahlst, sind wir morgen zusammen in der Position. Meine Wallet: TXk4mR8vN2pQ7wL1sZ9cH3bJ6yD5fG0aE. Danach zeig ich dir die Auszahlung, vertrau mir",phishing,romance_crypto_deposit,de
+"Herr Krüger, Ihre Auszahlung von 11.400€ hängt wegen fehlender Steuerfreigabe. Ein Depot von 850€ auf DE12 5001 0517 0648 4898 90 gibt den Betrag innerhalb einer Stunde frei. Ich warte auf Ihre Bestätigung.",phishing,investment_crypto_followup,de
+"Frau Becker, hier Charité Notaufnahme. Ihr Sohn hatte einen Motorradunfall und wird operiert. Wir benötigen sofort 2.400€ für OP-Material. Überweisung an DE44 1001 0010 0012 3456 78. Der Arzt ruft Sie danach an.",phishing,relative_accident_money,de
+"oma ich bin's, ich bin auf der polizeiwache, die haben mich wegen einem missverständnis festgenommen. sag mama nichts. ich brauch 1.500€ kaution, mein anwalt erklärt dir alles, ruf ihn an 0176 44 90 21 38",phishing,grandchild_arrest_money,de
+Hallo Herr Schmidt! Danke für Ihr Interesse an der 2-Zimmer-Wohnung Kastanienallee. Zur Reservierung des Besichtigungstermins bitten wir um eine Kaution von 300€ (vor Ort erstattet). IBAN DE75 5121 0800 1245 1261 99. MfG Immobilien Nord,phishing,rental_deposit_fake,de
+POSTBANK: Überweisung von 1.890€ wartet auf Freigabe. Nicht von Ihnen? Rufen Sie SOFORT 040 6388 2210 an und stoppen Sie den Vorgang!,phishing,bank_callback_vishing,de
+"Mamma sono io, mi è caduto il telefono e si è rotto, ti scrivo dal numero nuovo. Salvalo. Dopo ti devo raccontare una cosa",phishing,family_new_number,it
+"Papà sono Giulia dal telefono di un'amica. Mi servono 400€ oggi, fammi un bonifico istantaneo su IT60 X054 2811 1010 0000 0123 456 per favore, poi ti spiego. Non chiamare che non ho batteria",phishing,family_urgent_payment,it
+"Buongiorno, la contattiamo dall'Ufficio Antifrode di Intesa Sanpaolo. Rilevato un pagamento di 749€ su Amazon con la sua carta che termina con 4417. Se non lo riconosce chiami entro 2 ore lo 02 8732 1190.",phishing,bank_callback_vishing,it
+UNICREDIT: la sua carta è stata bloccata per 3 tentativi sospetti. Per sbloccarla contatti il numero 06 4520 7733 entro 24 ore.,phishing,bank_card_blocked_callback,it
+Poste Italiane: il suo conto BancoPosta sarà sospeso per mancato aggiornamento dei documenti. Chiami oggi lo 06 9821 4400 per evitare la chiusura.,phishing,account_block_callback,it
+"Salve, sono Marco dell'assistenza TIM. Le abbiamo appena inviato un codice a 6 cifre via SMS per verificare la sua identità. Me lo può scrivere qui così completiamo la pratica? Grazie",phishing,otp_relay_fake_support,it
+oh ti è arrivato un codice sul cell? ho messo il tuo numero al posto del mio ahah me lo giri?,phishing,otp_relay_friend,it
+Vodafone: la sua SIM verrà disattivata entro 48 ore per documento d'identità non verificato. Regolarizzi chiamando lo 800 034 112. Servizio attivo 24h.,phishing,sim_kyc_block_callback,it
+WindTre: è stata richiesta una nuova SIM per il suo numero. Se non è stato lei chiami subito lo 02 3041 7786 per annullare la richiesta. Tempo massimo 2 ore.,phishing,sim_swap_callback,it
+"Ciao, sono il Dott. Ferrari. Sono in riunione e non posso chiamare. Ho bisogno che compri 5 gift card Amazon da 100€ per dei clienti e mi mandi i codici qui. Ti rimborso domani con la nota spese.",phishing,boss_gift_cards,it
+"Buongiorno, Amministrazione. Il fornitore Edil Rossi srl ha cambiato banca. La fattura n. 231/2024 (9.870,00€) va pagata oggi sul nuovo IBAN IT40 S054 2811 1010 0000 0987 654. Conferma appena fatto.",phishing,invoice_new_account,it
+"Poste: il pacco RA123456789IT è fermo in deposito per dazi doganali non pagati (2,99€). Chiami lo 892 110 per sbloccare la consegna. Restituzione al mittente entro 24h.",phishing,courier_callback_fee,it
+"BRT: consegna non riuscita, indirizzo incompleto. Risponda a questo SMS con nome, indirizzo completo e numero di carta d'identità per riprogrammare.",phishing,courier_reply_id,it
+"Agenzia delle Entrate: risulta un rimborso IRPEF 2023 di 356,40€ a suo favore. Risponda con nome, cognome e codice fiscale per l'accredito entro 5 giorni.",phishing,tax_refund_reply_id,it
+COMPLIMENTI! Il suo numero è stato estratto nel concorso mensile Esselunga. Premio: buono spesa da 1.000€. Risponda con nome e numero di carta d'identità entro venerdì per riscuoterlo.,phishing,prize_reply_id,it
+"Abbiamo visto il suo CV su Indeed. Lavoro da casa come assistente e-commerce, 2-3 ore al giorno, 150-500€ al giorno. Interessato? Risponda 1 e la nostra recruiter la contatta su WhatsApp.",phishing,job_task_opener,it
+"Ciao! Sono Francesca delle Risorse Umane di Zara Italia. Cerchiamo collaboratori per attività da remoto, pagamento giornaliero 200-600€, nessuna esperienza, 20-60 anni. Rispondi SÌ per i dettagli.",phishing,job_task_opener,it
+Chiamata persa dal 899 88 44 20. Hai un messaggio vocale importante in attesa. Richiama per ascoltarlo.,phishing,missed_call_premium,it
+"ti ho chiamato prima ma è caduta la linea. ho una notizia bellissima per te, richiamami al 895 123 4567 appena puoi",phishing,ringback_premium,it
+"Amore ho parlato col mio consulente. Se depositi 1.000 USDT stasera entriamo insieme nell'operazione di domani. Il mio wallet: 0x3Bc9A7e21F4d58C0b6E9D3a1F2c4B5d6E7f8A901. Poi ti faccio vedere come prelevare, fidati di me",phishing,romance_crypto_deposit,it
+"Luca, il prelievo di 8.600€ è bloccato perché manca il livello VIP. Con un deposito di 600€ si sblocca in un'ora. Bonifico su IT02 L123 4512 3451 2345 6789 012 e lo attivo io personalmente.",phishing,investment_crypto_followup,it
+"Signora, chiamo dal Policlinico Gemelli. Suo figlio ha avuto un incidente in moto ed è in sala operatoria. Servono 1.900€ subito per materiale chirurgico. Bonifico su IT12 A020 0805 3640 0001 2345 678. Dopo la chiama il chirurgo.",phishing,relative_accident_money,it
+"nonna sono io, sono in questura, mi hanno fermato per un malinteso. non dirlo a mamma. mi servono 1.300€ per la cauzione, il mio avvocato ti spiega tutto, chiamalo al 345 078 1129",phishing,grandchild_arrest_money,it
+"Ciao Alessandro! Grazie per l'interesse per il bilocale in via Garibaldi. Per bloccare la visita di sabato chiediamo una cauzione di 250€ con bonifico (restituita sul posto). IBAN IT55 N030 6909 6061 0000 0100 123. Saluti, Agenzia Domus",phishing,rental_deposit_fake,it
+BPER: operazione di 1.750€ in attesa di autorizzazione. Non è lei? Chiami SUBITO lo 051 2042 118 per annullarla!,phishing,bank_callback_vishing,it
+ماما أنا، وقع تلفوني وانكسر، هذا رقمي الجديد احفظيه. بعدين بحكي لك شي صار,phishing,family_new_number,ar
+بابا أنا سارة من رقم صاحبتي. محتاجة 2000 ريال ضروري اليوم، حوّل على الآيبان SA03 8000 0000 6080 1016 7519 وبعدين أشرح لك. لا تتصل الشحن خلص,phishing,family_urgent_payment,ar
+"نحيطكم علماً من إدارة الاحتيال ببنك الراجحي بوجود عملية شراء بمبلغ 1,890 ريال من نون على بطاقتكم المنتهية بـ4417. إن لم تكن منك اتصل خلال ساعتين على 0115203399",phishing,bank_callback_vishing,ar
+بنك مصر: تم إيقاف بطاقتك مؤقتاً بسبب محاولات مشبوهة. لإعادة التفعيل اتصل على 0227706611 خلال 24 ساعة.,phishing,bank_card_blocked_callback,ar
+بنك الإمارات دبي الوطني: سيتم تعليق حسابك لعدم تحديث بيانات اعرف عميلك. للاستمرار يرجى الاتصال على 043180022 اليوم قبل الساعة 6 مساءً,phishing,account_block_callback,ar
+مرحبا، معك أحمد من الدعم الفني في STC. أرسلنا لك الآن رمز تحقق مكون من 6 أرقام. ممكن ترسله لي هنا حتى نكمل إجراء التحقق من هويتك؟,phishing,otp_relay_fake_support,ar
+هلا وصلك كود على جوالك؟ غلطت وكتبت رقمك بدل رقمي هههه ارسله لي بسرعة,phishing,otp_relay_friend,ar
+زين: سيتم إيقاف شريحتك خلال 48 ساعة لعدم ربطها بالهوية. لتجنب الإيقاف اتصل على 0800 177 2255 على مدار الساعة.,phishing,sim_kyc_block_callback,ar
+اتصالات: تم تقديم طلب استبدال شريحة لرقمك. إذا لم تكن أنت صاحب الطلب اتصل فوراً على 026110088 لإلغائه خلال ساعتين,phishing,sim_swap_callback,ar
+السلام عليكم، أنا المدير خالد. أنا في اجتماع وما أقدر أتصل. محتاج تشتري 5 بطاقات هدايا آبل بقيمة 500 ريال لعملاء وترسل لي الأكواد هنا. أرجع لك المبلغ غداً,phishing,boss_gift_cards,ar
+"صباح الخير، قسم الحسابات. المورد شركة النور للتجارة غيّر حسابه البنكي. فاتورة رقم 2024-442 بمبلغ 48,500 درهم تُدفع اليوم على الآيبان الجديد AE07 0331 2345 6789 0123 456 مع إرسال الإيصال.",phishing,invoice_new_account,ar
+أرامكس: شحنتك رقم 44882210 محجوزة في المستودع لعدم سداد رسوم الجمارك (15 ريال). اتصل على 920033221 لترتيب التسليم. ستُرجع للمرسل خلال 24 ساعة,phishing,courier_callback_fee,ar
+سمسا: تعذر التوصيل لعدم اكتمال العنوان. أرسل اسمك الكامل وعنوانك ورقم الهوية رداً على هذه الرسالة لإعادة الجدولة.,phishing,courier_reply_id,ar
+"هيئة الزكاة والضريبة والجمارك: لديكم مبلغ مسترد 1,240 ريال. للصرف أرسل الاسم الكامل ورقم الهوية الوطنية رداً على هذه الرسالة",phishing,tax_refund_reply_id,ar
+مبروك!! تم اختيار رقمك في السحب الشهري لكارفور. الجائزة بطاقة شراء 5000 ريال. أرسل اسمك ورقم هويتك قبل يوم الجمعة لاستلام الجائزة,phishing,prize_reply_id,ar
+شاهدنا سيرتك الذاتية على بيت.كوم. وظيفة عن بعد، ساعتين يومياً، الدخل 400-1500 ريال يومياً. للاهتمام أرسل 1 وستتواصل معك مسؤولة التوظيف عبر واتساب,phishing,job_task_opener,ar
+مرحبا! أنا نورة من الموارد البشرية في أمازون السعودية. لدينا وظائف عن بعد بدون خبرة، الراتب يومي من 300 إلى 900 ريال، العمر 20-60. رد بنعم للتفاصيل,phishing,job_task_opener,ar
+لديك مكالمة فائتة من 0900 44 55 66. هناك رسالة صوتية مهمة بانتظارك. اتصل لسماعها.,phishing,missed_call_premium,ar
+اتصلت بك قبل شوي وما رديت. عندي خبر حلو لك، كلمني على 0900 123 123 أول ما تقدر,phishing,ringback_premium,ar
+حبيبتي كلمت مستشاري. لو حولتي 1500 USDT اليوم ندخل سوا في صفقة الغد. عنوان محفظتي: TNc7xR4kM9pL2wQ8sZ1vB5yH3jD6fG0aE. بعدها أوريك طريقة السحب، ثقي فيني,phishing,romance_crypto_deposit,ar
+"أبو فهد، سحبك بمبلغ 38,000 ريال متوقف بسبب عدم ترقية الحساب. تحويل 2,500 ريال على SA44 2000 0001 2345 6789 0123 يفك الحساب خلال ساعة. منتظر تأكيدك",phishing,investment_crypto_followup,ar
+"أم محمد، معك مستشفى الملك فيصل التخصصي. ابنك تعرض لحادث دباب وهو الآن في العمليات. نحتاج 6,000 ريال فوراً لمستلزمات الجراحة. حوّل على SA91 1000 0001 2345 6789 0123 والدكتور يتصل بك بعدها",phishing,relative_accident_money,ar
+تيتة أنا، أنا في قسم الشرطة، مسكوني بسبب سوء فهم. ما تقولي لماما. محتاج 4000 جنيه كفالة، المحامي هيشرح لك، كلميه على 01044729910,phishing,grandchild_arrest_money,ar
+أهلاً عبدالله! شكراً لاهتمامك بشقة حي النرجس. لحجز موعد المعاينة يوم السبت نطلب عربون 1000 ريال تحويل (يُرد في الموعد). الآيبان SA55 4500 0000 1234 5678 9012. مكتب الأفق للعقارات,phishing,rental_deposit_fake,ar
+"بنك الأهلي: عملية بمبلغ 7,500 ريال بانتظار التفويض. ليست منك؟ اتصل فوراً على 0112111120 لإلغائها قبل التنفيذ!",phishing,bank_callback_vishing,ar
+"मम्मी मैं हूँ, मेरा फोन गिर गया टूट गया, ये मेरा नया नंबर है सेव कर लो। बाद में एक बात बताती हूँ",phishing,family_new_number,hi
+"पापा मैं रोहन, दोस्त के फोन से मैसेज कर रहा हूँ। आज ही 15000 चाहिए बहुत urgent है, इस UPI पे भेज दो rohan.k@okaxis, बाद में बताता हूँ। कॉल मत करना बैटरी नहीं है",phishing,family_urgent_payment,hi
+"नमस्ते, मैं SBI फ्रॉड डिपार्टमेंट से बोल रहा हूँ। आपके कार्ड (अंतिम अंक 4417) से Flipkart पर ₹24,990 का भुगतान हुआ है। अगर आपने नहीं किया तो 2 घंटे के अंदर 011-4152-8890 पर कॉल करें।",phishing,bank_callback_vishing,hi
+HDFC Bank: आपका डेबिट कार्ड संदिग्ध गतिविधि के कारण ब्लॉक कर दिया गया है। 24 घंटे में अनब्लॉक के लिए 022-6160-7788 पर संपर्क करें।,phishing,bank_card_blocked_callback,hi
+ICICI Bank: KYC अपडेट न होने के कारण आपका खाता आज रात बंद कर दिया जाएगा। खाता चालू रखने के लिए 080-4455-6690 पर अभी कॉल करें।,phishing,account_block_callback,hi
+"हेलो सर, मैं Jio कस्टमर केयर से राहुल बोल रहा हूँ। अभी आपके नंबर पर 6 अंकों का OTP भेजा है, वेरिफिकेशन के लिए वो कोड मुझे यहाँ बता दीजिए।",phishing,otp_relay_fake_support,hi
+भाई तेरे फोन पे कोई OTP आया क्या? गलती से तेरा नंबर डाल दिया मेरे की जगह हाहा जल्दी भेज दे यार,phishing,otp_relay_friend,hi
+Airtel: आपका सिम KYC अधूरा होने की वजह से 24 घंटे में बंद हो जाएगा। बंद होने से बचने के लिए 1800-419-7700 पर कॉल करें।,phishing,sim_kyc_block_callback,hi
+Vi: आपके नंबर के लिए नया सिम जारी करने का अनुरोध मिला है। अगर आपने नहीं किया तो तुरंत 022-7100-3344 पर कॉल करके रद्द करें। समय सीमा 2 घंटे।,phishing,sim_swap_callback,hi
+"Hi, मैं शर्मा सर (MD)। मीटिंग में हूँ कॉल नहीं कर सकता। क्लाइंट्स के लिए 5 Amazon gift card ₹5000 वाले खरीदो और कोड यहाँ भेज दो। कल reimbursement हो जाएगा। Urgent है।",phishing,boss_gift_cards,hi
+"सुप्रभात, Accounts से। वेंडर Gupta Traders का बैंक बदल गया है। इनवॉइस INV-2024-0912 (₹3,45,000) आज ही नए अकाउंट में भेजें: A/c 50200045678901, IFSC HDFC0001234। पेमेंट के बाद स्क्रीनशॉट भेजें।",phishing,invoice_new_account,hi
+India Post: आपका पार्सल EH204417IN कस्टम शुल्क ₹49 बकाया होने के कारण रुका है। डिलीवरी के लिए 1800-266-0044 पर कॉल करें। 24 घंटे में वापस भेज दिया जाएगा।,phishing,courier_callback_fee,hi
+"Delhivery: पता अधूरा होने से डिलीवरी नहीं हो सकी। नाम, पूरा पता और आधार नंबर इस SMS के जवाब में भेजें ताकि दोबारा डिलीवरी हो सके।",phishing,courier_reply_id,hi
+"आयकर विभाग: आपका ₹18,420 का रिफंड (AY 2024-25) लंबित है। 3 दिन में प्राप्त करने के लिए पूरा नाम और PAN नंबर रिप्लाई करें।",phishing,tax_refund_reply_id,hi
+"बधाई हो!! आपका नंबर Big Bazaar लकी ड्रॉ में चुना गया है। इनाम ₹1,00,000 का शॉपिंग वाउचर। शुक्रवार से पहले नाम और आधार नंबर भेजकर इनाम पाएं।",phishing,prize_reply_id,hi
+"हमने Naukri पर आपका रिज्यूमे देखा। घर से काम, दिन में 2-3 घंटे, कमाई ₹2000-8000 रोज़। इंटरेस्टेड हैं तो 1 रिप्लाई करें, हमारी HR आपको WhatsApp पर कॉन्टैक्ट करेगी।",phishing,job_task_opener,hi
+"नमस्ते! मैं प्रिया, Flipkart HR से। हमारे पास घर बैठे काम है, रोज़ ₹1500-6000 पेमेंट, कोई अनुभव नहीं चाहिए, उम्र 18-55। जानकारी के लिए YES लिखें।",phishing,job_task_opener,hi
+आपकी 1 मिस्ड कॉल है +243 81 44 55 660 से। एक जरूरी वॉइस मैसेज आपका इंतज़ार कर रहा है। सुनने के लिए कॉल बैक करें।,phishing,missed_call_premium,hi
+"अभी कॉल किया था कट गया। तेरे लिए बहुत अच्छी खबर है, जैसे ही फ्री हो 0091-5050-123456 पर कॉल कर",phishing,ringback_premium,hi
+"जान, मैंने अपने एडवाइज़र से बात की। अगर तुम आज 50,000 रुपये के USDT डालो तो कल की ट्रेड में हम साथ हैं। मेरा वॉलेट: TRx8kM3nP7qL2wZ9sC1vB4yH6jD5fG0aE। फिर withdrawal दिखाऊँगा, मुझ पर भरोसा रखो",phishing,romance_crypto_deposit,hi
+"विकास जी, आपका ₹2,80,000 का withdrawal टैक्स क्लियरेंस की वजह से रुका है। ₹28,000 UPI पर ट्रेडफंड@ybl भेजें, एक घंटे में अमाउंट रिलीज़ हो जाएगा। कन्फर्मेशन का इंतज़ार है।",phishing,investment_crypto_followup,hi
+"मैडम, मैं AIIMS इमरजेंसी से बोल रहा हूँ। आपके बेटे का बाइक एक्सीडेंट हुआ है, ऑपरेशन चल रहा है। सर्जरी के सामान के लिए अभी ₹45,000 चाहिए। UPI: aiims.emrg@paytm। डॉक्टर बाद में बात करेंगे।",phishing,relative_accident_money,hi
+"दादी मैं हूँ, थाने में हूँ, गलतफहमी में पकड़ लिया। मम्मी को मत बताना। जमानत के लिए 25000 चाहिए, मेरे वकील से बात करो 98110-44729",phishing,grandchild_arrest_money,hi
+"हेलो अमित जी! लाजपत नगर के 2BHK में इंटरेस्ट के लिए धन्यवाद। शनिवार की विज़िट कन्फर्म करने के लिए ₹2000 टोकन UPI पर भेजें (मौके पर वापस)। UPI: sunrise.prop@okicici। धन्यवाद, Sunrise Properties",phishing,rental_deposit_fake,hi
+"PNB: ₹49,500 का ट्रांज़ैक्शन approval के लिए pending है। आपने नहीं किया? तुरंत 1800-180-2345 पर कॉल करके रोकें!",phishing,bank_callback_vishing,hi
+"Ma aku, hp ku jatuh rusak, ini nomor baruku simpan ya. Nanti aku cerita sesuatu",phishing,family_new_number,id
+"Pa ini Dina pake hp temen. Aku butuh 2,5 juta hari ini banget, transfer ke BCA 7820145590 a.n. Dina Pratiwi ya, nanti aku jelasin. Jangan telpon, hp ku lowbat",phishing,family_urgent_payment,id
+"Selamat siang, kami dari Divisi Anti Fraud BCA. Terdeteksi transaksi Rp 4.890.000 di Tokopedia dengan kartu Anda berakhiran 4417. Jika bukan Anda, hubungi 021-2358-8800 dalam 2 jam.",phishing,bank_callback_vishing,id
+Bank Mandiri: Kartu debit Anda telah DIBLOKIR karena aktivitas mencurigakan. Untuk membuka blokir hubungi 021-5299-7777 dalam 24 jam.,phishing,bank_card_blocked_callback,id
+BRI: Rekening Anda akan dinonaktifkan malam ini karena data nasabah belum diperbarui. Hubungi 021-1500-017 sekarang untuk menghindari penutupan.,phishing,account_block_callback,id
+"Halo kak, saya Rizky dari CS Telkomsel. Barusan kami kirim kode OTP 6 digit ke nomor kakak untuk verifikasi data. Boleh tolong sebutkan kodenya di sini kak?",phishing,otp_relay_fake_support,id
+bro ada kode masuk ke hp lu ga? gue salah ketik nomor lu bukan nomor gue wkwk kirimin dong cepet,phishing,otp_relay_friend,id
+"Indosat: Kartu SIM Anda akan diblokir dalam 48 jam karena registrasi NIK belum valid. Hindari pemblokiran, hubungi 0800-1-100-777 (24 jam).",phishing,sim_kyc_block_callback,id
+"XL Axiata: Ada permintaan ganti kartu SIM untuk nomor Anda. Jika bukan Anda, segera hubungi 021-5761-8888 untuk membatalkan. Batas waktu 2 jam.",phishing,sim_swap_callback,id
+"Halo, ini Pak Budi (Direktur). Saya sedang meeting tidak bisa telpon. Tolong belikan 5 voucher Google Play @Rp 1.000.000 untuk klien dan kirim kodenya ke sini. Besok saya reimburse. Urgent ya.",phishing,boss_gift_cards,id
+"Pagi, dari Finance. Supplier PT Maju Jaya ganti rekening. Invoice INV/2024/0771 senilai Rp 86.500.000 harap dibayar hari ini ke BNI 0456789012 a.n. PT Maju Jaya Abadi dan kirim bukti transfernya.",phishing,invoice_new_account,id
+POS Indonesia: Paket Anda EE123456789ID tertahan di gudang karena bea masuk Rp 25.000 belum dibayar. Hubungi 0804-1-002-233 untuk pengiriman. Dikembalikan ke pengirim dalam 24 jam.,phishing,courier_callback_fee,id
+"J&T Express: Pengiriman gagal, alamat tidak lengkap. Balas SMS ini dengan nama, alamat lengkap dan nomor KTP untuk pengiriman ulang.",phishing,courier_reply_id,id
+Ditjen Pajak: Anda memiliki pengembalian pajak sebesar Rp 1.845.000 (TA 2023). Balas dengan nama lengkap dan NPWP untuk pencairan dalam 3 hari kerja.,phishing,tax_refund_reply_id,id
+SELAMAT!! Nomor Anda terpilih di undian bulanan Indomaret. Hadiah voucher belanja Rp 10.000.000. Balas dengan NAMA dan NO KTP sebelum Jumat untuk klaim.,phishing,prize_reply_id,id
+"Kami melihat CV Anda di JobStreet. Kerja dari rumah 2-3 jam/hari, penghasilan Rp 500rb-2jt per hari. Minat? Balas 1 dan HR kami akan menghubungi via WhatsApp.",phishing,job_task_opener,id
+"Halo! Saya Sinta dari HRD Shopee Indonesia. Kami buka lowongan kerja remote, gaji harian Rp 400rb-1,5jt, tanpa pengalaman, usia 18-55. Balas YA untuk info lengkap",phishing,job_task_opener,id
+Anda memiliki 1 panggilan tak terjawab dari 0809-1-400-500. Ada pesan suara penting menunggu. Hubungi kembali untuk mendengarkan.,phishing,missed_call_premium,id
+"tadi aku telpon tapi putus. ada kabar bagus banget buat kamu, telpon balik ke 0809-1-234-567 kalau sudah bisa ya",phishing,ringback_premium,id
+"Sayang aku udah ngobrol sama advisor ku. Kalau kamu deposit 1.000 USDT malam ini kita masuk bareng di trade besok. Wallet aku: TPk9mR4nX2qL7wZ8sC1vB5yH3jD6fG0aE. Nanti aku ajarin cara tariknya, percaya sama aku",phishing,romance_crypto_deposit,id
+"Pak Hendra, penarikan Rp 125.000.000 Anda tertahan karena akun belum VIP. Deposit Rp 8.500.000 ke BCA 8830012345 a.n. Finance Release membuka dana dalam 1 jam. Saya tunggu konfirmasinya.",phishing,investment_crypto_followup,id
+"Ibu, saya dari IGD RS Cipto Mangunkusumo. Putra ibu kecelakaan motor dan sedang dioperasi. Kami butuh Rp 15.000.000 sekarang untuk alat operasi. Transfer ke Mandiri 1230009876543. Dokter akan menghubungi setelahnya.",phishing,relative_accident_money,id
+"nenek ini aku, aku di kantor polisi, ditangkap karena salah paham. jangan bilang mama. aku butuh 7 juta buat jaminan, pengacaraku yang jelasin, telpon dia 0812-3344-7729",phishing,grandchild_arrest_money,id
+Halo Pak Andi! Terima kasih minatnya pada kost di Tebet. Untuk booking survei hari Sabtu kami minta DP Rp 500.000 via transfer (dikembalikan saat survei). BCA 5440123987 a.n. Rumah Nyaman Property. Terima kasih,phishing,rental_deposit_fake,id
+BNI: Transaksi Rp 9.750.000 menunggu persetujuan. BUKAN Anda? SEGERA hubungi 021-3080-9999 untuk membatalkan sebelum diproses!,phishing,bank_callback_vishing,id
+お母さん、私。スマホ落として壊れちゃって、これ新しい番号。登録しといて。あとでちょっと話したいことがある,phishing,family_new_number,ja
+お父さん、友達の携帯から送ってる。今日中に8万円必要なの、急ぎでこの口座に振り込んでほしい。みずほ銀行 渋谷支店 普通 1234567 サトウ ユイ。あとで説明する。電話はしないで、充電ないから,phishing,family_urgent_payment,ja
+"三菱UFJ銀行カード不正利用監視センターです。お客様のカード（下4桁4417）でAmazonにて89,800円の決済が確認されました。ご本人でない場合は2時間以内に03-6271-8820までご連絡ください。",phishing,bank_callback_vishing,ja
+【三井住友銀行】お客様のキャッシュカードは不審な取引により利用停止となりました。解除は24時間以内に0120-889-004までお電話ください。,phishing,bank_card_blocked_callback,ja
+ゆうちょ銀行：本人確認書類の更新が確認できないため、本日中にゆうちょダイレクトを停止いたします。継続をご希望の場合は03-5541-7700へご連絡ください。,phishing,account_block_callback,ja
+ドコモサポートの田中です。本人確認のため、ただいまお客様の携帯に6桁の認証コードをお送りしました。お手続きを進めますので、そのコードをこちらにご返信ください。,phishing,otp_relay_fake_support,ja
+ねー今なんか認証コード届いた？間違えて自分のじゃなくてそっちの番号入れちゃったwww送ってくれる？,phishing,otp_relay_friend,ja
+【au】本人確認未完了のため、48時間以内にSIMカードの利用を停止いたします。停止回避は0800-700-1122（24時間）までお電話ください。,phishing,sim_kyc_block_callback,ja
+ソフトバンク：お客様の番号でSIM再発行の申請を受け付けました。お心当たりがない場合は至急03-5990-2211へご連絡ください。受付期限2時間。,phishing,sim_swap_callback,ja
+お疲れ様です、山田部長です。終日会議で電話できません。取引先への謝礼でAppleギフトカード1万円分を5枚購入し、コードをここに送ってください。明日経費精算します。急ぎでお願いします。,phishing,boss_gift_cards,ja
+"経理部より。取引先の株式会社ナカムラ商事より振込先変更の連絡がありました。請求書No.2024-0558（1,236,000円）は本日中に新口座へお振込ください。りそな銀行 新宿支店 普通 7654321 カ）ナカムラショウジ。完了後ご連絡を。",phishing,invoice_new_account,ja
+【日本郵便】お荷物（追跡番号 1234-5678-9012）は関税未納（299円）のため保管中です。配達手続きは0570-200-890までお電話ください。24時間以内に返送されます。,phishing,courier_callback_fee,ja
+ヤマト運輸：住所不備のためお届けできませんでした。再配達のため、お名前・ご住所・運転免許証番号をこのSMSに返信してください。,phishing,courier_reply_id,ja
+"国税庁：令和5年分の還付金38,420円が未受領です。受取手続きのため、氏名とマイナンバーをご返信ください。3営業日以内に振込いたします。",phishing,tax_refund_reply_id,ja
+おめでとうございます！お客様の番号がイオン月間抽選に当選しました。賞品：商品券10万円分。金曜日までにお名前と運転免許証番号をご返信ください。,phishing,prize_reply_id,ja
+"リクナビであなたの履歴書を拝見しました。在宅ワーク、1日2〜3時間、日給15,000〜60,000円。ご興味があれば「1」と返信ください。担当者からLINEでご連絡します。",phishing,job_task_opener,ja
+はじめまして！楽天人事部の佐藤です。在宅での簡単な作業スタッフを募集しています。日払い2万〜8万円、経験不問、20〜60歳。詳細は「はい」と返信してください。,phishing,job_task_opener,ja
+0990-123-456から不在着信があります。重要なボイスメッセージが届いています。折り返しお電話ください。,phishing,missed_call_premium,ja
+さっき電話したけど繋がらなかった。すごくいい知らせがあるから、手が空いたら0990-55-1234に電話して,phishing,ringback_premium,ja
+"ねえ、アドバイザーと話したよ。今夜1,000USDT入金すれば明日の取引に一緒に入れる。私のウォレット：TKm8xR3nP7qL2wZ9sC1vB5yH4jD6fG0aE。あとで出金の仕方教えるから、信じて",phishing,romance_crypto_deposit,ja
+"鈴木様、出金額1,280,000円は税務確認のため保留中です。保証金128,000円を住信SBIネット銀行 法人第一支店 普通 9876543 カ）トレードサポートへお振込いただければ1時間以内に解放されます。ご確認お待ちしております。",phishing,investment_crypto_followup,ja
+奥様、東京大学病院救急部です。ご子息がバイク事故で手術中です。手術材料費として今すぐ24万円必要です。三菱UFJ銀行 本郷支店 普通 2345678 イリョウホウジン へお振込ください。終了後に担当医よりお電話します。,phishing,relative_accident_money,ja
+おばあちゃん、俺。今警察署にいる、誤解で捕まった。お母さんには言わないで。保釈金に15万円いる。弁護士の先生が説明するから090-4472-9910に電話して,phishing,grandchild_arrest_money,ja
+田中様、中野の1Kへのお問い合わせありがとうございます。土曜日の内見予約の確保のため、手付金2万円のお振込をお願いしております（当日返金）。楽天銀行 第一営業支店 普通 1122334 ホライズンフドウサン。よろしくお願いいたします。,phishing,rental_deposit_fake,ja
+"【りそな銀行】189,000円の振込が承認待ちです。ご本人でない場合は今すぐ03-6704-5511へお電話いただき、取引を停止してください！",phishing,bank_callback_vishing,ja
+妈 是我，手机掉水里坏了，这是我的新号码，存一下。晚点跟你说个事,phishing,family_new_number,zh
+爸 我是小雨 用同学手机发的。今天急需5000块，转到我同学支付宝 13812345678 吧，回去再跟你解释。别打电话 我手机没电了,phishing,family_urgent_payment,zh
+"您好，这里是中国工商银行反诈中心。监测到您尾号4417的卡在京东消费人民币8,980元。如非本人操作，请于2小时内致电010-6621-8800处理。",phishing,bank_callback_vishing,zh
+【中国建设银行】您的借记卡因异常交易已被冻结，请在24小时内拨打021-5889-7766办理解冻，逾期将永久锁定。,phishing,bank_card_blocked_callback,zh
+中国银行：您的账户因身份信息未更新将于今晚停用，请立即致电400-668-9900办理，以免影响使用。,phishing,account_block_callback,zh
+您好，我是中国移动客服小张。刚刚给您发送了6位数验证码用于身份核实，请您把验证码回复到这里，我们好继续为您办理。,phishing,otp_relay_fake_support,zh
+哥 你手机刚收到验证码没？我填错号了填成你的了哈哈 快发我一下,phishing,otp_relay_friend,zh
+【中国联通】您的SIM卡因实名认证不完整将于48小时内停机，请拨打400-880-1166（24小时）办理，避免停机。,phishing,sim_kyc_block_callback,zh
+中国电信：您的号码收到补办SIM卡申请。如非本人办理，请立即致电021-6080-3344取消，有效期2小时。,phishing,sim_swap_callback,zh
+你好，我是王总。我在开会不方便接电话。帮我买5张1000元的京东E卡送客户，把卡密发到这里。明天财务给你报销，急。,phishing,boss_gift_cards,zh
+"早，财务部通知：供应商华盛贸易更换了收款账户。发票HS-2024-0771（金额186,500元）请今日汇至新账户 招商银行 6225 8812 3456 7890，户名 华盛贸易有限公司，并回传凭证。",phishing,invoice_new_account,zh
+【中国邮政】您的包裹 EE123456789CN 因关税未缴（29元）滞留仓库，请致电0571-8800-1234办理派送，24小时内退回寄件人。,phishing,courier_callback_fee,zh
+顺丰速运：地址不全无法派送，请回复姓名、完整地址及身份证号码以便重新安排配送。,phishing,courier_reply_id,zh
+"国家税务总局：您有2023年度个税退税1,842元待领取，请回复姓名及身份证号码办理，3个工作日内到账。",phishing,tax_refund_reply_id,zh
+"恭喜！您的号码在华润万家月度抽奖中中奖，奖品为10,000元购物卡。请于周五前回复姓名和身份证号码领取。",phishing,prize_reply_id,zh
+在BOSS直聘看到您的简历。在家兼职，每天2-3小时，日入500-2000元。有意请回复1，HR将通过微信联系您。,phishing,job_task_opener,zh
+"您好！我是京东人力资源部的李娜。现招聘远程岗位，日结400-1500元，无需经验，年龄18-55岁。回复是""了解详情""",phishing,job_task_opener,zh
+您有1个来自 00852-9 4455 6600 的未接来电，有一条重要语音留言等待收听，请回拨。,phishing,missed_call_premium,zh
+刚给你打电话没接通。有个特别好的消息要告诉你，有空回拨 0086-950-1234-5678,phishing,ringback_premium,zh
+宝贝，我跟我的老师聊过了。你今晚存1000 USDT进去，明天的单子我们一起做。我的钱包地址：TJm9xR4nP7qL2wZ8sC1vB5yH3jD6fG0aE。之后我教你怎么提现，相信我,phishing,romance_crypto_deposit,zh
+"刘先生，您的提现128,000元因账户等级不足被冻结。补充保证金12,800元至 工商银行 6222 0212 3456 7890 户名 平台结算，1小时内解冻。等您确认。",phishing,investment_crypto_followup,zh
+"女士您好，这里是协和医院急诊科。您儿子骑摩托车出了车祸正在手术，急需24,000元手术材料费，请立即转至 建设银行 6217 0012 3456 7890。手术结束后医生会联系您。",phishing,relative_accident_money,zh
+奶奶是我，我在派出所，有点误会被抓了。别告诉我妈。需要15000保释金，我律师会跟你说，打他电话 138 4472 9910,phishing,grandchild_arrest_money,zh
+张先生您好！感谢关注朝阳区的一居室。为锁定周六看房，需先付定金2000元（看房当日退还），请转账至 微信 hz_fangchan2024 或 农业银行 6228 4801 2345 6789。地平线房产,phishing,rental_deposit_fake,zh
+"【交通银行】一笔49,500元转账等待授权。非本人操作？请立即拨打021-5878-9999终止交易！",phishing,bank_callback_vishing,zh
+"Anne ben, telefonum düştü kırıldı, bu yeni numaram kaydet. Sonra sana bir şey anlatacağım",phishing,family_new_number,tr
+"Baba ben Elif, arkadaşımın telefonundan yazıyorum. Bugün acil 8.000 TL lazım, şu IBAN'a atabilir misin TR33 0006 1005 1978 6457 8413 26, sonra anlatırım. Arama, şarjım yok",phishing,family_urgent_payment,tr
+"Merhaba, Garanti BBVA Dolandırıcılık Birimi'nden arıyoruz. 4417 ile biten kartınızdan Trendyol'da 12.990 TL harcama tespit edildi. İşlem size ait değilse 2 saat içinde 0212 334 88 20'yi arayın.",phishing,bank_callback_vishing,tr
+ZİRAAT BANKASI: Kartınız şüpheli işlemler nedeniyle bloke edilmiştir. Blokeyi kaldırmak için 24 saat içinde 0312 584 20 00'ı arayınız.,phishing,bank_card_blocked_callback,tr
+Yapı Kredi: Kimlik bilgileriniz güncellenmediği için internet bankacılığınız bu gece kapatılacaktır. Kapanmaması için bugün 0850 222 04 44'ü arayın.,phishing,account_block_callback,tr
+"İyi günler, Turkcell teknik destekten Mehmet ben. Kimlik doğrulaması için az önce telefonunuza 6 haneli bir kod gönderdik. İşleme devam etmek için kodu buraya yazabilir misiniz?",phishing,otp_relay_fake_support,tr
+kanka telefonuna kod geldi mi? yanlışlıkla kendi numaram yerine seninkini yazdım haha at bana hemen,phishing,otp_relay_friend,tr
+Vodafone: Kimlik doğrulaması eksik olduğundan hattınız 48 saat içinde kapatılacaktır. Kapanmayı önlemek için 0850 542 05 42'yi arayın. 7/24 hizmet.,phishing,sim_kyc_block_callback,tr
+Türk Telekom: Hattınız için SIM kart değişim talebi alındı. Talep size ait değilse hemen 0212 909 44 44'ü arayarak iptal edin. Süre 2 saat.,phishing,sim_swap_callback,tr
+"Selam, ben Ahmet Bey (Genel Müdür). Toplantıdayım arayamıyorum. Müşteriler için 5 adet 1.000 TL'lik Google Play hediye kartı al, kodları buraya gönder. Yarın muhasebeden alırsın. Acil.",phishing,boss_gift_cards,tr
+"Günaydın, Muhasebe. Tedarikçi Yılmaz İnşaat banka hesabını değiştirdi. 2024-0558 nolu fatura (486.000 TL) bugün yeni IBAN'a ödenecek: TR12 0001 0009 0012 3456 7890 01. Dekontu iletin.",phishing,invoice_new_account,tr
+"PTT: 1234567890 nolu kargonuz gümrük vergisi (29,90 TL) ödenmediği için depoda bekliyor. Teslimat için 0850 800 12 34'ü arayın. 24 saat içinde iade edilecektir.",phishing,courier_callback_fee,tr
+"Yurtiçi Kargo: Adres eksik olduğundan teslimat yapılamadı. Yeniden teslimat için ad soyad, tam adres ve TC kimlik numaranızı bu mesaja yanıt olarak gönderin.",phishing,courier_reply_id,tr
+Gelir İdaresi Başkanlığı: 2023 yılına ait 3.842 TL vergi iadeniz bulunmaktadır. 3 iş günü içinde ödeme için ad soyad ve TC kimlik numaranızı yanıtlayın.,phishing,tax_refund_reply_id,tr
+TEBRİKLER! Numaranız Migros aylık çekilişinde kazandı. Ödül: 10.000 TL alışveriş çeki. Cuma gününe kadar ad soyad ve TC kimlik numaranızı yanıtlayın.,phishing,prize_reply_id,tr
+"Kariyer sitesinde CV'nizi gördük. Evden çalışma, günde 2-3 saat, günlük 1.500-6.000 TL kazanç. İlgileniyorsanız 1 yazın, İK uzmanımız WhatsApp'tan ulaşsın.",phishing,job_task_opener,tr
+"Merhaba! Ben Hepsiburada İK'dan Zeynep. Uzaktan görevler için personel arıyoruz, günlük ödeme 1.200-5.000 TL, deneyim şartı yok, 18-60 yaş. Detay için EVET yazın.",phishing,job_task_opener,tr
+0900 123 45 67 numarasından 1 cevapsız çağrınız var. Önemli bir sesli mesajınız bekliyor. Dinlemek için geri arayın.,phishing,missed_call_premium,tr
+"az önce aradım açmadın. sana çok güzel bir haberim var, müsait olunca 0900 555 12 34'ü ara",phishing,ringback_premium,tr
+"Aşkım danışmanımla konuştum. Bu gece 1.000 USDT yatırırsan yarınki işleme beraber giriyoruz. Cüzdanım: TLm7xR4nP9qK2wZ8sC1vB5yH3jD6fG0aE. Sonra çekimi gösteririm, bana güven",phishing,romance_crypto_deposit,tr
+"Mustafa Bey, 285.000 TL'lik çekiminiz vergi onayı nedeniyle bekliyor. 28.500 TL teminatı TR56 0004 6000 1288 8000 1234 56'ya gönderirseniz 1 saat içinde serbest bırakılır. Onayınızı bekliyorum.",phishing,investment_crypto_followup,tr
+"Hanımefendi, Cerrahpaşa Acil'den arıyorum. Oğlunuz motosiklet kazası geçirdi, ameliyatta. Ameliyat malzemesi için hemen 45.000 TL gerekiyor. TR89 0001 5001 5800 7300 1234 56'ya gönderin. Doktor sonra sizi arayacak.",phishing,relative_accident_money,tr
+"babaanne ben, karakoldayım, yanlış anlaşılma oldu gözaltına aldılar. anneme söyleme. kefalet için 25.000 TL lazım, avukatım anlatacak, 0544 472 99 10'u ara",phishing,grandchild_arrest_money,tr
+"Merhaba Burak Bey! Kadıköy'deki 1+1 daireye ilginiz için teşekkürler. Cumartesi randevusunu kesinleştirmek için 2.000 TL kapora istiyoruz (yerinde iade). IBAN TR22 0011 1000 0000 0012 3456 78. Saygılar, Ufuk Emlak",phishing,rental_deposit_fake,tr
+AKBANK: 49.500 TL'lik işlem onay bekliyor. Siz yapmadıysanız HEMEN 0212 377 88 00'ı arayıp durdurun!,phishing,bank_callback_vishing,tr
+"Мам, это я. Телефон уронил, разбился, пишу с нового номера, сохрани. Потом расскажу кое-что",phishing,family_new_number,ru
+"Пап, это Катя с телефона подруги. Срочно нужно 25 000 до вечера, переведи пожалуйста по СБП на +7 916 445 72 10 (Сбер), потом объясню. Не звони, батарея села",phishing,family_urgent_payment,ru
+"Здравствуйте, служба безопасности Сбербанка. По вашей карте с окончанием 4417 зафиксирована покупка в Ozon на 48 990 руб. Если операцию совершали не вы, позвоните в течение 2 часов по номеру 8 495 221 80 90.",phishing,bank_callback_vishing,ru
+ТИНЬКОФФ: ваша карта заблокирована из-за подозрительных операций. Для разблокировки позвоните по номеру 8 800 555 21 10 в течение 24 часов.,phishing,bank_card_blocked_callback,ru
+ВТБ: ваш доступ в онлайн-банк будет приостановлен из-за непройденной идентификации. Во избежание закрытия счёта позвоните сегодня по номеру 8 495 777 24 50.,phishing,account_block_callback,ru
+"Добрый день, это Алексей, техподдержка МТС. Мы только что отправили вам 6-значный код для подтверждения личности. Напишите его сюда, пожалуйста, чтобы продолжить оформление.",phishing,otp_relay_fake_support,ru
+слушай тебе код пришёл? я случайно твой номер вбил вместо своего ахах скинь быстро,phishing,otp_relay_friend,ru
+"Билайн: ваша SIM-карта будет отключена через 48 часов из-за неподтверждённых паспортных данных. Чтобы избежать отключения, позвоните 8 800 700 06 11. Круглосуточно.",phishing,sim_kyc_block_callback,ru
+"МегаФон: на ваш номер оформлен запрос на перевыпуск SIM-карты. Если это не вы, срочно позвоните 8 495 502 55 00 для отмены. Срок — 2 часа.",phishing,sim_swap_callback,ru
+"Привет, это Сергей Петрович. На совещании весь день, звонить не могу. Купи 5 подарочных карт Apple по 5000 руб для партнёров и пришли коды сюда. Завтра бухгалтерия компенсирует. Срочно.",phishing,boss_gift_cards,ru
+"Доброе утро, бухгалтерия. Поставщик ООО Стройресурс сменил реквизиты. Счёт №558 от 12.03 (1 236 000 руб.) оплатить сегодня на новый р/с 40702810900000012345 в АО Альфа-Банк, БИК 044525593. Платёжку пришлите.",phishing,invoice_new_account,ru
+Почта России: посылка RB123456789RU задержана на складе из-за неоплаченной таможенной пошлины (299 руб.). Для доставки позвоните 8 809 505 12 34. Возврат отправителю через 24 часа.,phishing,courier_callback_fee,ru
+"СДЭК: доставка не выполнена, адрес неполный. Ответьте на это сообщение ФИО, полным адресом и серией и номером паспорта для повторной доставки.",phishing,courier_reply_id,ru
+ФНС России: вам положен налоговый вычет за 2023 год в размере 18 420 руб. Для перечисления ответьте ФИО и номером ИНН в течение 3 дней.,phishing,tax_refund_reply_id,ru
+"ПОЗДРАВЛЯЕМ! Ваш номер выбран в ежемесячном розыгрыше Пятёрочки. Приз — сертификат на 100 000 руб. Ответьте ФИО и серией паспорта до пятницы, чтобы получить.",phishing,prize_reply_id,ru
+"Увидели ваше резюме на Хедхантере. Удалённая работа 2-3 часа в день, доход 5 000–20 000 руб. в день. Интересно? Ответьте 1, и наш HR свяжется с вами в Telegram.",phishing,job_task_opener,ru
+"Здравствуйте! Я Марина из отдела кадров Wildberries. Набираем сотрудников на удалённые задания, оплата ежедневно 4 000–15 000 руб., без опыта, 18–60 лет. Напишите ДА для подробностей.",phishing,job_task_opener,ru
+"У вас 1 пропущенный вызов с номера 8 809 100 20 30. Вас ожидает важное голосовое сообщение. Перезвоните, чтобы прослушать.",phishing,missed_call_premium,ru
+"звонил тебе только что, сорвалось. есть очень хорошая новость для тебя, перезвони на 8 809 555 12 34 как сможешь",phishing,ringback_premium,ru
+"Любимая, поговорил со своим аналитиком. Если внесёшь сегодня 1000 USDT, завтра заходим в сделку вместе. Мой кошелёк: TRm9xK4nP7qL2wZ8sC1vB5yH3jD6fG0aE. Потом покажу, как выводить, доверься мне",phishing,romance_crypto_deposit,ru
+"Дмитрий, ваш вывод 1 280 000 руб. заморожен до оплаты налога. Внесите 128 000 руб. по СБП на +7 903 112 44 90 (Райффайзен), и средства разблокируются в течение часа. Жду подтверждения.",phishing,investment_crypto_followup,ru
+"Женщина, вас беспокоят из приёмного отделения Склифосовского. Ваш сын попал в аварию на мотоцикле, сейчас на операции. Срочно нужно 240 000 руб. на расходные материалы. Перевод на карту 2202 2003 4455 6677. Врач перезвонит после.",phishing,relative_accident_money,ru
+"бабушка это я, я в отделении полиции, задержали по недоразумению. маме не говори. нужно 150 000 на залог, адвокат всё объяснит, позвони ему 8 916 447 29 91",phishing,grandchild_arrest_money,ru
+"Здравствуйте, Андрей! Спасибо за интерес к однушке на Ленинском. Чтобы закрепить показ в субботу, просим залог 5 000 руб. переводом (вернём на месте). СБП +7 925 221 88 70, Сбер. С уважением, АН Горизонт",phishing,rental_deposit_fake,ru
+ГАЗПРОМБАНК: перевод на 495 000 руб. ожидает подтверждения. Не вы? НЕМЕДЛЕННО позвоните 8 495 913 74 74 и остановите операцию!,phishing,bank_callback_vishing,ru
+"Ma ako to, nahulog cp ko nabasag, eto bago kong number save mo. May ikukwento ako sayo mamaya",phishing,family_new_number,tl
+"Pa si Angel to, cp ng kaibigan ko gamit ko. Kailangan ko ng 8,500 ngayon talaga, pa-GCash po sa 0917 884 2210 (Angel R.), paliwanag ko mamaya. Wag tumawag, lowbat na",phishing,family_urgent_payment,tl
+"Magandang hapon, ito po ang BDO Fraud Department. May nakitang transaksyon na PHP 24,890 sa Lazada gamit ang card ninyo ending 4417. Kung hindi kayo ang gumawa, tumawag sa (02) 8631 8000 sa loob ng 2 oras.",phishing,bank_callback_vishing,tl
+BPI: Na-block ang inyong debit card dahil sa kahina-hinalang transaksyon. Para ma-unblock tumawag sa (02) 8889 1000 sa loob ng 24 oras.,phishing,bank_card_blocked_callback,tl
+"GCash: Ma-dedeactivate ang account mo ngayong gabi dahil hindi pa fully verified. Para hindi ma-close, tumawag na sa (02) 7730 2882 ngayon.",phishing,account_block_callback,tl
+"Hi po, si Jerome ito ng Globe customer care. Nagpadala po kami ng 6-digit code sa number ninyo para sa verification. Pwede po bang i-send niyo dito yung code para matuloy natin?",phishing,otp_relay_fake_support,tl
+bro may dumating bang code sa cp mo? nalagay ko number mo imbes na akin haha send mo sakin dali,phishing,otp_relay_friend,tl
+"Smart: Mapuputol ang inyong SIM sa loob ng 48 oras dahil hindi kumpleto ang SIM registration. Para maiwasan, tumawag sa 1-800-10-888-1111. 24/7.",phishing,sim_kyc_block_callback,tl
+"DITO: May request na SIM replacement para sa number mo. Kung hindi ikaw, tumawag kaagad sa (02) 8333 4444 para i-cancel. 2 oras lang ang palugit.",phishing,sim_swap_callback,tl
+"Hello, si Sir Mark ito (GM). Nasa meeting ako buong araw, di makatawag. Pabili ng 5 Steam gift cards na 2,500 each para sa clients tapos send mo codes dito. Reimburse ko bukas. Urgent ha.",phishing,boss_gift_cards,tl
+"Good morning, Accounting here. Nagpalit ng bank ang supplier na Santos Hardware. Invoice INV-2024-0558 (PHP 186,500) bayaran today sa bagong account: Metrobank 123-4-56789012-3, Santos Hardware Trading. Send proof pagkatapos.",phishing,invoice_new_account,tl
+PHLPost: Ang parcel ninyo RR123456789PH ay naka-hold dahil sa hindi bayad na customs fee (PHP 99). Tumawag sa (02) 8527 0108 para sa delivery. Ibabalik sa sender sa 24 oras.,phishing,courier_callback_fee,tl
+"J&T Express: Hindi na-deliver, kulang ang address. I-reply ang buong pangalan, kumpletong address at government ID number para ma-reschedule.",phishing,courier_reply_id,tl
+"BIR: May refund kayong PHP 8,420 para sa taxable year 2023. I-reply ang buong pangalan at TIN para ma-release sa loob ng 3 working days.",phishing,tax_refund_reply_id,tl
+"CONGRATULATIONS! Napili ang number mo sa SM Supermalls monthly raffle. Premyo: PHP 100,000 gift certificate. I-reply ang pangalan at government ID number bago mag-Biyernes para ma-claim.",phishing,prize_reply_id,tl
+"Nakita namin ang resume mo sa JobStreet. Work from home 2-3 oras/araw, kita PHP 2,000-8,000 per day. Interested? Reply 1 at tatawag ang HR namin sa WhatsApp.",phishing,job_task_opener,tl
+"Hi! Ako si Joy ng HR ng Shopee Philippines. Hiring kami ng remote staff, daily pay PHP 1,500-6,000, no experience needed, 18-55 y/o. Reply YES para sa details.",phishing,job_task_opener,tl
+May 1 missed call ka mula sa +675 7244 5566. May importanteng voice message na naghihintay. Tumawag pabalik para pakinggan.,phishing,missed_call_premium,tl
+"tumawag ako kanina pero naputol. may sobrang gandang balita ako sayo, tawagan mo ko sa 1-900-555-1234 pag free ka",phishing,ringback_premium,tl
+"Babe nakausap ko na advisor ko. Kung mag-deposit ka ng 1,000 USDT tonight sabay tayo sa trade bukas. Wallet ko: TPm8xR4nK7qL2wZ9sC1vB5yH3jD6fG0aE. Tuturuan kita mag-withdraw after, trust me",phishing,romance_crypto_deposit,tl
+"Sir Carlo, naka-hold ang withdrawal mo na PHP 285,000 dahil hindi pa VIP ang account. Deposit ng PHP 28,500 sa GCash 0945 118 2290 (Finance Release) at ma-release sa loob ng 1 oras. Hintay ko confirm mo.",phishing,investment_crypto_followup,tl
+"Ma'am, tumatawag po mula PGH Emergency. Naaksidente po ang anak ninyo sa motor at nasa operasyon. Kailangan po ng PHP 45,000 ngayon para sa surgical supplies. GCash 0917 229 1044. Tatawag po ang doktor pagkatapos.",phishing,relative_accident_money,tl
+"lola ako to, nasa presinto ako, nahuli dahil sa misunderstanding. wag mo sabihin kay mama. kailangan ko 25,000 para sa piyansa, abogado ko magpapaliwanag, tawagan mo 0918 447 2991",phishing,grandchild_arrest_money,tl
+"Hi Sir Paulo! Salamat sa interest sa studio unit sa Makati. Para ma-reserve ang viewing sa Sabado humihingi kami ng PHP 2,000 reservation fee (refundable on site). GCash 0956 221 8870 Horizon Realty. Thank you!",phishing,rental_deposit_fake,tl
+"UNIONBANK: May transaksyon na PHP 49,500 na naghihintay ng approval. HINDI IKAW? Tumawag NGAYON sa (02) 8841 8600 para pigilan!",phishing,bank_callback_vishing,tl
+"엄마 나야, 폰 떨어뜨려서 액정 깨졌어. 이거 새 번호니까 저장해줘. 나중에 할 얘기 있어",phishing,family_new_number,ko
+"아빠 나 지민이야 친구 폰으로 보내. 오늘 안에 80만원 급하게 필요해, 국민은행 123456-04-567890 (김지민) 으로 보내줘 나중에 설명할게. 전화는 하지마 배터리 없어",phishing,family_urgent_payment,ko
+"안녕하세요, 신한카드 부정사용감시센터입니다. 고객님 카드(끝번호 4417)로 쿠팡에서 489,000원 결제가 확인되었습니다. 본인 거래가 아니시면 2시간 이내 02-6271-8820으로 연락 주세요.",phishing,bank_callback_vishing,ko
+[KB국민은행] 고객님의 체크카드가 의심 거래로 정지되었습니다. 해제를 원하시면 24시간 이내 1588-0099로 전화 주시기 바랍니다.,phishing,bank_card_blocked_callback,ko
+우리은행: 고객확인(KYC) 미완료로 금일 자정 인터넷뱅킹이 중단됩니다. 계속 이용을 원하시면 02-2002-3000으로 오늘 중 연락 바랍니다.,phishing,account_block_callback,ko
+SKT 고객센터 박민수입니다. 본인 확인을 위해 방금 고객님 휴대폰으로 6자리 인증번호를 보내드렸습니다. 처리를 진행하려면 번호를 여기에 답장해 주세요.,phishing,otp_relay_fake_support,ko
+야 너 지금 인증번호 왔어? 내 번호 대신 네 번호 잘못 넣었다 ㅋㅋㅋ 빨리 보내줘,phishing,otp_relay_friend,ko
+[KT] 본인 인증 미완료로 48시간 내 고객님의 유심이 정지됩니다. 정지 방지는 080-700-1122 (24시간)로 연락 주세요.,phishing,sim_kyc_block_callback,ko
+LG U+: 고객님 번호로 유심 재발급 신청이 접수되었습니다. 본인이 아니시면 즉시 02-5990-2211로 연락하여 취소하세요. 처리 기한 2시간.,phishing,sim_swap_callback,ko
+"김대리, 나 이부장이야. 종일 회의라 전화 못해. 거래처 선물용으로 구글플레이 기프트카드 10만원권 5장 사서 코드 여기로 보내줘. 내일 법인카드로 정산해줄게. 급해.",phishing,boss_gift_cards,ko
+"경리부입니다. 거래처 (주)한솔상사 입금 계좌가 변경되었습니다. 세금계산서 2024-0558 (12,360,000원) 금일 내 신계좌 하나은행 321-910123-45607 (주)한솔상사 로 송금 후 이체확인증 회신 바랍니다.",phishing,invoice_new_account,ko
+"[우체국택배] 등기번호 1234-5678-9012 소포가 관세 미납(2,990원)으로 보관 중입니다. 배송 처리는 1588-1300으로 전화 주세요. 24시간 내 반송됩니다.",phishing,courier_callback_fee,ko
+"CJ대한통운: 주소 불명으로 배송이 불가합니다. 재배송을 위해 성함, 상세 주소, 주민등록번호를 이 문자에 답장해 주세요.",phishing,courier_reply_id,ko
+"국세청: 2023년 귀속 환급금 384,200원이 미수령 상태입니다. 수령을 위해 성함과 주민등록번호를 답장해 주세요. 3영업일 내 입금됩니다.",phishing,tax_refund_reply_id,ko
+축하합니다! 고객님 번호가 이마트 월간 추첨에 당첨되셨습니다. 상품: 100만원 상품권. 금요일까지 성함과 주민등록번호를 답장해 주세요.,phishing,prize_reply_id,ko
+"사람인에서 이력서 확인했습니다. 재택 근무, 하루 2~3시간, 일당 15~60만원. 관심 있으시면 1 답장 주세요. 담당자가 카카오톡으로 연락드립니다.",phishing,job_task_opener,ko
+"안녕하세요! 쿠팡 인사팀 최수진입니다. 재택 단순 업무 직원을 모집합니다. 일당 20~80만원 당일 지급, 경력 무관, 20~60세. 자세한 내용은 '네' 라고 답장해 주세요.",phishing,job_task_opener,ko
+060-800-1234 번호에서 부재중 전화 1건이 있습니다. 중요한 음성 메시지가 도착했습니다. 회신 전화로 확인하세요.,phishing,missed_call_premium,ko
+"방금 전화했는데 안 받네. 너한테 진짜 좋은 소식 있어, 시간 되면 060-900-5512 로 전화해",phishing,ringback_premium,ko
+"자기야 내 어드바이저랑 얘기했어. 오늘 밤 1,000 USDT 입금하면 내일 거래 같이 들어갈 수 있어. 내 지갑 주소: TKm8xR3nP7qL2wZ9sC1vB5yH4jD6fG0aE. 나중에 출금 방법 알려줄게, 나 믿어",phishing,romance_crypto_deposit,ko
+"박성호님, 출금액 12,800,000원이 세금 확인으로 보류 중입니다. 보증금 1,280,000원을 카카오뱅크 3333-01-2345678 (트레이드서포트) 로 입금하시면 1시간 내 해제됩니다. 확인 기다리겠습니다.",phishing,investment_crypto_followup,ko
+"어머님, 서울대병원 응급실입니다. 아드님이 오토바이 사고로 수술 중입니다. 수술 재료비 240만원이 지금 바로 필요합니다. 농협 302-1234-5678-91 로 입금해 주세요. 수술 후 담당 의사가 연락드립니다.",phishing,relative_accident_money,ko
+"할머니 나야, 지금 경찰서야, 오해가 있어서 잡혀왔어. 엄마한테는 말하지 마. 보석금 150만원 필요해, 변호사가 설명해줄 거야, 010-4472-9910 으로 전화해",phishing,grandchild_arrest_money,ko
+이준호님 안녕하세요! 마포 원룸에 관심 가져주셔서 감사합니다. 토요일 방문 예약 확정을 위해 예약금 20만원 입금 부탁드립니다 (현장 환불). 신한 110-123-456789 호라이즌부동산. 감사합니다,phishing,rental_deposit_fake,ko
+"[NH농협] 4,950,000원 이체가 승인 대기 중입니다. 본인이 아니시면 지금 즉시 1661-3000 으로 전화하여 거래를 중단하세요!",phishing,bank_callback_vishing,ko

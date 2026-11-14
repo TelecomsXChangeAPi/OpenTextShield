@@ -4,7 +4,7 @@
 </picture>
 
 
-**Open-source spam and phishing detection for SMS, in many languages.**
+**Open-source spam and phishing detection for SMS. Built on a 104-language model and trained on messages in 20 languages.**
 
 OpenTextShield is a compact classifier (a fine-tuned multilingual BERT, about 180M parameters) that labels a text message as `ham`, `spam` or `phishing` in around 150 ms on a small CPU instance. It is used by telecom carriers to screen live SMS traffic and protect subscribers in real networks. It runs on your own servers as a REST API, an SMPP proxy in front of your SMSC, or both. No third-party AI service is involved.
 
@@ -58,7 +58,7 @@ curl -X POST "http://localhost:8002/predict/" \
   "processing_time": 0.145,
   "model_info": {
     "name": "OTS_mBERT",
-    "version": "2.7",
+    "version": "2.12",
     "architecture": "bert-base-multilingual-cased",
     "author": "TelecomsXChange (TCXC)"
   }
@@ -94,16 +94,17 @@ Loaded this way you get the raw model without the API's text normalisation; appl
 
 ## How well it works
 
-Current model is **2.7**. Numbers below are from [`evals/REPORT.md`](evals/REPORT.md), measured through the same text normalisation the API applies.
+Current model is **2.12**, trained and labeled entirely in-house. Numbers below are measured through the same text normalisation the API applies; per-class results are in [`evals/results/RELEASE_NOTES_v2.12.0.md`](evals/results/RELEASE_NOTES_v2.12.0.md).
 
-| Benchmark | Messages | Block rate | Phishing recall |
-|---|---|---|---|
-| UCI SMS Spam Collection (classic spam) | 5,574 | 99.5% | n/a (no phishing class) |
-| Mishra & Soni SMS phishing | 5,971 | 99.3% | 6.1% |
-| IMC 2025 smishing (modern, multilingual) | 8,007 | 72.4% | 45.7% |
-| In-house adversarial suite | 127 | 96.9% | 80.6% |
+| Benchmark | Messages | Accuracy | Block accuracy | Phishing recall |
+|---|---|---|---|---|
+| UCI SMS Spam Collection (classic spam) | 5,574 | 94.0% | 98.6% | n/a (no phishing class) |
+| Mishra & Soni SMS phishing | 5,971 | 94.5% | 98.2% | 65.4% |
+| IMC 2025 smishing (modern, multilingual, attacks only) | 8,005 | 70.2% | 75.6% | 71.9% |
+| Hard legitimate notices | 40 | 100% | 100% | n/a |
+| Hand-written bench | 100 | 98.0% | 99.0% | 97.0% |
 
-"Block rate" counts a spam or phishing message as blocked whichever of the two labels it received. UCI and Mishra & Soni overlap the training corpus and serve as regression gates; IMC 2025 is the most independent signal. Full method, caveats and the v2.5 to 2.7 comparison are in the report; release notes for the platform are in [`evals/results/`](evals/results/).
+"Block accuracy" counts a spam or phishing message as blocked whichever of the two labels it received, and a legitimate message as passed. Prize and premium-rate lures are labelled phishing under [`docs/LABELING_GUIDE.md`](docs/LABELING_GUIDE.md), which is why three-class accuracy on UCI and Mishra & Soni sits below block accuracy. Texts from these sets are excluded from the 2.12 training set, but 2.12 starts from earlier weights that were trained on a corpus overlapping UCI and Mishra & Soni, so IMC 2025 is the most independent signal. What changed in each model version is in the [model changelog](src/mBERT/training/model-training/CHANGELOG.md).
 
 ## Deploying
 
@@ -122,7 +123,7 @@ Configuration is by environment variables with the `OTS_` prefix. The ones peopl
 | `OTS_MAX_BATCH_SIZE` / `OTS_BATCH_WAIT_MS` | `64` / `50` | Dynamic batcher limits |
 | `OTS_USE_FP16` | `true` | Half precision on CUDA (ignored on CPU) |
 | `OTS_AUDIT_ENABLED` | `true` | Write classification audit logs to `audit_logs/` |
-| `OTS_MBERT_MODEL_PATH` | bundled 2.7 | Load a different `.pth`, for example to roll back |
+| `OTS_MBERT_MODEL_PATH` | bundled 2.12 | Load a different `.pth`, for example to roll back |
 | `OTS_LOG_LEVEL` | `INFO` | Logging verbosity |
 
 Sizing guidance for a 25 messages-per-second deployment is in [`docs/HARDWARE_SPEC_SHEET_25TPS.md`](docs/HARDWARE_SPEC_SHEET_25TPS.md).

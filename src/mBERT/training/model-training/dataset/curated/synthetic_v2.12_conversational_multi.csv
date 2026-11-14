@@ -1,0 +1,375 @@
+text,label,category,language
+"Tío te hice el bizum de los 23 de la cena, mira a ver si te ha llegado q la app me va fatal hoy",ham,payment_sent_check,es
+mamá cuánto era lo del comedor del cole? dime la cifra exacta q lo pago ahora desde el banco,ham,school_fee,es
+"Pásame el IBAN anda, q te debo lo de las entradas del Primavera desde mayo jajaja",ham,ask_account_number,es
+Me han bloqueado la tarjeta otra vez por movimiento sospechoso. Era yo comprando un bocata en Lisboa. Qué rabia de verdad,ham,card_blocked,es
+cual es la clave del wifi de tu casa?? la del router no va,ham,wifi_password,es
+"Cari léeme el código q te acaba de llegar del BBVA, estoy en tu móvil pagando la luz",ham,spouse_reads_code,es
+"JAJAJA me ha tocado el jamón del sorteo de la oficina. Cena en casa el sábado, traed vino",ham,office_raffle,es
+"Hola, vi tu anuncio de la bici en Wallapop. Sigue disponible? Te doy 280 y la recojo hoy mismo en Chamberí",ham,marketplace_buyer,es
+"Hola Marta, soy Jorge el casero. La fianza te la devuelvo el día 5, en cuanto me manden el certificado de la comunidad. Un saludo",ham,landlord_tenant,es
+"a ti te ha entrado la nómina? a mí sí pero falta el plus de transporte, se lo digo a Rosa de RRHH?",ham,payroll_chat,es
+El de Correos dejó tu paquete con la vecina del 3ºB. Pásate cuando llegues q ella se va a las 8,ham,parcel_neighbour,es
+"Siento mucho lo de tu abuela, Carlos. Si necesitas cualquier cosa estos días aquí estoy. Un abrazo enorme",ham,condolence,es
+entonces sábado qué?? yo me apunto a lo q sea menos otro escape room por favor te lo pido,ham,group_planning,es
+"Me lo pasé muy bien ayer :) si te apetece repetimos la semana q viene, conozco un sitio de ramen brutal",ham,dating_smalltalk,es
+"Che, pasame tu alias de Mercado Pago q te mando lo del asado, son 8 lucas cada uno",ham,split_bill,es
+"Me ha salido a devolver la renta, 340€!! invito yo a las cañas el viernes",ham,tax_refund_chat,es
+"Puse 20 pa el regalo de jubilación de Paco, falta gente todavía. Quien no haya puesto q me lo diga",ham,gift_collection,es
+"Mano te mandei o pix dos 45 da pizza, dá uma olhada aí pq meu app travou bem na hora",ham,payment_sent_check,pt
+"Filha, a mensalidade do Theo veio 890 esse mês ou tô vendo errado? me manda o boleto pra eu pagar",ham,school_fee,pt
+Qual tua chave pix? CPF ou celular? te devolvo os 80 do uber agora antes q eu esqueça de novo kkkk,ham,ask_account_number,pt
+"bloquearam meu cartão achando q era golpe, era eu comprando pão na padaria. q saco, agora tenho q ligar pro banco",ham,card_blocked,pt
+qual a senha do wifi daqui?? a q tá colada no roteador não pega,ham,wifi_password,pt
+"Amor lê pra mim o código q o Nubank te mandou agora, to logado no teu celular pagando o boleto da luz",ham,spouse_reads_code,pt
+"GENTE ganhei a airfryer na rifa do escritório kkkkkk churrasco em casa domingo, cada um traz uma carne",ham,office_raffle,pt
+"Oi, vi o anúncio da bike na OLX. Ainda tem? Faço 750 e busco hoje em Pinheiros",ham,marketplace_buyer,pt
+"Boa tarde Dona Lúcia, aqui é o Rafael do 302. O aluguel cai dia 10 como sempre, só confirmando se continua 1.800",ham,landlord_tenant,pt
+"já caiu o salário de vcs? o meu caiu mas veio sem o VR, vou falar com o RH amanhã",ham,payroll_chat,pt
+"O moço da entrega deixou tua encomenda com a vizinha do 4, a Dona Célia. Passa lá quando chegar",ham,parcel_neighbour,pt
+"Meus sentimentos pela sua avó, Pedro. Qualquer coisa q precisar é só chamar. Um abraço apertado",ham,condolence,pt
+e aí sábado rola o q? to dentro de tudo menos escape room de novo pelo amor de deus,ham,group_planning,pt
+"Ó, mandei-te 20€ por MB Way para a prenda da Rita, vê lá se recebeste. Bjs",ham,gift_collection,pt
+"Pai, a Dona Rosa do 1º andar faleceu ontem. O velório é amanhã às 10 na capela do Araçá",ham,family_chat,pt
+"Saiu meu FGTS!! vou quitar o cartão e sobra uns 600, vamo naquele rodízio?",ham,money_chat,pt
+"Amiga a conta do bar deu 312, dividindo por 4 dá 78 cada. Me manda qdo puder sem pressa",ham,split_bill,pt
+"Jtai fait un Lydia de 32€ pour le resto d'hier, dis moi si c'est passé",ham,payment_sent_check,fr
+Maman c'est combien la cantine ce mois-ci ? jfais le virement ce soir,ham,school_fee,fr
+"Envoie moi ton RIB stp, jte rembourse les billets de train. Ça fait 3 semaines que je dis que je le fais mdr",ham,ask_account_number,fr
+ma CB a encore été bloquée pour opération suspecte… c'était moi qui achetais un sandwich à Lisbonne. Relou,ham,card_blocked,fr
+C'est quoi le code wifi chez toi ? celui sur la box marche pas,ham,wifi_password,fr
+"Chéri lis moi le code que la Société Générale vient de t'envoyer, je suis connectée sur ton tel pour payer l'EDF",ham,spouse_reads_code,fr
+"J'ai gagné le panier gourmand à la tombola du CE mdr, y a du foie gras. Apéro chez moi samedi",ham,office_raffle,fr
+"Bonjour, je vous contacte pour le vélo sur Leboncoin. Toujours dispo ? Je peux passer ce soir vers 19h, 280€ ça irait ?",ham,marketplace_buyer,fr
+"Bonjour Mme Lefèvre, c'est votre propriétaire. Je vous rends la caution le 5 dès réception du décompte du syndic. Bonne journée",ham,landlord_tenant,fr
+"Vous avez eu votre paie ? moi oui mais il manque la prime de transport, pareil pour vous ?",ham,payroll_chat,fr
+"Le facteur a laissé ton colis chez la voisine du 3e, Mme Diallo. Passe le récupérer en rentrant",ham,parcel_neighbour,fr
+"Je suis vraiment désolé pour ta grand-mère, Karim. Si t'as besoin de quoi que ce soit je suis là. Je t'embrasse fort",ham,condolence,fr
+on fait quoi samedi ?? jsuis chaud pour tout sauf un escape game encore pitié,ham,group_planning,fr
+"J'ai passé une super soirée hier :) si tu veux on remet ça la semaine pro, je connais un ramen de fou",ham,dating_smalltalk,fr
+"jsuis en retard, le métro est bloqué à Châtelet, commande ma pinte je te la paie",ham,logistics_late,fr
+Papa c'est quoi déjà le code de la porte de l'immeuble ? jsuis devant avec les courses,ham,family_chat,fr
+"J'ai vendu la poussette sur Vinted, 60 balles. Ça paie le resto de dimanche avec tes parents",ham,money_chat,fr
+"Hab dir die 23€ fürs Essen gestern per PayPal geschickt, guck mal ob's da ist",ham,payment_sent_check,de
+Mama wie viel war das Schulgeld diesen Monat nochmal? überweis ich gleich,ham,school_fee,de
+"Schick mir mal deine IBAN, ich zahl dir die Konzertkarten zurück. Sag ich seit 3 Wochen, ich weiß lol",ham,ask_account_number,de
+meine karte wurde schon wieder gesperrt wegen verdächtiger buchung. war ich beim bäcker in lissabon. nervt so,ham,card_blocked,de
+Wie ist nochmal euer WLAN Passwort? das vom Router geht nicht,ham,wifi_password,de
+"Schatz lies mir mal die TAN vor, die die Sparkasse dir grad geschickt hat. Bin auf deinem Handy und zahl die Stromrechnung",ham,spouse_reads_code,de
+"Hab bei der Büro-Tombola den Präsentkorb gewonnen haha, mit Sekt und allem. Samstag bei mir",ham,office_raffle,de
+"Hallo, ich hab Ihr Rennrad auf Kleinanzeigen gesehen. Noch da? Könnte am WE vorbeikommen, 300 wäre mein Angebot",ham,marketplace_buyer,de
+"Hallo Frau Weber, hier Ihr Vermieter. Die Kaution überweise ich am 5., sobald die Abrechnung von der Hausverwaltung da ist. Schöne Grüße",ham,landlord_tenant,de
+Habt ihr euer Gehalt schon? bei mir ist es da aber ohne Fahrtkostenzuschuss. Bei euch auch?,ham,payroll_chat,de
+"Der DHL Bote hat dein Paket bei Frau Yilmaz im 3. OG gelassen, hol's ab wenn du heimkommst",ham,parcel_neighbour,de
+"Es tut mir so leid wegen deiner Oma, Jonas. Wenn du irgendwas brauchst die Tage, ich bin da. Fühl dich gedrückt",ham,condolence,de
+was machen wir samstag?? ich bin für alles zu haben außer nochmal escape room bitte,ham,group_planning,de
+"War echt schön gestern :) wenn du magst wiederholen wir das nächste Woche, ich kenn nen krassen Ramen Laden",ham,dating_smalltalk,de
+"Miete für November ist raus, ist die angekommen? Nebenkostenabrechnung schick ich dir morgen per Mail",ham,rent_transfer,de
+Kannst du mir 50 leihen bis Freitag? Mein Gehalt kommt erst am 28. und ich muss noch tanken,ham,lend_payback,de
+"Steuerbescheid ist da, 410€ zurück :D davon gibt's neue Winterreifen",ham,tax_refund_chat,de
+"Ti ho fatto il bonifico dei 30€ per la cena, controlla se è arrivato che l'app oggi fa i capricci",ham,payment_sent_check,it
+Mamma quant'è la retta della mensa questo mese? la pago io adesso che sono in banca,ham,school_fee,it
+"Mandami l'IBAN che ti ridò i soldi dei biglietti, sono due settimane che dico che te li do ahah",ham,ask_account_number,it
+mi hanno bloccato la carta di nuovo per operazione sospetta. ero io che compravo il pane a Lisbona. che palle,ham,card_blocked,it
+qual è la password del wifi?? quella sul router non funziona,ham,wifi_password,it
+"Amore leggimi il codice che ti ha appena mandato Intesa, sono dentro col tuo telefono per pagare l'Enel",ham,spouse_reads_code,it
+"Ho vinto il cesto alla lotteria dell'ufficio ahaha, c'è pure il panettone. Aperitivo da me sabato",ham,office_raffle,it
+"Ciao, ho visto la bici su Subito. È ancora disponibile? Posso passare stasera, 280 andrebbero bene?",ham,marketplace_buyer,it
+"Buongiorno Sig.ra Russo, sono il proprietario. La caparra gliela restituisco il 5 appena arriva il rendiconto dell'amministratore",ham,landlord_tenant,it
+"Vi è arrivato lo stipendio? a me sì ma senza i buoni pasto, anche a voi?",ham,payroll_chat,it
+"Il corriere ha lasciato il pacco alla signora Bianchi del terzo piano, passa a prenderlo quando torni",ham,parcel_neighbour,it
+"Mi dispiace tantissimo per tua nonna, Marco. Se hai bisogno di qualsiasi cosa in questi giorni ci sono. Un abbraccio forte",ham,condolence,it
+che si fa sabato?? io ci sto per tutto tranne un'altra escape room ti prego,ham,group_planning,it
+"Mi sono divertita un sacco ieri :) se vuoi rifacciamo la settimana prossima, conosco un ramen pazzesco",ham,dating_smalltalk,it
+Oh mi passi 20€ con Satispay? sono senza contanti e il bar non prende la carta,ham,lend_payback,it
+"Raga ho prenotato la casa al mare, sono 120 a testa. Fatemi il bonifico entro venerdì che devo pagare la caparra",ham,split_bill,it
+È arrivata la quattordicesima!! pago le bollette arretrate e col resto ci facciamo Lisbona,ham,money_chat,it
+"Heb je een tikkie gestuurd voor de borrel van gister, 17,50. Ff betalen als je kan",ham,payment_sent_check,nl
+"Mam, hoeveel was de ouderbijdrage voor school? dan maak ik het vanavond over",ham,school_fee,nl
+Wat is je rekeningnummer? dan stort ik die 40 euro van de concertkaartjes eindelijk terug haha,ham,ask_account_number,nl
+"mn pinpas is weer geblokkeerd, ING dacht dat het fraude was. was ik gewoon brood kopen in Lissabon. zo irritant",ham,card_blocked,nl
+wat is het wifi wachtwoord bij jullie? die op de router werkt niet,ham,wifi_password,nl
+"Schat lees me even de code voor die de Rabobank je net stuurde, zit op je telefoon de energierekening te betalen",ham,spouse_reads_code,nl
+"Haha ik heb het kerstpakket gewonnen bij de loterij op kantoor. Zaterdag borrel bij mij, ik heb nu 3 flessen wijn",ham,office_raffle,nl
+"Hoi, ik zag je fiets op Marktplaats. Nog beschikbaar? Ik kan vanavond langskomen, 150 oké?",ham,marketplace_buyer,nl
+"Hoi Lisa, hier je huisbaas. De borg maak ik 5 december over, zodra de eindafrekening van de VvE binnen is. Groet, Peter",ham,landlord_tenant,nl
+is jullie salaris al gestort? bij mij wel maar zonder reiskosten. zal ik HR mailen?,ham,payroll_chat,nl
+"PostNL heeft je pakketje bij de buurvrouw op nr 14 afgegeven, haal het op als je thuis bent",ham,parcel_neighbour,nl
+"Gecondoleerd met je oma, Daan. Als je iets nodig hebt de komende dagen, ik ben er. Sterkte en een dikke knuffel",ham,condolence,nl
+wat doen we zaterdag?? ik ben overal voor behalve weer een escape room aub,ham,group_planning,nl
+Vond het gezellig gister :) zin om volgende week nog eens af te spreken? ik ken een hele goede ramen tent,ham,dating_smalltalk,nl
+"ben laat, metro staat stil op Centraal. bestel jij een biertje voor me, betaal ik je terug",ham,logistics_late,nl
+"De huur voor november staat erop, kun je even checken? Die 30 euro servicekosten heb ik er apart bijgedaan",ham,rent_transfer,nl
+kun je me 50 lenen tot vrijdag? mn salaris komt pas de 25e en ik moet nog tanken,ham,lend_payback,nl
+"Zrobiłem ci blika 45 zł za pizzę, sprawdź czy doszło bo apka mi się wywaliła",ham,payment_sent_check,pl
+Mamo ile było za obiady w szkole w tym miesiącu? przelewam dziś wieczorem,ham,school_fee,pl
+"Podaj mi numer konta to oddam ci za bilety na koncert, od trzech tygodni obiecuję xd",ham,ask_account_number,pl
+znowu mi zablokowali kartę za podejrzaną transakcję. kupowałam bułkę w Lizbonie. no wkurza mnie to,ham,card_blocked,pl
+jakie macie hasło do wifi?? to z routera nie działa,ham,wifi_password,pl
+"Kochanie przeczytaj mi kod który mBank ci właśnie wysłał, siedzę na twoim telefonie i płacę za prąd",ham,spouse_reads_code,pl
+"Haha wygrałem kosz świąteczny na loterii w biurze, jest nawet szampan. Sobota u mnie",ham,office_raffle,pl
+"Dzień dobry, piszę w sprawie roweru z OLX. Jeszcze jest? Mogę podjechać dziś wieczorem, 600 zł pasuje?",ham,marketplace_buyer,pl
+"Dzień dobry Pani Kowalska, tu właściciel. Kaucję zwrócę 5-go jak tylko dostanę rozliczenie od wspólnoty. Pozdrawiam",ham,landlord_tenant,pl
+"wam już wpłynęła wypłata? mi tak ale bez dodatku na dojazdy, u was też?",ham,payroll_chat,pl
+"Kurier zostawił twoją paczkę u sąsiadki z 3 piętra, pani Nowak. Odbierz jak wrócisz",ham,parcel_neighbour,pl
+"Bardzo mi przykro z powodu twojej babci, Kuba. Jeśli czegoś potrzebujesz w tych dniach, jestem. Ściskam mocno",ham,condolence,pl
+co robimy w sobotę?? jestem za wszystkim tylko nie znowu escape room błagam,ham,group_planning,pl
+"Fajnie było wczoraj :) jak chcesz to powtórzymy w przyszłym tygodniu, znam świetny ramen",ham,dating_smalltalk,pl
+"spóźnię się, metro stoi na Centrum. zamów mi piwo, oddam ci",ham,logistics_late,pl
+"Czynsz za listopad poszedł, sprawdź czy doszedł. Rozliczenie mediów prześlę ci jutro mailem",ham,rent_transfer,pl
+pożyczysz mi 100 zł do piątku? wypłata dopiero 28-go a muszę zatankować,ham,lend_payback,pl
+"Серёг, скинул тебе 1500 на Сбер за вчера, глянь дошло? у меня приложение глючит",ham,payment_sent_check,ru
+"Мам, сколько за садик в этом месяце? скажи точную сумму, оплачу сейчас",ham,school_fee,ru
+"Кинь номер карты, верну за билеты на концерт, а то уже стыдно, третью неделю обещаю))",ham,ask_account_number,ru
+"мне опять карту заблокировали, решили что мошенники. а это я булку в лиссабоне покупала. бесит",ham,card_blocked,ru
+какой у вас пароль от вайфая? тот что на роутере не подходит,ham,wifi_password,ru
+"Любимый, прочитай код который Сбер тебе сейчас прислал, я с твоего телефона за свет плачу",ham,spouse_reads_code,ru
+"Ахахах выиграла корзину на офисной лотерее, там даже шампанское. В субботу у меня, приходите",ham,office_raffle,ru
+"Здравствуйте, по объявлению на Авито про велосипед. Ещё актуально? Могу подъехать сегодня вечером, за 12 тыс отдадите?",ham,marketplace_buyer,ru
+"Здравствуйте, Анна, это ваш арендодатель. Залог верну 5-го числа, как только получу расчёт от УК. Всего доброго",ham,landlord_tenant,ru
+"вам зп пришла? мне пришла но без компенсации за проезд, у вас тоже так?",ham,payroll_chat,ru
+"Курьер оставил твою посылку у соседки с 3 этажа, Марины Петровны. Забери когда вернёшься",ham,parcel_neighbour,ru
+"Прими мои соболезнования, Дима. Если что-то нужно в эти дни, я рядом. Держись, обнимаю",ham,condolence,ru
+"что делаем в субботу?? я за всё кроме квеста, пожалуйста только не квест опять",ham,group_planning,ru
+"Было очень здорово вчера :) если хочешь, повторим на следующей неделе, знаю отличный рамен",ham,dating_smalltalk,ru
+"опаздываю, метро встало на Тверской. закажи мне пиво, я отдам",ham,logistics_late,ru
+"Аренда за ноябрь ушла, проверь. Квитанции за коммуналку завтра на почту скину",ham,rent_transfer,ru
+займёшь 3 тыс до пятницы? зп только 28-го а бензин кончился,ham,lend_payback,ru
+"Abi dün akşamki hesaptan 230 lira attım sana, bak bi gelmiş mi, uygulama kastı",ham,payment_sent_check,tr
+Anne okul aidatı bu ay ne kadardı? tam rakamı söyle şimdi yatırıyorum,ham,school_fee,tr
+"IBAN'ını at da konser bileti parasını yollayım, üç haftadır söylüyorum ayıp oldu ya",ham,ask_account_number,tr
+kartımı yine bloke ettiler şüpheli işlem diye. lizbon'da simit alıyordum ya. sinir oldum,ham,card_blocked,tr
+wifi şifreniz neydi? modemin üstündeki çalışmıyor,ham,wifi_password,tr
+"Aşkım bankadan sana gelen kodu oku bakayım, senin telefondan elektrik faturasını ödüyorum",ham,spouse_reads_code,tr
+"Hahaha ofis çekilişinde sepet kazandım, içinde şampanya bile var. Cumartesi bende toplanıyoruz",ham,office_raffle,tr
+"Merhaba, sahibinden'deki bisiklet ilanı için yazıyorum. Hâlâ duruyor mu? Bu akşam gelebilirim, 4500 olur mu?",ham,marketplace_buyer,tr
+"Merhaba Ayşe Hanım, ben ev sahibiniz. Depozitoyu ayın 5'inde, aidat hesabı gelir gelmez iade edeceğim. İyi günler",ham,landlord_tenant,tr
+"maaşlar yattı mı sizde? benimki yattı ama yol parası yok, sizde de öyle mi?",ham,payroll_chat,tr
+"Kargocu paketini 3. kattaki komşuya, Fatma Teyze'ye bırakmış. Gelince al",ham,parcel_neighbour,tr
+"Başın sağ olsun Mehmet, babaannen için çok üzüldüm. Bu günlerde bir şeye ihtiyacın olursa buradayım. Sarılıyorum",ham,condolence,tr
+cumartesi ne yapıyoruz?? her şeye varım ama bir daha kaçış oyunu olmasın lütfen,ham,group_planning,tr
+"Dün çok güzeldi :) istersen önümüzdeki hafta tekrar yapalım, harika bir ramen yeri biliyorum",ham,dating_smalltalk,tr
+geç kalıyorum metro Taksim'de durdu. bana bir bira söyle ödeyeceğim,ham,logistics_late,tr
+"Kasım kirası gitti, kontrol et. Aidat makbuzunu yarın mail atarım",ham,rent_transfer,tr
+"cumaya kadar 500 lira borç verir misin? maaş 28'inde yatıyor, benzin bitti",ham,lend_payback,tr
+"Ρε σου έστειλα 25€ με IRIS για το χθεσινό, δες αν μπήκαν γιατί κόλλησε η εφαρμογή",ham,payment_sent_check,el
+Μαμά πόσο ήταν τα δίδακτρα αυτό το μήνα? πες μου ακριβώς να το πληρώσω τώρα,ham,school_fee,el
+"Στείλε μου το IBAN σου να σου δώσω τα λεφτά για τα εισιτήρια, τρεις βδομάδες το λέω χαχα",ham,ask_account_number,el
+μου μπλόκαραν πάλι την κάρτα για ύποπτη κίνηση. εγώ ήμουν που αγόραζα κουλούρι στη Λισαβόνα. εκνευρίστηκα,ham,card_blocked,el
+ποιος είναι ο κωδικός του wifi? αυτός στο ρούτερ δεν δουλεύει,ham,wifi_password,el
+"Αγάπη διάβασέ μου τον κωδικό που σου έστειλε η Εθνική τώρα, μπήκα από το κινητό σου να πληρώσω τη ΔΕΗ",ham,spouse_reads_code,el
+"Χαχα κέρδισα το καλάθι στην κλήρωση του γραφείου, έχει και κρασί. Σάββατο σπίτι μου",ham,office_raffle,el
+"Καλησπέρα, για το ποδήλατο στο Car.gr. Είναι ακόμα διαθέσιμο? Μπορώ να περάσω απόψε, 280 καλά είναι?",ham,marketplace_buyer,el
+"Καλημέρα κυρία Παπαδοπούλου, ο ιδιοκτήτης είμαι. Την εγγύηση θα την επιστρέψω στις 5 μόλις πάρω τα κοινόχρηστα. Καλή συνέχεια",ham,landlord_tenant,el
+"σας μπήκε ο μισθός? εμένα μπήκε αλλά χωρίς το επίδομα μετακίνησης, κι εσάς?",ham,payroll_chat,el
+"Ο κούριερ άφησε το πακέτο σου στη γειτόνισσα στον 3ο, την κυρία Μαρία. Πέρνα να το πάρεις όταν γυρίσεις",ham,parcel_neighbour,el
+"Συλλυπητήρια για τη γιαγιά σου, Γιώργο. Αν χρειαστείς οτιδήποτε αυτές τις μέρες είμαι εδώ. Σε σφιχταγκαλιάζω",ham,condolence,el
+τι κάνουμε Σάββατο?? είμαι μέσα για όλα εκτός από escape room πάλι σε παρακαλώ,ham,group_planning,el
+"Πέρασα πολύ ωραία χθες :) αν θες το ξανακάνουμε την άλλη βδομάδα, ξέρω ένα τέλειο ράμεν",ham,dating_smalltalk,el
+"αργώ, κόλλησε το μετρό στο Σύνταγμα. παράγγειλε μια μπύρα θα σου τα δώσω",ham,logistics_late,el
+"Το νοίκι του Νοεμβρίου έφυγε, δες αν μπήκε. Τα κοινόχρηστα θα σου τα στείλω αύριο με mail",ham,rent_transfer,el
+μου δανείζεις 50€ μέχρι Παρασκευή? ο μισθός μπαίνει 28 και έμεινα από βενζίνη,ham,lend_payback,el
+يا زلمة حولتلك ١٢٠ ليرة على الحساب حق العشا امبارح، شيك اذا وصلت لأن التطبيق علق معي,ham,payment_sent_check,ar
+ماما كم كان قسط المدرسة الشهر ده؟ قوليلي الرقم بالظبط عشان أدفعه دلوقتي,ham,school_fee,ar
+ابعتلي رقم الآيبان بتاعك عشان أرجعلك فلوس التذاكر، بقالي ٣ أسابيع بقول هبعتها هههه,ham,ask_account_number,ar
+حجزوا كرتي تاني بحجة عملية مشبوهة. كنت بشتري خبز في لشبونة والله. مزعج جدا,ham,card_blocked,ar
+شو كلمة سر الواي فاي عندكم؟ اللي على الراوتر مش شغالة,ham,wifi_password,ar
+حبيبي اقرالي الكود اللي بعته لك الراجحي هلأ، أنا فاتحة من تلفونك عشان أدفع فاتورة الكهربا,ham,spouse_reads_code,ar
+ههههه ربحت سلة في سحب المكتب، فيها شوكولاتة وقهوة. السبت عندي,ham,office_raffle,ar
+السلام عليكم، بخصوص إعلان السيكل بحراج. لسا موجود؟ أقدر أمر عليك الليلة، ٣٥٠ ريال يمشي؟,ham,marketplace_buyer,ar
+مرحبا سيدة سلوى، أنا صاحب الشقة. التأمين برجعه يوم ٥ أول ما توصلني كشف الخدمات. يومك سعيد,ham,landlord_tenant,ar
+نزلت لكم الرواتب؟ أنا نزل بس من غير بدل المواصلات، عندكم نفس الشي؟,ham,payroll_chat,ar
+المندوب ترك الطرد عند الجارة بالطابق الثالث، أم خالد. مري خذيه لما ترجعي,ham,parcel_neighbour,ar
+البقاء لله يا أحمد، الله يرحم جدتك ويصبركم. إذا احتجت أي شي هذي الأيام أنا موجود,ham,condolence,ar
+شو رايكم السبت؟؟ أنا موافق على أي شي إلا escape room مرة ثانية لا والله,ham,group_planning,ar
+استمتعت كثير أمس :) إذا تحب نعيدها الأسبوع الجاي، أعرف مطعم رامن خرافي,ham,dating_smalltalk,ar
+رح أتأخر، المترو واقف بمحطة الشهداء. اطلبلي عصير وبرجعلك,ham,logistics_late,ar
+أجرة نوفمبر تحولت، شيك إذا وصلت. فاتورة الكهربا أبعتها لك بكرا,ham,rent_transfer,ar
+تسلفني ٢٠٠ درهم ليوم الجمعة؟ الراتب ينزل ٢٨ والبنزين خلص,ham,lend_payback,ar
+"भाई कल रात के खाने के 450 UPI कर दिए, check कर ले आया क्या, मेरा app hang हो गया था",ham,payment_sent_check,hi
+मम्मी स्कूल की फीस इस महीने कितनी थी? exact amount बताओ अभी भर देता हूँ,ham,school_fee,hi
+"अपना UPI id भेज दे यार, concert के tickets के पैसे वापस करने हैं, 3 हफ्ते से बोल रहा हूँ 😅",ham,ask_account_number,hi
+मेरा card फिर block हो गया suspicious transaction बोलके। मैं लिस्बन में bread खरीद रही थी बस। बहुत irritating है,ham,card_blocked,hi
+wifi का password क्या है तुम्हारे घर का?? router पे लिखा वाला चल नहीं रहा,ham,wifi_password,hi
+"जानू HDFC ने जो OTP अभी भेजा है वो पढ़ दो, मैं तुम्हारे फ़ोन से बिजली का bill भर रही हूँ",ham,spouse_reads_code,hi
+"हाहाहा office की lucky draw में gift hamper जीत गया, उसमें dry fruits भी हैं। शनिवार को मेरे घर आओ",ham,office_raffle,hi
+"Hi, OLX पे आपकी cycle का ad देखा। अभी भी available है? आज शाम आ सकता हूँ, 6000 में दे दोगे?",ham,marketplace_buyer,hi
+"नमस्ते शर्मा जी, मैं आपका landlord बोल रहा हूँ। deposit 5 तारीख को वापस कर दूंगा जैसे ही society का हिसाब आ जाए। शुभकामनाएं",ham,landlord_tenant,hi
+"तुम लोगों की salary आ गई? मेरी आई लेकिन conveyance allowance नहीं है, तुम्हारे साथ भी ऐसा है?",ham,payroll_chat,hi
+"courier वाला तेरा parcel तीसरी मंज़िल वाली aunty, वर्मा जी के पास छोड़ गया। घर आके ले लेना",ham,parcel_neighbour,hi
+"अंकित, तेरी दादी के बारे में सुनकर बहुत दुख हुआ। इन दिनों कुछ भी चाहिए हो तो बता, मैं हूँ। हिम्मत रख",ham,condolence,hi
+शनिवार को क्या plan है?? मैं सब कुछ के लिए ready हूँ बस escape room दोबारा नहीं please,ham,group_planning,hi
+"कल बहुत मज़ा आया :) अगर तुम चाहो तो अगले हफ्ते फिर मिलते हैं, मुझे एक ज़बरदस्त momos वाली जगह पता है",ham,dating_smalltalk,hi
+"late हो रहा हूँ, metro राजीव चौक पे रुकी हुई है। मेरे लिए एक चाय मंगा ले पैसे दे दूंगा",ham,logistics_late,hi
+"November का rent transfer कर दिया, check कर लो। maintenance की receipt कल mail कर दूंगा",ham,rent_transfer,hi
+शुक्रवार तक 2000 उधार दे सकता है? salary 28 को आएगी और petrol खत्म है,ham,lend_payback,hi
+"மச்சி நேத்து சாப்பாட்டுக்கு 450 GPay பண்ணிட்டேன், வந்துச்சா பாரு, என் app hang ஆயிடுச்சு",ham,payment_sent_check,ta
+அம்மா இந்த மாசம் ஸ்கூல் ஃபீஸ் எவ்ளோ? சரியான amount சொல்லு இப்பவே கட்டிடறேன்,ham,school_fee,ta
+"உன் UPI id அனுப்பு டா, concert டிக்கெட் காசு திருப்பி தரணும், மூணு வாரமா சொல்லிட்டு இருக்கேன் 😅",ham,ask_account_number,ta
+என் card திரும்பவும் block ஆயிடுச்சு suspicious transaction-னு. நான் லிஸ்பனில் bread வாங்கிட்டு இருந்தேன். ரொம்ப கடுப்பா இருக்கு,ham,card_blocked,ta
+உங்க வீட்டு wifi password என்ன?? router-ல இருக்கறது வேலை செய்யல,ham,wifi_password,ta
+"செல்லம் SBI அனுப்பின OTP-ய படிச்சு சொல்லு, உன் போன்ல இருந்து கரண்ட் bill கட்டிட்டு இருக்கேன்",ham,spouse_reads_code,ta
+"ஹாஹா ஆபீஸ் lucky draw-ல gift hamper ஜெயிச்சுட்டேன், அதுல dry fruits கூட இருக்கு. சனிக்கிழமை என் வீட்ல",ham,office_raffle,ta
+"Hi, OLX-ல உங்க cycle ad பாத்தேன். இன்னும் இருக்கா? இன்னைக்கு சாயங்காலம் வரலாம், 6000-க்கு தர்றீங்களா?",ham,marketplace_buyer,ta
+"வணக்கம் கமலா அம்மா, நான் வீட்டு ஓனர். advance-ஐ 5-ம் தேதி திருப்பி தர்றேன், association கணக்கு வந்த உடனே. நன்றி",ham,landlord_tenant,ta
+"உங்களுக்கு சம்பளம் வந்துச்சா? எனக்கு வந்துச்சு ஆனா conveyance allowance இல்ல, உங்களுக்கும் அப்படியா?",ham,payroll_chat,ta
+"courier உன் parcel-ஐ மூணாவது மாடி aunty, லட்சுமி அம்மா கிட்ட கொடுத்துட்டு போயிட்டான். வீட்டுக்கு வந்ததும் வாங்கிக்கோ",ham,parcel_neighbour,ta
+"அருண், உன் பாட்டி பத்தி கேட்டு ரொம்ப வருத்தமா இருக்கு. இந்த நாட்கள்ல எதுவும் தேவைன்னா சொல்லு, நான் இருக்கேன்",ham,condolence,ta
+"சனிக்கிழமை என்ன plan?? எதுக்கும் ready, ஆனா திரும்பவும் escape room வேணாம் please",ham,group_planning,ta
+"நேத்து ரொம்ப நல்லா இருந்துச்சு :) உனக்கு OK-னா அடுத்த வாரம் திரும்ப மீட் பண்ணலாம், ஒரு சூப்பர் பிரியாணி கடை தெரியும்",ham,dating_smalltalk,ta
+"late ஆகுது, metro கிண்டி-ல நின்னுடுச்சு. எனக்கு ஒரு டீ சொல்லு, காசு தர்றேன்",ham,logistics_late,ta
+"நவம்பர் rent transfer பண்ணிட்டேன், check பண்ணுங்க. maintenance receipt நாளைக்கு mail பண்றேன்",ham,rent_transfer,ta
+"வெள்ளிக்கிழமை வரைக்கும் 2000 கடன் தர்றியா? சம்பளம் 28-க்கு தான், petrol தீர்ந்துடுச்சு",ham,lend_payback,ta
+"Bro udah gw transfer 85rb buat makan kemaren via GoPay, cek dong, aplikasi gw ngelag",ham,payment_sent_check,id
+"Ma, SPP sekolah bulan ini berapa ya? kasih nominal pastinya, aku bayar sekarang lewat m-banking",ham,school_fee,id
+"Kirim no rekening lu dong, gw mau balikin duit tiket konser, udah 3 minggu gw bilang mau transfer wkwk",ham,ask_account_number,id
+kartu gw diblokir lagi gara2 transaksi mencurigakan. padahal gw cuma beli roti di Lisbon. kesel bgt,ham,card_blocked,id
+password wifi rumah lu apa?? yg di router ga bisa,ham,wifi_password,id
+"Sayang bacain kode yg dikirim BCA barusan, aku lagi login di hp kamu bayar tagihan listrik",ham,spouse_reads_code,id
+"Wkwkwk gw menang parcel di undian kantor, isinya ada kopi sama coklat. Sabtu ke rumah gw yuk",ham,office_raffle,id
+"Halo, saya lihat iklan sepeda di FB marketplace. Masih ada? Bisa ambil malam ini, 1,5jt boleh?",ham,marketplace_buyer,id
+"Selamat siang Bu Sari, saya pemilik kontrakan. Deposit saya kembalikan tanggal 5 setelah tagihan listrik terakhir keluar. Terima kasih",ham,landlord_tenant,id
+"gaji kalian udah masuk? gw udah tapi uang transport ga ada, kalian juga gitu?",ham,payroll_chat,id
+"Kurir ninggalin paket lu di tetangga lantai 3, Bu Rina. Ambil ya pas pulang",ham,parcel_neighbour,id
+"Turut berduka cita atas nenek kamu, Andi. Kalau butuh apa2 hari-hari ini aku ada. Peluk erat",ham,condolence,id
+sabtu mau ngapain?? gw ikut apa aja asal jangan escape room lagi plis,ham,group_planning,id
+"Kemarin seru banget :) kalau mau kita ulang minggu depan, aku tau tempat ramen enak",ham,dating_smalltalk,id
+"telat nih, MRT berhenti di Bundaran HI. pesenin gw es teh ya nanti gw bayar",ham,logistics_late,id
+"Sewa November udah ditransfer, cek ya. Struk listrik aku kirim besok lewat WA",ham,rent_transfer,id
+"pinjem 200rb sampe jumat boleh? gaji baru tanggal 28, bensin abis",ham,lend_payback,id
+"Bro aku dah transfer RM45 untuk makan semalam guna DuitNow, check la, app aku hang tadi",ham,payment_sent_check,ms
+"Mak, yuran sekolah bulan ni berapa? bagi angka tepat, aku bayar sekarang guna Maybank2u",ham,school_fee,ms
+"Hantar no akaun kau, aku nak bayar balik duit tiket konsert, dah 3 minggu aku cakap nak bayar haha",ham,ask_account_number,ms
+kad aku kena block lagi sebab transaksi mencurigakan. padahal aku beli roti je kat Lisbon. menyampah betul,ham,card_blocked,ms
+password wifi rumah kau apa?? yg kat router tu tak jalan,ham,wifi_password,ms
+"Sayang bacakan kod yg CIMB baru hantar, aku login kat phone kau nak bayar bil TNB",ham,spouse_reads_code,ms
+"Hahaha aku menang hamper dekat cabutan bertuah ofis, ada kopi dengan coklat. Sabtu datang rumah aku",ham,office_raffle,ms
+"Hi, saya nampak iklan basikal awak di Mudah.my. Masih ada? Boleh ambil malam ni, RM400 ok?",ham,marketplace_buyer,ms
+"Selamat petang Puan Aminah, saya tuan rumah. Deposit saya akan pulangkan 5hb lepas bil elektrik terakhir keluar. Terima kasih",ham,landlord_tenant,ms
+"gaji korang dah masuk? aku dah tapi elaun travel takde, korang pun sama?",ham,payroll_chat,ms
+"Posmen tinggal parcel kau dekat jiran tingkat 3, Kak Zura. Ambil bila balik",ham,parcel_neighbour,ms
+"Takziah atas pemergian nenek kau, Farid. Kalau perlukan apa-apa hari-hari ni aku ada. Kuatkan semangat",ham,condolence,ms
+sabtu buat apa?? aku on je apa2 asalkan bukan escape room lagi plis,ham,group_planning,ms
+"Semalam best sangat :) kalau nak kita jumpa lagi minggu depan, aku tau tempat ramen sedap",ham,dating_smalltalk,ms
+"lambat ni, LRT berhenti kat KLCC. order air untuk aku nanti aku bayar",ham,logistics_late,ms
+"Sewa November dah transfer, check ya. Resit bil aku hantar esok",ham,rent_transfer,ms
+"boleh pinjam RM100 sampai jumaat? gaji 28hb baru masuk, minyak dah habis",ham,lend_payback,ms
+"Bro na-GCash ko na yung 450 para sa dinner kagabi, check mo kung dumating, nag-hang app ko",ham,payment_sent_check,tl
+"Ma, magkano yung tuition ni Ate this month? sabihin mo exact amount babayaran ko na ngayon",ham,school_fee,tl
+"Send mo GCash number mo, babayaran ko yung tickets natin sa concert, 3 weeks ko na sinasabi haha",ham,ask_account_number,tl
+na-block ulit card ko dahil sa suspicious transaction daw. bumibili lang ako ng tinapay sa Lisbon. nakakainis,ham,card_blocked,tl
+ano wifi password niyo?? yung nakalagay sa router ayaw gumana,ham,wifi_password,tl
+"Mahal pakibasa yung code na pinadala ng BPI sa'yo, naka-login ako sa phone mo nagbabayad ng Meralco",ham,spouse_reads_code,tl
+"Hahaha nanalo ako ng gift basket sa raffle sa office, may kape at tsokolate. Sabado sa bahay tayo",ham,office_raffle,tl
+"Hi, nakita ko ad ng bike mo sa Marketplace. Available pa? Pwede kong kunin mamayang gabi, 6k ok?",ham,marketplace_buyer,tl
+"Magandang hapon Ate Liza, ito landlord niyo. Isasauli ko yung deposit sa a-5 pagdating ng final Meralco bill. Salamat",ham,landlord_tenant,tl
+"pumasok na ba sweldo niyo? akin pumasok pero walang transpo allowance, ganun din ba sa inyo?",ham,payroll_chat,tl
+Iniwan ng rider yung parcel mo kay Aling Nena sa 3rd floor. Kunin mo pag-uwi,ham,parcel_neighbour,tl
+"Condolence sa lola mo, Marco. Kung may kailangan ka these days nandito lang ako. Hug",ham,condolence,tl
+anong plano sa sabado?? game ako kahit ano wag lang escape room ulit please,ham,group_planning,tl
+"Sobrang saya kagabi :) kung gusto mo ulitin natin next week, alam ko masarap na ramen place",ham,dating_smalltalk,tl
+"ma-late ako, MRT stuck sa Shaw. order mo na beer ko babayaran ko",ham,logistics_late,tl
+"Na-transfer ko na rent for November, check mo. Resibo ng kuryente ipapadala ko bukas",ham,rent_transfer,tl
+"pahiram 1000 hanggang friday? sweldo 28 pa, ubos na gas",ham,lend_payback,tl
+"Mkuu nimekutumia 2500 kwa M-Pesa ya chakula cha jana, angalia kama imeingia, app yangu ilikwama",ham,payment_sent_check,sw
+Mama fees za shule mwezi huu zilikuwa ngapi? niambie kiasi kamili nilipe sasa,ham,school_fee,sw
+"Nitumie namba yako ya M-Pesa nikurudishie pesa za tiketi, ni wiki tatu nasema nitakutumia haha",ham,ask_account_number,sw
+kadi yangu imezuiwa tena wanasema muamala wa kutiliwa shaka. nilikuwa nanunua mkate Lisbon tu. inakera sana,ham,card_blocked,sw
+password ya wifi kwenu ni gani?? ile ya kwenye router haifanyi kazi,ham,wifi_password,sw
+"Mpenzi nisomee ile code Equity imekutumia sasa hivi, nimeingia kwa simu yako nalipa bili ya KPLC",ham,spouse_reads_code,sw
+"Hahaha nimeshinda kikapu kwenye bahati nasibu ya ofisi, kuna kahawa na chokoleti. Jumamosi kwangu",ham,office_raffle,sw
+"Habari, nimeona tangazo la baiskeli yako Jiji. Bado ipo? Naweza kuja jioni, 8000 sawa?",ham,marketplace_buyer,sw
+"Habari Mama Amina, ni mwenye nyumba. Deposit nitarudisha tarehe 5 bili ya mwisho ya maji ikitoka. Asante",ham,landlord_tenant,sw
+"mshahara umeingia kwenu? wangu umeingia lakini hakuna transport allowance, kwenu pia hivyo?",ham,payroll_chat,sw
+"Yule wa delivery ameacha mzigo wako kwa jirani wa ghorofa ya tatu, Mama Juma. Chukua ukirudi",ham,parcel_neighbour,sw
+"Pole sana kwa kufiwa na bibi, Juma. Ukihitaji chochote siku hizi niko hapa. Mungu awape nguvu",ham,condolence,sw
+jumamosi tunafanya nini?? mimi niko kwa lolote isipokuwa escape room tena tafadhali,ham,group_planning,sw
+"Jana ilikuwa poa sana :) ukipenda turudie wiki ijayo, najua sehemu nzuri ya nyama choma",ham,dating_smalltalk,sw
+"nitachelewa, matatu imekwama Thika Road. niagizie Tusker nitakulipa",ham,logistics_late,sw
+"Kodi ya Novemba nimetuma, angalia. Risiti ya maji nitakutumia kesho",ham,rent_transfer,sw
+"nikopeshe 1000 mpaka ijumaa? mshahara unaingia 28, mafuta yameisha",ham,lend_payback,sw
+昨日の飲み代3200円PayPayで送ったよ〜届いてるか見といて、アプリ固まってた,ham,payment_sent_check,ja
+お母さん、今月の給食費いくらだった?正確な金額教えて、今振り込むから,ham,school_fee,ja
+口座番号教えて、ライブのチケット代返す。3週間ずっと言ってるだけでごめんw,ham,ask_account_number,ja
+カードまた止められた、不正利用の疑いだって。リスボンでパン買ってただけなのに。ほんとめんどい,ham,card_blocked,ja
+家のwifiのパスワード何?ルーターに書いてあるやつ使えない,ham,wifi_password,ja
+ねえ、三菱UFJから今届いたワンタイムパスワード読んで。あなたのスマホから電気代払ってるから,ham,spouse_reads_code,ja
+www会社のビンゴで景品のハム詰め合わせ当たった。土曜うちで鍋やろう,ham,office_raffle,ja
+はじめまして、メルカリの自転車の件で。まだありますか?今夜取りに行けます、2万でお願いできませんか,ham,marketplace_buyer,ja
+田中様、大家の山本です。敷金は管理会社からの精算書が届き次第、5日にお返しします。よろしくお願いします,ham,landlord_tenant,ja
+給料入った?俺は入ったけど交通費ついてない、みんなもそう?,ham,payroll_chat,ja
+ヤマトの人、荷物を3階の隣の鈴木さんに預けたって。帰ったら取りに行って,ham,parcel_neighbour,ja
+おばあちゃんのこと、本当にお悔やみ申し上げます。何か必要なことがあったらいつでも言ってね,ham,condolence,ja
+土曜なにする??脱出ゲーム以外ならなんでもいい、マジでもう無理,ham,group_planning,ja
+昨日楽しかった :) よかったら来週またどう?めっちゃうまいラーメン屋知ってる,ham,dating_smalltalk,ja
+遅れる、山手線新宿で止まってる。先にビール頼んどいて、払うから,ham,logistics_late,ja
+11月の家賃振り込んだよ、確認して。光熱費の明細は明日メールする,ham,rent_transfer,ja
+金曜まで5000円貸してくれない?給料28日で、ガソリン切れた,ham,lend_payback,ja
+兄弟昨晚饭钱128我微信转你了，看下到了没，我app卡住了,ham,payment_sent_check,zh
+妈这个月学费多少？说个准数我现在支付宝转过去,ham,school_fee,zh
+把你银行卡号发我，演唱会票的钱还你，说了三个星期了哈哈,ham,ask_account_number,zh
+我卡又被冻结了说有可疑交易。我就在里斯本买了个面包。烦死了,ham,card_blocked,zh
+你家wifi密码是啥？？路由器上那个不对,ham,wifi_password,zh
+老公把招行刚发你的验证码读给我，我在你手机上交电费,ham,spouse_reads_code,zh
+哈哈哈公司年会抽奖中了个礼盒，里面还有红酒。周六来我家吃饭,ham,office_raffle,zh
+你好，看到你闲鱼上的自行车。还在吗？今晚可以来取，600行不行,ham,marketplace_buyer,zh
+王女士您好，我是房东。押金等物业结算单到了5号退给您。祝好,ham,landlord_tenant,zh
+你们工资到了吗？我到了但没有交通补贴，你们也是？,ham,payroll_chat,zh
+快递把你的包裹放三楼邻居李阿姨那了，回来去拿一下,ham,parcel_neighbour,zh
+小明，你奶奶的事我很难过。这几天有什么需要随时说，我在,ham,condolence,zh
+周六干啥？？我都行，就是别再密室逃脱了求求了,ham,group_planning,zh
+昨天很开心 :) 下周要不要再约？我知道一家超好吃的火锅,ham,dating_smalltalk,zh
+要迟到了，地铁堵在人民广场。先帮我点杯奶茶我转你,ham,logistics_late,zh
+11月房租3800转你了，看下到账没。水电费单明天拍给你,ham,rent_transfer,zh
+借我500到周五？工资28号才发，油没了,ham,lend_payback,zh
+야 어제 밥값 23000원 카카오페이로 보냈어 확인해봐 앱이 멈췄었음,ham,payment_sent_check,ko
+엄마 이번달 학원비 얼마였어? 정확한 금액 알려줘 지금 이체할게,ham,school_fee,ko
+계좌번호 보내줘 콘서트 티켓값 갚을게 3주째 말만해서 미안ㅋㅋ,ham,ask_account_number,ko
+카드 또 정지됐어 의심거래라고. 리스본에서 빵 산 건데. 진짜 짜증나,ham,card_blocked,ko
+너네집 와이파이 비번 뭐야?? 공유기에 적힌거 안돼,ham,wifi_password,ko
+자기야 국민은행에서 지금 온 인증번호 읽어줘 자기 폰으로 전기요금 내고 있어,ham,spouse_reads_code,ko
+ㅋㅋㅋ 회사 추첨에서 선물세트 당첨됐어 와인도 들었어 토요일 우리집에서,ham,office_raffle,ko
+안녕하세요 당근에서 자전거 보고 연락드려요. 아직 있나요? 오늘 저녁 가져갈 수 있어요 15만원 괜찮으세요?,ham,marketplace_buyer,ko
+김지은님 안녕하세요 집주인입니다. 보증금은 관리비 정산서 받는 대로 5일에 돌려드릴게요. 감사합니다,ham,landlord_tenant,ko
+너네 월급 들어왔어? 나는 들어왔는데 교통비 빠졌어 너네도?,ham,payroll_chat,ko
+택배 아저씨가 3층 옆집 아줌마한테 네 택배 맡겼대 집에 오면 받아가,ham,parcel_neighbour,ko
+민수야 할머니 소식 들었어 정말 안타깝다. 요 며칠 필요한 거 있으면 언제든 말해. 힘내,ham,condolence,ko
+토요일 뭐해?? 방탈출만 아니면 다 좋아 제발,ham,group_planning,ko
+어제 진짜 재밌었어 :) 괜찮으면 다음주에 또 볼래? 진짜 맛있는 라멘집 알아,ham,dating_smalltalk,ko
+늦을 것 같아 2호선 신도림에서 멈췼어 맥주 먼저 시켜놔 내가 낼게,ham,logistics_late,ko
+11월 월세 보냈어 확인해줘. 관리비 명세서는 내일 메일로 보낼게,ham,rent_transfer,ko
+금요일까지 5만원만 빌려줄래? 월급 28일이고 기름 떨어졌어,ham,lend_payback,ko
+เฮ้ย โอนค่าข้าวเมื่อวาน 350 ผ่านพร้อมเพย์ให้แล้วนะ เช็คดูหน่อย แอปค้าง,ham,payment_sent_check,th
+แม่ ค่าเทอมเดือนนี้เท่าไหร่ บอกจำนวนเป๊ะๆ หน่อย จะโอนตอนนี้เลย,ham,school_fee,th
+ส่งเลขบัญชีมาหน่อย จะคืนเงินค่าตั๋วคอน พูดมา 3 อาทิตย์แล้ว 555,ham,ask_account_number,th
+บัตรโดนล็อคอีกแล้ว บอกว่ามีรายการน่าสงสัย เราแค่ซื้อขนมปังที่ลิสบอน เซ็งมาก,ham,card_blocked,th
+รหัสไวไฟบ้านแกอะไร?? ที่เขียนบนเราเตอร์ใช้ไม่ได้,ham,wifi_password,th
+ที่รัก อ่าน OTP ที่กสิกรส่งมาให้หน่อย ล็อกอินในมือถือเธอจ่ายค่าไฟอยู่,ham,spouse_reads_code,th
+555 ถูกรางวัลจับฉลากที่ออฟฟิศได้กระเช้า มีกาแฟกับช็อกโกแลตด้วย เสาร์นี้มาบ้านนะ,ham,office_raffle,th
+สวัสดีครับ เห็นประกาศขายจักรยานใน Kaidee ยังอยู่มั้ยครับ ไปรับได้คืนนี้ 3500 ได้มั้ย,ham,marketplace_buyer,th
+สวัสดีค่ะคุณนิด นี่เจ้าของห้องนะคะ เงินมัดจำจะคืนให้วันที่ 5 หลังบิลค่าไฟงวดสุดท้ายออก ขอบคุณค่ะ,ham,landlord_tenant,th
+เงินเดือนเข้าแล้วยัง? ของเราเข้าแล้วแต่ไม่มีค่าเดินทาง พวกแกด้วยป่ะ,ham,payroll_chat,th
+คนส่งของฝากพัสดุไว้กับป้าข้างห้องชั้น 3 นะ กลับมาแล้วไปเอาด้วย,ham,parcel_neighbour,th
+เสียใจด้วยนะเรื่องคุณยาย ต้องการอะไรช่วงนี้บอกได้เลย อยู่ตรงนี้นะ,ham,condolence,th
+เสาร์นี้ทำอะไรดี?? อะไรก็ได้ยกเว้น escape room อีกรอบ ขอร้อง,ham,group_planning,th
+เมื่อวานสนุกมาก :) ถ้าโอเคสัปดาห์หน้าเจอกันอีกมั้ย รู้จักร้านราเมงอร่อยมาก,ham,dating_smalltalk,th
+สายแล้ว BTS ติดที่สยาม สั่งเบียร์ให้ก่อนนะเดี๋ยวจ่าย,ham,logistics_late,th
+ค่าเช่าเดือนพ.ย. โอนแล้วนะ เช็คด้วย ใบเสร็จค่าน้ำพรุ่งนี้ส่งให้,ham,rent_transfer,th
+ยืม 500 ถึงศุกร์ได้ป่ะ เงินเดือนออก 28 น้ำมันหมด,ham,lend_payback,th
+"Ê tao chuyển 150k tiền ăn hôm qua qua Momo rồi, check thử coi, app tao bị treo",ham,payment_sent_check,vi
+Mẹ ơi học phí tháng này bao nhiêu? nói con số chính xác con chuyển ngay,ham,school_fee,vi
+"Gửi số tài khoản đi, tao trả tiền vé concert, nói 3 tuần rồi haha",ham,ask_account_number,vi
+thẻ tao lại bị khóa vì giao dịch nghi ngờ. tao mua bánh mì ở Lisbon thôi mà. bực quá,ham,card_blocked,vi
+pass wifi nhà mày là gì?? cái trên router không được,ham,wifi_password,vi
+"Anh ơi đọc em mã OTP Vietcombank vừa gửi, em đang đăng nhập trên máy anh trả tiền điện",ham,spouse_reads_code,vi
+"Hahaha trúng giỏ quà ở bốc thăm công ty, có cà phê với sô cô la. Thứ 7 qua nhà tao",ham,office_raffle,vi
+"Chào bạn, mình thấy tin đăng xe đạp trên Chợ Tốt. Còn không? Tối nay mình lấy được, 1tr5 ok không?",ham,marketplace_buyer,vi
+"Chào chị Lan, em là chủ nhà. Tiền cọc em trả ngày 5 sau khi có hóa đơn điện cuối. Cảm ơn chị",ham,landlord_tenant,vi
+"lương về chưa mấy đứa? của tao về rồi mà không có phụ cấp xăng xe, bọn mày cũng vậy?",ham,payroll_chat,vi
+"Shipper để hàng của mày ở chỗ cô Hoa tầng 3 rồi, về lấy nhé",ham,parcel_neighbour,vi
+"Chia buồn với cậu về bà, Nam. Mấy ngày này cần gì cứ nói, tớ ở đây",ham,condolence,vi
+thứ 7 làm gì?? gì cũng được trừ escape room nữa làm ơn,ham,group_planning,vi
+"Hôm qua vui lắm :) nếu được tuần sau gặp lại nhé, biết một quán phở ngon lắm",ham,dating_smalltalk,vi
+"trễ rồi, kẹt xe ở Hàng Xanh. gọi bia cho tao trước đi tao trả",ham,logistics_late,vi
+"Tiền nhà tháng 11 chuyển rồi nhé, check thử. Hóa đơn điện nước mai gửi",ham,rent_transfer,vi
+"cho mượn 500k đến thứ 6 được không? lương 28 mới có, hết xăng",ham,lend_payback,vi

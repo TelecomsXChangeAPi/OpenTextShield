@@ -1,0 +1,77 @@
+{
+ "v2.9-prod": {
+  "n": 18268,
+  "accuracy_3class": 0.6398,
+  "accuracy_binary_block": 0.708,
+  "per_class": {
+   "ham": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "spam": {
+    "precision": 0.3301,
+    "recall": 0.3345,
+    "f1": 0.3323,
+    "support": 1112
+   },
+   "phishing": {
+    "precision": 0.9584,
+    "recall": 0.6596,
+    "f1": 0.7814,
+    "support": 17156
+   }
+  }
+ },
+ "v2.12-s42": {
+  "n": 18268,
+  "accuracy_3class": 0.6618,
+  "accuracy_binary_block": 0.7319,
+  "per_class": {
+   "ham": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "spam": {
+    "precision": 0.3356,
+    "recall": 0.3561,
+    "f1": 0.3455,
+    "support": 1112
+   },
+   "phishing": {
+    "precision": 0.9592,
+    "recall": 0.6816,
+    "f1": 0.7969,
+    "support": 17156
+   }
+  }
+ },
+ "v2.12-soup": {
+  "n": 18268,
+  "accuracy_3class": 0.6936,
+  "accuracy_binary_block": 0.7624,
+  "per_class": {
+   "ham": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "spam": {
+    "precision": 0.3374,
+    "recall": 0.321,
+    "f1": 0.329,
+    "support": 1112
+   },
+   "phishing": {
+    "precision": 0.9569,
+    "recall": 0.7178,
+    "f1": 0.8202,
+    "support": 17156
+   }
+  }
+ }
+}

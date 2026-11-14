@@ -1,0 +1,300 @@
+text,label,category,language
+Dear Customer your Paytm KYC has been expired. Your wallet will be block within 24 hrs. Call customer care 8927461530 immediately.,phishing,wallet_kyc_callback,en
+"Dear user, Your Pay tm KYC is suspend. Contact KYC officer Mr Rakesh Sharma on 7605512894 to avoid wallet hold.",phishing,wallet_kyc_callback,en
+PhonePe alert: your KYC documents are pending verification. Wallet services stop today 9:30 PM. Call 9339027715,phishing,wallet_kyc_callback,en
+"Your SBI YONO account will be blocked today. Please update your PAN card, call our executive 8240917356.",phishing,bank_kyc_callback,en
+"Dear customer ur HDFC NetBanking is going to suspend tonight due to KYC not updated, kindly contact branch helpline no 9163048827 Thank you",phishing,bank_kyc_callback,en
+ICICI Bank: A/c XXXX7731 put on hold as KYC incomplete. To reactivate speak to our officer at 7003659921 before 6 PM.,phishing,bank_kyc_callback,en
+KYC EXPIRED!! Your Google Pay wallet is freeze. Call 9883127740 now for re-KYC,phishing,wallet_kyc_callback,en
+"Dear Airtel Payments Bank customer, your KYC validity has expired and account will be deactivated in 24 hours. Call helpdesk 8101745539.",phishing,wallet_kyc_callback,en
+"Axis Bank Dear Customer, Your account has been temporarily restricted as Aadhaar is not linked. Kindly call 9732218846 for link process.",phishing,bank_kyc_callback,en
+"Your Mobikwik wallet KYC is pending since 3 days. Balance Rs 2,340 will be forfeited. Whatsapp your details to 8697430012",phishing,wallet_kyc_callback,en
+Dear consumer your electricity power will be disconnected tonight at 9.30 pm from electricity office because your previous month bill was not update. Please immediately contact with our electricity officer 8250719934 Thank you,phishing,electricity_disconnect_callback,en
+"Dear Customer, Your Electricity will be cut today 10:30PM. Last month bill not updated in system. Call Electricity Officer 9064418827",phishing,electricity_disconnect_callback,en
+MSEDCL NOTICE: Consumer no 170024839915 power supply will be disconnected at 8:30 PM tonight. bill is not update. Contact 7029956103 immediately,phishing,electricity_disconnect_callback,en
+"TATA Power: Your light connection is scheduled for disconnection today as payment of Rs 1,870 is showing pending. Speak to officer Amit Verma 9831206648",phishing,electricity_disconnect_callback,en
+"Dear BSES consumer ,your electric meter will be disconnect tonite. Previous bill not updated . call 8017734529 urgent",phishing,electricity_disconnect_callback,en
+K-Electric: Dear customer your connection will be disconnected within 2 hours due to non verification of last bill. Contact helpline officer 03124457810.,phishing,electricity_disconnect_callback,en
+LESCO Final notice. Your meter ref 12-11234-0456700 is marked for disconnection today evening. Call 03067712984 to stop.,phishing,electricity_disconnect_callback,en
+"Dear DESCO customer, your prepaid meter will lock tonight because recharge was not update on server. Please call 01764421908.",phishing,electricity_disconnect_callback,en
+KPLC: Your token meter 37194402861 has been flagged and power will go off at 6PM. Call our technician on 0741239906 to update.,phishing,electricity_disconnect_callback,en
+Eskom notice: electricity supply to your address will be suspended today because of unverified account details. Contact agent Thabo on 0736648120.,phishing,electricity_disconnect_callback,en
+Dear customer your gas connection will be disconnect tonight 9 PM because KYC is not complete. Call gas office 9007341126.,phishing,gas_disconnect_callback,en
+Indane: your LPG subsidy has been stopped due to Aadhaar not seeded. To restart subsidy call 8336091274 today.,phishing,subsidy_stopped_callback,en
+"Mahanagar Gas Ltd: Dear consumer, your PNG supply will be stopped today as your last bill is not updated. Contact officer 7890214465.",phishing,gas_disconnect_callback,en
+SNGPL Dear consumer your gas meter will be removed tomorrow morning for bill not updated. Call 03215567043 for clearance.,phishing,gas_disconnect_callback,en
+Titas Gas notice: your line will be cut within 24 hr as bill record not found. contact 01893320145,phishing,gas_disconnect_callback,en
+HP Gas: Your cylinder booking is cancelled & connection blocked for incomplete eKYC. Call distributor helpline 9874410263.,phishing,gas_disconnect_callback,en
+Dear Customer water supply at your premises will be disconnect today 5pm for pending verification of last payment. Call Jal Board officer 8584013397.,phishing,water_disconnect_callback,en
+Nairobi Water: your account 2204918 is due for disconnection today. Payment not reflecting. Call 0115623847 now,phishing,water_disconnect_callback,en
+"Bharat Gas dear customer subsidy amount Rs 318 could not be credited, bank details mismatch. Please call 9330672218 to correct.",phishing,subsidy_stopped_callback,en
+IGL alert - gas supply to your flat will stop after 8 PM today. Meter reading not update. Contact 8420156739 urgently.,phishing,gas_disconnect_callback,en
+"Dear Customer, your SIM documents verification is pending. Your number will be deactivated within 24 hours. Call 9123478605.",phishing,sim_deactivation_callback,en
+Jio: your SIM card e-KYC has been suspended. Outgoing calls will stop tonight. Please call customer care 7044195528 immediately.,phishing,sim_deactivation_callback,en
+"Airtel ALERT your sim will be blocked today as per TRAI rule, documents not submitted. Call 8100362794",phishing,sim_deactivation_callback,en
+"Vi customer, we could not verify your Aadhaar. Your mobile no. will be disconnect in 2 hrs. Contact 9748830156 for verification.",phishing,sim_deactivation_callback,en
+BSNL Dear subscriber your SIM KYC is expired. Sim will be block in 24hrs. Call KYC executive 8276640913.,phishing,sim_deactivation_callback,en
+PTA Notice: Your SIM is registered on invalid CNIC and will be blocked today. Call 03334719052 for biometric verification.,phishing,sim_deactivation_callback,en
+Dear Jazz user your number is going to block due to incomplete verification. Call our representative 03018892346.,phishing,sim_deactivation_callback,en
+Grameenphone: Your SIM biometric re-registration is not complete. Number will be deactivated tonight. Call 01719930248.,phishing,sim_deactivation_callback,en
+NCC/NIN notice: your MTN line is not properly linked and will be barred in 24hrs. Call 08134472096 to link your NIN now.,phishing,sim_deactivation_callback,en
+Safaricom: Your line registration is incomplete and will be switched off today at midnight. Call 0704518829 to update your ID.,phishing,sim_deactivation_callback,en
+Your ATM card has been blocked. For reactivate call 9038814427.,phishing,atm_card_blocked_callback,en
+"Dear SBI customer, your ATM card is blocked due to wrong PIN attempts. Call 7384409162 with your card for unblock.",phishing,atm_card_blocked_callback,en
+PNB: Debit card ending 5082 deactivated for security reason. Contact bank manager 9433217708.,phishing,atm_card_blocked_callback,en
+ALERT ! Your ATM is going to expire today. Renew it by calling head office 8910345572,phishing,atm_card_blocked_callback,en
+"Dear customer, your BVN has been compromise and your ATM card is deactivated. Call 08067731459 immediately to reactivate.",phishing,atm_card_blocked_callback,en
+GTBank: Your Naira MasterCard has been placed on hold. Kindly call customer service on 09035528174 to lift restriction.,phishing,atm_card_blocked_callback,en
+HBL: Dear Customer your ATM card has been blocked due to verification issue. Please call 03456620917 to activate.,phishing,atm_card_blocked_callback,en
+Equity Bank: Your ATM card ending 3391 was blocked after suspicious activity. Call 0759914023 for assistance.,phishing,atm_card_blocked_callback,en
+FNB: your cheque card has been temporarily stopped. Phone our fraud desk on 0614427983 to restore it.,phishing,atm_card_blocked_callback,en
+"Dear BOB user, your Rupay card will stop working from tomorrow because chip upgrade not done. Call 8777026419 for upgradation.",phishing,atm_card_blocked_callback,en
+"Rs 24,999 debited from your A/c XX4417 to unknown source. If not done by you call 9051176284 immediately.",phishing,unknown_debit_callback,en
+"Dear customer, an unknown source has withdrawn money from your account. To stop transaction call 8348820615 now.",phishing,unknown_debit_callback,en
+"ALERT: INR 49,500.00 transfer initiated from your account to beneficiary VIKRAM ENT. Not you? Call 7439915027 to cancel within 30 min.",phishing,unknown_debit_callback,en
+"UBA: N85,000 was taken from your account by unknown device. Call 07063319845 fast to reverse it.",phishing,unknown_debit_callback,en
+"M-PESA: Ksh 12,450 sent to unknown number from your account. To reverse call 0798834516.",phishing,unknown_debit_callback,en
+"Capitec: R3,899.00 reserved for purchase at ONLINE STORE. If this was not you call 0637745128.",phishing,unknown_debit_callback,en
+"Meezan Bank: Rs 35,000 has been deducted from your account from unknown source. For refund call 03095581276.",phishing,unknown_debit_callback,en
+"bKash: Tk 8,500 cash out from your account by unauthorized agent. Call 01611947320 to block.",phishing,unknown_debit_callback,en
+"Maybank: RM 2,450.00 was deducted from your account at 02:14 AM. If you did not do this call 0116284957.",phishing,unknown_debit_callback,en
+"BDO Alert: PHP 18,700 was debited from your account through unrecognized device. Call 09175528834 to dispute.",phishing,unknown_debit_callback,en
+Dear pensioner your pension has been stopped as life certificate not submitted. Call pension officer 9875513462 to resume.,phishing,pension_stopped_callback,en
+EPFO: Your PF account is frozen due to KYC mismatch. Contact 8013397245 for claim settlement.,phishing,pension_stopped_callback,en
+PM Kisan: your installment of Rs 2000 is on hold. Aadhaar seeding fail. Call 7586024913 to release payment.,phishing,subsidy_stopped_callback,en
+"BISP: Your payment of Rs 13,500 is stopped due to CNIC verification. Contact officer 03145587209.",phishing,subsidy_stopped_callback,en
+SASSA: your grant payment for this month has been suspended pending verification. Call 0725519834 with your ID number.,phishing,subsidy_stopped_callback,en
+"Dear beneficiary, ration card has been cancel for not linking Aadhaar. Call food supply office 9614470382 today itself.",phishing,subsidy_stopped_callback,en
+Inua Jamii: your stipend was returned. Call 0111847562 to confirm your details and receive payment.,phishing,subsidy_stopped_callback,en
+N-Power: Your stipend payment failed due to BVN error. Call 08109945273 for correction before Friday.,phishing,subsidy_stopped_callback,en
+Samurdhi allowance for your household has been put on hold. Please call divisional officer 0714482906 to verify details.,phishing,subsidy_stopped_callback,en
+Old age allowance stopped! Your Nagad account is not verified. Call 01852207461.,phishing,pension_stopped_callback,en
+Dear customer your Flipkart order tracking has been disabled due to incomplete address. Call delivery executive 9062238471.,phishing,order_tracking_callback,en
+Amazon: your order #408-2291157 is on hold. To confirm delivery please call 8617743209.,phishing,order_tracking_callback,en
+"India Post: your parcel could not be delivered, address incomplete. Call 7001845526 within 12 hrs or it return.",phishing,courier_release_callback,en
+Blue Dart: shipment 59182204713 held at hub. Call 9230076148 to release parcel.,phishing,courier_release_callback,en
+TCS Courier: your parcel is stuck in customs. Contact rider 03227741065 for release.,phishing,courier_release_callback,en
+"Dear customer, your Daraz order is cancel by system. For refund Rs 3,450 call helpline 03041198527.",phishing,order_tracking_callback,en
+GIG Logistics: we have a package in your name but phone number on waybill is wrong. Call dispatch 08153347290 today.,phishing,courier_release_callback,en
+Your J&T parcel is damaged in transit. For compensation claim please call our officer 0128834716.,phishing,courier_release_callback,en
+"Lazada: Order 3371920458 tracking disabled, payment not confirmed. Call CS 0149972035 to avoid cancel.",phishing,order_tracking_callback,en
+"Shopee Dear buyer, your parcel is hold at sorting centre. Kindly whatsapp 0176628493 to arrange re-delivery.",phishing,courier_release_callback,en
+"HDFC Bank: Congratulations! Personal loan of Rs 5,00,000 is pre-approved on your account. Call 9088127364 to confirm disbursal today.",phishing,loan_preapproved_bank_impersonation,en
+"Dear customer you are eligible for SBI pre approved loan 3 lakh, no document. Call loan officer Priya 8296613075 for confirm.",phishing,loan_preapproved_bank_impersonation,en
+"Bajaj Finserv: Your loan of Rs 2,75,000 has been sanctioned. Amount will credit after verification call. Contact 7278845019.",phishing,loan_preapproved_bank_impersonation,en
+"Access Bank: Your loan of N500,000 has been approved. Call account officer 08026619437 to confirm before 4pm.",phishing,loan_preapproved_bank_impersonation,en
+"KCB: you have been pre-approved for a loan of Ksh 150,000. Call 0745118093 to confirm and receive funds.",phishing,loan_preapproved_bank_impersonation,en
+"Dear Customer, UBL has approved loan Rs 500,000 on your CNIC. Call 03334482917 for confirmation.",phishing,loan_preapproved_bank_impersonation,en
+"BRAC Bank: Your personal loan Tk 3,00,000 is ready for disbursement. Please call 01730482295 to confirm account.",phishing,loan_preapproved_bank_impersonation,en
+"Capitec Bank: you qualify for a R50,000 credit, pre-approved. Call consultant Lerato 0814427705 to finalise today.",phishing,loan_preapproved_bank_impersonation,en
+"CIMB: Your personal financing RM30,000 is approved. Call officer 0193347826 to confirm acceptance within 24 hours.",phishing,loan_preapproved_bank_impersonation,en
+"ICICI Bank pre approved loan Rs.4,50,000 expire today. Confirm by calling 9007785341",phishing,loan_preapproved_bank_impersonation,en
+"Dear Cardholder, your SBI credit card reward points worth Rs 5,899 expire today. Call 8334416720 to redeem into cash.",phishing,card_reward_points_callback,en
+Your credit card limit will be reduce to zero from tomorrow due to KYC non compliance. Call card division 9830057142.,phishing,bank_kyc_callback,en
+HDFC: your net banking is blocked. Call 7044913386,phishing,account_blocked_callback,en
+"Kotak Bank: unusual login on your account from new device. If not you, call 8017728459 immediately to secure account.",phishing,account_blocked_callback,en
+Dear customer your Canara bank account is suspended. Please update PAN number by calling 9163372054 otherwise account will close.,phishing,bank_kyc_callback,en
+Zenith Bank: your account has been restricted because of BVN mismatch. Call 09077713428 to resolve.,phishing,account_blocked_callback,en
+"Dear customer, your Opay account is place on PND. Call our agent on 08145573902 to remove restriction.",phishing,account_blocked_callback,en
+First Bank: your account is dormant and will be closed today. Call 07035541826 to reactivate.,phishing,account_blocked_callback,en
+Absa: Your online banking profile has been locked. Call 0672235891 and have your card with you.,phishing,account_blocked_callback,en
+Standard Bank: we stopped a debit order on your account. Call 0739914472 to confirm if you authorised it.,phishing,unknown_debit_callback,en
+"Dear user, your Easypaisa account has been blocked due to wrong information. Call helpline 03478812306.",phishing,wallet_kyc_callback,en
+JazzCash: Dear customer your account is temporary suspended. For reopen call 03004471928 and tell the code you receive.,phishing,wallet_kyc_callback,en
+"Your Nagad account is locked for security. Call 01943378210, our officer will send code for unlock.",phishing,wallet_kyc_callback,en
+"Rocket: Dear customer, your account PIN is expired. Call 01517734098 to reset.",phishing,wallet_kyc_callback,en
+eZ Cash: your wallet has been suspended for verification. Call 0772204916 to reactivate.,phishing,wallet_kyc_callback,en
+Commercial Bank: Your debit card was blocked due to suspicious transaction. Please call 0765531482.,phishing,atm_card_blocked_callback,en
+GCash: Your account is restricted pending verification. Call 09283341725 for assistance.,phishing,wallet_kyc_callback,en
+Touch n Go eWallet: your account will be suspended in 24 hours for failed verification. Call 0182294763.,phishing,wallet_kyc_callback,en
+Airtel Money: your account is under review and withdrawals are stopped. Call 0733918245 to verify.,phishing,wallet_kyc_callback,en
+MTN MoMo: Your wallet has been blocked for wrong PIN. Call agent 08103328476 to unblock.,phishing,wallet_kyc_callback,en
+Sir your light bill not update. Connection cut tonight. Call 9339045871,phishing,electricity_disconnect_callback,en
+Reminder: KYC update for your savings account ending 2290 is due. To avoid restriction on debits please speak to your relationship officer on 8420093315.,phishing,bank_kyc_callback,en
+"Final reminder. Your FASTag is blacklisted for KYC pending, call 7605534827 to activate before toll.",phishing,fastag_kyc_callback,en
+Your Aadhaar is suspended for misuse. Call UIDAI officer 9874426018 within 2 hours to avoid legal action.,phishing,govt_id_suspended_callback,en
+"Income Tax Dept: Refund of Rs 15,490 is approved but account number is wrong. Call 8910276645 to correct.",phishing,tax_refund_callback,en
+"Dear customer, your LIC policy 348820157 has lapsed and bonus Rs 86,000 is on hold. Call 9051337286 to claim.",phishing,insurance_bonus_callback,en
+Dear member your EPF withdraw request is rejected. Call 7890035612 for re submit.,phishing,pension_stopped_callback,en
+TRAI: mobile number will be disconnected in 2 hours for illegal activity. To speak officer call 9123406578.,phishing,sim_deactivation_callback,en
+Your DTH account is suspend. Recharge is not update in system. Call Tata Play care 8697715340,phishing,dth_broadband_callback,en
+"Your broadband connection will be terminate today due to KYC, call Jio Fiber team 9330048217.",phishing,dth_broadband_callback,en
+NADRA: Your CNIC has been blocked due to suspicious activity. Call 03115529047 for clearance.,phishing,govt_id_suspended_callback,en
+State Bank of Pakistan: Your all ATM cards are blocked for verification. Call 03234417826.,phishing,atm_card_blocked_callback,en
+Dear Telenor customer your SIM is used in illegal activity. Call 03459921704 now otherwise FIR will register.,phishing,sim_deactivation_callback,en
+"Dear customer your Zong number will close in 24 hour, biometric not verify. contact 03162248593",phishing,sim_deactivation_callback,en
+Bank Alfalah: Dear customer your account is temporarily blocked. Call our helpline 03087745192 for verification.,phishing,account_blocked_callback,en
+"Your Sui gas bill of Rs 4,870 is not update in record, meter disconnect team is coming tomorrow. Call 03025583914.",phishing,gas_disconnect_callback,en
+"WAPDA notice, your electricity meter is being cut today for unpaid adjustment. Call SDO office 03344490271.",phishing,electricity_disconnect_callback,en
+Dear customer Leopards Courier have your parcel but address not found. Call 03126674805 to receive.,phishing,courier_release_callback,en
+"Ehsaas program: Rs 25,000 approved in your name. Call 03058812467 for receiving.",phishing,subsidy_stopped_callback,en
+"Allied Bank: Rs 18,200 online purchase from your card. if you not did this call 03214478650",phishing,unknown_debit_callback,en
+"Dear customer, your bKash account will be closed for information update. Call 01841129375 immediately.",phishing,wallet_kyc_callback,en
+Dutch-Bangla Bank: Your Nexus card is blocked. To unblock call 01722384951.,phishing,atm_card_blocked_callback,en
+Robi: Your SIM will be deactivate today for NID mismatch. Call 01817750243.,phishing,sim_deactivation_callback,en
+"DPDC: Your electricity line will be disconnected today 7pm, last bill not posted. Call 01911238470.",phishing,electricity_disconnect_callback,en
+"Sundarban Courier: parcel in your name is waiting, delivery charge issue. Call 01679924518.",phishing,courier_release_callback,en
+Islami Bank: Your account has unusual transaction. Call our officer 01558832704 to verify.,phishing,unknown_debit_callback,en
+CEB: Your electricity supply will be disconnected today due to outstanding not updated. Call 0759923481 immediately.,phishing,electricity_disconnect_callback,en
+Dialog: Your connection will be suspended tonight as NIC details are not verified. Call 0763318294.,phishing,sim_deactivation_callback,en
+Sampath Bank: Your account has been temporarily locked. Call 0718845527 to verify your details.,phishing,account_blocked_callback,en
+"BOC: Rs 45,000 debited from your account. If not done by you call 0704492183 now.",phishing,unknown_debit_callback,en
+"Dear customer, your account will be deactivated because your BVN is not linked to NIN. Call 08062254917.",phishing,bank_kyc_callback,en
+CBN: Your ATM card has been blocked due to the new BVN upgrade. Call 09026638174 now to avoid closure of account.,phishing,atm_card_blocked_callback,en
+"Kuda: we noticed a failed debit of N42,500 on your account. Call 08138827451 to stop it.",phishing,unknown_debit_callback,en
+IKEDC: Your prepaid meter 45061192837 will be blocked today. Call 07082294613 for token update.,phishing,electricity_disconnect_callback,en
+EKEDC notice: your light will be disconnected today for unverified payment. Call marketer on 08094471326.,phishing,electricity_disconnect_callback,en
+"Airtel NG: Your SIM will be barred in 12hrs, NIN not link. Call 09013358427",phishing,sim_deactivation_callback,en
+DHL Nigeria: your package from UK is held at Lagos airport. Call agent Mr Chinedu 08167740259 for clearance.,phishing,courier_release_callback,en
+Palmpay: your account is frozen due to suspicious inflow. Call 09162285374 to unfreeze.,phishing,wallet_kyc_callback,en
+FCMB: Your account has been restricted. Kindly call your account officer on 08055519203.,phishing,account_blocked_callback,en
+"Dear Customer, N120,000 debit alert pending on your Access account. Call 07017736845 to cancel if not you.",phishing,unknown_debit_callback,en
+KRA: your PIN has been suspended for non-compliance. Call 0791145238 to avoid penalty.,phishing,govt_id_suspended_callback,en
+Co-op Bank: your MCo-op Cash is blocked. Call 0116748325 to unlock.,phishing,account_blocked_callback,en
+Fuliza: Your limit has been suspended. Call 0748832915 to reactivate your limit.,phishing,wallet_kyc_callback,en
+"Dear customer, your M-PESA account will be suspended today. Call 0705529471 to verify your PIN.",phishing,wallet_kyc_callback,en
+Posta Kenya: A parcel addressed to you is at GPO. Call 0769914053 to release.,phishing,courier_release_callback,en
+NHIF: your cover is inactive due to wrong details. Call 0113372846 to update.,phishing,govt_id_suspended_callback,en
+Vodacom: your SIM will be deactivated under RICA today. Call 0825513947 to keep your number.,phishing,sim_deactivation_callback,en
+"Nedbank: R7,450.00 paid from your account to new beneficiary. Not you? Call 0714428563.",phishing,unknown_debit_callback,en
+City Power: your meter has been flagged for disconnection today. Call 0634471928 to avoid cut-off.,phishing,electricity_disconnect_callback,en
+"SARS: your refund of R4,812.60 is ready but banking details are outdated. Call 0763385214.",phishing,tax_refund_callback,en
+Globe: Your SIM registration failed and number will be deactivated in 24 hrs. Call 09064418273.,phishing,sim_deactivation_callback,en
+Meralco: Your service is scheduled for disconnection today due to unposted payment. Call 09451127836.,phishing,electricity_disconnect_callback,en
+BPI: Your account has been temporarily locked due to multiple failed logins. Call 09276638415 to unlock.,phishing,account_blocked_callback,en
+TNB: Your electricity account is overdue and supply will be cut today. Call 0137745281.,phishing,electricity_disconnect_callback,en
+LHDN: You have outstanding tax arrears. Call officer 0162283947 immediately to avoid blacklist.,phishing,tax_refund_callback,en
+Pos Laju: Your parcel MY483920175 is detained. Call 0111 2847365.,phishing,courier_release_callback,en
+Singtel: your line will be terminated in 2 hours. Call 83471926 for assistance.,phishing,sim_deactivation_callback,en
+"DBS: unusual transaction of SGD 1,280 detected. Call 91247385 if you did not authorise.",phishing,unknown_debit_callback,en
+BCA: Your account is blocked for security reason. Please call our officer 081247736158 to activate again.,phishing,account_blocked_callback,en
+SCB Thailand: your card has been suspended. Call 0891472635 to reactivate.,phishing,atm_card_blocked_callback,en
+"Dear Customer, electricity bill payment received but not update in your consumer id. Power cut at 9:30 PM. Call 8100457729 & share transaction id.",phishing,electricity_disconnect_callback,en
+Hello sir this is from bank head office. Your account is under hold. Kindly call back on 9748812035.,phishing,account_blocked_callback,en
+Your number selected for KYC re-verification. Failure to call 8240036591 today = SIM block.,phishing,sim_deactivation_callback,en
+"IMPORTANT : Your Insurance policy is going to lapse , bonus amt 1,24,000 pending . Call IRDA dept 7003391847",phishing,insurance_bonus_callback,en
+dear customer ur a/c will b block 2day. pls call 9836624170 for kyc,phishing,bank_kyc_callback,en
+Your parcel is waiting. Call 8961157340.,phishing,courier_release_callback,en
+"Union Bank: Cheque book request declined, signature mismatch. Call branch officer 9432270586.",phishing,account_blocked_callback,en
+Dear user your WhatsApp will be deactivate tonight for not verify number. Call support 9073318462 and tell OTP.,phishing,account_blocked_callback,en
+"IRCTC: your refund Rs 1,245 for cancelled ticket failed. Call 8582094173 to receive in bank.",phishing,tax_refund_callback,en
+"Your account will be debited Rs 3,999 for annual card protection plan. To cancel this call 7980143526 within 1 hour.",phishing,unknown_debit_callback,en
+"प्रिय ग्राहक, आपका Paytm KYC समाप्त हो गया है। वॉलेट 24 घंटे में बंद हो जाएगा। तुरंत 8927735106 पर कॉल करें।",phishing,wallet_kyc_callback,hi
+आपका बिजली कनेक्शन आज रात 9:30 बजे काट दिया जाएगा क्योंकि पिछले महीने का बिल अपडेट नहीं हुआ है। बिजली अधिकारी से संपर्क करें 9064472281,phishing,electricity_disconnect_callback,hi
+SBI: आपका खाता बंद होने वाला है। पैन कार्ड अपडेट करने के लिए 7384415590 पर कॉल करें।,phishing,bank_kyc_callback,hi
+आपका ATM कार्ड ब्लॉक कर दिया गया है। चालू करवाने के लिए बैंक मैनेजर को 8348806173 पर फोन करें।,phishing,atm_card_blocked_callback,hi
+"प्रिय उपभोक्ता, आपकी गैस सब्सिडी रोक दी गई है। आधार लिंक न होने के कारण। 9330157824 पर संपर्क करें।",phishing,subsidy_stopped_callback,hi
+"आपके सिम के दस्तावेज़ अधूरे हैं, नंबर 24 घंटे में बंद हो जाएगा। कस्टमर केयर 8101938846",phishing,sim_deactivation_callback,hi
+"आपके खाते से अज्ञात स्रोत द्वारा ₹18,500 निकाले गए हैं। अगर आपने नहीं किया तो तुरंत 7044186632 पर कॉल करें।",phishing,unknown_debit_callback,hi
+पेंशन विभाग: जीवन प्रमाण पत्र जमा न होने से आपकी पेंशन रोक दी गई है। अधिकारी से बात करें 9875526017,phishing,pension_stopped_callback,hi
+"बधाई हो! HDFC बैंक से आपका ₹3,00,000 का लोन मंज़ूर हो गया है। पुष्टि के लिए 8296640138 पर कॉल करें।",phishing,loan_preapproved_bank_impersonation,hi
+"आपका पार्सल डिलीवर नहीं हो सका, पता अधूरा है। डिलीवरी बॉय का नंबर 9062217495, आज ही कॉल करें।",phishing,courier_release_callback,hi
+PM किसान की किस्त रुकी हुई है। खाता सत्यापन के लिए 7586039124 पर फोन करें।,phishing,subsidy_stopped_callback,hi
+प्रिय ग्राहक आपका PhonePe अकाउंट बंद कर दिया गया है KYC अपडेट करने के लिए हमारे अधिकारी को कॉल करें 8617750923,phishing,wallet_kyc_callback,hi
+सूचना: आपका राशन कार्ड रद्द होने वाला है। आधार सीडिंग के लिए 9614483207 पर संपर्क करें।,phishing,subsidy_stopped_callback,hi
+बैंक ऑफ बड़ौदा: आपका डेबिट कार्ड कल से काम नहीं करेगा। नया कार्ड चालू करने हेतु 8777031564 पर कॉल करें।,phishing,atm_card_blocked_callback,hi
+आपका Jio नंबर आज रात बंद हो जाएगा। eKYC पूरा नहीं है। 7001872359,phishing,sim_deactivation_callback,hi
+"बिजली विभाग की अंतिम सूचना। मीटर आज शाम काट दिया जाएगा, बिल सिस्टम में अपडेट नहीं है। JE साहब से बात करें 9123419086",phishing,electricity_disconnect_callback,hi
+"आपकी LIC पॉलिसी का बोनस ₹92,000 रुका हुआ है। क्लेम के लिए 9051348820 पर कॉल करें।",phishing,insurance_bonus_callback,hi
+"आयकर विभाग: आपका रिफंड ₹12,640 खाता संख्या गलत होने से वापस आ गया है। सुधार के लिए 8910284417 पर संपर्क करें।",phishing,tax_refund_callback,hi
+"प्रिय ग्राहक, आपका क्रेडिट कार्ड ब्लॉक हो गया है। अनब्लॉक के लिए कार्ड विभाग 9830069251 पर कॉल करें और कार्ड साथ रखें।",phishing,atm_card_blocked_callback,hi
+"आपका Flipkart ऑर्डर रुका हुआ है, ट्रैकिंग बंद कर दी गई है। हेल्पलाइन 8961173308",phishing,order_tracking_callback,hi
+"Dear customer aapka Paytm KYC expire ho gaya hai, wallet band ho jayega. Abhi call kare 9339061482",phishing,wallet_kyc_callback,hi
+Aapka bijli connection aaj raat 9:30 baje kaat diya jayega kyunki pichle mahine ka bill update nahi hua. Bijli officer ko call karein 8250743196,phishing,electricity_disconnect_callback,hi
+Sir aapka ATM card block ho gaya hai. Chalu karne ke liye 9038827501 par call kijiye,phishing,atm_card_blocked_callback,hi
+Aapke account se unknown source ne paisa nikala hai. Rokne ke liye turant call karo 8348819064,phishing,unknown_debit_callback,hi
+"Priya grahak aapka SIM 24 ghante me band ho jayega, document verify nahi hai. Call 9748846273",phishing,sim_deactivation_callback,hi
+Aapki gas subsidy band kar di gayi hai. Dobara chalu karwane ke liye 8336014795 par sampark kare.,phishing,subsidy_stopped_callback,hi
+"SBI se bol raha hu, aapka khata hold par hai. KYC ke liye is number par call kare 7605549318",phishing,bank_kyc_callback,hi
+Badhai ho aapka 2 lakh ka loan Bajaj Finance se pass ho gaya hai. Confirm karne ke liye call kare 7278863140,phishing,loan_preapproved_bank_impersonation,hi
+"Aapka parcel hub me ruka hai, address galat hai. Delivery wale ko phone karo 9230081657",phishing,courier_release_callback,hi
+Pension ruk gayi hai aapki. Jeevan praman jama nahi hua. Officer se baat kare 8013342976,phishing,pension_stopped_callback,hi
+"Aapka Airtel number aaj band hone wala hai, Aadhaar verify nahi hua. Customer care 8100379425",phishing,sim_deactivation_callback,hi
+Dear user aapka Google Pay account suspend hai. KYC karne ke liye hamare executive ko call kare 9883140627,phishing,wallet_kyc_callback,hi
+Bijli bill jama hai lekin system me update nahi. Aaj raat line kategi. Turant 9064435718 par baat karein.,phishing,electricity_disconnect_callback,hi
+"Aapka PF ka paisa atka hua hai, KYC mismatch. Nikalne ke liye 7890048263 par call karo.",phishing,pension_stopped_callback,hi
+HDFC Bank: aapke credit card ke reward points aaj khatam ho rahe hain. Cash me badalne ke liye call kare 8334427915,phishing,card_reward_points_callback,hi
+aapka order cancel ho gaya hai refund ke liye 8697728641 pe call kare,phishing,order_tracking_callback,hi
+Kisan samman nidhi ki kist ruki hai. Bank khata galat hai. Sahi karne ke liye 7586051392,phishing,subsidy_stopped_callback,hi
+Aapka Aadhaar card galat kaam me use hua hai. 2 ghante me 9874439205 par call nahi kiya to number band.,phishing,govt_id_suspended_callback,hi
+Dear customer aapka FASTag blacklist ho gaya hai KYC na hone se. Chalu karne ke liye 7605561734,phishing,fastag_kyc_callback,hi
+PNB: aapka net banking band kar diya gaya hai. Dobara shuru karne ke liye branch officer 9433229846 ko call karein.,phishing,account_blocked_callback,hi
+"Nasabah BRI Yth, rekening Anda diblokir sementara karena data belum diperbarui. Hubungi CS kami di 081259934716.",phishing,account_blocked_callback,id
+BCA: kartu ATM Anda terblokir. Untuk aktivasi kembali hubungi 082145573028.,phishing,atm_card_blocked_callback,id
+PLN: Listrik di alamat Anda akan diputus malam ini karena tagihan belum terupdate di sistem. Hubungi petugas 085711294385.,phishing,electricity_disconnect_callback,id
+Akun DANA Anda dibekukan karena verifikasi KTP gagal. Hubungi WA 081377215946 untuk buka blokir.,phishing,wallet_kyc_callback,id
+"Kartu Telkomsel Anda akan dinonaktifkan dalam 24 jam, registrasi NIK belum valid. Hub 082211847593",phishing,sim_deactivation_callback,id
+"Yth. Bapak/Ibu, paket Anda tertahan di gudang JNE karena alamat tidak lengkap. Hubungi kurir 085822013947.",phishing,courier_release_callback,id
+Bank Mandiri: Terdeteksi transaksi Rp 4.750.000 dari sumber tidak dikenal. Jika bukan Anda hubungi 081318829465.,phishing,unknown_debit_callback,id
+"Selamat, pengajuan KUR BRI Rp 50.000.000 Anda disetujui. Konfirmasi pencairan hub. Bpk Hendra 082334471925.",phishing,loan_preapproved_bank_impersonation,id
+BPJS Kesehatan: kepesertaan Anda dinonaktifkan karena data tidak sesuai. Hubungi petugas 081290047316.,phishing,govt_id_suspended_callback,id
+OVO: saldo Anda ditahan karena akun belum upgrade. Hubungi CS 085776129483 sekarang.,phishing,wallet_kyc_callback,id
+Info BNI: mulai besok biaya transaksi berubah jadi Rp150.000/bulan. Jika tidak setuju hubungi WA 081234498271.,phishing,bank_fee_change_callback,id
+Bansos PKH Anda tahap ini belum cair karena rekening tidak aktif. Hubungi pendamping 082188375024.,phishing,subsidy_stopped_callback,id
+"PDAM: sambungan air Anda akan diputus hari ini, pembayaran bulan lalu belum tercatat. Hub 081946620385",phishing,water_disconnect_callback,id
+"Pesanan Shopee Anda dibatalkan sistem, dana Rp 389.000 akan dikembalikan. Hubungi 085330917246 untuk proses refund.",phishing,order_tracking_callback,id
+Bea Cukai: paket kiriman luar negeri atas nama Anda ditahan. Segera hubungi petugas 081372256489.,phishing,courier_release_callback,id
+"kartu kredit anda terblokir, hub call center 082126639175",phishing,atm_card_blocked_callback,id
+GoPay: akun Anda terdeteksi login dari perangkat lain dan dibatasi. Hubungi 081511738264 untuk pemulihan.,phishing,wallet_kyc_callback,id
+Indosat: nomor Anda akan diblokir permanen malam ini karena belum registrasi ulang. Telp 085624417830.,phishing,sim_deactivation_callback,id
+"Pelanggan Yth, token listrik Anda gagal terisi dan meteran akan terkunci. Hubungi teknisi PLN 081273394651.",phishing,electricity_disconnect_callback,id
+"J&T: paket tidak dapat dikirim, nomor penerima salah. Hubungi 082257718346 dalam 1x24 jam.",phishing,courier_release_callback,id
+Bank BSI: rekening Anda terkena pemblokiran sistem. Aktivasi ulang lewat petugas kami di 081336684920.,phishing,account_blocked_callback,id
+Dana pensiun Taspen Anda bulan ini ditunda karena otentikasi belum dilakukan. Hubungi 082113395478.,phishing,pension_stopped_callback,id
+Pinjaman Bank Mandiri Rp 25 juta atas nama Anda siap dicairkan hari ini. Konfirmasi ke 085281164037.,phishing,loan_preapproved_bank_impersonation,id
+"PGN: aliran gas ke rumah Anda dihentikan besok pagi, tagihan tidak terbaca. Hubungi 081219937426.",phishing,gas_disconnect_callback,id
+Akun LinkAja anda diblokir!! segera hub 082349912675 utk aktifkan lg,phishing,wallet_kyc_callback,id
+Ditjen Pajak: NPWP Anda dinonaktifkan sementara. Untuk klarifikasi hubungi petugas 081385527194.,phishing,govt_id_suspended_callback,id
+SiCepat: paket Anda rusak di perjalanan. Untuk klaim ganti rugi hubungi 085947723016.,phishing,courier_release_callback,id
+Kartu XL Anda terdaftar dengan NIK ganda dan akan dimatikan. Hubungi 087822346195.,phishing,sim_deactivation_callback,id
+BTN: ada penarikan Rp 2.300.000 dari rekening Anda pukul 01.47. Bukan Anda? Telp 081294478362 segera.,phishing,unknown_debit_callback,id
+"Kartu Prakerja: insentif Anda gagal ditransfer, nomor rekening tidak cocok. Hubungi admin 082271136548.",phishing,subsidy_stopped_callback,id
+Maybank: Akaun anda telah disekat kerana maklumat tidak dikemaskini. Sila hubungi 0113 5827491 segera.,phishing,account_blocked_callback,ms
+TNB: Bekalan elektrik anda akan dipotong hari ini kerana bil tertunggak tidak dikemaskini. Hubungi pegawai 0176642918.,phishing,electricity_disconnect_callback,ms
+Kad ATM CIMB anda telah disekat. Untuk aktifkan semula sila telefon 0193385627.,phishing,atm_card_blocked_callback,ms
+LHDN: Anda mempunyai tunggakan cukai. Sila hubungi pegawai 0162274839 sebelum tindakan mahkamah diambil.,phishing,tax_refund_callback,ms
+Pos Laju: Bungkusan anda ditahan di pusat pengedaran. Hubungi 0148829365 untuk pelepasan.,phishing,courier_release_callback,ms
+"Tahniah, pinjaman peribadi Bank Rakyat RM20,000 anda telah diluluskan. Hubungi En. Faizal 0137745096 untuk pengesahan.",phishing,loan_preapproved_bank_impersonation,ms
+KWSP: Pengeluaran anda gagal diproses kerana nombor akaun tidak sepadan. Sila hubungi 0182293574.,phishing,pension_stopped_callback,ms
+"RM1,850.00 telah ditolak dari akaun anda oleh sumber tidak dikenali. Jika bukan anda hubungi 01128847361.",phishing,unknown_debit_callback,ms
+Celcom: Nombor anda akan ditamatkan dalam 24 jam kerana pendaftaran MyKad tidak sah. Hubungi 0195527384.,phishing,sim_deactivation_callback,ms
+"Air Selangor: bekalan air anda akan dipotong esok, bayaran belum diterima sistem. Tel 0126638295",phishing,water_disconnect_callback,ms
+Bantuan STR anda ditahan kerana maklumat bank tidak lengkap. Sila hubungi pegawai 0174419362.,phishing,subsidy_stopped_callback,ms
+J&T Express: parcel anda rosak. Untuk tuntutan ganti rugi sila hubungi 0109937245.,phishing,courier_release_callback,ms
+"Public Bank: kad kredit anda digunakan di luar negara berjumlah RM3,299. Jika tidak, hubungi 0163372948.",phishing,unknown_debit_callback,ms
+Akaun Touch n Go eWallet anda dibekukan. Hubungi khidmat pelanggan 0142285739 untuk pengesahan.,phishing,wallet_kyc_callback,ms
+PDRM: nombor telefon anda terlibat kes jenayah. Hubungi Sarjan Azman 0197736152 segera.,phishing,govt_id_suspended_callback,ms
+Kastam: barang anda ditahan di KLIA. Sila hubungi pegawai bertugas 0183349627.,phishing,courier_release_callback,ms
+Bank Islam: akaun anda digantung sementara. sila call 01139926485,phishing,account_blocked_callback,ms
+Maxis: bil anda tidak dikemaskini dan talian akan disekat malam ini. Hubungi 0122258473.,phishing,sim_deactivation_callback,ms
+Pesanan Shopee anda dibatalkan dan bayaran balik RM129 tertangguh. Hubungi 0167719385 untuk proses.,phishing,order_tracking_callback,ms
+JPJ: lesen memandu anda disenarai hitam. Hubungi 0135528694 untuk semakan.,phishing,govt_id_suspended_callback,ms
+BDO: Na-block ang inyong account dahil sa hindi na-update na impormasyon. Tumawag sa 09176642893 para ma-activate.,phishing,account_blocked_callback,tl
+Meralco: Puputulan po kayo ng kuryente mamayang gabi dahil hindi pa na-post ang bayad ninyo. Tawagan ang 09283357146.,phishing,electricity_disconnect_callback,tl
+GCash: Naka-hold ang wallet mo dahil expired na ang verification. Tawag sa 09451189327 ngayon.,phishing,wallet_kyc_callback,tl
+Globe: Made-deactivate ang SIM mo sa loob ng 24 oras dahil hindi kumpleto ang SIM registration. Tumawag sa 09175538264.,phishing,sim_deactivation_callback,tl
+"May nag-withdraw ng P15,000 sa account mo mula sa hindi kilalang device. Kung hindi ikaw, tumawag agad sa 09396618472.",phishing,unknown_debit_callback,tl
+SSS: Naka-hold po ang pension ninyo ngayong buwan. Tawagan ang 09217749356 para sa verification.,phishing,pension_stopped_callback,tl
+"Congrats! Approved na ang P80,000 loan mo sa BPI. Tawagan si Ms. Joy sa 09562283719 para makumpirma.",phishing,loan_preapproved_bank_impersonation,tl
+Na-block ang ATM card ninyo sa Landbank. Tumawag sa 09087735124 para ma-unblock.,phishing,atm_card_blocked_callback,tl
+"Maynilad: Mapuputulan kayo ng tubig bukas, hindi nag-reflect ang huling bayad. Tawag sa 09198846273.",phishing,water_disconnect_callback,tl
+"Smart: hindi verified ang SIM mo, mawawalan ka ng signal mamaya. Tawag 09473391825",phishing,sim_deactivation_callback,tl
+4Ps: Hindi na-credit ang ayuda ninyo dahil mali ang account number. Tumawag sa 09266627481.,phishing,subsidy_stopped_callback,tl
+LBC: Hindi ma-deliver ang padala para sa inyo. Tawagan ang 09158837462 para ma-release.,phishing,courier_release_callback,tl
+Maya: Na-freeze ang account mo dahil sa kahina-hinalang transaksyon. Tawagan ang aming agent sa 09613374285.,phishing,wallet_kyc_callback,tl
+Lazada: Na-disable ang tracking ng order mo dahil hindi kumpirmado ang bayad. Tawag sa 09957748136.,phishing,order_tracking_callback,tl
+ธนาคารกสิกรไทย: บัญชีของท่านถูกระงับชั่วคราว กรุณาติดต่อเจ้าหน้าที่ 0891473625 ด่วน,phishing,account_blocked_callback,th
+การไฟฟ้าแจ้งว่าจะตัดไฟบ้านท่านคืนนี้ เนื่องจากค่าไฟยังไม่อัปเดตในระบบ ติดต่อเจ้าหน้าที่ 0623384917,phishing,electricity_disconnect_callback,th
+บัตร ATM ของท่านถูกอายัด โทร 0954472816 เพื่อปลดล็อก,phishing,atm_card_blocked_callback,th
+มีพัสดุของท่านตกค้างที่ไปรษณีย์ไทย ที่อยู่ไม่ครบ กรุณาโทร 0817729435 เพื่อรับพัสดุ,phishing,courier_release_callback,th
+"มียอดเงิน 8,500 บาท ถูกหักจากบัญชีท่านโดยไม่ทราบที่มา หากไม่ได้ทำรายการ โทร 0926638174",phishing,unknown_debit_callback,th
+ซิมของท่านจะถูกระงับใน 24 ชม. เนื่องจากยังไม่ยืนยันตัวตน ติดต่อ AIS 0638815247,phishing,sim_deactivation_callback,th
+"ยินดีด้วย ธนาคารกรุงไทยอนุมัติสินเชื่อ 50,000 บาทให้ท่านแล้ว โทรยืนยันกับเจ้าหน้าที่ 0845572913",phishing,loan_preapproved_bank_impersonation,th
+เบี้ยผู้สูงอายุของท่านถูกระงับ ข้อมูลบัญชีไม่ถูกต้อง โทร 0972284631,phishing,pension_stopped_callback,th
+การประปา: น้ำประปาบ้านท่านจะถูกตัดพรุ่งนี้ ยอดชำระไม่เข้าระบบ ติดต่อ 0619937284,phishing,water_disconnect_callback,th
+TrueMoney Wallet ของคุณถูกล็อก ยืนยันตัวตนไม่สำเร็จ ติดต่อเจ้าหน้าที่ 0883346172,phishing,wallet_kyc_callback,th
+"กรมสรรพากร: ท่านมียอดคืนภาษี 4,320 บาท แต่เลขบัญชีผิด กรุณาโทร 0657718493",phishing,tax_refund_callback,th
+Kerry: พัสดุของคุณเสียหายระหว่างขนส่ง โทร 0936625184 เพื่อรับเงินชดเชย,phishing,courier_release_callback,th
+"SCB แจ้งเตือน บัตรเครดิตของท่านถูกใช้ที่ต่างประเทศ 12,900 บาท หากไม่ใช่ท่านโทร 0824419736",phishing,unknown_debit_callback,th
+คำสั่งซื้อ Shopee ของคุณถูกยกเลิก ติดต่อ 0998827341 เพื่อรับเงินคืน,phishing,order_tracking_callback,th
+สิทธิบัตรสวัสดิการแห่งรัฐของท่านถูกระงับ กรุณาติดต่อเจ้าหน้าที่ 0647753928 ภายในวันนี้,phishing,subsidy_stopped_callback,th

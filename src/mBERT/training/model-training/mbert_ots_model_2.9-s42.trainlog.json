@@ -1,0 +1,102 @@
+{
+  "device": "Apple Silicon MPS",
+  "base": "src/mBERT/training/model-training/mbert_ots_model_2.5.pth",
+  "train": "src/mBERT/training/model-training/dataset/curated/distill_v2.9_train.csv",
+  "epochs": 2,
+  "lr": 2e-05,
+  "alpha": 0.5,
+  "class_weighted": false,
+  "seed": 42,
+  "batch_size": 32,
+  "train_rows": 130671,
+  "val_rows": 4039,
+  "best_at": "e2s6000",
+  "best_macro_f1": 0.9925,
+  "minutes": 65.9,
+  "history": [
+    {
+      "accuracy": 0.9802,
+      "macro_f1": 0.9764,
+      "f1": {
+        "ham": 0.9853,
+        "spam": 0.9632,
+        "phishing": 0.9806
+      },
+      "block_accuracy": 0.9879,
+      "false_block_rate": 0.0144,
+      "at": "e1s1500"
+    },
+    {
+      "accuracy": 0.9908,
+      "macro_f1": 0.9891,
+      "f1": {
+        "ham": 0.9928,
+        "spam": 0.9833,
+        "phishing": 0.9913
+      },
+      "block_accuracy": 0.9941,
+      "false_block_rate": 0.003,
+      "at": "e1s3000"
+    },
+    {
+      "accuracy": 0.9903,
+      "macro_f1": 0.9885,
+      "f1": {
+        "ham": 0.9922,
+        "spam": 0.9824,
+        "phishing": 0.991
+      },
+      "block_accuracy": 0.9936,
+      "false_block_rate": 0.0066,
+      "at": "epoch1"
+    },
+    {
+      "accuracy": 0.9921,
+      "macro_f1": 0.9907,
+      "f1": {
+        "ham": 0.9937,
+        "spam": 0.9862,
+        "phishing": 0.9923
+      },
+      "block_accuracy": 0.9948,
+      "false_block_rate": 0.0054,
+      "at": "e2s4500"
+    },
+    {
+      "accuracy": 0.9938,
+      "macro_f1": 0.9925,
+      "f1": {
+        "ham": 0.9958,
+        "spam": 0.988,
+        "phishing": 0.9937
+      },
+      "block_accuracy": 0.9965,
+      "false_block_rate": 0.0018,
+      "at": "e2s6000"
+    },
+    {
+      "accuracy": 0.9936,
+      "macro_f1": 0.9925,
+      "f1": {
+        "ham": 0.9949,
+        "spam": 0.9889,
+        "phishing": 0.9937
+      },
+      "block_accuracy": 0.9958,
+      "false_block_rate": 0.0024,
+      "at": "e2s7500"
+    },
+    {
+      "accuracy": 0.9928,
+      "macro_f1": 0.9913,
+      "f1": {
+        "ham": 0.9946,
+        "spam": 0.9861,
+        "phishing": 0.9932
+      },
+      "block_accuracy": 0.9955,
+      "false_block_rate": 0.0024,
+      "at": "epoch2"
+    }
+  ]
+}

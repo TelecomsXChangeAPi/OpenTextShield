@@ -31,7 +31,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import torch
-from transformers import BertConfig, BertForSequenceClassification, BertTokenizerFast
+from transformers import BertConfig, BertForSequenceClassification
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 # Baseline reference, intentionally pinned to v2.5 (the last released production
@@ -46,18 +46,21 @@ VOCAB_FILE = REPO_ROOT / "evals/assets/bert-base-multilingual-cased-vocab.txt"
 # defensively (from __file__, not cwd) so the import also works when this module
 # is imported from another working directory.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from loaders import LABELS, LOADERS, production_normalize  # noqa: E402
+from loaders import LABELS, LOADERS, load_tokenizer, production_normalize  # noqa: E402
 
 MAX_LEN = 96  # matches production settings.max_text_length
 BATCH_SIZE = 32
+# Score on the GPU when there is one (Apple MPS or CUDA); results are identical to CPU.
+DEVICE = torch.device("mps" if torch.backends.mps.is_available() else "cuda" if torch.cuda.is_available() else "cpu")
 
 
 def load_model(model_path: Path):
-    tokenizer = BertTokenizerFast(vocab_file=str(VOCAB_FILE), do_lower_case=False)
+    tokenizer = load_tokenizer(VOCAB_FILE)
     config = BertConfig(vocab_size=119547, num_labels=3)
     model = BertForSequenceClassification(config)
     state = torch.load(model_path, map_location="cpu", weights_only=True)
     model.load_state_dict(state)
+    model.to(DEVICE)
     model.eval()
     return model, tokenizer
 
@@ -89,7 +92,8 @@ def predict(model, tokenizer, texts, batch_size=BATCH_SIZE, logit_bias=None, nor
             idx = order[start:start + batch_size]
             enc = tokenizer([texts[i] for i in idx], padding=True, truncation=True,
                             max_length=MAX_LEN, return_tensors="pt")
-            logits = model(**enc).logits.float()
+            enc = {k: v.to(DEVICE) for k, v in enc.items()}
+            logits = model(**enc).logits.float().cpu()
             if bias is not None:
                 logits = logits + bias
             probs = torch.softmax(logits, dim=1)
@@ -188,6 +192,8 @@ def main():
             kwargs["sample_n"] = int(parts[2])
 
         samples = LOADERS[name](path, **kwargs)
+        if name == "csv":  # key generic CSVs by file so several can share one run
+            name = Path(path).stem
         print(f"[{name}] {len(samples)} samples — running inference...", file=sys.stderr)
         t0 = time.time()
         preds, confs = predict(model, tokenizer, [s["text"] for s in samples],

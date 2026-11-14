@@ -1,0 +1,361 @@
+text,label,category,language
+Royal Mail: your package has a £1.99 unpaid shipping fee. Pay now to avoid return: royalmail-redelivery-fee.com,phishing,parcel_lure_fee,en
+USPS: We attempted to deliver your package but the address is incomplete. Update within 24h: usps-address-fix.top,phishing,parcel_lure_address,en
+FedEx: Package #FX77201 is on hold at our facility due to unpaid customs duties of $2.45. Settle here: fedex-duty-pay.icu,phishing,parcel_lure_customs,en
+UPS: Delivery attempted today at 11:20. No one was home. Reschedule: ups-redeliver.co,phishing,parcel_lure_reschedule,en
+Evri: We couldn't deliver your parcel. A redelivery charge of £1.45 applies. evri-rebook.uk,phishing,parcel_lure_fee,en
+Yodel: your parcel is waiting at the depot. Confirm your details within 48 hours or it will be returned to sender. yodel-confirm.net,phishing,parcel_lure_confirm,en
+DPD: your parcel is ready for delivery but we need your door number. Update now: dpd-uk-track.com/u/3391,phishing,parcel_lure_address,en
+Hermes: parcel held. Pay 1.99 fee to release. hermes-pay.xyz,phishing,parcel_lure_fee,en
+Your package could not be delivered due to an incorrect postal code. Please correct it here within 12 hours: bit.ly/3kPz9Qa,phishing,parcel_lure_address,en
+[USPS] Final notice: your parcel from 09/11 will be disposed of tomorrow unless you confirm your address. tinyurl.com/usps-hold-2291,phishing,parcel_lure_address,en
+DHL Express: customs clearance required for shipment 2748 1190 55. Pay EUR 1.99 import VAT: dhl-clearance.eu-pay.com,phishing,parcel_lure_customs,en
+"Amazon: your order of $849.00 (Apple Watch Ultra) has shipped to an address in Dallas, TX. Not you? Cancel here: amzn-orders-cancel.com",phishing,fake_order_lure,en
+"Shein: your order #SH8829102 for $212.40 has been placed. If you didn't make this purchase, click to cancel: shein-order-help.top",phishing,fake_order_lure,en
+"Temu: congratulations, your parcel is ready! Confirm delivery address to receive it: temu-pkg.icu/c/88",phishing,parcel_lure_confirm,en
+Package held. Call 0906 889 0012 to arrange redelivery.,phishing,parcel_lure_callback,en
+"GLS: your parcel has arrived at the local depot. To receive it, message our courier on WhatsApp +44 7418 221 903",phishing,parcel_lure_whatsapp,en
+Download the UPS tracking app to see your parcel in real time: ups-track-app.com/UPS_Tracker.apk,phishing,parcel_lure_apk,en
+Royal Mail: pay the storage fee of £2.99 to this account: sort 04-00-04 acc 32911876 ref RM7719 or your parcel will be returned.,phishing,parcel_lure_bank_transfer,en
+FedEx: please download our app to view your package status. fedex-mobile.net/FedEx.apk,phishing,parcel_lure_apk,en
+ups: ur pkg is held. pay 1.99 fee. ups-fee.cc,phishing,parcel_lure_fee,en
+URGENT - Your parcel #RM4471022 could not be delivered. Click to reschedule: royal-mail-reschedule.com. Fail to respond within 24hrs and the item will be returned.,phishing,parcel_lure_reschedule,en
+DHL: Your parcel is waiting for you! Please confirm it's yours: dhl-de-confirm.com,phishing,parcel_lure_confirm,en
+"Hi, this is Sam from DPD. Your parcel is on the van but the address is missing a flat number. Can you confirm it here? dpd-driver-help.co",phishing,parcel_lure_address,en
+Post Office: your parcel from overseas has been stopped at customs. A fee of £3.49 is due. Pay at postoffice-customs-uk.com,phishing,parcel_lure_customs,en
+USPS: your package is waiting in our warehouse. We need you to confirm your delivery preferences. usps-delivery-prefs.com,phishing,parcel_lure_confirm,en
+Evri: your parcel from ASOS is on its way! But we need you to pay a £1.20 redelivery fee first: evri-parcel-pay.com,phishing,parcel_lure_fee,en
+Aramex: Shipment 4421 0092 held for incomplete address. Update within 24h or it returns to shipper: aramex-update-address.com,phishing,parcel_lure_address,en
+Australia Post: your parcel is waiting. Pay the $1.95 handling fee: auspost-parcel-hold.com,phishing,parcel_lure_fee,en
+"Canada Post: delivery failed, your item will be held for 2 more days. Pay the CA$1.49 rescheduling fee: canadapost-redeliver.ca.co",phishing,parcel_lure_fee,en
+An Post: a customs charge of €2.80 is due on your parcel. Pay here to release it: anpost-customs-pay.com,phishing,parcel_lure_customs,en
+NZ Post: your parcel is on hold. Confirm your address now: nzpost-hold.top,phishing,parcel_lure_address,en
+Your parcel is scheduled for delivery today. Our driver needs you to confirm availability: t.me/dpd_support_bot,phishing,parcel_lure_confirm,en
+FedEx: your package is delayed due to a missing house number. We will attempt redelivery once you update it: fedex-fix.top (expires 11pm tonight),phishing,parcel_lure_address,en
+UPS notification: the package UPS-3382 arrived but the recipient address is unclear. Correct it within 12h: ups.redeliver-link.com,phishing,parcel_lure_address,en
+Delivery alert: a package addressed to you was returned to our depot. Call us on +44 7700 900 455 to collect.,phishing,parcel_lure_callback,en
+DHL Parcel: Your item is pending delivery. A small customs fee of 1.99 is outstanding. Pay via PayPal to parcels.dhl.cust@gmail.com,phishing,parcel_lure_bank_transfer,en
+Amazon Delivery: we tried to deliver your parcel but the gate code didn't work. Please update: amazon-redeliver-uk.com,phishing,parcel_lure_reschedule,en
+"Hello, your Shopee order worth $328 has shipped to Jurong West. Not you? Cancel immediately: shopee-order-cancel.icu",phishing,fake_order_lure,en
+"Lazada: order LZ9020331 for RM 1,249 confirmed. Didn't order? Report here: lazada-order-review.com",phishing,fake_order_lure,en
+Royal Mail: We have your parcel but the shipping fee was underpaid by £0.99. Pay here to proceed: royalmail-fee.co.uk.payment-portal.com,phishing,parcel_lure_fee,en
+Final attempt: your parcel is being returned to sender in 2 hours. Stop the return: bit.ly/stop-return-dpd,phishing,parcel_lure_reschedule,en
+DHL. Your shipment is ready for delivery. We need a confirmation of your address. Tap to confirm:,phishing,parcel_lure_linkfree,en
+UPS: you have 1 package waiting. Confirm your delivery address: ups-parcel-info.com,phishing,parcel_lure_confirm,en
+FEDEX ALERT: PACKAGE #8891 UNDELIVERABLE. ACTION REQUIRED. VERIFY ADDRESS: fedex-verify.icu,phishing,parcel_lure_address,en
+InPost: your parcel has been in the locker too long. Pay the £1 late fee to avoid return: inpost-late-fee.uk,phishing,parcel_lure_fee,en
+"Hi it's your DPD driver, I'm outside but can't find your door. WhatsApp me on +44 7520 118 332 so I don't take it back to the depot",phishing,parcel_lure_whatsapp,en
+Parcel notice: a shipment in your name was intercepted by customs. Import duty £11.20 must be paid today. Ref: HMRC/DHL/44021. Pay here: hmrc-dhl-duty.com,phishing,parcel_lure_customs,en
+Your Temu package has been delivered to the wrong address. Claim your refund here: temu-refund-claim.top,phishing,fake_order_lure,en
+SHEIN: We missed you! Your parcel is waiting. Rebook your delivery slot (£0.99): shein-delivery-rebook.com,phishing,parcel_lure_fee,en
+"Amazon: An order for a Dyson V15 ($649.99) was placed from a new device. If this wasn't you, cancel within 30 minutes: amazon-security-orders.com",phishing,fake_order_lure,en
+eBay: your item has shipped to a new address. Didn't change it? Call 1-888-421-0094 now.,phishing,fake_order_lure,en
+USPS: Your package has arrived at the warehouse but cannot be delivered due to incomplete address information. Please confirm your address in the link: usps-tracking-help.com,phishing,parcel_lure_address,en
+DHL: parcel 00340434 is awaiting your payment of €1.49 for import duties. Delivery cancelled if unpaid by midnight. dhl-import-fee.de-pay.com,phishing,parcel_lure_customs,en
+Royal Mail: Your parcel has been held because the sender did not pay the full postage. Pay £2.99: royalmail.shipping-fee-portal.com,phishing,parcel_lure_fee,en
+Evri. We've got a parcel for you but need a few details. Tap: evri-parcel-details.com,phishing,parcel_lure_confirm,en
+DPD: 1 item awaits delivery. We've been unable to locate your address. Pls update: dpd-locate.co.uk-link.com,phishing,parcel_lure_address,en
+Pls confirm your parcel delivery for tomorrow by replying with your full address and postcode. - UPS Team,phishing,parcel_lure_reply_data,en
+"G4S Courier: your document delivery is pending. Pay the KSh 150 handling fee via M-Pesa Paybill 882211, acc G4S771, to release.",phishing,parcel_lure_mobile_money,en
+Posta Kenya: parcel from China arrived at Nairobi GPO. Clearance fee KSh 350. Send to Till 5543201 and reply with M-Pesa code.,phishing,parcel_lure_mobile_money,en
+LBC: your package from Lazada is on hold at our Pasay hub. Pay the PHP 59 storage fee via GCash 0917 221 4431 to release it.,phishing,parcel_lure_mobile_money,en
+J&T Express: Your parcel is stuck at sorting center. Download our tracking app to update: jt-express-app.com/JT.apk,phishing,parcel_lure_apk,en
+Pos Laju: parcel EP88213 held. Update address within 24h: poslaju-update.my-track.com,phishing,parcel_lure_address,en
+SF Express: an international parcel for you requires HK$18 clearance fee. Pay here: sf-express-hk-pay.com,phishing,parcel_lure_customs,en
+"Delivery failure: your parcel could not be delivered. Visit our page to arrange redelivery, a small admin fee may apply: dpd-parcel-admin.com",phishing,parcel_lure_reschedule,en
+Your parcel has been returned to our warehouse because of an incorrect zip code. Please confirm your zip within 24 hours to avoid disposal: fedex-zip-update.com,phishing,parcel_lure_address,en
+Amazon Logistics: package arriving today requires signature. Pre-sign here: amzl-sign.com,phishing,parcel_lure_confirm,en
+"Hello, we are from UPS. Your parcel tracking number 1Z449 is held. Please reply with your full name and address to release it.",phishing,parcel_lure_reply_data,en
+Package Notification: We were unable to deliver your parcel 2 times. Last chance: cancel return here: parcel-stop-return.xyz,phishing,parcel_lure_reschedule,en
+DHL: Your parcel from Shein is in transit. Pay the shipping shortfall of $1.09: dhl-shipping-shortfall.com,phishing,parcel_lure_fee,en
+"Amazon: thank you for ordering the Samsung 65in TV ($1,199). Shipping to Tampa FL. Not you? Cancel: 1-805-221-9981",phishing,fake_order_lure,en
+UPS Delivery: Your package is waiting for delivery. Please confirm the payment of shipping fees (2.99 USD) in the link: ups-shipping-confirmation.com,phishing,parcel_lure_fee,en
+Your Hermes parcel has been delayed as the postcode is invalid. Update it here to receive it tomorrow: hermes-postcode.co,phishing,parcel_lure_address,en
+"Our courier could not deliver your parcel. For a redelivery slot, text your postcode to 88234 (£3/msg)",phishing,parcel_lure_premium_sms,en
+FedEx: 1 new notification. Your package is held at the hub pending address verification. fedex-address-check.icu. Ref: 44092.,phishing,parcel_lure_address,en
+"Yodel: parcel YD8190 undelivered. To prevent return, confirm here within 24hrs: yodel-parcel.co.uk.reconfirm.net",phishing,parcel_lure_confirm,en
+USPS: your package has been delivered to the sorting facility. Please pay $0.30 redelivery fee: usps-redelivery-fee.com,phishing,parcel_lure_fee,en
+Amazon: a package is being held because of a shipping fee discrepancy of $1.73. Pay via amazon-fee-discrepancy.com or it will be returned.,phishing,parcel_lure_fee,en
+Aramex: your shipment has arrived in Dubai. Pay AED 5.50 customs duty: aramex-ae-customs.com,phishing,parcel_lure_customs,en
+SMSA Express: shipment held at Riyadh hub. Update your address within 24h: smsa-express-update.com,phishing,parcel_lure_address,en
+Evri: we need you to update your delivery preferences for parcel H00282. Our automated system detected a missing door number: evri-update.co,phishing,parcel_lure_address,en
+Kerry Express: your parcel is pending. Please contact our agent on LINE @kerry_help to arrange delivery.,phishing,parcel_lure_messenger,en
+Delhivery: shipment DLV88212 for order from Flipkart held. Pay ₹15 to reschedule: delhivery-reschedule.in,phishing,parcel_lure_fee,en
+India Post: your parcel is waiting at the post office. Address incomplete. Update within 24h: indiapost-address.in.co,phishing,parcel_lure_address,en
+Flash Express: parcel delivery failed. Your package will be returned unless you confirm: flash-express-confirm.top,phishing,parcel_lure_confirm,en
+Your parcel is being held at customs. Pay the import duty via this bank account: IBAN GB29 NWBK 6016 1331 9268 19 ref PARCEL88. - Parcelforce,phishing,parcel_lure_bank_transfer,en
+Parcelforce Worldwide: a customs fee of £3.00 is due before we can deliver. Pay here: parcelforce-fee.com,phishing,parcel_lure_customs,en
+"DHL: an attempt to deliver your parcel was made at 09:14. Due to the absence of recipient, a 2nd attempt is pending confirmation: dhl-2nd-attempt.com",phishing,parcel_lure_reschedule,en
+"Hi, your package from Shein is ready, we need a small payment of 0.99 to release it to the driver. Pay here: shein-release.top",phishing,parcel_lure_fee,en
+"Amazon: Your package is on its way, but the courier couldn't find your address. Update your address information here: amazon-address.co",phishing,parcel_lure_address,en
+Package delivery: you've got mail. Please confirm your name and address so we can deliver: deliver-confirm.xyz,phishing,parcel_lure_confirm,en
+FedEx Customer Service: your parcel has not been collected. Collection deadline is today 17:00. Rebook: fedex-collection.icu,phishing,parcel_lure_reschedule,en
+Your package will be returned to the warehouse because of incorrect house number. Pay the $1.99 reshipping fee to reschedule: usps-reship-fee.com,phishing,parcel_lure_fee,en
+"This is your Evri courier. I couldn't find your house, please text me your address and postcode on 07520 884 221 so I can drop it tomorrow.",phishing,parcel_lure_reply_data,en
+DPD: your parcel is at the depot. For a redelivery call 0845 098 1122 (calls charged £1.50/min),phishing,parcel_lure_callback,en
+UPS My Choice: an unpaid fee of £1.99 is blocking delivery. Settle it on the app: ups-mychoice-app.com/UPS.apk,phishing,parcel_lure_apk,en
+"The parcel sent to you has not been received. To avoid a return, kindly confirm your address: royal-mail.redelivery.live",phishing,parcel_lure_address,en
+Delivery pending: pay the shipping balance of $1.49 via Zelle to parcels.ups@outlook.com and we will deliver tomorrow. -UPS,phishing,parcel_lure_bank_transfer,en
+"Royal Mail: we tried to deliver your parcel today but you were out. It's now at Hackney Delivery Office, bring photo ID to collect. Opening hours Mon-Sat 8am-2pm.",ham,delivery_attempted_pickup,en
+UPS: your package was delivered at 14:32. Left at front door. Tracking 1Z 24A 991 03 4471 2219.,ham,delivery_delivered,en
+Evri: your parcel from ASOS is on its way! Tracking H00582AX0032. We'll text when it's out for delivery.,ham,delivery_in_transit,en
+Amazon: Your package was delivered. See the delivery photo in the Amazon app.,ham,delivery_delivered,en
+"Hi, DPD here. Your parcel from Currys will be delivered today between 12:15 and 13:15 by Marek. Track at dpd.co.uk",ham,delivery_out_for_delivery,en
+USPS: Your package is expected to be delivered Thursday Nov 13 by 9pm. Track at usps.com with 9400 1118 9922 3301 7745 12,ham,delivery_in_transit,en
+FedEx: Shipment 7712 3345 9087 from Apple is scheduled for delivery tomorrow. A signature is required. fedex.com/tracking,ham,delivery_in_transit,en
+Yodel: your parcel from Very will arrive today. You'll get a 2 hour time slot once the driver's on their way.,ham,delivery_out_for_delivery,en
+Your Evri parcel was left in your safe place (porch) at 11:48. Photo on evri.com,ham,delivery_delivered,en
+DHL Express: duties and taxes of £18.40 are due on your shipment 9871 2201 44 from the US. Pay before delivery at mydhl.express.dhl or pay the courier on delivery.,ham,delivery_customs_real,en
+Parcelforce: a customs charge of £11.57 applies to parcel EK128822GB. Pay at parcelforce.com/pay or at any Post Office quoting the ref on your card.,ham,delivery_customs_real,en
+Royal Mail: your item is due for delivery tomorrow. Can't be in? Set up a safe place at royalmail.com/safeplace,ham,delivery_in_transit,en
+"ups: pkg 1Z8W3 delivered 09:12, signed by RECEPTION",ham,delivery_delivered,en
+"Hi Tom, it's Dave your Amazon driver, I've got a parcel for you but no answer at the door. Is it ok to leave with number 14?",ham,delivery_neighbour_question,en
+DPD: we missed you today. Your parcel is going back to the depot and we'll try again tomorrow. Change delivery at dpd.co.uk/manage,ham,delivery_attempted_pickup,en
+"Evri: sorry, your parcel's been delayed by 1 day due to a sorting issue at our Rugby hub. New estimated delivery: Fri 14 Nov.",ham,delivery_window_change,en
+Your Shein order #GSHMQW00X00XXX has shipped! Expected 7-9 business days. Track in the SHEIN app.,ham,order_shipped_real,en
+"Amazon: Hello, your package with Logitech MX Keys will arrive today by 10pm. Track: amazon.co.uk/orders",ham,delivery_out_for_delivery,en
+FedEx: Your package was delivered. Left at: Front Porch. 11/12/2026 3:05 PM. fedex.com,ham,delivery_delivered,en
+Australia Post: your parcel is ready for collection at Newtown Post Office. Please bring ID and this SMS. Article 33AP28810.,ham,delivery_attempted_pickup,en
+Canada Post: Your item 7102 3344 1192 was delivered to your community mailbox. Compartment 4.,ham,delivery_delivered,en
+An Post: your parcel from Zara is with your postie today. If you're out we'll leave it in your safe spot.,ham,delivery_out_for_delivery,en
+G4S Courier: your documents from Equity Bank will be delivered today to the address on file. Our rider Peter will call on arrival.,ham,delivery_out_for_delivery,en
+Sendy: your rider Brian is on the way with your package. ETA 25 min. Tracking SDY-88210.,ham,delivery_out_for_delivery,en
+LBC: your package is ready for pick-up at LBC Makati Glorietta. Bring a valid ID. Tracking 1182 9920 3345.,ham,delivery_attempted_pickup,en
+J&T Express: your parcel JT9920318 has reached Lagos Ikeja hub and will be delivered tomorrow.,ham,delivery_in_transit,en
+Pos Laju: your item EP 229 118 221 MY is out for delivery. Expected today before 6pm. Track at poslaju.com.my,ham,delivery_out_for_delivery,en
+Aramex: your shipment 4421 0088 112 has been delivered to Dubai Marina Tower reception at 16:20.,ham,delivery_delivered,en
+Delhivery: Your Myntra order will be delivered today by Ravi (98xxxx1123). OTP for delivery: 4472. Do not share with anyone except the agent.,ham,delivery_out_for_delivery,en
+"Mum your parcel came, I signed for it, it's on the kitchen table x",ham,family_parcel_chat,en
+UPS: a delivery attempt was made at 10:05 but no one was available. We'll try again on the next business day. ups.com/track,ham,delivery_attempted_pickup,en
+"DHL: your parcel is at the DHL ServicePoint, Costcutter, 12 Mill Rd. Collect by 19 Nov with photo ID. Ref 2201 9981 03.",ham,delivery_attempted_pickup,en
+Yodel: your parcel's been delivered and left with a neighbour at number 22. Signed by J. Hussain.,ham,delivery_delivered,en
+"Royal Mail: your parcel has a customs charge of £4.98 to pay. You can pay online at royalmail.com/fee quoting the 21-digit ref from your Fee to Pay card, or at the branch.",ham,delivery_customs_real,en
+"InPost: your parcel is in locker UK-LDN-0882 (Tesco Express, Mare St). Open with the code in the app or QR. Collect within 48h.",ham,delivery_attempted_pickup,en
+DPD: Would you like us to leave your parcel in your safe place if you're out? Reply SAFE or choose a neighbour at dpd.co.uk,ham,delivery_neighbour_question,en
+"Amazon: Sorry, your package was returned to us as undeliverable. A refund will be issued within 3-5 business days. No action is needed.",ham,delivery_returned_real,en
+FedEx: Your delivery window has changed. New delivery date: Mon Nov 17. Track at fedex.com or reply STOP to end alerts.,ham,delivery_window_change,en
+"Correos: su paquete está retenido en nuestras instalaciones. Abone 1,99€ de gastos de aduana para su entrega: correos-aduanas-pago.com",phishing,parcel_lure_customs,es
+SEUR: no hemos podido entregar su envío por dirección incompleta. Actualícela en 24h o será devuelto: seur-direccion.es-envio.com,phishing,parcel_lure_address,es
+MRW: su paquete está esperando. Confirme su entrega aquí: mrw-entrega.top,phishing,parcel_lure_confirm,es
+"Amazon: tu pedido de 849€ (iPhone 16) ha sido enviado a Sevilla. Si no has sido tú, cancélalo: amazon-pedidos-cancelar.com",phishing,fake_order_lure,es
+"DHL: intento de entrega fallido. Para reprogramar, escríbenos por WhatsApp al +34 611 22 33 44",phishing,parcel_lure_whatsapp,es
+Temu: tu paquete fue devuelto al almacén por código postal erróneo. Confirma tus datos para reenviarlo: temu-reenvio.icu,phishing,parcel_lure_address,es
+"tu paquete esta retenido. paga 2,50€ gastos de gestion o se devolvera. seur-gastos.com",phishing,parcel_lure_fee,es
+Correos: descarga la app para seguir tu envío en tiempo real: correos-app.es/Correos.apk,phishing,parcel_lure_apk,es
+Mercado Libre: tu compra de $12.400 MXN fue enviada a Monterrey. ¿No fuiste tú? Cancela ya: mercadolibre-cancelar.mx,phishing,fake_order_lure,es
+Estafeta: paquete detenido en aduana. Paga $45 MXN de derechos aquí: estafeta-aduana.mx-pago.com,phishing,parcel_lure_customs,es
+"Correos: su paquete llega hoy. Si no está en casa, lo dejaremos en la oficina de Correos de su zona. Más info en correos.es",ham,delivery_out_for_delivery,es
+SEUR: tu envío de Zara se entregará hoy entre las 16:00 y las 18:00. Sigue tu paquete en seur.com/seguimiento,ham,delivery_out_for_delivery,es
+MRW: entregado a las 12:40. Firmado por portería. Gracias por confiar en MRW.,ham,delivery_delivered,es
+"Correos: tu envío PK2201ES tiene gastos de aduana de 7,32€ (IVA + gestión). Puedes pagarlos en correos.es/aduanas o en la oficina al recoger.",ham,delivery_customs_real,es
+"DHL: hola, soy tu repartidor. Estoy en tu portal pero no contestas. ¿Lo dejo con el vecino del 2ºB?",ham,delivery_neighbour_question,es
+"CTT: a sua encomenda está retida por falta de pagamento de taxas alfandegárias (1,99€). Pague aqui: ctt-alfandega-pt.com",phishing,parcel_lure_customs,pt
+"Correios: seu pacote está aguardando pagamento de taxa de R$ 4,90. Regularize para liberar: correios-taxa-liberar.com",phishing,parcel_lure_fee,pt
+Correios: Objeto BR7721 com endereço incompleto. Atualize em 24h ou será devolvido ao remetente: correios-atualizar.top,phishing,parcel_lure_address,pt
+Mercado Livre: seu pedido de R$ 2.349 (Galaxy S25) foi enviado para Curitiba. Não foi você? Cancele agora: mercadolivre-cancelar.com,phishing,fake_order_lure,pt
+"Shopee: sua encomenda chegou ao centro de distribuição, confirme o endereço para receber:",phishing,parcel_lure_linkfree,pt
+CTT Expresso: tentativa de entrega sem sucesso. Reagende pelo WhatsApp +351 912 334 556,phishing,parcel_lure_whatsapp,pt
+Jadlog: pacote retido. Baixe o app para rastrear: jadlog-app.com/Jadlog.apk,phishing,parcel_lure_apk,pt
+DPD Portugal: a sua encomenda aguarda a confirmação da morada há 2 dias. Confirme hoje ou será devolvida: dpd-pt-morada.com,phishing,parcel_lure_confirm,pt
+CTT: a sua encomenda RR229118221PT será entregue hoje. Acompanhe em ctt.pt,ham,delivery_out_for_delivery,pt
+Correios: seu objeto NL882112201BR saiu para entrega. Previsão: hoje até 18h. Acompanhe em correios.com.br,ham,delivery_out_for_delivery,pt
+"Correios: objeto importado aguarda pagamento de tributos (R$ 38,20). Pague no app Correios ou em correios.com.br/minhasimportacoes. Prazo: 7 dias.",ham,delivery_customs_real,pt
+"La Poste : votre colis est en attente. Des frais de douane de 1,99€ sont à régler : laposte-douane-frais.com",phishing,parcel_lure_customs,fr
+"Colissimo : adresse incomplète, votre colis sera retourné sous 24h sans mise à jour : colissimo-adresse.fr-suivi.com",phishing,parcel_lure_address,fr
+Chronopost : livraison impossible aujourd'hui. Reprogrammez votre créneau ici : chronopost-creneau.com,phishing,parcel_lure_reschedule,fr
+"Mondial Relay : votre colis vous attend, confirmez votre retrait :",phishing,parcel_lure_linkfree,fr
+DPD France : colis bloqué au dépôt. Contactez notre livreur sur WhatsApp +33 6 44 21 09 88,phishing,parcel_lure_whatsapp,fr
+Amazon : votre commande de 849€ (MacBook Air) a été expédiée à Lyon. Ce n'est pas vous ? Annulez : amazon-fr-annulation.com,phishing,fake_order_lure,fr
+"Votre colis est retenu. Frais de stockage 2,30€ à virer sur IBAN FR76 3000 4000 0312 2234 5567 890, réf COLIS8821. - Colissimo",phishing,parcel_lure_bank_transfer,fr
+Vinted : ton colis a été expédié mais le relais est complet. Choisis un autre point sous 12h : vinted-relais.top,phishing,parcel_lure_reschedule,fr
+La Poste: telechargez l'application pour suivre votre colis: laposte-suivi.fr/LaPoste.apk,phishing,parcel_lure_apk,fr
+Colissimo : votre colis 6A12345678901 est disponible au point relais Tabac Le Marigny jusqu'au 12/11. Pensez à votre pièce d'identité.,ham,delivery_attempted_pickup,fr
+Mondial Relay : votre colis est arrivé au Point Relay Carrefour City Bastille. Il vous attend 8 jours. Code de retrait : 4471.,ham,delivery_attempted_pickup,fr
+"La Poste : des droits de douane de 14,60€ sont dus sur votre envoi CJ882211. Réglez-les sur laposte.fr/douane ou au facteur à la livraison.",ham,delivery_customs_real,fr
+"Salut, t'es là ? Le livreur Chronopost est devant chez toi, il demande si on peut laisser le colis chez la voisine",ham,family_parcel_chat,fr
+"DHL: Ihr Paket wurde angehalten. Es fehlen Zollgebühren von 1,99 €. Jetzt bezahlen: dhl-zoll-gebuehr.de-paket.com",phishing,parcel_lure_customs,de
+"Hermes: Zustellung nicht möglich, Adresse unvollständig. Bitte innerhalb von 24 Std. aktualisieren, sonst Rücksendung: hermes-adresse.top",phishing,parcel_lure_address,de
+DPD: Ihr Paket wartet auf Sie. Bitte bestätigen Sie die Zustellung:,phishing,parcel_lure_linkfree,de
+GLS: Zustellversuch fehlgeschlagen. Neuen Termin vereinbaren: gls-termin.icu,phishing,parcel_lure_reschedule,de
+"Amazon: Ihre Bestellung über 849,00 € (PlayStation 5 Pro) wurde nach Dresden versendet. Nicht Sie? Hier stornieren: amazon-de-storno.com",phishing,fake_order_lure,de
+"Deutsche Post: Ihr Paket liegt im Depot. Lagergebühr 2,50 € bitte an IBAN DE89 3704 0044 0532 0130 00, Verwendungszweck PK3391.",phishing,parcel_lure_bank_transfer,de
+DHL Paket: Laden Sie die App herunter um Ihre Sendung zu verfolgen: dhl-app-de.com/DHL.apk,phishing,parcel_lure_apk,de
+"Ihr paket konnte nicht zugestellt werden. ruf an: 0900 5 112 334 (1,99€/min)",phishing,parcel_lure_callback,de
+"Temu: Dein Paket ist angekommen! Bestätige deine Adresse, um es zu erhalten: temu-paket.de-info.com",phishing,parcel_lure_confirm,de
+DHL: Ihre Sendung 00340434161094015902 wird heute zwischen 11:00 und 14:00 Uhr zugestellt. Verfolgen unter dhl.de,ham,delivery_out_for_delivery,de
+Hermes: Ihr Paket von Zalando wurde um 15:42 beim Nachbarn Müller (EG) abgegeben.,ham,delivery_delivered,de
+DPD: Wir haben Sie leider nicht angetroffen. Ihr Paket liegt ab morgen im DPD Pickup Paketshop Kiosk Hauptstr. 12. Bitte Ausweis mitbringen.,ham,delivery_attempted_pickup,de
+"Deutsche Post: Für Ihre Sendung aus den USA fallen Einfuhrabgaben von 23,10 € an. Zahlung an der Haustür oder vorab auf dhl.de/zoll.",ham,delivery_customs_real,de
+"GLS: Soll der Fahrer das Paket beim Nachbarn abgeben, wenn Sie nicht da sind? Antwort unter gls-one.de",ham,delivery_neighbour_question,de
+"Poste Italiane: il tuo pacco è in attesa. Paga 1,99€ di dazi doganali per la consegna: poste-dogana-pagamento.com",phishing,parcel_lure_customs,it
+"BRT: consegna non riuscita, indirizzo incompleto. Aggiorna entro 24 ore o il pacco verrà restituito: brt-indirizzo.it-spedizioni.com",phishing,parcel_lure_address,it
+"GLS Italy: il tuo pacco è pronto, conferma qui:",phishing,parcel_lure_linkfree,it
+SDA: tentativo di consegna fallito. Riprogramma su WhatsApp +39 345 118 2290,phishing,parcel_lure_whatsapp,it
+Amazon: il tuo ordine di 849€ (iPad Pro) è stato spedito a Napoli. Non sei stato tu? Annulla: amazon-it-annulla.com,phishing,fake_order_lure,it
+"il tuo pacco e fermo in deposito. paga 2,20€ di giacenza: brt-giacenza.top",phishing,parcel_lure_fee,it
+Poste: scarica l'app per seguire la spedizione: posteitaliane-app.com/Poste.apk,phishing,parcel_lure_apk,it
+Shein: il tuo pacco è stato trattenuto per CAP errato. Conferma i dati entro oggi: shein-cap.icu,phishing,parcel_lure_address,it
+Poste Italiane: la tua spedizione 1234567890123 è in consegna oggi. Segui su poste.it,ham,delivery_out_for_delivery,it
+BRT: il tuo pacco di Zalando è stato consegnato alle 13:20. Firmato: portineria.,ham,delivery_delivered,it
+"GLS: spedizione 7788 2210 in consegna oggi. Se assente, il pacco sarà disponibile al GLS Shop di via Roma 15 da domani.",ham,delivery_out_for_delivery,it
+"Poste Italiane: dazi e IVA di 9,80€ dovuti per la spedizione dall'estero. Paga su poste.it/dogana o al portalettere.",ham,delivery_customs_real,it
+"PostNL: uw pakket is onderweg maar er staan nog €1,99 aan douanekosten open. Betaal nu: postnl-douane-betalen.com",phishing,parcel_lure_customs,nl
+"DHL: adres onvolledig. Werk uw gegevens binnen 24 uur bij, anders gaat het pakket retour: dhl-adres-nl.com",phishing,parcel_lure_address,nl
+DPD: bezorging mislukt. Plan een nieuwe bezorging:,phishing,parcel_lure_linkfree,nl
+PostNL: uw pakket staat klaar. Bevestig uw adres: postnl-bevestig.top,phishing,parcel_lure_confirm,nl
+bol: je bestelling van €849 (Samsung TV) is verzonden naar Eindhoven. Niet jij? Annuleer: bol-bestelling-annuleren.com,phishing,fake_order_lure,nl
+"DHL: uw pakket ligt in het depot. Betaal €2,50 opslagkosten via Tikkie: tikkie-dhl.nl-pay.com",phishing,parcel_lure_fee,nl
+PostNL: download de app om je pakket te volgen: postnl-app.net/PostNL.apk,phishing,parcel_lure_apk,nl
+PostNL: je pakket 3SABCD1234567 wordt vandaag bezorgd tussen 14:15 en 16:45. Volg op postnl.nl,ham,delivery_out_for_delivery,nl
+DHL: je pakket van Coolblue is bezorgd bij de buren op nr. 12. Fijne dag!,ham,delivery_delivered,nl
+"PostNL: voor je pakket uit China is €8,35 aan invoerkosten verschuldigd. Betaal op postnl.nl/invoerkosten of bij afhalen.",ham,delivery_customs_real,nl
+DPD: we hebben je gemist. Je pakket ligt vanaf morgen bij DPD Pickup Primera Kerkstraat. Neem je ID mee.,ham,delivery_attempted_pickup,nl
+"InPost: Twoja paczka czeka na dopłatę 1,99 zł. Opłać, aby uniknąć zwrotu: inpost-doplata.pl-paczka.com",phishing,parcel_lure_fee,pl
+Poczta Polska: adres niekompletny. Zaktualizuj w ciągu 24h lub przesyłka wróci do nadawcy: poczta-adres.top,phishing,parcel_lure_address,pl
+DPD: nieudana próba doręczenia. Umów ponowne doręczenie:,phishing,parcel_lure_linkfree,pl
+"InPost: paczka zatrzymana w sortowni. Pobierz aplikację, aby śledzić: inpost-app.net/InPost.apk",phishing,parcel_lure_apk,pl
+Allegro: Twoje zamówienie na 3 499 zł (iPhone 16) zostało wysłane do Gdańska. To nie Ty? Anuluj: allegro-anuluj-zamowienie.com,phishing,fake_order_lure,pl
+"DHL: paczka w magazynie. Opłata za przechowanie 4,50 zł na konto 12 1020 1026 0000 1602 0290 1234, tytułem PK8821.",phishing,parcel_lure_bank_transfer,pl
+twoja paczka czeka. potwierdz dane: bit.ly/paczka-inpost-88,phishing,parcel_lure_confirm,pl
+"InPost: paczka czeka w Paczkomacie WAW123 (Żabka, ul. Prosta 5). Kod odbioru 456789. Masz 48h na odbiór.",ham,delivery_attempted_pickup,pl
+Poczta Polska: przesyłka 00559007731234567890 doręczona 12.11 o 11:20. Dziękujemy.,ham,delivery_delivered,pl
+DPD: Twoja paczka od Zalando dotrze dziś między 12:00 a 15:00. Kurier: Marcin. Śledź na dpd.com.pl,ham,delivery_out_for_delivery,pl
+"Poczta Polska: do przesyłki z Chin naliczono cło i VAT 32,10 zł. Opłać na poczta-polska.pl/clo lub przy odbiorze.",ham,delivery_customs_real,pl
+【ヤマト運輸】お荷物のお届けにあがりましたが不在のため持ち帰りました。再配達はこちら: yamato-saihaitatsu.com,phishing,parcel_lure_reschedule,ja
+佐川急便：お荷物の住所が不完全です。24時間以内にご確認ください。sagawa-jyusho.top,phishing,parcel_lure_address,ja
+日本郵便：お荷物の関税199円が未納です。お支払いはこちら: japanpost-kanzei.icu,phishing,parcel_lure_customs,ja
+"Amazon：ご注文（¥84,900 Apple Watch）を大阪へ発送しました。ご本人でない場合はキャンセル: amazon-jp-cancel.com",phishing,fake_order_lure,ja
+佐川急便：再配達のご希望は配達員に直接ご連絡ください LINE ID: sagawa_haitatsu88,phishing,parcel_lure_messenger,ja
+日本郵便：追跡アプリをダウンロードしてください: jp-post-app.com/JapanPost.apk,phishing,parcel_lure_apk,ja
+ヤマト運輸：お荷物を本日お届け予定です。お届け予定時間帯は14時～16時です。伝票番号 1234-5678-9012。詳細は kuronekoyamato.co.jp,ham,delivery_out_for_delivery,ja
+佐川急便：お荷物（伝票番号 4567-8901-2345）を本日配達完了いたしました。ご不在時は宅配ボックスに入れております。,ham,delivery_delivered,ja
+日本郵便：ゆうパックをお届けしましたがご不在でしたので持ち戻りました。再配達のご依頼は post.japanpost.jp または不在票の電話番号へ。,ham,delivery_attempted_pickup,ja
+【顺丰速运】您的包裹因地址不详暂存网点，请24小时内补全地址，否则退回：sf-express-dz.top,phishing,parcel_lure_address,zh
+【中通快递】您的快递已到达但需支付1.99元派送费，点击支付：zto-pay.icu,phishing,parcel_lure_fee,zh
+【菜鸟】您有一个包裹待签收，请确认收货信息：,phishing,parcel_lure_linkfree,zh
+"【京东】您的订单（￥8,499 iPhone 16 Pro）已发往深圳，非本人操作请立即取消：jd-cancel-order.com",phishing,fake_order_lure,zh
+【圆通】快递派送失败，请添加派送员微信 yt_kuaidi88 预约再派送,phishing,parcel_lure_messenger,zh
+【SF Express】海外包裹需缴纳关税HK$18，请至 sf-hk-tax.com 缴费,phishing,parcel_lure_customs,zh
+【淘宝】您的包裹丢件，请点击申请赔付：taobao-peifu.top,phishing,fake_order_lure,zh
+顺丰：下载快递APP实时跟踪您的包裹：sf-app.cn-dl.com/SF.apk,phishing,parcel_lure_apk,zh
+【顺丰速运】您的快递 SF1234567890123 正在派送中，派送员小王 138****2211，预计今天 14:00-18:00 送达。,ham,delivery_out_for_delivery,zh
+【中通快递】您的快递已放至菜鸟驿站（小区北门），取件码 8-2-2211，请于两天内凭取件码领取。,ham,delivery_attempted_pickup,zh
+【京东】您的订单已签收，签收人：本人。感谢您在京东购物。,ham,delivery_delivered,zh
+【香港邮政】您的包裹已到达邮政局，请凭此短信及身份证件在7日内领取。,ham,delivery_attempted_pickup,zh
+[CJ대한통운] 주소 불명으로 배송이 보류되었습니다. 24시간 내 주소를 확인해 주세요: cj-jusho.top,phishing,parcel_lure_address,ko
+"[우체국택배] 통관 수수료 1,990원 미납으로 배송이 지연되었습니다. 결제: epost-tongwan.icu",phishing,parcel_lure_customs,ko
+[롯데택배] 고객님의 택배가 도착했습니다. 배송 확인:,phishing,parcel_lure_linkfree,ko
+"[쿠팡] 849,000원 (갤럭시 S25) 주문이 부산으로 발송되었습니다. 본인이 아니면 취소: coupang-cancel.com",phishing,fake_order_lure,ko
+[CJ대한통운] 배송 실패. 재배송은 카카오톡 ID cjdelivery88 로 연락 주세요,phishing,parcel_lure_messenger,ko
+[한진택배] 택배 조회 앱을 설치하세요: hanjin-app.com/Hanjin.apk,phishing,parcel_lure_apk,ko
+"[우체국] 보관료 2,500원을 아래 계좌로 입금해 주세요. 국민 123456-04-123456 (예금주 우체국택배)",phishing,parcel_lure_bank_transfer,ko
+[CJ대한통운] 고객님의 상품 (운송장 1234-5678-9012) 이 오늘 14~16시 배송 예정입니다. 배송기사 김민수 010-2211-xxxx,ham,delivery_out_for_delivery,ko
+[우체국택배] 등기 1234567890123 배달완료 (12.11 11:20). 수령인: 경비실,ham,delivery_delivered,ko
+[롯데택배] 부재로 경비실에 맡겼습니다. 운송장 4012-3344-5566. 문의 lotteglogis.com,ham,delivery_delivered,ko
+أرامكس: شحنتك محتجزة بسبب رسوم جمركية بقيمة 5.50 ريال. ادفع الآن: aramex-sa-pay.com,phishing,parcel_lure_customs,ar
+سمسا: عنوانك غير مكتمل. حدّث بياناتك خلال 24 ساعة وإلا ستُعاد الشحنة: smsa-address.top,phishing,parcel_lure_address,ar
+البريد السعودي: طردك بانتظارك، أكّد الاستلام هنا:,phishing,parcel_lure_linkfree,ar
+DHL: لم نتمكن من تسليم شحنتك. تواصل مع المندوب عبر واتساب 0551234567,phishing,parcel_lure_whatsapp,ar
+"نون: تم شحن طلبك بقيمة 3,199 درهم (iPhone 16) إلى دبي. إذا لم تكن أنت، ألغِ فوراً: noon-cancel-order.com",phishing,fake_order_lure,ar
+أرامكس: شحنتك في المستودع. حوّل رسوم التخزين 10 ريال إلى حساب STC Pay 0559988776 وأرسل الإيصال,phishing,parcel_lure_bank_transfer,ar
+البريد المصري: طردك متوقف في الجمارك. ادفع 25 جنيه رسوم: egypt-post-customs.icu,phishing,parcel_lure_customs,ar
+سبل: حمّل التطبيق لمتابعة شحنتك: spl-app.net/SPL.apk,phishing,parcel_lure_apk,ar
+أرامكس: شحنتك رقم 4421 0088 112 في طريقها إليك اليوم. المندوب أحمد 0501234567. للمتابعة aramex.com,ham,delivery_out_for_delivery,ar
+سمسا إكسبرس: تم تسليم شحنتك 2201 8812 33 إلى استقبال المبنى في 16:20. شكراً لاختيارك سمسا.,ham,delivery_delivered,ar
+البريد السعودي | سبل: طردك جاهز للاستلام في مكتب بريد الروضة. يرجى إحضار الهوية. رقم الشحنة RB123456789SA,ham,delivery_attempted_pickup,ar
+أرامكس: شحنتك من أمريكا عليها رسوم جمركية وضريبة بقيمة 86 ريال. ادفع عبر aramex.com أو نقداً للمندوب عند التسليم.,ham,delivery_customs_real,ar
+"Yurtiçi Kargo: Gönderiniz gümrükte bekliyor. 19,90 TL vergi ödemesi için: yurtici-gumruk.top",phishing,parcel_lure_customs,tr
+"Aras Kargo: Adres bilginiz eksik. 24 saat içinde güncelleyin, aksi halde kargo iade edilir: aras-adres.icu",phishing,parcel_lure_address,tr
+PTT: Kargonuz dağıtıma çıkamadı. Yeniden teslimat için:,phishing,parcel_lure_linkfree,tr
+Trendyol: 8.499 TL tutarındaki siparişiniz (iPhone 16) Ankara'ya gönderildi. Siz değilseniz iptal edin: trendyol-iptal.com,phishing,fake_order_lure,tr
+MNG Kargo: Kuryemiz size ulaşamadı. WhatsApp'tan yazın: 0532 118 22 90,phishing,parcel_lure_whatsapp,tr
+"Yurtiçi: Kargonuz depoda bekliyor. 25 TL depo ücretini IBAN TR33 0006 1005 1978 6457 8413 26 hesabına gönderin, açıklama KRG8821.",phishing,parcel_lure_bank_transfer,tr
+Aras Kargo takip uygulamasını indirin: aras-takip.com/Aras.apk,phishing,parcel_lure_apk,tr
+"ptt kargonuz icin 9,90 tl odeme bekleniyor. odemek icin: bit.ly/ptt-odeme",phishing,parcel_lure_fee,tr
+Yurtiçi Kargo: 1234567890123 nolu gönderiniz bugün dağıtıma çıktı. Kurye: Mehmet. Takip: yurticikargo.com,ham,delivery_out_for_delivery,tr
+Aras Kargo: Trendyol gönderiniz 12.11 14:32'de teslim edildi. Teslim alan: Kapıcı. Teşekkürler.,ham,delivery_delivered,tr
+"PTT: Yurt dışından gelen gönderiniz için 186,40 TL gümrük vergisi tahakkuk etti. ptt.gov.tr üzerinden veya teslimatta ödeyebilirsiniz.",ham,delivery_customs_real,tr
+MNG Kargo: Kargonuz 12.11 tarihinde şubemize ulaştı. 3 gün içinde kimliğinizle teslim alabilirsiniz. Şube: Kadıköy.,ham,delivery_attempted_pickup,tr
+JNE: Paket Anda tertahan di gudang. Bayar biaya penyimpanan Rp 19.900 agar segera dikirim: jne-biaya.top,phishing,parcel_lure_fee,id
+J&T Express: Alamat tidak lengkap. Perbarui dalam 24 jam atau paket dikembalikan ke pengirim: jnt-alamat.icu,phishing,parcel_lure_address,id
+"SiCepat: Paket Anda sudah sampai, konfirmasi penerimaan di sini:",phishing,parcel_lure_linkfree,id
+Shopee: Pesanan Anda senilai Rp 8.499.000 (iPhone 16) telah dikirim ke Surabaya. Bukan Anda? Batalkan: shopee-batal-pesanan.com,phishing,fake_order_lure,id
+"Pos Indonesia: Paket dari luar negeri dikenakan bea masuk Rp 45.000. Transfer ke BCA 1234567890 a.n. Budi Santoso, kirim bukti.",phishing,parcel_lure_bank_transfer,id
+J&T: Download aplikasi untuk cek resi: jnt-app.net/JT.apk,phishing,parcel_lure_apk,id
+Lazada: paket anda gagal dikirim 2x. klik utk jadwal ulang: lazada-jadwal.top,phishing,parcel_lure_reschedule,id
+J&T Express: Paket Anda JP1234567890 sedang dikirim oleh kurir Budi 0812-9988-7766. Mohon siapkan penerima.,ham,delivery_out_for_delivery,id
+JNE: Paket Anda dengan resi 1234567890123 telah DITERIMA oleh Ibu Sari pada 12/11 14:20. Terima kasih.,ham,delivery_delivered,id
+SiCepat: Paket 000123456789 dari Tokopedia sudah sampai di gerai Jakarta Selatan dan akan dikirim besok.,ham,delivery_in_transit,id
+Pos Indonesia: Kiriman EE123456789ID dari Jepang dikenakan bea masuk Rp 128.000. Bayar di posindonesia.co.id/beacukai atau di kantor pos saat pengambilan.,ham,delivery_customs_real,id
+Pos Laju: Bungkusan anda ditahan kerana caj kastam RM 1.99 belum dibayar. Bayar sekarang: poslaju-kastam.top,phishing,parcel_lure_customs,ms
+J&T Malaysia: Alamat tidak lengkap. Kemaskini dalam 24 jam atau bungkusan akan dipulangkan: jnt-my-alamat.icu,phishing,parcel_lure_address,ms
+Pos Malaysia: Bungkusan anda sedang menunggu. Sahkan di sini:,phishing,parcel_lure_linkfree,ms
+"Shopee: Pesanan anda RM 3,499 (Samsung S25) telah dihantar ke Johor Bahru. Bukan anda? Batal: shopee-my-batal.com",phishing,fake_order_lure,ms
+DHL eCommerce: Kurier tidak dapat menghubungi anda. WhatsApp kami di 011-2233 4455,phishing,parcel_lure_whatsapp,ms
+Pos Laju: bungkusan di gudang. Bayar caj simpanan RM 5 ke Maybank 1122 3344 5566 (Pos Laju Sdn) dan hantar resit.,phishing,parcel_lure_bank_transfer,ms
+Ninja Van: Muat turun app untuk jejak bungkusan: ninjavan-app.com/Ninja.apk,phishing,parcel_lure_apk,ms
+Pos Laju: Bungkusan anda EP229118221MY akan dihantar hari ini. Jejak di pos.com.my,ham,delivery_out_for_delivery,ms
+J&T Express: Bungkusan anda 630012345678 telah diserahkan kepada penjaga pintu pada 12/11 15:10.,ham,delivery_delivered,ms
+Pos Malaysia: Bungkusan dari luar negara dikenakan duti kastam RM 42.50. Bayar di pos.com.my atau di pejabat pos semasa pengambilan.,ham,delivery_customs_real,ms
+"Ninja Van: Rider kami Faizal akan tiba dalam 30 minit. Jika tiada di rumah, boleh tinggalkan dengan pengawal?",ham,delivery_neighbour_question,ms
+LBC: Naka-hold ang package mo sa Pasay hub. Magbayad ng PHP 59 storage fee via GCash 0917 221 4431 para ma-release.,phishing,parcel_lure_mobile_money,tl
+J&T Express: Kulang ang address mo. I-update sa loob ng 24 oras kung hindi ibabalik ang parcel: jnt-ph-address.top,phishing,parcel_lure_address,tl
+LBC Express: Nandito na ang package mo! I-confirm dito:,phishing,parcel_lure_linkfree,tl
+"Shopee: Na-ship na ang order mo na PHP 48,990 (iPhone 16) papuntang Cebu. Hindi ikaw? I-cancel: shopee-ph-cancel.com",phishing,fake_order_lure,tl
+Flash Express: Hindi ka natawagan ng rider. I-message kami sa Viber 0945 118 2290 para sa redelivery,phishing,parcel_lure_messenger,tl
+Ninja Van: Nabigo ang delivery. Mag-download ng app para i-reschedule: ninjavan-ph.com/Ninja.apk,phishing,parcel_lure_apk,tl
+PHLPost: May customs fee na PHP 150 ang parcel mo galing China. Bayaran dito: phlpost-customs.icu,phishing,parcel_lure_customs,tl
+LBC: Ready for pick-up na ang package mo sa LBC Makati Glorietta. Magdala ng valid ID. Tracking 1182 9920 3345.,ham,delivery_attempted_pickup,tl
+J&T Express: Out for delivery na ang parcel mo JT8821000123 ngayong araw. Rider: Jun 0917-xxx-2211. Salamat!,ham,delivery_out_for_delivery,tl
+PHLPost: May parcel ka galing Japan na may duties and taxes na PHP 820. Magbayad sa post office sa pagkuha. Magdala ng ID.,ham,delivery_customs_real,tl
+Kerry Express: พัสดุของคุณถูกระงับ กรุณาชำระค่าธรรมเนียม 19 บาท เพื่อจัดส่ง: kerry-fee.top,phishing,parcel_lure_fee,th
+ไปรษณีย์ไทย: ที่อยู่ไม่ครบถ้วน กรุณาอัปเดตภายใน 24 ชม. มิฉะนั้นพัสดุจะถูกส่งคืน: thaipost-address.icu,phishing,parcel_lure_address,th
+Flash Express: พัสดุของคุณถึงแล้ว ยืนยันการรับที่นี่:,phishing,parcel_lure_linkfree,th
+"Lazada: คำสั่งซื้อ 32,900 บาท (iPhone 16) ถูกจัดส่งไปเชียงใหม่ หากไม่ใช่คุณ กดยกเลิก: lazada-th-cancel.com",phishing,fake_order_lure,th
+Kerry: พนักงานติดต่อคุณไม่ได้ กรุณาแอด LINE @kerry_help เพื่อนัดส่งใหม่,phishing,parcel_lure_messenger,th
+ไปรษณีย์ไทย: พัสดุจากต่างประเทศติดศุลกากร โอนค่าภาษี 350 บาท เข้าบัญชี กสิกร 012-3-45678-9 แล้วส่งสลิป,phishing,parcel_lure_bank_transfer,th
+Flash: ดาวน์โหลดแอปเพื่อติดตามพัสดุ: flash-app.net/Flash.apk,phishing,parcel_lure_apk,th
+Kerry Express: พัสดุ KERDO0012345678 กำลังนำส่งวันนี้ โดยคุณสมชาย 08x-xxx-2211 ติดตามที่ th.kerryexpress.com,ham,delivery_out_for_delivery,th
+ไปรษณีย์ไทย: EMS EF123456789TH นำจ่ายสำเร็จ 12/11 14:20 ผู้รับ: นิติบุคคล,ham,delivery_delivered,th
+Flash Express: พัสดุจาก Shopee ของคุณจัดส่งสำเร็จแล้ว ดูรูปถ่ายยืนยันได้ในแอป Flash,ham,delivery_delivered,th
+"ไปรษณีย์ไทย: พัสดุจากญี่ปุ่นมีภาษีอากร 1,250 บาท ชำระที่ที่ทำการไปรษณีย์เมื่อรับพัสดุ กรุณานำบัตรประชาชน",ham,delivery_customs_real,th
+GHN: Đơn hàng của bạn bị giữ tại kho do thiếu phí 19.000đ. Thanh toán ngay: ghn-phi.top,phishing,parcel_lure_fee,vi
+Viettel Post: Địa chỉ không đầy đủ. Cập nhật trong 24h hoặc hàng sẽ bị trả lại: viettelpost-diachi.icu,phishing,parcel_lure_address,vi
+"J&T Express: Bưu kiện của bạn đã đến, xác nhận nhận hàng tại đây:",phishing,parcel_lure_linkfree,vi
+Shopee: Đơn hàng 32.990.000đ (iPhone 16) đã được gửi đến Đà Nẵng. Không phải bạn? Hủy ngay: shopee-vn-huy.com,phishing,fake_order_lure,vi
+GHTK: Shipper không liên lạc được. Nhắn Zalo 0912 334 556 để hẹn giao lại,phishing,parcel_lure_messenger,vi
+Vietnam Post: Hàng từ nước ngoài bị giữ hải quan. Chuyển 150.000đ thuế vào STK Vietcombank 0011002233445 (Nguyen Van A) rồi gửi ảnh,phishing,parcel_lure_bank_transfer,vi
+GHN: Tải app để theo dõi đơn hàng: ghn-app.net/GHN.apk,phishing,parcel_lure_apk,vi
+GHN: Đơn GHN12345678 đang được giao bởi shipper Nguyễn Văn Bình 0912-xxx-221. Vui lòng để ý điện thoại.,ham,delivery_out_for_delivery,vi
+Viettel Post: Bưu gửi 123456789012 đã phát thành công lúc 14:20 ngày 12/11. Người nhận: bảo vệ tòa nhà.,ham,delivery_delivered,vi
+Vietnam Post: Bưu gửi từ Nhật có thuế nhập khẩu 285.000đ. Thanh toán tại bưu cục khi nhận hoặc trên vnpost.vn,ham,delivery_customs_real,vi
+Delhivery: आपका पार्सल रुका हुआ है। ₹15 रीशेड्यूल फीस दें: delhivery-fee.top,phishing,parcel_lure_fee,hi
+India Post: पता अपूर्ण है। 24 घंटे में अपडेट करें वरना पार्सल वापस: indiapost-address.icu,phishing,parcel_lure_address,hi
+"Blue Dart: आपका पैकेज तैयार है, यहाँ कन्फर्म करें:",phishing,parcel_lure_linkfree,hi
+"Flipkart: आपका ₹84,999 (iPhone 16) का ऑर्डर पुणे भेजा गया। आपने नहीं किया? तुरंत कैंसिल करें: flipkart-cancel.com",phishing,fake_order_lure,hi
+Ekart: डिलीवरी बॉय आपको कॉल नहीं कर पाया। WhatsApp करें 98211 22334,phishing,parcel_lure_whatsapp,hi
+India Post: विदेश से आया पार्सल कस्टम में है। ₹350 शुल्क UPI पर भेजें: indiapost@ybl और स्क्रीनशॉट भेजें,phishing,parcel_lure_bank_transfer,hi
+Delhivery: ट्रैकिंग ऐप डाउनलोड करें: delhivery-app.in/Delhivery.apk,phishing,parcel_lure_apk,hi
+aapka parcel hold pe hai. Rs 25 pay karo ya return hoga: bit.ly/dlvry-pay88,phishing,parcel_lure_fee,hi
+Delhivery: आपका Myntra ऑर्डर आज रवि (98xxxx1123) द्वारा डिलीवर होगा। डिलीवरी OTP: 4472. केवल डिलीवरी एजेंट को बताएं।,ham,delivery_out_for_delivery,hi
+India Post: आपका स्पीड पोस्ट EE123456789IN आज वितरण के लिए निकला है। ट्रैक करें indiapost.gov.in,ham,delivery_out_for_delivery,hi
+Blue Dart: शिपमेंट 12345678901 डिलीवर हुआ 12/11 14:20. प्राप्तकर्ता: सिक्योरिटी. धन्यवाद।,ham,delivery_delivered,hi
+"ΕΛΤΑ: Το δέμα σας παρακρατήθηκε. Πληρώστε 1,99€ τελωνειακά τέλη: elta-teloneio.top",phishing,parcel_lure_customs,el
+ACS: Ανεπαρκής διεύθυνση. Ενημερώστε εντός 24 ωρών αλλιώς το δέμα επιστρέφεται: acs-dieythinsi.icu,phishing,parcel_lure_address,el
+Speedex: Το δέμα σας σας περιμένει. Επιβεβαιώστε εδώ:,phishing,parcel_lure_linkfree,el
+Skroutz: Η παραγγελία σας 849€ (iPhone 16) στάλθηκε στη Θεσσαλονίκη. Δεν είστε εσείς; Ακυρώστε: skroutz-akyrosi.com,phishing,fake_order_lure,el
+Γενική Ταχυδρομική: Ο διανομέας δεν σας βρήκε. Στείλτε Viber στο 694 118 2290,phishing,parcel_lure_messenger,el
+"ΕΛΤΑ Courier: Τέλη αποθήκευσης 2,50€. Κατάθεση σε IBAN GR16 0110 1250 0000 0001 2300 695, αιτιολογία DEMA8821.",phishing,parcel_lure_bank_transfer,el
+ACS: Κατεβάστε την εφαρμογή για παρακολούθηση: acs-app.net/ACS.apk,phishing,parcel_lure_apk,el
+ACS Courier: Η αποστολή 1234567890 θα παραδοθεί σήμερα 10:00-14:00. Παρακολούθηση στο acscourier.net,ham,delivery_out_for_delivery,el
+Speedex: Το δέμα σας από το Public βρίσκεται στο κατάστημά μας Αμπελόκηποι. Παραλαβή εντός 5 ημερών με ταυτότητα.,ham,delivery_attempted_pickup,el
+"ΕΛΤΑ: Για το δέμα σας από ΗΠΑ οφείλονται δασμοί 18,60€. Πληρωμή στο elta.gr ή στο κατάστημα κατά την παραλαβή.",ham,delivery_customs_real,el
+Posta Kenya: Kifurushi chako kimefika GPO. Lipa KSh 350 ya ushuru kupitia Till 5543201 na utume ujumbe wa M-Pesa.,phishing,parcel_lure_mobile_money,sw
+G4S: Anwani yako haijakamilika. Sasisha ndani ya saa 24 au kifurushi kitarudishwa: g4s-anwani.top,phishing,parcel_lure_address,sw
+DHL: Kifurushi chako kinakusubiri. Thibitisha hapa:,phishing,parcel_lure_linkfree,sw
+"Jumia: Oda yako ya KSh 84,999 (iPhone 16) imetumwa Mombasa. Si wewe? Ghairi sasa: jumia-ghairi.com",phishing,fake_order_lure,sw
+Posta: Pakua app kufuatilia kifurushi chako: posta-app.co.ke/Posta.apk,phishing,parcel_lure_apk,sw
+Wells Fargo Courier: kifurushi chako kimezuiliwa. Lipa KSh 200 Paybill 882211 acc WF771 ili kitolewe,phishing,parcel_lure_mobile_money,sw
+G4S Courier: Nyaraka zako kutoka Equity Bank zitafikishwa leo. Dereva wetu Peter atapiga simu akifika.,ham,delivery_out_for_delivery,sw
+Sendy: Dereva Brian anakuja na kifurushi chako. Atafika baada ya dakika 25. Kumbukumbu SDY-88210.,ham,delivery_out_for_delivery,sw
+"Posta Kenya: Kifurushi chako kutoka China kimefika GPO Nairobi. Ushuru KSh 1,250 unalipwa kaunta ya KRA ukichukua. Leta kitambulisho.",ham,delivery_customs_real,sw

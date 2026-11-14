@@ -1,0 +1,356 @@
+text,label,category,language
+"Sparkasse: Ihre Überweisung von 1.250,00 EUR an Müller GmbH wurde ausgeführt. Neuer Kontostand: 2.311,47 EUR.",ham,bank_transfer_confirm,de
+Ihr DHL Paket 00340434161234567890 wird heute zwischen 11:30 und 14:30 Uhr zugestellt. Sendungsverfolgung: dhl.de/verfolgen,ham,parcel_delivery_window,de
+Hermes: Ihr Paket wurde im PaketShop Kiosk Hauptstr. 12 hinterlegt. Abholung innerhalb von 7 Tagen mit Ausweis. myhermes.de,ham,parcel_pickup_notice,de
+"DPD: Zustellung heute leider nicht möglich, Empfänger nicht angetroffen. Neuer Versuch morgen. Status unter dpd.de/tracking",ham,parcel_failed_attempt,de
+"Telekom: Ihre Rechnung für Oktober über 49,95 EUR ist online. Abbuchung erfolgt am 15.11. Details: telekom.de/rechnung",ham,telecom_bill_notice,de
+Vodafone: Dein Datenvolumen ist zu 80% verbraucht. Mehr Daten buchst du jederzeit in der MeinVodafone App.,ham,telecom_data_usage,de
+"o2: Deine Rechnung Nr. 884512 (29,99 EUR) steht bereit unter o2online.de. Fälligkeit 20.11.",ham,telecom_bill_notice,de
+"N26: Kartenzahlung 23,40 EUR bei REWE Markt Berlin. Verfügbar: 812,10 EUR.",ham,card_transaction_alert,de
+"Ihr ING TAN-Code lautet 482913. Gilt für Überweisung 350,00 EUR an Lisa Weber. Geben Sie den Code niemals an Dritte weiter.",ham,bank_otp_code,de
+"Commerzbank photoTAN: Login von neuem Gerät erkannt. Falls das nicht Sie waren, rufen Sie uns an unter 069 58000 8000.",ham,bank_login_alert_call,de
+"Deutsche Bank: Wir haben eine ungewöhnliche Kartenzahlung über 489,00 EUR festgestellt. Haben Sie diese autorisiert? Antworten Sie mit JA oder NEIN.",ham,bank_fraud_alert_reply,de
+DB Navigator: Ihr ICE 1537 nach München fährt heute ca. 20 Minuten später ab Gleis 7. Wir bitten um Entschuldigung.,ham,train_delay_notice,de
+Deutsche Bahn: Dein Ticket Mannheim–Frankfurt am 14.11. ist gebucht. Buchungscode 7KX2PQ. Gute Fahrt! bahn.de,ham,train_booking_confirm,de
+Amazon.de: Ihre Bestellung 302-4471829-1155326 wurde versandt und kommt voraussichtlich morgen an.,ham,order_shipped,de
+"Zalando: Deine Retoure ist bei uns eingegangen. Die Rückerstattung von 79,95 EUR dauert bis zu 14 Tage.",ham,return_refund_notice,de
+"OTTO: Dein Paket ist unterwegs! Lieferung voraussichtlich Do., 13.11. Verfolge es unter otto.de/bestellungen",ham,order_shipped,de
+ELSTER: Ihr Steuerbescheid 2025 liegt in Mein ELSTER zur Abholung bereit. Anmeldung unter elster.de,ham,tax_notice,de
+Finanzamt Köln-Mitte: Erinnerung – Ihre Umsatzsteuer-Voranmeldung für Oktober ist bis zum 10.11. abzugeben.,ham,tax_deadline_reminder,de
+TK: Ihre Krankmeldung ist bei uns eingegangen. Sie müssen nichts weiter tun. Ihre Techniker Krankenkasse,ham,health_insurance_notice,de
+"AOK Bayern: Ihre neue Gesundheitskarte wurde heute verschickt. Bitte beachten Sie, dass die alte Karte ab 01.12. ungültig wird.",ham,health_insurance_card,de
+Barmer: Ihre PIN für die elektronische Patientenakte kommt in den nächsten Tagen separat per Post.,ham,health_insurance_notice,de
+"Sparkasse: Wir fragen NIEMALS per SMS oder Telefon nach Ihrer PIN, TAN oder Kartendaten. Löschen Sie solche Nachrichten und melden Sie Betrugsversuche in Ihrer Filiale.",ham,bank_scam_warning,de
+Ihr Volksbank Sicherheitshinweis: Aktuell sind gefälschte SMS im Umlauf. Klicken Sie keine Links an – echte Nachrichten von uns enthalten nie einen Link zum Login.,ham,bank_scam_warning,de
+Dein Lieferando Fahrer ist unterwegs! Bestellung #48812 kommt in ca. 15 Min.,ham,food_delivery_status,de
+"Terminerinnerung: Praxis Dr. Hoffmann, Mo. 17.11. um 09:15 Uhr. Bitte Versichertenkarte mitbringen. Bei Verhinderung bitte unter 030 2234567 absagen.",ham,medical_appointment_reminder,de
+Ihre Bestellung bei dm ist abholbereit. Filiale Schönhauser Allee. Abholcode: 5521. Bis einschließlich 19.11.,ham,click_collect_ready,de
+"PayPal: Du hast 45,00 EUR an Jonas Keller gesendet. Transaktionscode 8HL22931. Details in der PayPal App.",ham,payment_sent_confirm,de
+Ihr Vodafone Verifizierungscode: 773 019. Nicht weitergeben.,ham,telecom_otp_code,de
+Dein Check24 Code: 118 274. Gültig 10 Minuten.,ham,login_otp_code,de
+Deine Flixbus Fahrt Hamburg → Berlin startet morgen 07:45 ab ZOB Steig 12. Buchungsnr. 2214 5570 981.,ham,bus_booking_reminder,de
+"Lieber Kunde, Ihr Stromzähler wird am 20.11. zwischen 8 und 16 Uhr abgelesen. Bitte Zugang ermöglichen. Ihre Stadtwerke München",ham,utility_meter_reading,de
+"E.ON: Ihre Jahresabrechnung ist da. Guthaben: 112,38 EUR. Wird in den nächsten Tagen auf Ihr Konto überwiesen. eon.de/meineon",ham,utility_bill_credit,de
+Ihr Kfz-Kennzeichen B-KL 2041: Die HU ist im Dezember fällig. Termin bei TÜV Rheinland buchen unter tuv.com,ham,vehicle_inspection_reminder,de
+Post AT: Ihr Paket RR 4012 9983 7 AT liegt ab morgen in der Post-Filiale 1070 Wien zur Abholung bereit.,ham,parcel_pickup_notice,de
+Erste Bank: George-Login um 14:32 Uhr von neuem Gerät. Nicht Sie? Bitte rufen Sie 05 0100 50500 an.,ham,bank_login_alert_call,de
+"A1: Deine Rechnung 11/2026 über EUR 34,90 ist fällig am 25.11. Zahlungsdetails findest du in Mein A1.",ham,telecom_bill_notice,de
+"Drei: Dein Guthaben beträgt noch 2,15 EUR. Lade bequem online auf drei.at",ham,telecom_balance_low,de
+ÖBB: Dein Railjet RJ 65 Wien Hbf → Salzburg hat aktuell ca. 15 Min Verspätung.,ham,train_delay_notice,de
+Swisscom: Ihre Rechnung von CHF 89.50 ist bereit. Zahlbar bis 30.11.2026. swisscom.ch/myswisscom,ham,telecom_bill_notice,de
+PostFinance: Zahlung CHF 120.00 an SBB AG ausgeführt. Saldo CHF 3'412.65,ham,bank_transfer_confirm,de
+Die Post: Ihr Paket 99.00.123456.78901234 wird morgen zugestellt. Lieferung ändern: post.ch/meine-sendungen,ham,parcel_delivery_window,de
+SBB: Dein Sparbillett Zürich HB – Bern ist gültig am 15.11. ab 08:02. Gute Reise!,ham,train_booking_confirm,de
+UBS: Ihr Zugangscode lautet 519 384. Er ist 5 Minuten gültig.,ham,bank_otp_code,de
+Migros: Ihre Cumulus-Punkte für Oktober wurden gutgeschrieben. Aktueller Stand: 4'250 Punkte.,ham,loyalty_points_notice,de
+"DKB: Visa-Zahlung 15,90 EUR bei Spotify abgelehnt – Tageslimit erreicht. Limit anpassen in der DKB App.",ham,card_declined_notice,de
+"comdirect: Ihre Aktienorder (Siemens AG, 10 Stück) wurde zu 178,20 EUR ausgeführt.",ham,brokerage_order_confirm,de
+"Hallo Frau Becker, Ihre Brille ist abholbereit bei Fielmann Alexanderplatz. Mo–Sa 9–20 Uhr.",ham,retail_pickup_ready,de
+Bundesagentur für Arbeit: Ihr Termin am 18.11. um 10:00 Uhr in der Agentur Dortmund wurde bestätigt. Bitte Unterlagen mitbringen.,ham,government_appointment,de
+"Stadt Leipzig: Ihr neuer Personalausweis liegt zur Abholung bereit. Bürgeramt Mitte, Mo–Fr 8–18 Uhr. Bitte alten Ausweis mitbringen.",ham,government_id_ready,de
+Kaufland: Vielen Dank für Ihre Click&Collect Bestellung. Abholung heute ab 14 Uhr möglich.,ham,click_collect_ready,de
+"dhl: paket 2 von 2 kommt separat, zustellung am 14.11. keine aktion nötig",ham,parcel_split_shipment,de
+"GLS: Ihr Paket wurde beim Nachbarn (Hr. Schulz, 2. OG) abgegeben.",ham,parcel_left_with_neighbour,de
+Deutsche Post: Ihr Einschreiben wurde heute um 10:41 zugestellt. Unterschrift: Empfänger.,ham,registered_mail_delivered,de
+Sparkasse: Ihre neue girocard ist unterwegs. Die PIN erhalten Sie in einem separaten Brief. Bei Fragen: Ihre Filiale oder 0221 226-0.,ham,bank_card_shipped,de
+Vodafone Info: Am 16.11. zwischen 2 und 5 Uhr nachts kann es in Ihrer Region zu Wartungsarbeiten im Netz kommen.,ham,telecom_maintenance_notice,de
+HUK-COBURG: Ihre Schadensmeldung Nr. 2026-0918824 ist eingegangen. Ein Sachbearbeiter meldet sich innerhalb von 3 Werktagen.,ham,insurance_claim_received,de
+"Krankenhaus Charité: Ihr OP-Vorgespräch findet am 21.11. um 08:00 Uhr statt, Campus Mitte, Haus 4. Bitte nüchtern erscheinen.",ham,medical_appointment_reminder,de
+Deine Bestellung #RW-55210 bei Rewe Lieferservice ist bestätigt. Lieferung Fr 14.11. 16–18 Uhr.,ham,grocery_delivery_confirm,de
+"Deutsche Bank: Bitte beachten Sie: Wir rufen Sie nie an, um Sie zu einer Überweisung auf ein ""Sicherheitskonto"" zu bewegen. Solche Anrufe sind Betrug.",ham,bank_scam_warning,de
+La Poste : votre colis 6A12345678901 est en cours de livraison. Suivez-le sur laposte.fr/outils/suivre-vos-envois,ham,parcel_out_for_delivery,fr
+Colissimo : votre colis a été déposé dans votre boîte aux lettres ce matin à 10h12. Bonne journée !,ham,parcel_delivered,fr
+Chronopost : votre colis XY123456789FR sera livré demain entre 8h et 13h. Modifier la livraison : chronopost.fr,ham,parcel_delivery_window,fr
+"Orange : votre facture de 39,99 € est disponible dans votre espace client orange.fr. Prélèvement le 15/11.",ham,telecom_bill_notice,fr
+SFR : votre consommation data a atteint 80 % de votre forfait. Suivez-la dans l'app SFR & Moi.,ham,telecom_data_usage,fr
+"Free Mobile : votre facture du mois d'octobre (19,99 €) est disponible sur mobile.free.fr",ham,telecom_bill_notice,fr
+Bouygues Telecom : votre code de validation est 403 927. Ne le communiquez à personne.,ham,telecom_otp_code,fr
+"BNP Paribas : paiement CB de 64,20 € chez CARREFOUR MARKET le 11/11 à 18h42.",ham,card_transaction_alert,fr
+"Société Générale : une connexion à votre espace client a été effectuée depuis un nouvel appareil. Si ce n'est pas vous, appelez le 3933.",ham,bank_login_alert_call,fr
+Crédit Agricole : opération inhabituelle de 850 € détectée sur votre carte ...8812. Avez-vous effectué ce paiement ? Répondez OUI ou NON.,ham,bank_fraud_alert_reply,fr
+"La Banque Postale : votre virement de 300,00 € vers M. DURAND a bien été exécuté. Solde : 1 254,30 €.",ham,bank_transfer_confirm,fr
+impots.gouv.fr : votre avis d'impôt sur le revenu 2026 est disponible dans votre espace particulier. Date limite de paiement : 15/12.,ham,tax_notice,fr
+"DGFiP : rappel – votre taxe foncière de 1 120 € est à régler avant le 20/10 sur impots.gouv.fr. Si vous êtes mensualisé, ignorez ce message.",ham,tax_deadline_reminder,fr
+"Ameli : votre remboursement de 23,00 € a été versé sur votre compte bancaire. Détails sur ameli.fr",ham,health_reimbursement_notice,fr
+Assurance Maladie : votre nouvelle carte Vitale a été expédiée. Vous la recevrez sous 15 jours. ameli.fr,ham,health_insurance_card,fr
+SNCF Connect : votre TGV 8513 Paris Montparnasse → Bordeaux du 14/11 partira voie 7. Départ 08h52.,ham,train_platform_notice,fr
+SNCF : votre train TER 865432 est annulé en raison d'un mouvement social. Vous pouvez emprunter le train suivant sans surcoût.,ham,train_cancellation_notice,fr
+"EDF : votre facture de 142,38 € sera prélevée le 18/11. Consultez-la sur particulier.edf.fr",ham,utility_bill_notice,fr
+"Doctolib : rappel de votre RDV avec Dr Martin (médecin généraliste) demain à 14h30, 12 rue de la Paix, Lyon. Annuler : doctolib.fr",ham,medical_appointment_reminder,fr
+Vinted : ton article « Robe Zara taille M » a été vendu ! Envoie-le sous 5 jours avec le bordereau Mondial Relay.,ham,marketplace_item_sold,fr
+Vinted : ton colis est arrivé au point relais. Tu as 7 jours pour le récupérer.,ham,parcel_pickup_notice,fr
+"Code de sécurité La Banque Postale : 283 915. Valable 10 minutes pour valider votre paiement de 89,00 € sur FNAC.COM",ham,bank_otp_code,fr
+"Caf : votre prime d'activité d'octobre (182,00 €) a été versée. Elle apparaîtra sur votre compte sous 2 à 3 jours. caf.fr",ham,benefit_payment_notice,fr
+France Travail : votre actualisation est à faire entre le 28/10 et le 15/11 sur francetravail.fr ou l'application.,ham,government_reminder,fr
+ANTS : votre permis de conduire est en cours de fabrication. Vous recevrez un SMS lors de son expédition.,ham,government_document_status,fr
+"Crédit Mutuel : attention aux faux SMS ! Nous ne vous demanderons jamais votre identifiant ou mot de passe par SMS. En cas de doute, appelez votre conseiller.",ham,bank_scam_warning,fr
+BNP Paribas : votre carte ...4417 a été bloquée par précaution suite à 3 codes erronés. Contactez votre agence au 01 42 98 12 34.,ham,bank_card_blocked_call,fr
+Uber Eats : votre commande chez Pizza Roma est en route ! Livraison estimée : 20 min.,ham,food_delivery_status,fr
+Leroy Merlin : votre commande n° 7781254 est prête en magasin Nantes Atlantis. Retrait sous 7 jours.,ham,click_collect_ready,fr
+Décathlon : votre colis est disponible au magasin Décathlon Marseille Bonneveine jusqu'au 18/11.,ham,click_collect_ready,fr
+Lydia : Camille vous a envoyé 25 € – « pour le resto d'hier »,ham,p2p_payment_received,fr
+RATP : trafic perturbé sur la ligne 13 en raison d'un incident technique. Reprise estimée à 9h30.,ham,transit_disruption,fr
+Pharmacie du Centre : votre ordonnance est prête. Ouvert jusqu'à 19h30.,ham,pharmacy_ready,fr
+Mondial Relay : votre colis 12345678 est arrivé au Point Relais Tabac Presse Le Longchamp. À retirer sous 8 jours avec une pièce d'identité.,ham,parcel_pickup_notice,fr
+bpost : votre colis 323212345678901234 sera livré aujourd'hui. Suivi : track.bpost.be,ham,parcel_out_for_delivery,fr
+"Proximus : votre facture de 58,40 € est disponible dans MyProximus. Échéance : 25/11.",ham,telecom_bill_notice,fr
+"Belfius : votre virement de 150,00 € vers BE68 5390 0754 7034 a été exécuté.",ham,bank_transfer_confirm,fr
+itsme : code de confirmation 71 42 90. Ne partagez jamais ce code.,ham,login_otp_code,fr
+"BNP Paribas Fortis : votre carte Bancontact a été utilisée pour 42,15 € chez DELHAIZE IXELLES.",ham,card_transaction_alert,fr
+"SPF Finances : votre avertissement-extrait de rôle est disponible sur MyMinfin. Montant à vous rembourser : 312,40 €.",ham,tax_notice,fr
+STIB : la ligne de tram 81 est interrompue entre Montgomery et Flagey. Bus de remplacement en place.,ham,transit_disruption,fr
+"Desjardins : un achat de 212,45 $ a été effectué avec votre carte Visa chez COSTCO LAVAL. Ce n'était pas vous ? Appelez le 1 800 CAISSES.",ham,card_transaction_alert_call,fr
+"Hydro-Québec : votre facture de 187,32 $ est due le 28 novembre. Consultez-la dans votre Espace client sur hydroquebec.com",ham,utility_bill_notice,fr
+"Postes Canada : votre colis est arrivé au bureau de poste Pharmaprix, 1200 rue Sainte-Catherine. Récupérez-le d'ici 15 jours.",ham,parcel_pickup_notice,fr
+Revenu Québec : votre avis de cotisation 2025 est disponible dans Mon dossier. Aucune action requise.,ham,tax_notice,fr
+Vidéotron : votre code de vérification est 557 210.,ham,telecom_otp_code,fr
+Clinique Médicale Rosemont : rappel de votre rendez-vous le 19 nov. à 10 h 15. Apportez votre carte d'assurance maladie.,ham,medical_appointment_reminder,fr
+"Bell : votre facture de 94,20 $ est prête. Date d'échéance : le 2 décembre. bell.ca/monbell",ham,telecom_bill_notice,fr
+Orange Money : Vous avez recu 25 000 FCFA de KONE AWA. Nouveau solde : 38 500 FCFA. Ref : OM2611P4423.,ham,mobile_money_received,fr
+Wave : Vous avez envoyé 10 000 F à Moussa Diop (77 123 45 67). Frais : 100 F. Solde : 42 300 F.,ham,mobile_money_sent,fr
+MTN Mobile Money : Retrait de 15 000 FCFA effectué chez l'agent DIABATE CELLULAIRE. Solde 7 850 FCFA. ID transaction 8831042267.,ham,mobile_money_withdrawal,fr
+Orange CI : Votre forfait internet 5 Go a été activé avec succès. Validité 30 jours. Composez #111# pour votre solde.,ham,telecom_bundle_activated,fr
+SENELEC : Votre facture de 18 450 FCFA du mois d'octobre est disponible. Paiement possible via Wave ou Orange Money. Réf client 0312 4455 7.,ham,utility_bill_notice,fr
+Moov Africa : Votre code de confirmation est 4291. Ne le partagez avec personne.,ham,telecom_otp_code,fr
+Ecobank : Transaction effectuée : virement de 150 000 FCFA vers compte 0012******89. Solde : 412 350 FCFA.,ham,bank_transfer_confirm,fr
+Sonatel : Votre crédit est de 450 FCFA. Rechargez sur orange.sn ou chez un revendeur agréé.,ham,telecom_balance_low,fr
+Free Sénégal : Votre pass 2 Go expire ce soir à 23h59. Rechargez via l'appli Free ou tapez *123#.,ham,telecom_bundle_expiry,fr
+"Vinted : l'acheteur a confirmé la réception. 18,50 € ont été ajoutés à ton porte-monnaie Vinted.",ham,marketplace_payout,fr
+Crédit Agricole : votre nouveau code secret vous sera remis en agence. Ne le notez jamais sur votre carte.,ham,bank_card_pin_notice,fr
+Poste Italiane: la tua spedizione 1234567890123 è in consegna oggi. Segui il pacco su poste.it,ham,parcel_out_for_delivery,it
+Poste Italiane: il tuo pacco è disponibile per il ritiro presso l'ufficio postale di Via Roma 15 fino al 20/11. Porta un documento.,ham,parcel_pickup_notice,it
+PosteID: il tuo codice di verifica è 582 019. Non comunicarlo a nessuno.,ham,login_otp_code,it
+"Intesa Sanpaolo: pagamento con carta *4417 di EUR 56,30 presso ESSELUNGA MILANO il 11/11 alle 19:02.",ham,card_transaction_alert,it
+"Intesa Sanpaolo: rilevato accesso da nuovo dispositivo alle 14:21. Se non sei stato tu, chiama subito il numero verde 800.303.303.",ham,bank_login_alert_call,it
+"UniCredit: bonifico di 1.200,00 EUR a favore di Rossi Mario eseguito. Saldo disponibile: 3.450,12 EUR.",ham,bank_transfer_confirm,it
+"UniCredit: operazione sospetta di 480,00 EUR con la tua carta. L'hai autorizzata tu? Rispondi SI o NO a questo messaggio.",ham,bank_fraud_alert_reply,it
+"TIM: la tua fattura di novembre è di 29,90 euro. Scadenza 25/11. Consultala su tim.it/myTIM",ham,telecom_bill_notice,it
+Vodafone: hai consumato il 90% dei tuoi Giga. Controlla l'offerta nell'app My Vodafone.,ham,telecom_data_usage,it
+"WINDTRE: la tua ricarica di 10 euro è andata a buon fine. Credito residuo: 12,45 euro.",ham,telecom_topup_confirm,it
+Iliad: il tuo codice di verifica è 7712. Valido per 5 minuti.,ham,telecom_otp_code,it
+BRT: spedizione 0123456789 in consegna oggi. Il corriere passerà tra le 9:00 e le 13:00. brt.it,ham,parcel_delivery_window,it
+SDA: tentativo di consegna non riuscito per assenza destinatario. Nuovo tentativo domani. Dettagli su sda.it,ham,parcel_failed_attempt,it
+Trenitalia: il tuo Frecciarossa 9620 Roma Termini – Milano Centrale del 15/11 parte dal binario 8 alle 07:50. Codice PNR: XK4R2L,ham,train_platform_notice,it
+Trenitalia: il treno Regionale 2345 è in ritardo di 20 minuti. Ci scusiamo per il disagio.,ham,train_delay_notice,it
+"Enel Energia: la tua bolletta di 88,40 euro è disponibile. Scadenza 30/11. Puoi pagarla su enel.it o nell'app.",ham,utility_bill_notice,it
+INPS: la tua domanda di NASpI è stata accolta. Il primo pagamento sarà accreditato entro 30 giorni. Dettagli su inps.it,ham,benefit_approval_notice,it
+Agenzia delle Entrate: la tua dichiarazione 730/2026 precompilata è disponibile nell'area riservata. Accedi con SPID su agenziaentrate.gov.it,ham,tax_notice,it
+Agenzia Entrate-Riscossione: ti ricordiamo la scadenza della rata del 30/11 relativa alla cartella n. 097 2026 00123456. Dettagli nell'area riservata.,ham,tax_deadline_reminder,it
+"Nexi: autorizzato pagamento di 125,00 EUR su AMAZON.IT con carta ***2201.",ham,card_transaction_alert,it
+Satispay: hai ricevuto 20 € da Giulia P. «cena di ieri 🍕»,ham,p2p_payment_received,it
+"Codice OTP BancoPosta: 304851 per il bonifico di 250,00 EUR a GIUSEPPE BIANCHI. Non condividerlo.",ham,bank_otp_code,it
+Fineco: accesso all'app effettuato con successo alle 09:14. Se non riconosci l'operazione contattaci al 800.52.52.52.,ham,bank_login_alert_call,it
+Hai un appuntamento al CUP Ospedale San Raffaele il 18/11 alle 11:30 – ecografia addome. Presentarsi 15 minuti prima con tessera sanitaria.,ham,medical_appointment_reminder,it
+Farmacia Comunale 3: il tuo farmaco è arrivato ed è pronto per il ritiro. Orari 8:30–19:30.,ham,pharmacy_ready,it
+Amazon.it: il tuo ordine 404-5566778-9900112 è stato consegnato. È stato lasciato in portineria.,ham,order_delivered,it
+ATM Milano: la linea M2 è interrotta tra Cadorna e Loreto per guasto tecnico. Bus sostitutivi attivi.,ham,transit_disruption,it
+Comune di Bologna: la tua carta d'identità elettronica è pronta. Ritiro all'anagrafe di Piazza Liber Paradisus con la ricevuta.,ham,government_id_ready,it
+"Autostrade per l'Italia: Telepass addebito di 14,60 EUR per transiti del 10/11. Dettagli su telepass.com",ham,toll_charge_notice,it
+Esselunga a casa: la tua spesa arriverà oggi tra le 17 e le 19. Il fattorino ti chiamerà all'arrivo.,ham,grocery_delivery_confirm,it
+"Poste Italiane non chiede MAI dati di carte, PIN o codici via SMS o telefono. Diffida di messaggi con link e segnalali a antiphishing@posteitaliane.it",ham,bank_scam_warning,it
+"Banca Sella: ricorda che non ti chiederemo mai di spostare denaro su un «conto sicuro». Se ricevi una chiamata del genere, è una truffa.",ham,bank_scam_warning,it
+Mediaworld: il tuo ordine è pronto per il ritiro presso il negozio di Roma Est. Hai 5 giorni.,ham,click_collect_ready,it
+Glovo: il tuo rider Marco è in arrivo con il tuo ordine da Poke House 🛵,ham,food_delivery_status,it
+"Zalando: il tuo reso è stato ricevuto. Il rimborso di 64,99 € sarà accreditato entro 14 giorni.",ham,return_refund_notice,it
+ASL Roma 1: ricordati la vaccinazione antinfluenzale prenotata per il 20/11 ore 10:00 presso il poliambulatorio di Via Boccea 271.,ham,medical_appointment_reminder,it
+"Hera: lettura contatore gas programmata il 19/11 tra le 8 e le 13. Se non sei presente, puoi comunicare l'autolettura su gruppohera.it",ham,utility_meter_reading,it
+"ACEA: la tua bolletta acqua di 47,20 € scade il 05/12. Domiciliazione attiva, nessuna azione necessaria.",ham,utility_bill_notice,it
+"Italo: il tuo treno 9910 di domani parte da Napoli Centrale alle 06:35, carrozza 4 posto 12A. Buon viaggio!",ham,train_booking_reminder,it
+GLS Italy: il pacco 9876543210 è stato consegnato alle 11:45 e firmato da ROSSI.,ham,parcel_delivered,it
+Intesa Sanpaolo: la tua nuova carta è stata spedita e arriverà entro 7 giorni lavorativi. Attivala dall'app quando la ricevi.,ham,bank_card_shipped,it
+BNL: il limite della tua carta è stato aggiornato a 1.500 EUR mensili come richiesto in filiale.,ham,bank_limit_change_confirm,it
+"ho. Mobile: il rinnovo della tua offerta (7,99 €) è avvenuto correttamente. Prossimo rinnovo: 12/12.",ham,telecom_renewal_confirm,it
+Fastweb: intervento tecnico programmato nella tua zona il 16/11 dalle 01:00 alle 05:00. Possibili brevi interruzioni della connessione.,ham,telecom_maintenance_notice,it
+"pagoPA: pagamento di 52,00 EUR per «Tassa rifiuti TARI – Comune di Torino» eseguito con successo. Ricevuta su pagopa.gov.it",ham,government_payment_receipt,it
+Ryanair: il check-in per il volo FR 1234 Bergamo – Palermo del 14/11 è aperto. Completalo entro 2 ore prima della partenza su ryanair.com,ham,flight_checkin_reminder,it
+Dott.ssa Ferrari: le confermo la visita di venerdì alle 16. Se non riesce mi avvisi al 02 8765 4321. Grazie,ham,medical_appointment_reminder,it
+TIM: ti informiamo che il tuo numero è raggiungibile in roaming UE senza costi aggiuntivi. Buon viaggio!,ham,telecom_roaming_notice,it
+"Credem: prelievo di 200,00 EUR effettuato allo sportello ATM di Via Emilia 44 alle 12:10.",ham,atm_withdrawal_alert,it
+Codice di sicurezza Vodafone: 118 902. Inseriscilo nell'app entro 10 minuti.,ham,telecom_otp_code,it
+INPS: è disponibile il cedolino della pensione di dicembre nella tua area riservata MyINPS.,ham,pension_notice,it
+Carrefour Italia: il tuo buono fedeltà di 5 € è stato caricato sulla carta SpesAmica.,ham,loyalty_points_notice,it
+Enel: lettura del contatore luce dal 15 al 18 novembre. Non è necessaria la tua presenza.,ham,utility_meter_reading,it
+Poste Italiane: raccomandata n. 68301234567-8 non consegnata per assenza. Avviso lasciato nella cassetta. Ritiro in giacenza da domani.,ham,registered_mail_notice,it
+Mooney: la tua ricarica Postepay di 50 € è stata eseguita. Commissione 1 €.,ham,card_topup_confirm,it
+"Comune di Firenze: il pagamento della multa n. 2026/44521 (42,00 €) è stato registrato. Grazie.",ham,fine_payment_receipt,it
+"Banca Mediolanum: attenzione, sono in corso telefonate che fingono di essere il nostro servizio antifrode. Non fornire mai codici o password al telefono.",ham,bank_scam_warning,it
+"UniCredit: addebito ricorrente di 9,99 EUR su SPOTIFY con carta *8812. Saldo disponibile 1.102,88 EUR.",ham,card_transaction_alert,it
+"BBVA: Compra con tarjeta *4417 de 48,60 EUR en MERCADONA VALENCIA el 11/11 a las 19:40.",ham,card_transaction_alert,es
+"BBVA: Hemos detectado un acceso a tu banca online desde un dispositivo nuevo. Si no has sido tú, llámanos al 900 102 801.",ham,bank_login_alert_call,es
+"Santander: Se ha realizado un pago de 230,00 EUR en IBERIA.COM con tu tarjeta. Si no reconoces esta operación, llama al 915 123 123.",ham,card_transaction_alert_call,es
+"CaixaBank: Tu transferencia de 1.000,00 EUR a Laura Gómez se ha realizado correctamente. Saldo: 2.145,30 EUR.",ham,bank_transfer_confirm,es
+"CaixaBankNow: clave de firma 48219 para la operación de 75,00 EUR. No la compartas con nadie.",ham,bank_otp_code,es
+"Movistar: Tu factura de noviembre es de 62,35 €. Se cargará en tu cuenta el 20/11. Consúltala en movistar.es",ham,telecom_bill_notice,es
+Vodafone: Has consumido el 80% de tus datos. Puedes ampliarlos en la app Mi Vodafone.,ham,telecom_data_usage,es
+Orange: tu código de verificación es 775 320. Caduca en 10 minutos.,ham,telecom_otp_code,es
+"Correos: Tu envío PK12345678901ES llegará hoy. Si no estás, lo dejaremos en la oficina Correos de Calle Mayor 8. correos.es",ham,parcel_out_for_delivery,es
+Correos: tu paquete está disponible en la oficina de Correos Chamberí. Recógelo en 15 días con tu DNI.,ham,parcel_pickup_notice,es
+SEUR: Tu pedido de ZARA será entregado hoy entre 13:00 y 17:00. Sigue tu envío en seur.com,ham,parcel_delivery_window,es
+MRW: Hemos intentado entregar tu paquete 0123456789 sin éxito. Lo intentaremos de nuevo mañana.,ham,parcel_failed_attempt,es
+"Renfe: Tu AVE 03073 Madrid–Sevilla del 15/11 sale a las 08:00 desde Atocha, vía 4. Localizador: KT9P2M.",ham,train_booking_reminder,es
+Renfe: El tren Cercanías C-4 circula con retrasos de hasta 15 min por incidencia en la infraestructura.,ham,train_delay_notice,es
+"Iberdrola: Tu factura de luz de 76,42 € ya está disponible. Se cargará el 22/11. Consúltala en iberdrola.es/clientes",ham,utility_bill_notice,es
+Agencia Tributaria: Tu borrador de la Renta 2025 ya está disponible en sede.agenciatributaria.gob.es. Plazo hasta el 30 de junio.,ham,tax_notice,es
+"AEAT: Le informamos de que su devolución de 342,18 € ha sido ordenada y se abonará en su cuenta en los próximos días.",ham,tax_refund_notice,es
+Seguridad Social: Su cita en la oficina de Getafe es el 18/11 a las 10:30. Acuda con su DNI y la documentación requerida.,ham,government_appointment,es
+"Sanitas: Recordatorio de cita con Dra. López, 19/11 a las 16:00 en el Hospital Sanitas La Moraleja. Para cancelar, llame al 91 123 45 67.",ham,medical_appointment_reminder,es
+SERGAS: Recordatorio: tiene cita con su médico de familia el 20/11 a las 09:15 en el Centro de Salud de Lugo.,ham,medical_appointment_reminder,es
+"Bizum: Has recibido 15,00 € de Carlos M. Concepto: cena viernes",ham,p2p_payment_received,es
+"ING: Tu nómina de 1.845,20 EUR ha sido abonada en tu Cuenta Nómina.",ham,salary_credited,es
+Openbank: retirada de 100 EUR en cajero SANTANDER CALLE SERRANO a las 14:02.,ham,atm_withdrawal_alert,es
+Endesa: Lectura del contador prevista entre el 17 y el 19 de noviembre. No es necesario que estés en casa.,ham,utility_meter_reading,es
+Mercadona: Tu pedido online se entregará hoy entre 18:00 y 20:00. El repartidor te llamará al llegar.,ham,grocery_delivery_confirm,es
+"El Corte Inglés: Tu pedido 1209988 está listo para recoger en Click&Collect, planta baja, Castellana.",ham,click_collect_ready,es
+Glovo: Tu pedido de Telepizza va en camino. Llegada estimada: 15 min.,ham,food_delivery_status,es
+DGT: Tu permiso de conducir caduca el 10/01/2027. Puedes renovarlo en un centro de reconocimiento de conductores.,ham,licence_expiry_reminder,es
+Metro de Madrid: Línea 6 con servicio interrumpido entre Moncloa y Argüelles. Tiempo estimado de resolución: 40 min.,ham,transit_disruption,es
+"Banco Sabadell: Recuerda que NUNCA te pediremos tus claves por SMS, llamada o correo. Si recibes un mensaje sospechoso, no pulses en ningún enlace.",ham,bank_scam_warning,es
+Santander: Aviso de seguridad. Están circulando SMS falsos que suplantan nuestra identidad. No facilites claves ni datos de tu tarjeta.,ham,bank_scam_warning,es
+"BBVA México: Compra por $1,250.00 MXN en LIVERPOOL POLANCO con tu tarjeta *3301. Si no la reconoces, llama al 55 5226 2663.",ham,card_transaction_alert_call,es
+"Banorte: Retiro en cajero por $2,000.00 el 11/nov 15:42 en OXXO INSURGENTES. Saldo: $8,431.50",ham,atm_withdrawal_alert,es
+"Bancomer: Tu token para la transferencia de $3,500.00 es 482910. Vigencia 2 min.",ham,bank_otp_code,es
+OXXO: Tu pago de $450.00 a CFE fue recibido. Folio 55214-1133. Conserva tu ticket.,ham,bill_payment_receipt,es
+Mercado Libre: ¡Tu compra ya salió! Llega entre el 13 y el 14 de nov. Rastrea en mercadolibre.com.mx,ham,order_shipped,es
+Mercado Pago: Recibiste $600.00 de Ana Torres. Ya está disponible en tu cuenta.,ham,p2p_payment_received,es
+Telcel: Tu recarga de $200 fue exitosa. Saldo: $215.30. Vigencia 30 días.,ham,telecom_topup_confirm,es
+SAT: Tu declaración anual 2025 fue recibida con éxito. Acuse disponible en sat.gob.mx,ham,tax_notice,es
+CFE: Tu recibo de luz por $812.00 vence el 25/11. Consulta y paga en la app CFE Contigo.,ham,utility_bill_notice,es
+IMSS: Recordatorio de tu cita en la UMF 21 el 18/nov a las 9:00. Trae tu credencial y carnet.,ham,medical_appointment_reminder,es
+Estafeta: Tu guía 1234567890 está en camino. Entrega estimada: hoy. Rastrea en estafeta.com,ham,parcel_out_for_delivery,es
+"Uber: Tu viaje con Luis (Nissan Versa, placas ABC-12-34) llega en 3 min.",ham,ride_arrival_notice,es
+"Santander México: Alerta de seguridad. Nunca te pediremos tu NIP, token o contraseña por llamada o mensaje. Si alguien lo hace, cuelga y repórtalo al 55 5169 4300.",ham,bank_scam_warning,es
+"Banco Galicia: Compra con tarjeta de débito por $45.800,00 en COTO DIGITAL. Si no la reconocés, llamanos al 0810-444-6500.",ham,card_transaction_alert_call,es
+Mercado Pago: Transferiste $25.000 a Martín Pérez (CVU ...2291). Comprobante disponible en la app.,ham,p2p_payment_sent,es
+Personal: Tu factura de $18.450 ya está disponible. Vence el 28/11. Pagá desde Mi Personal.,ham,telecom_bill_notice,es
+ARCA: Recordá que el vencimiento del monotributo es el 20/11. Ingresá con tu clave fiscal en arca.gob.ar,ham,tax_deadline_reminder,es
+"Correo Argentino: Tu envío CA123456789AR llega hoy. Si no estás, podés retirarlo en la sucursal más cercana.",ham,parcel_out_for_delivery,es
+Edesur: Mañana de 9 a 13 hs habrá corte programado en tu zona por tareas de mantenimiento.,ham,utility_outage_notice,es
+PedidosYa: ¡Tu pedido de Mostaza está en camino! Llega en 10 min aprox.,ham,food_delivery_status,es
+"Bancolombia: Compra por $85.400 en EXITO CALLE 80 con tu tarjeta *7701. Si no la reconoces, llama al 018000 912345.",ham,card_transaction_alert_call,es
+Nequi: Recibiste $50.000 de Juan Pablo R. Ya están disponibles 💜,ham,p2p_payment_received,es
+Davivienda: Tu clave dinámica es 619 302. Válida por 60 segundos.,ham,bank_otp_code,es
+Claro Colombia: Tu factura de $69.900 vence el 22/11. Paga en micuenta.claro.com.co,ham,telecom_bill_notice,es
+Servientrega: Tu guía 98765432100 fue entregada hoy a las 11:20. Recibió: PORTERÍA.,ham,parcel_delivered,es
+EPS Sanitas: Recuerda tu cita de medicina general el 19/11 a las 8:30 am en la sede Chapinero. Llega 15 min antes.,ham,medical_appointment_reminder,es
+Rappi: Tu rappitendero está a 2 min. Ten listo tu método de pago.,ham,food_delivery_status,es
+correos: tu paquete fue entregado a las 12:35. gracias por confiar en nosotros,ham,parcel_delivered,es
+"Nubank: compra aprovada no cartão final 4417: R$ 89,90 em IFOOD. Saldo disponível: R$ 1.210,45.",ham,card_transaction_alert,pt
+"Nubank: identificamos um login no seu app em um novo aparelho. Se não foi você, ligue 0800 591 2117.",ham,bank_login_alert_call,pt
+"Itaú: Pix recebido de MARIA CLARA S. no valor de R$ 150,00. Saldo: R$ 2.340,10.",ham,pix_received,pt
+"Itaú: Transação de R$ 1.890,00 no cartão final 2201 em MAGAZINE LUIZA. Reconhece? Responda SIM ou NAO.",ham,bank_fraud_alert_reply,pt
+"Bradesco: seu código de segurança é 583 201. Não compartilhe com ninguém, nem com funcionários do banco.",ham,bank_otp_code,pt
+"Caixa: FGTS. Seu saque-aniversário de R$ 1.230,00 foi creditado na sua conta Caixa Tem.",ham,benefit_payment_notice,pt
+"Banco do Brasil: Pix enviado para JOAO PEDRO LIMA, R$ 320,00, em 11/11 às 18:42. ID E0000000020261111184200.",ham,pix_sent,pt
+"Pix: você recebeu R$ 75,00 de Rafael Mendes. Chave: celular. Banco Inter.",ham,pix_received,pt
+Correios: seu objeto NB123456789BR saiu para entrega. Acompanhe em correios.com.br/rastreamento,ham,parcel_out_for_delivery,pt
+"Correios: objeto aguardando retirada na agência Centro, Av. Paulista 1200. Prazo: 7 dias. Leve documento com foto.",ham,parcel_pickup_notice,pt
+"Vivo: sua fatura de novembro no valor de R$ 119,90 vence em 15/11. Veja em vivo.com.br/meuvivo",ham,telecom_bill_notice,pt
+Claro: você já usou 80% da sua franquia de internet. Acompanhe no app Minha Claro.,ham,telecom_data_usage,pt
+"TIM: sua recarga de R$ 30,00 foi realizada com sucesso. Validade 30 dias.",ham,telecom_topup_confirm,pt
+Mercado Livre: Seu pedido saiu para entrega e chega hoje! Acompanhe em mercadolivre.com.br,ham,order_shipped,pt
+"Mercado Pago: Pix de R$ 200,00 recebido de Camila Souza.",ham,pix_received,pt
+Magalu: seu pedido 1122334455 foi entregue. Obrigado por comprar na Magalu!,ham,order_delivered,pt
+iFood: seu pedido do Burger King está a caminho 🛵 Previsão: 20 min.,ham,food_delivery_status,pt
+"Enel SP: sua fatura de R$ 212,34 vence em 20/11. Pague pelo app Enel ou com Pix. Código do cliente 1234567.",ham,utility_bill_notice,pt
+Sabesp: leitura do hidrômetro prevista para 18/11. Deixe o acesso livre.,ham,utility_meter_reading,pt
+Detran SP: seu licenciamento 2026 está disponível para pagamento. Placa ABC1D23. Acesse portal.detran.sp.gov.br,ham,vehicle_licensing_notice,pt
+"Receita Federal: sua declaração do IRPF 2026 foi processada. Restituição de R$ 1.845,12 no 3º lote. Consulte em gov.br/receitafederal",ham,tax_refund_notice,pt
+INSS: sua perícia médica está agendada para 19/11 às 9h na APS Santo Amaro. Leve documentos e laudos.,ham,government_appointment,pt
+gov.br: seu código de acesso é 729104. Válido por 5 minutos.,ham,login_otp_code,pt
+Drogasil: seu pedido está pronto para retirada na loja Rua Augusta 500.,ham,pharmacy_ready,pt
+"Uber: Carlos está chegando em um Fiat Argo prata, placa BRA2E19.",ham,ride_arrival_notice,pt
+"99: sua corrida foi concluída. Valor: R$ 18,50 pago com Pix.",ham,ride_receipt,pt
+"Hospital Albert Einstein: lembramos sua consulta com Dr. Ricardo Alves em 18/11 às 14h30, Unidade Morumbi. Chegue 20 min antes.",ham,medical_appointment_reminder,pt
+"Bradesco: alerta de segurança. O banco nunca liga pedindo senha, token ou para você fazer transferências. Desconfie e ligue para a central no verso do cartão.",ham,bank_scam_warning,pt
+"Nubank nunca vai pedir sua senha ou código por telefone ou mensagem. Se alguém pedir, é golpe.",ham,bank_scam_warning,pt
+Santander Brasil: sua nova senha de 4 dígitos foi cadastrada com sucesso em 11/11 às 10:12.,ham,bank_password_change_confirm,pt
+"Banco Inter: saque de R$ 100,00 realizado na rede Banco24Horas às 16:30.",ham,atm_withdrawal_alert,pt
+"PicPay: você recebeu R$ 40,00 de Bruno Costa. 'pizza de ontem'",ham,p2p_payment_received,pt
+Loggi: seu pacote da Shopee foi entregue e recebido por PORTARIA às 12:05.,ham,parcel_delivered,pt
+CPTM: Linha 11-Coral opera com velocidade reduzida devido a falha na via. Equipes no local.,ham,transit_disruption,pt
+"Sem Parar: passagem no pedágio Rodovia dos Bandeirantes km 32 – R$ 12,80 debitado.",ham,toll_charge_notice,pt
+Prefeitura de São Paulo: sua vaga na creche municipal Jardim Ângela foi confirmada. Compareça até 20/11 com documentos.,ham,government_notice,pt
+correios: seu objeto foi entregue ao destinatário as 14:10. obrigado,ham,parcel_delivered,pt
+CTT: a sua encomenda RR123456789PT será entregue hoje. Acompanhe em ctt.pt,ham,parcel_out_for_delivery,pt
+"CTT Expresso: tentativa de entrega sem sucesso. Pode levantar a encomenda na loja CTT Saldanha a partir de amanhã, com o cartão de cidadão.",ham,parcel_failed_attempt,pt
+"MB WAY: Recebeu 20,00 EUR de Ana Ferreira. Saldo da conta: 540,12 EUR.",ham,p2p_payment_received,pt
+"MB WAY: pedido de pagamento de 35,00 EUR de Tiago R. Abra a app para aceitar ou recusar.",ham,p2p_payment_request,pt
+"Millennium bcp: compra de 18,45 EUR em CONTINENTE COLOMBO com o cartão terminado em 2201.",ham,card_transaction_alert,pt
+"Millennium bcp: código de autorização 391 048 para a transferência de 500,00 EUR. Não partilhe este código.",ham,bank_otp_code,pt
+"Caixa Geral de Depósitos: detetámos um acesso ao Caixadirecta a partir de um novo dispositivo. Se não foi você, contacte-nos pelo 707 24 24 24.",ham,bank_login_alert_call,pt
+"NOS: a sua fatura de novembro no valor de 42,99 EUR está disponível. Débito direto a 20/11. nos.pt/particulares",ham,telecom_bill_notice,pt
+MEO: já consumiu 90% dos seus dados móveis. Pode adicionar dados na app MEO.,ham,telecom_data_usage,pt
+Vodafone PT: o seu código de validação é 60 84 17.,ham,telecom_otp_code,pt
+"Autoridade Tributária: está disponível a sua nota de liquidação de IRS 2025. Reembolso de 412,30 EUR a transferir nos próximos dias. portaldasfinancas.gov.pt",ham,tax_refund_notice,pt
+AT: lembramos que o prazo de pagamento do IUC da viatura 12-AB-34 termina a 30/11. Pague no Portal das Finanças ou Multibanco.,ham,tax_deadline_reminder,pt
+SNS 24: a sua consulta no Centro de Saúde de Benfica está marcada para 19/11 às 10h40. Leve o cartão de utente.,ham,medical_appointment_reminder,pt
+"CP: o Alfa Pendular 133 Lisboa Oriente – Porto Campanhã de 15/11 parte às 08:09, carruagem 3 lugar 41.",ham,train_booking_reminder,pt
+CP: o comboio urbano das 17h52 da Linha de Sintra circula com cerca de 15 minutos de atraso.,ham,train_delay_notice,pt
+"EDP: a sua fatura de eletricidade de 68,20 EUR será debitada a 22/11. Consulte-a em edp.pt",ham,utility_bill_notice,pt
+Worten: a sua encomenda 7781234 está pronta para levantamento na loja Worten Amoreiras. Tem 7 dias.,ham,click_collect_ready,pt
+"Segurança Social: a sua prestação de abono de família de novembro (146,80 EUR) foi paga. Consulte na Segurança Social Direta.",ham,benefit_payment_notice,pt
+Chave Móvel Digital: o seu código de segurança é 2481. Válido por 5 minutos.,ham,login_otp_code,pt
+"Continente: o seu cartão acumulou 4,20 EUR em saldo este mês. Pode usá-lo em qualquer loja Continente.",ham,loyalty_points_notice,pt
+"Novo Banco: nunca lhe pediremos códigos ou dados do cartão por SMS ou telefone. Em caso de dúvida, ligue para o 707 24 7 365.",ham,bank_scam_warning,pt
+"Via Verde: passagem na A1 Alverca registada. Valor: 1,45 EUR. Débito no final do mês.",ham,toll_charge_notice,pt
+Farmácia Central: o seu medicamento já chegou. Pode levantar até às 20h.,ham,pharmacy_ready,pt
+"ING: Er is 48,20 euro afgeschreven van uw rekening NL12INGB0001234567 via een betaling bij ALBERT HEIJN 1234 AMSTERDAM.",ham,card_transaction_alert,nl
+ING: Wij zagen een inlogpoging op Mijn ING vanaf een nieuw apparaat. Was u dit niet? Bel ons dan direct op 020 22 888 88.,ham,bank_login_alert_call,nl
+"Rabobank: Je overboeking van € 1.250,00 naar J. de Vries is uitgevoerd. Saldo: € 2.410,33.",ham,bank_transfer_confirm,nl
+"Rabobank: Opvallende betaling van € 650,00 bij een webwinkel met uw pas eindigend op 4417. Heeft u deze gedaan? Antwoord JA of NEE.",ham,bank_fraud_alert_reply,nl
+ABN AMRO: Uw identificatiecode is 582 019. Gebruik deze binnen 5 minuten. Deel de code nooit met anderen.,ham,bank_otp_code,nl
+ABN AMRO: Uw nieuwe betaalpas is verzonden en komt binnen 5 werkdagen aan. Uw pincode ontvangt u apart.,ham,bank_card_shipped,nl
+"bunq: Je hebt € 25,00 ontvangen van Sanne K. 'drankjes gister 🍻'",ham,p2p_payment_received,nl
+PostNL: Je pakket met code 3SABCD1234567 wordt vandaag tussen 11:45 en 14:15 bezorgd. Volg het via postnl.nl/tracktrace,ham,parcel_delivery_window,nl
+PostNL: We hebben je pakket afgeleverd bij de buren op nummer 14. Fijne dag!,ham,parcel_left_with_neighbour,nl
+PostNL: Je pakket ligt klaar bij PostNL-punt Primera Kerkstraat. Haal het binnen 7 dagen op met een geldig ID.,ham,parcel_pickup_notice,nl
+DHL: Uw pakket wordt morgen bezorgd. Niet thuis? Kies een ander moment via dhlparcel.nl,ham,parcel_delivery_window,nl
+bol.com: Je bestelling 1234567890 is onderweg! Verwachte bezorging: morgen voor 22:00.,ham,order_shipped,nl
+"bol.com: We hebben je retour ontvangen. Het bedrag van € 59,99 wordt binnen 5 werkdagen teruggestort.",ham,return_refund_notice,nl
+"KPN: Je factuur van november (€ 54,50) staat voor je klaar in MijnKPN. Het bedrag wordt op 24 november afgeschreven.",ham,telecom_bill_notice,nl
+Odido: Je hebt 80% van je databundel gebruikt. Bekijk je verbruik in de Odido app.,ham,telecom_data_usage,nl
+Ziggo: Gepland onderhoud in jouw wijk op 16 november tussen 01:00 en 05:00. Je verbinding kan tijdelijk wegvallen.,ham,telecom_maintenance_notice,nl
+DigiD: Uw sms-code is 190 284. Deel deze code met niemand.,ham,login_otp_code,nl
+DigiD: Er is zojuist ingelogd met uw DigiD bij de Belastingdienst. Was u dit niet? Ga naar digid.nl,ham,login_notice,nl
+NS: Je trein naar Utrecht Centraal van 08:12 vertrekt vandaag van spoor 7 in plaats van spoor 5.,ham,train_platform_notice,nl
+NS: Door een defecte trein rijden er minder treinen tussen Amsterdam en Schiphol. Reken op 15 min extra reistijd.,ham,train_delay_notice,nl
+Belastingdienst: Uw voorlopige aanslag 2026 staat klaar in Mijn Belastingdienst. U ontvangt binnenkort € 312 terug.,ham,tax_notice,nl
+Belastingdienst: Let op: wij sturen nooit sms'jes met een link om te betalen. Twijfelt u? Kijk op belastingdienst.nl,ham,government_scam_warning,nl
+"Tikkie: Lisa vraagt € 12,50 van je voor 'pizza vrijdag'. Betaal via de Tikkie-app.",ham,p2p_payment_request,nl
+"Tikkie: Mark heeft je verzoek van € 37,80 betaald. 'Weekend Texel'",ham,p2p_payment_received,nl
+"je tikkie van 8 euro voor de koffie is binnen, thanks!",ham,p2p_payment_received,nl
+Albert Heijn: Je boodschappen worden vandaag tussen 18:00 en 20:00 bezorgd. De bezorger belt bij aankomst.,ham,grocery_delivery_confirm,nl
+Coolblue: Je pakket is onderweg! Vandaag tussen 17:00 en 19:00 bij je. Volg de bezorger live via coolblue.nl,ham,order_shipped,nl
+Thuisbezorgd: Je bestelling bij Sushi Time is onderweg. Verwachte aankomst: 25 minuten.,ham,food_delivery_status,nl
+Huisartsenpraktijk De Linde: herinnering aan uw afspraak op di 18 nov om 10:20. Kunt u niet komen? Bel 030 123 45 67.,ham,medical_appointment_reminder,nl
+"GGD Amsterdam: uw afspraak voor de griepprik is bevestigd op 20-11 om 14:30, locatie Weesperplein.",ham,medical_appointment_reminder,nl
+"Eneco: Uw jaarafrekening staat klaar. U krijgt € 142,38 terug. Dit bedrag wordt binnen 14 dagen overgemaakt. eneco.nl",ham,utility_bill_credit,nl
+Vattenfall: Op 19 november komt de meteropnemer tussen 8 en 12 uur. Zorg dat de meter bereikbaar is.,ham,utility_meter_reading,nl
+Gemeente Rotterdam: Uw nieuwe paspoort ligt klaar bij Stadswinkel Centrum. Neem uw oude paspoort mee.,ham,government_id_ready,nl
+"CJIB: uw betaling van € 110,00 voor beschikkingsnummer 1234 5678 9012 3456 is ontvangen. Dank u.",ham,fine_payment_receipt,nl
+RDW: De APK van uw voertuig met kenteken 12-ABC-3 verloopt op 15-12-2026.,ham,vehicle_inspection_reminder,nl
+"Zilveren Kruis: uw declaratie van € 85,00 is verwerkt en wordt binnen 5 werkdagen uitbetaald.",ham,health_reimbursement_notice,nl
+CZ: uw nieuwe zorgpas is onderweg. Uw huidige pas blijft geldig tot 31 december.,ham,health_insurance_card,nl
+"Knab: Betaling van € 9,99 aan NETFLIX.COM is geweigerd: onvoldoende saldo.",ham,card_declined_notice,nl
+Triodos Bank: uw inlogcode is 48 29 10.,ham,bank_otp_code,nl
+ASN Bank: wij bellen u nooit om uw pas op te halen of geld 'veilig te stellen'. Krijgt u zo'n telefoontje? Hang op en bel ons via het nummer op onze website.,ham,bank_scam_warning,nl
+"SNS: Uw salaris van € 2.350,00 is bijgeschreven.",ham,salary_credited,nl
+Kruidvat: je online bestelling is binnen bij de winkel Haarlemmerdijk. Ophalen kan t/m 19 november.,ham,click_collect_ready,nl
+Swapfiets: je fiets wordt morgen tussen 13:00 en 15:00 gerepareerd bij je thuis. Zorg dat je aanwezig bent.,ham,service_appointment_reminder,nl
+UWV: uw WW-uitkering over oktober is overgemaakt. Bekijk de specificatie in Mijn UWV.,ham,benefit_payment_notice,nl
+"DUO: uw studiefinanciering voor november is overgemaakt. Bedrag: € 1.012,50.",ham,benefit_payment_notice,nl
+Marktplaats: je hebt een nieuw bericht van Peter over 'Gazelle damesfiets'.,ham,marketplace_message_notice,nl
+bpost: Je pakje 3232 1234 5678 9012 34 wordt vandaag geleverd. Volg het op track.bpost.be,ham,parcel_out_for_delivery,nl
+bpost: Je pakje ligt klaar in het Postpunt Carrefour Express Gent-Zuid. Je hebt 14 dagen om het op te halen.,ham,parcel_pickup_notice,nl
+"KBC: Betaling van 36,40 EUR met je debetkaart bij COLRUYT LEUVEN om 17:52.",ham,card_transaction_alert,nl
+KBC: er werd ingelogd op KBC Mobile vanaf een nieuw toestel. Niet jij? Bel meteen 078 15 20 25.,ham,bank_login_alert_call,nl
+"Belfius: je overschrijving van 200,00 EUR naar Jan Peeters is uitgevoerd.",ham,bank_transfer_confirm,nl
+itsme: bevestigingscode 42 81 07. Deel deze nooit met anderen.,ham,login_otp_code,nl
+"Proximus: je factuur van 61,20 EUR staat klaar in MyProximus. Vervaldatum: 25/11.",ham,telecom_bill_notice,nl
+Telenet: je internet werkt mogelijk tijdelijk niet op 17/11 tussen 00:00 en 06:00 door geplande werken in je buurt.,ham,telecom_maintenance_notice,nl
+NMBS: de IC-trein van 17u34 Brussel-Zuid – Antwerpen-Centraal heeft 20 minuten vertraging.,ham,train_delay_notice,nl
+De Lijn: tram 4 rijdt niet tussen Gent Sint-Pieters en Korenmarkt wegens werken. Pendelbussen ingezet.,ham,transit_disruption,nl
+"FOD Financiën: je aanslagbiljet is beschikbaar op MyMinfin. Terug te krijgen: 284,10 EUR.",ham,tax_notice,nl
+"Argenta: je kaart eindigend op 8812 werd gebruikt voor 89,00 EUR op ZALANDO.BE.",ham,card_transaction_alert,nl
+"Groeipakket: je kinderbijslag van november (356,80 EUR) werd vandaag gestort.",ham,benefit_payment_notice,nl
+Dokter Janssens: afspraak bevestigd voor woensdag 19/11 om 9u15. Breng je identiteitskaart mee.,ham,medical_appointment_reminder,nl

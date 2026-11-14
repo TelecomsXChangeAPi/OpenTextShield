@@ -1,0 +1,344 @@
+text,label,category,language
+"IRS: We found an error in your 2023 tax return. A refund of $1,284.50 is pending. Confirm your details within 24h at irs-gov-refund.com or the refund will be forfeited.",phishing,irs_refund_lure,en
+Internal Revenue Service - Final notice. Your tax refund could not be deposited. Update banking info: https://irs-refund-portal.net/claim,phishing,irs_refund_lure,en
+"You are eligible for a $1,400 Economic Impact Payment. Claim before 11/15: bit.ly/3irsEIP",phishing,irs_stimulus_lure,en
+"irs alert: unpaid balance of $2,319.00. a federal lien will be filed in 48 hrs. call 1-833-402-7719 now to resolve",phishing,irs_debt_callback,en
+This is the IRS Collections Dept. Your SSN has been flagged for tax fraud. Call back immediately on (202) 555-0147 to avoid a warrant.,phishing,irs_debt_callback,en
+IRS e-File: Your return was rejected. Resubmit identity verification here: irs-idverify.com/secure,phishing,irs_identity_verify,en
+Tax Refund Notice: $843.17 approved. Enter your card details to receive the funds instantly -> tinyurl.com/irsrefund23,phishing,irs_refund_lure,en
+"URGENT IRS NOTICE CP2000. Respond today or face penalties of $5,000. www.irs-gov-response.org",phishing,irs_penalty_lure,en
+"Dear taxpayer, you have an overdue federal tax of $1,160. Pay via gift card or prepaid debit to avoid arrest. Reply PAY for instructions.",phishing,irs_debt_giftcard,en
+IRS: A refund check was returned undeliverable. Re-verify your mailing address and SSN at irsgov-address.com,phishing,irs_refund_lure,en
+Hello this is Officer Daniel Reyes from the IRS. We have tried to reach you several times. Call 1-855-209-3301 before 5pm regarding case 7781-B.,phishing,irs_debt_callback,en
+Your 2024 tax transcript shows a $650 credit owed to you. Accept the e-deposit: https://taxrefund-us.top/accept,phishing,irs_refund_lure,en
+HMRC: You are due a tax rebate of £418.56 for the year 2023/24. Submit your claim at hmrc-rebate-online.co.uk before it expires.,phishing,hmrc_rebate_lure,en
+HM Revenue & Customs: We were unable to process your tax refund. Confirm your bank details: hmrc-refund.uk/verify,phishing,hmrc_rebate_lure,en
+GOV.UK: Your tax rebate of £236.40 is ready. Claim within 3 days: https://bit.ly/hmrc-claim-24,phishing,hmrc_rebate_lure,en
+"HMRC NOTICE: You owe £1,967 in unpaid tax. A warrant has been issued in your name. Call 0203 555 0912 immediately.",phishing,hmrc_debt_callback,en
+hmrc: ur national insurance number has been used fraudulently. verify ur identity now at ni-verify-gov.co.uk or it will be suspended,phishing,ni_number_suspended,en
+Your HMRC Self Assessment account has been locked. Restore access: hmrc-selfassessment-login.com,phishing,hmrc_account_locked,en
+HM Revenue: Final reminder. Outstanding penalty £100.00. Pay now to avoid legal action - hmrc.penalty-pay.co,phishing,hmrc_penalty_lure,en
+"We've calculated you overpaid tax by £712. To receive your refund, confirm your sort code and account number at refund-hmrc.co.uk",phishing,hmrc_rebate_lure,en
+HMRC: your P800 refund is waiting. If not claimed by Friday it is returned to the Treasury. Claim: hmrc-p800.com,phishing,hmrc_rebate_lure,en
+Tax Credits Office: your payments have been stopped due to an unverified claim. Re-verify here: taxcredits-gov.uk,phishing,benefits_stopped_lure,en
+This is a message from HM Revenue and Customs. A legal case has been opened against you for tax evasion. To speak to an officer call 0161 555 0288 now.,phishing,hmrc_debt_callback,en
+HMRC Refund Dept: £329.10 approved. Verify debit card to receive. hmrc-gov-refunds.net,phishing,hmrc_rebate_lure,en
+DVLA: Your vehicle tax payment has failed. Update your payment details to avoid a £80 fine: dvla-tax.co.uk,phishing,dvla_tax_failed,en
+DVLA: your vehicle is no longer taxed. You have 24 hours to re-tax at dvla-vehicle-tax.com or face a penalty,phishing,dvla_tax_failed,en
+D.V.L.A - we could not take your Direct Debit for vehicle tax. Re-enter card details here: https://tinyurl.com/dvla-dd,phishing,dvla_tax_failed,en
+Driver & Vehicle Licensing Agency: You are entitled to a refund of £47.50 on your vehicle tax. Claim: dvla-refunds.uk,phishing,dvla_refund_lure,en
+DVLA ALERT: Your driving licence has been suspended due to unpaid penalties. Reinstate: licence-dvla.co.uk,phishing,dvla_licence_suspended,en
+Your vehicle tax of £165 was declined. Vehicle may be clamped. Pay now dvla.payment-portal.uk,phishing,dvla_tax_failed,en
+DVLA: Your photocard licence expires soon. Renew online now and avoid a £1000 fine - dvla-renewal-online.com,phishing,dvla_licence_renewal_lure,en
+dvla notice: outstanding fine ref VT/44821. pay £85 today at pay-dvla-fine.co.uk or amount doubles,phishing,dvla_fine_lure,en
+GOV.UK: Verify your identity for your Government Gateway account or it will be deactivated in 48h. gov-gateway-verify.com,phishing,gov_gateway_verify,en
+Government Gateway: unusual sign-in detected. Confirm it was you: https://govuk-gateway-security.co.uk,phishing,gov_gateway_verify,en
+DWP: Your Universal Credit claim is under review. Confirm your details within 24 hours or payments will stop. uc-review-gov.uk,phishing,universal_credit_review,en
+"Universal Credit: You are owed a back payment of £1,250. Accept here: bit.ly/UCbackpay",phishing,universal_credit_review,en
+Dept for Work & Pensions: your cost of living payment of £299 is pending. Enter your bank details to receive: dwp-costofliving.co.uk,phishing,cost_of_living_lure,en
+GOV.UK Energy Bills Support Scheme: You qualify for £400 towards your energy bills. Apply now: energy-support-gov.uk,phishing,energy_support_lure,en
+Energy Bills Support: your £150 discount has not been applied. Register your account details here - ebss-apply.com,phishing,energy_support_lure,en
+You have been selected for the Warm Home Discount. Claim your £150 by replying with your postcode and account number.,phishing,energy_support_lure,en
+NHS: You are eligible to apply for your Covid-19 passport. Click to apply: nhs-covid-pass.com,phishing,covid_relief_lure,en
+NHS: you've been in close contact with someone who tested positive. Order your free PCR test kit (£1.99 postage): nhs-order-kit.co.uk,phishing,covid_relief_lure,en
+GOV: COVID-19 relief grant of £500 has been allocated to you. Claim now: covid-relief-gov.co,phishing,covid_relief_lure,en
+HM Government: Your Winter Fuel Payment application is incomplete. Complete it here before 30 Nov: winterfuel-gov.uk,phishing,winter_fuel_lure,en
+E-ZPass: You have an unpaid toll of $6.99. Pay by 11/14 to avoid a $50.00 late fee. ezpass-pay.top,phishing,toll_unpaid_ezpass,en
+EZ Pass Final Reminder: outstanding balance $4.15. Failure to pay will result in suspension of your vehicle registration. https://ezpassny-toll.com,phishing,toll_unpaid_ezpass,en
+e-zpass toll services: ur account has an unpaid invoice of $12.51. settle now at ezpass-billing.xyz to avoid DMV penalties,phishing,toll_unpaid_ezpass,en
+SunPass: Your toll invoice of $7.49 is overdue. Pay immediately to avoid late fees of $69. sunpass-tollbill.com,phishing,toll_unpaid_sunpass,en
+SunPass Alert: Your vehicle passed a toll without payment. Balance due: $3.80. Pay here https://sunpass-pay.info,phishing,toll_unpaid_sunpass,en
+FasTrak: you have an unpaid toll balance of $5.21. To avoid a $55 penalty pay by 11/13 at fastrak-ca-pay.com,phishing,toll_unpaid_fastrak,en
+The Toll Roads: Final notice. Unpaid toll $9.90. Vehicle registration hold will be placed. thetollroads-pay.net,phishing,toll_unpaid_generic,en
+Peach Pass: Your account is past due $6.49. Avoid a $50 late fee - pay now: peachpass-billing.com,phishing,toll_unpaid_peachpass,en
+Georgia Peach Pass notice: toll violation recorded on I-85. Settle $4.75 online: bit.ly/peachpass-settle,phishing,toll_unpaid_peachpass,en
+Texas TxTag: Unpaid toll of $11.23. Pay within 24hrs or face a $100 fee and legal action. txtag-pay.us,phishing,toll_unpaid_txtag,en
+NC Quick Pass: You have one outstanding toll invoice ($8.36). Pay to avoid collections: ncquickpass-invoice.com,phishing,toll_unpaid_generic,en
+Illinois Tollway: Missed toll detected. Pay $3.20 now to avoid a $20 fine per violation. illinoistollway-pay.com,phishing,toll_unpaid_generic,en
+Ohio Turnpike: unpaid toll notice. Amount: $5.70. Due today. https://ohioturnpike-pay.top,phishing,toll_unpaid_generic,en
+Toll Services Notice: We have detected unpaid tolls on your vehicle. Avoid license suspension. Pay $6.99 here: tollpay-dmv.com,phishing,toll_unpaid_generic,en
+Your vehicle has 2 unpaid tolls totaling $13.98. Final warning before referral to collections. Pay at toll-by-plate.us,phishing,toll_unpaid_generic,en
+RiverLink: You owe $4.00 in unpaid tolls. Pay before 11/15 to avoid a $25 fee. riverlink-tolls.com,phishing,toll_unpaid_generic,en
+"Pay your overdue toll of $7.99 today. After midnight, a $50 late fee applies and your plate is reported. US TOLL AUTHORITY tollnotice-us.xyz",phishing,toll_unpaid_generic,en
+E-ZPass MD: An unpaid toll invoice is on your account. Avoid a $50 penalty: ezpassmd-pay.net,phishing,toll_unpaid_ezpass,en
+"Hey, this is FasTrak customer service. Your account has an unpaid bill of $6.59. Call (415) 555-0122 to pay by phone.",phishing,toll_unpaid_callback,en
+DMV Notice: Unpaid tolls on plate ending 7KX. Registration will be suspended 11/20. Resolve now: dmv-tollbalance.com,phishing,toll_unpaid_dmv,en
+Dart Charge: You failed to pay the Dartford Crossing charge on 09/11. Pay £2.50 now to avoid a £70 penalty: dart-charge-pay.uk,phishing,toll_unpaid_dartford,en
+Dartford Crossing: Unpaid crossing charge. Penalty notice pending. Settle £2.50 at dartcharge-gov.co.uk within 24h,phishing,toll_unpaid_dartford,en
+407 ETR: Your account has an outstanding balance of $14.60. Pay now to avoid plate denial: 407etr-pay.com,phishing,toll_unpaid_407etr,en
+407 ETR: Unpaid toll invoice. Avoid a $50 administrative fee. Pay $9.85 before Nov 13 -> bit.ly/407etr-invoice,phishing,toll_unpaid_407etr,en
+Linkt Toll Notice: unpaid trip on CityLink. Pay $4.20 within 48 hours or receive a fine notice. linkt-pay.au,phishing,toll_unpaid_linkt,en
+M50 eFlow: You have an unpaid toll of €3.20. Pay before 8pm tomorrow to avoid a €41.50 penalty. eflow-pay.ie,phishing,toll_unpaid_eflow,en
+Transurban: Toll notice. Outstanding $11.30. Register and pay now: transurban-tolls.com,phishing,toll_unpaid_linkt,en
+NOTICE OF SPEEDING OFFENCE: Your vehicle was recorded at 46mph in a 30mph zone. Pay £100 within 14 days: speeding-penalty-uk.com,phishing,speeding_fine_lure,en
+Penalty Charge Notice: £65 outstanding for parking contravention. Pay now to avoid an increase to £130. pcn-payment-online.co.uk,phishing,parking_fine_lure,en
+Traffic Violation: a camera recorded your vehicle on 11/08. View the evidence and pay $180: traffic-ticket-view.com,phishing,speeding_fine_lure,en
+FINAL NOTICE: Unpaid traffic citation #TC-48812. A bench warrant will be issued in 72 hours. Pay at courtfines-online.us,phishing,court_fine_lure,en
+You have missed jury duty. A $500 fine has been issued and an arrest warrant is pending. Call the Clerk's Office at 512-555-0188 immediately.,phishing,jury_duty_fine,en
+County Court: You failed to appear for jury service on 11/04. Avoid arrest by paying the fine today. https://jury-fine-pay.com,phishing,jury_duty_fine,en
+"Sheriff's Department: Warrant for your arrest for failure to appear. To clear it pay the $1,200 bond via Zelle. Call 404-555-0133.",phishing,arrest_warrant_lure,en
+Court Summons: You are required to attend a hearing on 20/11. View summons documents: court-summons-uk.com,phishing,court_summons_lure,en
+US District Court: a civil complaint has been filed against you. Download the documents: bit.ly/courtdoc-7721,phishing,court_summons_lure,en
+Notice: you have an outstanding court fine of £325. Bailiffs will attend your property if unpaid by Friday. Pay here: hmcts-fines.co.uk,phishing,court_fine_lure,en
+HMCTS: Fine payment failed. Re-enter card details at hmcts-pay.uk to avoid enforcement action,phishing,court_fine_lure,en
+This is the Jury Services Division. You failed to report for jury duty. To avoid incarceration pay the $350 contempt fee at jury-services-fee.com,phishing,jury_duty_fine,en
+Police Scotland: You are required to pay a fixed penalty of £90 for a traffic offence. Pay online: policescotland-fine.co.uk,phishing,police_fine_lure,en
+Speed camera notice: 2 offences recorded. Total penalty £200. To view photo evidence and pay click https://tinyurl.com/nip-evidence,phishing,speeding_fine_lure,en
+SSA ALERT: Your social security number is linked to a crime in Texas. Contact officer immediately at 1-800-555-0176 or face legal action.,phishing,ssn_suspended,en
+Social Security: Your benefits have been suspended. Verify your identity to resume payments: ssa-benefits-verify.com,phishing,ssa_benefits_lure,en
+"ssa: ur monthly benefit of $1,827 could not be deposited. update ur direct deposit here ssa-gov-deposit.com",phishing,ssa_benefits_lure,en
+Medicare: Your new plastic card is being replaced. Confirm your Medicare number to receive your new card: medicare-newcard.com,phishing,medicare_card_lure,en
+Medicare Services: you qualify for a free back brace. Reply with your Medicare ID to claim.,phishing,medicare_card_lure,en
+"Medicare has approved your 2025 Flex Card worth $2,800 for groceries. Activate: medicare-flexcard.us",phishing,medicare_card_lure,en
+SSA Notice: Due to a data breach your SSN will be deactivated in 24 hours. Call 1-877-555-0144 to prevent this.,phishing,ssn_suspended,en
+Your Social Security statement contains an error. Correct it now to avoid a reduction in benefits: ssa-statement-fix.com,phishing,ssa_benefits_lure,en
+Medicare Fraud Dept: suspicious claims under your Medicare number. Confirm your identity immediately. Call 1-866-555-0109.,phishing,medicare_card_lure,en
+USCIS: Your immigration record requires an update. Failure to respond within 48 hours may affect your status. uscis-record-update.com,phishing,visa_record_update,en
+UKVI: Your visa application has been placed on hold. Pay the outstanding Immigration Health Surcharge of £624: ukvi-ihs-pay.co.uk,phishing,visa_record_update,en
+Home Office: Your BRP card is ready but delivery failed. Pay £3.50 redelivery fee: homeoffice-brp.co.uk,phishing,visa_record_update,en
+US Immigration: Your green card has been selected for renewal. Complete form I-90 and pay $455: uscis-i90-renew.com,phishing,visa_record_update,en
+This is Immigration and Customs Enforcement. There is a problem with your immigration documents. Call 213-555-0181 within 1 hour to avoid deportation proceedings.,phishing,immigration_callback,en
+IRCC Canada: Your permanent residence application is incomplete. Update biometrics info: ircc-canada-update.com,phishing,visa_record_update,en
+Department of Home Affairs: Your visa grant notice is ready. Pay the $85 processing fee to release: homeaffairs-visa.au,phishing,visa_record_update,en
+ETA Notice: your travel authorisation has been cancelled. Reapply now and pay £10 at uk-eta-gov.co.uk,phishing,visa_record_update,en
+USPS: Your package is on hold because of an incomplete address. Update it within 12 hours: usps-redelivery.top,phishing,usps_address_incomplete,en
+USPS: We were unable to deliver your parcel. Address information is missing. Confirm here: https://usps-address-update.com,phishing,usps_address_incomplete,en
+Royal Mail: Your parcel could not be delivered due to an incomplete address. Pay £1.45 redelivery fee: royalmail-redeliver.co.uk,phishing,royal_mail_address_incomplete,en
+Royal Mail: a parcel is awaiting delivery. Postage was insufficient (£2.99). Pay here to release: rm-postage-fee.com,phishing,royal_mail_fee_lure,en
+usps: ur package has arrived at the warehouse but cannot be delivered - zip code missing. update now usps-pkg-update.xyz,phishing,usps_address_incomplete,en
+USPS Alert: Your shipment has an unpaid customs charge of $1.85. Pay to avoid return: usps-customs-pay.com,phishing,usps_fee_lure,en
+Canada Post: Your parcel is being held. Pay the $2.99 handling fee: canadapost-fee.com,phishing,postal_fee_lure,en
+Australia Post: Your parcel has an incomplete address. Update within 24h or it will be returned: auspost-update.com,phishing,postal_address_incomplete,en
+Royal Mail: We attempted delivery today. Rebook for tomorrow at royalmail-rebook.co.uk (fee £1.99),phishing,royal_mail_fee_lure,en
+US Postal Service: package USPS9400112 undeliverable. Confirm address details: bit.ly/usps-confirm9400,phishing,usps_address_incomplete,en
+CRA: You have received a tax refund of $342.67 via Interac e-Transfer. Deposit now: cra-interac-refund.com,phishing,cra_refund_interac,en
+Canada Revenue Agency: Your refund of $589.00 is ready. Accept your Interac e-Transfer within 24 hours: https://bit.ly/cra-etransfer,phishing,cra_refund_interac,en
+CRA Notice: Your GST/HST credit of $234 could not be deposited. Update banking details: cra-gst-credit.ca,phishing,cra_refund_interac,en
+"Agence du revenu du Canada / CRA: a warrant will be issued for unpaid taxes of $3,210. Call 1-888-555-0172 immediately.",phishing,cra_debt_callback,en
+CRA: Your Climate Action Incentive payment is pending. Claim it: cra-climate-payment.com,phishing,cra_refund_interac,en
+cra my account: suspicious login detected. verify identity to avoid account lock cra-myaccount-verify.ca,phishing,cra_account_verify,en
+Service Canada: Your Canada Dental Benefit of $650 is approved. Accept e-Transfer: servicecanada-dental.com,phishing,cra_refund_interac,en
+"Government of Canada: Your CERB repayment is overdue. Pay $2,000 today or face legal action. Call 1-866-555-0163.",phishing,cra_debt_callback,en
+"ATO: You have a tax refund of $1,194.30 awaiting. Lodge your claim at ato-refund-au.com before it lapses.",phishing,ato_refund_lure,en
+myGov: Your account has been suspended. Verify your identity to restore access: mygov-au-verify.com,phishing,mygov_verify,en
+myGov: A new message about your tax return is waiting. Sign in here: https://my-gov-login.net,phishing,mygov_verify,en
+"ATO: Your tax debt of $3,842 must be paid within 24 hours to avoid prosecution. Call 02 5555 0167.",phishing,ato_debt_callback,en
+Services Australia: Your Centrelink payment has been placed on hold. Confirm your details: servicesaustralia-hold.com,phishing,services_australia_lure,en
+Centrelink: You are eligible for a one-off $750 cost of living payment. Claim here: centrelink-payment-au.com,phishing,services_australia_lure,en
+ATO notice: your ABN has been flagged for review. Respond within 48h: ato-abn-review.com,phishing,ato_review_lure,en
+Medicare Australia: Your Medicare card has expired. Renew now to keep your rebates: medicare-au-renew.com,phishing,medicare_au_lure,en
+Services Australia: A $270 energy bill relief payment is ready. Accept now: bit.ly/sa-energy-relief,phishing,services_australia_lure,en
+mygov: your 2024 notice of assessment shows a refund. enter card details to receive -> mygov-refund.au,phishing,ato_refund_lure,en
+"Your vehicle has an outstanding toll balance. To avoid a late fee, call 1-800-555-0135 with your plate number before 5pm today.",phishing,toll_unpaid_callback,en
+This is the Department of Treasury. Your tax refund is being held pending verification. Reply YES to receive a callback from an agent.,phishing,treasury_reply_lure,en
+URGENT: Legal action against your name for tax fraud. Case ID 448-TX. Call 0800 555 0199 to speak to an officer before 4pm.,phishing,tax_fraud_callback,en
+"Hi, this is Mark from the Social Security office. There has been fraudulent activity on your number. Please call me back on 406-555-0150 so we can secure your account.",phishing,ssn_suspended_callback,en
+"Final courtesy call from the US Treasury. Your account is flagged for seizure. Call 1-800-555-0128 to settle the balance of $1,972.",phishing,treasury_debt_callback,en
+HMRC: We have been trying to contact you regarding an overpayment of tax credits. Reply with your full name and date of birth to confirm your identity.,phishing,hmrc_reply_identity,en
+"Your Covid-19 vaccination compensation payment of $1,000 has been approved. Reply CLAIM with your bank account to receive it.",phishing,covid_relief_lure,en
+You have 2 unpaid parking fines. Reply with your registration number to receive a payment link and avoid a £120 surcharge.,phishing,parking_fine_reply,en
+Gov Notice: Your National Insurance number has been compromised. Reply STOP to freeze it or call 0300 555 0177.,phishing,ni_number_suspended,en
+Benefits Agency: We need to confirm your bank details to continue your payments. Reply with your sort code and account number.,phishing,benefits_bank_details_reply,en
+"Your state pension increase has been processed but not yet paid. To receive the £428 arrears, reply with your card number.",phishing,pension_arrears_lure,en
+"Hello, this is the Clerk of Courts. We could not verify your address for a legal document. Please reply with your full address and date of birth.",phishing,court_identity_reply,en
+"Tax Office: Your stimulus check of $2,400 has been approved. Text your mailing address and SSN to this number to release it.",phishing,irs_stimulus_lure,en
+This is the TSA PreCheck renewal line. Your membership lapses today. Renew for $78 at tsa-precheck-renewal.com,phishing,tsa_renewal_lure,en
+Dept of Motor Vehicles: Your REAL ID application requires payment of $11.50. Complete it here: dmv-realid-pay.com,phishing,dmv_fee_lure,en
+"Veterans Affairs: You are owed back pay of $4,215. Claim it at va-backpay.com with your VA file number.",phishing,va_backpay_lure,en
+"Student Loan Forgiveness: Your $10,000 relief was approved. Confirm your FSA ID at studentaid-relief.com before 11/20",phishing,student_loan_relief_lure,en
+FEMA: Disaster relief funds of $700 are available to you. Verify your identity to receive: fema-relief-apply.com,phishing,fema_relief_lure,en
+HMRC: Your Self Assessment tax return is due by 31 January. File online at gov.uk/self-assessment. We will never ask for bank details by text.,ham,hmrc_self_assessment_reminder,en
+DVLA: Your vehicle tax for registration ending 4PL is due on 1 December. Tax it online at gov.uk/vehicle-tax,ham,dvla_tax_reminder,en
+DVLA reminder: your driving licence photo expires in 3 months. Renew at gov.uk/renew-driving-licence. Cost £14.,ham,dvla_licence_reminder,en
+Your polling card for the local elections on 2 May has been posted. You do not need it to vote. Remember to bring photo ID.,ham,polling_card_notice,en
+Electoral Services: You are now registered to vote at your new address. No further action needed.,ham,voter_registration_confirm,en
+Reminder: the deadline to register to vote in the general election is midnight tomorrow. Register at gov.uk/register-to-vote,ham,voter_registration_reminder,en
+Leeds City Council: Bin collections this week are one day later than usual due to the bank holiday. Check your day at leeds.gov.uk/bins,ham,council_bin_change,en
+Council notice: Your brown bin (garden waste) collection changes to fortnightly from 1 December.,ham,council_bin_change,en
+Bristol City Council: Your recycling collection on Thursday is cancelled due to severe weather. Please leave bins out for Friday.,ham,council_bin_change,en
+NHS: You have an appointment at St Mary's Hospital Outpatients on Tue 19 Nov at 10:40. Reply CANCEL if you cannot attend.,ham,nhs_appointment,en
+NHS: You are eligible for a free flu vaccination this autumn. Book at your GP surgery or a pharmacy via nhs.uk/flu,ham,nhs_vaccination_invite,en
+Your NHS COVID-19 autumn booster is now available. Book via the NHS App or nhs.uk/book-vaccine,ham,nhs_vaccination_invite,en
+GP Surgery: Your cervical screening is now due. Please call the practice on 0161 496 0000 to book.,ham,nhs_screening_invite,en
+NHS Blood & Transplant: Thank you for donating today. Your blood group is O positive. Book your next session at blood.co.uk,ham,nhs_blood_donation,en
+HMCTS Jury Central Summoning Bureau: Your jury service at Manchester Crown Court is confirmed for 18 November. Arrive by 9am.,ham,jury_service_confirmation,en
+Jury Service: Please check the court's answerphone after 4pm the day before you are due to attend to confirm you are still needed.,ham,jury_service_confirmation,en
+HM Passport Office: Your new passport has been printed and will be delivered by courier within 7 working days. No action needed.,ham,passport_ready,en
+HM Passport Office: Your application has been approved. You do not need to contact us.,ham,passport_ready,en
+Your passport is ready for collection at the Belfast passport office. Bring your receipt and a form of ID.,ham,passport_ready,en
+E-ZPass NY: Your monthly statement is now available. Log in at e-zpassny.com to view it.,ham,ezpass_statement,en
+E-ZPass: Your account was automatically replenished with $25.00 on 11/10. Thank you.,ham,ezpass_statement,en
+FasTrak: Your statement for October is available at bayareafastrak.org. Current balance: $18.40.,ham,toll_statement_genuine,en
+SunPass: Your payment of $30.00 has been received. Thank you for using SunPass.,ham,toll_statement_genuine,en
+IRS: The IRS will never text you to ask for payment or personal information. Report scam texts to phishing@irs.gov,ham,irs_scam_warning,en
+IRS reminder: The deadline to file your federal tax return is April 15. File free at irs.gov/freefile,ham,irs_filing_reminder,en
+myGov: Your code is 115278. It expires in 10 minutes.,ham,mygov_code,en
+Services Australia: Your Family Tax Benefit payment of $412.60 was paid into your nominated account today.,ham,services_australia_payment,en
+Services Australia: Your Centrelink reporting is due on Monday 18 Nov. Report via the Express Plus app or my.gov.au,ham,services_australia_reminder,en
+ATO: Your tax return has been processed. Your notice of assessment is available in myGov. We will never send links in SMS.,ham,ato_assessment_notice,en
+CRA: A direct deposit of $328.50 (GST/HST credit) was made to your account on Nov 5. Check My Account at canada.ca/my-cra-account,ham,cra_deposit_received,en
+Canada Revenue Agency: Your notice of assessment is ready to view in My Account. The CRA does not send e-transfers.,ham,cra_scam_warning,en
+Service Canada: Your Employment Insurance report has been received. Your next report is due Nov 22.,ham,service_canada_notice,en
+"National Weather Service: Flash Flood Warning for Travis County until 9:00 PM. Avoid low-water crossings. Turn around, don't drown.",ham,weather_alert,en
+Emergency Alert: Tornado Warning in this area until 4:45 PM CDT. Take shelter now in a basement or interior room.,ham,weather_alert,en
+Met Office Amber Warning: Storm Ashley will bring winds of up to 80mph to Western Scotland on Sunday. Check metoffice.gov.uk,ham,weather_alert,en
+Environment Agency Flood Warning for the River Ouse at York. Flooding is expected. Act now. Floodline 0345 988 1188,ham,flood_warning,en
+Oakwood Primary School will be CLOSED tomorrow (Tue) due to the burst water main. Updates on the school website.,ham,school_closure,en
+Austin ISD: All schools closed Friday Jan 17 due to icy roads. Stay safe.,ham,school_closure,en
+Hillcrest Academy: school opens at 10:30 tomorrow because of snow. Buses run 2 hours late.,ham,school_closure,en
+Census 2021: Your household has not yet completed the census. It is required by law. Complete it at census.gov.uk using your access code.,ham,census_reminder,en
+U.S. Census Bureau: Reminder to respond to the 2020 Census at my2020census.gov. Your response is confidential.,ham,census_reminder,en
+DVSA: Your MOT is due on 02/12/2024. Book a test with a garage near you. Check at gov.uk/check-mot-history,ham,mot_reminder,en
+TfL: Your Congestion Charge Auto Pay statement for October is ready at tfl.gov.uk/pay-to-drive,ham,toll_statement_genuine,en
+Dart Charge: Your account has been topped up with £10.00. Balance: £12.50. Manage at gov.uk/dart-charge,ham,toll_statement_genuine,en
+City of Boston: Street cleaning on Beacon St tomorrow 8am-12pm. Move your car to avoid a ticket.,ham,city_notice,en
+Your library books are due back on 21 Nov. Renew online at libraries.wandsworth.gov.uk,ham,library_reminder,en
+Medicare: Your new Medicare card has been mailed to the address on file. It should arrive within 30 days. Medicare.gov,ham,medicare_card_notice,en
+Social Security Administration: Your 2025 COLA notice is available online in your my Social Security account at ssa.gov/myaccount,ham,ssa_notice_genuine,en
+Universal Credit: Your journal has a new message from your work coach. Sign in at gov.uk/sign-in-universal-credit,ham,universal_credit_notice,en
+DWP: Your Winter Fuel Payment will be paid automatically between November and December. You do not need to claim.,ham,dwp_payment_notice,en
+Royal Mail: Your parcel RM045581GB will be delivered today between 11:20 and 15:20. Track at royalmail.com/track-your-item,ham,postal_delivery_genuine,en
+Reminder from Birmingham Register Office: your appointment to give notice of marriage is on 14 Nov at 2pm. Bring your passports.,ham,register_office_appointment,en
+USCIS: Your case receipt number IOE0912345678 has been updated. Sign in to your USCIS online account at my.uscis.gov to view.,ham,uscis_case_update,en
+Gov.uk: Your Blue Badge application has been approved. Your badge will arrive within 10 working days.,ham,council_notice,en
+ANTAI : Un avis de contravention pour excès de vitesse est enregistré à votre nom. Montant : 90€. Payez sous 48h pour éviter la majoration : antai-amende.fr,phishing,speeding_fine_antai,fr
+"Sanef : Péage impayé de 6,90€ constaté le 08/11. Réglez avant demain pour éviter une pénalité de 90€ : sanef-telepeage.fr",phishing,toll_unpaid_sanef,fr
+"Vinci Autoroutes - Votre passage sans paiement (4,20€) n'a pas été régularisé. Payez ici : vinci-peage-paiement.com",phishing,toll_unpaid_vinci,fr
+"ameli : votre nouvelle carte Vitale est disponible. Payez les frais d'envoi de 1,90€ pour la recevoir : ameli-cartevitale.fr",phishing,health_card_lure,fr
+CAF : vos droits sont suspendus suite à une pièce manquante. Mettez à jour votre dossier sous 24h : caf-dossier-maj.fr,phishing,benefits_stopped_lure,fr
+Direction Générale des Finances Publiques : vous avez une dette fiscale de 1 247€. Un huissier sera mandaté sous 72h. Appelez le 09 70 55 01 23.,phishing,tax_debt_callback,fr
+URSSAF : régularisation requise sur votre compte. Évitez une pénalité de 300€ : bit.ly/urssaf-regul,phishing,tax_penalty_lure,fr
+impots.gouv.fr : votre déclaration de revenus 2023 a bien été enregistrée le 22/05. Un accusé de réception est disponible dans votre espace particulier.,ham,impots_declaration_confirm,fr
+"ameli : Votre remboursement de 23,50€ a été versé sur votre compte le 05/11. Détails sur ameli.fr",ham,health_reimbursement_notice,fr
+Mairie de Lyon : collecte des encombrants reportée au jeudi 14 novembre dans le 7e arrondissement.,ham,council_bin_change,fr
+Bußgeldstelle: Gegen Sie liegt ein Verwarnungsgeld wegen Geschwindigkeitsüberschreitung (35 €) vor. Zahlen Sie innerhalb von 7 Tagen: bussgeld-zentral.de,phishing,bussgeld_lure,de
+"Finanzamt: Ihnen steht eine Steuerrückerstattung von 486,20 € zu. Bestätigen Sie Ihre Bankverbindung: finanzamt-erstattung.de",phishing,tax_refund_lure,de
+ELSTER: Ihr Zugang wurde aus Sicherheitsgründen gesperrt. Identität bestätigen: elster-verifizierung.com,phishing,tax_account_verify,de
+Deutsche Post: Ihr Paket konnte wegen unvollständiger Adresse nicht zugestellt werden. Daten ergänzen: deutschepost-adresse.de,phishing,postal_address_incomplete,de
+"ASFINAG: Offene Mautgebühr von 12,90 €. Zahlen Sie bis morgen, um eine Ersatzmaut von 120 € zu vermeiden: asfinag-maut-zahlung.at",phishing,toll_unpaid_asfinag,de
+"Digitale Vignette: Ihre Vignette ist nicht gültig. Nachzahlung 9,90 € erforderlich: vignette-online-at.com",phishing,vignette_unpaid,de
+"Zoll: Für Ihre Sendung ist eine Einfuhrabgabe von 2,99 € fällig. Jetzt zahlen: zoll-gebuehr.de",phishing,customs_fee_lure,de
+Bundesagentur für Arbeit: Ihre Leistungen wurden ausgesetzt. Bitte Daten aktualisieren: arbeitsagentur-daten.de,phishing,benefits_stopped_lure,de
+Deutsche Rentenversicherung: Ihre jährliche Renteninformation wurde per Post an Sie versandt. Fragen beantwortet das Servicetelefon 0800 1000 4800.,ham,pension_notice_genuine,de
+Stadt Köln: Die Abfuhr der Biotonne verschiebt sich wegen des Feiertags um einen Tag auf Freitag.,ham,council_bin_change,de
+Stadtwerke München: Ihr Termin zur Zählerablesung ist am 14.11. zwischen 8 und 12 Uhr. Bitte Zugang zum Zähler ermöglichen.,ham,utility_appointment_genuine,de
+"Agencia Tributaria: Tiene pendiente una devolución de 312,45€. Confirme su cuenta bancaria antes del 15/11: aeat-devolucion.es",phishing,tax_refund_lure,es
+DGT: Tiene una multa pendiente de 100€ por exceso de velocidad. Pague en 48h para evitar el recargo: dgt-multas-pago.com,phishing,speeding_fine_lure,es
+Correos: su paquete está retenido por dirección incompleta. Actualice sus datos: correos-envio.top,phishing,postal_address_incomplete,es
+Seguridad Social: su tarjeta sanitaria ha caducado. Renuévela ahora para no perder la cobertura: seg-social-tarjeta.es,phishing,health_card_lure,es
+"SAT México: tienes un saldo a favor de $4,850 MXN. Reclámalo aquí antes de que expire: sat-devolucion.mx",phishing,tax_refund_lure,es
+AFIP: Su CUIT presenta inconsistencias. Regularice su situación en 24 hs o será suspendido: afip-regularizacion.com.ar,phishing,tax_account_verify,es
+Ayuntamiento de Madrid: multa de aparcamiento sin pagar (60€). Evite el embargo: madrid-multas.es,phishing,parking_fine_lure,es
+SEPE: su prestación por desempleo ha sido bloqueada. Verifique su identidad: sepe-prestacion.com,phishing,benefits_stopped_lure,es
+AEAT: Su declaración de la Renta 2023 ha sido presentada correctamente. Puede consultar el estado en sede.agenciatributaria.gob.es,ham,tax_declaration_confirm,es
+Servicio Madrileño de Salud: Le recordamos su cita el 19/11 a las 09:30 en el Centro de Salud Lavapiés.,ham,health_appointment_genuine,es
+DGT: Su permiso de conducir caduca el 03/02/2025. Renuévelo en un centro de reconocimiento. Más info en dgt.es,ham,licence_reminder_genuine,es
+"Agenzia delle Entrate: Rimborso IRPEF di 356,80€ in attesa. Conferma i tuoi dati entro 48 ore: agenziaentrate-rimborso.it",phishing,tax_refund_lure,it
+"Autostrade per l'Italia: pedaggio non pagato di 7,30€. Paga entro domani per evitare una sanzione di 85€: autostrade-pedaggio.com",phishing,toll_unpaid_autostrade,it
+"Telepass: il tuo transito non è stato addebitato. Regolarizza 5,20€ qui: telepass-pagamento.it",phishing,toll_unpaid_telepass,it
+Poste Italiane: pacco in giacenza per indirizzo incompleto. Aggiorna entro 24h: poste-consegna.top,phishing,postal_address_incomplete,it
+Polizia Municipale: multa per eccesso di velocità di 173€. Paga online per evitare il raddoppio: multe-online-pm.it,phishing,speeding_fine_lure,it
+INPS: la tua pensione è stata sospesa. Verifica l'identità per ripristinare il pagamento: inps-verifica.com,phishing,benefits_stopped_lure,it
+"Ministero della Salute: la tua tessera sanitaria è scaduta. Richiedi la nuova pagando 2,50€: tesserasanitaria-rinnovo.it",phishing,health_card_lure,it
+INPS: la tua domanda di Assegno Unico è stata accolta. Consulta l'esito su inps.it con SPID o CIE.,ham,benefits_approved_genuine,it
+Comune di Milano: raccolta rifiuti ingombranti sospesa venerdì 1 novembre. Riprende regolarmente lunedì.,ham,council_bin_change,it
+ASL Roma 1: ricordiamo l'appuntamento per la vaccinazione antinfluenzale il 20/11 alle 11:00 presso la sede di via Boncompagni.,ham,vaccination_appointment_genuine,it
+Receita Federal: sua declaração do IRPF caiu na malha fina. Regularize em 24h para evitar multa: receitafederal-regularizacao.com,phishing,tax_penalty_lure,pt
+"Correios: sua encomenda está retida por endereço incompleto. Atualize e pague a taxa de R$ 3,49: correios-entrega.top",phishing,postal_address_incomplete,pt
+"Autoridade Tributária: tem um reembolso de IRS de 287,40€ pendente. Confirme o IBAN: at-reembolso.pt",phishing,tax_refund_lure,pt
+"Via Verde: portagem em falta de 4,60€. Pague até amanhã para evitar coima de 60€: viaverde-pagamento.pt",phishing,toll_unpaid_viaverde,pt
+DETRAN: multa por excesso de velocidade. Pague com 40% de desconto até hoje: detran-multas.net,phishing,speeding_fine_lure,pt
+gov.br: seu CPF está irregular. Regularize agora para evitar bloqueio: govbr-cpf-regular.com,phishing,national_id_lure,pt
+INSS: seu benefício foi suspenso por falta de prova de vida. Faça agora: inss-provadevida.com,phishing,benefits_stopped_lure,pt
+Portal das Finanças: a sua declaração de IRS foi validada. Consulte em portaldasfinancas.gov.pt,ham,tax_declaration_confirm,pt
+SNS: Lembramos a sua consulta no Centro de Saúde de Benfica no dia 15/11 às 14h30.,ham,health_appointment_genuine,pt
+Câmara Municipal de Lisboa: recolha de monos adiada para quinta-feira na freguesia de Arroios.,ham,council_bin_change,pt
+DigiD: Uw DigiD verloopt binnen 24 uur. Verleng nu om toegang te behouden: digid-verlengen.nl,phishing,digid_lure,nl
+"Belastingdienst: U heeft recht op een teruggave van €312,50. Bevestig uw rekeningnummer: belastingdienst-teruggave.com",phishing,tax_refund_lure,nl
+CJIB: U heeft een openstaande boete van €95. Betaal binnen 48 uur om verhoging te voorkomen: cjib-betalen.nl,phishing,fine_lure,nl
+"PostNL: pakket kon niet bezorgd worden, adres onvolledig. Werk uw gegevens bij: postnl-adres.top",phishing,postal_address_incomplete,nl
+Rijksoverheid: Uw energietoeslag van €1300 staat klaar. Vraag nu aan: energietoeslag-aanvragen.nl,phishing,energy_support_lure,nl
+RDW: Uw kentekenbewijs is verlopen. Verleng direct om een boete van €140 te vermijden: rdw-kenteken.com,phishing,vehicle_registration_lure,nl
+"Belastingdienst: Er is een naheffing van €1.284 geconstateerd. Voorkom beslaglegging, betaal via: bit.ly/naheffing-bd",phishing,tax_debt_lure,nl
+DigiD: uw sms-code is 847 291. Deel deze code nooit met anderen.,ham,digid_code,nl
+Gemeente Utrecht: de ophaaldag van uw restafval verschuift naar woensdag vanwege de feestdag.,ham,council_bin_change,nl
+RIVM: U kunt een afspraak maken voor de griepprik via uw huisarts. Meer informatie op rivm.nl/griep,ham,vaccination_invite_genuine,nl
+"【国税庁】還付金48,320円の受取手続きが完了していません。本日中に手続きしてください→ nta-kanpu.com",phishing,nta_refund_lure,ja
+【ETC利用照会サービス】未払い通行料金690円があります。延滞金発生前にお支払いください kokusai-etc.top,phishing,toll_unpaid_etc,ja
+【日本郵便】お届け先住所が不完全のためお荷物を保管中です。24時間以内にご確認ください→ jp-post-redelivery.com,phishing,postal_address_incomplete,ja
+【警察庁】あなたの銀行口座が犯罪に利用された疑いがあります。至急 03-5555-0188 までご連絡ください。,phishing,police_callback_lure,ja
+"【厚生労働省】給付金100,000円の申請期限が本日です。こちらから→ bit.ly/kyufukin2024",phishing,relief_payment_lure,ja
+【マイナポータル】本人確認が未完了のため、マイナンバーカードの機能が停止されます。再認証→ mynaportal-check.com,phishing,national_id_lure,ja
+【東京都】自動車税の納付が確認できません。延滞金が加算されます。お支払い→ tokyo-zei-pay.com,phishing,vehicle_tax_lure,ja
+【国税庁】e-Taxの確定申告受付は2月16日から3月15日までです。国税庁は電話やSMSで還付金を案内することはありません。,ham,nta_filing_reminder,ja
+【江東区】明日の可燃ごみ収集は祝日のため、翌日に変更となります。,ham,council_bin_change,ja
+【気象庁】大雨警報が発表されました。土砂災害に注意し、安全な場所へ避難してください。,ham,weather_alert,ja
+"【国家税务总局】您有一笔退税款¥1,286.00待领取，请于今日内核验身份：tax-refund-cn.com",phishing,tax_refund_lure,zh
+【公安部】您的身份信息涉及一起洗钱案件，请立即致电 010-5555-0177 配合调查，否则将被强制执行。,phishing,police_callback_lure,zh
+【ETC】您有一笔未缴通行费¥38.50，请于24小时内缴纳以免影响信用：etc-pay.top,phishing,toll_unpaid_etc,zh
+【交管12123】您的车辆有一条未处理违章，罚款¥200。点击查看处理：12123-chaxun.com,phishing,traffic_fine_lure,zh
+【中国邮政】您的包裹地址不完整，无法派送，请更新地址：chinapost-update.cn,phishing,postal_address_incomplete,zh
+【社保局】您的医保卡已停用，请尽快完成实名认证：shebao-renzheng.com,phishing,health_card_lure,zh
+【出入境管理局】您的签证记录需要更新，请在48小时内登录：visa-update-cn.com,phishing,visa_record_update,zh
+【国家税务总局】2023年度个人所得税综合所得年度汇算已开始，请通过个人所得税APP办理。税务机关不会通过短信链接要求您填写银行卡信息。,ham,tax_filing_reminder,zh
+【北京市气象局】发布暴雨黄色预警，预计未来6小时降雨量达50毫米以上，请注意防范。,ham,weather_alert,zh
+【香港入境事務處】您的護照已可領取，請於辦公時間攜帶身份證前往灣仔辦事處。,ham,passport_ready,zh
+"[국민건강보험] 환급금 83,400원이 미수령 상태입니다. 오늘까지 신청하세요 → nhis-hwangeup.com",phishing,nhis_refund_lure,ko
+[국세청] 종합소득세 환급 대상자입니다. 계좌 확인 후 지급: hometax-refund.kr,phishing,tax_refund_lure,ko
+[경찰청] 귀하의 계좌가 범죄에 연루되었습니다. 즉시 02-5555-0133 으로 연락하십시오.,phishing,police_callback_lure,ko
+"[한국도로공사] 미납 통행료 4,800원이 있습니다. 가산금 부과 전 납부 → ex-tollpay.top",phishing,toll_unpaid_hipass,ko
+[우체국] 주소 불명으로 배송이 보류되었습니다. 24시간 내 주소 확인: epost-delivery.kr,phishing,postal_address_incomplete,ko
+[정부24] 본인인증이 만료되었습니다. 재인증하지 않으면 서비스가 중단됩니다: gov24-verify.com,phishing,gov_portal_verify,ko
+"[교통민원24] 과속 위반 과태료 60,000원이 부과되었습니다. 기한 내 미납 시 가산금. 조회: efine-pay.com",phishing,speeding_fine_lure,ko
+[국민건강보험] 2024년 국가건강검진 대상자입니다. 12월 31일까지 가까운 검진기관에서 받으시기 바랍니다. 공단은 문자로 링크를 보내지 않습니다.,ham,nhis_checkup_notice,ko
+[정부24] 인증번호 [538201] 입니다. 타인에게 절대 알려주지 마세요.,ham,gov_portal_code,ko
+"[행정안전부] 호우경보 발령. 하천변, 지하차도 접근을 자제하시고 안전에 유의하세요.",ham,weather_alert,ko
+أبشر: تم تعليق حسابك لعدم تحديث البيانات. يرجى التحديث خلال 24 ساعة: absher-update.com,phishing,absher_lure,ar
+"هيئة الزكاة والضريبة والجمارك: لديك مبلغ مسترد بقيمة 1,250 ريال. أكد بيانات حسابك البنكي: zatca-refund.net",phishing,tax_refund_lure,ar
+سالك: لديك رسوم عبور غير مدفوعة 4 دراهم. سدد الآن لتجنب غرامة 50 درهم: salik-pay.top,phishing,toll_unpaid_salik,ar
+المرور: لديك مخالفة سرعة غير مسددة بقيمة 500 ريال. سدد قبل مضاعفة الغرامة: moroor-pay.com,phishing,speeding_fine_lure,ar
+البريد السعودي: شحنتك معلقة بسبب عنوان غير مكتمل. حدث العنوان: spl-delivery.co,phishing,postal_address_incomplete,ar
+وزارة الموارد البشرية: تم إيقاف دعم حساب المواطن الخاص بك. أعد التحقق من هويتك: hrsd-verify.com,phishing,benefits_stopped_lure,ar
+النيابة العامة: صدر بحقك أمر استدعاء. للاستفسار اتصل فورًا على 0115550199,phishing,court_summons_callback,ar
+وزارة الصحة: تذكير بموعدك في مركز الرعاية الصحية الأولية بالعليا يوم الثلاثاء 19 نوفمبر الساعة 10:00 صباحًا.,ham,health_appointment_genuine,ar
+الدفاع المدني: تحذير من أمطار رعدية على منطقة الرياض من اليوم حتى الخميس. يرجى الابتعاد عن مجاري الأودية.,ham,weather_alert,ar
+UIDAI: आपका आधार कार्ड 24 घंटे में निलंबित हो जाएगा। KYC अपडेट करें: aadhaar-kyc-update.com,phishing,aadhaar_lure,hi
+"Income Tax Dept: आपका ₹12,450 का रिफंड स्वीकृत हुआ है। बैंक विवरण सत्यापित करें: incometax-refund.in",phishing,tax_refund_lure,hi
+FASTag: आपका टोल भुगतान ₹85 विफल हुआ। जुर्माने से बचने के लिए अभी भुगतान करें: fastag-recharge.top,phishing,toll_unpaid_fastag,hi
+"RTO: आपके वाहन पर ₹1,000 का ई-चालान बकाया है। 48 घंटे में भुगतान करें: echallan-pay.in",phishing,traffic_fine_lure,hi
+India Post: पता अपूर्ण होने के कारण आपका पार्सल रोका गया है। ₹25 शुल्क देकर पता अपडेट करें: indiapost-redeliver.com,phishing,postal_address_incomplete,hi
+"PM Kisan: आपकी ₹2,000 की किस्त रोक दी गई है। e-KYC पूरा करें: pmkisan-ekyc.in",phishing,benefits_stopped_lure,hi
+"EPFO: आपका PF खाता निष्क्रिय है। ₹48,320 निकालने के लिए सत्यापन करें: epfo-claim.com",phishing,pension_claim_lure,hi
+UIDAI: आपका आधार OTP 482913 है। इसे किसी के साथ साझा न करें। UIDAI कभी OTP नहीं मांगता।,ham,aadhaar_otp,hi
+Income Tax Department: आपका ITR AY 2024-25 सफलतापूर्वक सत्यापित हो गया है। incometax.gov.in पर स्थिति देखें।,ham,tax_declaration_confirm,hi
+दिल्ली नगर निगम: कल प्रदूषण के कारण कक्षा 5 तक के सभी स्कूल बंद रहेंगे।,ham,school_closure,hi
+DJP Online: Anda memiliki pengembalian pajak sebesar Rp1.250.000. Konfirmasi rekening Anda sebelum 15/11: djp-pajak-refund.com,phishing,tax_refund_lure,id
+Bea Cukai: paket Anda tertahan karena bea masuk Rp75.000 belum dibayar. Bayar sekarang: beacukai-bayar.top,phishing,customs_fee_lure,id
+ETLE: Kendaraan Anda terekam melanggar batas kecepatan. Denda Rp500.000. Bayar dalam 3 hari: etle-tilang.com,phishing,speeding_fine_lure,id
+Pos Indonesia: alamat paket Anda tidak lengkap. Perbarui dalam 24 jam: posindonesia-update.com,phishing,postal_address_incomplete,id
+BPJS Kesehatan: kartu Anda dinonaktifkan. Aktifkan kembali dengan verifikasi data: bpjs-aktivasi.com,phishing,health_card_lure,id
+Kemensos: Bansos PKH Rp600.000 telah cair. Klaim sekarang: bansos-cair.id,phishing,relief_payment_lure,id
+Dukcapil: data KTP Anda tidak valid. Perbarui segera atau NIK Anda diblokir: dukcapil-ktp.com,phishing,national_id_lure,id
+DJP: SPT Tahunan Anda telah diterima. Bukti penerimaan elektronik dapat dilihat di djponline.pajak.go.id,ham,tax_declaration_confirm,id
+BPJS Kesehatan: Iuran bulan November Anda telah kami terima. Terima kasih. Info: bpjs-kesehatan.go.id,ham,health_payment_genuine,id
+BMKG: Peringatan dini cuaca ekstrem untuk wilayah Jabodetabek. Waspada hujan lebat disertai angin kencang sore ini.,ham,weather_alert,id
+e-Devlet: Hesabınız güvenlik nedeniyle askıya alındı. Kimliğinizi doğrulayın: edevlet-dogrulama.com,phishing,edevlet_lure,tr
+"Gelir İdaresi Başkanlığı: 1.248,50 TL vergi iadeniz onaylandı. IBAN bilginizi onaylayın: gib-iade.net",phishing,tax_refund_lure,tr
+"HGS: 48,50 TL ödenmemiş geçiş ücretiniz var. Cezaya düşmeden ödeyin: hgs-odeme.top",phishing,toll_unpaid_hgs,tr
+EGM Trafik: Hız sınırı ihlali nedeniyle 1.506 TL ceza kesildi. İndirimli ödeme için: trafik-ceza-ode.com,phishing,speeding_fine_lure,tr
+PTT: Adres bilginiz eksik olduğu için kargonuz teslim edilemedi. Güncelleyin: ptt-kargo-teslimat.com,phishing,postal_address_incomplete,tr
+SGK: Sağlık hizmetleriniz durduruldu. Yeniden aktifleştirmek için: sgk-aktif.com,phishing,health_card_lure,tr
+Adalet Bakanlığı: Adınıza açılmış bir dava bulunmaktadır. Detaylar için 0850 555 01 44 numarasını arayın.,phishing,court_summons_callback,tr
+e-Devlet: Doğrulama kodunuz 731 852. Bu kodu kimseyle paylaşmayın.,ham,edevlet_code,tr
+e-Devlet: Adres değişikliği başvurunuz onaylandı. turkiye.gov.tr üzerinden görüntüleyebilirsiniz.,ham,edevlet_confirm,tr
+AFAD: Marmara Bölgesi için kuvvetli rüzgar ve fırtına uyarısı. Lütfen tedbirli olun.,ham,weather_alert,tr
+"e-Urząd Skarbowy: Przysługuje Ci zwrot podatku w wysokości 842,30 zł. Potwierdź numer konta: e-urzad-zwrot.pl",phishing,tax_refund_lure,pl
+"e-TOLL: Nieopłacony przejazd autostradą A2. Kwota 24,80 zł. Zapłać w ciągu 24h, aby uniknąć kary 500 zł: etoll-oplata.com",phishing,toll_unpaid_etoll,pl
+Poczta Polska: paczka wstrzymana z powodu niepełnego adresu. Zaktualizuj dane: poczta-polska-dostawa.top,phishing,postal_address_incomplete,pl
+Policja: Zarejestrowano przekroczenie prędkości. Mandat 500 zł. Zapłać online: mandat-online-pl.com,phishing,speeding_fine_lure,pl
+ZUS: Twoje świadczenie zostało wstrzymane. Zweryfikuj tożsamość w ciągu 24h: zus-weryfikacja.com,phishing,benefits_stopped_lure,pl
+mObywatel: Twój profil zaufany wygasa dzisiaj. Przedłuż teraz: mobywatel-profil.pl,phishing,national_id_lure,pl
+Urząd Miasta: Zaległa opłata za parkowanie 150 zł. Uniknij egzekucji komorniczej: oplata-parking.pl,phishing,parking_fine_lure,pl
+ZUS: Twój wniosek o świadczenie 800+ został rozpatrzony pozytywnie. Szczegóły na PUE ZUS: zus.pl,ham,benefits_approved_genuine,pl
+RCB Alert: Uwaga! Dziś i w nocy silny wiatr do 100 km/h. Zabezpiecz przedmioty na balkonie. Unikaj lasów.,ham,weather_alert,pl
+Urząd Miasta Kraków: Zmiana terminu odbioru odpadów zmieszanych – w tym tygodniu w piątek zamiast w czwartek.,ham,council_bin_change,pl

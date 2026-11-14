@@ -1,0 +1,146 @@
+{
+  "version": "2.12",
+  "generated_rows": 9698,
+  "graded_rows": 9697,
+  "kept": 9547,
+  "dropped": 151,
+  "counts": {
+    "disagree:ham->phishing": 1,
+    "disagree:phishing->ham": 10,
+    "disagree:phishing->spam": 46,
+    "disagree:phishing->unsure": 3,
+    "duplicate_of_existing": 6,
+    "eval_overlap_exact_or_shape": 5,
+    "eval_overlap_near_duplicate": 79,
+    "kept": 9547,
+    "ungraded": 1
+  },
+  "kept_by_label": {
+    "ham": 3611,
+    "phishing": 5033,
+    "spam": 903
+  },
+  "kept_by_language": {
+    "en": 4016,
+    "es": 650,
+    "nl": 389,
+    "fr": 340,
+    "de": 308,
+    "pt": 298,
+    "hi": 292,
+    "id": 283,
+    "ja": 266,
+    "it": 264,
+    "zh": 263,
+    "ar": 261,
+    "tl": 248,
+    "tr": 231,
+    "ko": 212,
+    "ru": 198,
+    "th": 183,
+    "pl": 175,
+    "el": 161,
+    "ms": 144,
+    "sw": 131,
+    "vi": 125,
+    "ta": 74,
+    "cs": 10,
+    "sv": 10,
+    "da": 10,
+    "ur": 5
+  },
+  "kept_by_theme": {
+    "callback_kyc_utility": {
+      "phishing": 299
+    },
+    "codes_alerts": {
+      "ham": 224,
+      "phishing": 108
+    },
+    "conversational_en": {
+      "ham": 369
+    },
+    "conversational_multi": {
+      "ham": 374
+    },
+    "delivery": {
+      "phishing": 248,
+      "ham": 112
+    },
+    "fintech_crypto": {
+      "phishing": 236,
+      "ham": 104
+    },
+    "government_toll": {
+      "phishing": 248,
+      "ham": 95
+    },
+    "ham_links": {
+      "ham": 297
+    },
+    "jobs": {
+      "phishing": 143,
+      "spam": 122,
+      "ham": 85
+    },
+    "legit_ar_tr_ru_pl_el": {
+      "ham": 344
+    },
+    "legit_east_asia": {
+      "ham": 351
+    },
+    "legit_en": {
+      "ham": 381
+    },
+    "legit_south_asia_africa": {
+      "ham": 371
+    },
+    "legit_west_europe": {
+      "ham": 355
+    },
+    "linkfree_en": {
+      "phishing": 373
+    },
+    "linkfree_multi": {
+      "phishing": 349
+    },
+    "low_key_notices": {
+      "phishing": 280
+    },
+    "lures_latin": {
+      "phishing": 367
+    },
+    "lures_nonlatin": {
+      "phishing": 367
+    },
+    "prize_callback": {
+      "phishing": 219,
+      "spam": 59
+    },
+    "prize_premium": {
+      "phishing": 329
+    },
+    "shortlink_bank_es_nl": {
+      "phishing": 320
+    },
+    "shortlink_other_langs": {
+      "phishing": 300
+    },
+    "shortlink_services_en": {
+      "phishing": 301
+    },
+    "shortlink_services_multi": {
+      "phishing": 340
+    },
+    "spam_en": {
+      "spam": 365
+    },
+    "spam_multi": {
+      "spam": 357
+    },
+    "wrong_number": {
+      "phishing": 206,
+      "ham": 149
+    }
+  }
+}

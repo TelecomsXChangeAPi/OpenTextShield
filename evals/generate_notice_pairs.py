@@ -2,8 +2,8 @@
 """Generate notice-shaped attacks paired with legitimate twins.
 
 Model 2.7 blocks too many real bank, parcel and code messages, and adding real
-notices alone taught the 2.8c candidate to pass notice-shaped lures (see
-evals/results/DATA_CLEANUP_2.8.md). Both sides of that boundary need examples,
+notices alone taught the 2.8c candidate to pass notice-shaped lures. Both sides
+of that boundary need examples,
 so every scam template here has a benign twin about the same brand and topic:
 the difference is the behaviour, not the vocabulary.
 
@@ -13,8 +13,8 @@ close to any eval message are dropped, so the benchmarks stay honest.
     python evals/generate_notice_pairs.py --pairs 500
 
 Output: dataset/curated/synthetic_notice_pairs_v1.csv, in the candidate schema
-(id, pool, text, label), so evals/label_audit.py checks it like any other
-addition: only rows TypeSafe agrees with are used.
+(id, pool, text, label); evals/build_train_set.py applies the labeling rules
+and any reviewed decisions before a row is used.
 """
 
 import argparse

@@ -1,0 +1,372 @@
+text,label,category,language
+"आपके SBI खाते XX4417 में 12-11-26 को Rs.15,000.00 UPI/CR द्वारा जमा हुए। उपलब्ध शेष Rs.42,318.60। -SBI",ham,upi_credit_confirmation,hi
+Rs.249.00 debited from HDFC Bank A/c XX2210 on 11-NOV-26 to Swiggy via UPI. Ref 632118904455. Not you? Call 18002586161 -HDFC Bank,ham,upi_debit_alert,hi
+"PhonePe: ₹1,200 Rahul Verma ko bheje gaye. UPI Ref 331845667201. Balance dekhne ke liye app kholein.",ham,upi_debit_alert,hi
+Google Pay: Priya Sharma ne aapko ₹500 bheje. Paisa aapke ICICI khate XX0917 me pahunch gaya hai.,ham,upi_credit_confirmation,hi
+"ICICI Bank: ₹3,499.00 की खरीद आपके कार्ड XX7712 से Amazon पर 11-11-26 23:14 बजे हुई। उपलब्ध सीमा ₹1,46,501।",ham,card_transaction_alert,hi
+"Axis Bank: Aapke A/c XX5583 se Rs 2,000 ATM withdrawal hua 11-11-26 18:42 IST par. Agar aapne nahi kiya to turant 18604195555 par call karein.",ham,atm_withdrawal_alert,hi
+"786213 is your OTP for Paytm login. Valid for 10 min. Kisi ke saath share na karein, Paytm kabhi OTP nahi maangta.",ham,otp_code,hi
+आपका UIDAI OTP 452019 है। इसे किसी के साथ साझा न करें। आधार को प्रमाणित करने के लिए यह 10 मिनट तक मान्य है। -UIDAI,ham,otp_code,hi
+Your IRCTC login OTP is 118274. Do not share with anyone. -IRCTC,ham,otp_code,hi
+"OTP for your SBI YONO transaction of Rs 8,500 to VPA grocerymart@ybl is 904461. Valid 3 minutes. Never share OTP. -SBI",ham,otp_code,hi
+"PNR 8412093567, Train 12951 Mumbai Rajdhani, 14-11-26, Coach B4 Berth 22 CNF. Boarding at Surat 20:35. Carry ID proof. -IRCTC",ham,train_booking_confirmation,hi
+IRCTC: आपकी ट्रेन 12301 हावड़ा राजधानी 13-11-26 को 2 घंटे 15 मिनट देरी से चल रही है। अपडेट irctc.co.in पर देखें।,ham,train_delay_notice,hi
+"Aapka Flipkart order OD329811456002 (boAt Airdopes 141) aaj deliver ho jayega. Delivery agent Suresh, 9xxxx-21045, aapse contact karega.",ham,parcel_out_for_delivery,hi
+Amazon.in: आपका पैकेज (ऑर्डर 404-5578912-3301166) डिलीवर हो गया है। दरवाज़े पर रखा गया। विवरण: amazon.in/orders,ham,parcel_delivered,hi
+Delhivery: Your shipment 2847105533219 from Myntra is out for delivery. Expected by 7 PM today. Track: delhivery.com/track,ham,parcel_out_for_delivery,hi
+Blue Dart: Shipment 70128834561 picked up from Gurgaon and in transit to Pune. Est. delivery 13 Nov. bluedart.com,ham,parcel_in_transit,hi
+India Post: आपकी स्पीड पोस्ट EK503318472IN आज वितरण के लिए निकली है। ट्रैक करें: indiapost.gov.in,ham,parcel_out_for_delivery,hi
+Zomato: Aapka order #5521908 pick up ho gaya! Delivery partner Vikram 12 min me pahunch rahe hain. Garam garam khana aa raha hai 🍲,ham,food_order_status,hi
+Swiggy: Order 171933056211 delivered. Aapka experience kaisa raha? Rate karein Swiggy app me. Shubh ratri!,ham,food_order_delivered,hi
+"Jio: आपका ₹299 प्लान 15-11-26 को समाप्त हो रहा है। रिचार्ज करें MyJio ऐप या jio.com पर। 2GB/दिन, अनलिमिटेड कॉल।",ham,prepaid_expiry_reminder,hi
+Airtel: Aapne aaj 1.5GB me se 1.2GB data use kar liya hai. Data 12 baje reset hoga. Balance dekhein Airtel Thanks app me.,ham,data_usage_notice,hi
+"Vi: Recharge of Rs 479 successful on 11-Nov-26. Validity 56 days, 1.5GB/day. Txn ID VI4411902233. Thank you! -Vi",ham,recharge_confirmation,hi
+BSNL: आपके लैंडलाइन 0522-24xxxxx का नवंबर बिल ₹834 है। अंतिम तिथि 25-11-26। भुगतान: portal.bsnl.in,ham,bill_notice_with_link,hi
+"Airtel: November postpaid bill of Rs 1,247 for 98xxxxx310 is ready. Due date 22 Nov. View and pay at airtel.in/bill",ham,bill_notice_with_link,hi
+"EPFO: आपके UAN 1012XXXXXX45 के खाते में अक्टूबर 2026 का अंशदान ₹3,600 जमा किया गया। पासबुक: passbook.epfindia.gov.in",ham,epf_contribution_notice,hi
+"EPFO: Aapka PF claim 31 (Form 19) UAN 1004XXXXXX78 ke liye settle ho gaya hai. Rs 84,210 aapke bank khate me 3 working days me aa jayenge.",ham,epf_claim_settled,hi
+"LIC: पॉलिसी 54xxxx221 की ₹6,450 की वार्षिक प्रीमियम 30-11-26 को देय है। भुगतान licindia.in या किसी शाखा में करें।",ham,insurance_premium_reminder,hi
+"LIC of India: Premium of Rs 2,180 received for policy 61xxxx905 on 10-11-26. Receipt sent to your registered email. Thank you.",ham,insurance_premium_receipt,hi
+"HDFC Bank: Kya aapne 11-11-26 ko Rs 19,999 ki transaction Croma par card XX3341 se ki hai? Haan to YES, nahi to NO reply karein.",ham,fraud_alert_reply_only,hi
+"SBI Alert: हमने आपके कार्ड XX6620 पर 11-11-26 02:14 बजे ₹24,500 का असामान्य लेनदेन देखा। यदि यह आपने नहीं किया तो 1930 या 18001234 पर कॉल करें।",ham,fraud_alert_call_official,hi
+"ICICI Bank kabhi bhi OTP, CVV, PIN ya password SMS/call par nahi maangta. Aisi koi call aaye to 18002662 par report karein. Savdhaan rahein.",ham,bank_scam_warning,hi
+Axis Bank: सावधान! KYC अपडेट के नाम पर आने वाले लिंक पर क्लिक न करें। बैंक कभी लिंक से KYC नहीं कराता। संदिग्ध SMS को 1930 पर रिपोर्ट करें।,ham,bank_scam_warning,hi
+Paytm: Dhyan dein - Paytm team kabhi aapko screen share app download karne ya OTP batane ke liye nahi kahegi. Aisa koi call fraud hai.,ham,fintech_scam_warning,hi
+भारत सरकार: 1930 साइबर हेल्पलाइन पर किसी भी ऑनलाइन ठगी की तुरंत शिकायत करें। cybercrime.gov.in -DoT,ham,govt_scam_awareness,hi
+"Govt of India: Aapka 98xxxxx120 par koi anjaan international call aaye jo TRAI/DoT hone ka dawa kare, to woh fraud hai. Sanchar Saathi par report karein.",ham,govt_scam_awareness,hi
+"PhonePe: Your electricity bill of ₹2,316 for Tata Power Mumbai (Consumer 400xxxx219) paid successfully. Txn T2611111822331.",ham,bill_payment_confirmation,hi
+Paytm: ₹199 ka Jio recharge safal. Mobile 70xxxxx448. Order 2611119900443. Balance: Paytm Wallet ₹56.,ham,recharge_confirmation,hi
+Google Pay: Rs 650 Kirana Store ko paid. UPI txn 632211004551. Rakhiye receipt ke liye.,ham,upi_debit_alert,hi
+"HDFC Bank: आपके खाते XX0098 में ₹52,000 NEFT द्वारा जमा। विवरण: SALARY NOV26 INFOSYS LTD। उपलब्ध शेष ₹68,412.33",ham,salary_credit_notice,hi
+SBI: आपका नया डेबिट कार्ड XX8871 पंजीकृत पते पर भेज दिया गया है। 7 कार्यदिवसों में प्राप्त होगा। प्राप्त न होने पर 1800 1234 पर कॉल करें।,ham,card_dispatch_notice,hi
+"Flipkart: Your refund of Rs 1,299 for order OD329771100233 has been credited to your SBI account. It may take 2-3 days to reflect.",ham,refund_confirmation,hi
+Amazon.in: Aapka return pickup (Order 404-1122334-5567788) kal 10AM-2PM ke beech scheduled hai. Item packed rakhein.,ham,return_pickup_scheduled,hi
+"IRCTC: Ticket cancelled. PNR 6621003381. Refund Rs 1,140 will be credited to the original payment mode within 5-7 days.",ham,refund_confirmation,hi
+Zomato: आपका ऑर्डर #6710022 रेस्टोरेंट द्वारा स्वीकार कर लिया गया। तैयार होने में लगभग 25 मिनट। ट्रैक करें ऐप में।,ham,food_order_status,hi
+TRAI DND: आपका अनुरोध स्वीकार हो गया है। 7 दिनों में प्रोमोशनल कॉल/SMS बंद हो जाएंगे। संदर्भ DND2611118874।,ham,govt_dnd_confirmation,hi
+"Jio: Aapke number par 5G ab available hai. Koi extra charge nahi, apne 4G plan par hi unlimited 5G data ka maza lijiye. -Jio",ham,telco_service_notice,hi
+Vi: आपका बैलेंस ₹12.40 है और मुख्य वैधता 18-11-26 तक। कम बैलेंस पर SMS/कॉल बाधित हो सकते हैं।,ham,low_balance_notice,hi
+"Dear customer, your Delhivery parcel 2847110090012 could not be delivered as the address was unreachable. We will retry tomorrow. -Delhivery",ham,parcel_delivery_attempt_failed,hi
+UIDAI: आपका आधार अपडेट अनुरोध URN 0000/01122/55678 स्वीकृत। ई-आधार डाउनलोड करें myaadhaar.uidai.gov.in से। -UIDAI,ham,govt_aadhaar_update,hi
+UIDAI: Aadhaar kabhi bhi OTP ya biometric share karne ke liye phone nahi karta. Aisi call aaye to 1947 par report karein. -UIDAI,ham,govt_scam_awareness,hi
+"Axis Bank: Rs 5,000.00 credited to A/c XX1120 via IMPS from PRIYANKA S on 12-11-26. Ref 631514009921. Avl bal Rs 11,205.19",ham,bank_credit_alert,hi
+"ICICI Bank: EMI of Rs 7,845 for Loan A/c LBMUM0005512 debited from A/c XX3342 on 10-NOV-26. Thank you.",ham,emi_debit_notice,hi
+"HDFC Bank: आपके क्रेडिट कार्ड XX5567 का नवंबर स्टेटमेंट तैयार है। कुल देय ₹14,230, न्यूनतम ₹710, देय तिथि 28-11-26। hdfcbank.com",ham,credit_card_statement,hi
+"Paytm Payments Bank: Rs 320 received from Amit Kumar. Available balance Rs 2,870. Ref PTM0921114456.",ham,wallet_credit_confirmation,hi
+"Swiggy Instamart: Order delivered in 11 min! Dudh, bread aur ande aapke darwaze par. Enjoy :)",ham,food_order_delivered,hi
+"BSNL: आपका ₹107 का रिचार्ज सफल। वैधता 35 दिन। धन्यवाद, BSNL से जुड़े रहें।",ham,recharge_confirmation,hi
+Blue Dart: Aapka shipment 70133455890 delivered to Mr Sharma (self) at 16:20. Thank you for choosing Blue Dart.,ham,parcel_delivered,hi
+PhonePe: Aapka auto-pay Netflix ₹199 ke liye 15-11-26 ko process hoga. Khate me paisa rakhein ya app me mandate cancel karein.,ham,autopay_reminder,hi
+"SBI: Dear customer, your mobile number has been successfully linked to A/c XX7781 for SMS alerts. Thank you for banking with us.",ham,service_confirmation,hi
+"SBI: உங்கள் கணக்கு XX3321 இல் ரூ.7,500.00 UPI மூலம் 12-11-26 அன்று வரவு வைக்கப்பட்டது. இருப்பு ரூ.31,455.80 -SBI",ham,upi_credit_confirmation,ta
+"HDFC Bank: ரூ.1,250 உங்கள் கணக்கு XX5610 இலிருந்து Zomato-க்கு UPI வழியாக பற்று. Ref 633100221109. நீங்கள் செய்யவில்லையா? 18002586161 அழைக்கவும்.",ham,upi_debit_alert,ta
+"Google Pay: Karthik M ungalukku ₹2,000 anupinaar. Panam ICICI kanakku XX4480-l vandhu serndhadhu. UPI Ref 331700998821.",ham,upi_credit_confirmation,ta
+PhonePe: Saravana Stores-க்கு ₹899 செலுத்தப்பட்டது. UPI txn T2611121033445. ரசீதை ஆப்பில் பார்க்கலாம்.,ham,upi_debit_alert,ta
+"ICICI Bank: உங்கள் கார்டு XX2290 மூலம் 11-11-26 20:05 மணிக்கு Flipkart-ல் ரூ.4,999 பரிவர்த்தனை. இது நீங்கள் அல்ல எனில் 18002662 அழைக்கவும்.",ham,card_transaction_alert,ta
+"Axis Bank: Rs 10,000 ATM-ல் எடுக்கப்பட்டது, கணக்கு XX6671, Anna Nagar ATM, 12-11-26 09:12. இருப்பு Rs 18,340.",ham,atm_withdrawal_alert,ta
+உங்கள் Paytm OTP 663812. 10 நிமிடங்களுக்கு செல்லுபடியாகும். யாருடனும் பகிர வேண்டாம்.,ham,otp_code,ta
+UIDAI: உங்கள் ஆதார் OTP 207755. இதை யாரிடமும் சொல்ல வேண்டாம். 10 நிமிடம் செல்லுபடியாகும்.,ham,otp_code,ta
+IRCTC login-ku ungal OTP 448120. Yaarukkum share pannaadheenga. -IRCTC,ham,otp_code,ta
+"SBI YONO: ரூ.3,000 பரிவர்த்தனைக்கான OTP 519903. 3 நிமிடம் மட்டும். SBI ஒருபோதும் OTP கேட்காது.",ham,otp_code,ta
+"IRCTC: PNR 4421067789, ரயில் 12243 சென்னை-கோவை சதாப்தி, 15-11-26, C5 சீட் 41 CNF. புறப்பாடு 06:00. அடையாள அட்டை கொண்டு வரவும்.",ham,train_booking_confirmation,ta
+IRCTC: Train 12605 Pallavan Express 13-11-26 anru 45 nimidam thaamadham. Live status: irctc.co.in,ham,train_delay_notice,ta
+"TANGEDCO: உங்கள் EB இணைப்பு 04-xxx-xxx-1120 க்கான நவம்பர் பில் ரூ.1,864. கடைசி தேதி 24-11-26. செலுத்த: tnebnet.org",ham,electricity_bill_notice,ta
+"TNEB: Ungal EB bill Rs 2,310 (Consumer 08-xxx-xxx-9921) pay aagividuchu. Receipt no TN2611110045. Nandri. -TANGEDCO",ham,bill_payment_confirmation,ta
+TANGEDCO: நாளை 13-11-26 காலை 9 முதல் மதியம் 1 வரை அடையார் பகுதியில் பராமரிப்பு பணிக்காக மின்தடை இருக்கும். ஒத்துழைக்கவும்.,ham,power_outage_notice,ta
+Flipkart: உங்கள் ஆர்டர் OD330012887701 (Redmi Note 14) இன்று டெலிவரி. டெலிவரி நபர் Murugan உங்களை தொடர்பு கொள்வார்.,ham,parcel_out_for_delivery,ta
+Amazon.in: Ungal package (Order 405-2201198-7700112) deliver aagiduchu. Door-la vaikkapattadhu. amazon.in/orders,ham,parcel_delivered,ta
+Delhivery: பார்சல் 2847122009981 சென்னை ஹப்பிலிருந்து மதுரைக்கு பயணத்தில். எதிர்பார்க்கும் தேதி 14 நவ. delhivery.com/track,ham,parcel_in_transit,ta
+Blue Dart: Shipment 70140022118 out for delivery in Coimbatore. Innaiku 6 PM-kulla varum. bluedart.com,ham,parcel_out_for_delivery,ta
+India Post: உங்கள் பதிவு தபால் RT441209876IN இன்று விநியோகத்திற்கு புறப்பட்டுள்ளது. -India Post,ham,parcel_out_for_delivery,ta
+Zomato: ஆர்டர் #7781205 ரெஸ்டாரன்ட் ஏற்றுக்கொண்டது. சுமார் 30 நிமிடத்தில் வரும். டெலிவரி நபர் Selvam.,ham,food_order_status,ta
+Swiggy: Order 172011009933 delivered! Sapadu eppadi irundhuchu? App-la rate pannunga. Nandri!,ham,food_order_delivered,ta
+Jio: உங்கள் ₹239 பிளான் 16-11-26 அன்று முடிகிறது. MyJio அல்லது jio.com-ல் ரீசார்ஜ் செய்யவும்.,ham,prepaid_expiry_reminder,ta
+Airtel: Innaiku 2GB-la 1.8GB use pannitteenga. Nalla 12 maniku reset aagum. Airtel Thanks app-la paarunga.,ham,data_usage_notice,ta
+"Vi: ரூ.299 ரீசார்ஜ் வெற்றி. 28 நாட்கள், 1.5GB/நாள். Txn VI4420011877. நன்றி -Vi",ham,recharge_confirmation,ta
+BSNL: உங்கள் லேண்ட்லைன் 044-24xxxxx நவம்பர் பில் ரூ.612. கடைசி தேதி 26-11-26. portal.bsnl.in,ham,bill_notice_with_link,ta
+Airtel: Postpaid bill Rs 899 for 94xxxxx221 ready. Due 23 Nov. Paarkka/pay panna: airtel.in/bill,ham,bill_notice_with_link,ta
+"EPFO: UAN 1009XXXXXX32 கணக்கில் அக்டோபர் 2026 பங்களிப்பு ரூ.2,950 வரவு. பாஸ்புக்: passbook.epfindia.gov.in",ham,epf_contribution_notice,ta
+"EPFO: Ungal PF claim (Form 31) settle aagiduchu. Rs 42,600 ungal bank account-ku 3 velai naatkalil varum.",ham,epf_claim_settled,ta
+"LIC: பாலிசி 71xxxx330 பிரீமியம் ரூ.4,120 30-11-26 அன்று செலுத்த வேண்டும். licindia.in அல்லது கிளையில் செலுத்தவும்.",ham,insurance_premium_reminder,ta
+"LIC of India: Policy 72xxxx118-ku Rs 1,560 premium 11-11-26 anru vandhu serndhadhu. Receipt email-la anuppiyaachu.",ham,insurance_premium_receipt,ta
+"HDFC Bank: 12-11-26 அன்று கார்டு XX8810-ல் Reliance Digital-ல் ரூ.32,000 பரிவர்த்தனை நீங்கள் செய்தீர்களா? ஆம் எனில் YES, இல்லை எனில் NO என பதிலளிக்கவும்.",ham,fraud_alert_reply_only,ta
+"SBI Alert: உங்கள் கார்டு XX1193-ல் 12-11-26 01:40 மணிக்கு ரூ.18,000 அசாதாரண பரிவர்த்தனை. நீங்கள் இல்லை எனில் 1930 அல்லது 18001234 அழைக்கவும்.",ham,fraud_alert_call_official,ta
+"ICICI Bank oru podhum OTP, CVN, PIN SMS-la or call-la kekkaadhu. Appadi call vandha 18002662-la report pannunga.",ham,bank_scam_warning,ta
+Axis Bank: எச்சரிக்கை! KYC புதுப்பிப்பு என்ற பெயரில் வரும் லிங்க்களை கிளிக் செய்ய வேண்டாம். வங்கி லிங்க் மூலம் KYC செய்யாது. 1930-ல் புகார் செய்யவும்.,ham,bank_scam_warning,ta
+Paytm: Paytm team yaarum ungalai screen share app download panna solla maattaanga. Appadi call vandha adhu fraud. Jaakiradhai!,ham,fintech_scam_warning,ta
+தமிழ்நாடு அரசு: ஆன்லைன் மோசடி நடந்தால் உடனே 1930-ஐ அழைக்கவும் அல்லது cybercrime.gov.in-ல் புகார் செய்யவும். -TN Police,ham,govt_scam_awareness,ta
+TN e-Sevai: உங்கள் சாதி சான்றிதழ் விண்ணப்பம் TN-2611-0098821 அங்கீகரிக்கப்பட்டது. tnesevai.tn.gov.in-ல் பதிவிறக்கவும்.,ham,govt_certificate_notice,ta
+"PhonePe: TANGEDCO EB bill Rs 1,440 (Consumer 03-xxx-xxx-7712) pay aagiduchu. Txn T2611120077110.",ham,bill_payment_confirmation,ta
+Paytm: ₹155 Vi ரீசார்ஜ் வெற்றி. மொபைல் 98xxxxx012. Order 2611121100556.,ham,recharge_confirmation,ta
+"HDFC Bank: ரூ.38,500 NEFT வரவு கணக்கு XX0021. விவரம்: SALARY NOV26 TCS LTD. இருப்பு ரூ.51,230.14",ham,salary_credit_notice,ta
+SBI: Ungal pudhu debit card XX9920 registered address-ku anuppiyaachu. 7 velai naatkalil varum. Varaattaa 1800 1234 koopidunga.,ham,card_dispatch_notice,ta
+"Flipkart: ஆர்டர் OD330001122334-க்கான ரூ.2,499 ரீஃபண்ட் உங்கள் HDFC கணக்கில் வரவு. 2-3 நாட்களில் தெரியும்.",ham,refund_confirmation,ta
+Amazon.in: Return pickup (Order 405-9900112-3344556) naalai 11AM-3PM scheduled. Item pack panni vaikkavum.,ham,return_pickup_scheduled,ta
+IRCTC: டிக்கெட் ரத்து. PNR 2210987654. ரூ.760 ரீஃபண்ட் 5-7 நாட்களில் அசல் கட்டண முறையில் வரவு.,ham,refund_confirmation,ta
+"Jio: Ungal number-la 5G ippo available! Extra charge illai, 4G plan-la dhaan unlimited 5G. -Jio",ham,telco_service_notice,ta
+"Vi: உங்கள் இருப்பு ரூ.8.20, முக்கிய வேலிடிட்டி 19-11-26 வரை. குறைந்த இருப்பில் சேவை தடைபடலாம்.",ham,low_balance_notice,ta
+"Delhivery: Parcel 2847133001100 deliver panna mudiyala, address-la yaarum illai. Naalai thirumba try pannuvom.",ham,parcel_delivery_attempt_failed,ta
+UIDAI: ஆதார் புதுப்பிப்பு URN 0000/02211/88901 ஏற்கப்பட்டது. e-Aadhaar: myaadhaar.uidai.gov.in -UIDAI,ham,govt_aadhaar_update,ta
+UIDAI: Aadhaar OTP or biometric share panna solli yaarum call pannaanga. Appadi vandha 1947-la report pannunga.,ham,govt_scam_awareness,ta
+"Axis Bank: Rs 4,000 IMPS credit A/c XX3390 from LAKSHMI R on 12-11-26. Ref 631600445512. Avl bal Rs 9,870.44",ham,bank_credit_alert,ta
+"ICICI Bank: லோன் கணக்கு LBCHE0009921-க்கான EMI ரூ.6,210 கணக்கு XX5570-லிருந்து 10-11-26 அன்று பற்று. நன்றி.",ham,emi_debit_notice,ta
+"HDFC Bank: Credit card XX7781 November statement ready. Total due Rs 9,860, minimum Rs 500, due date 27-11-26. hdfcbank.com",ham,credit_card_statement,ta
+"Swiggy Instamart: 9 நிமிடத்தில் டெலிவரி! பால், காய்கறி உங்கள் வாசலில். நன்றி :)",ham,food_order_delivered,ta
+"BSNL: ரூ.187 ரீசார்ஜ் வெற்றி. 28 நாட்கள், 2GB/நாள். நன்றி -BSNL",ham,recharge_confirmation,ta
+Chennai Metro Water: உங்கள் பகுதியில் (திருவான்மியூர்) 14-11-26 குழாய் பணி காரணமாக தண்ணீர் விநியோகம் தடைபடும். -CMWSSB,ham,govt_utility_notice,ta
+TN Transport: Ungal driving licence TN07 2026xxxxxxx renewal approve aagiduchu. Smart card 15 naatkalil post-la varum. parivahan.gov.in,ham,govt_licence_notice,ta
+"BCA: Transfer m-BCA ke 5110xxxx a.n. DEWI RAHAYU Rp1.500.000,00 BERHASIL. 12/11 09:14. Saldo Rp3.245.600,00",ham,bank_transfer_confirmation,id
+Dana masuk Rp2.750.000 dari PT MAJU JAYA ke rek Mandiri 1400xxxx8821 tgl 11/11 15:02. Saldo Rp4.120.300. -Bank Mandiri,ham,bank_credit_alert,id
+BRI: Transaksi kartu debit 5221xxxx di INDOMARET CIBUBUR Rp87.500 berhasil 12/11 07:48. Bukan Anda? Hub 1500017.,ham,card_transaction_alert,id
+BNI: Tarik tunai Rp500.000 di ATM BNI Kemang 11/11 21:30 dari rek 0229xxxx. Saldo Rp1.876.200. Info: 1500046,ham,atm_withdrawal_alert,id
+GoPay: Pembayaran Rp45.000 ke KOPI KENANGAN berhasil. Saldo GoPay kamu Rp128.500. Cek riwayat di aplikasi Gojek.,ham,ewallet_debit_confirmation,id
+OVO: Kamu menerima Rp200.000 dari Rizky Pratama. Saldo OVO Cash Rp356.000. 12 Nov 10:21,ham,ewallet_credit_confirmation,id
+DANA: Kirim uang Rp150.000 ke 0812xxxx7788 (Siti Nurhaliza) sukses. ID transaksi 20261112104433221. Saldo Rp92.400,ham,ewallet_debit_confirmation,id
+ShopeePay: Top up Rp100.000 via BCA berhasil. Saldo ShopeePay Rp174.300. Terima kasih!,ham,ewallet_topup_confirmation,id
+Kode OTP BCA mobile Anda: 847211. JANGAN berikan kode ini kepada siapapun termasuk pihak BCA. Berlaku 2 menit.,ham,otp_code,id
+"Kode verifikasi Tokopedia kamu 331908. Jangan bagikan ke siapa pun, termasuk pihak Tokopedia.",ham,otp_code,id
+<#> Kode OTP Shopee kamu: 554120. Berlaku 15 menit. Jangan berikan ke siapapun. 5V7bsKiPiJz,ham,otp_code,id
+GoPay: 6612 adalah kode OTP kamu. Berlaku 5 menit. Gojek tidak pernah menanyakan kode ini. Jangan kasih ke siapa pun ya!,ham,otp_code,id
+"Telkomsel: Kuota internet kamu sisa 1,2GB dari 15GB, aktif s.d. 20/11/26. Cek & beli paket di MyTelkomsel.",ham,data_usage_notice,id
+IM3: Paket Freedom Internet 25GB berhasil diaktifkan. Masa aktif 30 hari s.d. 12/12/26. Terima kasih! -Indosat,ham,package_activation_confirmation,id
+"XL: Pulsa kamu Rp2.500, masa aktif sampai 18/11/26. Isi ulang di myXL atau gerai terdekat biar tetap tersambung.",ham,low_balance_notice,id
+Telkomsel: Tagihan Halo bulan November Rp185.000 sudah terbit. Jatuh tempo 20/11. Bayar via MyTelkomsel atau telkomsel.com,ham,bill_notice_with_link,id
+Tokopedia: Pesanan INV/20261111/MPL/4411209 (Sepatu Running Ortuseight) sudah dikirim via JNE. Resi JP4411209876. Lacak di aplikasi.,ham,order_shipped,id
+Shopee: Paket kamu 2611123344556 sedang dikirim oleh kurir SPX ke alamatmu. Siapkan diri untuk menerima ya!,ham,parcel_out_for_delivery,id
+JNE: Paket JP5522100987 telah DITERIMA oleh Bapak Andi (penerima langsung) 12/11 14:20. Terima kasih. jne.co.id,ham,parcel_delivered,id
+J&T Express: Paket JD0112233445566 sudah sampai di DC Bekasi dan akan diantar hari ini. Mohon pastikan HP aktif.,ham,parcel_out_for_delivery,id
+SiCepat: Paket 002211334455 telah tiba di gerai SiCepat Depok dan dalam proses pengiriman ke alamat tujuan. Lacak: sicepat.com,ham,parcel_in_transit,id
+J&T: Kurir sudah mencoba mengantar paket JD0119988776655 tapi alamat kosong. Pengantaran ulang besok. Hubungi kurir jika perlu.,ham,parcel_delivery_attempt_failed,id
+PLN: Tagihan listrik ID Pel 5321xxxxxxx bulan Nov Rp312.450. Bayar sebelum tgl 20 untuk hindari pemutusan. Cek di PLN Mobile atau web.pln.co.id,ham,electricity_bill_notice,id
+"PLN Mobile: Token listrik kamu 1234-5678-9012-3456-7890 untuk ID Pel 5420xxxxxxx. 32,5 kWh. Terima kasih sudah membeli token.",ham,electricity_token_delivery,id
+"PLN: Info pemeliharaan jaringan di wilayah Cempaka Putih, Jumat 14/11 pukul 09.00-13.00. Mohon maaf atas ketidaknyamanannya.",ham,power_outage_notice,id
+Gojek: Perjalanan GoRide kamu dari Stasiun Sudirman ke Menteng selesai. Total Rp18.000 dibayar GoPay. Terima kasih sudah naik Gojek!,ham,ride_receipt,id
+"Grab: Driver kamu Budi (B 6612 XYZ, Honda Beat hitam) sedang menuju lokasi. Tiba dalam 3 menit.",ham,ride_driver_assigned,id
+GoFood: Pesanan kamu dari Ayam Geprek Bensu sedang dimasak. Driver Agus akan segera mengambil pesanan. Tunggu ya!,ham,food_order_status,id
+GrabFood: Pesanan #GF-2611-884412 sudah sampai. Selamat makan! Beri rating untuk driver kamu di aplikasi.,ham,food_order_delivered,id
+BCA: Apakah Anda melakukan transaksi Rp4.500.000 di TOKOPEDIA dengan kartu kredit 4xxx xxxx xxxx 8812 pada 12/11 03:15? Balas YA atau TIDAK.,ham,fraud_alert_reply_only,id
+"Bank Mandiri: Kami mendeteksi transaksi tidak biasa pada kartu Anda 12/11 02:40 Rp2.999.000. Jika bukan Anda, segera hubungi Mandiri Call 14000.",ham,fraud_alert_call_official,id
+"BRI tidak pernah meminta PIN, OTP, password, atau nomor kartu melalui telepon, SMS, atau WhatsApp. Waspadai penipuan. Info resmi: 1500017",ham,bank_scam_warning,id
+BNI: WASPADA penipuan mengatasnamakan BNI yang mengirim file APK atau link undangan. Jangan diklik! Laporkan ke 1500046.,ham,bank_scam_warning,id
+"OVO: Hati-hati! OVO tidak pernah menghubungi kamu untuk meminta kode OTP atau PIN. Kalau ada yang minta, itu penipu. Laporkan via Pusat Bantuan.",ham,fintech_scam_warning,id
+"DANA: Ingat ya, DANA nggak pernah minta PIN atau OTP lewat telepon/chat. Jaga akunmu, jangan bagikan ke siapapun.",ham,fintech_scam_warning,id
+Kominfo: Waspada penipuan via SMS/WA. Laporkan nomor penipu di aduannomor.id. Jangan klik tautan mencurigakan. -KOMINFO,ham,govt_scam_awareness,id
+BPJS Kesehatan: Iuran JKN-KIS bulan November untuk 3 peserta Rp105.000 sudah dibayar via autodebit BCA. Terima kasih.,ham,govt_insurance_payment,id
+Dukcapil: Permohonan cetak ulang KTP-el Anda telah selesai. Silakan ambil di Kantor Kecamatan Tebet dengan membawa surat pengantar.,ham,govt_id_notice,id
+DJP: SPT Tahunan PPh OP Anda telah diterima. Nomor BPE 6612-0011-2233-4455. Simpan sebagai bukti. pajak.go.id,ham,govt_tax_notice,id
+Samsat DKI: Pajak kendaraan B 1234 ABC jatuh tempo 28/11/26. Bayar via aplikasi Signal atau gerai Samsat. -Bapenda DKI,ham,govt_vehicle_tax_reminder,id
+Tokopedia: Pengembalian dana Rp250.000 untuk pesanan INV/20261105/MPL/2200118 sudah masuk ke saldo GoPay kamu.,ham,refund_confirmation,id
+Shopee: Dana Rp89.000 dari pengembalian pesanan 261105AB22C sudah dikembalikan ke ShopeePay kamu. Cek saldo ya!,ham,refund_confirmation,id
+BCA: Autodebet tagihan kartu kredit Rp1.250.000 akan dilakukan tgl 15/11 dari rek 2310xxxx. Pastikan saldo cukup.,ham,autopay_reminder,id
+Bank Mandiri: Gaji Rp6.800.000 dari PT SINAR ABADI masuk ke rek 1310xxxx2201 12/11 08:01. Saldo Rp7.455.120,ham,salary_credit_notice,id
+BRI: Angsuran KUR Rp1.050.000 untuk rekening pinjaman 00xx-01-00xxxx-50-1 berhasil didebet 10/11. Terima kasih.,ham,emi_debit_notice,id
+BNI: Kartu debit baru Anda 5xxx-xxxx-xxxx-7781 telah dikirim ke alamat terdaftar. Aktivasi di ATM BNI atau BNI Mobile Banking.,ham,card_dispatch_notice,id
+"Telkomsel: Pengisian pulsa Rp50.000 untuk 0812xxxx3344 berhasil. Pulsa kamu sekarang Rp52.300, aktif s.d. 25/12/26.",ham,recharge_confirmation,id
+XL: Tagihan XL Prioritas Nov Rp250.000 sudah tersedia. Jatuh tempo 22/11. Lihat & bayar di myXL atau xl.co.id,ham,bill_notice_with_link,id
+Indosat: Kuota kamu habis. Internet akan dikenakan tarif dasar. Beli paket di myIM3 supaya hemat. -IM3,ham,data_exhausted_notice,id
+JNE: Paket JP6600112233 dari Shopee sudah tiba di Hub Jakarta Selatan dan dijadwalkan diantar besok 13/11.,ham,parcel_in_transit,id
+"Gojek: Struk GoCar 12/11: Blok M - Bandara CGK, 52 menit, Rp185.000 (GoPay). Driver: Hendra. Terima kasih!",ham,ride_receipt,id
+Grab: Pembayaran GrabPay Rp24.000 untuk perjalanan GrabBike berhasil. Saldo OVO kamu Rp310.000.,ham,ride_receipt,id
+PLN: Pembayaran tagihan listrik ID Pel 5310xxxxxxx Rp278.900 bulan Nov sudah LUNAS via BCA mobile. Terima kasih.,ham,bill_payment_confirmation,id
+Tokopedia: Barang pesananmu INV/20261112/MPL/5500112 sudah sampai. Konfirmasi penerimaan di aplikasi agar dana diteruskan ke penjual.,ham,parcel_delivered,id
+Shopee: Pesanan 261112XY99Z sudah dikemas penjual dan menunggu dijemput kurir J&T. Estimasi tiba 14-15 Nov.,ham,order_packed,id
+BCA: Setoran tunai Rp2.000.000 ke rek 0320xxxx di CRM BCA Sudirman 12/11 11:05 berhasil. Saldo Rp5.670.200,ham,bank_credit_alert,id
+GoPay: Tagihan PDAM Jaya Rp76.500 untuk pelanggan 1xxxxxxx berhasil dibayar. ID transaksi GP2611120099.,ham,bill_payment_confirmation,id
+Bank Mandiri: Livin' by Mandiri Anda telah berhasil login di perangkat baru (Samsung SM-A546) 12/11 19:40. Bukan Anda? Hubungi 14000.,ham,new_device_login_notice,id
+Dinas Pendidikan DKI: Pendaftaran KJP Plus tahap 2 dibuka 15-30 Nov 2026 melalui kjp.jakarta.go.id. Siapkan dokumen.,ham,govt_program_notice,id
+"Maybank2u: RM250.00 transferred to AHMAD FAIZAL via DuitNow on 12/11/26 09:21. Ref 2611120933417. Avail bal RM1,842.30",ham,bank_transfer_confirmation,ms
+"CIMB: Anda telah menerima RM1,200.00 drp SYARIKAT MAJU SDN BHD ke akaun 7012xxxx21 pada 11/11/26. Baki RM3,455.10",ham,bank_credit_alert,ms
+Public Bank: Pembelian RM68.90 dgn kad debit xxxx4410 di 99 SPEEDMART pada 12/11 18:02 berjaya. Bukan anda? Hubungi 03-21798888.,ham,card_transaction_alert,ms
+Maybank: Pengeluaran ATM RM300.00 dari akaun 1640xxxx77 di ATM Maybank Bangsar 11/11/26 22:15. Baki RM912.44,ham,atm_withdrawal_alert,ms
+TNG eWallet: Anda telah membayar RM12.50 kepada FAMILYMART KLCC. Baki eWallet RM87.20. 12 Nov 13:05,ham,ewallet_debit_confirmation,ms
+Touch 'n Go eWallet: Reload RM100.00 dari Maybank berjaya. Baki anda RM187.20. Terima kasih!,ham,ewallet_topup_confirmation,ms
+TNG eWallet: Tol PLUS Sg Besi RM2.60 dibayar melalui RFID. Baki RM44.10.,ham,ewallet_toll_debit,ms
+Maybank2u: Kod TAC anda ialah 557812 untuk pindahan RM500 ke SITI AMINAH. JANGAN kongsi TAC ini dengan sesiapa. Sah 2 minit.,ham,otp_code,ms
+"CIMB Clicks: Your OTP is 204911. Valid for 3 minutes. Jangan kongsi dengan sesiapa, termasuk staf CIMB.",ham,otp_code,ms
+Kod pengesahan Shopee anda: 882310. Sah selama 15 minit. Jangan beri kepada sesiapa. -Shopee,ham,otp_code,ms
+Kod OTP MySejahtera anda ialah 440927. Jangan kongsi kod ini. -MySejahtera,ham,otp_code,ms
+Maxis: Bil Postpaid Nov sebanyak RM98.00 untuk 012-xxx 4411 sudah siap. Tarikh akhir 25/11. Bayar di app Maxis atau maxis.com.my,ham,bill_notice_with_link,ms
+"CelcomDigi: Baki prepaid anda RM3.20, tamat tempoh 19/11/26. Top up di app CelcomDigi untuk kekal berhubung.",ham,low_balance_notice,ms
+U Mobile: Data anda tinggal 500MB daripada 30GB. Kuota set semula 01/12. Beli add-on di MyUMobile. u.com.my,ham,data_usage_notice,ms
+"Digi: Top up RM30 berjaya untuk 016-xxx 7781. Baki RM31.50, sah hingga 12/12/26. Terima kasih!",ham,recharge_confirmation,ms
+Pos Laju: Bungkusan anda EM123456789MY sedang dalam perjalanan ke pusat Pos Laju Shah Alam. Jangkaan tiba 13/11. pos.com.my/tracking,ham,parcel_in_transit,ms
+Pos Malaysia: Bungkusan EM998877665MY telah DIHANTAR dan diterima oleh NURUL pada 12/11 11:40. Terima kasih.,ham,parcel_delivered,ms
+J&T Express: Parcel anda 630011223344 sedang keluar untuk penghantaran hari ini. Sila pastikan ada orang di alamat. jtexpress.my,ham,parcel_out_for_delivery,ms
+J&T: Kurier cuba hantar parcel 630099887766 tapi tiada orang di rumah. Kami akan cuba semula esok. Hubungi kurier jika perlu.,ham,parcel_delivery_attempt_failed,ms
+Shopee: Pesanan anda 2611120011MY telah dihantar oleh penjual melalui SPX Express. Jangkaan tiba 14-15 Nov. Jejak di app.,ham,order_shipped,ms
+Lazada: Pakej anda LZD-MY-7781200 sudah sampai di hub Puchong. Kurier akan hantar esok. lazada.com.my,ham,parcel_in_transit,ms
+Lazada: Pesanan 2611100033 anda telah diterima. Sila sahkan penerimaan dan beri penilaian dalam app Lazada. Terima kasih!,ham,parcel_delivered,ms
+TNB: Bil elektrik Nov untuk akaun 2200xxxxxx12 ialah RM186.40. Tarikh akhir bayaran 28/11/26. Bayar melalui myTNB atau tnb.com.my,ham,electricity_bill_notice,ms
+myTNB: Bayaran RM212.70 untuk akaun 2200xxxxxx45 telah diterima. Terima kasih. No. resit TNB2611120044.,ham,bill_payment_confirmation,ms
+"TNB: Gangguan bekalan elektrik berjadual di Taman Melawati pada 14/11/26, 9 pagi - 1 petang untuk kerja penyelenggaraan. Harap maklum.",ham,power_outage_notice,ms
+LHDN: Borang BE Tahun Taksiran 2025 anda telah diterima. No. rujukan e-Filing 2611-00112233. Simpan sebagai rekod. hasil.gov.my,ham,govt_tax_notice,ms
+LHDNM: Bayaran balik cukai RM420.00 telah dikreditkan ke akaun bank berdaftar anda pada 11/11/26. -LHDN,ham,govt_tax_refund,ms
+LHDN tidak akan menghubungi anda melalui panggilan atau SMS meminta maklumat bank atau bayaran segera. Laporkan panggilan mencurigakan ke 03-8911 1000.,ham,govt_scam_warning,ms
+"MySejahtera: Temujanji vaksin influenza anda pada 15/11/26, 10:00 pagi di KK Bandar Botanik. Sila hadir 10 minit awal.",ham,govt_health_appointment,ms
+"KWSP: Caruman bulan Oktober 2026 sebanyak RM1,045.00 drp majikan anda telah dikreditkan ke akaun KWSP anda. Semak di i-Akaun.",ham,govt_epf_contribution,ms
+JPJ: Lesen memandu anda akan tamat pada 30/11/26. Perbaharui di MyJPJ app atau kaunter JPJ terdekat. -JPJ,ham,govt_licence_reminder,ms
+"PDRM: Elakkan jadi mangsa scam. Jika ragu-ragu, hubungi National Scam Response Centre 997 segera. -Polis Diraja Malaysia",ham,govt_scam_awareness,ms
+"Maybank: Adakah anda membuat transaksi RM2,850.00 di LAZADA dengan kad xxxx6612 pada 12/11 02:30? Balas YA atau TIDAK.",ham,fraud_alert_reply_only,ms
+"CIMB: Transaksi luar biasa RM1,999 dikesan pada kad anda xxxx3301 pada 12/11 01:12. Jika bukan anda, hubungi +603 6204 7788 segera.",ham,fraud_alert_call_official,ms
+"Public Bank tidak pernah meminta kata laluan, PIN atau TAC melalui telefon, SMS atau e-mel. Jangan klik link dalam SMS. Hubungi 03-21798888 jika ragu.",ham,bank_scam_warning,ms
+Maybank: AWAS scam! Kami tidak akan hantar link untuk 'kemas kini akaun'. Jangan muat turun APK dari sumber tidak dikenali. Laporkan ke 1-300-88-6688.,ham,bank_scam_warning,ms
+"TNG eWallet: Peringatan - kami TIDAK AKAN meminta OTP atau PIN anda. Jika ada yang minta, jangan beri. Laporkan di app.",ham,fintech_scam_warning,ms
+"CIMB: Gaji RM4,200.00 drp TECH SOLUTIONS SDN BHD telah dikreditkan ke akaun 7612xxxx09 pada 12/11 07:30. Baki RM5,110.85",ham,salary_credit_notice,ms
+"Public Bank: Ansuran pinjaman perumahan RM1,620.00 telah didebit dari akaun 4xxx-xxxx-10 pada 10/11/26. Terima kasih.",ham,emi_debit_notice,ms
+"Maybank: Penyata kad kredit xxxx0912 bulan Nov sudah siap. Jumlah RM1,340.20, bayaran minimum RM67.01, tarikh akhir 02/12/26. maybank2u.com.my",ham,credit_card_statement,ms
+Shopee: Bayaran balik RM59.90 untuk pesanan 2611050022MY telah dikembalikan ke ShopeePay anda. Semak baki anda!,ham,refund_confirmation,ms
+Lazada: Refund RM120.00 untuk pesanan 2611010011 telah diproses ke kad anda. Mungkin ambil 5-7 hari bekerja untuk dipaparkan.,ham,refund_confirmation,ms
+Maxis: Bayaran RM98.00 untuk bil 012-xxx 4411 diterima. Terima kasih! Resit tersedia di app Maxis.,ham,bill_payment_confirmation,ms
+CelcomDigi: Pelan Postpaid 5G anda kini aktif. Nikmati 100GB data + panggilan tanpa had. Semak di app CelcomDigi.,ham,package_activation_confirmation,ms
+U Mobile: Bil Nov RM58.00 untuk 018-xxx 2210 sudah siap. Tarikh akhir 24/11. Bayar di MyUMobile. u.com.my,ham,bill_notice_with_link,ms
+"Grab: Pemandu anda Hafiz (WXY 4412, Perodua Myvi silver) dalam perjalanan. Tiba dalam 4 minit.",ham,ride_driver_assigned,ms
+Grab: Perjalanan dari KL Sentral ke Mont Kiara selesai. RM18.00 dibayar dgn GrabPay. Terima kasih kerana menaiki Grab!,ham,ride_receipt,ms
+GrabFood: Pesanan #GF-MY-2611-0412 dari Nasi Kandar Pelita sedang disediakan. Rider akan ambil sebentar lagi.,ham,food_order_status,ms
+foodpanda: Pesanan anda sudah tiba! Selamat menjamu selera. Beri rating untuk rider anda dalam app.,ham,food_order_delivered,ms
+CIMB Clicks: Log masuk dikesan dari peranti baharu (iPhone 15) pada 12/11 20:15. Bukan anda? Hubungi +603 6204 7788.,ham,new_device_login_notice,ms
+Maybank: Kad debit baharu anda xxxx8821 telah dipos ke alamat berdaftar. Aktifkan di ATM Maybank atau MAE app apabila diterima.,ham,card_dispatch_notice,ms
+Pos Laju: Bungkusan anda EM223344556MY telah tiba di Pos Laju Petaling Jaya. Sila ambil dalam 7 hari dengan bawa IC. pos.com.my,ham,parcel_ready_for_collection,ms
+TNG eWallet: Bayaran parking DBKL RM3.00 berjaya. Baki RM41.10.,ham,ewallet_debit_confirmation,ms
+"Maybank2u: Pindahan DuitNow RM1,000.00 diterima drp RAZAK BIN OSMAN. Ref 2611121011554. Baki akaun RM2,842.30",ham,bank_credit_alert,ms
+Shopee: Pesanan 2611120099MY anda telah dibungkus penjual dan menunggu pengambilan kurier J&T. Jejak di app Shopee.,ham,order_packed,ms
+JPJ: Cukai jalan kenderaan WB 1234 X tamat pada 15/12/26. Perbaharui awal di MyJPJ atau MyEG. -JPJ,ham,govt_road_tax_reminder,ms
+Bank Negara Malaysia: Jangan percaya panggilan yang mengaku dari BNM minta pindah duit ke 'akaun selamat'. Itu scam. Hubungi 997.,ham,govt_scam_awareness,ms
+"Public Bank: Deposit tunai RM1,500.00 ke akaun 6xxx-xxxx-33 di CDM PB Taman Tun pada 12/11 10:22 berjaya. Baki RM3,210.00",ham,bank_credit_alert,ms
+Maxis: Anda telah menggunakan 80% kuota data bulanan. Baki 4GB hingga 01/12. Semak di app Maxis.,ham,data_usage_notice,ms
+"BDO: Your account ending 4417 was credited PHP 25,000.00 on 11/12/26 10:14 via InstaPay from JUAN DELA CRUZ. Avail bal PHP 41,220.55",ham,bank_credit_alert,tl
+"BPI: Nagamit ang iyong debit card ending 0912 sa SM SUPERMARKET MAKATI, PHP 2,340.50, 11/12 18:30. Hindi ikaw? Tumawag sa (02) 889-10000.",ham,card_transaction_alert,tl
+"GCash: You have sent PHP 1,500.00 to MARIA SANTOS (0917xxx4521) with message 'utang ko sayo'. Ref 1022334455. Your new balance is PHP 3,210.40.",ham,ewallet_debit_confirmation,tl
+"GCash: Nakatanggap ka ng PHP 500.00 mula kay JOSE REYES. Ref No. 2011225566. Bal: PHP 3,710.40. Salamat sa paggamit ng GCash!",ham,ewallet_credit_confirmation,tl
+"Maya: Nabayaran mo na ang PHP 899.00 sa LAZADA PH. Bago mong balance: PHP 1,201.30. Ref 2611121004.",ham,ewallet_debit_confirmation,tl
+"Maya: PHP 2,000.00 cash in from BPI successful. Ang balance mo ngayon ay PHP 3,201.30. Keep it up!",ham,ewallet_topup_confirmation,tl
+"BDO: Withdrawal of PHP 5,000.00 from your account ending 2210 at BDO ATM Ayala Ave 11/12/26 21:05. Avail bal PHP 12,890.10",ham,atm_withdrawal_alert,tl
+"Your GCash OTP is 445120. Huwag ibigay ang code na ito sa kahit sino, kahit sa GCash. Valid for 5 mins.",ham,otp_code,tl
+"BPI: Ang iyong One-Time PIN ay 882914 para sa transfer na PHP 3,000 kay ANA LOPEZ. Hindi ito hihingin ng BPI. Expires in 2 min.",ham,otp_code,tl
+<#> 331908 is your Shopee verification code. Wag mo i-share sa iba ha. Valid 15 mins. 5V7bsKiPiJz,ham,otp_code,tl
+"Maya: 660412 ang iyong one-time code. Valid for 5 minutes. Never i-share sa kahit sino, kahit sa Maya.",ham,otp_code,tl
+"Globe: Your bill for 0917-xxx-2210 is PHP 1,499.00, due on Nov 25. View and pay via GlobeOne app or globe.com.ph. Salamat!",ham,bill_notice_with_link,tl
+"Smart: Naka-register ka na sa GIGA Power 99 (8GB + unli allnet texts, 7 days). Valid hanggang Nov 19. Enjoy!",ham,package_activation_confirmation,tl
+"Smart: Your load balance is PHP 4.50, expiring Nov 20. Mag-load na para hindi ma-expire ang number mo.",ham,low_balance_notice,tl
+DITO: Na-ubos mo na ang 80% ng data mo. May natitira pang 2GB hanggang Nov 30. Check sa DITO app.,ham,data_usage_notice,tl
+Globe: Successfully loaded PHP 100 to 0915-xxx-7781. New balance PHP 102.50 valid until Dec 11. Thank you!,ham,recharge_confirmation,tl
+TM: Buy GoSURF50 for 5GB? Reply GOSURF50 to 8080. Or check your balance by dialing *143#.,ham,telco_service_notice,tl
+LBC: Your package 1234 5678 9012 is now out for delivery. Pakihanda ang valid ID. Track: lbcexpress.com/track,ham,parcel_out_for_delivery,tl
+LBC Express: Na-deliver na ang package mo 1234 5678 9034 kay R. SANTOS (self) 11/12 14:10. Salamat sa pagpili sa LBC!,ham,parcel_delivered,tl
+J&T Express PH: Ang parcel mo 700112233445 ay nasa Pasig Hub na at ide-deliver bukas. Siguraduhing may tao sa bahay. jtexpress.ph,ham,parcel_in_transit,tl
+J&T: Hindi na-deliver ang parcel 700998877665 kasi walang tao sa address. Itry ulit namin bukas. Pwede tumawag sa rider.,ham,parcel_delivery_attempt_failed,tl
+Shopee: Na-ship na ng seller ang order mo 261112PHXY001 via SPX. Expected delivery Nov 14-15. Track sa app.,ham,order_shipped,tl
+Lazada: Nasa Taguig hub na ang package mo LZD-PH-6612001. Ide-deliver bukas. lazada.com.ph,ham,parcel_in_transit,tl
+Lazada: Delivered na ang order mo 261110PH0033! I-confirm ang receipt at mag-rate sa Lazada app. Salamat!,ham,parcel_delivered,tl
+"Meralco: Your Nov bill for CAN 1234567890 is PHP 3,214.50, due Nov 24. Pay via Meralco Mobile App or meralco.com.ph. Thank you!",ham,electricity_bill_notice,tl
+"Meralco: Natanggap na namin ang bayad mo na PHP 2,890.00 para sa CAN 1234567891. OR No. 2611120044. Salamat!",ham,bill_payment_confirmation,tl
+"Meralco Advisory: Scheduled power interruption sa Brgy San Antonio, Pasig sa Nov 14, 9AM-1PM para sa maintenance. Paumanhin sa abala.",ham,power_outage_notice,tl
+"SSS: Na-post na ang contribution mo for Oct 2026 na PHP 1,350.00 mula sa employer mo. Check sa My.SSS: sss.gov.ph",ham,govt_sss_contribution,tl
+"SSS: Ang salary loan application mo (SL-2611-00112) ay APPROVED. PHP 30,000 ay i-credit sa UMID/bank account mo within 3 working days.",ham,govt_loan_approved,tl
+PhilHealth: Na-update na ang Member Data Record mo. PIN 12-345678901-2. Check sa philhealth.gov.ph member portal.,ham,govt_philhealth_notice,tl
+PhilHealth: Ang premium mo for Oct 2026 na PHP 500.00 ay na-post na. Salamat sa pagbabayad. -PhilHealth,ham,govt_philhealth_notice,tl
+SSS: PAALALA - Hindi kailanman hihingin ng SSS ang password o OTP mo sa text o tawag. Mag-ingat sa fake links. Report sa 1455.,ham,govt_scam_warning,tl
+"BDO: Did you use your card ending 8812 for PHP 18,999.00 at LAZADA on 11/12 02:14? Reply YES or NO to this message.",ham,fraud_alert_reply_only,tl
+"BPI: May nakita kaming hindi pangkaraniwang transaction sa card mo ending 3301 na PHP 9,500 kaninang 01:40. Kung hindi ikaw, tumawag sa (02) 889-10000.",ham,fraud_alert_call_official,tl
+"BDO will NEVER ask for your OTP, password or card details via text, call or email. Wag i-click ang links sa text na nagsasabing locked ang account mo.",ham,bank_scam_warning,tl
+BPI: Mag-ingat po! Hindi kami nagpapadala ng link para 'i-verify' ang account. Report suspicious messages to 889-10000. -BPI,ham,bank_scam_warning,tl
+"GCash: Paalala! Hindi kailanman hihingin ng GCash ang MPIN o OTP mo. Kung may humingi, scam yan. I-report sa help.gcash.com",ham,fintech_scam_warning,tl
+Maya: Reminder lang - never i-share ang OTP or password mo kahit sa 'Maya agent'. Wala kaming tatawag para humingi nun. Stay safe!,ham,fintech_scam_warning,tl
+DICT: Mag-ingat sa text scams. I-report ang suspicious numbers sa 1326 o cybercrime.gov.ph. Huwag i-click ang mga links mula sa unknown senders.,ham,govt_scam_awareness,tl
+NTC: Reminder sa lahat ng subscribers - wag mag-reply sa text na nangangako ng premyo. Report sa inyong telco. -National Telecommunications Commission,ham,govt_scam_awareness,tl
+"BDO: Salary credit of PHP 32,500.00 from ACME CORP PHILS received in account ending 4417 on 11/12/26 06:00. Avail bal PHP 73,720.55",ham,salary_credit_notice,tl
+"BPI: Ang monthly amortization mo na PHP 8,450.00 para sa auto loan ending 0091 ay na-debit sa account ending 2201 nitong 11/10. Salamat!",ham,emi_debit_notice,tl
+"BDO: Your credit card ending 5567 statement for Nov is ready. Total due PHP 12,340.00, minimum PHP 617.00, due Dec 2. View at bdo.com.ph",ham,credit_card_statement,tl
+Shopee: Na-refund na ang PHP 349.00 for order 261105PHAB22 sa ShopeePay mo. Check mo ang balance!,ham,refund_confirmation,tl
+"Lazada: PHP 1,200.00 refund for order 261101PH0011 has been processed to your Lazada Wallet. Salamat sa pasensya mo!",ham,refund_confirmation,tl
+"GCash: Nabayaran mo na ang Meralco bill mo na PHP 3,214.50 para sa CAN 1234567890. Ref No. 3011224455. Salamat!",ham,bill_payment_confirmation,tl
+"GCash: Your GLoan payment of PHP 2,150.00 due on Nov 15 will be auto-debited from your wallet. Pakisigurado na may sapat na balance.",ham,autopay_reminder,tl
+"Globe: Nabayaran na ang bill mo na PHP 1,499.00 para sa 0917-xxx-2210. Salamat! Receipt available sa GlobeOne app.",ham,bill_payment_confirmation,tl
+"Smart: Your Signature Plan bill for Nov is PHP 1,999.00, due Nov 28. View sa Smart app or smart.com.ph. Thank you for staying with Smart!",ham,bill_notice_with_link,tl
+"Grab: Ang driver mo si Mark (ABC 1234, Toyota Vios gray) ay papunta na. Arriving in 5 mins.",ham,ride_driver_assigned,tl
+Grab: Tapos na ang ride mo mula BGC papuntang Ortigas. PHP 245.00 bayad via GCash. Salamat sa pagsakay sa Grab!,ham,ride_receipt,tl
+GrabFood: Ang order mo #GF-PH-2611-0981 from Jollibee Glorietta ay niluluto na. Susunduin na ng rider mo.,ham,food_order_status,tl
+foodpanda: Delivered na ang order mo! Enjoy your meal. Rate your rider sa app para sa feedback.,ham,food_order_delivered,tl
+BPI Online: May nag-login sa account mo gamit ang bagong device (Samsung Galaxy A54) 11/12 20:30. Hindi ikaw? Tumawag sa 889-10000.,ham,new_device_login_notice,tl
+BDO: Ang bagong debit card mo ending 8821 ay ipapadala sa registered address mo within 7-10 banking days. Activate sa BDO Online once received.,ham,card_dispatch_notice,tl
+LBC: Ang package mo 1234 5678 9056 ay nasa LBC Branch Cubao na. Pakikuha within 7 days with valid ID. lbcexpress.com,ham,parcel_ready_for_collection,tl
+"Maya: Nag-cash in si TITA LORNA ng PHP 1,000.00 sa account mo. Balance: PHP 4,201.30. Ref 2611120087.",ham,ewallet_credit_confirmation,tl
+Shopee: Na-pack na ng seller ang order mo 261112PH0099 at hinihintay na kunin ng J&T. Track sa Shopee app.,ham,order_packed,tl
+"LTO: Ang driver's license mo ay mag-eexpire sa Nov 30, 2026. Mag-renew sa LTMS portal o pinakamalapit na LTO office. -LTO",ham,govt_licence_reminder,tl
+PAGASA: Signal No. 2 nakataas sa Metro Manila dahil sa Bagyong Rosal. Mag-ingat at manatili sa loob ng bahay. -NDRRMC,ham,govt_weather_alert,tl
+DITO: Nabayaran mo na ang PHP 199 para sa Level Up 199 plan. Valid for 30 days hanggang Dec 12. Salamat!,ham,recharge_confirmation,tl
+"QRX71K2M9P Confirmed. Ksh2,500.00 sent to JANE WANJIRU 0722xxx451 on 12/11/26 at 9:14 AM. New M-PESA balance is Ksh8,340.50. Transaction cost, Ksh33.00. Amount you can transact within the day is 497,500.00.",ham,mpesa_send_confirmation,sw
+"QRX72N4L1B Confirmed. You have received Ksh1,200.00 from PETER OMONDI 0711xxx902 on 12/11/26 at 11:02 AM. New M-PESA balance is Ksh9,540.50.",ham,mpesa_receive_confirmation,sw
+"QRX73P8K2C Imethibitishwa. Ksh850.00 imelipwa kwa NAIVAS SUPERMARKET kwa tarehe 11/11/26 saa 6:45 PM. Salio jipya la M-PESA ni Ksh7,490.50. Gharama ya muamala, Ksh0.00.",ham,mpesa_paybill_confirmation,sw
+"QRX74R2J5D Confirmed. Ksh4,000.00 withdrawn from 123456 - KAMAU SHOP AGENT on 12/11/26 at 2:20 PM. New M-PESA balance is Ksh3,490.50. Transaction cost, Ksh84.00.",ham,mpesa_withdrawal_confirmation,sw
+"QRX75T6H8E Confirmed. Ksh1,000.00 sent to KPLC PREPAID for account 12345678901 on 12/11/26 at 7:30 AM. New M-PESA balance is Ksh2,490.50. Transaction cost, Ksh0.00.",ham,mpesa_paybill_confirmation,sw
+"Tigo Pesa: Umetuma TSh 50,000 kwa ASHA MOHAMED 0713xxx221. Kumbukumbu 7812.4411.2201. Salio lako ni TSh 123,400. Ada TSh 1,300.",ham,mobile_money_send_confirmation,sw
+"M-Pesa TZ: Umepokea TSh 100,000 kutoka JUMA SAID 0754xxx118 tarehe 12/11/26 saa 10:05. Salio lako jipya TSh 223,400. Muamala: 9KL2PQ4R.",ham,mobile_money_receive_confirmation,sw
+"Airtel Money: Umetuma TSh 20,000 kwa 0785xxx442 MARIAM JOHN. Salio TSh 45,600. Kumbukumbu AM261112.0091. Asante kwa kutumia Airtel Money.",ham,mobile_money_send_confirmation,sw
+"Airtel Money KE: You have received Ksh3,500.00 from GRACE AKINYI 0733xxx551. Txn ID AMK261112011. Your balance is Ksh5,120.00.",ham,mobile_money_receive_confirmation,sw
+"HaloPesa: Malipo ya TSh 15,000 kwa DAWASA Bill 0012xxxx yamefanikiwa. Salio lako TSh 30,400. Kumbukumbu HP2611120077.",ham,mobile_money_bill_payment,sw
+"KCB: Ksh15,000.00 credited to your account 1101xxxx45 from M-PESA on 12/11/26 09:40. Available balance Ksh42,310.20. Thank you for banking with KCB.",ham,bank_credit_alert,sw
+"Equity Bank: Umetoa Ksh5,000.00 kwenye ATM ya Equity Moi Avenue tarehe 11/11/26 saa 8:15 PM kutoka akaunti 0160xxxx88. Salio Ksh18,440.00.",ham,atm_withdrawal_alert,sw
+"NCBA: Your Loop account 8xxx2210 has been debited Ksh2,340.00 at CARREFOUR TWO RIVERS on 12/11/26 13:05. Balance Ksh11,660.00. Not you? Call 0711 056 444.",ham,card_transaction_alert,sw
+"KCB M-PESA: Mkopo wako wa Ksh6,000 umeidhinishwa na kutumwa kwa M-PESA yako. Lipa Ksh6,180 kabla ya 12/12/26. Asante.",ham,bank_loan_disbursed,sw
+"Equity: Mshahara wa Ksh48,000.00 kutoka SAFARICOM PLC umewekwa kwenye akaunti yako 0170xxxx21 tarehe 12/11/26. Salio Ksh63,220.75.",ham,salary_credit_notice,sw
+"CRDB: Umepokea TSh 450,000 kutoka TANESCO LTD kwenye akaunti 0152xxxxxxx tarehe 12/11/26. Salio TSh 612,300. SimBanking.",ham,salary_credit_notice,sw
+"NMB: Kadi yako ya ATM imetumika kutoa TSh 200,000 katika NMB ATM Kariakoo saa 15:22 tarehe 11/11/26. Salio TSh 318,500. Kama si wewe, piga 0800 002 002.",ham,atm_withdrawal_alert,sw
+Your M-PESA PIN change OTP is 4471. Do not share this code with anyone. Safaricom will never ask for it.,ham,otp_code,sw
+Safaricom: Nambari yako ya uthibitisho ya MySafaricom ni 882910. Usimpe mtu yeyote. Inaisha baada ya dakika 5.,ham,otp_code,sw
+KCB: Your One Time Password is 551204 for login to KCB app. Valid for 2 minutes. Usishirikishe na mtu yeyote.,ham,otp_code,sw
+Equity: 309871 ndiyo OTP yako ya Equity Mobile. Haitumiki baada ya dakika 3. Equity haitakuuliza nambari hii kamwe.,ham,otp_code,sw
+Jumia: Nambari yako ya uthibitisho ni 772018. Usishirikishe na mtu. -Jumia,ham,otp_code,sw
+Safaricom: Umenunua bando la 1GB kwa Ksh99 linaloisha 13/11/26 saa 11:59 PM. Salio la data: 1.00GB. Piga *544# kuangalia.,ham,data_bundle_purchase,sw
+"Safaricom: Salio lako la M-PESA ni Ksh2,490.50 na salio la simu ni Ksh12.30. Bando lako la data linaisha kesho. Nunua kwa *544#.",ham,balance_notice,sw
+Airtel Kenya: Umepata airtime ya Ksh100 kutoka 0733xxx901. Salio lako ni Ksh108.50. Asante kwa kuwa na Airtel.,ham,airtime_credit_notice,sw
+"Vodacom TZ: Salio lako la muda wa maongezi ni TSh 1,200. Nunua kifurushi cha Jiachie kwa *149*01# kuendelea kupiga kwa bei nafuu.",ham,low_balance_notice,sw
+Tigo TZ: Kifurushi chako cha 3GB cha wiki kinaisha leo saa 23:59. Umebakisha 420MB. Nunua kingine kwa *150*01#.,ham,data_expiry_notice,sw
+"Airtel TZ: Umenunua kifurushi cha siku 7, GB 2 + dakika 50 kwa TSh 3,000. Kinaisha 19/11/26. Asante!",ham,data_bundle_purchase,sw
+Safaricom: Kutoka 15/11/26 muda wa maongezi utakuwa unatumika kwa dakika 1 kuanzia Ksh2.50. Tazama safaricom.co.ke kwa maelezo.,ham,telco_tariff_notice,sw
+"KPLC: Token: 1234 5678 9012 3456 7890. Meter 37xxxxxx. Units 28.6 kWh. Amt Ksh1,000.00. Date 12/11/26 07:31. Thank you for paying Kenya Power.",ham,electricity_token_delivery,sw
+"Kenya Power: Bili ya mwezi Oktoba kwa akaunti 12xxxx-01 ni Ksh2,145.00. Tarehe ya mwisho 20/11/26. Lipa kupitia Paybill 888880 au kplc.co.ke",ham,electricity_bill_notice,sw
+KPLC: Kutakuwa na ukosefu wa umeme uliopangwa Kasarani na Roysambu Jumapili 16/11/26 saa 9 asubuhi hadi 5 jioni kwa matengenezo. Tunaomba radhi.,ham,power_outage_notice,sw
+"TANESCO: Token yako ya LUKU: 2233 4455 6677 8899 0011. Mita 04xxxxxxxx. Units 45.2. TSh 20,000. Asante kwa kulipa.",ham,electricity_token_delivery,sw
+"Nairobi Water: Bili yako ya maji ya Oktoba kwa akaunti 2xxxxx ni Ksh1,320. Lipa kabla ya 25/11 kupitia Paybill 444400. Asante.",ham,water_bill_notice,sw
+"Jumia: Oda yako #310022114 (Infinix Hot 50, 128GB) imetumwa na itafika kati ya 13-14 Nov. Fuatilia kwenye jumia.co.ke au app.",ham,order_shipped,sw
+"Jumia Kenya: Your package for order 310022114 is out for delivery today with rider David. Please keep Ksh0 ready, order is prepaid.",ham,parcel_out_for_delivery,sw
+Jumia: Oda yako #310019988 imefika na kupokelewa na WANJIKU. Asante kwa kununua Jumia! Tupe maoni yako kwenye app.,ham,parcel_delivered,sw
+"Sendy: Dereva wako Brian (KDB 221X, Toyota Probox) anakuja kuchukua kifurushi. Atafika baada ya dakika 10. sendy.co.ke",ham,courier_pickup_notice,sw
+Sendy: Delivery ya kifurushi chako kwa Westlands imekamilika saa 14:35. Imepokelewa na MOSES. Asante kwa kutumia Sendy.,ham,parcel_delivered,sw
+G4S Courier: Kifurushi chako GK2611120044 kiko tayari kuchukuliwa katika ofisi ya G4S Mombasa Road. Leta kitambulisho. Siku 7.,ham,parcel_ready_for_collection,sw
+Posta Kenya: Barua yako ya EMS EE123456789KE iko njiani kutoka Kisumu kwenda Nairobi GPO. Itafika 13/11.,ham,parcel_in_transit,sw
+NHIF: Malipo yako ya Ksh500 ya mwezi Novemba yamepokelewa. Nambari ya mwanachama 1xxxxxx8. Asante. nhif.or.ke,ham,govt_nhif_contribution,sw
+SHA: Mchango wako wa Social Health Authority wa mwezi Novemba umepokelewa. Kitambulisho cha SHA: CR1xxxxxxx. Asante.,ham,govt_health_contribution,sw
+Huduma Kenya: Kitambulisho chako cha kitaifa kiko tayari kuchukuliwa Huduma Centre GPO Nairobi. Leta waiting card yako. hudumakenya.go.ke,ham,govt_id_ready_notice,sw
+"Huduma Kenya: Miadi yako ya pasipoti ni 18/11/26 saa 10:00 AM, Huduma Centre Kisumu. Leta nyaraka zote asili.",ham,govt_appointment_notice,sw
+KRA: Your PIN A00xxxxxxxX income tax return for 2025 has been received. Acknowledgement No. KRA2026xxxxxxx. Thank you. itax.kra.go.ke,ham,govt_tax_notice,sw
+KRA: Tarehe ya mwisho ya kuwasilisha marejesho ya kodi ya mapato ni 30 Juni. Wasilisha mapema kupitia iTax kuepuka faini. -KRA,ham,govt_tax_reminder,sw
+NTSA: Leseni yako ya udereva itaisha 30/11/26. Ihuishe kupitia ecitizen.go.ke au ofisi ya NTSA iliyo karibu. -NTSA,ham,govt_licence_reminder,sw
+"TRA: Malipo yako ya TSh 85,000 kwa kodi ya gari T 123 ABC yamepokelewa. Kumbukumbu TRA2611120011. Asante kwa kulipa kodi. tra.go.tz",ham,govt_tax_payment_confirmation,sw
+"Safaricom: Safaricom HAITAKUPIGIA kuomba PIN yako ya M-PESA au kukuambia ubonyeze *334# ukiwa kwenye simu. Ukipigiwa, kata simu na ripoti kwa 333.",ham,telco_scam_warning,sw
+"M-PESA: Ukipokea pesa kimakosa, usizitume mwenyewe kwa nambari nyingine. Piga 234 au tumia Hakikisha kurudisha pesa salama. -Safaricom",ham,telco_scam_warning,sw
+"KCB: Je, ulifanya muamala wa Ksh28,000 kwenye kadi yako xxxx6620 kwa JUMIA tarehe 12/11 saa 02:10? Jibu NDIYO au HAPANA.",ham,fraud_alert_reply_only,sw
+"Equity Bank: Tumeona muamala usio wa kawaida wa Ksh15,500 kwenye kadi yako xxxx1193 saa 01:45. Kama si wewe, piga 0763 000 000 mara moja.",ham,fraud_alert_call_official,sw
+"Equity Bank haitakuuliza PIN, OTP au nenosiri kwa simu, SMS au WhatsApp. Usibonyeze viungo vya 'kuhuisha akaunti'. Ripoti kwa 0763 000 000.",ham,bank_scam_warning,sw
+"NCBA: Tahadhari! Walaghai wanatuma SMS za 'akaunti imefungwa'. NCBA haitumi viungo vya kuingia. Ukipata, usibonyeze. Piga 0711 056 444.",ham,bank_scam_warning,sw
+"CRDB Bank: Tahadhari ya ulaghai - CRDB haiombi PIN au namba ya kadi kwa simu. Mtu akikuomba, ni mtapeli. Piga 0800 008 000.",ham,bank_scam_warning,sw
+Communications Authority of Kenya: Ripoti SMS za ulaghai kwa kutuma ujumbe huo kwa 333 bila malipo. Tusaidie kukomesha utapeli. -CA Kenya,ham,govt_scam_awareness,sw
+DCI Kenya: Usitume pesa kwa mtu anayesema umeshinda zawadi. Hakuna anayeshinda bila kushiriki. Ripoti kwa 0800 722 203.,ham,govt_scam_awareness,sw
+"Tigo Pesa: Tigo haitakupigia kuomba PIN yako. Mtu akikuomba PIN kwa simu au SMS, ni mtapeli. Piga 100 kuripoti.",ham,telco_scam_warning,sw
+"Airtel Money TZ: Kumbuka, PIN yako ni siri yako. Hatutakuomba PIN kamwe. Mtu akiomba, kataa na ripoti kwa 100.",ham,telco_scam_warning,sw
+"QRX76W1K7F Confirmed. Ksh500.00 sent to 0722xxx118 FUNDI JOHN on 12/11/26 at 4:50 PM. New M-PESA balance is Ksh1,990.50. Transaction cost, Ksh7.00.",ham,mpesa_send_confirmation,sw
+"QRX77Y3M2G Confirmed. Ksh300.00 bought airtime for 0722xxx900 on 12/11/26 at 6:12 PM. New M-PESA balance is Ksh1,690.50.",ham,mpesa_airtime_purchase,sw
+"M-Shwari: Umeweka Ksh2,000 kwenye akaunti yako ya M-Shwari. Salio la M-Shwari ni Ksh12,400.00. Salio la M-PESA Ksh1,690.50.",ham,savings_deposit_confirmation,sw
+"Fuliza M-PESA: Umetumia Fuliza Ksh450.00. Deni lako la Fuliza ni Ksh480.00. Lipa ndani ya siku 30. Kiwango unachoweza kutumia Ksh2,520.",ham,overdraft_usage_notice,sw
+"KCB Bank: Taarifa ya kadi yako ya mkopo xxxx0912 ya Novemba iko tayari. Jumla Ksh14,230, kiwango cha chini Ksh1,423, tarehe ya mwisho 28/11/26. kcbgroup.com",ham,credit_card_statement,sw
+"Uber: Dereva wako James (KCZ 441A, Toyota Axio nyeupe) anakuja. Atafika baada ya dakika 3.",ham,ride_driver_assigned,sw
+Bolt: Safari yako kutoka CBD hadi Kilimani imekamilika. Ksh320 imelipwa kwa M-PESA. Asante kwa kutumia Bolt!,ham,ride_receipt,sw
+"Little Cab: Risiti ya safari 12/11: JKIA - Westlands, dakika 48, Ksh1,450 (M-PESA). Dereva: Samuel. Asante!",ham,ride_receipt,sw
+Glovo: Oda yako kutoka Java House Yaya inatayarishwa. Rider Kevin atakuchukulia baada ya dakika chache. Fuatilia kwenye app.,ham,food_order_status,sw
+Uber Eats: Oda yako imefika! Furahia chakula chako. Mpe dereva wako alama kwenye app.,ham,food_order_delivered,sw
+Equity: Kadi yako mpya ya debit xxxx8821 iko tayari katika tawi la Equity Thika Road. Leta kitambulisho ukichukue. Siku 30.,ham,card_ready_for_collection,sw
+"KCB: Umeingia kwenye KCB app kutoka kifaa kipya (Tecno Spark 20) tarehe 12/11 saa 20:15. Kama si wewe, piga 0711 087 000.",ham,new_device_login_notice,sw
+NHIF: Kumbuka kulipa mchango wako wa Ksh500 kabla ya tarehe 9 ya kila mwezi kuepuka faini. Lipa kupitia Paybill 200222. -NHIF,ham,govt_contribution_reminder,sw
+"Jumia: Pesa yako Ksh2,499 ya oda #310011220 imerudishwa kwenye M-PESA yako. Inaweza kuchukua saa 24 kuonekana.",ham,refund_confirmation,sw
+"Safaricom: Bando lako la Home Fibre la Novemba Ksh2,999 litakatwa kutoka M-PESA 15/11. Hakikisha una salio la kutosha.",ham,autopay_reminder,sw
+"Vodacom TZ: Bili yako ya Postpaid ya Novemba ni TSh 65,000. Tarehe ya mwisho 25/11/26. Lipa kwa M-Pesa Lipa Namba 150000 au vodacom.co.tz",ham,bill_notice_with_link,sw

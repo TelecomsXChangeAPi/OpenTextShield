@@ -1,0 +1,370 @@
+text,label,category,language
+can u lend me 50 till friday? get paid thurs night i swear,ham,friend_loan_request,en
+"sent you the rent, check your account. should be there by tmrw morning",ham,rent_sent_flatmate,en
+whats your paypal? i owe you for the uber,ham,payment_handle_ask,en
+"venmo me for the tickets whenever, no rush",ham,payment_request_casual,en
+What's your Revolut handle again? I keep sending to the wrong Sarah,ham,payment_handle_ask,en
+I'll transfer the deposit tonight once I'm home from work,ham,deposit_transfer_promise,en
+did the bank card arrive yet? they said 3-5 working days,ham,bank_card_arrival,en
+my account got locked lol had to call them for 40 min. all sorted now,ham,account_locked_anecdote,en
+pay me back for the pizza you absolute goblin,ham,pay_back_food,en
+"mum needs the password for the wifi, is it still the one on the fridge",ham,wifi_password_family,en
+whats the code for the gate again? 1-something,ham,gate_code_ask,en
+"I'll send you the link to the airbnb, tell me if the kitchen looks ok",ham,airbnb_link_share,en
+splitting the bill 4 ways is 23 each. jamie still hasnt sent his,ham,bill_split,en
+"your parcel came, left it with the neighbour at number 12",ham,parcel_neighbour,en
+"did you get the verification text? read it to me, im logging into the joint account",ham,verification_code_spouse,en
+I won £20 on the lottery haha. retiring tomorrow,ham,lottery_small_win,en
+"the IRS letter finally came. it's just confirming the refund, nothing scary",ham,tax_letter_arrived,en
+boss says invoice gets paid friday so i can do the rent then,ham,invoice_paid_friday,en
+"zelle'd you $40 for the groceries, let me know if it didn't go through",ham,payment_sent_groceries,en
+e-transfer sent for the cottage. password is the dog's name lowercase,ham,etransfer_password_hint,en
+"ok so the account number for the landlord is on the lease, second page, bottom",ham,landlord_account_details,en
+Can you check if the direct debit for the gas went out? I cant see it on my app,ham,direct_debit_check,en
+"lol i just paid for parking twice by accident. phoned the council, they're refunding",ham,double_payment_refund,en
+did u get paid yet? mine hasnt come thru and its the 28th,ham,payday_check,en
+"I'll pay you the £15 for the gig tickets on Friday when I get paid, promise x",ham,pay_back_promise,en
+"PayNow me $12 for the chicken rice lah, i paid for everyone",ham,paynow_food_split,en
+"GPay sent for the cab, 240. check and tell me",ham,gpay_cab_split,en
+"abeg send me ur account number, i wan transfer the 5k for the generator",ham,account_number_ask,en
+"howzit, sent the R300 for the braai meat. eft ref is BRAAI",ham,eft_sent_braai,en
+"Transferred 150 for the hens do, that's me paid up right?",ham,hen_do_payment,en
+monzo says you requested 8.50 for coffee? mate i bought the coffee,ham,payment_request_dispute,en
+"can you send me the sort code and account no again, i deleted the thread",ham,bank_details_ask_friend,en
+deposit's in the account. can u sign the lease and send it back tonight,ham,deposit_paid_lease,en
+"Hey it's Tom from next door, your Amazon box got dropped at ours again, come grab it anytime",ham,parcel_neighbour,en
+"the pin for the card is the year nan was born, dont write it down this time",ham,card_pin_family_hint,en
+"The gate code changed, it's 2580 now. Landlord emailed everyone",ham,gate_code_update,en
+what was the wifi again? the one that ends in 99 or the one with the exclamation mark,ham,wifi_password_ask,en
+"sent u the link for the flat on rightmove, 2 bed, 1100 pcm, bit far from the station tho",ham,flat_listing_link,en
+here's the airbnb https://airbnb.co.uk/rooms/4471028 sleeps 6 and has a hot tub!!,ham,airbnb_link_share,en
+"Just so you know, I transferred the £500 for the car into your account this morning. Dad.",ham,parent_transfer_car,en
+"need ur iban for the wedding gift pool, send when u can",ham,iban_ask_gift_pool,en
+"I'll cover dinner, you get drinks? we're probably even after that",ham,informal_split,en
+u still owe me a tenner from the quiz btw,ham,owed_money_reminder,en
+"ok the electricity is 86.40 this month so 28.80 each, i'll pay it and you two send me yours",ham,flatmate_bill_split,en
+"water bill came, 112 for the quarter. im so sick of this flat",ham,flatmate_bill_complaint,en
+landlord said rent goes up 50 from march. not thrilled,ham,rent_increase_news,en
+"Hi Mrs Patel, this is Jake from flat 3. The rent will be a day late this month, my salary lands on the 2nd. Sorry for the hassle.",ham,tenant_rent_late_notice,en
+"No problem Jake, the 2nd is fine. Thanks for letting me know.",ham,landlord_reply,en
+"can i borrow 20 for lunch, left my wallet in the car like an idiot",ham,small_loan_lunch,en
+"paid the deposit for the venue. 400 down, rest due in june",ham,venue_deposit_paid,en
+"tap in your card when you get in, the reader is by the lift. its 2.50 a day",ham,parking_payment_instructions,en
+do you have the receipt from argos? need it for the refund,ham,receipt_for_refund,en
+"the refund from asos finally came thru, 3 weeks later",ham,refund_received,en
+cashapp me $25 for ur half of the pizza and wings,ham,cashapp_food_split,en
+"my card got declined at tesco, so embarrassing. bank said it was a fraud flag on holiday spending",ham,card_declined_anecdote,en
+"ok i called the bank, they said the card was cloned somewhere, new one coming thursday",ham,card_replacement_anecdote,en
+"The verification code for the joint account just came to my phone, 719204. You're the one logging in right?",ham,verification_code_spouse,en
+"yes thats me, ta",ham,short_confirmation,en
+whats the amazon login? want to order the dog food before it runs out,ham,shared_account_login_ask,en
+its my email and the usual password with the 2 at the end,ham,shared_password_hint,en
+put the gym membership on your card this month? mine is maxed til payday,ham,card_maxed_favour,en
+Can you Venmo Mia for the bridesmaid dresses? She fronted $600 for all of us.,ham,venmo_bridesmaid_split,en
+"I'll pay the vet bill now and you can give me half whenever, dont stress",ham,vet_bill_split,en
+lol the bank sent me a letter about my overdraft. i KNOW i have an overdraft,ham,overdraft_letter_joke,en
+the mortgage advisor wants 3 months of bank statements and our last payslips,ham,mortgage_paperwork,en
+just got my first paycheck!! taking you out for dinner saturday,ham,first_paycheck,en
+coins in the jar hit $84 so the kids are splitting it for the fair,ham,coin_jar_family,en
+"dad can u top up my phone, it says i have 0 credit and i need to call about the job",ham,phone_topup_ask,en
+topped up 10 quid. call them back,ham,phone_topup_done,en
+£5 says Arsenal lose tonight,ham,friendly_bet,en
+ur on. transfer when they win,ham,friendly_bet_reply,en
+"hey, the ticket for the gig is 45. send it to me when you can and I'll book both",ham,ticket_money_ask,en
+"the hotel wants a 100 holding deposit on the card at check in, just a heads up",ham,hotel_deposit_heads_up,en
+how much do I owe you for the groceries? the receipt was like 90?,ham,grocery_split_ask,en
+"nah 72, send me 36",ham,grocery_split_reply,en
+got the tax rebate! 340 quid. new boots incoming,ham,tax_rebate_received,en
+"ok the lottery syndicate won 18 pounds between 12 of us lmao, 1.50 each",ham,lottery_syndicate_joke,en
+"Mortgage payment came out today, we have about 600 left till the 28th so go easy on deliveroo",ham,household_budget,en
+sold the old bike for 80 cash. beers on me,ham,sold_item_cash,en
+still available? can do 40 cash if i pick up today,ham,marketplace_offer,en
+"Yeah still here. 40 is fine, I'm in Leyton, free after 6",ham,marketplace_seller_reply,en
+is the sofa still for sale? would you take 60 and I collect saturday,ham,marketplace_offer_sofa,en
+"sorry its gone, someone picked it up this morning",ham,marketplace_sold,en
+"the pram is yours if you want it, no charge, just come get it before the weekend",ham,free_item_offer,en
+"hi, saw your ad for the desk. is the price firm or any wiggle room?",ham,marketplace_haggle,en
+"ill do 25 for the lamp, its got a chip on the base",ham,marketplace_counter_offer,en
+bank transfer or cash when you pick up the table? either works,ham,marketplace_payment_method,en
+"cash is easier, see you at 2",ham,marketplace_cash_confirm,en
+"fixed the paypal thing, it was just an old card expiry. you should get the 30 now",ham,paypal_fixed,en
+"my salary finally landed. owed you 120, sending now",ham,debt_repaid,en
+"received, thanks! xx",ham,payment_received_ack,en
+"Hey Marcus, your invoice for October is approved, finance runs payments on Fridays so expect it by the 14th.",ham,invoice_approved_colleague,en
+"Perfect, thanks Dana.",ham,short_thanks,en
+Can you send me the PO number for the printer order? Accounts are asking.,ham,po_number_ask,en
+"I'll expense the taxi, keep the receipt tho",ham,expense_taxi,en
+hr said the bonus is in the march payslip not feb,ham,bonus_timing,en
+Dentist said the crown is 450 with the NHS and about 900 private. Going NHS obviously.,ham,dental_cost_chat,en
+"the GP surgery texted the appt confirmation to your phone not mine, can you forward it",ham,forward_appointment_text,en
+Dr Okafor moved the appointment to Thursday 10:40. I'll pick up grandma at 9:45.,ham,doctor_appointment_family,en
+"Pharmacy says the prescription is ready, 9.90 for the two items",ham,prescription_ready,en
+"the kids school trip is £28, due by friday, link's on the parentpay thing",ham,school_trip_payment,en
+"sent you the link for the school portal, the login is your email",ham,school_portal_link,en
+swimming club fees are 60 a term now. up from 45. unreal,ham,club_fees_complaint,en
+can you pick up the kids at 3:30? stuck in a meeting that wont end,ham,kids_pickup_ask,en
+yep on it. want me to grab milk too,ham,kids_pickup_reply,en
+"running late, 10 mins, order me a flat white",ham,running_late,en
+"cant tonight, got the parents evening thing. tmrw?",ham,dinner_decline,en
+"Just left the office, home in 40. Do we need anything?",ham,home_eta_shopping,en
+wine. and loo roll. not in that order,ham,shopping_list_reply,en
+whats the plan for saturday? ive got the car if we need it,ham,weekend_plans,en
+"we're meeting at Lena's at 7, bring a dish, she's doing the mains",ham,group_dinner_logistics,en
+"guys the booking is under my name, table for 8 at 8, dont be late they hold it 15 mins",ham,group_booking_logistics,en
+who's driving back? i'm having a drink so not me,ham,group_driver_logistics,en
+"can everyone send me 15 for ellie's present by thursday, I'll get the voucher",ham,group_gift_collection,en
+"cant make it sorry, kid's got a temperature",ham,cancel_plans_sick_kid,en
+"ok so train is the 9:12 from Paddington, I've got the tickets on my phone, meet at the barrier",ham,train_logistics,en
+"shared the google doc for the trip, add your flight times in",ham,shared_doc_trip,en
+"here is the link to the shared album from the weekend, add yours https://photos.app.goo.gl/kJ8v2mPq",ham,shared_album_link,en
+"Mum, I've put the Christmas list on a shared note, link is in the family WhatsApp.",ham,shared_list_link,en
+"the airbnb host sent the checkin instructions, lockbox code is 4471, box is left of the door",ham,lockbox_code_share,en
+"can u send me the zoom link for tonight's quiz, cant find the email",ham,zoom_link_ask,en
+linkedin wants me to verify my email again. third time this month,ham,email_verification_complaint,en
+my netflix got signed out on every device. did you change the password?,ham,shared_streaming_password,en
+"yeah sorry, someone in Brazil was watching on our account lol. new one is in the shared notes",ham,shared_streaming_password_reply,en
+can you reset the router? wifi is dead and im on a call,ham,router_reset_ask,en
+"spotify family invite sent to your email, accept it so you stop paying for your own",ham,family_plan_invite,en
+"ok i did the online banking thing for grandad, his new login is in the blue folder, DO NOT lose it",ham,elderly_banking_help,en
+"the council tax came out twice this month, I've phoned, they're sending the extra back in 10 days",ham,council_tax_double_charge,en
+ugh my card expired and i didnt notice so the phone bill bounced. paid it manually now,ham,card_expired_bill_bounce,en
+The EE bill is 44 this month? Did you go over the data again?,ham,phone_bill_question,en
+"no that was the roaming in Spain, told you to turn it off",ham,phone_bill_reply,en
+"I set up the standing order for your pocket money, £10 every Saturday, dont spend it all on robux",ham,pocket_money_standing_order,en
+"Hello son, your mother and I have transferred some money for your birthday. Buy something sensible. Love Dad.",ham,parent_birthday_transfer,en
+DAD. thank you!! i will buy something sensible (beer),ham,birthday_transfer_reply,en
+nan says the cheque is in the post. an actual cheque. in 2025.,ham,cheque_in_post_joke,en
+the lad from the garage says the clutch is 380 plus VAT. ouch,ham,car_repair_cost,en
+do you know the bins password for the flat app? i need to report the missed collection,ham,app_password_ask,en
+"the gym froze my membership instead of cancelling, so they took another 32. on the phone to them now",ham,gym_charge_dispute,en
+my bank app wants face id now and it doesnt like my face,ham,bank_app_joke,en
+"oh my student loan statement came. i'll be paying it off till im 60, nice",ham,student_loan_statement,en
+"got the job!! 42k, start in march",ham,job_offer_news,en
+Congratulations!!! Dinner on you then,ham,job_offer_reply,en
+"ok flights are 189 each if we book tonight, 230 tomorrow. im booking. send me 189 when u can",ham,flight_booking_split,en
+"booked. ref is QX7T9R, check your email for the confirmation",ham,booking_reference_share,en
+"hostel wants payment upfront, I'll put it on my card and we can sort it out after",ham,hostel_payment_front,en
+"Grandma, the code for the microwave isn't a code, you just press start. Love you.",ham,grandma_tech_help,en
+"we got the deposit back from the old flat, all 1200, minus 40 for the carpet thing",ham,deposit_returned,en
+"The pension letter came, you need to sign the form on page 3 and post it back by the 30th.",ham,pension_letter_family,en
+hey can you lend me your car friday? will fill the tank,ham,borrow_car,en
+my passport renewal is 88 quid now?? when did that happen,ham,passport_fee_complaint,en
+"the DVLA letter came, car tax is due end of month, 190 for the year",ham,car_tax_letter,en
+"ill pay the rent this month and you pay next, saves two transfers",ham,rent_rota_couple,en
+ok mum i sent 200 to your account for the vet. tell me if it doesnt show by tonight,ham,child_sends_parent_money,en
+"i see it love, thank you. Bruno says woof.",ham,parent_payment_ack,en
+"we r 30 short on the holiday kitty, can everyone chuck in a tenner",ham,holiday_kitty,en
+"the babysitter is 12 an hour now so 48 for tonight, have you got cash?",ham,babysitter_payment,en
+"nah, I'll bank transfer her, she sent her details last time",ham,babysitter_transfer,en
+"sent 50 for the kids presents, let me know if more needed",ham,gift_money_sent,en
+"my phone contract ends in may, think i'll go sim only, 12 a month vs 48 lol",ham,phone_contract_chat,en
+put the broadband in your name this time? I had it last year and the credit check thing was a pain,ham,broadband_account_name,en
+"the agent needs proof of address and a payslip for the referencing, can you send yours to her today",ham,tenant_referencing_docs,en
+"hi, it's your landlord Dave. Plumber coming Tuesday between 9 and 12 for the boiler, can someone be in?",ham,landlord_repair_notice,en
+Yes I'll be in. Also the hallway light's out again.,ham,tenant_reply_repair,en
+"ok the dishwasher repair was 95, I've taken it off this month's rent as we agreed",ham,tenant_rent_deduction,en
+"Fine by me, thanks for sorting it so quickly.",ham,landlord_ack,en
+"Hi Priya, the inspection is on the 3rd at 11. Nothing to prepare, just a routine look round.",ham,landlord_inspection_notice,en
+"mate the parking fine was 60 if paid in 14 days, so i paid it. you owe me half since it was your idea to park there",ham,parking_fine_split,en
+did the cheque clear yet? grandad wants to know,ham,cheque_clear_ask,en
+"I'm at the ATM, how much cash do we need for the market tomorrow?",ham,atm_cash_ask,en
+like 60? the veg guy only takes cash,ham,atm_cash_reply,en
+"can you check the joint account, did the car insurance go out, it's usually the 15th",ham,joint_account_check,en
+"yeah went out 14th, 68.20",ham,joint_account_reply,en
+"I need the account login for the electricity to submit the meter reading, is it under your email?",ham,utility_login_ask,en
+"yep, password is in the manager, search octopus",ham,utility_login_reply,en
+"insurance quote came back at 1,100 for the year. your no claims is worth more than mine so lets put it in your name",ham,car_insurance_decision,en
+Vodafone said the upgrade is free but the plan goes up 5 a month. Told them I'd think about it.,ham,phone_upgrade_chat,en
+"the wedding gift list link is in the invite, we did the 40 toaster, dont double up",ham,gift_list_link,en
+did you ever get the £10 back from the vending machine lol,ham,vending_refund_joke,en
+pay at the bar or tab? i'll open a tab on my card and we split at the end,ham,bar_tab_split,en
+"ok venmo request sent to everyone, 23 each, title is pizza night, dont ignore it like last time",ham,venmo_group_request,en
+"i put 20 on the oyster for you, should be fine till friday",ham,travel_card_topup,en
+"the car park machine only takes coins, have you got 3 pound coins?",ham,coins_for_parking,en
+"transferring 2k to the savings today like we said, leave the rest for bills",ham,couple_savings_transfer,en
+"ok done. isa is at 11,400 now. slowly slowly",ham,savings_update,en
+"the kids savings account needs a signature from both of us, forms on the table",ham,kids_savings_forms,en
+"ebay buyer paid, posting the jacket tomorrow. 35 quid for something i never wore",ham,ebay_sale_chat,en
+"I sold the ps4 to a guy at work for 90, he's paying friday",ham,sold_console_colleague,en
+my aunt sent 100 for my birthday via western union which i now have to go collect in person lol,ham,relative_gift_collect,en
+"my phone bill has a 9.99 charge for something called 'premium content', ringing them tomorrow",ham,phone_bill_mystery_charge,en
+"the direct debit for the kids' piano is 72 now, teacher's put her rates up",ham,lesson_fee_increase,en
+Have you paid the TV licence? Letter came again.,ham,tv_licence_check,en
+"paid it in april, the letter is just them being them",ham,tv_licence_reply,en
+"can you text me the postcode for the airbnb, sat nav wants it",ham,postcode_ask,en
+SW11 2PX. parking is round the back apparently,ham,postcode_reply,en
+"share your location pls, cant find you in this car park",ham,share_location_ask,en
+"The link for the school photos is up, order code on the slip in his bag, deadline is friday.",ham,school_photos_order,en
+"Got the vouchers from your work scheme, 50 at Sainsburys, want to split?",ham,work_vouchers_split,en
+"bro can u spot me 10 for lunch, ill pay u back fr",ham,teen_loan_ask,en
+ngl i forgot ur venmo again,ham,teen_payment_handle,en
+"bet, sending now",ham,teen_payment_confirm,en
+"mate chuck me 20 for the servo snacks, ill transfer it back this arvo",ham,aus_small_loan,en
+"sweet as, the rent's in. flat meeting sunday?",ham,nz_rent_confirm,en
+"e-transfer for the hockey fees sent, auto deposit should grab it",ham,ca_etransfer_fees,en
+"grand, the Revolut went through. pint later?",ham,ie_revolut_confirm,en
+"paytm done for the cab bro, 180. your turn next time",ham,in_paytm_cab,en
+"I don send the money, check ur alert",ham,ng_transfer_sent,en
+"sent the R500 for the car service, eish it adds up this month",ham,za_transfer_sent,en
+"paylah 8 dollars for the bubble tea ok, no rush",ham,sg_paylah_split,en
+"Dear Margaret, I have posted the cheque for the choir subscription this morning. Kind regards, Harold.",ham,formal_cheque_posted,en
+"Hi Aunt Rose, the money for the headstone has been collected, we're at 1,800 of the 2,000. Will update after the weekend.",ham,family_collection_update,en
+fuel is 1.52 at the Shell on Barton Road if you need to fill up,ham,fuel_price_tip,en
+Our electricity provider has moved us to a new tariff from the 1st. I've checked and it's about 4 pounds a month more. Nothing to do.,ham,tariff_change_household,en
+"Can you text me grandpa's medicare number, I'm filling out the form at the clinic",ham,family_form_details,en
+"its on the card in his wallet, the green one. I'll send a photo",ham,family_form_reply,en
+"the link you sent for the concert tickets doesnt work on my phone, can you just book 2 and ill pay you",ham,ticket_link_broken,en
+"got the 2fa code on my phone for your work email again, 583 019, you need to change the number on it",ham,two_factor_wrong_phone,en
+"ok thanks, I'll fix it monday, IT keep saying they'll do it",ham,two_factor_reply,en
+"the bank rang about the big transfer for the house, I confirmed it was us. they were lovely actually",ham,bank_call_confirmed,en
+"Hi love, Barclays sent a new card for you to this address, shall I post it or will you collect at Sunday lunch?",ham,card_arrived_parents,en
+"collect sunday, dont post it. thanks mum",ham,card_collect_reply,en
+has the deposit for the nursery gone? they said places are tight,ham,nursery_deposit_check,en
+"ok the quote for the kitchen is 8,400 which is less than i feared. shall we say yes",ham,home_renovation_quote,en
+"paid the window cleaner, 15, he said he'll come monthly now",ham,window_cleaner_paid,en
+"we're 2 pounds short for the parking, have you got any change",ham,short_change_parking,en
+"the dog walker wants paying weekly instead of monthly, 60 a week, fine by me if fine by you",ham,dog_walker_payment,en
+"chipped in 30 for the retirement gift for Sue, card's going round on thursday",ham,office_collection,en
+"interest rate on the savings dropped to 3.1, might move it, your dad's bank is doing 4",ham,savings_rate_chat,en
+"your contact lens subscription took 24 again, I thought you cancelled it?",ham,subscription_charge_question,en
+"the cinema tickets were 11 each so 22 for the pair, ill grab popcorn if you do the uber",ham,cinema_split,en
+"hey, left the money for the cleaner on the counter, 50 in the envelope",ham,cleaner_cash_left,en
+"the kids' bus pass renewal is online now, link is on the council site under schools, I did Ava's in 5 mins",ham,bus_pass_renewal,en
+"paid the plumber 180 in the end, he knocked off the callout fee cos it was quick",ham,plumber_paid,en
+"ok dad, I've set your new phone up, your bank app is on the home screen, the pin is the same as your card",ham,parent_phone_setup,en
+Thank you. Where is the button for the camera?,ham,parent_phone_question,en
+"I need 4 pounds for the sponsored walk form, mum, dont forget",ham,kid_asks_sponsor_money,en
+dinner tonight? x,ham,dinner_short,en
+running late sorry,ham,running_late_short,en
+"can you pick up the kids from football, I'm stuck on the M25",ham,kids_pickup_traffic,en
+"Dad is at the hospital for his check up, nothing to worry about, will call after",ham,family_hospital_update,en
+Happy birthday!!! 30 looks good on you x,ham,birthday_wish,en
+HAPPY BIRTHDAY MATE. pints saturday?,ham,birthday_wish_mate,en
+Happy birthday Grandma! Hope the card got there in time. Love from all of us.,ham,birthday_wish_grandma,en
+"So sorry to hear about your dad. Thinking of you all. Let me know if you need anything, anything at all.",ham,condolence,en
+I'm so sorry for your loss. He was a lovely man. Send me the funeral details and I'll be there.,ham,condolence_funeral,en
+"thank you for coming yesterday, it meant a lot to mum",ham,condolence_thanks,en
+ok what did the doctor say,ham,doctor_result_ask,en
+"blood pressure's a bit high, back in 3 months. nothing dramatic",ham,doctor_result_reply,en
+"appointment is wed 2:15 with the physio, can you drive me, cant after the injection",ham,physio_appointment_lift,en
+"reminder to book your flu jab, the surgery said walk ins on saturday",ham,flu_jab_reminder_family,en
+"the dentist can do 4pm tuesday or 9am friday, which",ham,dentist_slot_choice,en
+"in the queue at the post office, 20 mins, start without me",ham,post_office_queue,en
+did you feed the cat,ham,feed_the_cat,en
+"I've put the chicken in at 180, take it out at 6:40 if I'm not back",ham,cooking_instructions,en
+the plumber never showed. again.,ham,plumber_no_show,en
+Can we talk later? Not over text.,ham,argument_defer,en
+fine. but i still think you were out of order,ham,argument_sulk,en
+I'm not doing this again. You said you'd be home by 8.,ham,argument_late_home,en
+ok i'm sorry. I should have texted. I'll make it up to you,ham,argument_apology,en
+You never listen. I told you about the party TWICE.,ham,argument_party,en
+look I don't want to fight. come home and we'll sort it out,ham,argument_deescalate,en
+why did my joke about the lift have so many levels,ham,pun_lift,en
+I told my suitcase there'd be no holiday this year. now im dealing with emotional baggage,ham,pun_suitcase,en
+what do u call a fish with no eyes. a fsh,ham,pun_fish,en
+ur jokes are getting worse and I love it,ham,joke_reply,en
+mate i just walked into a glass door in front of the whole office,ham,embarrassing_story,en
+lmaooo pls tell me someone filmed it,ham,embarrassing_story_reply,en
+"grandma's on the 2:30 from Leeds, can someone meet her at the station",ham,station_pickup_family,en
+"parents evening is 5:40, dont be late this time, Mr Hughes is terrifying",ham,parents_evening,en
+"mum can i go to Josh's after school, his mum says its fine",ham,kid_permission_ask,en
+ok but home by 7 and homework first,ham,parent_permission_reply,en
+"Can you turn the oven off, I think I left it on. Please check now",ham,oven_check_ask,en
+checked. it was off. you did this last week too,ham,oven_check_reply,en
+"hey stranger, how was Lisbon?",ham,catch_up_opener,en
+amazing. too many pasteis de nata. you free thursday?,ham,catch_up_reply,en
+thursday works. that thai place?,ham,date_plan_place,en
+ok I had a really nice time last night. just saying,ham,post_date_message,en
+same. your dog clearly runs the household though,ham,post_date_reply,en
+"sorry, think I texted the wrong person",ham,wrong_number_apology,en
+"no worries, happens to the best of us",ham,wrong_number_reply,en
+"Hello, wrong number? I'm not Carla.",ham,wrong_number_query,en
+"flight landed, going thru passport control, see you at arrivals in 30",ham,flight_landed,en
+"gate changed to B22, run",ham,gate_change_travel,en
+"the baby's here!! 7lb 2, both doing great, name tbc",ham,baby_announcement,en
+we got engaged last night!!! ring is perfect,ham,engagement_news,en
+"exam results are out at 8, i feel sick",ham,exam_nerves,en
+got into the uni!!! birmingham!!!,ham,uni_acceptance,en
+"the car's making a weird noise again, like a clunk when I turn left",ham,car_noise,en
+"my train is cancelled, next one is in 50 mins. don't wait for me for dinner",ham,train_cancelled,en
+"the match is on at 8, mine or yours",ham,match_night_plan,en
+"Good morning. Just checking you're alright, you seemed down yesterday. Here if you want to talk. Mum x",ham,parent_checkin,en
+"im ok mum, just tired. will call tonight x",ham,parent_checkin_reply,en
+"Brb, dog decided to eat a sock",ham,dog_sock,en
+"the wedding is 14th june, Oxfordshire, save the date! proper invite to follow",ham,save_the_date,en
+cant wait!! is it a hat sort of thing,ham,save_the_date_reply,en
+"I'm at the pub, you coming or what",ham,pub_invite,en
+"Hi Mr Kowalski, it's Anita from the office. Your 2pm has been moved to 3pm tomorrow. Let me know if that doesn't work.",ham,office_reschedule,en
+"Team, standup moved to 10:15 tomorrow, room 4B. Bring your sprint notes.",ham,team_standup_notice,en
+did anyone else's laptop reboot in the middle of the demo or just mine,ham,colleague_laptop_joke,en
+just yours lol. the IT guy is coming round at 2,ham,colleague_it_reply,en
+can you cover my shift saturday? i'll do your sunday,ham,shift_swap_ask,en
+yeah go on. you owe me a coffee,ham,shift_swap_reply,en
+boss wants the report by eod. I'm about half done. you?,ham,colleague_deadline,en
+same. shall we just merge what we've got at 4,ham,colleague_deadline_reply,en
+"left my keys at your place last night, can you drop them at the shop",ham,forgot_keys,en
+"found them, under the sofa. drop them at 1",ham,forgot_keys_reply,en
+"Doctor says it's just a sprain. Ice, rest and no football for two weeks. Devastated.",ham,injury_update,en
+"mum your mri is thursday at 8am, dont eat after midnight, dad's driving you",ham,mri_appointment_family,en
+"picking up the takeaway, want your usual?",ham,takeaway_order,en
+DONT FORGET THE BIN. it's recycling week.,ham,bin_reminder,en
+the neighbours are having a party again. its a tuesday.,ham,neighbour_party_complaint,en
+its 11pm and someone is doing karaoke to ABBA upstairs,ham,neighbour_karaoke,en
+nice to meet you earlier! Dan from the climbing wall. Fancy a coffee this week?,ham,new_acquaintance_coffee,en
+Tell your mother the roast was lovely and she's not allowed to say I said that,ham,inlaw_banter,en
+"so about last night, I think we both said things. can we start over",ham,argument_reconcile,en
+yeah. I'm sorry too. dinner on me,ham,argument_reconcile_reply,en
+are we still fighting or can i come over,ham,argument_check,en
+"I've got the kids this weekend so Saturday's out, Sunday afternoon?",ham,coparent_schedule,en
+Sunday afternoon works. The park if it's dry?,ham,coparent_schedule_reply,en
+"school just rang, Ella's got a temperature, can you get her? I'm 40 mins away",ham,sick_child_pickup,en
+"nan fell this morning, she's ok, bruised hip, they're keeping her in overnight to be safe",ham,grandparent_fall_update,en
+"ward 7, Royal Infirmary. she wants her glasses and the crossword book",ham,hospital_visit_reply,en
+Lol remember when you fell asleep at the cinema and snored through the ending,ham,nostalgia_banter,en
+guys the group chat name is NOT changing to 'the lads' again,ham,group_chat_name,en
+Please stop adding me to the family quiz chat Dad,ham,family_group_chat,en
+Can you send me the recipe for that lentil thing? Finally cooking for someone.,ham,recipe_request,en
+the roadworks on Mill Lane are back so leave 10 mins early for school tomorrow,ham,roadworks_heads_up,en
+"rain is biblical here, bring an umbrella",ham,weather_heads_up,en
+"dinner's at 7, mum's doing the lasagne, DONT be late she's been cooking since 3",ham,family_dinner_time,en
+my boss just said 'lets circle back' four times in one meeting. four.,ham,work_jargon_joke,en
+"At the vet with Biscuit, he ate something in the park, they're keeping him for a scan",ham,pet_vet_update,en
+he's fine!! it was a sock. of course it was a sock.,ham,pet_vet_resolved,en
+Thinking of you today. First Christmas without her won't be easy. Call anytime.,ham,grief_support,en
+Thank you. It's harder than I thought. Mum's putting on a brave face.,ham,grief_support_reply,en
+lol my autocorrect just changed 'meeting' to 'melting' in an email to the CEO,ham,autocorrect_joke,en
+job interview went ok i think?? they said they'd let me know by friday,ham,interview_update,en
+"Hey hon, your dad and I have booked the Lakes for your anniversary, dont tell Chris. Mum.",ham,parent_surprise_gift,en
+"ok it's on. no backing out. 5k saturday morning, 8am, park gates",ham,running_plan,en
+"snow day!! school closed, kids are feral already",ham,snow_day,en
+"I'm going to the shops, need anything",ham,shops_offer,en
+"Thanks for the lift this morning, saved my life",ham,thanks_for_lift,en
+the netflix show you told me about is so good. 3 episodes in. send more recs,ham,tv_recommendation,en
+"watch the one with the lighthouse next, you'll hate me",ham,tv_recommendation_reply,en
+"my mum's asking if you're coming to Sunday lunch, she's made too much as usual",ham,sunday_lunch_invite,en
+obviously yes. tell her I'll bring pudding,ham,sunday_lunch_reply,en
+"landed in Dubai, 40 degrees, already melting, miss you xx",ham,travel_arrival_partner,en
+You're going to hear this from Liam first but yes I did crash the trolley into the display. The staff laughed. I'm fine.,ham,embarrassing_confession,en
+dad please stop texting in full sentences with punctuation it's scary,ham,dad_texting_joke,en
+"Good evening Mrs Brennan, this is Peter from number 9. Your recycling bin has blown into our drive, I've put it back by your gate.",ham,neighbour_formal_note,en
+"we need to talk about your brother. not now, when you get home",ham,family_serious_talk,en
+"ok now im worried, is he ok",ham,family_serious_reply,en
+"ok i got the smaller tent, the big one wouldnt fit in the car. we'll be cosy",ham,camping_logistics,en
+"my phone's on 3%, if I go quiet thats why, meet at the clock tower at 6",ham,low_battery_meetup,en
+I'll be the one in the ridiculous yellow coat,ham,meetup_identify,en
+"can u send me that photo of us from nye, the one where were both mid-blink",ham,photo_request,en
+"hey its me on jess's phone, mine's charging at hers, pick us up at 10 instead of 9?",ham,friends_phone_borrow,en
+Reminder that I love you and also that the dishwasher doesnt empty itself,ham,couple_banter_chores,en
+"ok im in a&e with the little one, she fell off the slide, probably nothing but they want an xray",ham,ae_child_update,en
+"congratulations on the new job Sarah, well deserved. Drinks on Friday to celebrate?",ham,colleague_congrats,en
+"The minutes from this morning are in the shared folder, let me know if I've missed anything you said.",ham,colleague_minutes,en
+happy anniversary you two!! 10 years and he still cant load a dishwasher,ham,anniversary_wish,en
+"grandad wants to know how to send a photo on whatsapp, I've explained twice, your turn",ham,grandad_tech_help,en
+the baby slept 6 hours straight. SIX. we are new people,ham,new_parent_update,en
+"Dinner was lovely, thank you both. Safe drive home and text when you're in.",ham,dinner_thanks_hosts,en
+"home safe, thanks again, the pie was unreal",ham,home_safe_text,en
+am i the only one who thinks the new manager looks like a sad owl,ham,colleague_gossip,en
+I know I said I'd come but I just can't face people tonight. Sorry. Rain check?,ham,cancel_plans_honest,en
+of course. want me to bring food round instead,ham,cancel_plans_support,en
+"the boiler's making the noise again, can you ring the landlord, he never answers me",ham,flatmate_boiler,en
+"just had the worst haircut of my life, please do not comment at dinner",ham,bad_haircut,en

@@ -64,6 +64,6 @@ Ask these questions in order and stop at the first "yes".
 - **Templates:** when one message pattern repeats with only names, amounts, codes, or links changed, all copies get the same label.
 - **When unsure between two labels,** leave the row out of training and add it to the review list. Don't guess.
 
-## How TypeSafe fits in
+## How reviews work
 
-TypeSafe is only a reviewer. It flags rows whose label looks wrong, and a person decides using this guide. Its questions must use the definitions above: its earlier audit used a stricter phishing definition, so some of its spam→phishing flags (like "FREE iPhone") don't apply under decision 1. No client messages or audit logs are ever sent to it, and the shipped product never calls it.
+Labels are decided in-house. `evals/build_train_set.py` applies the four approved decisions by pattern, flags rows where the production model confidently disagrees with the stored label, and groups the flags by template. A reviewer decides each template cluster against this guide and records it in `dataset/curated/label_review_<version>.csv`; undecided clusters stay out of training. Generated rows are labeled by their author's intent and then re-graded blind against this guide; rows the two passes disagree on are dropped. No client messages or audit logs are ever used for any of this, and the shipped product never calls an external service.
