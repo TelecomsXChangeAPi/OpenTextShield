@@ -39,6 +39,7 @@ Later benchmarks (GPU dynamic batching, comparison with gpt-oss) are in [`benchm
 Release documentation kept for the record:
 
 - **[v2.7/](releases/v2.7/)** - Release notes, deployment guide, checklist and completion summary for v2.7
+- v2.12.0 (model 2.12) release notes are in [`evals/results/RELEASE_NOTES_v2.12.0.md`](../evals/results/RELEASE_NOTES_v2.12.0.md)
 - v2.11.0 release notes are in [`evals/results/RELEASE_NOTES_v2.11.0.md`](../evals/results/RELEASE_NOTES_v2.11.0.md)
 
 ## `reports/`

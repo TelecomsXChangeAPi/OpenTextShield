@@ -143,3 +143,10 @@ jobs,저희 회사 고객 결제금을 대신 수령 후 송금해주실 분 모
 jobs,Ищем надёжного человека для приёма платежей от наших клиентов на карту с последующим переводом. 10% ваши. Опыт не нужен. Пишите в Telegram @fin_agent_ru,phishing,spam,disagreement,ru
 jobs,"Earn $2,000 a week from home. No experience needed, start today. Info: wfh-income-now.com",spam,spam,eval_overlap_near_duplicate,en
 jobs,Your Glassdoor verification code is 905 118,ham,ham,eval_overlap_near_duplicate,en
+shortlink_services_en,"Apple ID: your Apple ID was used to sign in on an iPhone 15 near Manila. If not you, lock account tinyurl.com/aid-lock",phishing,phishing,eval_overlap_near_duplicate,en
+callback_kyc_utility,"Ma'am/Sir, may parcel po kayo sa J&T pero kulang ang address. Paki-tawagan ang rider 09064472518.",phishing,unsure,disagreement,tl
+ham_links,CVS Pharmacy: Your prescription ending in 4417 is ready for pickup at 220 Main St. Hours & details: cvs.com/rx,ham,ham,eval_overlap_near_duplicate,en
+ham_links,UPS: Your package 1Z84A2W90347718823 is out for delivery today between 1:15 and 5:15 PM. ups.com/track,ham,ham,eval_overlap_near_duplicate,en
+ham_links,Amazon: Your package with Kindle Paperwhite was delivered to your front door. amazon.com/your-orders,ham,ham,eval_overlap_near_duplicate,en
+prize_callback,Promoção Claro Prêmios: seu chip foi contemplado com R$ 10.000. Responda SIM para 49001 e receba seu prêmio ainda hoje.,phishing,spam,disagreement,pt
+prize_callback,"Enter our £10,000 quiz! Q1: What is the capital of France? Txt ur answer to 83838 for a chance to win. £1.50 per question",spam,,ungraded,en

@@ -1,15 +1,15 @@
 {
   "version": "2.12",
-  "source_rows": 176933,
-  "train_rows": 160050,
+  "source_rows": 179348,
+  "train_rows": 162297,
   "heldout_rows": 6538,
   "train_labels": {
-    "spam": 26419,
-    "ham": 65791,
-    "phishing": 67840
+    "spam": 26241,
+    "ham": 66088,
+    "phishing": 69968
   },
   "train_sources": {
-    "corpus": 123319,
+    "corpus": 123151,
     "legit_notices": 13863,
     "notice_twins": 9947,
     "archetypes": 3514,
@@ -33,14 +33,22 @@
     "gen_legit_ar_tr_ru_pl_el": 344,
     "gen_government_toll": 343,
     "gen_fintech_crypto": 340,
+    "gen_shortlink_services_multi": 340,
     "gen_codes_alerts": 332,
     "gen_prize_premium": 329,
+    "gen_shortlink_bank_es_nl": 320,
+    "gen_shortlink_services_en": 301,
+    "gen_shortlink_other_langs": 300,
+    "gen_callback_kyc_utility": 299,
+    "gen_ham_links": 297,
+    "gen_low_key_notices": 280,
+    "gen_prize_callback": 278,
     "probe": 27
   },
-  "label_changes": 27430,
+  "label_changes": 27667,
   "change_flows": {
-    "spam->phishing": 16727,
-    "spam->remove": 4648,
+    "spam->phishing": 16796,
+    "spam->remove": 4816,
     "phishing->spam": 2536,
     "phishing->ham": 1963,
     "spam->ham": 995,
@@ -49,14 +57,14 @@
     "phishing->remove": 54,
     "ham->phishing": 43
   },
-  "review_decisions": 12052,
+  "review_decisions": 12672,
   "flagged_clusters": 12052,
   "counts": {
     "excluded_exact_or_shape": 2270,
     "excluded_near_duplicate": 3279,
-    "kept": 147292,
-    "removed": 4796,
-    "review": 12659,
+    "kept": 149084,
+    "removed": 4964,
+    "review": 13282,
     "rule": 16982
   }
 }

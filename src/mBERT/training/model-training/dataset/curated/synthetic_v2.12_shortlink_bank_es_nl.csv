@@ -1,0 +1,321 @@
+text,label,category,language
+BBVA: su tarjeta terminada en 4417 caduca el 30/11. Solicite la nueva sin coste en https://bit.ly/3xKtarj9,phishing,card_expiry_replacement,es
+"Santander: se ha detectado un acceso desde un dispositivo no reconocido (Android, Valencia). Si no ha sido usted, verifique en cutt.ly/Sn8wQa2",phishing,bank_unrecognised_device,es
+CaixaBankNow: A partir del 18/11 no podra utilizar su tarjeta. Active el nuevo sistema de seguridad web:panel-clientes.top/now,phishing,bank_security_activation,es
+Banco Sabadell informa: tiene un mensaje seguro pendiente de lectura en su buzon. Acceda aqui tinyurl.com/bs-buzon-4471,phishing,bank_secure_message,es
+"Bizum: has recibido 185,00 EUR de Marta G. Para aceptar el ingreso confirma tu cuenta: rb.gy/k2m9zt",phishing,wallet_incoming_payment,es
+"AVISO ING: cargo pendiente de 849,90 EUR en MediaMarkt. Si no reconoce esta operacion cancelela YA en t.ly/iNg4x",phishing,bank_pending_charge,es
+Bankinter: por seguridad su usuario ha sido deshabilitado temporalmente. Reactivelo en shorturl.at/bkT29,phishing,bank_user_disabled,es
+Unicaja Banco: su clave de firma caduca hoy a las 23:59. Renuevela para seguir operando https://goo.su/uNi7c,phishing,bank_key_expiring,es
+Kutxabank: hemos añadido un nuevo beneficiario (ES21 **** 7730) a su cuenta. ¿No ha sido usted? Anule desde s.id/kb-benef,phishing,bank_new_payee,es
+"ABANCA: devolucion de 62,40 EUR pendiente de abono. Indique la cuenta de destino en bit.ly/ab-devol62",phishing,bank_refund_waiting,es
+Openbank le informa que su app debe actualizarse antes del 20/11 para cumplir la normativa PSD2. Mas info: t.co/Op3nB8kq,phishing,bank_app_update,es
+"imagin: hola, hemos bloqueado tu tarjeta por un intento de compra en el extranjero. desbloqueala aqui cutt.ly/im-desbl",phishing,card_blocked,es
+"Ibercaja: Transferencia inmediata de 1.250,00 EUR ordenada a las 09:14. Si no la reconoce, cancele en is.gd/ibTr1250",phishing,bank_transfer_not_you,es
+EVO Banco: tu tarjeta inteligente va a ser sustituida. Confirma la direccion de envio en tinyurl.com/evo-envio,phishing,card_expiry_replacement,es
+Cajamar: ultimo aviso. Su banca electronica sera suspendida en 24h por falta de verificacion de datos.Verifique:verificacion-datos24.icu/cj,phishing,bank_account_suspension,es
+Msg 1/1 BBVA: se ha vinculado un nuevo movil a su cuenta el 12/11 a las 21:03. Si no fue usted gestione la baja en t.ly/bbv-mov,phishing,bank_unrecognised_device,es
+"CaixaBank: benvolgut client, su tarjeta ha sido limitada por seguretat. Verifique sus datos en https://bit.ly/cb-acces-cat",phishing,card_blocked,es
+"Santander: Su tarjeta *8802 ha sido utilizada en AMAZON MKTP por 399,00EUR. Si no reconoce el cargo: shorturl.at/snt88",phishing,bank_pending_charge,es
+"Estimado cliente, su cuenta Sabadell presenta una incidencia de seguridad. Para evitar el bloqueo actualice sus datos en area-usuarios-web.xyz/sbd",phishing,bank_account_update,es
+ING: Hemos actualizado nuestras condiciones. Debe aceptarlas antes del 25/11 para mantener su Cuenta NOMINA activa s.id/ing-cond,phishing,bank_terms_acceptance,es
+"Bizum: solicitud de pago de 49,99 EUR pendiente. Si no la reconoces, recházala en t.co/bzRch7m1",phishing,wallet_payment_request,es
+Bankinter Tarjetas: su nueva tarjeta esta lista. Para activarla introduzca su PIN actual en cutt.ly/bkt-activa,phishing,card_activation_pin,es
+bbva: detectamos un inicio de sesion desde Rumania a las 03:42. bloquee el acceso en is.gd/bbva0342,phishing,bank_unrecognised_login,es
+WiZink: el pago de su recibo de noviembre ha sido rechazado. Regularice hoy y evite intereses: tinyurl.com/wz-recibo11,phishing,card_payment_rejected,es
+Tu tarjeta Revolut ha sido congelada por actividad inusual. Confirma tu identidad para descongelarla: rb.gy/rv-id9,phishing,card_blocked,es
+CaixaBank: Su dispositivo CaixaBank Sign no esta registrado. Registrelo antes de 48h o perdera el acceso a la banca digital t.ly/cxSign,phishing,bank_app_reactivation,es
+"Santander: tiene un reembolso de 127,35 EUR de la Agencia Tributaria retenido en su cuenta. Liberelo aqui bit.ly/snt-aeat",phishing,bank_refund_waiting,es
+URGENTE Unicaja: Compra autorizada 1.899 EUR en PcComponentes. Si NO es usted pulse avisos-compra.top/unj !!,phishing,bank_pending_charge,es
+Kutxabank: su tarjeta de coordenadas quedara sin validez el 01/12. Solicite el cambio a clave movil en goo.su/kxcoord,phishing,bank_key_expiring,es
+ABANCA le recuerda: documentacion pendiente de actualizar (Ley 10/2010). Evite restricciones en su cuenta: gestion-documental.info/abn,phishing,bank_account_update,es
+Openbank: Operacion retenida. Ref OP-553017. Confirme o rechace la transferencia de 2.300 EUR en https://t.co/oB55rf,phishing,bank_transfer_not_you,es
+"Hola, soy tu gestor de BBVA. Hemos visto movimientos raros en tu cuenta, revisa y confirma por aqui porfa: cutt.ly/gestor-bbv",phishing,bank_manager_impersonation,es
+Banco Santander: Su clave de acceso ha caducado. Genere una nueva en el siguiente enlace is.gd/snt-clave,phishing,bank_key_expiring,es
+"Cetelem: su devolucion de 38,12 EUR no ha podido abonarse. Actualice el IBAN en tinyurl.com/ctl-iban",phishing,bank_refund_waiting,es
+Laboral Kutxa: acceso bloqueado tras 3 intentos fallidos. Restablezca su clave: rb.gy/lk3int,phishing,bank_user_disabled,es
+"CaixaBank: el cobro de su seguro del hogar (214,60EUR) esta pendiente de su autorizacion.Autorice o rechace en t.ly/cx-seg",phishing,bank_pending_charge,es
+ING DIRECT: para seguir usando la app debe volver a activar su movil de confianza. Solo le llevara 2 min bit.ly/ing-movil2,phishing,bank_app_reactivation,es
+Su tarjeta Carrefour PASS ha sido suspendida por impago. Evite el recargo del 20% abonando hoy: pagos-pendientes24.icu/pass,phishing,card_payment_rejected,es
+Sabadell: nuevo beneficiario añadido 13/11 10:27. Si usted no lo ha autorizado pulse goo.su/sb1027,phishing,bank_new_payee,es
+MyInvestor: verificacion anual de identidad pendiente. Suba su DNI antes del viernes para no limitar su cuenta s.id/myinv-dni,phishing,bank_identity_verification,es
+"BBVA: Estimat client, hemos detectado un cargo duplicado de 76,00 EUR. Sol·licite la devolucion aqui: t.co/bbvDup76",phishing,bank_refund_waiting,es
+Bankia ahora es CaixaBank. Migre su tarjeta antigua antes del 30/11 o dejara de funcionar: cutt.ly/migra-cx,phishing,card_migration,es
+Santander: le informamos de que su tarjeta Débito 4B sera sustituida por una nueva. Confirme sus datos en is.gd/s4b-nueva,phishing,card_expiry_replacement,es
+ALERTA: su cuenta ha sido usada para un pago por Bizum de 500 EUR. Cancele antes de 30 min >> tinyurl.com/bzm-cancel,phishing,wallet_transfer_not_you,es
+Bankinter: tiene 1 notificacion nueva en su area personal. Consultela en rb.gy/bkt-notif,phishing,bank_secure_message,es
+Unicaja: Su cuenta quedara inoperativa a partir de mañana. Motivo: datos fiscales sin confirmar. tramite-online.top/unj-fisc,phishing,bank_account_suspension,es
+"ING: Se ha solicitado un cambio de numero de telefono en su perfil. Si no lo ha pedido, cancele la solicitud: bit.ly/ing-tlf-no",phishing,bank_profile_change,es
+"Cuenta Sabadell: su tarjeta de claves ha sido desactivada, para reactivar siga las instrucciones shorturl.at/sbcl4v",phishing,bank_key_expiring,es
+"Ibercaja: pago con tarjeta denegado en REPSOL 54,10 EUR. Revise el estado de su tarjeta en goo.su/ibj-rev",phishing,card_payment_declined,es
+N26: tu cuenta necesita una nueva verificacion por video. Empieza aqui antes del 19/11: s.id/n26-vid,phishing,bank_identity_verification,es
+BBVA Mexico: Su token digital vence hoy. Reactivelo para seguir usando la app: bit.ly/tkn-mx24,phishing,bank_token_expiring,es
+"Banorte: se registro un cargo por $4,899.00 MXN en LIVERPOOL. Si no lo reconoce ingrese a cutt.ly/bnt4899",phishing,bank_pending_charge,es
+Citibanamex: tu tarjeta con terminacion 3310 sera reemplazada por nuevo plastico. Confirma domicilio de entrega en is.gd/bnmx-plast,phishing,card_expiry_replacement,es
+"Nu: detectamos un inicio de sesion en un dispositivo nuevo (iPhone 13, Monterrey). Si no fuiste tu, bloquea aqui tinyurl.com/nu-disp",phishing,bank_unrecognised_device,es
+Mercado Pago: tu cuenta fue limitada. Completa la validacion de identidad para liberar tu dinero rb.gy/mp-valida,phishing,wallet_account_limited,es
+"BANCO AZTECA: Transferencia SPEI por $7,500.00 en proceso. Si usted no la realizo CANCELE en t.ly/azt-spei",phishing,bank_transfer_not_you,es
+Santander MX: su SuperToken ha sido desactivado por seguridad. Reactive: acceso-clientes-mx.top/token,phishing,bank_token_expiring,es
+"HSBC: Estimado cliente, su banca por internet fue suspendida. Folio 88213-A. Restablezca su acceso en shorturl.at/hs88mx",phishing,bank_user_disabled,es
+"BanCoppel: tienes una devolucion de $1,240.00 pendiente por cargo no reconocido. Reclamala en goo.su/bcp-dev",phishing,bank_refund_waiting,es
+Spin by OXXO: tu cuenta requiere actualizar tu INE antes del 20/11 o sera cancelada. Actualiza aqui s.id/spin-ine,phishing,wallet_account_update,es
+Scotiabank: Se dio de alta una nueva cuenta destino terminacion 9042. No fuiste tu? da de baja en t.co/sc9042mx,phishing,bank_new_payee,es
+Inbursa: aviso de cargo recurrente $899.00 NETFLIX PREMIUM. Para cancelar el cargo entre a movimientos-tarjeta.info/inb,phishing,bank_pending_charge,es
+"BBVA: Compra por $12,450.00 en MERCADO LIBRE aprobada 13/11 14:22. Si no reconoces esta compra entra YA a cutt.ly/bbva12450",phishing,bank_pending_charge,es
+Banamex le informa: su NetKey movil expira en 24 hrs. Sincronicelo en is.gd/netkey-sinc,phishing,bank_token_expiring,es
+"Hola! Tu tarjeta Nu fue bloqueada temporalmente por un intento de compra de $3,200 en el extranjero. Desbloquea en tinyurl.com/nu-desbloq",phishing,card_blocked,es
+Banorte Movil: actualizacion obligatoria de datos por disposicion de la CNBV. Evite la suspension de su cuenta: rb.gy/bnt-cnbv,phishing,bank_account_update,es
+"Mercado Pago: Recibiste $2,150.00. El dinero esta retenido hasta que confirmes tu cuenta: avisos-pago.xyz/mx",phishing,wallet_incoming_payment,es
+Afirme: Su tarjeta de debito vence en NOV/26. Solicite la reposicion sin costo en t.ly/afr-repo,phishing,card_expiry_replacement,es
+BBVA SEGURIDAD: su cuenta sera bloqueada en 2 horas por actividad sospechosa!!! Verifique shorturl.at/bbvaSeg2h,phishing,bank_account_suspension,es
+Banco Azteca: tu tarjeta nueva ya esta en camino. Activala desde ahorita con tu NIP en goo.su/azt-activa,phishing,card_activation_pin,es
+Citibanamex: mensaje seguro disponible en tu BancaNet. Folio 5521097. Leelo aqui: s.id/bnet-msj,phishing,bank_secure_message,es
+HSBC Mexico: se intento vincular tu cuenta a la app en otro celular. Si no fuiste tu cancela en t.co/hsVinc3,phishing,bank_unrecognised_device,es
+"Santander: Estimado cliente su tarjeta LikeU presenta un adeudo vencido de $2,318.40. Pague hoy sin recargos cobranza-digital.top/likeu",phishing,card_payment_rejected,es
+"Klar: tu cuenta tiene un deposito en revision por $5,000. Sube tu comprobante de identidad: cutt.ly/klar-rev",phishing,wallet_incoming_payment,es
+BBVA: tu CVV dinamico no se ha podido generar. Vuelve a registrar tu tarjeta digital aqui is.gd/cvv-dig,phishing,card_digital_reregister,es
+Banorte: Por tu seguridad deshabilitamos tu usuario de Banco en Linea. Habilitalo en portal-seguro-clientes.icu/bnl,phishing,bank_user_disabled,es
+"CoDi: tienes una solicitud de cobro por $1,899.00 de TELCEL RECARGAS. Rechaza si no la reconoces tinyurl.com/codi-rech",phishing,wallet_payment_request,es
+"BanBajio: se detecto un cambio de correo electronico en su perfil el 12/11. Si no fue usted, revierta en rb.gy/bb-correo",phishing,bank_profile_change,es
+"Tu tarjeta de credito American Express ****1009 tiene un cargo retenido de $6,730 MXN. Aclaralo aqui: t.ly/amx-acl",phishing,bank_pending_charge,es
+Hey Banco: detectamos que tu app no esta actualizada y tu token dejara de funcionar el lunes. Actualiza: shorturl.at/hey-tok,phishing,bank_token_expiring,es
+"Aviso Banamex: retiro sin tarjeta por $3,000.00 generado 13/11 08:51. Clave 4471. Si no lo solicitaste cancela en goo.su/bnx-retiro",phishing,bank_withdrawal_not_you,es
+"Scotiabank Inverlat: Su e-Llave ha caducado, renueve en linea y evite acudir a sucursal s.id/sc-ellave",phishing,bank_token_expiring,es
+BBVA te informa que tu cuenta ha sido seleccionada para revision de seguridad. Confirma tus datos en linea-clientes24.top/bbv,phishing,bank_account_update,es
+Mercado Pago: tu tarjeta virtual vence este mes. Renuevala gratis y conserva tus rendimientos t.co/mpTarj11,phishing,card_expiry_replacement,es
+"INBURSA: transferencia programada por $18,000.00 a cuenta CLABE ...5527. Para detenerla: bit.ly/inb-detener",phishing,bank_transfer_not_you,es
+Banco Azteca: guardadito bloqueado por inactividad. Reactivalo antes del 30 de nov en cutt.ly/guard-react,phishing,bank_account_suspension,es
+"Liverpool Credito: su estado de cuenta presenta un pago no aplicado de $1,560. Verifique en consulta-saldos.xyz/lvp",phishing,card_payment_rejected,es
+Banregio: nuevo dispositivo registrado en tu banca movil. Fecha 13/11/26 11:02. Desconocelo aqui tinyurl.com/brg-disp,phishing,bank_unrecognised_device,es
+Nu Mexico: tienes un reembolso de $489.00 esperando. Elige la cuenta donde quieres recibirlo rb.gy/nu-reemb,phishing,bank_refund_waiting,es
+"banorte: su tarjeta fue clonada, hemos detenido 2 cargos. confirme sus datos para emitir una nueva t.ly/bnt-clon",phishing,card_cloned_reissue,es
+Bancolombia: su clave dinamica vence hoy. Actualicela para no perder el acceso a la Sucursal Virtual Personas bit.ly/clv-din-co,phishing,bank_dynamic_key_expiring,es
+Nequi: tu cuenta fue suspendida por seguridad. Reactivala aqui y recupera tu plata: cutt.ly/nq-react,phishing,wallet_account_limited,es
+DaviPlata: recibiste $350.000 de un subsidio. Para reclamarlo actualiza tus datos en is.gd/dvp-subs,phishing,wallet_incoming_payment,es
+Davivienda: se registro un ingreso desde un equipo no reconocido el 13/11 a las 6:40am. Si no fuiste tu ingresa a tinyurl.com/dav-equipo,phishing,bank_unrecognised_login,es
+Banco de Bogota informa: compra por $1.289.900 en EXITO.COM con su tarjeta *4471. Si no la reconoce cancele en rb.gy/bdb-exito,phishing,bank_pending_charge,es
+Bancolombia le informa transferencia por $2.400.000 a cuenta Nequi 310***8821. Si NO realizo esta transaccion ingrese a t.ly/bcol-transf,phishing,bank_transfer_not_you,es
+BBVA Colombia: Su usuario ha sido inhabilitado por multiples intentos. Habilitelo en centro-avisos.xyz/co,phishing,bank_user_disabled,es
+"AV Villas: Estimado cliente, su tarjeta debito sera reemplazada por tecnologia sin contacto. Confirme entrega: shorturl.at/avv-tarj",phishing,card_expiry_replacement,es
+PSE: tienes un pago pendiente por $186.400 a nombre de CLARO. Rechazalo si no lo reconoces goo.su/pse-rech,phishing,wallet_payment_request,es
+Banco Caja Social: su token virtual no se encuentra sincronizado. Sincronicelo en s.id/bcs-token,phishing,bank_token_expiring,es
+Nequi: Alguien intento entrar a tu Nequi desde otro cel. Si no fuiste tu cambia tu clave ya t.co/nqClave9,phishing,bank_unrecognised_login,es
+Bancolombia: tiene un mensaje pendiente en su buzon seguro. Ref 77120045. Consulte en bit.ly/bcol-buzon,phishing,bank_secure_message,es
+Scotiabank Colpatria: cobro de cuota de manejo $38.900 fue rechazado. Evite reporte en centrales pagando en cutt.ly/colp-cuota,phishing,card_payment_rejected,es
+Banco Popular: su cuenta presenta novedad en la actualizacion de datos SARLAFT. Evite el bloqueo formulario-clientes.info/bpop,phishing,bank_account_update,es
+DAVIPLATA: tu monedero sera cancelado en 24 horas!! valida tu cedula aqui tinyurl.com/dvp-ced,phishing,wallet_account_limited,es
+Bancolombia A la Mano: se inscribio una nueva cuenta para transferencias. Si no fue usted eliminela en rb.gy/alamano-insc,phishing,bank_new_payee,es
+Itau: su clave de internet expiro. Asigne una nueva sin ir a la oficina t.ly/itau-co-clv,phishing,bank_key_expiring,es
+Davivienda: tiene una devolucion del 4x1000 por $74.300 pendiente. Reclame en devoluciones-linea.top/dav,phishing,bank_refund_waiting,es
+Banco de Occidente: retiro por $600.000 en cajero CC Unicentro 13/11 12:15. No fue usted? shorturl.at/occ-ret,phishing,bank_withdrawal_not_you,es
+"Nequi: tu Tarjeta Nequi ya casi vence parce, pide la nueva gratis y te llega a la casa goo.su/nq-tarjeta",phishing,card_expiry_replacement,es
+Bancolombia: Detectamos que su App Personas esta registrada en 2 dispositivos. Elimine el que no reconoce: s.id/bcol-2disp,phishing,bank_unrecognised_device,es
+Falabella CMR: su tarjeta ha sido bloqueada preventivamente. Folio 40218. Desbloquee en t.co/cmrCo4b,phishing,card_blocked,es
+Movii: recibiste un giro de $220.000. Confirma tu cuenta para verlo reflejado bit.ly/movii-giro,phishing,wallet_incoming_payment,es
+Banco Agrario: actualice sus datos antes del 30/11 para seguir recibiendo sus pagos. atencion-usuarios24.icu/bagr,phishing,bank_account_update,es
+Bancolombia: su tarjeta de credito Mastercard *2290 tiene un avance en proceso por $3.000.000. Cancele aqui is.gd/avance-no,phishing,bank_pending_charge,es
+RappiPay: tu cupo fue congelado por un pago rechazado. Ponte al dia en tinyurl.com/rpay-cupo,phishing,card_payment_rejected,es
+Davivienda: clave virtual bloqueada. Para desbloquear ingrese con su documento en rb.gy/dav-desbl,phishing,bank_user_disabled,es
+Lulo Bank: necesitamos confirmar tu identidad de nuevo. Tomate la selfie antes del viernes t.ly/lulo-selfie,phishing,bank_identity_verification,es
+Banco de Bogota: se activo la opcion de compras internacionales en su tarjeta. Si no lo solicito desactive: area-personal-co.icu/bdb,phishing,card_setting_changed,es
+BANCOLOMBIA INFORMA: Su cuenta de ahorros XXXX5512 sera embargada por orden judicial. Consulte el proceso shorturl.at/bcol-emb,phishing,bank_legal_threat,es
+Nequi: te enviaron $80.000 pero tu cuenta llego al tope. Sube el tope aqui goo.su/nq-tope,phishing,wallet_incoming_payment,es
+"Bancoomeva: se genero un codigo de seguridad para cambio de celular. Si no lo pidio, anule en s.id/coomeva-cel",phishing,bank_profile_change,es
+Daviplata: Tu clave fue cambiada hoy 10:31. Si no hiciste el cambio recupera tu cuenta en t.co/dvpRec10,phishing,bank_profile_change,es
+Bancolombia: QR de pago por $459.000 pendiente de aprobacion. Apruebe o rechace: bit.ly/qr-bcol459,phishing,wallet_payment_request,es
+Colpatria: su extracto de noviembre no pudo ser enviado. Actualice su correo en extractos-digitales.xyz/colp,phishing,bank_account_update,es
+Banco Galicia: tu Token Galicia vence hoy. Reactivalo desde is.gd/gal-token,phishing,bank_token_expiring,es
+"Mercado Pago: detectamos un ingreso a tu cuenta desde un dispositivo nuevo. Si no fuiste vos, desvinculalo aca tinyurl.com/mp-ar-disp",phishing,bank_unrecognised_device,es
+BNA+: su usuario fue bloqueado por seguridad. Para desbloquearlo ingrese a rb.gy/bna-desbl,phishing,bank_user_disabled,es
+"Santander: Transferencia inmediata por $485.000 al CBU ...3391. Si no la hiciste, cancelala en t.ly/sant-ar485",phishing,bank_transfer_not_you,es
+Cuenta DNI: tenes un reintegro de $12.600 pendiente de acreditacion. Elegi donde cobrarlo shorturl.at/cdni-reint,phishing,bank_refund_waiting,es
+"Banco Macro: Estimado cliente, su tarjeta de debito sera reemplazada por vencimiento. Confirme domicilio: envios-plasticos.top/macro",phishing,card_expiry_replacement,es
+Uala: tu cuenta esta en revision. Completa la validacion para seguir usando tu tarjeta s.id/uala-valid,phishing,wallet_account_limited,es
+Naranja X: registramos un consumo de $239.999 en FRAVEGA en 6 cuotas. Desconocelo aca: t.co/nxFrav6,phishing,bank_pending_charge,es
+BBVA Argentina: su clave Banca Online caduco. Genere una nueva sin ir a la sucursal bit.ly/bbva-ar-clave,phishing,bank_key_expiring,es
+"Brubank: che, vimos un intento de ingreso desde otro celu. Si no fuiste vos cambia tu clave en cutt.ly/bru-clave",phishing,bank_unrecognised_login,es
+Banco Nacion: Se dio de alta un nuevo destinatario de transferencias. ¿No lo reconoce? is.gd/bna-destin,phishing,bank_new_payee,es
+MODO: tenes una solicitud de pago por $58.400. Rechazala si no la reconoces: tinyurl.com/modo-rech,phishing,wallet_payment_request,es
+Banco Provincia: su Home Banking BIP sera dado de baja por datos desactualizados. Actualice en atencion-digital.top/bip,phishing,bank_account_update,es
+GALICIA: DETECTAMOS UN PRESTAMO PREACORDADO SOLICITADO A SU NOMBRE POR $2.800.000. SI NO FUE UD ANULE EN rb.gy/gal-prest,phishing,bank_loan_not_you,es
+ICBC: su tarjeta Visa terminada en 7715 fue suspendida. Motivo: verificacion pendiente. Regularice t.ly/icbc-visa,phishing,card_blocked,es
+Mercado Pago: tu dinero dejo de generar rendimientos. Actualiza tus datos fiscales para reactivarlos shorturl.at/mp-rend,phishing,wallet_account_update,es
+Banco Ciudad: tiene un mensaje nuevo en su casilla segura. Leer: mensajeria-privada.info/ciudad,phishing,bank_secure_message,es
+"Personal Pay: tu tarjeta prepaga vence el 30/11, pedi la reposicion sin cargo s.id/ppay-repo",phishing,card_expiry_replacement,es
+Supervielle: se modifico el mail asociado a tu cuenta. Si no realizaste el cambio ingresa a t.co/spvMail2,phishing,bank_profile_change,es
+Santander Rio: su Clave Token fue desvinculada del dispositivo. Vuelva a vincularla bit.ly/token-sr,phishing,bank_token_expiring,es
+Lemon: pausamos tu tarjeta por un consumo inusual de USD 310. Confirma que sos vos: cutt.ly/lemon-conf,phishing,card_blocked,es
+Banco Patagonia: debito automatico rechazado $34.870 (EDENOR). Reintente el pago en is.gd/bpat-deb,phishing,bank_payment_rejected,es
+"Hola, te escribimos de Galicia. Tu tarjeta nueva no pudo ser entregada, reprograma la visita aca tinyurl.com/gal-entrega",phishing,card_delivery_failed,es
+BNA: ANSES acredito un bono en su cuenta pero se encuentra retenido. Libere los fondos: pagos-retenidos.xyz/bna,phishing,bank_refund_waiting,es
+Naranja X: tu resumen cerro con un saldo a favor de $18.230. Pedi la devolucion en rb.gy/nx-saldo,phishing,bank_refund_waiting,es
+Credicoop: actualizacion de datos obligatoria (Com. BCRA A7724). Evite la restriccion de su cuenta normativa-clientes.icu/credi,phishing,bank_account_update,es
+Uala: Se quiso hacer una compra de $97.500 en MercadoLibre con tu tarjeta. La frenamos. Confirma o rechaza: shorturl.at/uala-975,phishing,bank_pending_charge,es
+HSBC Argentina: por la migracion a Galicia debe revalidar su usuario antes del 28/11. goo.su/hsbc-migra,phishing,bank_migration,es
+Mercado Pago: se cambio tu clave de pago hoy 16:48 hs. No fuiste vos? s.id/mp-clave1648,phishing,bank_profile_change,es
+Banco Comafi: su CVU fue informado para un debito inmediato (DEBIN) de $150.000. Rechace en t.co/debinNo15,phishing,wallet_payment_request,es
+BancoEstado: su CuentaRUT ha sido bloqueada por seguridad. Desbloquee en bit.ly/ctarut-desb,phishing,bank_user_disabled,es
+"Banco de Chile: Estimado cliente, su Digipass expira hoy. Active Mi Pass en cutt.ly/mipass-cl",phishing,bank_token_expiring,es
+"Santander Chile: transferencia por $380.000 a un destinatario nuevo. Si usted no la hizo, anule aqui is.gd/sant-cl380",phishing,bank_transfer_not_you,es
+BCI: detectamos un ingreso desde un dispositivo no habitual. Valide su identidad: tinyurl.com/bci-disp,phishing,bank_unrecognised_device,es
+MACH: tu tarjeta virtual fue pausada por un cobro sospechoso de USD 89. Revisa en rb.gy/mach-cobro,phishing,card_blocked,es
+"CMR Falabella: compra por $249.990 en 12 cuotas aprobada. Si no la reconoce, objete en t.ly/cmr-objeta",phishing,bank_pending_charge,es
+BancoEstado informa: tiene una devolucion de impuestos de $127.400 lista para deposito. Confirme su cuenta en tramites-enlinea.icu/be,phishing,bank_refund_waiting,es
+Scotiabank: su clave dinamica KeyPass fue desactivada. Reactivela para seguir transfiriendo shorturl.at/keypass-cl,phishing,bank_dynamic_key_expiring,es
+Tenpo: necesitamos que actualices tu cedula vencida para mantener tu cuenta activa goo.su/tenpo-ced,phishing,wallet_account_update,es
+Itau Chile: nuevo destinatario agregado 13-11 09:55. ¿No fue usted? s.id/itau-cl-dest,phishing,bank_new_payee,es
+BANCOESTADO: SU BE PASS SERA ELIMINADO HOY. EVITE EL BLOQUEO DE SU CUENTA INGRESANDO A t.co/bePassHoy,phishing,bank_token_expiring,es
+Banco Falabella: su tarjeta de debito vence este mes. Solicite el despacho de la nueva: despacho-tarjetas.top/bf,phishing,card_expiry_replacement,es
+Banco Security: tiene un mensaje confidencial en su sitio privado. Folio 229104. cutt.ly/sec-priv,phishing,bank_secure_message,es
+Mercado Pago Chile: tu cuenta tiene un abono retenido de $64.000. Verifica tu RUT para liberarlo is.gd/mp-cl-abono,phishing,wallet_incoming_payment,es
+"Hola, tu tarjeta Lider Bci presenta un cargo duplicado de $45.990, solicita la reversa en tinyurl.com/lbci-reversa",phishing,bank_refund_waiting,es
+"Banco Ripley: se intento cambiar su clave de internet. Si no fue usted, proteja su cuenta rb.gy/ripley-clv",phishing,bank_profile_change,es
+BICE: su dispositivo de seguridad no esta enrolado. Enrole antes del 20/11 en t.ly/bice-enrol,phishing,bank_app_reactivation,es
+Coopeuch: su remanente 2026 esta disponible para retiro. Indique cuenta de deposito shorturl.at/coop-rem,phishing,bank_refund_waiting,es
+BancoEstado: pago de $58.700 a ENEL pendiente de su autorizacion. Autorice o rechace en soporte-clientes24.top/be,phishing,bank_pending_charge,es
+Santander: su Superclave fue bloqueada tras 3 intentos. Recuperela en linea goo.su/superclave,phishing,bank_user_disabled,es
+"Banco de Chile: cargo internacional por USD 412,00 en revision. Confirme si lo reconoce s.id/bch-usd412",phishing,bank_pending_charge,es
+CuentaRUT: se solicito una nueva tarjeta a tu nombre. Si no fuiste tu cancela el pedido t.co/crutPed7,phishing,card_request_not_you,es
+Banco Consorcio: actualice sus datos de contacto para seguir recibiendo sus claves por SMS. registro-contacto.info/consorcio,phishing,bank_account_update,es
+bci: su cuenta corriente fue restringida por no validar correo. valide en cutt.ly/bci-correo,phishing,bank_account_suspension,es
+Tapp Caja Los Andes: tu saldo de $32.500 sera devuelto por cierre de cuenta. Elige donde recibirlo is.gd/tapp-saldo,phishing,bank_refund_waiting,es
+BCP: su Token Digital ha sido desactivado. Activelo nuevamente en tinyurl.com/bcp-token,phishing,bank_token_expiring,es
+"Yape: recibiste S/ 250.00 de Luis A. El yapeo esta retenido, valida tu cuenta en rb.gy/yape-ret",phishing,wallet_incoming_payment,es
+"Interbank: se realizo una compra de S/ 1,899.00 en Saga Falabella. Si no fuiste tu, bloquea tu tarjeta t.ly/ibk-1899",phishing,bank_pending_charge,es
+BBVA Peru: detectamos un acceso a su Banca por Internet desde otro equipo. Verifique shorturl.at/bbva-pe-eq,phishing,bank_unrecognised_login,es
+Scotiabank Peru: su Clave Digital vence en 24h. Renuevela en goo.su/scot-pe-clave,phishing,bank_dynamic_key_expiring,es
+Banco de la Nacion: su cuenta DNI tiene un bono pendiente de cobro. Confirme sus datos en consulta-pagos.xyz/bn,phishing,bank_refund_waiting,es
+Plin: tu numero fue desafiliado. Vuelve a afiliarlo para seguir recibiendo pagos s.id/plin-afil,phishing,wallet_account_limited,es
+"BCP: Transferencia interbancaria por S/ 3,400.00 en proceso. Para anularla ingrese a t.co/bcpAnula34",phishing,bank_transfer_not_you,es
+Interbank: tu tarjeta de debito Visa caduca en 11/26. Pide tu nueva tarjeta con delivery gratis: bit.ly/ibk-delivery,phishing,card_expiry_replacement,es
+Caja Arequipa: su usuario de Homebanking fue inhabilitado. Habilitelo aqui acceso-socios.top/aqp,phishing,bank_user_disabled,es
+YAPE: TU CUENTA SERA ELIMINADA POR USO INDEBIDO. APELA EN is.gd/yape-apela,phishing,wallet_account_limited,es
+Banco Pichincha: tiene una devolucion de comision por S/ 46.50. Solicitela en tinyurl.com/pich-dev,phishing,bank_refund_waiting,es
+"BCP: se afilio un nuevo celular a tu Banca Movil el 13/11. Si no lo reconoces, desafilialo: rb.gy/bcp-cel",phishing,bank_unrecognised_device,es
+Tarjeta OH!: su linea fue reducida por pago vencido de S/ 318.20. Regularice hoy t.ly/oh-pago,phishing,card_payment_rejected,es
+BBVA: su tarjeta de coordenadas dejara de funcionar. Migre a Token Digital sin ir a la oficina shorturl.at/bbva-pe-tok,phishing,bank_token_expiring,es
+Mibanco: actualizacion de datos pendiente. Evite limitaciones en sus retiros ficha-cliente.icu/mibanco,phishing,bank_account_update,es
+"Interbank: hola, tu clave web fue cambiada hace unos minutos. si no fuiste tu recupera tu acceso s.id/ibk-clave",phishing,bank_profile_change,es
+Ligo: tu tarjeta fue pausada por una compra de USD 120 en una web no segura. Revisa: t.co/ligo120,phishing,card_blocked,es
+"Banco Falabella Peru: su estado de cuenta tiene un consumo no reconocido S/ 729.00, presente su reclamo en bit.ly/bf-pe-reclamo",phishing,bank_pending_charge,es
+BCP le informa: constancia de operacion 00481772 disponible. Descargue en portal-documentos.icu/bcp,phishing,bank_secure_message,es
+ING: uw betaalpas verloopt op 30-11. Vraag kosteloos een nieuwe pas aan via bit.ly/ing-pas-nl,phishing,card_expiry_replacement,nl
+Rabobank: uw Rabo Scanner is verouderd en wordt per 20 november geblokkeerd. Vraag de nieuwe aan: cutt.ly/rabo-scan,phishing,bank_token_expiring,nl
+"ABN AMRO: er is ingelogd vanaf een onbekend apparaat (Samsung, Rotterdam). Was u dit niet? Controleer via is.gd/abn-app",phishing,bank_unrecognised_device,nl
+SNS: uw Mijn SNS app moet opnieuw geactiveerd worden. Doe dit voor 18-11 om te blijven bankieren tinyurl.com/sns-heractiv,phishing,bank_app_reactivation,nl
+"Tikkie: je hebt een betaalverzoek van €47,50 ontvangen van Sanne. Betaal via rb.gy/tk-sanne47",phishing,wallet_payment_request,nl
+DigiD: uw account wordt binnen 24 uur opgeschort. Heractiveer uw DigiD app via t.ly/dgd-heract,phishing,identity_app_reactivation,nl
+"ICS: uw creditcard is tijdelijk geblokkeerd wegens een verdachte transactie van €389,00. Deblokkeer: shorturl.at/ics-debl",phishing,card_blocked,nl
+bunq: we zagen een login vanaf een nieuw toestel. Niet door jou gedaan? Beveilig je account goo.su/bunq-login,phishing,bank_unrecognised_login,nl
+ASN Bank: u heeft een nieuw beveiligd bericht in uw berichtenbox. Lees het via s.id/asn-bericht,phishing,bank_secure_message,nl
+RegioBank: uw digipas verloopt binnenkort. Verleng de geldigheid online t.co/rgbDigi4,phishing,bank_token_expiring,nl
+"Knab: er staat een terugbetaling van €83,12 voor u klaar. Bevestig uw rekeningnummer via bit.ly/knab-terug",phishing,bank_refund_waiting,nl
+ING: Er is een nieuwe begunstigde toegevoegd aan uw rekening (NL47 **** 2291). Niet door u? Annuleer via cutt.ly/ing-begunst,phishing,bank_new_payee,nl
+"Rabobank: LET OP! Afschrijving van €1.249,00 naar Bol.com staat klaar. Niet akkoord? Stop de betaling NU: is.gd/rabo-stop",phishing,bank_pending_charge,nl
+ABN AMRO: uw e.dentifier wordt vervangen. Bevestig uw adres voor verzending van de nieuwe tinyurl.com/abn-edent,phishing,bank_token_expiring,nl
+Triodos: wij hebben uw gegevens niet kunnen controleren. Werk deze bij om beperkingen te voorkomen rb.gy/trio-gegev,phishing,bank_account_update,nl
+ING Mobiel Bankieren: uw app-koppeling vervalt vandaag om 23:59. Koppel opnieuw via klantportaal-nl.top/app,phishing,bank_app_reactivation,nl
+"Betaalverzoek: Mark vraagt u €125,00 voor 'borg huur'. Verzoek verloopt over 24 uur t.ly/bv-mark125",phishing,wallet_payment_request,nl
+"SNS Bank: Uw pinpas wordt vervangen door een nieuwe duurzame pas. Stuur de oude pas kosteloos retour, zie shorturl.at/sns-pas",phishing,card_expiry_replacement,nl
+Rabobank: uw rekening is beperkt omdat wij uw identiteit niet konden vaststellen. Los dit op via goo.su/rabo-ident,phishing,bank_identity_verification,nl
+"ICS Cards: uw afschrift van november kon niet worden geincasseerd. Voldoe het bedrag van €214,37 via s.id/ics-incasso",phishing,card_payment_rejected,nl
+"ABN AMRO: overboeking van €2.150,00 ingepland voor 14-11. Heeft u dit niet gedaan, annuleer dan hier t.co/abn2150x",phishing,bank_transfer_not_you,nl
+DigiD: er is een nieuw telefoonnummer aan uw DigiD gekoppeld. Was u dit niet? Maak het ongedaan: bit.ly/dgd-nummer,phishing,identity_app_profile_change,nl
+"hoi, je ING pas is bijna verlopen. vraag gratis je nieuwe pas aan voor 20 nov cutt.ly/pas-nieuw-ing",phishing,card_expiry_replacement,nl
+Rabobank Bericht 1/1: Uw Rabo Bankieren App is gedeactiveerd na een systeemupdate. Activeer opnieuw: is.gd/rabo-app-act,phishing,bank_app_reactivation,nl
+bunq: je kaart eindigend op 3317 is bevroren na een betaling in het buitenland. Ontdooi je kaart via tinyurl.com/bunq-kaart,phishing,card_blocked,nl
+ASN: per 1 december vervalt uw oude inlogmethode. Stap over naar de nieuwe ASN app rb.gy/asn-overstap,phishing,bank_app_reactivation,nl
+"ING: wij hebben een incasso van €79,95 (Ziggo) tegengehouden. Keur goed of weiger via t.ly/ing-incasso",phishing,bank_pending_charge,nl
+"Volksbank: SNS, ASN en RegioBank gaan samen verder. Zet uw rekening voor 30-11 over om toegang te houden bank-overstap.info/vb",phishing,bank_migration,nl
+ABN AMRO Creditcard: uw kaart *8840 is gebruikt bij COOLBLUE €699. Herkent u dit niet? Meld het via goo.su/abn-cc699,phishing,bank_pending_charge,nl
+"Tikkie: je terugbetaling van €32,00 kon niet worden verwerkt. Controleer je IBAN s.id/tikkie-iban",phishing,bank_refund_waiting,nl
+Rabobank: uw wereldpas is geblokkeerd na 3 foute pincodes. Deblokkeren kan online via veilig-klantenservice.icu/rabo,phishing,card_blocked,nl
+ING: uw gebruikersnaam is uit voorzorg uitgeschakeld. Ref. 2026-55813. Schakel opnieuw in: t.co/ingRef558,phishing,bank_user_disabled,nl
+Knab: we hebben je ID-bewijs opnieuw nodig. Upload het voor vrijdag om je rekening actief te houden bit.ly/knab-id,phishing,bank_identity_verification,nl
+DRINGEND ABN AMRO: uw rekening wordt vandaag geblokkeerd! Verifieer direct uw gegevens cutt.ly/abn-verif,phishing,bank_account_suspension,nl
+Revolut: je account is beperkt. Bevestig je identiteit om weer te kunnen betalen is.gd/rev-nl-id,phishing,wallet_account_limited,nl
+ICS: uw nieuwe creditcard is onderweg. Activeer de kaart alvast met uw huidige pincode tinyurl.com/ics-activ,phishing,card_activation_pin,nl
+Rabobank: er is een toestel toegevoegd aan uw Rabo Wallet op 13-11 om 08:14. Niet herkend? Verwijder via rb.gy/rabo-wallet,phishing,bank_unrecognised_device,nl
+ING: Uw TAN-codes zijn verlopen. Stap over op de Mobiel Bankieren app via t.ly/ing-tan,phishing,bank_token_expiring,nl
+"SNS: betaling van €459,00 aan MediaMarkt in behandeling. Klopt dit niet? Trek de betaling in shorturl.at/sns-459",phishing,bank_pending_charge,nl
+ABN AMRO: uw identificatiecode is geblokkeerd. Stel een nieuwe in zonder langs kantoor te gaan goo.su/abn-idcode,phishing,bank_user_disabled,nl
+"PayPal: je betaling van €249,99 aan Zalando is verwerkt. Niet door jou? Open een geschil s.id/pp-geschil",phishing,wallet_transfer_not_you,nl
+Rabobank: wegens nieuwe Europese wetgeving (PSD3) moet u uw gegevens bevestigen voor 25-11. t.co/raboPsd3,phishing,bank_account_update,nl
+"ING: er staat een bedrag van €146,20 voor u klaar (teveel betaalde kosten). Geef aan op welke rekening bit.ly/ing-retour146",phishing,bank_refund_waiting,nl
+Mijn ICS: inlogpoging geblokkeerd vanuit Polen. Wijzig uit voorzorg uw wachtwoord cutt.ly/ics-ww,phishing,bank_unrecognised_login,nl
+bunq: je abonnement kon niet worden afgeschreven en je kaarten worden gepauzeerd. Werk je betaalgegevens bij is.gd/bunq-abo,phishing,bank_payment_rejected,nl
+DigiD: uw DigiD app is gedeactiveerd wegens verouderde software. Activeer opnieuw met uw ID-check: tinyurl.com/digid-idcheck,phishing,identity_app_reactivation,nl
+RegioBank: uw pas eindigend op 6621 wordt deze maand vervangen. Controleer uw bezorgadres rb.gy/regio-pas,phishing,card_expiry_replacement,nl
+"Rabobank: Automatische incasso €1.899,00 naar onbekende partij gesignaleerd!! Blokkeer via t.ly/rabo-1899",phishing,bank_pending_charge,nl
+ING: uw mobiele nummer is gewijzigd op 12-11. Heeft u dit niet aangevraagd? Herstel het hier berichten-centrum.xyz/ing,phishing,bank_profile_change,nl
+ABN AMRO: U heeft 1 ongelezen bericht van onze afdeling Veiligheid. Bekijk via shorturl.at/abn-veilig,phishing,bank_secure_message,nl
+Triodos Bank: uw Identifier werkt na 30 november niet meer. Vraag de vervanger aan goo.su/trio-ident,phishing,bank_token_expiring,nl
+Tikkie: je account is tijdelijk beperkt na meerdere mislukte verzoeken. Verifieer je bankrekening s.id/tk-verif,phishing,wallet_account_limited,nl
+"ASN Bank: wij hebben een overboeking van €940,00 gepauzeerd. Bevestig of annuleer t.co/asn940p",phishing,bank_transfer_not_you,nl
+"ING Creditcard: uw limiet is verlaagd wegens een achterstand van €87,40. Los direct in via aflossen-online.top/cc",phishing,card_payment_rejected,nl
+Rabobank: u heeft een ondertekening openstaan in Rabo Internetbankieren. Opdracht 4471-A. Bekijk cutt.ly/rabo-ondertek,phishing,bank_pending_charge,nl
+Uw betaalpas van SNS is mogelijk geskimd bij een geldautomaat in Utrecht. Vraag direct een vervangende pas aan is.gd/sns-skim,phishing,card_cloned_reissue,nl
+ABN AMRO: update uw app-registratie. Zonder update kunt u vanaf maandag niet meer inloggen tinyurl.com/abn-reg,phishing,bank_app_reactivation,nl
+ING: uw rekening staat op het punt te worden opgeheven wegens ontbrekende klantgegevens. Vul aan: rb.gy/ing-klantgeg,phishing,bank_account_suspension,nl
+"Klarna: je betaling van €64,90 is mislukt. Voorkom incassokosten en betaal vandaag t.ly/klarna-6490",phishing,wallet_payment_rejected,nl
+Rabobank: uw creditcard (Rabo GoldCard) verloopt 11/26. Bevestig uw gegevens voor de nieuwe kaart shorturl.at/rabo-gold,phishing,card_expiry_replacement,nl
+bunq: iemand probeerde €500 over te maken vanaf je spaarrekening. Wij hebben dit geblokkeerd. Bevestig dat jij het niet was goo.su/bunq-500,phishing,bank_transfer_not_you,nl
+DigiD: Uw inlogcode voor de overheid verloopt. Verleng uw DigiD binnen 2 dagen via s.id/digid-verleng,phishing,identity_app_expiring,nl
+"ING: wij konden uw ID niet verifieren. Scan uw paspoort opnieuw met de app, start hier: t.co/ingScanId",phishing,bank_identity_verification,nl
+"ABN AMRO: uw Wereldpas is gebruikt in Madrid (€312,45). Niet in het buitenland? Blokkeer transactie mijn-zaken-online.top/abn",phishing,bank_pending_charge,nl
+"Openstaand betaalverzoek €9,50 - Lotte B. via ING Betaalverzoek. Betalen: bit.ly/ing-bv-lotte",phishing,wallet_payment_request,nl
+"Rabobank: geachte klant, uw Random Reader raakt buiten gebruik. Schakel over naar de Rabo Scanner cutt.ly/random-reader",phishing,bank_token_expiring,nl
+"Knab: nieuwe tegenrekening toegevoegd aan je adresboek (13-11, 10:42). Herken je dit niet? is.gd/knab-tegenrek",phishing,bank_new_payee,nl
+ICS: Mastercard SecureCode is niet meer geactiveerd op uw kaart. Zonder activatie kunt u niet online betalen tinyurl.com/ics-secure,phishing,card_security_activation,nl
+"SNS: we hebben een terugboeking van €59,99 voor je klaargezet. Kies de rekening waarop je het wilt ontvangen rb.gy/sns-terugb",phishing,bank_refund_waiting,nl
+ING: 2 mislukte inlogpogingen op Mijn ING vanaf IP 185.23.xx.xx. Beveilig uw account t.ly/ing-inlog2,phishing,bank_unrecognised_login,nl
+ABN AMRO: laatste herinnering. Uw bankpas wordt op 15-11 gedeactiveerd als u de nieuwe pas niet aanvraagt. shorturl.at/abn-laatste,phishing,card_expiry_replacement,nl
+N26: je rekening moet opnieuw geverifieerd worden via een korte video-identificatie. Start: goo.su/n26-nl-video,phishing,bank_identity_verification,nl
+Rabobank: uw daglimiet is verhoogd naar €10.000. Niet door u aangevraagd? Zet terug via s.id/rabo-limiet,phishing,card_setting_changed,nl
+ASN: uw betaalpas is tijdelijk geblokkeerd.Deblokkeer:t.co/asnDeblok,phishing,card_blocked,nl
+ING: uw oude pas is niet retour ontvangen. Stuur deze op met het retourlabel om kosten (€15) te voorkomen bit.ly/ing-retourlabel,phishing,card_return_old,nl
+Wise: je overboeking van €780 staat in de wacht. Bevestig je identiteit zodat we kunnen uitbetalen cutt.ly/wise-wacht,phishing,wallet_account_limited,nl
+Rabobank: wij zien een aanvraag voor een lening van €7.500 op uw naam. Niet van u? Meld het direct is.gd/rabo-lening,phishing,bank_loan_not_you,nl
+"ABN AMRO Tikkie: verificatie van uw rekening is verlopen. Betaal eenmalig €0,01 om opnieuw te koppelen tinyurl.com/tk-1cent",phishing,wallet_verification_payment,nl
+ING: nieuwe beveiligingsupdate beschikbaar voor uw account. Installeer voor 22-11 hulp-en-contact24.icu/ing,phishing,bank_app_update,nl
+Mijn Rabobank: uw sessie is om veiligheidsredenen beeindigd en uw toegang gepauzeerd. Herstel toegang rb.gy/rabo-sessie,phishing,bank_user_disabled,nl
+KBC: uw bankkaart vervalt op 30/11. Gelieve uw nieuwe kaart aan te vragen via t.ly/kbc-kaart,phishing,card_expiry_replacement,nl
+itsme: uw account wordt gedeactiveerd. Heractiveer uw itsme app binnen 48u via shorturl.at/itsme-heract,phishing,identity_app_reactivation,nl
+Belfius: er werd een nieuw toestel gekoppeld aan Belfius Mobile. Was u dit niet? Ontkoppel hier goo.su/belf-toestel,phishing,bank_unrecognised_device,nl
+BNP Paribas Fortis: uw kaartlezer is aan vervanging toe. Bestel gratis de nieuwe lezer s.id/bnppf-lezer,phishing,bank_token_expiring,nl
+Argenta: u heeft een beveiligd bericht ontvangen in uw Argenta-app. Lees het via t.co/argBericht2,phishing,bank_secure_message,nl
+"Payconiq: je hebt €65,00 ontvangen van Jonas V. Bevestig je rekening om het bedrag te ontvangen bit.ly/payc-jonas",phishing,wallet_incoming_payment,nl
+ING Belgie: uw ING Banking app moet opnieuw geregistreerd worden na de update van 12/11. cutt.ly/ing-be-app,phishing,bank_app_reactivation,nl
+Card Stop: uw kaart werd geblokkeerd na een verdachte betaling van €540. Vraag deblokkering aan is.gd/cardstop-debl,phishing,card_blocked,nl
+KBC Mobile: aanmelding vanop onbekend toestel om 22u17. Niet u? Beveilig uw rekening tinyurl.com/kbc-aanmeld,phishing,bank_unrecognised_login,nl
+Crelan: uw digipass verloopt binnenkort. Verleng de geldigheid online rb.gy/crelan-digi,phishing,bank_token_expiring,nl
+"Beobank: betaling van €289,00 bij Krefel in afwachting. Niet akkoord? Weiger via t.ly/beo-289",phishing,bank_pending_charge,nl
+Belfius: OPGELET uw rekening wordt geblokkeerd binnen 12u! Bevestig uw identiteit met uw kaartlezer shorturl.at/belf-12u,phishing,bank_account_suspension,nl
+AXA Bank is nu Crelan. Activeer uw nieuwe toegang voor 25/11 om verder te kunnen bankieren goo.su/axa-crelan,phishing,bank_migration,nl
+Bancontact: uw kaart is nog niet geschikt voor de nieuwe 3D Secure. Activeer via s.id/bc-3ds,phishing,card_security_activation,nl
+itsme: er werd een nieuw gsm-nummer aangevraagd voor uw account. Niet door u? Annuleer t.co/itsmeGsm8,phishing,identity_app_profile_change,nl
+"BNP Paribas Fortis: terugbetaling van €112,80 staat klaar. Gelieve uw rekeningnummer te bevestigen bit.ly/fortis-terug",phishing,bank_refund_waiting,nl
+"Argenta: overschrijving van €1.400,00 naar BE71 **** 0417 gepland. Annuleer indien u dit niet was cutt.ly/arg-1400",phishing,bank_transfer_not_you,nl
+KBC: uw KBC Sign-toegang vervalt vandaag. Hernieuw om te blijven tekenen met uw app klantenzone-be.top/sign,phishing,bank_token_expiring,nl
+Keytrade Bank: uw profiel is onvolledig (MiFID). Vervolledig het voor 30/11 om blokkering te vermijden is.gd/keytrade-mifid,phishing,bank_account_update,nl
+"Belfius: nieuwe begunstigde toegevoegd op 13/11 om 9u48. Herkent u dit niet, klik dan tinyurl.com/belf-begunst",phishing,bank_new_payee,nl
+"hallo, uw debetkaart van ING is vervallen. vraag een nieuwe kaart aan zodat u kan blijven betalen rb.gy/ing-be-kaart",phishing,card_expiry_replacement,nl
+Fintro: uw Easy Banking toegang is geschorst wegens foutieve aanmeldingen. Herstel: t.ly/fintro-easy,phishing,bank_user_disabled,nl
+VDK bank: gelieve uw contactgegevens te bevestigen. Zonder bevestiging wordt uw online bankieren beperkt gegevens-bijwerken.info/vdk,phishing,bank_account_update,nl
+Payconiq by Bancontact: je app-koppeling met je bank is verbroken. Koppel opnieuw goo.su/payc-koppel,phishing,bank_app_reactivation,nl
+"KBC: domiciliering van €74,50 (Telenet) geweigerd. Betaal manueel om kosten te vermijden s.id/kbc-domic",phishing,bank_payment_rejected,nl
+"BNP Paribas Fortis: uw kaart *5521 werd gebruikt in Parijs voor €460,00. Betwist de verrichting t.co/bnpParijs46",phishing,bank_pending_charge,nl
+Mastercard Belgie: uw kredietkaart is tijdelijk opgeschort. Dossier 88140. Reactiveer via bit.ly/mc-be-react,phishing,card_blocked,nl
+Belfius: uw bankkaart wordt vervangen door een milieuvriendelijke kaart. Bevestig het leveringsadres cutt.ly/belf-eco,phishing,card_expiry_replacement,nl
+Argenta: wij hebben uw identiteitskaart niet meer in ons bestand. Lees uw eID opnieuw in via mijn-dossier-online.xyz/arg,phishing,bank_identity_verification,nl
+itsme: bevestig uw identiteit opnieuw om itsme te blijven gebruiken bij uw bank. Duurt 2 minuten is.gd/itsme-bevestig,phishing,identity_app_reactivation,nl
+"Crelan: er werd €350,00 afgehaald aan een automaat in Antwerpen (13/11 07u52). Niet u? tinyurl.com/crelan-afhaal",phishing,bank_withdrawal_not_you,nl
+"KBC: U HEEFT EEN ONBETAALDE KREDIETKAARTAFREKENING VAN €196,30. BETAAL VANDAAG rb.gy/kbc-afrek",phishing,card_payment_rejected,nl
+ING: uw Card Reader wordt niet meer ondersteund vanaf 01/12. Schakel over naar itsme via t.ly/ing-reader,phishing,bank_token_expiring,nl
+Beobank: uw wachtwoord voor Beobank Online werd gewijzigd. Was u dit niet? Herstel uw toegang shorturl.at/beo-ww,phishing,bank_profile_change,nl
+Belfius Direct Net: uw sessie werd beeindigd. Meld u opnieuw aan en bevestig uw gegevens goo.su/belf-dnet,phishing,bank_user_disabled,nl
+bpost bank wordt BNP Paribas Fortis. Zet uw rekening en kaart voor 20/11 over s.id/bpost-overzet,phishing,bank_migration,nl
+"KBC: betaalverzoek van €38,00 van Emma D. wacht op uw goedkeuring. Betalen of weigeren: t.co/kbcVerz38",phishing,wallet_payment_request,nl
+Argenta: uw limiet voor online betalingen werd op €0 gezet uit veiligheid. Pas aan via bit.ly/arg-limiet,phishing,card_setting_changed,nl
+Hello bank!: je kaart werd toegevoegd aan Apple Pay op een nieuw toestel. Niet jij? Verwijder ze cutt.ly/hello-applepay,phishing,bank_unrecognised_device,nl
+BNP Paribas Fortis: gelieve de nieuwe algemene voorwaarden te aanvaarden voor 28/11 om uw Easy Banking App te blijven gebruiken. veilig-aanmelden24.icu/voorwaarden,phishing,bank_terms_acceptance,nl

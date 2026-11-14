@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regression gate for a model checkpoint: score the small eval sets and fail below thresholds.
 
-    python evals/gate.py --model src/mBERT/training/model-training/mbert_ots_model_2.9.pth
+    python evals/gate.py --model src/mBERT/training/model-training/mbert_ots_model_2.12.pth
 
 Thresholds live in evals/gate_thresholds.json. They are set a little under the
 2.9 release numbers so seed noise passes and a real regression does not.

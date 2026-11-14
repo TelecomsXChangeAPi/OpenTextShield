@@ -1,0 +1,341 @@
+text,label,category,language
+Correos: su envio ES4471902 no ha podido entregarse por direccion incompleta. Actualice sus datos en https://bit.ly/3xKq9Tz,phishing,courier_address_incomplete,es
+SEUR informa: 2º intento de entrega fallido. Reprograme antes del 16/11 en cutt.ly/8eR8kLm,phishing,courier_second_attempt,es
+"Su paquete esta retenido en aduanas. Tasa pendiente: 1,79 EUR. Pague aqui: tinyurl.com/4hd8ua2p",phishing,courier_customs_fee,es
+[MRW] No habia nadie en el domicilio. Elija nueva fecha de entrega:is.gd/Qp7vXa,phishing,courier_missed_delivery,es
+"AEAT: Tiene pendiente una devolucion de 284,16 EUR del ejercicio 2025. Confirme su cuenta en rb.gy/t7m2qx",phishing,gov_tax_refund,es
+"DGT: multa de tráfico no abonada, exp. 28-447193-K. Evite el recargo del 50% pagando hoy: https://t.ly/dG9w",phishing,gov_traffic_fine,es
+Seguridad Social: su tarjeta sanitaria caduca el 30/11. Solicite la nueva sin coste en shorturl.at/hKM47,phishing,gov_health_card,es
+Movistar: tu factura de noviembre no se ha podido cobrar. Actualiza el metodo de pago para evitar el corte bit.ly/4aFv11Q,phishing,carrier_unpaid_bill,es
+Vodafone info: tienes 4.870 puntos que caducan mañana. Canjéalos por un regalo en cutt.ly/Pw3VdfK,phishing,carrier_points_expiring,es
+"ENDESA: aviso de corte de suministro por impago de 63,40€. Regularice antes de las 14h. https://goo.su/eNd4Lz",phishing,utility_disconnection,es
+NETFLIX: no pudimos procesar tu pago. Tu cuenta se suspendera en 24h. Actualiza tus datos: t.co/Nf8xQ2ab1,phishing,streaming_billing_update,es
+Amazon: hemos detectado un problema con tu pedido 402-8817345-22. Verifica la direccion de envio en s.id/7pedK,phishing,shopping_order_problem,es
+GLS: tu paquete llega hoy pero falta el numero del portal. Completalo aqui https://is.gd/gL5w2R,phishing,courier_address_incomplete,es
+"Correos Express: envío retenido en centro logístico. Faltan 2,99EUR de gastos de gestión. tinyurl.com/2yh8vcex",phishing,courier_fee,es
+"DHL Express: su envio 4829017365 procedente de CN requiere pago de IVA de importacion (3,12 EUR). rb.gy/k2v9ds",phishing,courier_customs_fee,es
+"Hola, soy el repartidor de SEUR, he pasado esta mañana y no habia nadie. Para volver a pasar confirma aqui cutt.ly/XeRt5Bn",phishing,courier_missed_delivery,es
+Agencia Tributaria: se ha detectado un error en su declaracion de la renta. Consulte la notificacion en https://t.ly/aEa7t,phishing,gov_tax_error,es
+AVISO DGT: ULTIMO DIA para pagar su sancion con descuento!! Despues se iniciara via de apremio. bit.ly/4dGtPa9,phishing,gov_traffic_fine,es
+SEPE: su prestación ha sido suspendida temporalmente por falta de datos. Reactívela en shorturl.at/sEp32,phishing,gov_benefits,es
+Cl@ve: su certificado digital caduca en 48h. Renuevelo para seguir accediendo a sus tramites: goo.su/CLv9,phishing,gov_account_renewal,es
+Yoigo: tu SIM sera desactivada por falta de verificacion de identidad. Verifica ahora en is.gd/yg0SiM,phishing,carrier_sim_suspension,es
+"Orange: Has pagado dos veces tu ultima factura. Solicita el reembolso de 38,90€ en t.co/oRg5tK2mm9",phishing,carrier_refund,es
+Iberdrola Clientes: tiene una factura devuelta (ref. 0098812277). Abone el importe para evitar la suspension https://cutt.ly/iBd7Qw,phishing,utility_unpaid_bill,es
+"Naturgy: le corresponde un abono de 47,25 EUR por lectura estimada. Indique donde ingresarlo: tinyurl.com/mr3xn8ab",phishing,utility_refund,es
+Disney+: tu suscripción no se ha renovado. Revisa tu forma de pago en bit.ly/3DpL8sQ,phishing,streaming_billing_update,es
+Spotify: hemos tenido un problema con tu ultimo cobro de Premium. Si no lo actualizas perderas tus playlists descargadas rb.gy/sp0t1f,phishing,streaming_billing_update,es
+Wallapop: tu venta se ha completado. Para recibir los 85€ confirma tu tarjeta en https://s.id/wlpC0,phishing,marketplace_payout,es
+El Corte Ingles: su pedido 7741209 no puede salir de almacen por datos de facturacion incorrectos. Corrijalos en t.ly/e7741,phishing,shopping_order_problem,es
+DAZN: tu cuenta ha sido deshabilitada por un intento de pago rechazado. Recuperala aqui is.gd/dzN81p,phishing,streaming_account_disabled,es
+"Amazon Prime: se cobrará la renovación anual de 49,90 EUR hoy. Si no lo reconoces cancela en shorturl.at/aMzPr",phishing,shopping_renewal_charge,es
+correos: le informamos que su paquete no cabe en el buzon y sera devuelto al remitente el 15/11. programe la entrega cutt.ly/cR0e77,phishing,courier_missed_delivery,es
+"Mensaje 1/1 SEUR: Envio 0871-229104 en reparto. Coste de reexpedicion pendiente 1,45€.Pague en https://bit.ly/3rxSe0",phishing,courier_fee,es
+Su paquete ha llegado a nuestro almacen pero la etiqueta esta dañada. Confirme nombre y direccion: tinyurl.com/yc7kp2da,phishing,courier_address_incomplete,es
+Sede Electronica: tiene una notificacion administrativa pendiente de lectura. Plazo 10 dias naturales. Acceso: rb.gy/n0tif8,phishing,gov_notification,es
+"Ayuntamiento de Madrid: denuncia por estacionamiento indebido, 90 EUR. Pago voluntario con 50% dto hasta el 20/11 en t.ly/mMu1t",phishing,gov_parking_fine,es
+"Zona de Bajas Emisiones Barcelona: su vehiculo ha accedido sin autorizacion. Sancion 200€, abone 100€ en plazo: aviso-pagos.icu/zbe",phishing,gov_traffic_fine,es
+INSS: su pensión de noviembre no ha podido abonarse por un error en el IBAN. Corríjalo en https://is.gd/iNss4b,phishing,gov_benefits,es
+Bono Social Electrico: su solicitud ha sido aprobada. Para aplicar el descuento del 40% confirme sus datos en shorturl.at/bSe21,phishing,gov_benefits,es
+"Movistar: Hemos detectado una solicitud de duplicado de SIM en tu linea. Si no has sido tu, cancelala aqui: bit.ly/3mSimN0",phishing,carrier_sim_replacement,es
+Digi: tu linea terminada en 471 sera suspendida el 14/11 por documentacion pendiente. Sube tu DNI en cutt.ly/dg1DNi,phishing,carrier_sim_suspension,es
+"MasMovil te informa: recibo devuelto por tu banco. Importe 29,90. Paga con tarjeta y evita gastos de reconexion: t.co/mM4vvL0p2x",phishing,carrier_unpaid_bill,es
+Canal de Isabel II: factura de agua impagada. Se procedera al corte de suministro en 72 horas. Pago online tinyurl.com/3cyw82pa,phishing,utility_disconnection,es
+Repsol Luz y Gas: no hemos podido domiciliar tu recibo. Evita recargos actualizando el IBAN en rb.gy/rpsl9z,phishing,utility_unpaid_bill,es
+HBO Max: tu periodo de pago ha vencido. Actualiza la tarjeta para seguir viendo https://t.ly/hbM4x,phishing,streaming_billing_update,es
+Apple: tu ID de Apple ha sido bloqueado por motivos de seguridad. Desbloquealo en is.gd/a9lIdE antes de 24 horas,phishing,account_disabled,es
+PayPal: se ha limitado tu cuenta por actividad inusual. Confirma tu identidad en s.id/ppL1m,phishing,account_disabled,es
+Zara: no hemos podido entregar tu pedido 53301877421. Confirma una nueva direccion en bit.ly/4zrEnt7,phishing,shopping_order_problem,es
+"Vinted: el comprador ha pagado tu articulo. Retira tu saldo de 32,50€ aqui cutt.ly/vn7dSa",phishing,marketplace_payout,es
+"AliExpress: tu paquete esta en aduanas de Madrid. Abona los aranceles (2,35€) o sera devuelto. goo.su/axAdu",phishing,courier_customs_fee,es
+"Renfe: tiene derecho a una devolucion de 41,80 EUR por el retraso de su tren AVE 03112. Tramitela en shorturl.at/rnf88",phishing,transport_refund,es
+"Tu paquete de Correos esta listo pero no pudimos contactarte!!! ULTIMO AVISO, se devuelve mañana >> tinyurl.com/5n8xw3tt",phishing,courier_missed_delivery,es
+MUFACE: su tarjeta sanitaria europea esta pendiente de renovacion. Solicitud en linea: is.gd/tSe7rn,phishing,gov_health_card,es
+DGT informa: su permiso de conducir caduca el 02/12/2026. Renueve sin cita previa en https://rb.gy/d9tprm,phishing,gov_licence_renewal,es
+"Hacienda le ha enviado una carta de pago. Importe a ingresar: 112,07 EUR. Fecha limite 18/11. Ver documento t.ly/hCd4",phishing,gov_tax_error,es
+"Vodafone: tu factura de 54,12€ esta disponible. El cargo ha sido rechazado, paga ahora para no perder el servicio bit.ly/vfN0v26",phishing,carrier_unpaid_bill,es
+"SAT: Tienes un saldo a favor de $3,418.00 MXN. Para recibir tu devolución valida tu CLABE en bit.ly/3sDev26",phishing,gov_tax_refund,es
+Correos de Mexico: su paquete MX3390218 no pudo ser entregado por domicilio incompleto. Actualice en cutt.ly/cmxD0m,phishing,courier_address_incomplete,es
+Estafeta: tu guia 6055112907 esta detenida. Falta pago de maniobras $38.50. Liquida aqui tinyurl.com/2p9guia4,phishing,courier_fee,es
+"Telcel: Tus 2,300 puntos Circulo Azul vencen HOY. Canjea por un equipo en is.gd/tlcPt5",phishing,carrier_points_expiring,es
+CFE: su servicio 448 110 902 771 presenta adeudo de $612. Corte programado para mañana. Pague en linea rb.gy/cf3adu,phishing,utility_disconnection,es
+Mercado Libre: tu compra fue pausada por un problema con el pago. Revisa los datos de tu tarjeta en t.ly/mLc0,phishing,shopping_order_problem,es
+INFONAVIT: tienes un saldo disponible en tu Subcuenta de Vivienda. Consulta y retira en shorturl.at/infv7,phishing,gov_benefits,es
+IMSS informa: su vigencia de derechos requiere actualizacion. Evite la baja ingresando a goo.su/imVig,phishing,gov_health_card,es
+Fotocivicas CDMX: tu vehiculo placas terminacion 47-B tiene 2 infracciones sin pagar. Consulta y paga con 50% desc. s.id/ftCdx,phishing,gov_traffic_fine,es
+"DHL Mexico: paquete en aduana AICM, impuestos por pagar $94.00. Tiene 48 hrs. https://bit.ly/4dImpMx",phishing,courier_customs_fee,es
+Telmex: tu recibo de noviembre esta vencido. Evita la suspension de tu internet pagando en t.co/tmx7Pq2w1,phishing,carrier_unpaid_bill,es
+"Netflix: tu membresía está suspendida, no pudimos cobrar $219. Actualiza tu forma de pago cutt.ly/nfxMx9",phishing,streaming_billing_update,es
+AT&T: tu linea sera dada de baja por falta de registro de CURP. Registrala en is.gd/a7Curp,phishing,carrier_sim_suspension,es
+Bienestar: tu apoyo bimestral ya fue depositado pero tu tarjeta requiere activacion. Activala en tinyurl.com/bn5tac7k,phishing,gov_benefits,es
+Amazon Mexico: Tu pedido 701-4420918 no pudo enviarse. Confirma tu direccion antes de 24h o sera cancelado rb.gy/amxP3d,phishing,shopping_order_problem,es
+Correo Argentino: tu envio CP448120937AR no pudo entregarse. Coordina una nueva visita en bit.ly/3caV1s,phishing,courier_missed_delivery,es
+ARCA: registras una deuda de $18.450 en Monotributo. Regulariza hoy y evita la baja de oficio. t.ly/arM0,phishing,gov_tax_error,es
+ANSES: tenes un bono de $70.000 pendiente de cobro. Verifica tu CBU para acreditarlo en cutt.ly/an5Bno,phishing,gov_benefits,es
+Personal: tu factura vencio el 10/11. Paga ahora y evita la suspension de la linea https://is.gd/pr5Fct,phishing,carrier_unpaid_bill,es
+Edenor: aviso de corte por falta de pago. Cliente 0044718829. Abona online antes de las 18hs: shorturl.at/ednPg,phishing,utility_disconnection,es
+Mercado Libre: detectamos un ingreso sospechoso en tu cuenta y fue inhabilitada. Recuperala desde goo.su/mLarC,phishing,account_disabled,es
+Andreani: tu paquete esta en sucursal pero falta abonar $1.250 de almacenaje. Pagalo en tinyurl.com/4ndr5uc,phishing,courier_fee,es
+Claro: tenes 3.500 puntos Claro Club que vencen el viernes. Canjealos por credito en rb.gy/c1rClb,phishing,carrier_points_expiring,es
+Infraccion de transito CABA: acta Q-22841907. Pago voluntario con 50% de descuento hasta el 20/11 s.id/cbAct,phishing,gov_traffic_fine,es
+Metrogas: su factura presenta saldo impago. Para evitar la interrupcion del servicio ingrese a t.co/mgs4Rw8k0z,phishing,utility_unpaid_bill,es
+Mi Argentina: tu licencia de conducir digital esta por vencer. Renovala sin turno en bit.ly/4miL1c,phishing,gov_licence_renewal,es
+SUBE: tu tarjeta fue bloqueada por registro incompleto. Completá los datos para recuperar tu saldo cutt.ly/sb3Reg,phishing,transport_card_blocked,es
+"Servientrega: su guia 2148830071 no pudo ser entregada, destinatario ausente. Reprograme en is.gd/sv7Gia",phishing,courier_missed_delivery,es
+DIAN: usted presenta una inconsistencia en su declaracion de renta 2025. Revise el requerimiento en tinyurl.com/d1anr3q,phishing,gov_tax_error,es
+SIMIT: tiene un comparendo pendiente por $604.100. Pague con descuento del 50% hoy rb.gy/s1mCmp,phishing,gov_traffic_fine,es
+Claro Colombia: tu linea sera suspendida por factura vencida de $58.900. Paga por PSE aqui t.ly/cPs3,phishing,carrier_unpaid_bill,es
+Enel Colombia: orden de suspension del servicio de energia para el dia 14/11. Cancele su factura en shorturl.at/enLco,phishing,utility_disconnection,es
+"Coordinadora: tu paquete esta en bodega, direccion no encontrada. Corrigela para el siguiente intento goo.su/crdDr",phishing,courier_address_incomplete,es
+Tigo: tu SIM requiere reposicion por actualizacion de red 4G. Solicita el cambio gratis antes del 30/11 en s.id/tg4Sim,phishing,carrier_sim_replacement,es
+Familias en Accion: su subsidio esta listo para cobro. Valide su cedula en bit.ly/3faSub5,phishing,gov_benefits,es
+Peajes electronicos: su TAG registra 3 pasos sin pago en la via Bogota-Girardot. Evite el reporte cutt.ly/pj3Co,phishing,toll_unpaid,es
+Rappi: tu cuenta fue desactivada por un cobro rechazado. Actualiza tu tarjeta en is.gd/rp9Cta,phishing,account_disabled,es
+Correos de Chile: su encomienda esta retenida por falta de numeracion. Complete en tinyurl.com/cch8num2,phishing,courier_address_incomplete,es
+Chilexpress: OT 77420118856 con intento de entrega fallido. Pague $990 por reagendamiento rb.gy/chx0t7,phishing,courier_second_attempt,es
+SII: tiene una devolucion de impuestos pendiente por $187.340. Confirme su cuenta en t.ly/s1Dv,phishing,gov_tax_refund,es
+Autopista Central: registra transitos sin TAG impagos por $4.870. Regularice antes de pasar a cobranza judicial. shorturl.at/tgCl4,phishing,toll_unpaid,es
+Entel: tu chip sera bloqueado en 24 hrs por no validar tu RUT. Valida aqui goo.su/en7Rut,phishing,carrier_sim_suspension,es
+Enel: aviso de corte. Cuenta 3-4471820 con deuda vencida. Pague en linea s.id/enClp,phishing,utility_disconnection,es
+WOM: no pudimos cargar tu boleta a la tarjeta. Actualiza el medio de pago bit.ly/3w0mBol,phishing,carrier_unpaid_bill,es
+Fonasa: tienes un excedente de $42.600 a tu favor. Solicita la devolucion en cutt.ly/fn5Exc,phishing,gov_health_refund,es
+Falabella.com: tu pedido 9044172 quedo pendiente por error en el despacho. Confirma tus datos is.gd/fb1Dsp,phishing,shopping_order_problem,es
+SUNAT: tiene una devolucion de S/ 356.00 por renta de quinta categoria. Registre su cuenta en tinyurl.com/sn7dev9x,phishing,gov_tax_refund,es
+Serpost: su paquete internacional esta en aduanas. Derechos por pagar S/ 7.90. rb.gy/srpAd8,phishing,courier_customs_fee,es
+Olva Courier: no encontramos su direccion. Su envio regresa a agencia hoy 5pm. Actualice t.ly/o1Dr,phishing,courier_address_incomplete,es
+Claro Peru: tu linea postpago sera cortada por deuda de S/ 79.90. PAGA YA shorturl.at/c1rPe,phishing,carrier_unpaid_bill,es
+"Luz del Sur: corte programado por recibo vencido, suministro 1447820. Evitelo pagando en pagos-enlinea.top/r/1447",phishing,utility_disconnection,es
+SAT Lima: papeleta de transito pendiente N 14472-B. Descuento de 83% solo hasta mañana s.id/s7Lma,phishing,gov_traffic_fine,es
+Movistar Ecuador: tu plan no se renovo. Actualiza tu tarjeta para no perder el servicio bit.ly/4mvEcP,phishing,carrier_unpaid_bill,es
+"ANTEL: su factura esta vencida. Evite el corte de su servicio, pague en cutt.ly/an7Luy",phishing,carrier_unpaid_bill,es
+SRI: usted tiene valores a favor por devolver. Ingrese su cuenta para la acreditacion is.gd/sr1Dev,phishing,gov_tax_refund,es
+PostNL: uw pakket 3SKABA4471902 kon niet worden bezorgd. Plan een nieuwe bezorging via https://bit.ly/3pNl7Qx,phishing,courier_missed_delivery,nl
+"DHL: uw zending staat klaar, maar het huisnummer ontbreekt. Vul uw adres aan op cutt.ly/dH7adr",phishing,courier_address_incomplete,nl
+"Belastingdienst: u heeft recht op een teruggave van EUR 318,42 over 2025. Bevestig uw rekeningnummer via tinyurl.com/bd25trg8",phishing,gov_tax_refund,nl
+CJIB: uw verkeersboete met kenmerk 4471 9028 3310 is nog niet betaald. Voorkom een verhoging: is.gd/cj1Bbt,phishing,gov_traffic_fine,nl
+DigiD: uw account verloopt op 16-11-2026. Verleng nu om toegang te behouden rb.gy/d9dVrl,phishing,gov_account_renewal,nl
+KPN: uw laatste factuur kon niet worden afgeschreven. Betaal voor 15/11 om afsluiting te voorkomen: t.ly/kPn4,phishing,carrier_unpaid_bill,nl
+"Ziggo: er staat een openstaand bedrag van 47,50 euro. Voldoe dit vandaag nog via shorturl.at/zg0Bet",phishing,carrier_unpaid_bill,nl
+Odido: je simkaart wordt binnenkort gedeactiveerd wegens een netwerkupdate. Vraag gratis een nieuwe aan op goo.su/od1Sim,phishing,carrier_sim_replacement,nl
+Vodafone: je hebt 2.450 spaarpunten die morgen vervallen. Wissel ze in via s.id/vfPnt,phishing,carrier_points_expiring,nl
+Essent: wij hebben uw termijnbedrag niet ontvangen. Om afsluiting van stroom te voorkomen betaalt u via bit.ly/4esTrm,phishing,utility_disconnection,nl
+"Netflix: je betaling is mislukt. Werk je betaalgegevens bij, anders wordt je account gepauzeerd. cutt.ly/nfNl26",phishing,streaming_billing_update,nl
+bol: er is een probleem met je bestelling 1447203981. Controleer je bezorgadres op is.gd/b0lBst,phishing,shopping_order_problem,nl
+"Marktplaats: de koper heeft betaald. Bevestig je bankpas om het bedrag van EUR 65,00 te ontvangen tinyurl.com/mp7ontv4",phishing,marketplace_payout,nl
+DPD: we hebben u vandaag gemist. Kies zelf een nieuw bezorgmoment: rb.gy/dpdNw3,phishing,courier_missed_delivery,nl
+"Uw pakket wordt vastgehouden bij de douane. Openstaande invoerkosten: EUR 2,49. Betaal via t.ly/d0uK",phishing,courier_customs_fee,nl
+Toeslagen: uw zorgtoeslag is stopgezet omdat uw gegevens onvolledig zijn. Vul aan via shorturl.at/tsl26,phishing,gov_benefits,nl
+RDW: uw rijbewijs verloopt binnenkort. Verleng online zonder afspraak op goo.su/rdwRb,phishing,gov_licence_renewal,nl
+CAK: u heeft een betalingsachterstand voor de eigen bijdrage Wmo. Bekijk uw openstaande post: s.id/cakWm,phishing,gov_unpaid_fee,nl
+DUO: je studiefinanciering van november is niet uitbetaald door een onjuist IBAN. Pas aan via bit.ly/3du0Ibn,phishing,gov_benefits,nl
+"Eneco: u krijgt EUR 86,13 terug na de jaarafrekening. Geef aan op welke rekening: cutt.ly/en3Trg",phishing,utility_refund,nl
+Videoland: je abonnement is verlopen. Vernieuw je betaalmethode en kijk verder is.gd/vdL4nd,phishing,streaming_billing_update,nl
+"Coolblue: je bestelling kan niet worden verzonden, betaling geweigerd. Probeer opnieuw via tinyurl.com/cb9bst2k",phishing,shopping_order_problem,nl
+"OV-chipkaart: uw kaart is geblokkeerd vanwege een openstaand saldo van -4,80. Hef de blokkade op: rb.gy/ovCh1p",phishing,transport_card_blocked,nl
+LAATSTE WAARSCHUWING CJIB: bij niet betalen volgt beslaglegging!! Betaal direct via t.ly/cjB8,phishing,gov_traffic_fine,nl
+"PostNL: voor uw pakket uit China zijn nog verzendkosten verschuldigd (EUR 1,95). Voldoe dit op shorturl.at/pnVzk",phishing,courier_customs_fee,nl
+"GLS: het bezorgadres van uw pakket is onvolledig, uw zending ligt in het depot. Corrigeer op goo.su/gl5Dpt",phishing,courier_address_incomplete,nl
+MijnOverheid: er staat een nieuw bericht van de Belastingdienst voor u klaar. Lees het voor 20-11 via s.id/mOvBr,phishing,gov_notification,nl
+Vattenfall: je automatische incasso is mislukt. Voorkom extra kosten en betaal via bit.ly/4vtfInc,phishing,utility_unpaid_bill,nl
+Albert Heijn: je Bonuskaart-punten vervallen op 30 november. Verzilver ze nu voor een cadeaubon cutt.ly/ahBn5,phishing,loyalty_points_expiring,nl
+Spotify: betaling niet gelukt. Je Premium wordt stopgezet als je je gegevens niet bijwerkt: is.gd/sp0tNl,phishing,streaming_billing_update,nl
+"Vinted: je verkoop is afgerond! Koppel je rekening om 28,00 euro uit te laten betalen tinyurl.com/vn7uitb3",phishing,marketplace_payout,nl
+"Gemeente Amsterdam: parkeerboete nog niet voldaan, kenmerk 9044-7712. Betaal zonder aanmaningskosten: rb.gy/gmAmp",phishing,gov_parking_fine,nl
+Uw DigiD is tijdelijk geblokkeerd na een verdachte inlogpoging. Deblokkeer via t.ly/dgD7,phishing,account_disabled,nl
+KPN: uw e-mailadres wordt opgeheven wegens inactiviteit. Behoud uw account via shorturl.at/kpnMl,phishing,account_disabled,nl
+Simyo: je nummer wordt op 14-11 afgesloten. Identiteit niet geverifieerd. Verifieer hier goo.su/smyId,phishing,carrier_sim_suspension,nl
+"Greenchoice: uw energielevering wordt beeindigd wegens een achterstand van EUR 124,60. Regel betaling via s.id/grCh",phishing,utility_disconnection,nl
+Amazon.nl: je account is tijdelijk beperkt. Bevestig je betaalgegevens binnen 24 uur bit.ly/3amzNlB,phishing,account_disabled,nl
+"NS: u ontvangt geld terug voor uw vertraagde reis op 08-11 (EUR 14,20). Dien uw verzoek in via cutt.ly/nsGtv",phishing,transport_refund,nl
+Zalando: je retour is ontvangen maar de terugbetaling is mislukt. Controleer je rekeningnummer is.gd/zlRet,phishing,shopping_refund,nl
+"hoi, PostNL bezorger hier. kon je pakket niet kwijt bij de buren. kies ander moment: tinyurl.com/5pnlbz8w",phishing,courier_missed_delivery,nl
+Disney+: we konden je maandbedrag niet afschrijven. Update je betaalgegevens via rb.gy/dsnNl4,phishing,streaming_billing_update,nl
+Waternet: uw waterrekening is niet betaald. Afsluiting gepland op 18-11. Betaal online via nota-inzien.top/w/4471,phishing,utility_disconnection,nl
+"Belastingdienst: uit onze administratie blijkt een openstaande schuld van EUR 213,00 (motorrijtuigenbelasting). Voldoe via t.ly/bdMr",phishing,gov_tax_error,nl
+Bericht 1/1 DHL Parcel: zending JVGL0844719 2e bezorgpoging mislukt.Maak afspraak:shorturl.at/dhP2e,phishing,courier_second_attempt,nl
+"bpost: uw pakket 323210447190288 wacht op betaling van 1,99 EUR douanekosten. Betaal via bit.ly/4bpDou",phishing,courier_customs_fee,nl
+"FOD Financien: u heeft recht op een terugbetaling van 241,87 EUR. Vul uw gegevens in op cutt.ly/fodTb7",phishing,gov_tax_refund,nl
+Proximus: uw factuur van november werd geweigerd door uw bank. Vermijd onderbreking van uw dienst: is.gd/prxFc,phishing,carrier_unpaid_bill,nl
+itsme: uw account vervalt vandaag. Heractiveer het om uw apps te blijven gebruiken tinyurl.com/1tsm3ha9,phishing,account_disabled,nl
+"Telenet: we konden je domiciliering niet uitvoeren. Betaal 62,35 euro via rb.gy/tlnDm",phishing,carrier_unpaid_bill,nl
+"Engie: u heeft te veel betaald. Wij storten 74,10 EUR terug zodra u uw rekening bevestigt: t.ly/enG3",phishing,utility_refund,nl
+Vlaamse overheid: uw verkeersbelasting is niet betaald. Bekijk het aanslagbiljet op shorturl.at/vlVkb,phishing,gov_tax_error,nl
+Mutualiteit: uw nieuwe ziekteverzekeringskaart ligt klaar. Bevestig uw adres voor verzending goo.su/mtKrt,phishing,gov_health_card,nl
+2dehands: iemand heeft je zoekertje betaald via Bancontact. Ontvang je geld hier s.id/2dhBc,phishing,marketplace_payout,nl
+Politie: u heeft een onbetaalde boete voor een snelheidsovertreding in Gent. Betaal binnen 5 dagen via bit.ly/3plBt5,phishing,gov_traffic_fine,nl
+Luminus: laatste herinnering voor uw factuur 7044182233. Zonder betaling plaatsen wij een budgetmeter. cutt.ly/lmHr2,phishing,utility_disconnection,nl
+Orange Belgie: je simkaart is verouderd en wordt uitgeschakeld. Bestel gratis je nieuwe sim is.gd/orBeSm,phishing,carrier_sim_replacement,nl
+"Streamz: je abonnement werd niet verlengd, kaart geweigerd. Pas je gegevens aan tinyurl.com/s7rmz4bk",phishing,streaming_billing_update,nl
+"Pakket niet afgeleverd. Reden: bel defect, niemand aanwezig. Nieuwe poging aanvragen rb.gy/pk7nwP",phishing,courier_missed_delivery,nl
+Budget Energie: uw voorschot is 2 keer afgeschreven. Vraag de terugbetaling van 95 euro aan via t.ly/bgE2,phishing,utility_refund,nl
+"Tikkie: betaalverzoek van PostNL voor herbezorging EUR 0,99. Open: pakket-status.xyz/t/88410",phishing,courier_fee,nl
+"La Poste: votre colis n'a pas pu etre livre, adresse incomplete. Mettez a jour vos informations sur https://bit.ly/3lpAdr9",phishing,courier_address_incomplete,fr
+"Colissimo: votre colis 6A04471902281 est en attente. Frais de reexpedition: 1,95 EUR. cutt.ly/co1Fr8",phishing,courier_fee,fr
+Chronopost: le livreur est passé ce matin en votre absence. Choisissez un nouveau créneau: tinyurl.com/chr7abs2,phishing,courier_missed_delivery,fr
+Mondial Relay: votre colis est arrive au point relais mais votre numero de telephone n'est pas reconnu. Confirmez sur is.gd/mdRl4,phishing,courier_address_incomplete,fr
+"impots.gouv: vous etes eligible a un remboursement de 327,40 EUR. Renseignez vos coordonnees bancaires sur rb.gy/dgf1pR",phishing,gov_tax_refund,fr
+ANTAI: votre amende n°4471902288 reste impayee. Reglez sous 48h pour eviter la majoration t.ly/anT4,phishing,gov_traffic_fine,fr
+Ameli: votre nouvelle carte Vitale est disponible. Remplissez le formulaire pour la recevoir: shorturl.at/amVtl,phishing,gov_health_card,fr
+"CAF: un versement de 214,00 EUR n'a pas pu etre effectue. Verifiez votre RIB sur goo.su/cafRb",phishing,gov_benefits,fr
+Mon Compte Formation: vos droits CPF expirent le 30/11. Validez votre dossier pour les conserver s.id/cpF26,phishing,gov_benefits,fr
+Votre vignette Crit'Air n'est pas a jour. Commandez-la avant le prochain controle pour eviter 135 EUR d'amende: bit.ly/4crtAr,phishing,gov_vehicle_sticker,fr
+"Ulys: votre dernier passage au peage n'a pas ete regle (6,80 EUR). Regularisez sur cutt.ly/u1Pg7",phishing,toll_unpaid,fr
+"Orange: votre facture du mois n'a pas ete reglee. Sans paiement, votre ligne sera suspendue. is.gd/orFct",phishing,carrier_unpaid_bill,fr
+SFR: vous avez cumule 3 200 points fidelite qui expirent demain. Echangez-les ici tinyurl.com/sfr9pts3,phishing,carrier_points_expiring,fr
+"Bouygues Telecom: une demande de nouvelle carte SIM a ete enregistree sur votre ligne. Si ce n'est pas vous, annulez: rb.gy/bySm0",phishing,carrier_sim_replacement,fr
+Free: votre prélèvement a été rejeté. Mettez à jour votre moyen de paiement dans les 24h t.ly/frP2,phishing,carrier_unpaid_bill,fr
+"EDF: facture impayee de 78,12 EUR. Coupure d'electricite prevue le 16/11. Payez en ligne shorturl.at/edfCp",phishing,utility_disconnection,fr
+"Engie: suite a un trop-percu, un remboursement de 52,30 EUR vous attend. Confirmez vos informations goo.su/enGtp",phishing,utility_refund,fr
+Netflix: votre abonnement a ete suspendu suite a un echec de paiement. Reactivez votre compte s.id/nfFr,phishing,streaming_billing_update,fr
+Amazon: votre commande 171-4479021-88 est bloquee. Verifiez votre adresse de livraison bit.ly/3amCmd,phishing,shopping_order_problem,fr
+leboncoin: l'acheteur a regle votre annonce. Recevez vos 120 EUR en confirmant votre carte cutt.ly/lbcPm4,phishing,marketplace_payout,fr
+"Vinted: votre porte-monnaie est bloque. Verifiez votre identite pour debloquer 43,50 EUR is.gd/vnPm7",phishing,marketplace_payout,fr
+CANAL+: nous n'avons pas pu renouveler votre abonnement. Actualisez votre carte bancaire tinyurl.com/cnl8abo4,phishing,streaming_billing_update,fr
+Navigo: votre passe sera desactive le 15/11 faute de justificatif. Envoyez-le sur rb.gy/nvG0p,phishing,transport_card_blocked,fr
+France Travail: votre actualisation n'a pas ete prise en compte. Risque de radiation. Corrigez sur t.ly/frT7,phishing,gov_benefits,fr
+ANTS: votre permis de conduire doit etre renouvele au nouveau format. Demande en ligne: shorturl.at/antPc,phishing,gov_licence_renewal,fr
+"Bonjour c'est le livreur, votre colis ne rentre pas dans la boite aux lettres. Merci de reprogrammer ici goo.su/lvBal",phishing,courier_missed_delivery,fr
+DERNIER RAPPEL: amende majoree a 375 EUR si non reglee aujourd'hui !! Paiement: s.id/amMj,phishing,gov_traffic_fine,fr
+"DHL: votre envoi en provenance du Royaume-Uni est retenu en douane. TVA a regler: 3,47 EUR. bit.ly/4dhDou",phishing,courier_customs_fee,fr
+"Info colis: 2e tentative de livraison echouee, retour expediteur le 17/11. Reprogrammez: suivi-info.top/c/7H2K",phishing,courier_second_attempt,fr
+"Assurance Maladie: un remboursement de 64,20 EUR est en attente. Mettez a jour votre compte cutt.ly/asMrb",phishing,gov_health_refund,fr
+DGFiP: une erreur a ete constatee sur votre avis d'imposition 2026. Consultez le detail sur is.gd/dgfAv,phishing,gov_tax_error,fr
+Stationnement Paris: forfait post-stationnement impaye de 50 EUR. Majoration a compter du 19/11. tinyurl.com/fps5par2,phishing,gov_parking_fine,fr
+Disney+: echec du paiement mensuel. Votre acces sera interrompu ce soir. rb.gy/dsFr3,phishing,streaming_billing_update,fr
+Apple: votre identifiant a ete verrouille pour des raisons de securite. Deverrouillez-le t.ly/apF9,phishing,account_disabled,fr
+"Cdiscount: votre colis est pret mais le paiement de 1,49 EUR de frais de port a echoue. shorturl.at/cdFp",phishing,shopping_order_problem,fr
+Veolia: votre facture d'eau est en retard de paiement. Evitez les frais de relance: goo.su/veEau,phishing,utility_unpaid_bill,fr
+"TotalEnergies: prelevement refuse, ref 20261104471. Regularisez avant suspension du contrat s.id/ttEn",phishing,utility_disconnection,fr
+"SNCF: suite au retard de votre TGV 6617, vous beneficiez de 23,00 EUR. Demandez le virement: bit.ly/3sncRt",phishing,transport_refund,fr
+"Shein: votre commande est en attente de dedouanement. Frais: 2,10 EUR, a regler sous 3 jours cutt.ly/shDd",phishing,courier_customs_fee,fr
+"La Poste Mobile: votre carte SIM sera desactivee, piece d'identite manquante. Deposez-la ici is.gd/lpmId",phishing,carrier_sim_suspension,fr
+Prime Video: votre moyen de paiement a expire. Mettez-le a jour pour continuer tinyurl.com/prv2pay6,phishing,streaming_billing_update,fr
+"GLS: colis en instance au depot, numero de rue manquant. Completez votre adresse rb.gy/glFr5",phishing,courier_address_incomplete,fr
+"bpost: votre colis est en attente de paiement des frais de douane (2,99 EUR). Payez via t.ly/bpF3",phishing,courier_customs_fee,fr
+"SPF Finances: vous avez droit a un remboursement d'impot de 198,65 EUR. Introduisez votre demande shorturl.at/spfRb",phishing,gov_tax_refund,fr
+Proximus: votre facture est impayee. Votre connexion sera limitee des demain. goo.su/pxFc,phishing,carrier_unpaid_bill,fr
+La Poste suisse: votre envoi 99.60.447190.28 n'a pas pu etre distribue. Frais de 1.90 CHF: s.id/psCh,phishing,courier_fee,fr
+Swisscom: votre derniere facture a ete payee deux fois. Demandez le remboursement de CHF 79.00 bit.ly/4swRmb,phishing,carrier_refund,fr
+"Postes Canada: votre colis est retenu, adresse civique incomplete. Corrigez-la au cutt.ly/pcAdr",phishing,courier_address_incomplete,fr
+"ARC: un remboursement d'impot de 412,18 $ vous a ete envoye par Interac. Deposez-le ici: is.gd/arcDp",phishing,gov_tax_refund,fr
+"Hydro-Quebec: avis d'interruption de service pour solde impaye de 143,77 $. Payez en ligne tinyurl.com/hq6sold3",phishing,utility_disconnection,fr
+Poste Italiane: il suo pacco non e stato consegnato per indirizzo incompleto. Aggiorni i dati su https://bit.ly/3piInd,phishing,courier_address_incomplete,it
+"BRT: tentativo di consegna fallito, destinatario assente. Scegli una nuova data: cutt.ly/br7Cns",phishing,courier_missed_delivery,it
+"SDA: la spedizione 2814471902 e in giacenza. Costo di riconsegna 1,50 EUR. Paga qui tinyurl.com/sda4gia7",phishing,courier_fee,it
+"Agenzia delle Entrate: le spetta un rimborso di 268,30 EUR. Comunichi il suo IBAN su is.gd/adeRmb",phishing,gov_tax_refund,it
+INPS: il suo bonus e stato sospeso per dati mancanti. Aggiorni la domanda entro il 18/11 rb.gy/inpBn,phishing,gov_benefits,it
+"PagoPA: risulta una multa non pagata, verbale n. 447190/2026. Paghi entro 5 giorni in misura ridotta t.ly/pgP4",phishing,gov_traffic_fine,it
+"Telepass: il tuo dispositivo e stato sospeso per un pedaggio non saldato di 7,40 EUR. Regolarizza: shorturl.at/tlpPd",phishing,toll_unpaid,it
+Tessera Sanitaria in scadenza. Richieda la nuova tessera gratuitamente compilando il modulo goo.su/tsNw,phishing,gov_health_card,it
+SPID: la tua identita digitale scade tra 48 ore. Rinnovala per non perdere l'accesso s.id/spdRn,phishing,gov_account_renewal,it
+Motorizzazione Civile: la sua patente risulta in scadenza. Prenoti il rinnovo online bit.ly/4mtPat,phishing,gov_licence_renewal,it
+TIM: la tua fattura di novembre non risulta pagata. Evita la sospensione della linea cutt.ly/tmFt26,phishing,carrier_unpaid_bill,it
+Vodafone: hai 5.100 punti in scadenza oggi. Riscatta il tuo premio is.gd/vfPnt,phishing,carrier_points_expiring,it
+WindTre: la tua SIM verra disattivata per mancata verifica del documento. Verifica ora tinyurl.com/w3sim8dc,phishing,carrier_sim_suspension,it
+iliad: addebito non riuscito. Aggiorna il metodo di pagamento per rinnovare l'offerta rb.gy/ilAdb,phishing,carrier_unpaid_bill,it
+"Enel Energia: bolletta scaduta di 84,90 EUR. Distacco della fornitura previsto il 17/11. t.ly/enE5",phishing,utility_disconnection,it
+"Plenitude: ha diritto a un rimborso di 39,15 EUR per conguaglio. Inserisca i dati per l'accredito shorturl.at/plRmb",phishing,utility_refund,it
+NETFLIX: pagamento rifiutato. Il tuo account sara sospeso entro 24 ore. Aggiorna: goo.su/nfIt,phishing,streaming_billing_update,it
+Amazon: non siamo riusciti a spedire il tuo ordine 405-4471902. Conferma l'indirizzo s.id/amzOr,phishing,shopping_order_problem,it
+Subito: l'acquirente ha pagato il tuo annuncio. Ricevi 75 EUR confermando la carta bit.ly/3sbtPg,phishing,marketplace_payout,it
+"DAZN: abbonamento non rinnovato, carta scaduta. Aggiorna i dati di pagamento cutt.ly/dznIt",phishing,streaming_billing_update,it
+Sky: la tua smart card verra disattivata per fattura insoluta. Paga online is.gd/skyFt,phishing,streaming_account_disabled,it
+"Trenitalia: rimborso di 18,50 EUR per ritardo Frecciarossa 9614. Richiedilo qui tinyurl.com/trn5rmb2",phishing,transport_refund,it
+"Autostrade: mancato pagamento pedaggio del 03/11, casello Milano Sud. Importo 4,20 EUR + spese. rb.gy/autPd",phishing,toll_unpaid,it
+"GLS Italy: pacco fermo in sede, manca il numero civico. Completa l'indirizzo t.ly/glI8",phishing,courier_address_incomplete,it
+"DHL: spedizione extra UE in dogana. Dazi da pagare 2,88 EUR entro 3 giorni shorturl.at/dhDog",phishing,courier_customs_fee,it
+"Gentile cliente, il suo pacco è stato trattenuto presso il nostro centro. Segua le istruzioni: goo.su/pkCtr",phishing,courier_missed_delivery,it
+ULTIMO AVVISO: la sua cartella esattoriale verra iscritta a ruolo!! Paghi subito s.id/crtEs,phishing,gov_tax_error,it
+"Comune di Roma: accesso ZTL non autorizzato il 28/10. Sanzione 83 EUR, ridotta se paga entro 5 gg bit.ly/4ztlRm",phishing,gov_traffic_fine,it
+Fascicolo Sanitario: e disponibile un nuovo referto. Acceda con le sue credenziali cutt.ly/fsRef,phishing,gov_health_notice,it
+Agenzia Entrate-Riscossione: incongruenza rilevata nella sua dichiarazione 730. Verifichi la comunicazione is.gd/ae730,phishing,gov_tax_error,it
+Fastweb: abbiamo ricevuto una richiesta di cambio SIM sul tuo numero. Non sei stato tu? Blocca qui tinyurl.com/fw2sim9c,phishing,carrier_sim_replacement,it
+"A2A: la sua fornitura gas sara sospesa per morosita. Saldo dovuto 112,40 EUR. rb.gy/a2aGs",phishing,utility_disconnection,it
+Disney+: non riusciamo ad addebitare il tuo abbonamento. Controlla la carta t.ly/dsI2,phishing,streaming_billing_update,it
+PayPal: il tuo conto e stato limitato. Conferma i tuoi dati per ripristinare l'accesso shorturl.at/ppLmt,phishing,account_disabled,it
+Zalando: il tuo reso e stato accettato ma il rimborso non e andato a buon fine. Verifica l'IBAN goo.su/zlRmb,phishing,shopping_refund,it
+"Ciao sono il corriere, non trovo il citofono. Conferma l'indirizzo qui cosi ripasso domani s.id/crrCit",phishing,courier_address_incomplete,it
+"Poste: pacco in attesa di sdoganamento. Spese 1,99EUR.Paga ora:consegna-info.xyz/p/4471",phishing,courier_customs_fee,it
+Carta d'Identita Elettronica: il suo documento scade a dicembre. Avvii la richiesta di rinnovo bit.ly/3cieRn,phishing,gov_licence_renewal,it
+"Acea: bolletta acqua non pagata, utenza 0044719. Riduzione del flusso dal 20/11. cutt.ly/acAcq",phishing,utility_disconnection,it
+Spotify: il pagamento Premium non e riuscito. Aggiorna i dati o tornerai al piano Free is.gd/spIt4,phishing,streaming_billing_update,it
+"DHL: Ihr Paket konnte nicht zugestellt werden, die Hausnummer fehlt. Adresse ergaenzen: https://bit.ly/3dhAdr",phishing,courier_address_incomplete,de
+"Deutsche Post: Fuer Ihre Sendung RX447190228DE ist ein Nachentgelt von 1,60 EUR offen. cutt.ly/dpNce",phishing,courier_fee,de
+Hermes: Wir haben Sie heute nicht angetroffen. Neuen Zustelltermin waehlen tinyurl.com/hrm6zst2,phishing,courier_missed_delivery,de
+"Zoll: Ihre Sendung wird zurueckgehalten. Einfuhrabgaben 3,21 EUR. Jetzt begleichen: is.gd/z0llAb",phishing,courier_customs_fee,de
+"Finanzamt: Ihnen steht eine Steuererstattung von 412,87 EUR zu. Bankverbindung bestaetigen rb.gy/fzErs",phishing,gov_tax_refund,de
+"ELSTER: Ihr Zertifikat laeuft am 16.11. ab. Verlaengern Sie es, um weiter Zugriff zu haben t.ly/elS6",phishing,gov_account_renewal,de
+Bussgeldstelle: Ihr Verwarnungsgeld Az. 447.19.022881 ist ueberfaellig. Zahlen Sie innerhalb 48 Std. shorturl.at/bgSt4,phishing,gov_traffic_fine,de
+AOK: Ihre Gesundheitskarte wird ungueltig. Bestellen Sie kostenfrei Ihre neue eGK goo.su/aokGk,phishing,gov_health_card,de
+Bundesagentur fuer Arbeit: Ihre Zahlung fuer November wurde zurueckgewiesen. IBAN pruefen: s.id/baIbn,phishing,gov_benefits,de
+Kraftfahrt-Bundesamt: Ihr Fuehrerschein muss bis 19.01. umgetauscht werden. Antrag online stellen bit.ly/4kbaFs,phishing,gov_licence_renewal,de
+"Rundfunkbeitrag: Ihr Beitragskonto weist einen Rueckstand von 55,08 EUR aus. Mahngebuehr vermeiden cutt.ly/rfBtr",phishing,gov_unpaid_fee,de
+Telekom: Ihre Rechnung konnte nicht abgebucht werden. Bitte Zahlungsdaten aktualisieren is.gd/tkRch,phishing,carrier_unpaid_bill,de
+Vodafone: Ihre SIM-Karte wird wegen fehlender Verifizierung gesperrt. Jetzt bestaetigen tinyurl.com/vf3sim7d,phishing,carrier_sim_suspension,de
+"o2: Du hast 3.800 Treuepunkte, die morgen verfallen. Jetzt einloesen rb.gy/o2Pkt",phishing,carrier_points_expiring,de
+1&1: Lastschrift fehlgeschlagen. Sperrung des Anschlusses ab 15.11. Jetzt zahlen t.ly/1u1Z,phishing,carrier_unpaid_bill,de
+"E.ON: Offener Abschlag 96,00 EUR. Ohne Zahlung erfolgt die Unterbrechung der Stromversorgung. shorturl.at/eonAb",phishing,utility_disconnection,de
+"Vattenfall: Aus Ihrer Jahresabrechnung ergibt sich ein Guthaben von 68,44 EUR. Auszahlung beantragen goo.su/vtGth",phishing,utility_refund,de
+Netflix: Deine Zahlung wurde abgelehnt. Dein Konto wird in 24 Std. gesperrt. s.id/nfDe,phishing,streaming_billing_update,de
+Amazon: Ihre Bestellung 302-4471902-88 konnte nicht versendet werden. Lieferadresse pruefen bit.ly/3amzBst,phishing,shopping_order_problem,de
+"Kleinanzeigen: Der Kaeufer hat bezahlt. Bestaetige deine Karte, um 140 EUR zu erhalten cutt.ly/kaSz",phishing,marketplace_payout,de
+PayPal: Ihr Konto wurde eingeschraenkt. Bitte bestaetigen Sie Ihre Identitaet is.gd/ppEin,phishing,account_disabled,de
+"Zalando: Deine Retoure ist da, die Erstattung ist aber fehlgeschlagen. IBAN pruefen tinyurl.com/zl8ret4b",phishing,shopping_refund,de
+"Deutsche Bahn: Erstattung von 27,40 EUR fuer ICE 574 wegen Verspaetung. Hier anfordern rb.gy/dbErs",phishing,transport_refund,de
+"Deutschlandticket: Abbuchung nicht moeglich. Ihr Abo wird zum 01.12. gekuendigt, wenn Sie nicht aktualisieren t.ly/dtA9",phishing,transport_card_blocked,de
+DPD: 2. Zustellversuch erfolglos. Paket geht am 17.11. zurueck an den Absender. Termin buchen shorturl.at/dpd2Z,phishing,courier_second_attempt,de
+"Hallo, hier Ihr Paketbote. Klingel defekt, niemand da. Bitte neuen Termin waehlen goo.su/pbKlg",phishing,courier_missed_delivery,de
+LETZTE MAHNUNG!!! Zwangsvollstreckung wird eingeleitet. Offenen Betrag sofort zahlen: s.id/mhnZv,phishing,gov_unpaid_fee,de
+"GLS: Ihr Paket liegt im Depot, Empfaengername unvollstaendig. Daten ergaenzen bit.ly/4glsDp",phishing,courier_address_incomplete,de
+"Techniker Krankenkasse: Ihnen steht eine Beitragsrueckerstattung von 143,20 EUR zu. Formular: cutt.ly/tkRck",phishing,gov_health_refund,de
+Stadtwerke: Gasabschlag nicht eingegangen. Sperrtermin 19.11. Zahlung unter zahlung-pruefen.icu/s/2281,phishing,utility_disconnection,de
+Disney+: Wir konnten dein Abo nicht verlaengern. Zahlungsmethode pruefen is.gd/dsDe7,phishing,streaming_billing_update,de
+"Otto: Ihre Bestellung wurde angehalten, Rechnungsadresse fehlerhaft. Korrigieren tinyurl.com/ot5best3",phishing,shopping_order_problem,de
+Apple: Ihre Apple-ID wurde aus Sicherheitsgruenden deaktiviert. Entsperren: rb.gy/apDe2,phishing,account_disabled,de
+"Post AG: Ihr Paket wartet auf Zustellung. Zollgebuehr 2,39 EUR offen. t.ly/pstA",phishing,courier_customs_fee,de
+"FinanzOnline: Sie haben eine Gutschrift von 236,50 EUR. Bitte Kontodaten eingeben shorturl.at/foGts",phishing,gov_tax_refund,de
+"ASFINAG: Ihre digitale Vignette ist abgelaufen. Ersatzmaut 120 EUR vermeiden, jetzt verlaengern goo.su/asVgn",phishing,toll_unpaid,de
+A1: Ihre Rechnung ist ueberfaellig. Ihr Anschluss wird morgen gesperrt. s.id/a1Rch,phishing,carrier_unpaid_bill,de
+Die Post: Ihre Sendung 99.00.447190.22 konnte nicht zugestellt werden. Gebuehr CHF 1.50: bit.ly/3chPst,phishing,courier_fee,de
+Swisscom: Sie haben Ihre letzte Rechnung doppelt bezahlt. Rueckerstattung CHF 64.90 beantragen cutt.ly/swRck,phishing,carrier_refund,de
+"Serafe: Ihre Abgabe fuer 2026 ist noch offen. Betreibung vermeiden, jetzt online zahlen is.gd/srfAb",phishing,gov_unpaid_fee,de
+CTT: a sua encomenda nao foi entregue por morada incompleta. Atualize os dados em https://bit.ly/3cttMr,phishing,courier_address_incomplete,pt
+"CTT Expresso: objeto RL447190228PT retido na alfandega. Taxa de desalfandegamento 2,99 EUR. cutt.ly/cttAlf",phishing,courier_customs_fee,pt
+"AT: tem um reembolso de IRS no valor de 184,32 EUR. Confirme o seu IBAN em tinyurl.com/at7irs2b",phishing,gov_tax_refund,pt
+"Via Verde: passagem em portagem nao paga (3,45 EUR). Regularize para evitar coima is.gd/vvPtg",phishing,toll_unpaid,pt
+SNS: o seu cartao de utente necessita de atualizacao. Preencha o formulario rb.gy/snsUt,phishing,gov_health_card,pt
+Seguranca Social: o pagamento da sua prestacao foi devolvido. Verifique os seus dados bancarios t.ly/ssD3,phishing,gov_benefits,pt
+IMT: a sua carta de conducao caduca em breve. Faca a renovacao online sem deslocacoes shorturl.at/imtCc,phishing,gov_licence_renewal,pt
+MEO: a sua fatura de novembro nao foi paga. Evite a suspensao do servico goo.su/meoFt,phishing,carrier_unpaid_bill,pt
+NOS: tem 1.900 pontos a expirar hoje. Troque-os por um equipamento s.id/nosPt,phishing,carrier_points_expiring,pt
+Vodafone: o seu cartao SIM sera desativado por falta de validacao de identidade. Valide aqui bit.ly/4vfPtS,phishing,carrier_sim_suspension,pt
+"EDP: fatura em atraso de 57,80 EUR. Corte de fornecimento agendado para 17/11. Pague online cutt.ly/edpCrt",phishing,utility_disconnection,pt
+"Galp: tem direito a um acerto de 31,40 EUR a seu favor. Indique o IBAN para o credito is.gd/glpAc",phishing,utility_refund,pt
+OLX: o comprador ja pagou o seu artigo. Receba 60 EUR confirmando o cartao tinyurl.com/olx4pag8,phishing,marketplace_payout,pt
+Worten: a sua encomenda 44719022 nao pode ser expedida. Confirme a morada de entrega rb.gy/wrtEnc,phishing,shopping_order_problem,pt
+"Olá, sou o estafeta da DPD, nao estava ninguem em casa. Reagende a entrega aqui t.ly/dpP7",phishing,courier_missed_delivery,pt
+Financas: foi detetada uma divergencia na sua declaracao de IRS. Consulte a notificacao shorturl.at/finDv,phishing,gov_tax_error,pt
+"ANSR: coima por excesso de velocidade por liquidar, auto n. 447190228. Pagamento voluntario ate 20/11 goo.su/ansCm",phishing,gov_traffic_fine,pt
+Chave Movel Digital: a sua conta expira em 24h. Renove para manter o acesso s.id/cmdRn,phishing,gov_account_renewal,pt
+EPAL: fatura da agua por regularizar. Suspensao do abastecimento em 5 dias uteis. pagamento-online.top/e/4471,phishing,utility_disconnection,pt
+Netflix: nao conseguimos processar o seu pagamento. Atualize os dados para manter a conta bit.ly/3nfPt4,phishing,streaming_billing_update,pt
+"Correios: sua encomenda QB447190228BR esta aguardando pagamento de taxa alfandegaria R$ 14,90. cutt.ly/crTx",phishing,courier_customs_fee,pt
+"Correios informa: tentativa de entrega nao realizada, endereco insuficiente. Atualize is.gd/crEnd",phishing,courier_address_incomplete,pt
+Receita Federal: seu CPF esta com pendencias e sera suspenso. Regularize hoje tinyurl.com/rf3cpf9a,phishing,gov_tax_error,pt
+"Receita Federal: voce tem restituicao de R$ 1.284,50 disponivel. Informe a chave Pix para receber rb.gy/rfRst",phishing,gov_tax_refund,pt
+DETRAN: consta multa em aberto para o veiculo placa final 7B. Pague com 40% de desconto t.ly/dtM5,phishing,gov_traffic_fine,pt
+DETRAN-SP: sua CNH esta em processo de suspensao por pontos. Apresente defesa em shorturl.at/cnhSp,phishing,gov_licence_renewal,pt
+Sem Parar: sua tag foi bloqueada por falha no pagamento da fatura. Desbloqueie goo.su/spTag,phishing,toll_unpaid,pt
+INSS: seu beneficio foi bloqueado por falta de prova de vida. Faca agora pelo link s.id/inPv,phishing,gov_benefits,pt
+gov.br: sua conta sera rebaixada para nivel bronze. Confirme seus dados bit.ly/4gvBrz,phishing,gov_account_renewal,pt
+Bolsa Familia: seu cadastro esta desatualizado e o pagamento de novembro foi retido. Atualize cutt.ly/bfCad,phishing,gov_benefits,pt
+"Vivo: sua fatura venceu dia 08/11. Evite o bloqueio da linha, pague com Pix is.gd/vvFt",phishing,carrier_unpaid_bill,pt
+Claro: seus 4.200 pontos Claro Clube expiram HOJE. Resgate ja tinyurl.com/clr2pts6,phishing,carrier_points_expiring,pt
+TIM: detectamos pedido de troca de chip na sua linha. Nao foi voce? Cancele rb.gy/tmChp,phishing,carrier_sim_replacement,pt
+"Enel: aviso de corte de energia por debito de R$ 187,34. Unidade 44719022. Quite agora t.ly/enB8",phishing,utility_disconnection,pt
+Mercado Livre: sua compra foi suspensa por problema no pagamento. Revise os dados shorturl.at/mlCmp,phishing,shopping_order_problem,pt
+"Shopee: seu pedido esta retido na fiscalizacao. Taxa de liberacao R$ 9,87 goo.su/shpTx",phishing,courier_customs_fee,pt
+iFood: sua conta foi desativada por cobranca recusada. Atualize o cartao s.id/ifCt,phishing,account_disabled,pt
+Magalu: nao conseguimos entregar seu pedido 4471902288. Confirme o endereco em ate 24h bit.ly/3mglEnt,phishing,shopping_order_problem,pt
+"FGTS: voce possui saldo de R$ 2.340,00 liberado para saque. Consulte pelo CPF cutt.ly/fgSq",phishing,gov_benefits,pt
+ATENCAO!!! Sua CNH sera CASSADA. Ultimo dia para regularizar debitos: is.gd/cnhUlt,phishing,gov_licence_renewal,pt
